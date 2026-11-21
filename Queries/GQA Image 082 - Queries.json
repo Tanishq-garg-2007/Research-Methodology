@@ -8,14 +8,19 @@
   "people"
  ],
  "query": {
-  "question": "What is on the bus?",
-  "answer": "people",
-  "template": "on",
+  "question": "What is between the floating bus and the cables?",
+  "answer": "door",
+  "template": "between_attr",
   "derivation": {
-   "relation": "on",
-   "object": "bus"
+   "anchor_a": "bus",
+   "anchor_a_attributes": [
+    "floating"
+   ],
+   "anchor_b": "cables",
+   "anchor_b_attributes": [],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
-  "unambiguous": false
+  "unambiguous": true
  },
  "counts": {
   "queries": 1

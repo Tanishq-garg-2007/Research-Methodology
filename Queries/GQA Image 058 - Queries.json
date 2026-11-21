@@ -8,12 +8,17 @@
   "bottle"
  ],
  "query": {
-  "question": "What is to the left of the counter?",
-  "answer": "shirt",
-  "template": "left_of",
+  "question": "What is between the ketchup bottle and the collared shirt?",
+  "answer": "ketchup",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "counter"
+   "anchor_a": "ketchup bottle",
+   "anchor_a_attributes": [],
+   "anchor_b": "shirt",
+   "anchor_b_attributes": [
+    "collared"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

@@ -8,14 +8,18 @@
   "hand"
  ],
  "query": {
-  "question": "What is to the left of the glass?",
-  "answer": "hand",
-  "template": "left_of",
+  "question": "What is to the left of the brown door?",
+  "answer": "wine",
+  "template": "attr_relation",
   "derivation": {
    "relation": "to the left of",
-   "object": "glass"
+   "object": "door",
+   "anchor_attributes": [
+    "brown"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
-  "unambiguous": true
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

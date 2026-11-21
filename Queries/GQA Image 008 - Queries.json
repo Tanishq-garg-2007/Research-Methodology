@@ -8,14 +8,19 @@
   "window"
  ],
  "query": {
-  "question": "What is to the left of the apple?",
+  "question": "What is between the hand and the large sign?",
   "answer": "window",
-  "template": "left_of",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "apple"
+   "anchor_a": "hand",
+   "anchor_a_attributes": [],
+   "anchor_b": "sign",
+   "anchor_b_attributes": [
+    "large"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
-  "unambiguous": true
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

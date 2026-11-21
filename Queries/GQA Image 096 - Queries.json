@@ -8,14 +8,18 @@
   "building"
  ],
  "query": {
-  "question": "What is to the left of the tree?",
-  "answer": "building",
-  "template": "left_of",
+  "question": "What is to the right of the green branches?",
+  "answer": "bricks",
+  "template": "attr_relation",
   "derivation": {
-   "relation": "to the left of",
-   "object": "tree"
+   "relation": "to the right of",
+   "object": "branches",
+   "anchor_attributes": [
+    "green"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
-  "unambiguous": false
+  "unambiguous": true
  },
  "counts": {
   "queries": 1

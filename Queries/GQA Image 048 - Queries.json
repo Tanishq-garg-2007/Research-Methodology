@@ -8,14 +8,20 @@
   "liquor"
  ],
  "query": {
-  "question": "What is on the table?",
-  "answer": "bottle",
-  "template": "on",
+  "question": "How many bottles are above the container?",
+  "answer": 4,
+  "template": "counting",
   "derivation": {
-   "relation": "on",
-   "object": "table"
+   "counted_label": "bottle",
+   "relation": "above",
+   "anchor": "container",
+   "anchor_attributes": [],
+   "counted_total_instances": 7,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

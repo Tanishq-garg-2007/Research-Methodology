@@ -8,12 +8,17 @@
   "man"
  ],
  "query": {
-  "question": "What is to the right of the face?",
-  "answer": "cord",
-  "template": "right_of",
+  "question": "What is between the hanging cord and the goggles?",
+  "answer": "face",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the right of",
-   "object": "face"
+   "anchor_a": "cord",
+   "anchor_a_attributes": [
+    "hanging"
+   ],
+   "anchor_b": "goggles",
+   "anchor_b_attributes": [],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

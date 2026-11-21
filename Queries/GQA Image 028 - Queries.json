@@ -8,14 +8,20 @@
   "mozzarella"
  ],
  "query": {
-  "question": "What is to the left of the sauce?",
-  "answer": "mozzarella",
-  "template": "left_of",
+  "question": "How many mozzarellas are above the pizza crust?",
+  "answer": 1,
+  "template": "counting",
   "derivation": {
-   "relation": "to the left of",
-   "object": "sauce"
+   "counted_label": "mozzarella",
+   "relation": "above",
+   "anchor": "pizza crust",
+   "anchor_attributes": [],
+   "counted_total_instances": 2,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

@@ -8,14 +8,21 @@
   "skateboard"
  ],
  "query": {
-  "question": "What is to the left of the cap?",
-  "answer": "man",
-  "template": "left_of",
+  "question": "What is between the black clothes and the red sneakers?",
+  "answer": "cap",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "cap"
+   "anchor_a": "clothes",
+   "anchor_a_attributes": [
+    "black"
+   ],
+   "anchor_b": "sneakers",
+   "anchor_b_attributes": [
+    "red"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
-  "unambiguous": false
+  "unambiguous": true
  },
  "counts": {
   "queries": 1

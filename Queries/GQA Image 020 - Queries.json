@@ -8,13 +8,17 @@
   "chair"
  ],
  "query": {
-  "question": "What is between the plant and the chair?",
+  "question": "What is between the chair and the tall plant?",
   "answer": "window",
-  "template": "between",
+  "template": "between_attr",
   "derivation": {
-   "anchor_a": "plant",
-   "anchor_b": "chair",
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+   "anchor_a": "chair",
+   "anchor_a_attributes": [],
+   "anchor_b": "plant",
+   "anchor_b_attributes": [
+    "tall"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

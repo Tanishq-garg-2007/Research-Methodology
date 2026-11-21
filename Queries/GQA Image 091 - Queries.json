@@ -8,14 +8,20 @@
   "mountain"
  ],
  "query": {
-  "question": "What is to the left of the ship?",
-  "answer": "mountain",
-  "template": "left_of",
+  "question": "How many cabins are below the mountain?",
+  "answer": 1,
+  "template": "counting",
   "derivation": {
-   "relation": "to the left of",
-   "object": "ship"
+   "counted_label": "cabin",
+   "relation": "below",
+   "anchor": "mountain",
+   "anchor_attributes": [],
+   "counted_total_instances": 1,
+   "singleton_count": true,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": true
+  "unambiguous": true,
+  "singleton": true
  },
  "counts": {
   "queries": 1

@@ -8,14 +8,19 @@
   "doorway"
  ],
  "query": {
-  "question": "What is to the left of the doorway?",
-  "answer": "wall",
-  "template": "left_of",
+  "question": "What is between the doorway and the black seat?",
+  "answer": "room",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "doorway"
+   "anchor_a": "doorway",
+   "anchor_a_attributes": [],
+   "anchor_b": "seat",
+   "anchor_b_attributes": [
+    "black"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
-  "unambiguous": false
+  "unambiguous": true
  },
  "counts": {
   "queries": 1

@@ -8,12 +8,15 @@
   "person"
  ],
  "query": {
-  "question": "What is to the left of the tiles?",
-  "answer": "person",
-  "template": "left_of",
+  "question": "What is to the right of the person that is to the right of the bear?",
+  "answer": "tiles",
+  "template": "two_hop",
   "derivation": {
-   "relation": "to the left of",
-   "object": "tiles"
+   "hop1_subject": "bear",
+   "hop1_relation": "to the left of",
+   "intermediate": "person",
+   "hop2_relation": "to the right of",
+   "rule": "intermediate pinned by hop 1 (the clause is true of it and one intermediate instance satisfies both hops geometrically); answer is the unique subject of hop 2 on the intermediate in the tight subgraph"
   },
   "unambiguous": true
  },

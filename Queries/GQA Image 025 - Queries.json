@@ -8,12 +8,16 @@
   "shorts"
  ],
  "query": {
-  "question": "What is to the right of the camera?",
+  "question": "What is to the right of the black shoes?",
   "answer": "animal",
-  "template": "right_of",
+  "template": "attr_relation",
   "derivation": {
    "relation": "to the right of",
-   "object": "camera"
+   "object": "shoes",
+   "anchor_attributes": [
+    "black"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
   "unambiguous": true
  },

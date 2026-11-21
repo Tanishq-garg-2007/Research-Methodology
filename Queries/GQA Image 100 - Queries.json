@@ -8,14 +8,20 @@
   "guy"
  ],
  "query": {
-  "question": "What is on the skateboard?",
-  "answer": "guy",
-  "template": "on",
+  "question": "How many tires are above the skateboard?",
+  "answer": 2,
+  "template": "counting",
   "derivation": {
-   "relation": "on",
-   "object": "skateboard"
+   "counted_label": "tire",
+   "relation": "above",
+   "anchor": "skateboard",
+   "anchor_attributes": [],
+   "counted_total_instances": 4,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": true
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

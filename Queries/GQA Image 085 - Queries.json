@@ -8,14 +8,20 @@
   "shirts"
  ],
  "query": {
-  "question": "What is on the platform?",
-  "answer": "bear",
-  "template": "on",
+  "question": "How many bears are above the coat?",
+  "answer": 10,
+  "template": "counting",
   "derivation": {
-   "relation": "on",
-   "object": "platform"
+   "counted_label": "bear",
+   "relation": "above",
+   "anchor": "coat",
+   "anchor_attributes": [],
+   "counted_total_instances": 10,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

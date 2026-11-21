@@ -8,14 +8,20 @@
   "propeller"
  ],
  "query": {
-  "question": "What is to the left of the windows?",
-  "answer": "propeller",
-  "template": "left_of",
+  "question": "How many letters are above the cockpit?",
+  "answer": 7,
+  "template": "counting",
   "derivation": {
-   "relation": "to the left of",
-   "object": "windows"
+   "counted_label": "letter",
+   "relation": "above",
+   "anchor": "cockpit",
+   "anchor_attributes": [],
+   "counted_total_instances": 9,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": true
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

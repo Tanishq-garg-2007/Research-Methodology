@@ -8,13 +8,16 @@
   "plate"
  ],
  "query": {
-  "question": "What is between the bread and the plate?",
-  "answer": "egg",
-  "template": "between",
+  "question": "What is to the left of the small napkin?",
+  "answer": "bread",
+  "template": "attr_relation",
   "derivation": {
-   "anchor_a": "bread",
-   "anchor_b": "plate",
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+   "relation": "to the left of",
+   "object": "napkin",
+   "anchor_attributes": [
+    "small"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
   "unambiguous": true
  },

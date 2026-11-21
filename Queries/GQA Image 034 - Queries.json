@@ -8,12 +8,15 @@
   "wall"
  ],
  "query": {
-  "question": "What is to the left of the table?",
+  "question": "What is to the left of the table that is to the left of the wall?",
   "answer": "woman",
-  "template": "left_of",
+  "template": "two_hop",
   "derivation": {
-   "relation": "to the left of",
-   "object": "table"
+   "hop1_subject": "wall",
+   "hop1_relation": "to the right of",
+   "intermediate": "table",
+   "hop2_relation": "to the left of",
+   "rule": "intermediate pinned by hop 1 (the clause is true of it and one intermediate instance satisfies both hops geometrically); answer is the unique subject of hop 2 on the intermediate in the tight subgraph"
   },
   "unambiguous": false
  },

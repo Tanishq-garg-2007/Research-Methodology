@@ -8,12 +8,16 @@
   "shirt"
  ],
  "query": {
-  "question": "What is on the street?",
+  "question": "What is on the busy street?",
   "answer": "skateboarder",
-  "template": "on",
+  "template": "attr_relation",
   "derivation": {
    "relation": "on",
-   "object": "street"
+   "object": "street",
+   "anchor_attributes": [
+    "busy"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
   "unambiguous": false
  },

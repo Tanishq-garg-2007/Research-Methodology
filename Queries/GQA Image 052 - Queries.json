@@ -8,14 +8,22 @@
   "bus"
  ],
  "query": {
-  "question": "What is to the left of the pavement?",
-  "answer": "bus",
-  "template": "left_of",
+  "question": "How many buses are above the black car?",
+  "answer": 2,
+  "template": "counting",
   "derivation": {
-   "relation": "to the left of",
-   "object": "pavement"
+   "counted_label": "bus",
+   "relation": "above",
+   "anchor": "car",
+   "anchor_attributes": [
+    "black"
+   ],
+   "counted_total_instances": 2,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

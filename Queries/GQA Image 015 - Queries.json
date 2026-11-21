@@ -8,12 +8,17 @@
   "fingers"
  ],
  "query": {
-  "question": "What is to the left of the wristband?",
-  "answer": "fingers",
-  "template": "left_of",
+  "question": "What is between the black shirt and the wrist?",
+  "answer": "man",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "wristband"
+   "anchor_a": "shirt",
+   "anchor_a_attributes": [
+    "black"
+   ],
+   "anchor_b": "wrist",
+   "anchor_b_attributes": [],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

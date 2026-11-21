@@ -8,12 +8,16 @@
   "living room"
  ],
  "query": {
-  "question": "What is to the right of the end table?",
+  "question": "What is to the right of the black end table?",
   "answer": "couch",
-  "template": "right_of",
+  "template": "attr_relation",
   "derivation": {
    "relation": "to the right of",
-   "object": "end table"
+   "object": "end table",
+   "anchor_attributes": [
+    "black"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
   "unambiguous": false
  },

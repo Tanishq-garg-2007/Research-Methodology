@@ -8,14 +8,22 @@
   "boy"
  ],
  "query": {
-  "question": "What is to the right of the tiles?",
-  "answer": "stone",
-  "template": "right_of",
+  "question": "How many boys are above the green shirt?",
+  "answer": 3,
+  "template": "counting",
   "derivation": {
-   "relation": "to the right of",
-   "object": "tiles"
+   "counted_label": "boy",
+   "relation": "above",
+   "anchor": "shirt",
+   "anchor_attributes": [
+    "green"
+   ],
+   "counted_total_instances": 3,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

@@ -8,14 +8,20 @@
   "eye"
  ],
  "query": {
-  "question": "What is to the left of the eyes?",
-  "answer": "eye",
-  "template": "left_of",
+  "question": "How many paws are below the eye?",
+  "answer": 3,
+  "template": "counting",
   "derivation": {
-   "relation": "to the left of",
-   "object": "eyes"
+   "counted_label": "paw",
+   "relation": "below",
+   "anchor": "eye",
+   "anchor_attributes": [],
+   "counted_total_instances": 3,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": true
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

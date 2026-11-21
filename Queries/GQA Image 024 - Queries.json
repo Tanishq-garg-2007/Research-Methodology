@@ -8,12 +8,19 @@
   "house"
  ],
  "query": {
-  "question": "What is to the left of the hair?",
-  "answer": "car",
-  "template": "left_of",
+  "question": "What is between the black car and the blowing hair?",
+  "answer": "house",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "hair"
+   "anchor_a": "car",
+   "anchor_a_attributes": [
+    "black"
+   ],
+   "anchor_b": "hair",
+   "anchor_b_attributes": [
+    "blowing"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

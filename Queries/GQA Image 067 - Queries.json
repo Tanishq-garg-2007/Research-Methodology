@@ -8,14 +8,18 @@
   "trash"
  ],
  "query": {
-  "question": "What is on the parking lot?",
-  "answer": "trash",
-  "template": "on",
+  "question": "What is on the dark brown pole?",
+  "answer": "sign",
+  "template": "attr_relation",
   "derivation": {
    "relation": "on",
-   "object": "parking lot"
+   "object": "pole",
+   "anchor_attributes": [
+    "dark brown"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
-  "unambiguous": true
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

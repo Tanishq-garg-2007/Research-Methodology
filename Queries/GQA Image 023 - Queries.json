@@ -8,12 +8,19 @@
   "wall"
  ],
  "query": {
-  "question": "What is to the left of the cart?",
-  "answer": "car",
-  "template": "left_of",
+  "question": "What is between the blue car and the green wall?",
+  "answer": "pole",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "cart"
+   "anchor_a": "car",
+   "anchor_a_attributes": [
+    "blue"
+   ],
+   "anchor_b": "wall",
+   "anchor_b_attributes": [
+    "green"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": false
  },

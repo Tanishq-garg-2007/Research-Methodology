@@ -8,14 +8,19 @@
   "man"
  ],
  "query": {
-  "question": "What is on the shelf?",
-  "answer": "box",
-  "template": "on",
+  "question": "What is between the arm and the cardboard boxes?",
+  "answer": "man",
+  "template": "between_attr",
   "derivation": {
-   "relation": "on",
-   "object": "shelf"
+   "anchor_a": "arm",
+   "anchor_a_attributes": [],
+   "anchor_b": "boxes",
+   "anchor_b_attributes": [
+    "cardboard"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
-  "unambiguous": false
+  "unambiguous": true
  },
  "counts": {
   "queries": 1

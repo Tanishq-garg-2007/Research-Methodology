@@ -8,12 +8,17 @@
   "vehicle"
  ],
  "query": {
-  "question": "What is to the right of the jacket?",
-  "answer": "vehicle",
-  "template": "right_of",
+  "question": "What is between the tan jacket and the people?",
+  "answer": "man",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the right of",
-   "object": "jacket"
+   "anchor_a": "jacket",
+   "anchor_a_attributes": [
+    "tan"
+   ],
+   "anchor_b": "people",
+   "anchor_b_attributes": [],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": false
  },

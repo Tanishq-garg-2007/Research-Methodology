@@ -8,12 +8,17 @@
   "head"
  ],
  "query": {
-  "question": "What is on the tree?",
-  "answer": "leaves",
-  "template": "on",
+  "question": "What is between the dried leaves and the tree?",
+  "answer": "animal",
+  "template": "between_attr",
   "derivation": {
-   "relation": "on",
-   "object": "tree"
+   "anchor_a": "leaves",
+   "anchor_a_attributes": [
+    "dried"
+   ],
+   "anchor_b": "tree",
+   "anchor_b_attributes": [],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": false
  },

@@ -8,14 +8,17 @@
   "hair"
  ],
  "query": {
-  "question": "What is to the left of the cake?",
-  "answer": "gown",
-  "template": "left_of",
+  "question": "What is to the left of the man that is to the left of the gown?",
+  "answer": "hair",
+  "template": "two_hop",
   "derivation": {
-   "relation": "to the left of",
-   "object": "cake"
+   "hop1_subject": "gown",
+   "hop1_relation": "to the right of",
+   "intermediate": "man",
+   "hop2_relation": "to the left of",
+   "rule": "intermediate pinned by hop 1 (the clause is true of it and one intermediate instance satisfies both hops geometrically); answer is the unique subject of hop 2 on the intermediate in the tight subgraph"
   },
-  "unambiguous": true
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

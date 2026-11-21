@@ -5,8 +5,16 @@
   "n_items": 100,
   "queries_per_item": 1,
   "built_utc": "2026-11-21T10:02:59Z",
-  "method": "large graph (full original) -> tight anchor-pair subgraph -> compact small graph (anchors + query + answer + <=3 distractors; edges from tight subgraph only, core-touching, deduped) -> exactly one unique-answer query per image; between-queries from bbox centre geometry; self-relations and contradictory left/right pairs excluded from query generation",
-  "forced_item_001": "2395226"
+  "method": "large graph (full original) -> tight anchor-pair subgraph -> compact small graph (anchors + query + answer + <=3 distractors; edges from tight subgraph only, core-touching, deduped) -> exactly one unique-answer query per image, regenerated in v2 with harder templates (two_hop, between_attr, counting, attr_relation) from the frozen small graphs; counting answers are true whole-image counts from the large graph; self-relations and contradictory left/right pairs excluded from query generation",
+  "forced_item_001": "2395226",
+  "queries_version": "v2",
+  "query_templates": {
+   "two_hop": 25,
+   "between_attr": 25,
+   "attr_relation": 25,
+   "counting": 25
+  },
+  "queries_rebuilt_utc": "2026-11-21T10:39:49Z"
  },
  "items": [
   {
@@ -19,9 +27,9 @@
     "glass"
    ],
    "query": {
-    "question": "What is on the plate?",
+    "question": "What is on the plate that is to the right of the carrots?",
     "answer": "fork",
-    "template": "on"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 23,
@@ -48,9 +56,9 @@
     "propeller"
    ],
    "query": {
-    "question": "What is to the left of the windows?",
-    "answer": "propeller",
-    "template": "left_of"
+    "question": "How many letters are above the cockpit?",
+    "answer": 7,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 25,
@@ -77,9 +85,9 @@
     "leg"
    ],
    "query": {
-    "question": "What is to the right of the bottle?",
+    "question": "What is to the right of the cut grass?",
     "answer": "pole",
-    "template": "right_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 22,
@@ -106,9 +114,9 @@
     "skateboard"
    ],
    "query": {
-    "question": "What is to the left of the cap?",
-    "answer": "man",
-    "template": "left_of"
+    "question": "What is between the black clothes and the red sneakers?",
+    "answer": "cap",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 20,
@@ -135,9 +143,9 @@
     "trunk"
    ],
    "query": {
-    "question": "What is on the tree?",
+    "question": "What is on the tree that is to the left of the bush?",
     "answer": "trunk",
-    "template": "on"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 22,
@@ -164,9 +172,9 @@
     "shelf"
    ],
    "query": {
-    "question": "What is on the shelf?",
+    "question": "What is on the shelf that is to the right of the chair?",
     "answer": "container",
-    "template": "on"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 18,
@@ -193,9 +201,9 @@
     "toilet"
    ],
    "query": {
-    "question": "What is to the right of the lid?",
-    "answer": "counter",
-    "template": "right_of"
+    "question": "What is between the blue comb and the lid?",
+    "answer": "toilet",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 16,
@@ -222,9 +230,9 @@
     "window"
    ],
    "query": {
-    "question": "What is to the left of the apple?",
+    "question": "What is between the hand and the large sign?",
     "answer": "window",
-    "template": "left_of"
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 14,
@@ -251,9 +259,9 @@
     "hand"
    ],
    "query": {
-    "question": "What is to the left of the frisbee?",
-    "answer": "hand",
-    "template": "left_of"
+    "question": "What is between the frisbee and the white shirt?",
+    "answer": "man",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 12,
@@ -280,9 +288,9 @@
     "skin"
    ],
    "query": {
-    "question": "What is to the right of the drawing?",
+    "question": "What is to the right of the skin that is to the right of the earphones?",
     "answer": "trees",
-    "template": "right_of"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 16,
@@ -309,9 +317,9 @@
     "doorway"
    ],
    "query": {
-    "question": "What is to the left of the doorway?",
-    "answer": "wall",
-    "template": "left_of"
+    "question": "What is between the doorway and the black seat?",
+    "answer": "room",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 14,
@@ -338,9 +346,9 @@
     "hand"
    ],
    "query": {
-    "question": "What is to the left of the food?",
-    "answer": "hand",
-    "template": "left_of"
+    "question": "How many arms are above the blue jeans?",
+    "answer": 2,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 41,
@@ -367,9 +375,9 @@
     "cockpit"
    ],
    "query": {
-    "question": "What is to the left of the cockpit?",
+    "question": "What is to the left of the cockpit that is to the left of the fence?",
     "answer": "wing",
-    "template": "left_of"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 13,
@@ -396,9 +404,9 @@
     "man"
    ],
    "query": {
-    "question": "What is to the right of the face?",
-    "answer": "cord",
-    "template": "right_of"
+    "question": "What is between the hanging cord and the goggles?",
+    "answer": "face",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 9,
@@ -425,9 +433,9 @@
     "fingers"
    ],
    "query": {
-    "question": "What is to the left of the wristband?",
-    "answer": "fingers",
-    "template": "left_of"
+    "question": "What is between the black shirt and the wrist?",
+    "answer": "man",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 18,
@@ -454,9 +462,9 @@
     "mirror"
    ],
    "query": {
-    "question": "What is on the pole?",
+    "question": "What is on the pole that is to the left of the building?",
     "answer": "sign",
-    "template": "on"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 23,
@@ -483,9 +491,9 @@
     "phone"
    ],
    "query": {
-    "question": "What is between the boy and the phone?",
-    "answer": "shirt",
-    "template": "between"
+    "question": "What is to the right of the phone that is with the boy?",
+    "answer": "bag",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 6,
@@ -512,9 +520,9 @@
     "post"
    ],
    "query": {
-    "question": "What is to the left of the post?",
+    "question": "What is to the left of the post that is to the left of the porch?",
     "answer": "stop sign",
-    "template": "left_of"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 12,
@@ -541,9 +549,9 @@
     "grass"
    ],
    "query": {
-    "question": "What is between the girl and the grass?",
-    "answer": "shoe",
-    "template": "between"
+    "question": "What is on the bench that is to the right of the grass?",
+    "answer": "girl",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 14,
@@ -570,9 +578,9 @@
     "chair"
    ],
    "query": {
-    "question": "What is between the plant and the chair?",
+    "question": "What is between the chair and the tall plant?",
     "answer": "window",
-    "template": "between"
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 6,
@@ -599,9 +607,9 @@
     "tree"
    ],
    "query": {
-    "question": "What is on the tree?",
-    "answer": "food",
-    "template": "on"
+    "question": "What is between the green grass and the tree?",
+    "answer": "ground",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 14,
@@ -628,9 +636,9 @@
     "lamp"
    ],
    "query": {
-    "question": "What is to the left of the candles?",
-    "answer": "curtains",
-    "template": "left_of"
+    "question": "What is to the left of the lamp that is to the left of the bedspread?",
+    "answer": "picture",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 22,
@@ -657,9 +665,9 @@
     "wall"
    ],
    "query": {
-    "question": "What is to the left of the cart?",
-    "answer": "car",
-    "template": "left_of"
+    "question": "What is between the blue car and the green wall?",
+    "answer": "pole",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 16,
@@ -686,9 +694,9 @@
     "house"
    ],
    "query": {
-    "question": "What is to the left of the hair?",
-    "answer": "car",
-    "template": "left_of"
+    "question": "What is between the black car and the blowing hair?",
+    "answer": "house",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 15,
@@ -715,9 +723,9 @@
     "shorts"
    ],
    "query": {
-    "question": "What is to the right of the camera?",
+    "question": "What is to the right of the black shoes?",
     "answer": "animal",
-    "template": "right_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 10,
@@ -744,9 +752,9 @@
     "door"
    ],
    "query": {
-    "question": "What is to the left of the drain?",
-    "answer": "door",
-    "template": "left_of"
+    "question": "What is between the metal faucet and the glass?",
+    "answer": "drain",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 16,
@@ -773,9 +781,9 @@
     "leg"
    ],
    "query": {
-    "question": "What is to the left of the ear?",
+    "question": "What is to the left of the ear that is to the left of the leg?",
     "answer": "grass",
-    "template": "left_of"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 18,
@@ -802,9 +810,9 @@
     "mozzarella"
    ],
    "query": {
-    "question": "What is to the left of the sauce?",
-    "answer": "mozzarella",
-    "template": "left_of"
+    "question": "How many mozzarellas are above the pizza crust?",
+    "answer": 1,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 20,
@@ -831,9 +839,9 @@
     "vest"
    ],
    "query": {
-    "question": "What is to the left of the sea?",
-    "answer": "woman",
-    "template": "left_of"
+    "question": "What is to the left of the woman that is to the left of the sea?",
+    "answer": "vest",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 16,
@@ -860,9 +868,9 @@
     "sand"
    ],
    "query": {
-    "question": "What is to the left of the head?",
+    "question": "What is to the left of the head that is to the left of the sand?",
     "answer": "cow",
-    "template": "left_of"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 19,
@@ -889,9 +897,9 @@
     "man"
    ],
    "query": {
-    "question": "What is to the left of the drawing?",
+    "question": "What is to the left of the drawing that is to the left of the banana?",
     "answer": "man",
-    "template": "left_of"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 19,
@@ -918,9 +926,9 @@
     "crane"
    ],
    "query": {
-    "question": "What is to the left of the boy?",
-    "answer": "fence",
-    "template": "left_of"
+    "question": "What is between the white cap and the hand?",
+    "answer": "boy",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 18,
@@ -947,9 +955,9 @@
     "head"
    ],
    "query": {
-    "question": "What is to the right of the legs?",
-    "answer": "zebra",
-    "template": "right_of"
+    "question": "How many heads are above the eye?",
+    "answer": 1,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 19,
@@ -976,9 +984,9 @@
     "wall"
    ],
    "query": {
-    "question": "What is to the left of the table?",
+    "question": "What is to the left of the table that is to the left of the wall?",
     "answer": "woman",
-    "template": "left_of"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 13,
@@ -1005,9 +1013,9 @@
     "airplane"
    ],
    "query": {
-    "question": "What is to the left of the nose?",
-    "answer": "wing",
-    "template": "left_of"
+    "question": "What is between the nose and the white wing?",
+    "answer": "airplane",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 16,
@@ -1034,9 +1042,9 @@
     "rope"
    ],
    "query": {
-    "question": "What is to the left of the boat?",
+    "question": "What is between the black nose and the brown rope?",
     "answer": "animal",
-    "template": "left_of"
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 22,
@@ -1063,9 +1071,9 @@
     "cloud"
    ],
    "query": {
-    "question": "What is to the right of the cars?",
-    "answer": "train",
-    "template": "right_of"
+    "question": "What is to the right of the cloud that is to the right of the locomotive?",
+    "answer": "clouds",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 13,
@@ -1092,9 +1100,9 @@
     "umpire"
    ],
    "query": {
-    "question": "What is to the left of the bat?",
-    "answer": "player",
-    "template": "left_of"
+    "question": "What is to the left of the player that is to the left of the bat?",
+    "answer": "home plate",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 23,
@@ -1121,9 +1129,9 @@
     "head"
    ],
    "query": {
-    "question": "What is on the tree?",
-    "answer": "leaves",
-    "template": "on"
+    "question": "What is between the dried leaves and the tree?",
+    "answer": "animal",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 24,
@@ -1150,9 +1158,9 @@
     "head"
    ],
    "query": {
-    "question": "What is to the left of the daisy?",
+    "question": "What is to the left of the yellow daisy?",
     "answer": "sheep",
-    "template": "left_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 20,
@@ -1179,9 +1187,9 @@
     "shirt"
    ],
    "query": {
-    "question": "What is on the street?",
+    "question": "What is on the busy street?",
     "answer": "skateboarder",
-    "template": "on"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 22,
@@ -1208,9 +1216,9 @@
     "pillow"
    ],
    "query": {
-    "question": "What is on the bed?",
-    "answer": "pillow",
-    "template": "on"
+    "question": "What is to the left of the black dog?",
+    "answer": "ear",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 18,
@@ -1237,9 +1245,9 @@
     "bird"
    ],
    "query": {
-    "question": "What is on the pipe?",
-    "answer": "bird",
-    "template": "on"
+    "question": "What is to the left of the brown horse?",
+    "answer": "post",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 17,
@@ -1266,9 +1274,9 @@
     "door"
    ],
    "query": {
-    "question": "What is to the left of the sink?",
+    "question": "What is to the left of the white sink?",
     "answer": "chair",
-    "template": "left_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 22,
@@ -1295,9 +1303,9 @@
     "elephant"
    ],
    "query": {
-    "question": "What is to the left of the water?",
+    "question": "What is to the left of the water that is to the left of the trunk?",
     "answer": "elephant",
-    "template": "left_of"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 31,
@@ -1324,9 +1332,9 @@
     "windows"
    ],
    "query": {
-    "question": "What is to the left of the chandelier?",
+    "question": "What is between the arms and the white flowers?",
     "answer": "windows",
-    "template": "left_of"
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 26,
@@ -1353,9 +1361,9 @@
     "person"
    ],
    "query": {
-    "question": "What is to the left of the tiles?",
-    "answer": "person",
-    "template": "left_of"
+    "question": "What is to the right of the person that is to the right of the bear?",
+    "answer": "tiles",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 18,
@@ -1382,9 +1390,9 @@
     "liquor"
    ],
    "query": {
-    "question": "What is on the table?",
-    "answer": "bottle",
-    "template": "on"
+    "question": "How many bottles are above the container?",
+    "answer": 4,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 25,
@@ -1411,9 +1419,9 @@
     "boat"
    ],
    "query": {
-    "question": "What is to the left of the house?",
+    "question": "What is to the left of the green house?",
     "answer": "boat",
-    "template": "left_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 29,
@@ -1440,9 +1448,9 @@
     "window"
    ],
    "query": {
-    "question": "What is to the left of the jeans?",
-    "answer": "restaurant",
-    "template": "left_of"
+    "question": "What is between the black coat and the large window?",
+    "answer": "jeans",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 17,
@@ -1469,9 +1477,9 @@
     "ring"
    ],
    "query": {
-    "question": "What is to the left of the glass?",
-    "answer": "man",
-    "template": "left_of"
+    "question": "How many hands are above the jacket?",
+    "answer": 2,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 19,
@@ -1498,9 +1506,9 @@
     "bus"
    ],
    "query": {
-    "question": "What is to the left of the pavement?",
-    "answer": "bus",
-    "template": "left_of"
+    "question": "How many buses are above the black car?",
+    "answer": 2,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 19,
@@ -1527,9 +1535,9 @@
     "bridge"
    ],
    "query": {
-    "question": "What is on the bridge?",
-    "answer": "train",
-    "template": "on"
+    "question": "What is to the left of the support bridge?",
+    "answer": "pole",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 9,
@@ -1556,9 +1564,9 @@
     "hair"
    ],
    "query": {
-    "question": "What is to the left of the ladder?",
+    "question": "What is to the left of the ladder that is to the left of the hair?",
     "answer": "building",
-    "template": "left_of"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 26,
@@ -1585,9 +1593,9 @@
     "palm tree"
    ],
    "query": {
-    "question": "What is on the tower?",
+    "question": "What is on the tower that is to the left of the palm tree?",
     "answer": "clock",
-    "template": "on"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 6,
@@ -1614,9 +1622,9 @@
     "plate"
    ],
    "query": {
-    "question": "What is between the bread and the plate?",
-    "answer": "egg",
-    "template": "between"
+    "question": "What is to the left of the small napkin?",
+    "answer": "bread",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 8,
@@ -1643,9 +1651,9 @@
     "hair"
    ],
    "query": {
-    "question": "What is to the left of the glasses?",
-    "answer": "door",
-    "template": "left_of"
+    "question": "What is to the right of the tall giraffe?",
+    "answer": "hair",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 22,
@@ -1672,9 +1680,9 @@
     "bottle"
    ],
    "query": {
-    "question": "What is to the left of the counter?",
-    "answer": "shirt",
-    "template": "left_of"
+    "question": "What is between the ketchup bottle and the collared shirt?",
+    "answer": "ketchup",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 21,
@@ -1701,9 +1709,9 @@
     "eye"
    ],
    "query": {
-    "question": "What is to the left of the eye?",
-    "answer": "nose",
-    "template": "left_of"
+    "question": "How many eyes are above the face?",
+    "answer": 2,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 15,
@@ -1730,9 +1738,9 @@
     "man"
    ],
    "query": {
-    "question": "What is to the left of the man?",
+    "question": "What is to the right of the blue jacket?",
     "answer": "mountain",
-    "template": "left_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 25,
@@ -1759,9 +1767,9 @@
     "hand"
    ],
    "query": {
-    "question": "What is to the left of the glass?",
-    "answer": "hand",
-    "template": "left_of"
+    "question": "What is to the left of the brown door?",
+    "answer": "wine",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 20,
@@ -1788,9 +1796,9 @@
     "person"
    ],
    "query": {
-    "question": "What is to the left of the person?",
+    "question": "What is between the white bird and the person?",
     "answer": "cage",
-    "template": "left_of"
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 7,
@@ -1817,9 +1825,9 @@
     "water"
    ],
    "query": {
-    "question": "What is to the left of the box?",
+    "question": "What is to the left of the blue coat?",
     "answer": "water",
-    "template": "left_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 14,
@@ -1846,9 +1854,9 @@
     "hat"
    ],
    "query": {
-    "question": "What is to the left of the bus stop?",
+    "question": "What is to the left of the black bus stop?",
     "answer": "hat",
-    "template": "left_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 15,
@@ -1875,9 +1883,9 @@
     "propeller"
    ],
    "query": {
-    "question": "What is to the left of the field?",
-    "answer": "nose",
-    "template": "left_of"
+    "question": "How many clouds are above the barrier?",
+    "answer": 3,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 18,
@@ -1904,9 +1912,9 @@
     "vehicle"
    ],
    "query": {
-    "question": "What is to the right of the jacket?",
-    "answer": "vehicle",
-    "template": "right_of"
+    "question": "What is between the tan jacket and the people?",
+    "answer": "man",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 22,
@@ -1933,9 +1941,9 @@
     "trash"
    ],
    "query": {
-    "question": "What is on the parking lot?",
-    "answer": "trash",
-    "template": "on"
+    "question": "What is on the dark brown pole?",
+    "answer": "sign",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 21,
@@ -1962,9 +1970,9 @@
     "helmet"
    ],
    "query": {
-    "question": "What is on the head?",
-    "answer": "helmet",
-    "template": "on"
+    "question": "How many gates are above the boots?",
+    "answer": 5,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 34,
@@ -1991,9 +1999,9 @@
     "planter"
    ],
    "query": {
-    "question": "What is on the sidewalk?",
-    "answer": "tree",
-    "template": "on"
+    "question": "How many flags are above the black car?",
+    "answer": 2,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 22,
@@ -2020,9 +2028,9 @@
     "counter"
    ],
    "query": {
-    "question": "What is to the right of the coffee mug?",
-    "answer": "toothbrush",
-    "template": "right_of"
+    "question": "What is between the counter and the blue toothbrush?",
+    "answer": "coffee mug",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 14,
@@ -2049,9 +2057,9 @@
     "player"
    ],
    "query": {
-    "question": "What is to the left of the net?",
+    "question": "What is to the left of the white net?",
     "answer": "pole",
-    "template": "left_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 20,
@@ -2078,9 +2086,9 @@
     "woman"
    ],
    "query": {
-    "question": "What is to the left of the apron?",
-    "answer": "person",
-    "template": "left_of"
+    "question": "How many aprons are above the bowl?",
+    "answer": 1,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 24,
@@ -2107,9 +2115,9 @@
     "traffic sign"
    ],
    "query": {
-    "question": "What is on the road?",
-    "answer": "car",
-    "template": "on"
+    "question": "What is to the right of the traffic sign that is to the right of the cars?",
+    "answer": "sign",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 8,
@@ -2136,9 +2144,9 @@
     "living room"
    ],
    "query": {
-    "question": "What is to the right of the end table?",
+    "question": "What is to the right of the black end table?",
     "answer": "couch",
-    "template": "right_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 15,
@@ -2165,9 +2173,9 @@
     "trees"
    ],
    "query": {
-    "question": "What is to the left of the building?",
+    "question": "What is to the left of the brick building?",
     "answer": "train",
-    "template": "left_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 17,
@@ -2194,9 +2202,9 @@
     "man"
    ],
    "query": {
-    "question": "What is to the left of the ear?",
-    "answer": "hair",
-    "template": "left_of"
+    "question": "What is to the right of the black coat?",
+    "answer": "man",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 19,
@@ -2223,9 +2231,9 @@
     "flower"
    ],
    "query": {
-    "question": "What is to the left of the flowers?",
+    "question": "What is to the left of the white flowers?",
     "answer": "plant",
-    "template": "left_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 23,
@@ -2252,9 +2260,9 @@
     "tree"
    ],
    "query": {
-    "question": "What is to the left of the bush?",
-    "answer": "ground",
-    "template": "left_of"
+    "question": "What is to the left of the bright leaves?",
+    "answer": "bush",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 14,
@@ -2281,9 +2289,9 @@
     "frame"
    ],
    "query": {
-    "question": "What is between the chair and the frame?",
-    "answer": "rug",
-    "template": "between"
+    "question": "How many baskets are above the antique fireplace?",
+    "answer": 1,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 17,
@@ -2310,9 +2318,9 @@
     "sign"
    ],
    "query": {
-    "question": "What is between the person and the sign?",
-    "answer": "head",
-    "template": "between"
+    "question": "How many boots are below the blue sign?",
+    "answer": 1,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 15,
@@ -2339,9 +2347,9 @@
     "hair"
    ],
    "query": {
-    "question": "What is to the left of the cake?",
-    "answer": "gown",
-    "template": "left_of"
+    "question": "What is to the left of the man that is to the left of the gown?",
+    "answer": "hair",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 20,
@@ -2368,9 +2376,9 @@
     "people"
    ],
    "query": {
-    "question": "What is on the bus?",
-    "answer": "people",
-    "template": "on"
+    "question": "What is between the floating bus and the cables?",
+    "answer": "door",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 16,
@@ -2397,9 +2405,9 @@
     "horse"
    ],
    "query": {
-    "question": "What is to the right of the horse?",
-    "answer": "trash",
-    "template": "right_of"
+    "question": "How many ears are above the black fur?",
+    "answer": 2,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 39,
@@ -2426,9 +2434,9 @@
     "building"
    ],
    "query": {
-    "question": "What is to the right of the box?",
+    "question": "What is to the right of the white box?",
     "answer": "roof",
-    "template": "right_of"
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 33,
@@ -2455,9 +2463,9 @@
     "shirts"
    ],
    "query": {
-    "question": "What is on the platform?",
-    "answer": "bear",
-    "template": "on"
+    "question": "How many bears are above the coat?",
+    "answer": 10,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 40,
@@ -2484,9 +2492,9 @@
     "car"
    ],
    "query": {
-    "question": "What is to the left of the star?",
-    "answer": "car",
-    "template": "left_of"
+    "question": "What is between the car and the black number?",
+    "answer": "window",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 12,
@@ -2513,9 +2521,9 @@
     "chairs"
    ],
    "query": {
-    "question": "What is on the table?",
-    "answer": "pizza",
-    "template": "on"
+    "question": "How many hands are above the brown table?",
+    "answer": 2,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 20,
@@ -2542,9 +2550,9 @@
     "cake"
    ],
    "query": {
-    "question": "What is to the left of the knife?",
-    "answer": "plate",
-    "template": "left_of"
+    "question": "How many cakes are above the knife?",
+    "answer": 1,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 12,
@@ -2571,9 +2579,9 @@
     "eye"
    ],
    "query": {
-    "question": "What is to the left of the eyes?",
-    "answer": "eye",
-    "template": "left_of"
+    "question": "How many paws are below the eye?",
+    "answer": 3,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 13,
@@ -2600,9 +2608,9 @@
     "man"
    ],
    "query": {
-    "question": "What is on the shelf?",
-    "answer": "box",
-    "template": "on"
+    "question": "What is between the arm and the cardboard boxes?",
+    "answer": "man",
+    "template": "between_attr"
    },
    "counts": {
     "full_objects": 23,
@@ -2629,9 +2637,9 @@
     "mountain"
    ],
    "query": {
-    "question": "What is to the left of the ship?",
-    "answer": "mountain",
-    "template": "left_of"
+    "question": "How many cabins are below the mountain?",
+    "answer": 1,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 10,
@@ -2658,9 +2666,9 @@
     "bushes"
    ],
    "query": {
-    "question": "What is on the grass?",
-    "answer": "sheep",
-    "template": "on"
+    "question": "What is to the right of the wood fence?",
+    "answer": "bushes",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 11,
@@ -2687,9 +2695,9 @@
     "hand"
    ],
    "query": {
-    "question": "What is between the sandwich and the hand?",
-    "answer": "meat",
-    "template": "between"
+    "question": "What is to the left of the meat that is with the sandwich?",
+    "answer": "hand",
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 16,
@@ -2716,9 +2724,9 @@
     "windows"
    ],
    "query": {
-    "question": "What is to the left of the door?",
-    "answer": "windows",
-    "template": "left_of"
+    "question": "How many doors are above the label?",
+    "answer": 1,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 22,
@@ -2745,9 +2753,9 @@
     "table"
    ],
    "query": {
-    "question": "What is to the left of the chair?",
-    "answer": "teddy bear",
-    "template": "left_of"
+    "question": "How many tables are above the chair?",
+    "answer": 1,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 19,
@@ -2774,9 +2782,9 @@
     "building"
    ],
    "query": {
-    "question": "What is to the left of the tree?",
-    "answer": "building",
-    "template": "left_of"
+    "question": "What is to the right of the green branches?",
+    "answer": "bricks",
+    "template": "attr_relation"
    },
    "counts": {
     "full_objects": 13,
@@ -2803,9 +2811,9 @@
     "pants"
    ],
    "query": {
-    "question": "What is on the snow?",
+    "question": "What is to the left of the man that is to the left of the pants?",
     "answer": "person",
-    "template": "on"
+    "template": "two_hop"
    },
    "counts": {
     "full_objects": 10,
@@ -2832,9 +2840,9 @@
     "boy"
    ],
    "query": {
-    "question": "What is to the right of the tiles?",
-    "answer": "stone",
-    "template": "right_of"
+    "question": "How many boys are above the green shirt?",
+    "answer": 3,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 21,
@@ -2861,9 +2869,9 @@
     "log"
    ],
    "query": {
-    "question": "What is to the left of the floor?",
-    "answer": "zebra",
-    "template": "left_of"
+    "question": "How many logs are above the grass?",
+    "answer": 2,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 14,
@@ -2890,9 +2898,9 @@
     "guy"
    ],
    "query": {
-    "question": "What is on the skateboard?",
-    "answer": "guy",
-    "template": "on"
+    "question": "How many tires are above the skateboard?",
+    "answer": 2,
+    "template": "counting"
    },
    "counts": {
     "full_objects": 11,

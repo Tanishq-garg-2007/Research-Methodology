@@ -8,14 +8,20 @@
   "log"
  ],
  "query": {
-  "question": "What is to the left of the floor?",
-  "answer": "zebra",
-  "template": "left_of",
+  "question": "How many logs are above the grass?",
+  "answer": 2,
+  "template": "counting",
   "derivation": {
-   "relation": "to the left of",
-   "object": "floor"
+   "counted_label": "log",
+   "relation": "above",
+   "anchor": "grass",
+   "anchor_attributes": [],
+   "counted_total_instances": 4,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

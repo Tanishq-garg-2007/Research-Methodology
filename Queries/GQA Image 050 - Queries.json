@@ -8,14 +8,21 @@
   "window"
  ],
  "query": {
-  "question": "What is to the left of the jeans?",
-  "answer": "restaurant",
-  "template": "left_of",
+  "question": "What is between the black coat and the large window?",
+  "answer": "jeans",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "jeans"
+   "anchor_a": "coat",
+   "anchor_a_attributes": [
+    "black"
+   ],
+   "anchor_b": "window",
+   "anchor_b_attributes": [
+    "large"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
-  "unambiguous": true
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

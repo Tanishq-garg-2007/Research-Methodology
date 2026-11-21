@@ -2,29 +2,51 @@
 
 Reads benchmark.json + the per-image files under Images/, Large Scene Graph/,
 Small Scene Graph/, Queries/ and re-derives EVERYTHING from scratch.
-It does NOT import the builder: derivation logic is re-implemented here, so a
-bug in the generator cannot hide behind shared code. The tight subgraph is
-recomputed independently from the large graph + anchors.
+It does NOT import the builder or the v2 generator: derivation logic is
+re-implemented here, so a bug in the generator cannot hide behind shared
+code. The tight subgraph is recomputed independently from the large graph +
+anchors.
+
+v2 (2026-11-21): the queries were rebuilt with harder templates
+(two_hop, between_attr, counting, attr_relation) from the FROZEN small
+graphs. Gate changes vs v1 (justified in VALIDATION.md):
+  (b) stored core_nodes still describes the v1 build's core (the small-graph
+      files are frozen, so it cannot equal the v2 query's core). The gate now
+      checks: every compact edge touches a STORED core node; stored
+      core_nodes are a subset of the compact labels; and the v2 query's
+      named labels (+ answer label, except counting's integer answer) are
+      all compact labels -- i.e. the query is answerable from the stored
+      graph.
+  (e) extended to the four v2 templates. Counting answers are integers
+      re-derived from the LARGE graph (not the compact graph); the "answer
+      is a compact label" check is skipped for counting.
+  (f) two_hop requires BOTH hop edges present in the compact graph;
+      between_attr/counting have no key edge (geometry/count, re-derived
+      in gate e), as between did in v1.
+  (i) extended to between_attr: the attribute-qualified anchor must select
+      exactly one instance in the large graph, the other anchor must be
+      single-instance or likewise attribute-pinned, the answer must be
+      single-instance, and the centre-x rule is recomputed from the compact
+      object boxes and yields exactly the stated answer (the v1 between
+      rule).
 
 Gates (per item unless noted):
   (a) every compact edge comes from the tight subgraph (recomputed from the
       large graph: relations touching an anchor)
-  (b) every compact edge touches a core node (anchors + query-named objects +
-      answer), and the stored core_nodes equal that set
+  (b) see v2 note above
   (c) no duplicate (subject, relation, object) triples in the compact graph
   (d) compact node count (distinct labels) is 4-8, target 5-7; the stored
       nodes list matches the object labels
-  (e) the single query's answer re-derived from the compact subgraph, exactly
-      one answer
-  (f) the query's key edge is present in the compact graph (or the
-      between-geometry holds on the compact objects)
+  (e) the single query's answer re-derived from the compact graph (counting:
+      from the large graph), exactly one answer
+  (f) the query's key edge(s) present in the compact graph (or the
+      between-geometry holds / the count is re-derived)
   (g) image file exists, is a JPEG (magic FF D8), size > 5 KB
   (h) anchors are labels in the large graph; every compact relation triple
       exists in the large graph; every compact object (label+box) exists in
       the large graph
-  (i) between-queries: both anchor labels AND the answer label have exactly
-      one instance in the large graph; the centre-x rule is recomputed from
-      the compact object boxes and yields exactly the stated answer
+  (i) between-queries: anchors + answer single-instance (or attribute-
+      pinned); the centre-x rule recomputed and yields exactly the answer
   (j) every compact object label is a core node or appears in a compact relation
   (k) benchmark-level: exactly 100 items, unique image_numbers and gqa_image_ids
   (m) mapping consistency: image_number, gqa_image_id and filepath agree across
@@ -43,7 +65,14 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BENCH = os.path.join(HERE, "benchmark.json")
-KNOWN_TEMPLATES = {"between", "on", "left_of", "right_of", "with"}
+KNOWN_TEMPLATES = {"between", "on", "left_of", "right_of", "with",
+                   "two_hop", "between_attr", "counting", "attr_relation"}
+
+IRREGULAR_PLURALS = {
+    "man": "men", "woman": "women", "child": "children",
+    "person": "people", "foot": "feet", "tooth": "teeth",
+    "mouse": "mice", "goose": "geese",
+}
 
 
 def box_center(b):
@@ -51,27 +80,86 @@ def box_center(b):
     return (x + w / 2.0, y + h / 2.0)
 
 
-def query_named_labels(query):
-    d = query.get("derivation") or {}
-    if query.get("template") in ("left_of", "right_of", "on"):
-        return [d.get("object")]
-    if query.get("template") == "with":
-        return [d.get("subject")]
-    return [d.get("anchor_a"), d.get("anchor_b")]
+def pluralize(noun):
+    """Shared rendering rule (duplicated from generate_queries_v2.py, which
+    this validator does not import). GQA labels ending in 's' are usually
+    ALREADY plural (chairs, decorations, glasses, clothes), so they are
+    returned unchanged -- except 'ss'/'us' endings, which are singular
+    (glass -> glasses, bus -> buses)."""
+    if noun in IRREGULAR_PLURALS:
+        return IRREGULAR_PLURALS[noun]
+    if noun.endswith("ss") or noun.endswith("us"):
+        return noun + "es"
+    if noun.endswith("s"):
+        return noun
+    if noun.endswith(("x", "z", "ch", "sh")):
+        return noun + "es"
+    if noun.endswith("o"):
+        return noun + "es"
+    if len(noun) > 1 and noun.endswith("y") and noun[-2] not in "aeiou":
+        return noun[:-1] + "ies"
+    return noun + "s"
 
 
-def key_edge(query):
-    d = query.get("derivation") or {}
-    if query.get("template") in ("left_of", "right_of", "on"):
-        return (query.get("answer"), d.get("relation"), d.get("object"))
-    if query.get("template") == "with":
-        return (d.get("subject"), d.get("relation"), query.get("answer"))
+def attr_phrase(label, attrs):
+    if attrs:
+        return ", ".join(attrs) + " " + label
+    return label
+
+
+def find_pinned_instance(label, attrs, full_objs):
+    """The unique large-graph instance of `label` carrying all of `attrs`
+    (attrs empty => the label must be single-instance). None otherwise."""
+    cands = [o for o in full_objs if o["label"] == label
+             and set(attrs) <= set(o.get("attributes") or [])]
+    if len(cands) == 1:
+        return cands[0]
     return None
 
 
+def query_named_labels(query):
+    d = query.get("derivation") or {}
+    t = query.get("template")
+    if t == "two_hop":
+        return [d.get("intermediate"), d.get("hop1_subject")]
+    if t == "between_attr":
+        return [d.get("anchor_a"), d.get("anchor_b")]
+    if t == "counting":
+        return [d.get("counted_label"), d.get("anchor")]
+    if t == "attr_relation":
+        if d.get("relation") == "with":
+            return [d.get("subject")]
+        return [d.get("object")]
+    if t in ("left_of", "right_of", "on"):
+        return [d.get("object")]
+    if t == "with":
+        return [d.get("subject")]
+    return [d.get("anchor_a"), d.get("anchor_b")]  # between
+
+
+def key_edges(query):
+    """(subject, relation, object) triples that must be present in the
+    compact graph. Empty for geometry/count templates."""
+    d = query.get("derivation") or {}
+    t = query.get("template")
+    if t == "two_hop":
+        return [(d.get("hop1_subject"), d.get("hop1_relation"), d.get("intermediate")),
+                (query.get("answer"), d.get("hop2_relation"), d.get("intermediate"))]
+    if t == "attr_relation":
+        if d.get("relation") == "with":
+            return [(d.get("subject"), "with", query.get("answer"))]
+        return [(query.get("answer"), d.get("relation"), d.get("object"))]
+    if t in ("left_of", "right_of", "on"):
+        return [(query.get("answer"), d.get("relation"), d.get("object"))]
+    if t == "with":
+        return [(d.get("subject"), d.get("relation"), query.get("answer"))]
+    return []
+
+
 def rederive(query, comp_objs, comp_rels, full_objs, anchors):
-    """Re-derive the answer set for the single query from the compact graph.
-    Returns (answers_set, expected_question, error_or_None)."""
+    """Re-derive the answer for the single query.
+    Returns (answers, expected_question, error_or_None). answers is a set
+    of labels, except for counting where it is an int."""
     t = query.get("template")
     d = query.get("derivation") or {}
     if t in ("left_of", "right_of", "on"):
@@ -112,6 +200,94 @@ def rederive(query, comp_objs, comp_rels, full_objs, anchors):
                and counts.get(o["label"], 0) == 1
                and lo < box_center(o["bounding_box"])[0] < hi}
         return ans, f"What is between the {a} and the {b}?", None
+    if t == "two_hop":
+        s1, rel1 = d.get("hop1_subject"), d.get("hop1_relation")
+        b, rel2 = d.get("intermediate"), d.get("hop2_relation")
+        if not s1 or not b or rel1 not in ("on", "to the left of",
+                                           "to the right of", "with") or \
+                rel2 not in ("to the left of", "to the right of", "on"):
+            return set(), None, "bad two_hop derivation"
+        hop1 = (s1, rel1, b)
+        if not any((r["subject"], r["relation"], r["object"]) == hop1
+                   for r in comp_rels):
+            return set(), None, f"hop-1 edge {hop1} not in compact graph"
+        ans = {r["subject"] for r in comp_rels
+               if r["relation"] == rel2 and r["object"] == b}
+        if rel1 == "on":
+            mid = f"the {b} that the {s1} is on"
+        elif rel1 == "to the left of":
+            mid = f"the {b} that is to the right of the {s1}"
+        elif rel1 == "to the right of":
+            mid = f"the {b} that is to the left of the {s1}"
+        else:
+            mid = f"the {b} that is with the {s1}"
+        return ans, f"What is {rel2} {mid}?", None
+    if t == "attr_relation":
+        rel = d.get("relation")
+        if rel not in ("to the left of", "to the right of", "on", "with"):
+            return set(), None, "bad attr_relation derivation"
+        if rel == "with":
+            anchor = d.get("subject")
+            if not anchor:
+                return set(), None, "bad attr_relation derivation"
+            ans = {r["object"] for r in comp_rels
+                   if r["relation"] == "with" and r["subject"] == anchor}
+            q = f"What is the {attr_phrase(anchor, d.get('anchor_attributes') or [])} with?"
+        else:
+            anchor = d.get("object")
+            if not anchor:
+                return set(), None, "bad attr_relation derivation"
+            ans = {r["subject"] for r in comp_rels
+                   if r["relation"] == rel and r["object"] == anchor}
+            q = f"What is {rel} the {attr_phrase(anchor, d.get('anchor_attributes') or [])}?"
+        return ans, q, None
+    if t == "between_attr":
+        a, b = d.get("anchor_a"), d.get("anchor_b")
+        if not a or not b:
+            return set(), None, "bad between_attr derivation"
+        a_inst = find_pinned_instance(a, d.get("anchor_a_attributes") or [], full_objs)
+        b_inst = find_pinned_instance(b, d.get("anchor_b_attributes") or [], full_objs)
+        if a_inst is None or b_inst is None:
+            return set(), None, "between_attr anchor not uniquely pinnable"
+        ax, _ = box_center(a_inst["bounding_box"])
+        bx, _ = box_center(b_inst["bounding_box"])
+        lo, hi = min(ax, bx), max(ax, bx)
+        if hi <= lo:
+            return set(), None, "between_attr anchors share centre-x"
+        ans = {o["label"] for o in comp_objs
+               if o["label"] not in (a, b)
+               and lo < box_center(o["bounding_box"])[0] < hi}
+        q = (f"What is between the "
+             f"{attr_phrase(a, d.get('anchor_a_attributes') or [])} and the "
+             f"{attr_phrase(b, d.get('anchor_b_attributes') or [])}?")
+        return ans, q, None
+    if t == "counting":
+        lab, rel = d.get("counted_label"), d.get("relation")
+        anchor_label = d.get("anchor")
+        if not lab or rel not in ("to the left of", "to the right of",
+                                  "above", "below") or not anchor_label:
+            return -1, None, "bad counting derivation"
+        anchor = find_pinned_instance(anchor_label,
+                                      d.get("anchor_attributes") or [], full_objs)
+        if anchor is None:
+            return -1, None, "counting anchor not uniquely pinnable"
+        ax, ay = box_center(anchor["bounding_box"])
+        n = 0
+        for o in full_objs:
+            if o["label"] != lab:
+                continue
+            cx, cy = box_center(o["bounding_box"])
+            if rel == "to the left of" and cx < ax:
+                n += 1
+            elif rel == "to the right of" and cx > ax:
+                n += 1
+            elif rel == "above" and cy < ay:
+                n += 1
+            elif rel == "below" and cy > ay:
+                n += 1
+        q = (f"How many {pluralize(lab)} are {rel} the "
+             f"{attr_phrase(anchor_label, d.get('anchor_attributes') or [])}?")
+        return n, q, None
     return set(), None, f"unknown template {t!r}"
 
 
@@ -239,18 +415,32 @@ def main():
         else:
             per_gate_ok["a"] += 1
 
-        # (b) core nodes correct + every compact edge touches a core node
+        # (b) v2: stored core_nodes are a property of the frozen graph file.
+        # (i) every compact edge touches a STORED core node;
+        # (ii) stored core_nodes are a subset of the compact labels;
+        # (iii) the v2 query's named labels (+ answer label, except
+        # counting's integer answer) are all compact labels. For counting
+        # only the anchor must be a compact label (the counted label is a
+        # whole-image count).
         per_gate_n["b"] += 1
         named = query_named_labels(query)
-        expected_core = set(anchors) | set(named) | {query.get("answer")}
+        stored_core = set(small.get("core_nodes") or [])
+        if query.get("template") == "counting":
+            required = {query.get("derivation", {}).get("anchor")}
+        else:
+            required = set(named) | {query.get("answer")}
         b_err = []
-        if set(small.get("core_nodes") or []) != expected_core:
-            b_err.append(f"stored core_nodes {sorted(small.get('core_nodes') or [])} "
-                         f"!= expected {sorted(expected_core)}")
+        if not stored_core <= comp_labels:
+            b_err.append(f"stored core_nodes {sorted(stored_core)} not subset "
+                         f"of compact labels {sorted(comp_labels)}")
         untouched = [r for r in comp_rels
-                     if r["subject"] not in expected_core and r["object"] not in expected_core]
+                     if r["subject"] not in stored_core and r["object"] not in stored_core]
         if untouched:
-            b_err.append(f"{len(untouched)} compact edges touch no core node, e.g. {untouched[0]}")
+            b_err.append(f"{len(untouched)} compact edges touch no stored core node, "
+                         f"e.g. {untouched[0]}")
+        if not required <= comp_labels:
+            b_err.append(f"query labels {sorted(x for x in required if x)} not all "
+                         f"compact labels {sorted(comp_labels)}")
         if b_err:
             fail(label, "b", "; ".join(b_err))
         else:
@@ -276,7 +466,7 @@ def main():
         # (j) every compact object label is a core node or in a compact relation
         per_gate_n["j"] += 1
         rel_labels = {r["subject"] for r in comp_rels} | {r["object"] for r in comp_rels}
-        orphan = [l for l in comp_labels if l not in expected_core and l not in rel_labels]
+        orphan = [l for l in comp_labels if l not in stored_core and l not in rel_labels]
         if orphan:
             fail(label, "j", f"compact object labels with no relation and not core: {orphan}")
         else:
@@ -309,7 +499,7 @@ def main():
         else:
             per_gate_ok["g"] += 1
 
-        # (e/f/i) the single query: re-derive, key edge, between geometry
+        # (e/f/i) the single query: re-derive, key edge(s), between geometry
         per_gate_n["e"] += 1  # second count: the query itself
         per_gate_n["f"] += 1
         if query.get("template") not in KNOWN_TEMPLATES:
@@ -320,6 +510,17 @@ def main():
                 fail(label, "e", f"Q {query.get('question')!r}: {err}")
             elif query.get("question") != expected_q:
                 fail(label, "e", f"question {query.get('question')!r} != template rendering {expected_q!r}")
+            elif query.get("template") == "counting":
+                if not isinstance(query.get("answer"), int) or isinstance(query.get("answer"), bool):
+                    fail(label, "e", f"counting answer {query.get('answer')!r} is not an integer")
+                elif ans != query.get("answer"):
+                    fail(label, "e", f"Q {query.get('question')!r}: re-derived count "
+                                     f"{ans} != stated answer {query.get('answer')!r}")
+                elif ans < 1:
+                    fail(label, "e", f"Q {query.get('question')!r}: count {ans} < 1")
+                else:
+                    per_gate_ok["e"] += 1
+                    per_gate_ok["f"] += 1  # counting: no key edge; count re-derived above
             elif ans != {query.get("answer")}:
                 fail(label, "e", f"Q {query.get('question')!r}: re-derived answers {sorted(ans)} "
                                  f"!= stated answer {query.get('answer')!r}")
@@ -330,13 +531,35 @@ def main():
                 if query.get("template") == "between":
                     per_gate_n["i"] += 1
                     per_gate_ok["i"] += 1
-                ke = key_edge(query)
-                if ke is None:
-                    per_gate_ok["f"] += 1  # between: geometry already re-derived above
-                elif any((r["subject"], r["relation"], r["object"]) == ke for r in comp_rels):
+                elif query.get("template") == "between_attr":
+                    per_gate_n["i"] += 1
+                    d = query.get("derivation") or {}
+                    counts = {}
+                    for o in full_objs:
+                        counts[o["label"]] = counts.get(o["label"], 0) + 1
+                    a_ok = find_pinned_instance(d.get("anchor_a"),
+                                                d.get("anchor_a_attributes") or [],
+                                                full_objs) is not None
+                    b_ok = find_pinned_instance(d.get("anchor_b"),
+                                                d.get("anchor_b_attributes") or [],
+                                                full_objs) is not None
+                    if not a_ok or not b_ok:
+                        fail(label, "i", "between_attr anchor not uniquely pinnable")
+                    elif counts.get(query.get("answer"), 0) != 1:
+                        fail(label, "i", "between_attr answer not single-instance")
+                    else:
+                        per_gate_ok["i"] += 1
+                kes = key_edges(query)
+                if not kes:
+                    per_gate_ok["f"] += 1  # geometry/count template: re-derived above
+                elif all(any((r["subject"], r["relation"], r["object"]) == ke
+                             for r in comp_rels) for ke in kes):
                     per_gate_ok["f"] += 1
                 else:
-                    fail(label, "f", f"key edge {ke} not in compact graph")
+                    missing = [ke for ke in kes
+                               if not any((r["subject"], r["relation"], r["object"]) == ke
+                                          for r in comp_rels)]
+                    fail(label, "f", f"key edge(s) {missing} not in compact graph")
 
         # duplicate (image_number, question) pairs
         key = (num, query.get("question"))

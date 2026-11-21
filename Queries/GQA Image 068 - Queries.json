@@ -8,14 +8,20 @@
   "helmet"
  ],
  "query": {
-  "question": "What is on the head?",
-  "answer": "helmet",
-  "template": "on",
+  "question": "How many gates are above the boots?",
+  "answer": 5,
+  "template": "counting",
   "derivation": {
-   "relation": "on",
-   "object": "head"
+   "counted_label": "gate",
+   "relation": "above",
+   "anchor": "boots",
+   "anchor_attributes": [],
+   "counted_total_instances": 5,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

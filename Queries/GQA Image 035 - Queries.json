@@ -8,12 +8,17 @@
   "airplane"
  ],
  "query": {
-  "question": "What is to the left of the nose?",
-  "answer": "wing",
-  "template": "left_of",
+  "question": "What is between the nose and the white wing?",
+  "answer": "airplane",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "nose"
+   "anchor_a": "nose",
+   "anchor_a_attributes": [],
+   "anchor_b": "wing",
+   "anchor_b_attributes": [
+    "white"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

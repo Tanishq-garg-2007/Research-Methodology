@@ -8,14 +8,22 @@
   "hand"
  ],
  "query": {
-  "question": "What is to the left of the food?",
-  "answer": "hand",
-  "template": "left_of",
+  "question": "How many arms are above the blue jeans?",
+  "answer": 2,
+  "template": "counting",
   "derivation": {
-   "relation": "to the left of",
-   "object": "food"
+   "counted_label": "arm",
+   "relation": "above",
+   "anchor": "jeans",
+   "anchor_attributes": [
+    "blue"
+   ],
+   "counted_total_instances": 2,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

@@ -8,12 +8,16 @@
   "pillow"
  ],
  "query": {
-  "question": "What is on the bed?",
-  "answer": "pillow",
-  "template": "on",
+  "question": "What is to the left of the black dog?",
+  "answer": "ear",
+  "template": "attr_relation",
   "derivation": {
-   "relation": "on",
-   "object": "bed"
+   "relation": "to the left of",
+   "object": "dog",
+   "anchor_attributes": [
+    "black"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
   "unambiguous": false
  },

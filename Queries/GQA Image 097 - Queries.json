@@ -8,12 +8,15 @@
   "pants"
  ],
  "query": {
-  "question": "What is on the snow?",
+  "question": "What is to the left of the man that is to the left of the pants?",
   "answer": "person",
-  "template": "on",
+  "template": "two_hop",
   "derivation": {
-   "relation": "on",
-   "object": "snow"
+   "hop1_subject": "pants",
+   "hop1_relation": "to the right of",
+   "intermediate": "man",
+   "hop2_relation": "to the left of",
+   "rule": "intermediate pinned by hop 1 (the clause is true of it and one intermediate instance satisfies both hops geometrically); answer is the unique subject of hop 2 on the intermediate in the tight subgraph"
   },
   "unambiguous": false
  },

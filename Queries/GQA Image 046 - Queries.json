@@ -8,12 +8,17 @@
   "windows"
  ],
  "query": {
-  "question": "What is to the left of the chandelier?",
+  "question": "What is between the arms and the white flowers?",
   "answer": "windows",
-  "template": "left_of",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "chandelier"
+   "anchor_a": "arms",
+   "anchor_a_attributes": [],
+   "anchor_b": "flowers",
+   "anchor_b_attributes": [
+    "white"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

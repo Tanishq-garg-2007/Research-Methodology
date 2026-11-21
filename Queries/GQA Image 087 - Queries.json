@@ -8,14 +8,22 @@
   "chairs"
  ],
  "query": {
-  "question": "What is on the table?",
-  "answer": "pizza",
-  "template": "on",
+  "question": "How many hands are above the brown table?",
+  "answer": 2,
+  "template": "counting",
   "derivation": {
-   "relation": "on",
-   "object": "table"
+   "counted_label": "hand",
+   "relation": "above",
+   "anchor": "table",
+   "anchor_attributes": [
+    "brown"
+   ],
+   "counted_total_instances": 2,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": true
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

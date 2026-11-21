@@ -8,12 +8,19 @@
   "rope"
  ],
  "query": {
-  "question": "What is to the left of the boat?",
+  "question": "What is between the black nose and the brown rope?",
   "answer": "animal",
-  "template": "left_of",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "boat"
+   "anchor_a": "nose",
+   "anchor_a_attributes": [
+    "black"
+   ],
+   "anchor_b": "rope",
+   "anchor_b_attributes": [
+    "brown"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

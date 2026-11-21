@@ -8,12 +8,16 @@
   "door"
  ],
  "query": {
-  "question": "What is to the left of the sink?",
+  "question": "What is to the left of the white sink?",
   "answer": "chair",
-  "template": "left_of",
+  "template": "attr_relation",
   "derivation": {
    "relation": "to the left of",
-   "object": "sink"
+   "object": "sink",
+   "anchor_attributes": [
+    "white"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
   "unambiguous": true
  },

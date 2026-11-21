@@ -8,15 +8,22 @@
   "sign"
  ],
  "query": {
-  "question": "What is between the person and the sign?",
-  "answer": "head",
-  "template": "between",
+  "question": "How many boots are below the blue sign?",
+  "answer": 1,
+  "template": "counting",
   "derivation": {
-   "anchor_a": "person",
-   "anchor_b": "sign",
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+   "counted_label": "boot",
+   "relation": "below",
+   "anchor": "sign",
+   "anchor_attributes": [
+    "blue"
+   ],
+   "counted_total_instances": 1,
+   "singleton_count": true,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": true
+  "unambiguous": true,
+  "singleton": true
  },
  "counts": {
   "queries": 1

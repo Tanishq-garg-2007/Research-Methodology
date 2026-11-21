@@ -8,12 +8,17 @@
   "counter"
  ],
  "query": {
-  "question": "What is to the right of the coffee mug?",
-  "answer": "toothbrush",
-  "template": "right_of",
+  "question": "What is between the counter and the blue toothbrush?",
+  "answer": "coffee mug",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the right of",
-   "object": "coffee mug"
+   "anchor_a": "counter",
+   "anchor_a_attributes": [],
+   "anchor_b": "toothbrush",
+   "anchor_b_attributes": [
+    "blue"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": false
  },

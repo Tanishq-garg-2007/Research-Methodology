@@ -8,14 +8,18 @@
   "man"
  ],
  "query": {
-  "question": "What is to the left of the ear?",
-  "answer": "hair",
-  "template": "left_of",
+  "question": "What is to the right of the black coat?",
+  "answer": "man",
+  "template": "attr_relation",
   "derivation": {
-   "relation": "to the left of",
-   "object": "ear"
+   "relation": "to the right of",
+   "object": "coat",
+   "anchor_attributes": [
+    "black"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
-  "unambiguous": false
+  "unambiguous": true
  },
  "counts": {
   "queries": 1

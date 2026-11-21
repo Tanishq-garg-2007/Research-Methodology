@@ -8,14 +8,19 @@
   "door"
  ],
  "query": {
-  "question": "What is to the left of the drain?",
-  "answer": "door",
-  "template": "left_of",
+  "question": "What is between the metal faucet and the glass?",
+  "answer": "drain",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "drain"
+   "anchor_a": "faucet",
+   "anchor_a_attributes": [
+    "metal"
+   ],
+   "anchor_b": "glass",
+   "anchor_b_attributes": [],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
-  "unambiguous": true
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

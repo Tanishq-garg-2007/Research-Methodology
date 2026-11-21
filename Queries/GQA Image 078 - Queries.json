@@ -8,12 +8,16 @@
   "tree"
  ],
  "query": {
-  "question": "What is to the left of the bush?",
-  "answer": "ground",
-  "template": "left_of",
+  "question": "What is to the left of the bright leaves?",
+  "answer": "bush",
+  "template": "attr_relation",
   "derivation": {
    "relation": "to the left of",
-   "object": "bush"
+   "object": "leaves",
+   "anchor_attributes": [
+    "bright"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
   "unambiguous": true
  },

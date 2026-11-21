@@ -8,14 +8,20 @@
   "head"
  ],
  "query": {
-  "question": "What is to the right of the legs?",
-  "answer": "zebra",
-  "template": "right_of",
+  "question": "How many heads are above the eye?",
+  "answer": 1,
+  "template": "counting",
   "derivation": {
-   "relation": "to the right of",
-   "object": "legs"
+   "counted_label": "head",
+   "relation": "above",
+   "anchor": "eye",
+   "anchor_attributes": [],
+   "counted_total_instances": 2,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

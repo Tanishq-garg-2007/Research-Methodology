@@ -8,14 +8,22 @@
   "planter"
  ],
  "query": {
-  "question": "What is on the sidewalk?",
-  "answer": "tree",
-  "template": "on",
+  "question": "How many flags are above the black car?",
+  "answer": 2,
+  "template": "counting",
   "derivation": {
-   "relation": "on",
-   "object": "sidewalk"
+   "counted_label": "flag",
+   "relation": "above",
+   "anchor": "car",
+   "anchor_attributes": [
+    "black"
+   ],
+   "counted_total_instances": 2,
+   "singleton_count": false,
+   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
   },
-  "unambiguous": false
+  "unambiguous": false,
+  "singleton": false
  },
  "counts": {
   "queries": 1

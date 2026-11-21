@@ -8,13 +8,15 @@
   "hand"
  ],
  "query": {
-  "question": "What is between the sandwich and the hand?",
-  "answer": "meat",
-  "template": "between",
+  "question": "What is to the left of the meat that is with the sandwich?",
+  "answer": "hand",
+  "template": "two_hop",
   "derivation": {
-   "anchor_a": "sandwich",
-   "anchor_b": "hand",
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+   "hop1_subject": "sandwich",
+   "hop1_relation": "with",
+   "intermediate": "meat",
+   "hop2_relation": "to the left of",
+   "rule": "intermediate pinned by hop 1 (the clause is true of it and one intermediate instance satisfies both hops geometrically); answer is the unique subject of hop 2 on the intermediate in the tight subgraph"
   },
   "unambiguous": true
  },

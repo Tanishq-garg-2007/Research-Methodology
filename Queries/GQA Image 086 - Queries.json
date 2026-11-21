@@ -8,12 +8,17 @@
   "car"
  ],
  "query": {
-  "question": "What is to the left of the star?",
-  "answer": "car",
-  "template": "left_of",
+  "question": "What is between the car and the black number?",
+  "answer": "window",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "star"
+   "anchor_a": "car",
+   "anchor_a_attributes": [],
+   "anchor_b": "number",
+   "anchor_b_attributes": [
+    "black"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

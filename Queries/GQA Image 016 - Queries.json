@@ -8,12 +8,15 @@
   "mirror"
  ],
  "query": {
-  "question": "What is on the pole?",
+  "question": "What is on the pole that is to the left of the building?",
   "answer": "sign",
-  "template": "on",
+  "template": "two_hop",
   "derivation": {
-   "relation": "on",
-   "object": "pole"
+   "hop1_subject": "building",
+   "hop1_relation": "to the right of",
+   "intermediate": "pole",
+   "hop2_relation": "on",
+   "rule": "intermediate pinned by hop 1 (the clause is true of it and one intermediate instance satisfies both hops geometrically); answer is the unique subject of hop 2 on the intermediate in the tight subgraph"
   },
   "unambiguous": false
  },

@@ -8,14 +8,19 @@
   "person"
  ],
  "query": {
-  "question": "What is to the left of the person?",
+  "question": "What is between the white bird and the person?",
   "answer": "cage",
-  "template": "left_of",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "person"
+   "anchor_a": "bird",
+   "anchor_a_attributes": [
+    "white"
+   ],
+   "anchor_b": "person",
+   "anchor_b_attributes": [],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
-  "unambiguous": true
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

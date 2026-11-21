@@ -8,12 +8,16 @@
   "boat"
  ],
  "query": {
-  "question": "What is to the left of the house?",
+  "question": "What is to the left of the green house?",
   "answer": "boat",
-  "template": "left_of",
+  "template": "attr_relation",
   "derivation": {
    "relation": "to the left of",
-   "object": "house"
+   "object": "house",
+   "anchor_attributes": [
+    "green"
+   ],
+   "rule": "anchor identified by label+attributes (exactly one instance in the large graph carries them); answer is the unique subject/object of the relation on the anchor in the tight subgraph"
   },
   "unambiguous": false
  },

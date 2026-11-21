@@ -8,12 +8,17 @@
   "hand"
  ],
  "query": {
-  "question": "What is to the left of the frisbee?",
-  "answer": "hand",
-  "template": "left_of",
+  "question": "What is between the frisbee and the white shirt?",
+  "answer": "man",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the left of",
-   "object": "frisbee"
+   "anchor_a": "frisbee",
+   "anchor_a_attributes": [],
+   "anchor_b": "shirt",
+   "anchor_b_attributes": [
+    "white"
+   ],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },

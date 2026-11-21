@@ -8,12 +8,17 @@
   "toilet"
  ],
  "query": {
-  "question": "What is to the right of the lid?",
-  "answer": "counter",
-  "template": "right_of",
+  "question": "What is between the blue comb and the lid?",
+  "answer": "toilet",
+  "template": "between_attr",
   "derivation": {
-   "relation": "to the right of",
-   "object": "lid"
+   "anchor_a": "comb",
+   "anchor_a_attributes": [
+    "blue"
+   ],
+   "anchor_b": "lid",
+   "anchor_b_attributes": [],
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
   },
   "unambiguous": true
  },
