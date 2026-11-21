@@ -1,0 +1,23 @@
+{
+ "image_number": 16,
+ "gqa_image_id": "2360483",
+ "filepath": "data/data_0/2360483.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "pole",
+  "mirror"
+ ],
+ "query": {
+  "question": "What is on the pole?",
+  "answer": "sign",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "pole"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

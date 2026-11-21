@@ -1,0 +1,23 @@
+{
+ "image_number": 32,
+ "gqa_image_id": "2343740",
+ "filepath": "data/data_0/2343740.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "boy",
+  "crane"
+ ],
+ "query": {
+  "question": "What is to the left of the boy?",
+  "answer": "fence",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "boy"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

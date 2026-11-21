@@ -1,0 +1,189 @@
+{
+ "image_number": 97,
+ "gqa_image_id": "2417811",
+ "filepath": "data/data_2/2417811.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "person",
+  "pants"
+ ],
+ "core_nodes": [
+  "pants",
+  "person",
+  "snow"
+ ],
+ "nodes": [
+  "gloves",
+  "jacket",
+  "man",
+  "pants",
+  "person",
+  "snow"
+ ],
+ "objects": [
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.122,
+    0.6186666666666667,
+    0.084,
+    0.248
+   ]
+  },
+  {
+   "label": "jacket",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.292,
+    0.6426666666666667,
+    0.052,
+    0.11466666666666667
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.696,
+    0.72,
+    0.008,
+    0.021333333333333333
+   ]
+  },
+  {
+   "label": "gloves",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.342,
+    0.6666666666666666,
+    0.012,
+    0.029333333333333333
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.292,
+    0.7493333333333333,
+    0.046,
+    0.104
+   ]
+  },
+  {
+   "label": "snow",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.3546666666666667,
+    0.994,
+    0.6453333333333333
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.866,
+    0.6693333333333333,
+    0.07,
+    0.15466666666666667
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [],
+   "bounding_box": [
+    0.19,
+    0.72,
+    0.056,
+    0.12
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.188,
+    0.7093333333333334,
+    0.084,
+    0.15733333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "gloves"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "gloves",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "person",
+   "relation": "on",
+   "object": "snow"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "pants"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 9,
+  "relations": 12
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "image_number": 46,
+ "gqa_image_id": "4193",
+ "filepath": "data/data_1/4193.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "chair",
+  "windows"
+ ],
+ "query": {
+  "question": "What is to the left of the chandelier?",
+  "answer": "windows",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "chandelier"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

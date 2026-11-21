@@ -1,0 +1,327 @@
+{
+ "image_number": 21,
+ "gqa_image_id": "2408882",
+ "filepath": "data/data_0/2408882.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "zoo",
+   "attributes": [],
+   "bounding_box": [
+    0.006,
+    0.009009009009009009,
+    0.992,
+    0.987987987987988
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.2912912912912913,
+    0.998,
+    0.7027027027027027
+   ]
+  },
+  {
+   "label": "giraffe",
+   "attributes": [],
+   "bounding_box": [
+    0.218,
+    0.2552552552552553,
+    0.076,
+    0.12312312312312312
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.142,
+    0.17717717717717718,
+    0.022,
+    0.03003003003003003
+   ]
+  },
+  {
+   "label": "giraffes",
+   "attributes": [],
+   "bounding_box": [
+    0.654,
+    0.24324324324324326,
+    0.064,
+    0.07507507507507508
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.208,
+    0.2042042042042042,
+    0.236,
+    0.10810810810810811
+   ]
+  },
+  {
+   "label": "rocks",
+   "attributes": [],
+   "bounding_box": [
+    0.812,
+    0.4024024024024024,
+    0.042,
+    0.03903903903903904
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.166,
+    0.003003003003003003,
+    0.59,
+    0.6156156156156156
+   ]
+  },
+  {
+   "label": "food",
+   "attributes": [
+    "hanging"
+   ],
+   "bounding_box": [
+    0.404,
+    0.3633633633633634,
+    0.026,
+    0.03303303303303303
+   ]
+  },
+  {
+   "label": "giraffe",
+   "attributes": [
+    "bending"
+   ],
+   "bounding_box": [
+    0.334,
+    0.3663663663663664,
+    0.042,
+    0.19519519519519518
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.886,
+    0.003003003003003003,
+    0.114,
+    0.24024024024024024
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [
+    "metal"
+   ],
+   "bounding_box": [
+    0.0,
+    0.24624624624624625,
+    0.588,
+    0.13513513513513514
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.562,
+    0.38738738738738737,
+    0.31,
+    0.0990990990990991
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "stone"
+   ],
+   "bounding_box": [
+    0.62,
+    0.25825825825825827,
+    0.38,
+    0.05105105105105105
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "giraffe",
+   "relation": "by",
+   "object": "fence"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "near",
+   "object": "fence"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "next to",
+   "object": "fence"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "giraffes",
+   "relation": "in",
+   "object": "zoo"
+  },
+  {
+   "subject": "giraffes",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "giraffes",
+   "relation": "to the right of",
+   "object": "fence"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "giraffes"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "rocks",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "leaves"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "rocks"
+  },
+  {
+   "subject": "food",
+   "relation": "on",
+   "object": "tree"
+  },
+  {
+   "subject": "food",
+   "relation": "to the right of",
+   "object": "giraffe"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "by",
+   "object": "tree"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "to the left of",
+   "object": "grass"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "to the left of",
+   "object": "food"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "inside",
+   "object": "fence"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "walking on",
+   "object": "ground"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "beside",
+   "object": "tree"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "standing on",
+   "object": "ground"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "fence",
+   "relation": "beside",
+   "object": "giraffe"
+  },
+  {
+   "subject": "fence",
+   "relation": "near",
+   "object": "giraffe"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the left of",
+   "object": "giraffes"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the right of",
+   "object": "giraffe"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "fence"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "tree"
+  }
+ ],
+ "counts": {
+  "objects": 14,
+  "relations": 32
+ }
+}

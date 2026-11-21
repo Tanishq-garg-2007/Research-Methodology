@@ -1,0 +1,251 @@
+{
+ "image_number": 83,
+ "gqa_image_id": "2316501",
+ "filepath": "data/data_2/2316501.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "leg",
+  "horse"
+ ],
+ "core_nodes": [
+  "horse",
+  "leg",
+  "trash"
+ ],
+ "nodes": [
+  "foot",
+  "fur",
+  "hair",
+  "horse",
+  "leg",
+  "trash"
+ ],
+ "objects": [
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.5114754098360655,
+    0.668,
+    0.08852459016393442,
+    0.32
+   ]
+  },
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.6655737704918033,
+    0.682,
+    0.15081967213114755,
+    0.294
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [],
+   "bounding_box": [
+    0.6524590163934426,
+    0.666,
+    0.16721311475409836,
+    0.304
+   ]
+  },
+  {
+   "label": "foot",
+   "attributes": [],
+   "bounding_box": [
+    0.7114754098360656,
+    0.92,
+    0.1180327868852459,
+    0.06
+   ]
+  },
+  {
+   "label": "foot",
+   "attributes": [],
+   "bounding_box": [
+    0.5081967213114754,
+    0.928,
+    0.09508196721311475,
+    0.062
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.29180327868852457,
+    0.336,
+    0.6426229508196721,
+    0.648
+   ]
+  },
+  {
+   "label": "fur",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.5377049180327869,
+    0.704,
+    0.04590163934426229,
+    0.21
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.521311475409836,
+    0.72,
+    0.05901639344262295,
+    0.132
+   ]
+  },
+  {
+   "label": "trash",
+   "attributes": [],
+   "bounding_box": [
+    0.9311475409836065,
+    0.798,
+    0.06885245901639345,
+    0.03
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.6754098360655738,
+    0.706,
+    0.05901639344262295,
+    0.13
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "foot"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "foot"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "fur"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "foot"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "fur"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "fur",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "fur",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "horse"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "leg"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 10,
+  "relations": 22
+ }
+}

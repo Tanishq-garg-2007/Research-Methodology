@@ -1,0 +1,172 @@
+{
+ "image_number": 93,
+ "gqa_image_id": "2356845",
+ "filepath": "data/data_2/2356845.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "sandwich",
+  "hand"
+ ],
+ "core_nodes": [
+  "hand",
+  "meat",
+  "sandwich"
+ ],
+ "nodes": [
+  "arm",
+  "fingers",
+  "floor",
+  "hand",
+  "meat",
+  "sandwich"
+ ],
+ "objects": [
+  {
+   "label": "meat",
+   "attributes": [],
+   "bounding_box": [
+    0.502,
+    0.44396551724137934,
+    0.156,
+    0.2629310344827586
+   ]
+  },
+  {
+   "label": "sandwich",
+   "attributes": [
+    "long"
+   ],
+   "bounding_box": [
+    0.362,
+    0.034482758620689655,
+    0.518,
+    0.9418103448275862
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.218,
+    0.16810344827586207,
+    0.29,
+    0.5646551724137931
+   ]
+  },
+  {
+   "label": "arm",
+   "attributes": [],
+   "bounding_box": [
+    0.004,
+    0.6681034482758621,
+    0.36,
+    0.33189655172413796
+   ]
+  },
+  {
+   "label": "fingers",
+   "attributes": [],
+   "bounding_box": [
+    0.75,
+    0.4676724137931034,
+    0.04,
+    0.07758620689655173
+   ]
+  },
+  {
+   "label": "floor",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.004,
+    0.0021551724137931034,
+    0.258,
+    0.47844827586206895
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "meat",
+   "relation": "on",
+   "object": "sandwich"
+  },
+  {
+   "subject": "meat",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "meat",
+   "relation": "inside",
+   "object": "sandwich"
+  },
+  {
+   "subject": "sandwich",
+   "relation": "above",
+   "object": "fingers"
+  },
+  {
+   "subject": "sandwich",
+   "relation": "with",
+   "object": "meat"
+  },
+  {
+   "subject": "sandwich",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "sandwich",
+   "relation": "to the right of",
+   "object": "floor"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "fingers"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "meat"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "floor"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "sandwich"
+  },
+  {
+   "subject": "fingers",
+   "relation": "below",
+   "object": "sandwich"
+  },
+  {
+   "subject": "fingers",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "floor",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "floor",
+   "relation": "to the left of",
+   "object": "sandwich"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 15
+ }
+}

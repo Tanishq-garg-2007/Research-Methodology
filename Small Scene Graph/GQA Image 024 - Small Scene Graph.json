@@ -1,0 +1,158 @@
+{
+ "image_number": 24,
+ "gqa_image_id": "2341486",
+ "filepath": "data/data_0/2341486.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "car",
+  "house"
+ ],
+ "core_nodes": [
+  "car",
+  "hair",
+  "house"
+ ],
+ "nodes": [
+  "car",
+  "hair",
+  "house",
+  "man",
+  "pole",
+  "power lines"
+ ],
+ "objects": [
+  {
+   "label": "hair",
+   "attributes": [
+    "dark",
+    "blowing",
+    "long"
+   ],
+   "bounding_box": [
+    0.642,
+    0.268,
+    0.24,
+    0.166
+   ]
+  },
+  {
+   "label": "power lines",
+   "attributes": [],
+   "bounding_box": [
+    0.682,
+    0.032,
+    0.306,
+    0.15
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.8,
+    0.158,
+    0.114,
+    0.028
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.552,
+    0.268,
+    0.442,
+    0.65
+   ]
+  },
+  {
+   "label": "house",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.798,
+    0.554
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.006,
+    0.29,
+    0.704,
+    0.408
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "power lines",
+   "relation": "to the right of",
+   "object": "house"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "house"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "house",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "house",
+   "relation": "to the left of",
+   "object": "power lines"
+  },
+  {
+   "subject": "house",
+   "relation": "near",
+   "object": "car"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "car",
+   "relation": "near",
+   "object": "house"
+  },
+  {
+   "subject": "car",
+   "relation": "next to",
+   "object": "house"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "hair"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 11
+ }
+}

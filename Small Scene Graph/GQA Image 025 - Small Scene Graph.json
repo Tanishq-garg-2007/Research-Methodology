@@ -1,0 +1,138 @@
+{
+ "image_number": 25,
+ "gqa_image_id": "2338754",
+ "filepath": "data/data_0/2338754.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "animal",
+  "shorts"
+ ],
+ "core_nodes": [
+  "animal",
+  "camera",
+  "shorts"
+ ],
+ "nodes": [
+  "animal",
+  "camera",
+  "man",
+  "shoes",
+  "shorts"
+ ],
+ "objects": [
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.006,
+    0.3885542168674699,
+    0.076,
+    0.21385542168674698
+   ]
+  },
+  {
+   "label": "camera",
+   "attributes": [],
+   "bounding_box": [
+    0.052,
+    0.4126506024096386,
+    0.02,
+    0.024096385542168676
+   ]
+  },
+  {
+   "label": "shorts",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.032,
+    0.5481927710843374,
+    0.064,
+    0.15963855421686746
+   ]
+  },
+  {
+   "label": "animal",
+   "attributes": [],
+   "bounding_box": [
+    0.228,
+    0.18373493975903615,
+    0.772,
+    0.6837349397590361
+   ]
+  },
+  {
+   "label": "shoes",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.05,
+    0.7951807228915663,
+    0.02,
+    0.060240963855421686
+   ]
+  },
+  {
+   "label": "shorts",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.27,
+    0.572289156626506,
+    0.05,
+    0.09337349397590361
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "animal"
+  },
+  {
+   "subject": "camera",
+   "relation": "to the left of",
+   "object": "animal"
+  },
+  {
+   "subject": "shorts",
+   "relation": "to the left of",
+   "object": "animal"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the right of",
+   "object": "shorts"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the right of",
+   "object": "camera"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the right of",
+   "object": "shoes"
+  },
+  {
+   "subject": "shoes",
+   "relation": "to the left of",
+   "object": "animal"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 6,
+  "relations": 8
+ }
+}

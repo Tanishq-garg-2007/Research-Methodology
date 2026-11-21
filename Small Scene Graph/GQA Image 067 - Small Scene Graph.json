@@ -1,0 +1,197 @@
+{
+ "image_number": 67,
+ "gqa_image_id": "2403647",
+ "filepath": "data/data_1/2403647.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "pole",
+  "trash"
+ ],
+ "core_nodes": [
+  "parking lot",
+  "pole",
+  "trash"
+ ],
+ "nodes": [
+  "grass",
+  "intersection",
+  "parking lot",
+  "pole",
+  "sign",
+  "trash"
+ ],
+ "objects": [
+  {
+   "label": "pole",
+   "attributes": [],
+   "bounding_box": [
+    0.9173333333333333,
+    0.496,
+    0.08,
+    0.124
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.16266666666666665,
+    0.166,
+    0.248,
+    0.102
+   ]
+  },
+  {
+   "label": "intersection",
+   "attributes": [],
+   "bounding_box": [
+    0.19466666666666665,
+    0.544,
+    0.7973333333333333,
+    0.112
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [],
+   "bounding_box": [
+    0.018666666666666668,
+    0.404,
+    0.02666666666666667,
+    0.202
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.23466666666666666,
+    0.47,
+    0.056,
+    0.094
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.7866666666666666,
+    0.632,
+    0.21066666666666667,
+    0.076
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [],
+   "bounding_box": [
+    0.6426666666666667,
+    0.914,
+    0.09333333333333334,
+    0.084
+   ]
+  },
+  {
+   "label": "parking lot",
+   "attributes": [],
+   "bounding_box": [
+    0.0026666666666666666,
+    0.48,
+    0.9946666666666667,
+    0.102
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "dark brown"
+   ],
+   "bounding_box": [
+    0.22666666666666666,
+    0.008,
+    0.17066666666666666,
+    0.964
+   ]
+  },
+  {
+   "label": "trash",
+   "attributes": [],
+   "bounding_box": [
+    0.36533333333333334,
+    0.522,
+    0.216,
+    0.018
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "sign",
+   "relation": "on",
+   "object": "pole"
+  },
+  {
+   "subject": "intersection",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "intersection"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "grass"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "trash",
+   "relation": "on",
+   "object": "parking lot"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "sign"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 10,
+  "relations": 12
+ }
+}

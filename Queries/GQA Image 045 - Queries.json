@@ -1,0 +1,23 @@
+{
+ "image_number": 45,
+ "gqa_image_id": "2375673",
+ "filepath": "data/data_1/2375673.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "trunk",
+  "elephant"
+ ],
+ "query": {
+  "question": "What is to the left of the water?",
+  "answer": "elephant",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "water"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

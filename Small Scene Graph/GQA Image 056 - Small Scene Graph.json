@@ -1,0 +1,153 @@
+{
+ "image_number": 56,
+ "gqa_image_id": "2328931",
+ "filepath": "data/data_1/2328931.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "bread",
+  "plate"
+ ],
+ "core_nodes": [
+  "bread",
+  "egg",
+  "plate"
+ ],
+ "nodes": [
+  "bread",
+  "egg",
+  "fork",
+  "napkin",
+  "plate",
+  "table"
+ ],
+ "objects": [
+  {
+   "label": "bread",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.0,
+    0.282,
+    0.8053333333333333,
+    0.55
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.3,
+    0.9973333333333333,
+    0.696
+   ]
+  },
+  {
+   "label": "napkin",
+   "attributes": [
+    "small",
+    "white"
+   ],
+   "bounding_box": [
+    0.888,
+    0.242,
+    0.112,
+    0.16
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.9973333333333333,
+    0.994
+   ]
+  },
+  {
+   "label": "egg",
+   "attributes": [],
+   "bounding_box": [
+    0.24266666666666667,
+    0.438,
+    0.3413333333333333,
+    0.23
+   ]
+  },
+  {
+   "label": "fork",
+   "attributes": [],
+   "bounding_box": [
+    0.856,
+    0.256,
+    0.144,
+    0.178
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "bread",
+   "relation": "on",
+   "object": "plate"
+  },
+  {
+   "subject": "bread",
+   "relation": "to the left of",
+   "object": "fork"
+  },
+  {
+   "subject": "bread",
+   "relation": "to the left of",
+   "object": "napkin"
+  },
+  {
+   "subject": "bread",
+   "relation": "above",
+   "object": "plate"
+  },
+  {
+   "subject": "plate",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "plate",
+   "relation": "beneath",
+   "object": "bread"
+  },
+  {
+   "subject": "plate",
+   "relation": "contain",
+   "object": "bread"
+  },
+  {
+   "subject": "plate",
+   "relation": "below",
+   "object": "bread"
+  },
+  {
+   "subject": "napkin",
+   "relation": "to the right of",
+   "object": "bread"
+  },
+  {
+   "subject": "egg",
+   "relation": "inside",
+   "object": "bread"
+  },
+  {
+   "subject": "fork",
+   "relation": "to the right of",
+   "object": "bread"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 11
+ }
+}

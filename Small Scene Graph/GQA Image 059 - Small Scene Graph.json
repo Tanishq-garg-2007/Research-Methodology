@@ -1,0 +1,153 @@
+{
+ "image_number": 59,
+ "gqa_image_id": "2403720",
+ "filepath": "data/data_1/2403720.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "person",
+  "eye"
+ ],
+ "core_nodes": [
+  "eye",
+  "nose",
+  "person"
+ ],
+ "nodes": [
+  "eye",
+  "face",
+  "hair",
+  "hand",
+  "nose",
+  "person"
+ ],
+ "objects": [
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.532,
+    0.2852852852852853,
+    0.016,
+    0.021021021021021023
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [
+    "smiling",
+    "happy"
+   ],
+   "bounding_box": [
+    0.44,
+    0.1981981981981982,
+    0.242,
+    0.46846846846846846
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "wet"
+   ],
+   "bounding_box": [
+    0.494,
+    0.2042042042042042,
+    0.102,
+    0.23123123123123124
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.488,
+    0.6276276276276276,
+    0.06,
+    0.05105105105105105
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.62,
+    0.5855855855855856,
+    0.068,
+    0.06306306306306306
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.506,
+    0.2822822822822823,
+    0.018,
+    0.018018018018018018
+   ]
+  },
+  {
+   "label": "face",
+   "attributes": [],
+   "bounding_box": [
+    0.498,
+    0.24324324324324326,
+    0.068,
+    0.12012012012012012
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.52,
+    0.2912912912912913,
+    0.016,
+    0.036036036036036036
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "eye",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "hair",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "hand",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "face",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "nose",
+   "relation": "of",
+   "object": "person"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 8,
+  "relations": 7
+ }
+}

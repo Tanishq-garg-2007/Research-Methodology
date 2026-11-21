@@ -1,0 +1,23 @@
+{
+ "image_number": 75,
+ "gqa_image_id": "2330289",
+ "filepath": "data/data_2/2330289.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "train",
+  "trees"
+ ],
+ "query": {
+  "question": "What is to the left of the building?",
+  "answer": "train",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "building"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

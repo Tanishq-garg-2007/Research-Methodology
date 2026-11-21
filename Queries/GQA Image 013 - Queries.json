@@ -1,0 +1,23 @@
+{
+ "image_number": 13,
+ "gqa_image_id": "2415025",
+ "filepath": "data/data_0/2415025.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "window",
+  "cockpit"
+ ],
+ "query": {
+  "question": "What is to the left of the cockpit?",
+  "answer": "wing",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "cockpit"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

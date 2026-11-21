@@ -1,0 +1,233 @@
+{
+ "image_number": 46,
+ "gqa_image_id": "4193",
+ "filepath": "data/data_1/4193.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "chair",
+  "windows"
+ ],
+ "core_nodes": [
+  "chair",
+  "chandelier",
+  "windows"
+ ],
+ "nodes": [
+  "arms",
+  "chair",
+  "chandelier",
+  "doorway",
+  "flowers",
+  "windows"
+ ],
+ "objects": [
+  {
+   "label": "chair",
+   "attributes": [
+    "leather",
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.116,
+    0.39598997493734334,
+    0.202,
+    0.24812030075187969
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "leather",
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.044,
+    0.40852130325814534,
+    0.286,
+    0.531328320802005
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.41,
+    0.40601503759398494,
+    0.262,
+    0.48370927318295737
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "leather",
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.634,
+    0.41353383458646614,
+    0.13,
+    0.40350877192982454
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "leather",
+    "brown",
+    "wood",
+    "fancy"
+   ],
+   "bounding_box": [
+    0.734,
+    0.40601503759398494,
+    0.108,
+    0.3558897243107769
+   ]
+  },
+  {
+   "label": "chandelier",
+   "attributes": [
+    "on"
+   ],
+   "bounding_box": [
+    0.352,
+    0.002506265664160401,
+    0.19,
+    0.2982456140350877
+   ]
+  },
+  {
+   "label": "flowers",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.35,
+    0.40100250626566414,
+    0.122,
+    0.09774436090225563
+   ]
+  },
+  {
+   "label": "doorway",
+   "attributes": [
+    "arched"
+   ],
+   "bounding_box": [
+    0.554,
+    0.13784461152882205,
+    0.146,
+    0.43358395989974935
+   ]
+  },
+  {
+   "label": "arms",
+   "attributes": [],
+   "bounding_box": [
+    0.158,
+    0.6215538847117794,
+    0.16,
+    0.13032581453634084
+   ]
+  },
+  {
+   "label": "windows",
+   "attributes": [],
+   "bounding_box": [
+    0.18,
+    0.09273182957393483,
+    0.172,
+    0.42355889724310775
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "doorway"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "flowers"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "arms"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "flowers"
+  },
+  {
+   "subject": "chandelier",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "doorway",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "doorway",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "arms",
+   "relation": "of",
+   "object": "chair"
+  },
+  {
+   "subject": "arms",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "flowers"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "chandelier"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "doorway"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 10,
+  "relations": 15
+ }
+}

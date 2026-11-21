@@ -1,0 +1,23 @@
+{
+ "image_number": 47,
+ "gqa_image_id": "2364331",
+ "filepath": "data/data_1/2364331.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "shirt",
+  "person"
+ ],
+ "query": {
+  "question": "What is to the left of the tiles?",
+  "answer": "person",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "tiles"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

@@ -1,0 +1,290 @@
+{
+ "image_number": 48,
+ "gqa_image_id": "2320522",
+ "filepath": "data/data_1/2320522.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "bottle",
+  "liquor"
+ ],
+ "core_nodes": [
+  "bottle",
+  "liquor",
+  "table"
+ ],
+ "nodes": [
+  "bottle",
+  "chair",
+  "container",
+  "glass",
+  "liquor",
+  "table"
+ ],
+ "objects": [
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.278,
+    0.5306666666666666,
+    0.036,
+    0.15733333333333333
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.32,
+    0.5173333333333333,
+    0.046,
+    0.184
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [],
+   "bounding_box": [
+    0.458,
+    0.7546666666666667,
+    0.18,
+    0.24266666666666667
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.428,
+    0.5413333333333333,
+    0.046,
+    0.19733333333333333
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [],
+   "bounding_box": [
+    0.192,
+    0.6453333333333333,
+    0.378,
+    0.16
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.376,
+    0.5493333333333333,
+    0.03,
+    0.16533333333333333
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.008,
+    0.8586666666666667,
+    0.044,
+    0.144
+   ]
+  },
+  {
+   "label": "liquor",
+   "attributes": [],
+   "bounding_box": [
+    0.432,
+    0.5493333333333333,
+    0.036,
+    0.17866666666666667
+   ]
+  },
+  {
+   "label": "liquor",
+   "attributes": [],
+   "bounding_box": [
+    0.28,
+    0.5333333333333333,
+    0.032,
+    0.152
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.192,
+    0.7386666666666667,
+    0.076,
+    0.2613333333333333
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.026,
+    0.64,
+    0.07,
+    0.3253333333333333
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [],
+   "bounding_box": [
+    0.088,
+    0.49066666666666664,
+    0.158,
+    0.3413333333333333
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.7,
+    0.6106666666666667,
+    0.152,
+    0.128
+   ]
+  },
+  {
+   "label": "container",
+   "attributes": [
+    "plastic"
+   ],
+   "bounding_box": [
+    0.22,
+    0.6186666666666667,
+    0.062,
+    0.072
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "bottle",
+   "relation": "to the left of",
+   "object": "liquor"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "container"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "liquor"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "bottle"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "bottle",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "bottle"
+  },
+  {
+   "subject": "liquor",
+   "relation": "to the right of",
+   "object": "bottle"
+  },
+  {
+   "subject": "liquor",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "liquor",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "liquor",
+   "relation": "to the right of",
+   "object": "container"
+  },
+  {
+   "subject": "liquor",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the left of",
+   "object": "container"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "liquor"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "liquor"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "bottle"
+  },
+  {
+   "subject": "container",
+   "relation": "to the left of",
+   "object": "liquor"
+  },
+  {
+   "subject": "container",
+   "relation": "to the right of",
+   "object": "bottle"
+  },
+  {
+   "subject": "container",
+   "relation": "to the left of",
+   "object": "bottle"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 14,
+  "relations": 23
+ }
+}

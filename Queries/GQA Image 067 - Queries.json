@@ -1,0 +1,23 @@
+{
+ "image_number": 67,
+ "gqa_image_id": "2403647",
+ "filepath": "data/data_1/2403647.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "pole",
+  "trash"
+ ],
+ "query": {
+  "question": "What is on the parking lot?",
+  "answer": "trash",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "parking lot"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

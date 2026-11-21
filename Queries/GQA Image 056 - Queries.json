@@ -1,0 +1,24 @@
+{
+ "image_number": 56,
+ "gqa_image_id": "2328931",
+ "filepath": "data/data_1/2328931.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "bread",
+  "plate"
+ ],
+ "query": {
+  "question": "What is between the bread and the plate?",
+  "answer": "egg",
+  "template": "between",
+  "derivation": {
+   "anchor_a": "bread",
+   "anchor_b": "plate",
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

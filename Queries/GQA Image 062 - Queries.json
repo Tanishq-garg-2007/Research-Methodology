@@ -1,0 +1,23 @@
+{
+ "image_number": 62,
+ "gqa_image_id": "2414901",
+ "filepath": "data/data_1/2414901.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "cage",
+  "person"
+ ],
+ "query": {
+  "question": "What is to the left of the person?",
+  "answer": "cage",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "person"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

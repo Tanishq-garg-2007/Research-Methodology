@@ -1,0 +1,144 @@
+{
+ "image_number": 9,
+ "gqa_image_id": "2335834",
+ "filepath": "data/data_0/2335834.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "tree",
+  "hand"
+ ],
+ "core_nodes": [
+  "frisbee",
+  "hand",
+  "tree"
+ ],
+ "nodes": [
+  "frisbee",
+  "hand",
+  "man",
+  "shirt",
+  "sign",
+  "tree"
+ ],
+ "objects": [
+  {
+   "label": "sign",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.4,
+    0.3019271948608137,
+    0.018,
+    0.08565310492505353
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.706,
+    0.3297644539614561,
+    0.054,
+    0.05353319057815846
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.114,
+    0.0,
+    0.148,
+    0.6809421841541756
+   ]
+  },
+  {
+   "label": "frisbee",
+   "attributes": [],
+   "bounding_box": [
+    0.782,
+    0.3147751605995717,
+    0.092,
+    0.034261241970021415
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.71,
+    0.16274089935760172,
+    0.28,
+    0.5717344753747323
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.33,
+    0.0,
+    0.116,
+    0.69593147751606
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.796,
+    0.2291220556745182,
+    0.178,
+    0.21199143468950749
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "hand",
+   "relation": "of",
+   "object": "man"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "frisbee"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "frisbee",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "hand"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 7
+ }
+}

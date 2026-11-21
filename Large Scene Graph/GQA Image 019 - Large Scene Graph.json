@@ -1,0 +1,266 @@
+{
+ "image_number": 19,
+ "gqa_image_id": "2389557",
+ "filepath": "data/data_0/2389557.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.3993993993993994,
+    0.72,
+    0.08408408408408409,
+    0.128
+   ]
+  },
+  {
+   "label": "bench",
+   "attributes": [
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.16816816816816818,
+    0.664,
+    0.7117117117117117,
+    0.202
+   ]
+  },
+  {
+   "label": "shorts",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.3963963963963964,
+    0.708,
+    0.13213213213213212,
+    0.066
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.3933933933933934,
+    0.652,
+    0.14114114114114115,
+    0.078
+   ]
+  },
+  {
+   "label": "shoe",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.4174174174174174,
+    0.846,
+    0.05105105105105105,
+    0.054
+   ]
+  },
+  {
+   "label": "girl",
+   "attributes": [
+    "small",
+    "smiling",
+    "blond",
+    "sitting",
+    "happy"
+   ],
+   "bounding_box": [
+    0.3933933933933934,
+    0.602,
+    0.15015015015015015,
+    0.298
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.0,
+    0.83,
+    0.22822822822822822,
+    0.052
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.0,
+    0.448,
+    0.996996996996997,
+    0.43
+   ]
+  },
+  {
+   "label": "rock",
+   "attributes": [
+    "steep"
+   ],
+   "bounding_box": [
+    0.006006006006006006,
+    0.002,
+    0.990990990990991,
+    0.598
+   ]
+  },
+  {
+   "label": "watch",
+   "attributes": [
+    "pink"
+   ],
+   "bounding_box": [
+    0.48348348348348347,
+    0.66,
+    0.018018018018018018,
+    0.01
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [
+    "gray",
+    "stone",
+    "gravel"
+   ],
+   "bounding_box": [
+    0.0,
+    0.852,
+    0.996996996996997,
+    0.148
+   ]
+  },
+  {
+   "label": "leaf",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.5645645645645646,
+    0.616,
+    0.04504504504504504,
+    0.03
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "blond"
+   ],
+   "bounding_box": [
+    0.4084084084084084,
+    0.6,
+    0.13213213213213212,
+    0.062
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.43843843843843844,
+    0.646,
+    0.036036036036036036,
+    0.026
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "grass"
+  },
+  {
+   "subject": "bench",
+   "relation": "below",
+   "object": "girl"
+  },
+  {
+   "subject": "shoe",
+   "relation": "to the right of",
+   "object": "grass"
+  },
+  {
+   "subject": "girl",
+   "relation": "sitting on",
+   "object": "bench"
+  },
+  {
+   "subject": "girl",
+   "relation": "on",
+   "object": "bench"
+  },
+  {
+   "subject": "girl",
+   "relation": "above",
+   "object": "bench"
+  },
+  {
+   "subject": "girl",
+   "relation": "to the left of",
+   "object": "leaf"
+  },
+  {
+   "subject": "girl",
+   "relation": "to the right of",
+   "object": "grass"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the left of",
+   "object": "shoe"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the left of",
+   "object": "bench"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the left of",
+   "object": "girl"
+  },
+  {
+   "subject": "watch",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "leaf",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "leaf",
+   "relation": "to the right of",
+   "object": "girl"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "leaf"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "watch"
+  }
+ ],
+ "counts": {
+  "objects": 14,
+  "relations": 16
+ }
+}

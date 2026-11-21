@@ -1,0 +1,243 @@
+{
+ "image_number": 28,
+ "gqa_image_id": "2368938",
+ "filepath": "data/data_0/2368938.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "tomato sauce",
+  "mozzarella"
+ ],
+ "core_nodes": [
+  "mozzarella",
+  "sauce",
+  "tomato sauce"
+ ],
+ "nodes": [
+  "mozzarella",
+  "mushroom",
+  "pizza",
+  "pizza crust",
+  "sauce",
+  "tomato sauce"
+ ],
+ "objects": [
+  {
+   "label": "mozzarella",
+   "attributes": [],
+   "bounding_box": [
+    0.358,
+    0.27,
+    0.564,
+    0.37
+   ]
+  },
+  {
+   "label": "tomato sauce",
+   "attributes": [],
+   "bounding_box": [
+    0.292,
+    0.468,
+    0.09,
+    0.06
+   ]
+  },
+  {
+   "label": "tomato sauce",
+   "attributes": [],
+   "bounding_box": [
+    0.586,
+    0.51,
+    0.088,
+    0.094
+   ]
+  },
+  {
+   "label": "tomato sauce",
+   "attributes": [],
+   "bounding_box": [
+    0.276,
+    0.572,
+    0.1,
+    0.098
+   ]
+  },
+  {
+   "label": "mushroom",
+   "attributes": [],
+   "bounding_box": [
+    0.126,
+    0.72,
+    0.24,
+    0.132
+   ]
+  },
+  {
+   "label": "mozzarella",
+   "attributes": [],
+   "bounding_box": [
+    0.014,
+    0.534,
+    0.434,
+    0.454
+   ]
+  },
+  {
+   "label": "sauce",
+   "attributes": [],
+   "bounding_box": [
+    0.59,
+    0.516,
+    0.076,
+    0.07
+   ]
+  },
+  {
+   "label": "pizza",
+   "attributes": [],
+   "bounding_box": [
+    0.226,
+    0.218,
+    0.77,
+    0.498
+   ]
+  },
+  {
+   "label": "mushroom",
+   "attributes": [],
+   "bounding_box": [
+    0.376,
+    0.266,
+    0.618,
+    0.318
+   ]
+  },
+  {
+   "label": "pizza crust",
+   "attributes": [],
+   "bounding_box": [
+    0.556,
+    0.61,
+    0.294,
+    0.106
+   ]
+  },
+  {
+   "label": "pizza",
+   "attributes": [],
+   "bounding_box": [
+    0.01,
+    0.464,
+    0.524,
+    0.52
+   ]
+  },
+  {
+   "label": "mushroom",
+   "attributes": [],
+   "bounding_box": [
+    0.014,
+    0.552,
+    0.236,
+    0.12
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "mozzarella",
+   "relation": "to the right of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "to the right of",
+   "object": "mushroom"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the left of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the left of",
+   "object": "mushroom"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the right of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the right of",
+   "object": "pizza"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the left of",
+   "object": "pizza crust"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the right of",
+   "object": "mushroom"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "to the left of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "to the left of",
+   "object": "sauce"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "to the left of",
+   "object": "pizza crust"
+  },
+  {
+   "subject": "sauce",
+   "relation": "to the right of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "mushroom",
+   "relation": "to the right of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "pizza crust",
+   "relation": "to the right of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "pizza crust",
+   "relation": "to the right of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "pizza",
+   "relation": "to the left of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "mushroom",
+   "relation": "to the left of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "mushroom",
+   "relation": "to the left of",
+   "object": "tomato sauce"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 12,
+  "relations": 18
+ }
+}

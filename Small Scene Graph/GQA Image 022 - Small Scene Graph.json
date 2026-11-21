@@ -1,0 +1,147 @@
+{
+ "image_number": 22,
+ "gqa_image_id": "2326139",
+ "filepath": "data/data_0/2326139.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "curtains",
+  "lamp"
+ ],
+ "core_nodes": [
+  "candles",
+  "curtains",
+  "lamp"
+ ],
+ "nodes": [
+  "bedspread",
+  "candle",
+  "candles",
+  "curtains",
+  "lamp",
+  "picture"
+ ],
+ "objects": [
+  {
+   "label": "picture",
+   "attributes": [],
+   "bounding_box": [
+    0.084,
+    0.0,
+    0.052,
+    0.3042168674698795
+   ]
+  },
+  {
+   "label": "candles",
+   "attributes": [],
+   "bounding_box": [
+    0.756,
+    0.31626506024096385,
+    0.016,
+    0.03614457831325301
+   ]
+  },
+  {
+   "label": "curtains",
+   "attributes": [
+    "light brown"
+   ],
+   "bounding_box": [
+    0.5,
+    0.09939759036144578,
+    0.032,
+    0.4006024096385542
+   ]
+  },
+  {
+   "label": "bedspread",
+   "attributes": [
+    "beige"
+   ],
+   "bounding_box": [
+    0.282,
+    0.4759036144578313,
+    0.526,
+    0.5240963855421686
+   ]
+  },
+  {
+   "label": "lamp",
+   "attributes": [],
+   "bounding_box": [
+    0.028,
+    0.3192771084337349,
+    0.252,
+    0.5271084337349398
+   ]
+  },
+  {
+   "label": "lamp",
+   "attributes": [],
+   "bounding_box": [
+    0.128,
+    0.20783132530120482,
+    0.114,
+    0.11746987951807229
+   ]
+  },
+  {
+   "label": "candle",
+   "attributes": [],
+   "bounding_box": [
+    0.27,
+    0.7078313253012049,
+    0.048,
+    0.11144578313253012
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "picture",
+   "relation": "to the left of",
+   "object": "lamp"
+  },
+  {
+   "subject": "candles",
+   "relation": "to the right of",
+   "object": "curtains"
+  },
+  {
+   "subject": "curtains",
+   "relation": "to the left of",
+   "object": "candles"
+  },
+  {
+   "subject": "bedspread",
+   "relation": "to the right of",
+   "object": "lamp"
+  },
+  {
+   "subject": "lamp",
+   "relation": "to the left of",
+   "object": "candle"
+  },
+  {
+   "subject": "lamp",
+   "relation": "to the left of",
+   "object": "bedspread"
+  },
+  {
+   "subject": "lamp",
+   "relation": "to the right of",
+   "object": "picture"
+  },
+  {
+   "subject": "candle",
+   "relation": "to the right of",
+   "object": "lamp"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 8
+ }
+}

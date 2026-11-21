@@ -1,0 +1,316 @@
+{
+ "image_number": 10,
+ "gqa_image_id": "2411163",
+ "filepath": "data/data_0/2411163.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "shoe",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.3333333333333333,
+    0.366,
+    0.09009009009009009,
+    0.034
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [],
+   "bounding_box": [
+    0.2222222222222222,
+    0.116,
+    0.22822822822822822,
+    0.096
+   ]
+  },
+  {
+   "label": "jeans",
+   "attributes": [
+    "skinny"
+   ],
+   "bounding_box": [
+    0.32732732732732733,
+    0.206,
+    0.18618618618618618,
+    0.18
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.5225225225225225,
+    0.038,
+    0.47147147147147145,
+    0.342
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.52,
+    1.0,
+    0.478
+   ]
+  },
+  {
+   "label": "drawing",
+   "attributes": [],
+   "bounding_box": [
+    0.3063063063063063,
+    0.168,
+    0.06006006006006006,
+    0.024
+   ]
+  },
+  {
+   "label": "sneakers",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.3333333333333333,
+    0.372,
+    0.1981981981981982,
+    0.038
+   ]
+  },
+  {
+   "label": "guy",
+   "attributes": [
+    "skating"
+   ],
+   "bounding_box": [
+    0.0960960960960961,
+    0.098,
+    0.45045045045045046,
+    0.324
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "short"
+   ],
+   "bounding_box": [
+    0.2222222222222222,
+    0.11,
+    0.07207207207207207,
+    0.044
+   ]
+  },
+  {
+   "label": "wheels",
+   "attributes": [],
+   "bounding_box": [
+    0.35735735735735735,
+    0.406,
+    0.12912912912912913,
+    0.02
+   ]
+  },
+  {
+   "label": "walkway",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.652,
+    1.0,
+    0.178
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.44744744744744747,
+    0.002,
+    0.37537537537537535,
+    0.086
+   ]
+  },
+  {
+   "label": "skin",
+   "attributes": [
+    "light"
+   ],
+   "bounding_box": [
+    0.40540540540540543,
+    0.122,
+    0.14114114114114115,
+    0.044
+   ]
+  },
+  {
+   "label": "skateboard",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.33633633633633636,
+    0.366,
+    0.19519519519519518,
+    0.06
+   ]
+  },
+  {
+   "label": "box",
+   "attributes": [],
+   "bounding_box": [
+    0.15615615615615616,
+    0.398,
+    0.6306306306306306,
+    0.036
+   ]
+  },
+  {
+   "label": "earphones",
+   "attributes": [],
+   "bounding_box": [
+    0.24624624624624625,
+    0.112,
+    0.08108108108108109,
+    0.06
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "skin"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "earphones"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "guy"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "drawing"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "skin"
+  },
+  {
+   "subject": "drawing",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "guy",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "guy",
+   "relation": "wearing",
+   "object": "jeans"
+  },
+  {
+   "subject": "guy",
+   "relation": "riding on",
+   "object": "skateboard"
+  },
+  {
+   "subject": "guy",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "guy",
+   "relation": "on",
+   "object": "skateboard"
+  },
+  {
+   "subject": "guy",
+   "relation": "using",
+   "object": "skateboard"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "skin"
+  },
+  {
+   "subject": "skin",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "skin",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "skin",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "skin",
+   "relation": "to the right of",
+   "object": "earphones"
+  },
+  {
+   "subject": "earphones",
+   "relation": "to the left of",
+   "object": "skin"
+  },
+  {
+   "subject": "earphones",
+   "relation": "to the left of",
+   "object": "trees"
+  }
+ ],
+ "counts": {
+  "objects": 16,
+  "relations": 25
+ }
+}

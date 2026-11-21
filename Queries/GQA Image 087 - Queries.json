@@ -1,0 +1,23 @@
+{
+ "image_number": 87,
+ "gqa_image_id": "2395922",
+ "filepath": "data/data_2/2395922.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "pizza",
+  "chairs"
+ ],
+ "query": {
+  "question": "What is on the table?",
+  "answer": "pizza",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "table"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

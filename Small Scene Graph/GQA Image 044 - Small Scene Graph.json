@@ -1,0 +1,172 @@
+{
+ "image_number": 44,
+ "gqa_image_id": "2402864",
+ "filepath": "data/data_1/2402864.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "chair",
+  "door"
+ ],
+ "core_nodes": [
+  "chair",
+  "door",
+  "sink"
+ ],
+ "nodes": [
+  "apples",
+  "chair",
+  "counter",
+  "door",
+  "fruit",
+  "sink"
+ ],
+ "objects": [
+  {
+   "label": "chair",
+   "attributes": [
+    "wood"
+   ],
+   "bounding_box": [
+    0.394,
+    0.4281842818428184,
+    0.054,
+    0.18157181571815717
+   ]
+  },
+  {
+   "label": "sink",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.578,
+    0.45799457994579945,
+    0.128,
+    0.037940379403794036
+   ]
+  },
+  {
+   "label": "counter",
+   "attributes": [],
+   "bounding_box": [
+    0.054,
+    0.4796747967479675,
+    0.142,
+    0.04065040650406504
+   ]
+  },
+  {
+   "label": "fruit",
+   "attributes": [],
+   "bounding_box": [
+    0.128,
+    0.45528455284552843,
+    0.02,
+    0.02710027100271003
+   ]
+  },
+  {
+   "label": "apples",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.06,
+    0.4363143631436314,
+    0.022,
+    0.02710027100271003
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.152,
+    0.25474254742547425,
+    0.126,
+    0.35501355013550134
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "sink"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "fruit"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "counter"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "fruit",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "fruit",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "apples",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "apples"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "fruit"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "counter"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "chair"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 14
+ }
+}

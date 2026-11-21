@@ -1,0 +1,1022 @@
+{
+ "image_number": 12,
+ "gqa_image_id": "2344244",
+ "filepath": "data/data_0/2344244.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.0960960960960961,
+    0.078,
+    0.7477477477477478,
+    0.78
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.35735735735735735,
+    0.074,
+    0.3213213213213213,
+    0.3
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.9,
+    0.2012012012012012,
+    0.102
+   ]
+  },
+  {
+   "label": "bowl",
+   "attributes": [
+    "little",
+    "white"
+   ],
+   "bounding_box": [
+    0.45645645645645644,
+    0.894,
+    0.21621621621621623,
+    0.108
+   ]
+  },
+  {
+   "label": "jeans",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.09009009009009009,
+    0.562,
+    0.4114114114114114,
+    0.226
+   ]
+  },
+  {
+   "label": "taco",
+   "attributes": [],
+   "bounding_box": [
+    0.6486486486486487,
+    0.754,
+    0.19519519519519518,
+    0.072
+   ]
+  },
+  {
+   "label": "bowl",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.12612612612612611,
+    0.776,
+    0.1831831831831832,
+    0.094
+   ]
+  },
+  {
+   "label": "bowl",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.4114114114114114,
+    0.838,
+    0.1981981981981982,
+    0.094
+   ]
+  },
+  {
+   "label": "cord",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.9669669669669669,
+    0.856,
+    0.03303303303303303,
+    0.036
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "brick"
+   ],
+   "bounding_box": [
+    0.0,
+    0.004,
+    0.996996996996997,
+    0.778
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.5105105105105106,
+    0.648,
+    0.17117117117117117,
+    0.138
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.3633633633633634,
+    0.206,
+    0.04504504504504504,
+    0.066
+   ]
+  },
+  {
+   "label": "lips",
+   "attributes": [],
+   "bounding_box": [
+    0.5075075075075075,
+    0.34,
+    0.057057057057057055,
+    0.016
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.5585585585585585,
+    0.264,
+    0.06306306306306306,
+    0.022
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.44744744744744747,
+    0.266,
+    0.07807807807807808,
+    0.022
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.5105105105105106,
+    0.284,
+    0.06306306306306306,
+    0.058
+   ]
+  },
+  {
+   "label": "skillet",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.6006006006006006,
+    0.712,
+    0.3033033033033033,
+    0.1
+   ]
+  },
+  {
+   "label": "utensil",
+   "attributes": [
+    "silver"
+   ],
+   "bounding_box": [
+    0.0,
+    0.778,
+    0.05105105105105105,
+    0.096
+   ]
+  },
+  {
+   "label": "finger",
+   "attributes": [],
+   "bounding_box": [
+    0.6246246246246246,
+    0.694,
+    0.057057057057057055,
+    0.066
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.6396396396396397,
+    0.706,
+    0.18018018018018017,
+    0.156
+   ]
+  },
+  {
+   "label": "bowl",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.82,
+    0.1891891891891892,
+    0.096
+   ]
+  },
+  {
+   "label": "vegetable",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.6366366366366366,
+    0.732,
+    0.16516516516516516,
+    0.07
+   ]
+  },
+  {
+   "label": "ear buds",
+   "attributes": [
+    "white",
+    "hanging"
+   ],
+   "bounding_box": [
+    0.5525525525525525,
+    0.354,
+    0.03003003003003003,
+    0.186
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.17717717717717718,
+    0.882,
+    0.2702702702702703,
+    0.084
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.35435435435435436,
+    0.078,
+    0.3213213213213213,
+    0.184
+   ]
+  },
+  {
+   "label": "food",
+   "attributes": [],
+   "bounding_box": [
+    0.8078078078078078,
+    0.746,
+    0.057057057057057055,
+    0.05
+   ]
+  },
+  {
+   "label": "pepper",
+   "attributes": [
+    "sliced",
+    "red"
+   ],
+   "bounding_box": [
+    0.036036036036036036,
+    0.846,
+    0.12912912912912913,
+    0.028
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.22822822822822822,
+    0.718,
+    0.29429429429429427,
+    0.09
+   ]
+  },
+  {
+   "label": "butter",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.1981981981981982,
+    0.902,
+    0.13813813813813813,
+    0.052
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.5885885885885885,
+    0.328,
+    0.35135135135135137,
+    0.326
+   ]
+  },
+  {
+   "label": "finger",
+   "attributes": [],
+   "bounding_box": [
+    0.5195195195195195,
+    0.694,
+    0.14414414414414414,
+    0.074
+   ]
+  },
+  {
+   "label": "finger",
+   "attributes": [],
+   "bounding_box": [
+    0.7267267267267268,
+    0.804,
+    0.05405405405405406,
+    0.048
+   ]
+  },
+  {
+   "label": "finger",
+   "attributes": [],
+   "bounding_box": [
+    0.6966966966966966,
+    0.798,
+    0.042042042042042045,
+    0.046
+   ]
+  },
+  {
+   "label": "finger",
+   "attributes": [],
+   "bounding_box": [
+    0.6666666666666666,
+    0.804,
+    0.036036036036036036,
+    0.03
+   ]
+  },
+  {
+   "label": "arm",
+   "attributes": [],
+   "bounding_box": [
+    0.1921921921921922,
+    0.288,
+    0.3033033033033033,
+    0.406
+   ]
+  },
+  {
+   "label": "arm",
+   "attributes": [],
+   "bounding_box": [
+    0.6396396396396397,
+    0.294,
+    0.13813813813813813,
+    0.416
+   ]
+  },
+  {
+   "label": "wrist",
+   "attributes": [],
+   "bounding_box": [
+    0.6726726726726727,
+    0.694,
+    0.1021021021021021,
+    0.042
+   ]
+  },
+  {
+   "label": "wrist",
+   "attributes": [],
+   "bounding_box": [
+    0.5135135135135135,
+    0.656,
+    0.0990990990990991,
+    0.046
+   ]
+  },
+  {
+   "label": "planter",
+   "attributes": [],
+   "bounding_box": [
+    0.6066066066066066,
+    0.656,
+    0.35435435435435436,
+    0.106
+   ]
+  },
+  {
+   "label": "bowl",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.33633633633633636,
+    0.786,
+    0.1891891891891892,
+    0.094
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.12312312312312312,
+    0.234,
+    0.6306306306306306,
+    0.424
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "jeans"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "man",
+   "relation": "holding",
+   "object": "taco"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "utensil"
+  },
+  {
+   "subject": "man",
+   "relation": "in front of",
+   "object": "wall"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "butter"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "plate"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the right of",
+   "object": "butter"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "finger"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "skillet"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "vegetable"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "arm"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "wrist"
+  },
+  {
+   "subject": "taco",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "taco",
+   "relation": "to the right of",
+   "object": "bowl"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the right of",
+   "object": "pepper"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the right of",
+   "object": "utensil"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the left of",
+   "object": "bowl"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the right of",
+   "object": "bowl"
+  },
+  {
+   "subject": "wall",
+   "relation": "behind",
+   "object": "man"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "food"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "vegetable"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "wrist"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "skillet"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "lips",
+   "relation": "to the left of",
+   "object": "plant"
+  },
+  {
+   "subject": "lips",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "lips",
+   "relation": "to the left of",
+   "object": "arm"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "arm"
+  },
+  {
+   "subject": "skillet",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "skillet",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "skillet",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "skillet",
+   "relation": "to the right of",
+   "object": "finger"
+  },
+  {
+   "subject": "utensil",
+   "relation": "to the left of",
+   "object": "pepper"
+  },
+  {
+   "subject": "utensil",
+   "relation": "in",
+   "object": "bowl"
+  },
+  {
+   "subject": "utensil",
+   "relation": "to the left of",
+   "object": "bowl"
+  },
+  {
+   "subject": "utensil",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "finger",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "finger",
+   "relation": "to the left of",
+   "object": "wrist"
+  },
+  {
+   "subject": "finger",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "finger"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "bowl"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "vegetable",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "vegetable",
+   "relation": "inside",
+   "object": "taco"
+  },
+  {
+   "subject": "vegetable",
+   "relation": "to the left of",
+   "object": "food"
+  },
+  {
+   "subject": "vegetable",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "vegetable",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "ear buds",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "ear buds",
+   "relation": "to the left of",
+   "object": "arm"
+  },
+  {
+   "subject": "ear buds",
+   "relation": "to the left of",
+   "object": "plant"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "bowl"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "food",
+   "relation": "to the right of",
+   "object": "vegetable"
+  },
+  {
+   "subject": "food",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "pepper",
+   "relation": "to the left of",
+   "object": "bowl"
+  },
+  {
+   "subject": "pepper",
+   "relation": "in",
+   "object": "bowl"
+  },
+  {
+   "subject": "pepper",
+   "relation": "to the right of",
+   "object": "utensil"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "finger"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "skillet"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "vegetable"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "taco"
+  },
+  {
+   "subject": "butter",
+   "relation": "in",
+   "object": "plate"
+  },
+  {
+   "subject": "butter",
+   "relation": "to the left of",
+   "object": "bowl"
+  },
+  {
+   "subject": "butter",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the right of",
+   "object": "ear buds"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the right of",
+   "object": "lips"
+  },
+  {
+   "subject": "plant",
+   "relation": "in",
+   "object": "planter"
+  },
+  {
+   "subject": "finger",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "finger",
+   "relation": "to the left of",
+   "object": "skillet"
+  },
+  {
+   "subject": "finger",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "finger",
+   "relation": "to the right of",
+   "object": "finger"
+  },
+  {
+   "subject": "finger",
+   "relation": "to the right of",
+   "object": "bowl"
+  },
+  {
+   "subject": "finger",
+   "relation": "to the left of",
+   "object": "finger"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "lips"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "wrist"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "arm"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "plant"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "ear buds"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the right of",
+   "object": "ear buds"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the right of",
+   "object": "lips"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the right of",
+   "object": "wrist"
+  },
+  {
+   "subject": "wrist",
+   "relation": "to the right of",
+   "object": "finger"
+  },
+  {
+   "subject": "wrist",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "wrist",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "wrist",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "wrist",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "wrist",
+   "relation": "to the left of",
+   "object": "arm"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "wrist"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "finger"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the left of",
+   "object": "taco"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the left of",
+   "object": "finger"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "plant"
+  }
+ ],
+ "counts": {
+  "objects": 41,
+  "relations": 112
+ }
+}

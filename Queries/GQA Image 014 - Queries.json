@@ -1,0 +1,23 @@
+{
+ "image_number": 14,
+ "gqa_image_id": "2388854",
+ "filepath": "data/data_0/2388854.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "cord",
+  "man"
+ ],
+ "query": {
+  "question": "What is to the right of the face?",
+  "answer": "cord",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "face"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

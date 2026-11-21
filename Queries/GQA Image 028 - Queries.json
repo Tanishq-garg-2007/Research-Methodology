@@ -1,0 +1,23 @@
+{
+ "image_number": 28,
+ "gqa_image_id": "2368938",
+ "filepath": "data/data_0/2368938.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "tomato sauce",
+  "mozzarella"
+ ],
+ "query": {
+  "question": "What is to the left of the sauce?",
+  "answer": "mozzarella",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "sauce"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

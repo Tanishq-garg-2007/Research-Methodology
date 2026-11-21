@@ -1,0 +1,999 @@
+{
+ "image_number": 83,
+ "gqa_image_id": "2316501",
+ "filepath": "data/data_2/2316501.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.5114754098360655,
+    0.668,
+    0.08852459016393442,
+    0.32
+   ]
+  },
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.6655737704918033,
+    0.682,
+    0.15081967213114755,
+    0.294
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [],
+   "bounding_box": [
+    0.6524590163934426,
+    0.666,
+    0.16721311475409836,
+    0.304
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.9114754098360656,
+    0.196,
+    0.07213114754098361,
+    0.05
+   ]
+  },
+  {
+   "label": "foot",
+   "attributes": [],
+   "bounding_box": [
+    0.7114754098360656,
+    0.92,
+    0.1180327868852459,
+    0.06
+   ]
+  },
+  {
+   "label": "mustache",
+   "attributes": [],
+   "bounding_box": [
+    0.4262295081967213,
+    0.24,
+    0.02622950819672131,
+    0.008
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.2262295081967213,
+    0.188,
+    0.32131147540983607,
+    0.156
+   ]
+  },
+  {
+   "label": "hat",
+   "attributes": [],
+   "bounding_box": [
+    0.3901639344262295,
+    0.2,
+    0.09180327868852459,
+    0.026
+   ]
+  },
+  {
+   "label": "mane",
+   "attributes": [],
+   "bounding_box": [
+    0.7245901639344262,
+    0.308,
+    0.08196721311475409,
+    0.072
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.8786885245901639,
+    0.44,
+    0.019672131147540985,
+    0.03
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.7016393442622951,
+    0.008,
+    0.09180327868852459,
+    0.064
+   ]
+  },
+  {
+   "label": "foot",
+   "attributes": [],
+   "bounding_box": [
+    0.5081967213114754,
+    0.928,
+    0.09508196721311475,
+    0.062
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.05901639344262295,
+    0.402,
+    0.09508196721311475,
+    0.308
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.29180327868852457,
+    0.336,
+    0.6426229508196721,
+    0.648
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [
+    "large",
+    "wood",
+    "round"
+   ],
+   "bounding_box": [
+    0.05573770491803279,
+    0.378,
+    0.10491803278688525,
+    0.338
+   ]
+  },
+  {
+   "label": "fur",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.5377049180327869,
+    0.704,
+    0.04590163934426229,
+    0.21
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [
+    "walking"
+   ],
+   "bounding_box": [
+    0.10819672131147541,
+    0.278,
+    0.036065573770491806,
+    0.062
+   ]
+  },
+  {
+   "label": "carriage",
+   "attributes": [],
+   "bounding_box": [
+    0.05901639344262295,
+    0.114,
+    0.6622950819672131,
+    0.606
+   ]
+  },
+  {
+   "label": "pavement",
+   "attributes": [],
+   "bounding_box": [
+    0.022950819672131147,
+    0.61,
+    0.9442622950819672,
+    0.342
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.7770491803278688,
+    0.6,
+    0.09508196721311475,
+    0.044
+   ]
+  },
+  {
+   "label": "container",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.2360655737704918,
+    0.538,
+    0.12786885245901639,
+    0.108
+   ]
+  },
+  {
+   "label": "puddle",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.21311475409836064,
+    0.966,
+    0.16065573770491803,
+    0.032
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.521311475409836,
+    0.72,
+    0.05901639344262295,
+    0.132
+   ]
+  },
+  {
+   "label": "road",
+   "attributes": [],
+   "bounding_box": [
+    0.07213114754098361,
+    0.662,
+    0.8622950819672132,
+    0.328
+   ]
+  },
+  {
+   "label": "trash",
+   "attributes": [],
+   "bounding_box": [
+    0.9311475409836065,
+    0.798,
+    0.06885245901639345,
+    0.03
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.6754098360655738,
+    0.706,
+    0.05901639344262295,
+    0.13
+   ]
+  },
+  {
+   "label": "wagon",
+   "attributes": [],
+   "bounding_box": [
+    0.06229508196721312,
+    0.112,
+    0.5606557377049181,
+    0.598
+   ]
+  },
+  {
+   "label": "shoes",
+   "attributes": [],
+   "bounding_box": [
+    0.06885245901639345,
+    0.082,
+    0.05901639344262295,
+    0.034
+   ]
+  },
+  {
+   "label": "letters",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.04918032786885246,
+    0.972,
+    0.2262295081967213,
+    0.024
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [
+    "black",
+    "iron"
+   ],
+   "bounding_box": [
+    0.5606557377049181,
+    0.282,
+    0.42295081967213116,
+    0.06
+   ]
+  },
+  {
+   "label": "power lines",
+   "attributes": [],
+   "bounding_box": [
+    0.03278688524590164,
+    0.024,
+    0.6918032786885245,
+    0.07
+   ]
+  },
+  {
+   "label": "tire",
+   "attributes": [],
+   "bounding_box": [
+    0.06229508196721312,
+    0.392,
+    0.07868852459016394,
+    0.306
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.6786885245901639,
+    0.454,
+    0.05245901639344262,
+    0.028
+   ]
+  },
+  {
+   "label": "puddle",
+   "attributes": [],
+   "bounding_box": [
+    0.4426229508196721,
+    0.826,
+    0.30491803278688523,
+    0.05
+   ]
+  },
+  {
+   "label": "mouth",
+   "attributes": [],
+   "bounding_box": [
+    0.7770491803278688,
+    0.648,
+    0.07540983606557378,
+    0.012
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.5573770491803278,
+    0.324,
+    0.14426229508196722,
+    0.066
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [
+    "pointy"
+   ],
+   "bounding_box": [
+    0.8295081967213115,
+    0.3,
+    0.08852459016393442,
+    0.07
+   ]
+  },
+  {
+   "label": "water",
+   "attributes": [],
+   "bounding_box": [
+    0.03934426229508197,
+    0.938,
+    0.29180327868852457,
+    0.058
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.2459016393442623,
+    0.174,
+    0.3540983606557377,
+    0.176
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "puddle"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "foot"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "letters"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "foot"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "fur"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "foot"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "fur"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "carriage"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the right of",
+   "object": "foot"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "man",
+   "relation": "with",
+   "object": "mustache"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "fence"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "mane",
+   "relation": "to the right of",
+   "object": "wagon"
+  },
+  {
+   "subject": "mane",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "mane",
+   "relation": "to the right of",
+   "object": "carriage"
+  },
+  {
+   "subject": "mane",
+   "relation": "to the right of",
+   "object": "ear"
+  },
+  {
+   "subject": "mane",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "eye",
+   "relation": "of",
+   "object": "horse"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "carriage"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "power lines"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the left of",
+   "object": "foot"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the right of",
+   "object": "puddle"
+  },
+  {
+   "subject": "foot",
+   "relation": "to the right of",
+   "object": "letters"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the left of",
+   "object": "container"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "wheel"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "horse",
+   "relation": "above",
+   "object": "puddle"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "tire"
+  },
+  {
+   "subject": "fur",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "fur",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "fur",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "carriage",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "carriage",
+   "relation": "to the left of",
+   "object": "fence"
+  },
+  {
+   "subject": "carriage",
+   "relation": "to the left of",
+   "object": "mouth"
+  },
+  {
+   "subject": "carriage",
+   "relation": "above",
+   "object": "container"
+  },
+  {
+   "subject": "carriage",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "carriage",
+   "relation": "to the left of",
+   "object": "mane"
+  },
+  {
+   "subject": "carriage",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "carriage",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "carriage"
+  },
+  {
+   "subject": "nose",
+   "relation": "of",
+   "object": "horse"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "wagon"
+  },
+  {
+   "subject": "container",
+   "relation": "to the right of",
+   "object": "tire"
+  },
+  {
+   "subject": "container",
+   "relation": "to the right of",
+   "object": "wheel"
+  },
+  {
+   "subject": "container",
+   "relation": "under",
+   "object": "carriage"
+  },
+  {
+   "subject": "puddle",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "puddle",
+   "relation": "to the right of",
+   "object": "letters"
+  },
+  {
+   "subject": "puddle",
+   "relation": "of",
+   "object": "water"
+  },
+  {
+   "subject": "puddle",
+   "relation": "to the left of",
+   "object": "foot"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "road",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "trash",
+   "relation": "on",
+   "object": "road"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "horse"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "road"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "fur"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "wagon",
+   "relation": "to the left of",
+   "object": "fence"
+  },
+  {
+   "subject": "wagon",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "wagon",
+   "relation": "to the left of",
+   "object": "mane"
+  },
+  {
+   "subject": "wagon",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "wagon",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "wagon",
+   "relation": "to the left of",
+   "object": "mouth"
+  },
+  {
+   "subject": "letters",
+   "relation": "to the left of",
+   "object": "puddle"
+  },
+  {
+   "subject": "letters",
+   "relation": "to the left of",
+   "object": "foot"
+  },
+  {
+   "subject": "letters",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the right of",
+   "object": "carriage"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the right of",
+   "object": "wagon"
+  },
+  {
+   "subject": "power lines",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "tire",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "tire",
+   "relation": "to the left of",
+   "object": "container"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "wagon"
+  },
+  {
+   "subject": "puddle",
+   "relation": "under",
+   "object": "horse"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the right of",
+   "object": "wagon"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the right of",
+   "object": "carriage"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the left of",
+   "object": "mane"
+  },
+  {
+   "subject": "ear",
+   "relation": "of",
+   "object": "horse"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "wagon"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "ear"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "carriage"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "mane"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "foot"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "mane"
+  },
+  {
+   "subject": "man",
+   "relation": "sitting in",
+   "object": "carriage"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "ear"
+  }
+ ],
+ "counts": {
+  "objects": 39,
+  "relations": 113
+ }
+}

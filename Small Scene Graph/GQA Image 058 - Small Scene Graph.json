@@ -1,0 +1,166 @@
+{
+ "image_number": 58,
+ "gqa_image_id": "2383543",
+ "filepath": "data/data_1/2383543.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "shirt",
+  "bottle"
+ ],
+ "core_nodes": [
+  "bottle",
+  "counter",
+  "shirt"
+ ],
+ "nodes": [
+  "bottle",
+  "counter",
+  "ketchup",
+  "ketchup bottle",
+  "man",
+  "shirt"
+ ],
+ "objects": [
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.178,
+    0.11466666666666667,
+    0.756,
+    0.8853333333333333
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "collared",
+    "red"
+   ],
+   "bounding_box": [
+    0.298,
+    0.424,
+    0.524,
+    0.576
+   ]
+  },
+  {
+   "label": "ketchup",
+   "attributes": [],
+   "bounding_box": [
+    0.86,
+    0.7813333333333333,
+    0.04,
+    0.112
+   ]
+  },
+  {
+   "label": "counter",
+   "attributes": [],
+   "bounding_box": [
+    0.772,
+    0.8533333333333334,
+    0.228,
+    0.14666666666666667
+   ]
+  },
+  {
+   "label": "ketchup bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.862,
+    0.768,
+    0.038,
+    0.13066666666666665
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.94,
+    0.7653333333333333,
+    0.04,
+    0.12533333333333332
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "counter"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "ketchup"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "ketchup bottle"
+  },
+  {
+   "subject": "ketchup",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "ketchup",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "ketchup bottle",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "ketchup bottle",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "ketchup bottle"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "ketchup"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 14
+ }
+}

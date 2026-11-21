@@ -1,0 +1,140 @@
+{
+ "image_number": 29,
+ "gqa_image_id": "2379354",
+ "filepath": "data/data_0/2379354.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "woman",
+  "vest"
+ ],
+ "core_nodes": [
+  "sea",
+  "vest",
+  "woman"
+ ],
+ "nodes": [
+  "gloves",
+  "sea",
+  "vest",
+  "water",
+  "woman"
+ ],
+ "objects": [
+  {
+   "label": "water",
+   "attributes": [],
+   "bounding_box": [
+    0.458,
+    0.5825825825825826,
+    0.54,
+    0.02702702702702703
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [
+    "standing"
+   ],
+   "bounding_box": [
+    0.28,
+    0.5885885885885885,
+    0.054,
+    0.2972972972972973
+   ]
+  },
+  {
+   "label": "vest",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.278,
+    0.6216216216216216,
+    0.042,
+    0.11711711711711711
+   ]
+  },
+  {
+   "label": "vest",
+   "attributes": [
+    "orange"
+   ],
+   "bounding_box": [
+    0.078,
+    0.5915915915915916,
+    0.012,
+    0.015015015015015015
+   ]
+  },
+  {
+   "label": "gloves",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.324,
+    0.7027027027027027,
+    0.012,
+    0.018018018018018018
+   ]
+  },
+  {
+   "label": "sea",
+   "attributes": [],
+   "bounding_box": [
+    0.458,
+    0.5885885885885885,
+    0.54,
+    0.018018018018018018
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "water",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "sea"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "vest"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "water"
+  },
+  {
+   "subject": "vest",
+   "relation": "to the left of",
+   "object": "gloves"
+  },
+  {
+   "subject": "vest",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "gloves",
+   "relation": "to the right of",
+   "object": "vest"
+  },
+  {
+   "subject": "sea",
+   "relation": "to the right of",
+   "object": "woman"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 6,
+  "relations": 8
+ }
+}

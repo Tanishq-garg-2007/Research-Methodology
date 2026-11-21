@@ -1,0 +1,162 @@
+{
+ "image_number": 36,
+ "gqa_image_id": "2404923",
+ "filepath": "data/data_0/2404923.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "animal",
+  "rope"
+ ],
+ "core_nodes": [
+  "animal",
+  "boat",
+  "rope"
+ ],
+ "nodes": [
+  "animal",
+  "boat",
+  "dirt",
+  "dock",
+  "nose",
+  "rope"
+ ],
+ "objects": [
+  {
+   "label": "nose",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.462,
+    0.5405405405405406,
+    0.03,
+    0.05105105105105105
+   ]
+  },
+  {
+   "label": "dirt",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.562,
+    0.6126126126126126,
+    0.198,
+    0.15615615615615616
+   ]
+  },
+  {
+   "label": "boat",
+   "attributes": [],
+   "bounding_box": [
+    0.634,
+    0.17117117117117117,
+    0.042,
+    0.012012012012012012
+   ]
+  },
+  {
+   "label": "animal",
+   "attributes": [
+    "tan",
+    "lying"
+   ],
+   "bounding_box": [
+    0.104,
+    0.17417417417417416,
+    0.446,
+    0.7357357357357357
+   ]
+  },
+  {
+   "label": "dock",
+   "attributes": [],
+   "bounding_box": [
+    0.434,
+    0.3633633633633634,
+    0.492,
+    0.16516516516516516
+   ]
+  },
+  {
+   "label": "rope",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.104,
+    0.3123123123123123,
+    0.318,
+    0.5225225225225225
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "rope"
+  },
+  {
+   "subject": "dirt",
+   "relation": "to the right of",
+   "object": "rope"
+  },
+  {
+   "subject": "dirt",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "boat",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "dock"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "dirt"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "boat"
+  },
+  {
+   "subject": "dock",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "dock",
+   "relation": "to the right of",
+   "object": "rope"
+  },
+  {
+   "subject": "rope",
+   "relation": "to the left of",
+   "object": "dirt"
+  },
+  {
+   "subject": "rope",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "rope",
+   "relation": "to the left of",
+   "object": "dock"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 12
+ }
+}

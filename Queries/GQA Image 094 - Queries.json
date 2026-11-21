@@ -1,0 +1,23 @@
+{
+ "image_number": 94,
+ "gqa_image_id": "2355914",
+ "filepath": "data/data_2/2355914.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "window",
+  "windows"
+ ],
+ "query": {
+  "question": "What is to the left of the door?",
+  "answer": "windows",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "door"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "image_number": 15,
+ "gqa_image_id": "2389368",
+ "filepath": "data/data_0/2389368.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "ball",
+  "fingers"
+ ],
+ "core_nodes": [
+  "ball",
+  "fingers",
+  "wristband"
+ ],
+ "nodes": [
+  "ball",
+  "fingers",
+  "man",
+  "shirt",
+  "wrist",
+  "wristband"
+ ],
+ "objects": [
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.412,
+    0.28012048192771083,
+    0.2,
+    0.7078313253012049
+   ]
+  },
+  {
+   "label": "fingers",
+   "attributes": [],
+   "bounding_box": [
+    0.38,
+    0.7740963855421686,
+    0.054,
+    0.06626506024096386
+   ]
+  },
+  {
+   "label": "wrist",
+   "attributes": [],
+   "bounding_box": [
+    0.424,
+    0.7048192771084337,
+    0.08,
+    0.13253012048192772
+   ]
+  },
+  {
+   "label": "ball",
+   "attributes": [
+    "yellow"
+   ],
+   "bounding_box": [
+    0.41,
+    0.7981927710843374,
+    0.034,
+    0.0572289156626506
+   ]
+  },
+  {
+   "label": "ball",
+   "attributes": [
+    "yellow"
+   ],
+   "bounding_box": [
+    0.378,
+    0.7981927710843374,
+    0.038,
+    0.060240963855421686
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.458,
+    0.4608433734939759,
+    0.164,
+    0.3795180722891566
+   ]
+  },
+  {
+   "label": "wristband",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.438,
+    0.75,
+    0.048,
+    0.0572289156626506
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "fingers"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "ball"
+  },
+  {
+   "subject": "fingers",
+   "relation": "to the left of",
+   "object": "wrist"
+  },
+  {
+   "subject": "fingers",
+   "relation": "above",
+   "object": "ball"
+  },
+  {
+   "subject": "fingers",
+   "relation": "to the left of",
+   "object": "wristband"
+  },
+  {
+   "subject": "fingers",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "fingers",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "wrist",
+   "relation": "to the right of",
+   "object": "fingers"
+  },
+  {
+   "subject": "wrist",
+   "relation": "to the right of",
+   "object": "ball"
+  },
+  {
+   "subject": "ball",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "ball",
+   "relation": "below",
+   "object": "fingers"
+  },
+  {
+   "subject": "ball",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "ball",
+   "relation": "to the left of",
+   "object": "wrist"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "ball"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "fingers"
+  },
+  {
+   "subject": "wristband",
+   "relation": "to the right of",
+   "object": "fingers"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 16
+ }
+}

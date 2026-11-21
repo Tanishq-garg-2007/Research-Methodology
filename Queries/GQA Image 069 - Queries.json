@@ -1,0 +1,23 @@
+{
+ "image_number": 69,
+ "gqa_image_id": "2336",
+ "filepath": "data/data_1/2336.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "tree",
+  "planter"
+ ],
+ "query": {
+  "question": "What is on the sidewalk?",
+  "answer": "tree",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "sidewalk"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

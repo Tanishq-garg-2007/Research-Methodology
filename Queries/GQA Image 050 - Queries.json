@@ -1,0 +1,23 @@
+{
+ "image_number": 50,
+ "gqa_image_id": "2349130",
+ "filepath": "data/data_1/2349130.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "restaurant",
+  "window"
+ ],
+ "query": {
+  "question": "What is to the left of the jeans?",
+  "answer": "restaurant",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "jeans"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

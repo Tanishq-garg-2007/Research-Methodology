@@ -1,0 +1,23 @@
+{
+ "image_number": 43,
+ "gqa_image_id": "2367286",
+ "filepath": "data/data_1/2367286.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "post",
+  "bird"
+ ],
+ "query": {
+  "question": "What is on the pipe?",
+  "answer": "bird",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "pipe"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

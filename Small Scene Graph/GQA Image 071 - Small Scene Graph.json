@@ -1,0 +1,225 @@
+{
+ "image_number": 71,
+ "gqa_image_id": "2349640",
+ "filepath": "data/data_1/2349640.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "pole",
+  "player"
+ ],
+ "core_nodes": [
+  "net",
+  "player",
+  "pole"
+ ],
+ "nodes": [
+  "hands",
+  "net",
+  "player",
+  "pole",
+  "racket",
+  "shirt"
+ ],
+ "objects": [
+  {
+   "label": "shirt",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.324,
+    0.5688622754491018,
+    0.064,
+    0.08383233532934131
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.2,
+    0.5329341317365269,
+    0.024,
+    0.0718562874251497
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.252,
+    0.6137724550898204,
+    0.036,
+    0.2215568862275449
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "light blue"
+   ],
+   "bounding_box": [
+    0.73,
+    0.5868263473053892,
+    0.03,
+    0.05389221556886228
+   ]
+  },
+  {
+   "label": "racket",
+   "attributes": [],
+   "bounding_box": [
+    0.16,
+    0.48502994011976047,
+    0.032,
+    0.029940119760479042
+   ]
+  },
+  {
+   "label": "player",
+   "attributes": [],
+   "bounding_box": [
+    0.192,
+    0.5029940119760479,
+    0.06,
+    0.19760479041916168
+   ]
+  },
+  {
+   "label": "racket",
+   "attributes": [],
+   "bounding_box": [
+    0.75,
+    0.5958083832335329,
+    0.036,
+    0.029940119760479042
+   ]
+  },
+  {
+   "label": "net",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.284,
+    0.6197604790419161,
+    0.712,
+    0.23353293413173654
+   ]
+  },
+  {
+   "label": "player",
+   "attributes": [
+    "waiting"
+   ],
+   "bounding_box": [
+    0.722,
+    0.562874251497006,
+    0.038,
+    0.15269461077844312
+   ]
+  },
+  {
+   "label": "racket",
+   "attributes": [],
+   "bounding_box": [
+    0.372,
+    0.5958083832335329,
+    0.064,
+    0.06287425149700598
+   ]
+  },
+  {
+   "label": "hands",
+   "attributes": [],
+   "bounding_box": [
+    0.36,
+    0.6287425149700598,
+    0.034,
+    0.03592814371257485
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "hands"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "net"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "racket"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "hands"
+  },
+  {
+   "subject": "player",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "racket"
+  },
+  {
+   "subject": "player",
+   "relation": "holding",
+   "object": "racket"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "racket",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "net",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "racket",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "hands",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "hands",
+   "relation": "to the right of",
+   "object": "player"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 11,
+  "relations": 14
+ }
+}

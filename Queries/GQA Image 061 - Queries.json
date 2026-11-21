@@ -1,0 +1,23 @@
+{
+ "image_number": 61,
+ "gqa_image_id": "2319535",
+ "filepath": "data/data_1/2319535.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "wine",
+  "hand"
+ ],
+ "query": {
+  "question": "What is to the left of the glass?",
+  "answer": "hand",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

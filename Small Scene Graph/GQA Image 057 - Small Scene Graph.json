@@ -1,0 +1,200 @@
+{
+ "image_number": 57,
+ "gqa_image_id": "2367740",
+ "filepath": "data/data_1/2367740.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "door",
+  "hair"
+ ],
+ "core_nodes": [
+  "door",
+  "glasses",
+  "hair"
+ ],
+ "nodes": [
+  "cap",
+  "coat",
+  "door",
+  "giraffe",
+  "glasses",
+  "hair"
+ ],
+ "objects": [
+  {
+   "label": "coat",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.666,
+    0.712,
+    0.336,
+    0.288
+   ]
+  },
+  {
+   "label": "giraffe",
+   "attributes": [
+    "tall"
+   ],
+   "bounding_box": [
+    0.348,
+    0.2613333333333333,
+    0.438,
+    0.5973333333333334
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [
+    "arched",
+    "large",
+    "wood",
+    "tall",
+    "domed"
+   ],
+   "bounding_box": [
+    0.488,
+    0.24533333333333332,
+    0.2,
+    0.6346666666666667
+   ]
+  },
+  {
+   "label": "glasses",
+   "attributes": [],
+   "bounding_box": [
+    0.804,
+    0.6666666666666666,
+    0.028,
+    0.088
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.794,
+    0.488,
+    0.198,
+    0.22133333333333333
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "blond"
+   ],
+   "bounding_box": [
+    0.442,
+    0.7706666666666667,
+    0.12,
+    0.22133333333333333
+   ]
+  },
+  {
+   "label": "cap",
+   "attributes": [
+    "small",
+    "red"
+   ],
+   "bounding_box": [
+    0.656,
+    0.792,
+    0.106,
+    0.112
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "in front of",
+   "object": "door"
+  },
+  {
+   "subject": "door",
+   "relation": "behind",
+   "object": "giraffe"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "cap"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "giraffe"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "cap"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the right of",
+   "object": "door"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 16
+ }
+}

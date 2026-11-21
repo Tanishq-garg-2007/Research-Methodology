@@ -1,0 +1,158 @@
+{
+ "image_number": 43,
+ "gqa_image_id": "2367286",
+ "filepath": "data/data_1/2367286.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "post",
+  "bird"
+ ],
+ "core_nodes": [
+  "bird",
+  "pipe",
+  "post"
+ ],
+ "nodes": [
+  "bird",
+  "horse",
+  "man",
+  "path",
+  "pipe",
+  "post"
+ ],
+ "objects": [
+  {
+   "label": "bird",
+   "attributes": [],
+   "bounding_box": [
+    0.192,
+    0.768,
+    0.056,
+    0.096
+   ]
+  },
+  {
+   "label": "path",
+   "attributes": [],
+   "bounding_box": [
+    0.274,
+    0.376,
+    0.72,
+    0.05333333333333334
+   ]
+  },
+  {
+   "label": "pipe",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.002,
+    0.8453333333333334,
+    0.996,
+    0.07466666666666667
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.436,
+    0.2613333333333333,
+    0.176,
+    0.17066666666666666
+   ]
+  },
+  {
+   "label": "bird",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.776,
+    0.7813333333333333,
+    0.054,
+    0.096
+   ]
+  },
+  {
+   "label": "bird",
+   "attributes": [],
+   "bounding_box": [
+    0.568,
+    0.7733333333333333,
+    0.06,
+    0.096
+   ]
+  },
+  {
+   "label": "post",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.194,
+    0.30133333333333334,
+    0.016,
+    0.10933333333333334
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [
+    "sitting"
+   ],
+   "bounding_box": [
+    0.446,
+    0.2986666666666667,
+    0.042,
+    0.11733333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "bird",
+   "relation": "on",
+   "object": "pipe"
+  },
+  {
+   "subject": "path",
+   "relation": "to the right of",
+   "object": "post"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "post"
+  },
+  {
+   "subject": "post",
+   "relation": "to the left of",
+   "object": "path"
+  },
+  {
+   "subject": "post",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "post",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "post"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 8,
+  "relations": 7
+ }
+}

@@ -1,0 +1,150 @@
+{
+ "image_number": 55,
+ "gqa_image_id": "2395306",
+ "filepath": "data/data_1/2395306.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "tower",
+   "attributes": [
+    "tall",
+    "brick",
+    "red"
+   ],
+   "bounding_box": [
+    0.2773333333333333,
+    0.01,
+    0.45866666666666667,
+    0.964
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [
+    "high",
+    "gray",
+    "overcast"
+   ],
+   "bounding_box": [
+    0.0,
+    0.002,
+    1.0026666666666666,
+    0.534
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.924,
+    0.7653333333333333,
+    0.074
+   ]
+  },
+  {
+   "label": "clock",
+   "attributes": [
+    "high",
+    "roman",
+    "black",
+    "round"
+   ],
+   "bounding_box": [
+    0.392,
+    0.302,
+    0.08266666666666667,
+    0.076
+   ]
+  },
+  {
+   "label": "palm tree",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.704,
+    0.488,
+    0.25866666666666666,
+    0.472
+   ]
+  },
+  {
+   "label": "people",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.866,
+    1.0026666666666666,
+    0.13
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "tower",
+   "relation": "near",
+   "object": "palm tree"
+  },
+  {
+   "subject": "tower",
+   "relation": "near",
+   "object": "ground"
+  },
+  {
+   "subject": "tower",
+   "relation": "to the left of",
+   "object": "palm tree"
+  },
+  {
+   "subject": "sky",
+   "relation": "near",
+   "object": "palm tree"
+  },
+  {
+   "subject": "ground",
+   "relation": "near",
+   "object": "tower"
+  },
+  {
+   "subject": "clock",
+   "relation": "above",
+   "object": "people"
+  },
+  {
+   "subject": "clock",
+   "relation": "on",
+   "object": "tower"
+  },
+  {
+   "subject": "clock",
+   "relation": "in",
+   "object": "tower"
+  },
+  {
+   "subject": "palm tree",
+   "relation": "near",
+   "object": "tower"
+  },
+  {
+   "subject": "palm tree",
+   "relation": "near",
+   "object": "sky"
+  },
+  {
+   "subject": "palm tree",
+   "relation": "to the right of",
+   "object": "tower"
+  },
+  {
+   "subject": "people",
+   "relation": "below",
+   "object": "clock"
+  }
+ ],
+ "counts": {
+  "objects": 6,
+  "relations": 12
+ }
+}

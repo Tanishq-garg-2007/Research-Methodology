@@ -1,0 +1,23 @@
+{
+ "image_number": 1,
+ "gqa_image_id": "2395226",
+ "filepath": "data/data_0/2395226.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "plate",
+  "glass"
+ ],
+ "query": {
+  "question": "What is on the plate?",
+  "answer": "fork",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "plate"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

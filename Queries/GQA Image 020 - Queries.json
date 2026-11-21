@@ -1,0 +1,24 @@
+{
+ "image_number": 20,
+ "gqa_image_id": "4114",
+ "filepath": "data/data_0/4114.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "plant",
+  "chair"
+ ],
+ "query": {
+  "question": "What is between the plant and the chair?",
+  "answer": "window",
+  "template": "between",
+  "derivation": {
+   "anchor_a": "plant",
+   "anchor_b": "chair",
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

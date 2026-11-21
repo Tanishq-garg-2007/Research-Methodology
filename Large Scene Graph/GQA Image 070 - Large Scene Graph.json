@@ -1,0 +1,218 @@
+{
+ "image_number": 70,
+ "gqa_image_id": "2377395",
+ "filepath": "data/data_1/2377395.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.8,
+    1.0,
+    0.2
+   ]
+  },
+  {
+   "label": "coffee mug",
+   "attributes": [],
+   "bounding_box": [
+    0.3,
+    0.5146666666666667,
+    0.336,
+    0.42133333333333334
+   ]
+  },
+  {
+   "label": "mirror",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.0,
+    0.306,
+    0.37066666666666664
+   ]
+  },
+  {
+   "label": "paper",
+   "attributes": [
+    "pink",
+    "crumbled"
+   ],
+   "bounding_box": [
+    0.63,
+    0.9226666666666666,
+    0.098,
+    0.07733333333333334
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.442,
+    0.4826666666666667,
+    0.066,
+    0.192
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [],
+   "bounding_box": [
+    0.454,
+    0.128,
+    0.078,
+    0.4533333333333333
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [],
+   "bounding_box": [
+    0.41,
+    0.16266666666666665,
+    0.122,
+    0.44266666666666665
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [],
+   "bounding_box": [
+    0.274,
+    0.256,
+    0.19,
+    0.33866666666666667
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [],
+   "bounding_box": [
+    0.534,
+    0.4613333333333333,
+    0.274,
+    0.21866666666666668
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [],
+   "bounding_box": [
+    0.548,
+    0.168,
+    0.07,
+    0.49333333333333335
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [],
+   "bounding_box": [
+    0.512,
+    0.13333333333333333,
+    0.048,
+    0.5466666666666666
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [],
+   "bounding_box": [
+    0.36,
+    0.17866666666666667,
+    0.162,
+    0.42933333333333334
+   ]
+  },
+  {
+   "label": "counter",
+   "attributes": [
+    "gray",
+    "granite"
+   ],
+   "bounding_box": [
+    0.002,
+    0.6053333333333333,
+    0.768,
+    0.39466666666666667
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0026666666666666666,
+    1.0,
+    0.9973333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "coffee mug",
+   "relation": "to the left of",
+   "object": "toothbrush"
+  },
+  {
+   "subject": "mirror",
+   "relation": "hanging on",
+   "object": "wall"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "toothbrush"
+  },
+  {
+   "subject": "mirror",
+   "relation": "on",
+   "object": "wall"
+  },
+  {
+   "subject": "paper",
+   "relation": "on top of",
+   "object": "counter"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "to the left of",
+   "object": "toothbrush"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "to the right of",
+   "object": "toothbrush"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "in",
+   "object": "coffee mug"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "inside",
+   "object": "coffee mug"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "to the right of",
+   "object": "coffee mug"
+  }
+ ],
+ "counts": {
+  "objects": 14,
+  "relations": 11
+ }
+}

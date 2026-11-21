@@ -1,0 +1,23 @@
+{
+ "image_number": 31,
+ "gqa_image_id": "150405",
+ "filepath": "data/data_0/150405.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "banana",
+  "man"
+ ],
+ "query": {
+  "question": "What is to the left of the drawing?",
+  "answer": "man",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "drawing"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

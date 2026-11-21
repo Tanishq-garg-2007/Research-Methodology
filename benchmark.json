@@ -1,0 +1,2913 @@
+{
+ "meta": {
+  "name": "GQA-100 spatial benchmark (Exp-07 dataset)",
+  "source": "Voxel51/GQA-Scene-Graph (GQA 35k subset)",
+  "n_items": 100,
+  "queries_per_item": 1,
+  "built_utc": "2026-11-21T10:02:59Z",
+  "method": "large graph (full original) -> tight anchor-pair subgraph -> compact small graph (anchors + query + answer + <=3 distractors; edges from tight subgraph only, core-touching, deduped) -> exactly one unique-answer query per image; between-queries from bbox centre geometry; self-relations and contradictory left/right pairs excluded from query generation",
+  "forced_item_001": "2395226"
+ },
+ "items": [
+  {
+   "image_number": 1,
+   "gqa_image_id": "2395226",
+   "filepath": "data/data_0/2395226.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "plate",
+    "glass"
+   ],
+   "query": {
+    "question": "What is on the plate?",
+    "answer": "fork",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 23,
+    "full_relations": 51,
+    "compact_nodes": 6,
+    "compact_objects": 10,
+    "compact_relations": 7,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 001.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 001 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 001 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 001 - Queries.json"
+   }
+  },
+  {
+   "image_number": 2,
+   "gqa_image_id": "2417523",
+   "filepath": "data/data_0/2417523.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "letter",
+    "propeller"
+   ],
+   "query": {
+    "question": "What is to the left of the windows?",
+    "answer": "propeller",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 25,
+    "full_relations": 36,
+    "compact_nodes": 6,
+    "compact_objects": 14,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 002.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 002 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 002 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 002 - Queries.json"
+   }
+  },
+  {
+   "image_number": 3,
+   "gqa_image_id": "2414767",
+   "filepath": "data/data_0/2414767.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "pole",
+    "leg"
+   ],
+   "query": {
+    "question": "What is to the right of the bottle?",
+    "answer": "pole",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 40,
+    "compact_nodes": 6,
+    "compact_objects": 16,
+    "compact_relations": 22,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 003.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 003 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 003 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 003 - Queries.json"
+   }
+  },
+  {
+   "image_number": 4,
+   "gqa_image_id": "2412093",
+   "filepath": "data/data_0/2412093.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "man",
+    "skateboard"
+   ],
+   "query": {
+    "question": "What is to the left of the cap?",
+    "answer": "man",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 20,
+    "full_relations": 83,
+    "compact_nodes": 6,
+    "compact_objects": 12,
+    "compact_relations": 31,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 004.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 004 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 004 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 004 - Queries.json"
+   }
+  },
+  {
+   "image_number": 5,
+   "gqa_image_id": "2364991",
+   "filepath": "data/data_0/2364991.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "tree",
+    "trunk"
+   ],
+   "query": {
+    "question": "What is on the tree?",
+    "answer": "trunk",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 82,
+    "compact_nodes": 5,
+    "compact_objects": 6,
+    "compact_relations": 11,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 005.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 005 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 005 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 005 - Queries.json"
+   }
+  },
+  {
+   "image_number": 6,
+   "gqa_image_id": "2376954",
+   "filepath": "data/data_0/2376954.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "door",
+    "shelf"
+   ],
+   "query": {
+    "question": "What is on the shelf?",
+    "answer": "container",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 18,
+    "full_relations": 26,
+    "compact_nodes": 6,
+    "compact_objects": 14,
+    "compact_relations": 13,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 006.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 006 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 006 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 006 - Queries.json"
+   }
+  },
+  {
+   "image_number": 7,
+   "gqa_image_id": "2375631",
+   "filepath": "data/data_0/2375631.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "counter",
+    "toilet"
+   ],
+   "query": {
+    "question": "What is to the right of the lid?",
+    "answer": "counter",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 16,
+    "full_relations": 33,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 10,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 007.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 007 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 007 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 007 - Queries.json"
+   }
+  },
+  {
+   "image_number": 8,
+   "gqa_image_id": "264",
+   "filepath": "data/data_0/264.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "sign",
+    "window"
+   ],
+   "query": {
+    "question": "What is to the left of the apple?",
+    "answer": "window",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 14,
+    "full_relations": 28,
+    "compact_nodes": 6,
+    "compact_objects": 8,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 008.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 008 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 008 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 008 - Queries.json"
+   }
+  },
+  {
+   "image_number": 9,
+   "gqa_image_id": "2335834",
+   "filepath": "data/data_0/2335834.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "tree",
+    "hand"
+   ],
+   "query": {
+    "question": "What is to the left of the frisbee?",
+    "answer": "hand",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 12,
+    "full_relations": 13,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 7,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 009.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 009 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 009 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 009 - Queries.json"
+   }
+  },
+  {
+   "image_number": 10,
+   "gqa_image_id": "2411163",
+   "filepath": "data/data_0/2411163.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "trees",
+    "skin"
+   ],
+   "query": {
+    "question": "What is to the right of the drawing?",
+    "answer": "trees",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 16,
+    "full_relations": 25,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 010.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 010 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 010 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 010 - Queries.json"
+   }
+  },
+  {
+   "image_number": 11,
+   "gqa_image_id": "2371002",
+   "filepath": "data/data_0/2371002.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "wall",
+    "doorway"
+   ],
+   "query": {
+    "question": "What is to the left of the doorway?",
+    "answer": "wall",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 14,
+    "full_relations": 12,
+    "compact_nodes": 5,
+    "compact_objects": 7,
+    "compact_relations": 8,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 011.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 011 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 011 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 011 - Queries.json"
+   }
+  },
+  {
+   "image_number": 12,
+   "gqa_image_id": "2344244",
+   "filepath": "data/data_0/2344244.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "arm",
+    "hand"
+   ],
+   "query": {
+    "question": "What is to the left of the food?",
+    "answer": "hand",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 41,
+    "full_relations": 112,
+    "compact_nodes": 6,
+    "compact_objects": 8,
+    "compact_relations": 14,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 012.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 012 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 012 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 012 - Queries.json"
+   }
+  },
+  {
+   "image_number": 13,
+   "gqa_image_id": "2415025",
+   "filepath": "data/data_0/2415025.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "window",
+    "cockpit"
+   ],
+   "query": {
+    "question": "What is to the left of the cockpit?",
+    "answer": "wing",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 13,
+    "full_relations": 30,
+    "compact_nodes": 6,
+    "compact_objects": 9,
+    "compact_relations": 20,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 013.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 013 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 013 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 013 - Queries.json"
+   }
+  },
+  {
+   "image_number": 14,
+   "gqa_image_id": "2388854",
+   "filepath": "data/data_0/2388854.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "cord",
+    "man"
+   ],
+   "query": {
+    "question": "What is to the right of the face?",
+    "answer": "cord",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 9,
+    "full_relations": 12,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 014.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 014 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 014 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 014 - Queries.json"
+   }
+  },
+  {
+   "image_number": 15,
+   "gqa_image_id": "2389368",
+   "filepath": "data/data_0/2389368.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "ball",
+    "fingers"
+   ],
+   "query": {
+    "question": "What is to the left of the wristband?",
+    "answer": "fingers",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 18,
+    "full_relations": 31,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 015.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 015 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 015 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 015 - Queries.json"
+   }
+  },
+  {
+   "image_number": 16,
+   "gqa_image_id": "2360483",
+   "filepath": "data/data_0/2360483.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "pole",
+    "mirror"
+   ],
+   "query": {
+    "question": "What is on the pole?",
+    "answer": "sign",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 23,
+    "full_relations": 79,
+    "compact_nodes": 6,
+    "compact_objects": 10,
+    "compact_relations": 14,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 016.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 016 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 016 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 016 - Queries.json"
+   }
+  },
+  {
+   "image_number": 17,
+   "gqa_image_id": "2407506",
+   "filepath": "data/data_0/2407506.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "boy",
+    "phone"
+   ],
+   "query": {
+    "question": "What is between the boy and the phone?",
+    "answer": "shirt",
+    "template": "between"
+   },
+   "counts": {
+    "full_objects": 6,
+    "full_relations": 7,
+    "compact_nodes": 5,
+    "compact_objects": 5,
+    "compact_relations": 7,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 017.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 017 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 017 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 017 - Queries.json"
+   }
+  },
+  {
+   "image_number": 18,
+   "gqa_image_id": "2398218",
+   "filepath": "data/data_0/2398218.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "stop sign",
+    "post"
+   ],
+   "query": {
+    "question": "What is to the left of the post?",
+    "answer": "stop sign",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 12,
+    "full_relations": 20,
+    "compact_nodes": 5,
+    "compact_objects": 6,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 018.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 018 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 018 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 018 - Queries.json"
+   }
+  },
+  {
+   "image_number": 19,
+   "gqa_image_id": "2389557",
+   "filepath": "data/data_0/2389557.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "girl",
+    "grass"
+   ],
+   "query": {
+    "question": "What is between the girl and the grass?",
+    "answer": "shoe",
+    "template": "between"
+   },
+   "counts": {
+    "full_objects": 14,
+    "full_relations": 16,
+    "compact_nodes": 5,
+    "compact_objects": 5,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 019.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 019 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 019 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 019 - Queries.json"
+   }
+  },
+  {
+   "image_number": 20,
+   "gqa_image_id": "4114",
+   "filepath": "data/data_0/4114.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "plant",
+    "chair"
+   ],
+   "query": {
+    "question": "What is between the plant and the chair?",
+    "answer": "window",
+    "template": "between"
+   },
+   "counts": {
+    "full_objects": 6,
+    "full_relations": 7,
+    "compact_nodes": 4,
+    "compact_objects": 4,
+    "compact_relations": 6,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 020.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 020 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 020 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 020 - Queries.json"
+   }
+  },
+  {
+   "image_number": 21,
+   "gqa_image_id": "2408882",
+   "filepath": "data/data_0/2408882.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "giraffe",
+    "tree"
+   ],
+   "query": {
+    "question": "What is on the tree?",
+    "answer": "food",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 14,
+    "full_relations": 32,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 15,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 021.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 021 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 021 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 021 - Queries.json"
+   }
+  },
+  {
+   "image_number": 22,
+   "gqa_image_id": "2326139",
+   "filepath": "data/data_0/2326139.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "curtains",
+    "lamp"
+   ],
+   "query": {
+    "question": "What is to the left of the candles?",
+    "answer": "curtains",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 57,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 8,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 022.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 022 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 022 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 022 - Queries.json"
+   }
+  },
+  {
+   "image_number": 23,
+   "gqa_image_id": "2409769",
+   "filepath": "data/data_0/2409769.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "car",
+    "wall"
+   ],
+   "query": {
+    "question": "What is to the left of the cart?",
+    "answer": "car",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 16,
+    "full_relations": 53,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 21,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 023.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 023 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 023 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 023 - Queries.json"
+   }
+  },
+  {
+   "image_number": 24,
+   "gqa_image_id": "2341486",
+   "filepath": "data/data_0/2341486.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "car",
+    "house"
+   ],
+   "query": {
+    "question": "What is to the left of the hair?",
+    "answer": "car",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 15,
+    "full_relations": 16,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 11,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 024.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 024 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 024 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 024 - Queries.json"
+   }
+  },
+  {
+   "image_number": 25,
+   "gqa_image_id": "2338754",
+   "filepath": "data/data_0/2338754.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "animal",
+    "shorts"
+   ],
+   "query": {
+    "question": "What is to the right of the camera?",
+    "answer": "animal",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 10,
+    "full_relations": 12,
+    "compact_nodes": 5,
+    "compact_objects": 6,
+    "compact_relations": 8,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 025.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 025 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 025 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 025 - Queries.json"
+   }
+  },
+  {
+   "image_number": 26,
+   "gqa_image_id": "2415495",
+   "filepath": "data/data_0/2415495.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "wall",
+    "door"
+   ],
+   "query": {
+    "question": "What is to the left of the drain?",
+    "answer": "door",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 16,
+    "full_relations": 43,
+    "compact_nodes": 6,
+    "compact_objects": 10,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 026.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 026 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 026 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 026 - Queries.json"
+   }
+  },
+  {
+   "image_number": 27,
+   "gqa_image_id": "2371091",
+   "filepath": "data/data_0/2371091.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "grass",
+    "leg"
+   ],
+   "query": {
+    "question": "What is to the left of the ear?",
+    "answer": "grass",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 18,
+    "full_relations": 36,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 027.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 027 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 027 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 027 - Queries.json"
+   }
+  },
+  {
+   "image_number": 28,
+   "gqa_image_id": "2368938",
+   "filepath": "data/data_0/2368938.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "tomato sauce",
+    "mozzarella"
+   ],
+   "query": {
+    "question": "What is to the left of the sauce?",
+    "answer": "mozzarella",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 20,
+    "full_relations": 32,
+    "compact_nodes": 6,
+    "compact_objects": 12,
+    "compact_relations": 18,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 028.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 028 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 028 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 028 - Queries.json"
+   }
+  },
+  {
+   "image_number": 29,
+   "gqa_image_id": "2379354",
+   "filepath": "data/data_0/2379354.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "woman",
+    "vest"
+   ],
+   "query": {
+    "question": "What is to the left of the sea?",
+    "answer": "woman",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 16,
+    "full_relations": 13,
+    "compact_nodes": 5,
+    "compact_objects": 6,
+    "compact_relations": 8,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 029.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 029 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 029 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 029 - Queries.json"
+   }
+  },
+  {
+   "image_number": 30,
+   "gqa_image_id": "2361536",
+   "filepath": "data/data_0/2361536.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "cow",
+    "sand"
+   ],
+   "query": {
+    "question": "What is to the left of the head?",
+    "answer": "cow",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 19,
+    "full_relations": 43,
+    "compact_nodes": 6,
+    "compact_objects": 14,
+    "compact_relations": 23,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 030.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 030 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 030 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 030 - Queries.json"
+   }
+  },
+  {
+   "image_number": 31,
+   "gqa_image_id": "150405",
+   "filepath": "data/data_0/150405.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "banana",
+    "man"
+   ],
+   "query": {
+    "question": "What is to the left of the drawing?",
+    "answer": "man",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 19,
+    "full_relations": 41,
+    "compact_nodes": 6,
+    "compact_objects": 12,
+    "compact_relations": 15,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 031.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 031 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 031 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 031 - Queries.json"
+   }
+  },
+  {
+   "image_number": 32,
+   "gqa_image_id": "2343740",
+   "filepath": "data/data_0/2343740.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "boy",
+    "crane"
+   ],
+   "query": {
+    "question": "What is to the left of the boy?",
+    "answer": "fence",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 18,
+    "full_relations": 31,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 13,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 032.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 032 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 032 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 032 - Queries.json"
+   }
+  },
+  {
+   "image_number": 33,
+   "gqa_image_id": "2363277",
+   "filepath": "data/data_0/2363277.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "zebra",
+    "head"
+   ],
+   "query": {
+    "question": "What is to the right of the legs?",
+    "answer": "zebra",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 19,
+    "full_relations": 35,
+    "compact_nodes": 6,
+    "compact_objects": 12,
+    "compact_relations": 24,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 033.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 033 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 033 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 033 - Queries.json"
+   }
+  },
+  {
+   "image_number": 34,
+   "gqa_image_id": "4489",
+   "filepath": "data/data_0/4489.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "woman",
+    "wall"
+   ],
+   "query": {
+    "question": "What is to the left of the table?",
+    "answer": "woman",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 13,
+    "full_relations": 35,
+    "compact_nodes": 6,
+    "compact_objects": 12,
+    "compact_relations": 23,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 034.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 034 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 034 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 034 - Queries.json"
+   }
+  },
+  {
+   "image_number": 35,
+   "gqa_image_id": "2336624",
+   "filepath": "data/data_0/2336624.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "nose",
+    "airplane"
+   ],
+   "query": {
+    "question": "What is to the left of the nose?",
+    "answer": "wing",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 16,
+    "full_relations": 4,
+    "compact_nodes": 4,
+    "compact_objects": 4,
+    "compact_relations": 4,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 035.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 035 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 035 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 035 - Queries.json"
+   }
+  },
+  {
+   "image_number": 36,
+   "gqa_image_id": "2404923",
+   "filepath": "data/data_0/2404923.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "animal",
+    "rope"
+   ],
+   "query": {
+    "question": "What is to the left of the boat?",
+    "answer": "animal",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 69,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 036.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 036 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 036 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 036 - Queries.json"
+   }
+  },
+  {
+   "image_number": 37,
+   "gqa_image_id": "2374245",
+   "filepath": "data/data_0/2374245.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "train",
+    "cloud"
+   ],
+   "query": {
+    "question": "What is to the right of the cars?",
+    "answer": "train",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 13,
+    "full_relations": 22,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 10,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 037.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 037 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 037 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 037 - Queries.json"
+   }
+  },
+  {
+   "image_number": 38,
+   "gqa_image_id": "2407818",
+   "filepath": "data/data_1/2407818.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "player",
+    "umpire"
+   ],
+   "query": {
+    "question": "What is to the left of the bat?",
+    "answer": "player",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 23,
+    "full_relations": 44,
+    "compact_nodes": 6,
+    "compact_objects": 11,
+    "compact_relations": 21,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 038.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 038 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 038 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 038 - Queries.json"
+   }
+  },
+  {
+   "image_number": 39,
+   "gqa_image_id": "2318099",
+   "filepath": "data/data_1/2318099.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "leaves",
+    "head"
+   ],
+   "query": {
+    "question": "What is on the tree?",
+    "answer": "leaves",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 24,
+    "full_relations": 23,
+    "compact_nodes": 6,
+    "compact_objects": 18,
+    "compact_relations": 11,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 039.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 039 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 039 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 039 - Queries.json"
+   }
+  },
+  {
+   "image_number": 40,
+   "gqa_image_id": "2393953",
+   "filepath": "data/data_1/2393953.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "sheep",
+    "head"
+   ],
+   "query": {
+    "question": "What is to the left of the daisy?",
+    "answer": "sheep",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 20,
+    "full_relations": 31,
+    "compact_nodes": 6,
+    "compact_objects": 12,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 040.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 040 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 040 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 040 - Queries.json"
+   }
+  },
+  {
+   "image_number": 41,
+   "gqa_image_id": "2374080",
+   "filepath": "data/data_1/2374080.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "skateboarder",
+    "shirt"
+   ],
+   "query": {
+    "question": "What is on the street?",
+    "answer": "skateboarder",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 70,
+    "compact_nodes": 6,
+    "compact_objects": 10,
+    "compact_relations": 15,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 041.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 041 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 041 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 041 - Queries.json"
+   }
+  },
+  {
+   "image_number": 42,
+   "gqa_image_id": "2323139",
+   "filepath": "data/data_1/2323139.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "ear",
+    "pillow"
+   ],
+   "query": {
+    "question": "What is on the bed?",
+    "answer": "pillow",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 18,
+    "full_relations": 25,
+    "compact_nodes": 6,
+    "compact_objects": 13,
+    "compact_relations": 9,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 042.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 042 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 042 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 042 - Queries.json"
+   }
+  },
+  {
+   "image_number": 43,
+   "gqa_image_id": "2367286",
+   "filepath": "data/data_1/2367286.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "post",
+    "bird"
+   ],
+   "query": {
+    "question": "What is on the pipe?",
+    "answer": "bird",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 17,
+    "full_relations": 15,
+    "compact_nodes": 6,
+    "compact_objects": 8,
+    "compact_relations": 7,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 043.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 043 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 043 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 043 - Queries.json"
+   }
+  },
+  {
+   "image_number": 44,
+   "gqa_image_id": "2402864",
+   "filepath": "data/data_1/2402864.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "chair",
+    "door"
+   ],
+   "query": {
+    "question": "What is to the left of the sink?",
+    "answer": "chair",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 69,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 14,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 044.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 044 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 044 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 044 - Queries.json"
+   }
+  },
+  {
+   "image_number": 45,
+   "gqa_image_id": "2375673",
+   "filepath": "data/data_1/2375673.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "trunk",
+    "elephant"
+   ],
+   "query": {
+    "question": "What is to the left of the water?",
+    "answer": "elephant",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 31,
+    "full_relations": 48,
+    "compact_nodes": 6,
+    "compact_objects": 17,
+    "compact_relations": 24,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 045.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 045 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 045 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 045 - Queries.json"
+   }
+  },
+  {
+   "image_number": 46,
+   "gqa_image_id": "4193",
+   "filepath": "data/data_1/4193.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "chair",
+    "windows"
+   ],
+   "query": {
+    "question": "What is to the left of the chandelier?",
+    "answer": "windows",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 26,
+    "full_relations": 85,
+    "compact_nodes": 6,
+    "compact_objects": 10,
+    "compact_relations": 15,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 046.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 046 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 046 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 046 - Queries.json"
+   }
+  },
+  {
+   "image_number": 47,
+   "gqa_image_id": "2364331",
+   "filepath": "data/data_1/2364331.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "shirt",
+    "person"
+   ],
+   "query": {
+    "question": "What is to the left of the tiles?",
+    "answer": "person",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 18,
+    "full_relations": 57,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 15,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 047.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 047 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 047 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 047 - Queries.json"
+   }
+  },
+  {
+   "image_number": 48,
+   "gqa_image_id": "2320522",
+   "filepath": "data/data_1/2320522.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "bottle",
+    "liquor"
+   ],
+   "query": {
+    "question": "What is on the table?",
+    "answer": "bottle",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 25,
+    "full_relations": 67,
+    "compact_nodes": 6,
+    "compact_objects": 14,
+    "compact_relations": 23,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 048.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 048 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 048 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 048 - Queries.json"
+   }
+  },
+  {
+   "image_number": 49,
+   "gqa_image_id": "272",
+   "filepath": "data/data_1/272.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "building",
+    "boat"
+   ],
+   "query": {
+    "question": "What is to the left of the house?",
+    "answer": "boat",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 29,
+    "full_relations": 33,
+    "compact_nodes": 6,
+    "compact_objects": 22,
+    "compact_relations": 13,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 049.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 049 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 049 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 049 - Queries.json"
+   }
+  },
+  {
+   "image_number": 50,
+   "gqa_image_id": "2349130",
+   "filepath": "data/data_1/2349130.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "restaurant",
+    "window"
+   ],
+   "query": {
+    "question": "What is to the left of the jeans?",
+    "answer": "restaurant",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 17,
+    "full_relations": 51,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 11,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 050.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 050 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 050 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 050 - Queries.json"
+   }
+  },
+  {
+   "image_number": 51,
+   "gqa_image_id": "2340367",
+   "filepath": "data/data_1/2340367.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "man",
+    "ring"
+   ],
+   "query": {
+    "question": "What is to the left of the glass?",
+    "answer": "man",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 19,
+    "full_relations": 38,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 13,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 051.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 051 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 051 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 051 - Queries.json"
+   }
+  },
+  {
+   "image_number": 52,
+   "gqa_image_id": "2415669",
+   "filepath": "data/data_1/2415669.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "window",
+    "bus"
+   ],
+   "query": {
+    "question": "What is to the left of the pavement?",
+    "answer": "bus",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 19,
+    "full_relations": 53,
+    "compact_nodes": 6,
+    "compact_objects": 11,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 052.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 052 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 052 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 052 - Queries.json"
+   }
+  },
+  {
+   "image_number": 53,
+   "gqa_image_id": "2340866",
+   "filepath": "data/data_1/2340866.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "pole",
+    "bridge"
+   ],
+   "query": {
+    "question": "What is on the bridge?",
+    "answer": "train",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 9,
+    "full_relations": 11,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 9,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 053.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 053 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 053 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 053 - Queries.json"
+   }
+  },
+  {
+   "image_number": 54,
+   "gqa_image_id": "2348334",
+   "filepath": "data/data_1/2348334.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "building",
+    "hair"
+   ],
+   "query": {
+    "question": "What is to the left of the ladder?",
+    "answer": "building",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 26,
+    "full_relations": 113,
+    "compact_nodes": 6,
+    "compact_objects": 9,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 054.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 054 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 054 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 054 - Queries.json"
+   }
+  },
+  {
+   "image_number": 55,
+   "gqa_image_id": "2395306",
+   "filepath": "data/data_1/2395306.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "tower",
+    "palm tree"
+   ],
+   "query": {
+    "question": "What is on the tower?",
+    "answer": "clock",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 6,
+    "full_relations": 12,
+    "compact_nodes": 5,
+    "compact_objects": 5,
+    "compact_relations": 10,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 055.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 055 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 055 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 055 - Queries.json"
+   }
+  },
+  {
+   "image_number": 56,
+   "gqa_image_id": "2328931",
+   "filepath": "data/data_1/2328931.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "bread",
+    "plate"
+   ],
+   "query": {
+    "question": "What is between the bread and the plate?",
+    "answer": "egg",
+    "template": "between"
+   },
+   "counts": {
+    "full_objects": 8,
+    "full_relations": 14,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 11,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 056.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 056 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 056 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 056 - Queries.json"
+   }
+  },
+  {
+   "image_number": 57,
+   "gqa_image_id": "2367740",
+   "filepath": "data/data_1/2367740.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "door",
+    "hair"
+   ],
+   "query": {
+    "question": "What is to the left of the glasses?",
+    "answer": "door",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 65,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 057.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 057 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 057 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 057 - Queries.json"
+   }
+  },
+  {
+   "image_number": 58,
+   "gqa_image_id": "2383543",
+   "filepath": "data/data_1/2383543.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "shirt",
+    "bottle"
+   ],
+   "query": {
+    "question": "What is to the left of the counter?",
+    "answer": "shirt",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 21,
+    "full_relations": 88,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 14,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 058.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 058 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 058 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 058 - Queries.json"
+   }
+  },
+  {
+   "image_number": 59,
+   "gqa_image_id": "2403720",
+   "filepath": "data/data_1/2403720.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "person",
+    "eye"
+   ],
+   "query": {
+    "question": "What is to the left of the eye?",
+    "answer": "nose",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 15,
+    "full_relations": 21,
+    "compact_nodes": 6,
+    "compact_objects": 8,
+    "compact_relations": 7,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 059.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 059 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 059 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 059 - Queries.json"
+   }
+  },
+  {
+   "image_number": 60,
+   "gqa_image_id": "2352486",
+   "filepath": "data/data_1/2352486.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "mountain",
+    "man"
+   ],
+   "query": {
+    "question": "What is to the left of the man?",
+    "answer": "mountain",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 25,
+    "full_relations": 47,
+    "compact_nodes": 5,
+    "compact_objects": 7,
+    "compact_relations": 13,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 060.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 060 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 060 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 060 - Queries.json"
+   }
+  },
+  {
+   "image_number": 61,
+   "gqa_image_id": "2319535",
+   "filepath": "data/data_1/2319535.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "wine",
+    "hand"
+   ],
+   "query": {
+    "question": "What is to the left of the glass?",
+    "answer": "hand",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 20,
+    "full_relations": 67,
+    "compact_nodes": 6,
+    "compact_objects": 8,
+    "compact_relations": 11,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 061.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 061 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 061 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 061 - Queries.json"
+   }
+  },
+  {
+   "image_number": 62,
+   "gqa_image_id": "2414901",
+   "filepath": "data/data_1/2414901.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "cage",
+    "person"
+   ],
+   "query": {
+    "question": "What is to the left of the person?",
+    "answer": "cage",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 7,
+    "full_relations": 6,
+    "compact_nodes": 4,
+    "compact_objects": 6,
+    "compact_relations": 6,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 062.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 062 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 062 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 062 - Queries.json"
+   }
+  },
+  {
+   "image_number": 63,
+   "gqa_image_id": "2362462",
+   "filepath": "data/data_1/2362462.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "leg",
+    "water"
+   ],
+   "query": {
+    "question": "What is to the left of the box?",
+    "answer": "water",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 14,
+    "full_relations": 29,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 063.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 063 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 063 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 063 - Queries.json"
+   }
+  },
+  {
+   "image_number": 64,
+   "gqa_image_id": "2367869",
+   "filepath": "data/data_1/2367869.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "bench",
+    "hat"
+   ],
+   "query": {
+    "question": "What is to the left of the bus stop?",
+    "answer": "hat",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 15,
+    "full_relations": 26,
+    "compact_nodes": 6,
+    "compact_objects": 9,
+    "compact_relations": 17,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 064.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 064 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 064 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 064 - Queries.json"
+   }
+  },
+  {
+   "image_number": 65,
+   "gqa_image_id": "2338602",
+   "filepath": "data/data_1/2338602.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "nose",
+    "propeller"
+   ],
+   "query": {
+    "question": "What is to the left of the field?",
+    "answer": "nose",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 18,
+    "full_relations": 40,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 14,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 065.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 065 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 065 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 065 - Queries.json"
+   }
+  },
+  {
+   "image_number": 66,
+   "gqa_image_id": "2324922",
+   "filepath": "data/data_1/2324922.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "beach",
+    "vehicle"
+   ],
+   "query": {
+    "question": "What is to the right of the jacket?",
+    "answer": "vehicle",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 38,
+    "compact_nodes": 6,
+    "compact_objects": 14,
+    "compact_relations": 18,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 066.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 066 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 066 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 066 - Queries.json"
+   }
+  },
+  {
+   "image_number": 67,
+   "gqa_image_id": "2403647",
+   "filepath": "data/data_1/2403647.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "pole",
+    "trash"
+   ],
+   "query": {
+    "question": "What is on the parking lot?",
+    "answer": "trash",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 21,
+    "full_relations": 30,
+    "compact_nodes": 6,
+    "compact_objects": 10,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 067.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 067 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 067 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 067 - Queries.json"
+   }
+  },
+  {
+   "image_number": 68,
+   "gqa_image_id": "2360586",
+   "filepath": "data/data_1/2360586.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "jockey",
+    "helmet"
+   ],
+   "query": {
+    "question": "What is on the head?",
+    "answer": "helmet",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 34,
+    "full_relations": 60,
+    "compact_nodes": 6,
+    "compact_objects": 17,
+    "compact_relations": 24,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 068.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 068 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 068 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 068 - Queries.json"
+   }
+  },
+  {
+   "image_number": 69,
+   "gqa_image_id": "2336",
+   "filepath": "data/data_1/2336.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "tree",
+    "planter"
+   ],
+   "query": {
+    "question": "What is on the sidewalk?",
+    "answer": "tree",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 67,
+    "compact_nodes": 6,
+    "compact_objects": 11,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 069.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 069 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 069 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 069 - Queries.json"
+   }
+  },
+  {
+   "image_number": 70,
+   "gqa_image_id": "2377395",
+   "filepath": "data/data_1/2377395.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "toothbrush",
+    "counter"
+   ],
+   "query": {
+    "question": "What is to the right of the coffee mug?",
+    "answer": "toothbrush",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 14,
+    "full_relations": 11,
+    "compact_nodes": 5,
+    "compact_objects": 12,
+    "compact_relations": 7,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 070.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 070 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 070 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 070 - Queries.json"
+   }
+  },
+  {
+   "image_number": 71,
+   "gqa_image_id": "2349640",
+   "filepath": "data/data_1/2349640.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "pole",
+    "player"
+   ],
+   "query": {
+    "question": "What is to the left of the net?",
+    "answer": "pole",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 20,
+    "full_relations": 46,
+    "compact_nodes": 6,
+    "compact_objects": 11,
+    "compact_relations": 14,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 071.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 071 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 071 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 071 - Queries.json"
+   }
+  },
+  {
+   "image_number": 72,
+   "gqa_image_id": "2394711",
+   "filepath": "data/data_1/2394711.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "person",
+    "woman"
+   ],
+   "query": {
+    "question": "What is to the left of the apron?",
+    "answer": "person",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 24,
+    "full_relations": 78,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 13,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 072.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 072 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 072 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 072 - Queries.json"
+   }
+  },
+  {
+   "image_number": 73,
+   "gqa_image_id": "2362073",
+   "filepath": "data/data_2/2362073.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "car",
+    "traffic sign"
+   ],
+   "query": {
+    "question": "What is on the road?",
+    "answer": "car",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 8,
+    "full_relations": 15,
+    "compact_nodes": 5,
+    "compact_objects": 6,
+    "compact_relations": 8,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 073.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 073 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 073 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 073 - Queries.json"
+   }
+  },
+  {
+   "image_number": 74,
+   "gqa_image_id": "498151",
+   "filepath": "data/data_2/498151.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "couch",
+    "living room"
+   ],
+   "query": {
+    "question": "What is to the right of the end table?",
+    "answer": "couch",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 15,
+    "full_relations": 15,
+    "compact_nodes": 5,
+    "compact_objects": 6,
+    "compact_relations": 10,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 074.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 074 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 074 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 074 - Queries.json"
+   }
+  },
+  {
+   "image_number": 75,
+   "gqa_image_id": "2330289",
+   "filepath": "data/data_2/2330289.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "train",
+    "trees"
+   ],
+   "query": {
+    "question": "What is to the left of the building?",
+    "answer": "train",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 17,
+    "full_relations": 22,
+    "compact_nodes": 5,
+    "compact_objects": 8,
+    "compact_relations": 14,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 075.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 075 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 075 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 075 - Queries.json"
+   }
+  },
+  {
+   "image_number": 76,
+   "gqa_image_id": "2330220",
+   "filepath": "data/data_2/2330220.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "hair",
+    "man"
+   ],
+   "query": {
+    "question": "What is to the left of the ear?",
+    "answer": "hair",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 19,
+    "full_relations": 80,
+    "compact_nodes": 6,
+    "compact_objects": 11,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 076.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 076 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 076 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 076 - Queries.json"
+   }
+  },
+  {
+   "image_number": 77,
+   "gqa_image_id": "2330212",
+   "filepath": "data/data_2/2330212.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "plant",
+    "flower"
+   ],
+   "query": {
+    "question": "What is to the left of the flowers?",
+    "answer": "plant",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 23,
+    "full_relations": 25,
+    "compact_nodes": 6,
+    "compact_objects": 20,
+    "compact_relations": 14,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 077.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 077 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 077 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 077 - Queries.json"
+   }
+  },
+  {
+   "image_number": 78,
+   "gqa_image_id": "2327238",
+   "filepath": "data/data_2/2327238.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "bush",
+    "tree"
+   ],
+   "query": {
+    "question": "What is to the left of the bush?",
+    "answer": "ground",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 14,
+    "full_relations": 13,
+    "compact_nodes": 5,
+    "compact_objects": 13,
+    "compact_relations": 8,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 078.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 078 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 078 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 078 - Queries.json"
+   }
+  },
+  {
+   "image_number": 79,
+   "gqa_image_id": "2379618",
+   "filepath": "data/data_2/2379618.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "chair",
+    "frame"
+   ],
+   "query": {
+    "question": "What is between the chair and the frame?",
+    "answer": "rug",
+    "template": "between"
+   },
+   "counts": {
+    "full_objects": 17,
+    "full_relations": 33,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 10,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 079.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 079 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 079 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 079 - Queries.json"
+   }
+  },
+  {
+   "image_number": 80,
+   "gqa_image_id": "2342608",
+   "filepath": "data/data_2/2342608.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "person",
+    "sign"
+   ],
+   "query": {
+    "question": "What is between the person and the sign?",
+    "answer": "head",
+    "template": "between"
+   },
+   "counts": {
+    "full_objects": 15,
+    "full_relations": 43,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 080.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 080 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 080 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 080 - Queries.json"
+   }
+  },
+  {
+   "image_number": 81,
+   "gqa_image_id": "2326836",
+   "filepath": "data/data_2/2326836.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "gown",
+    "hair"
+   ],
+   "query": {
+    "question": "What is to the left of the cake?",
+    "answer": "gown",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 20,
+    "full_relations": 69,
+    "compact_nodes": 6,
+    "compact_objects": 8,
+    "compact_relations": 18,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 081.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 081 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 081 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 081 - Queries.json"
+   }
+  },
+  {
+   "image_number": 82,
+   "gqa_image_id": "2398942",
+   "filepath": "data/data_2/2398942.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "building",
+    "people"
+   ],
+   "query": {
+    "question": "What is on the bus?",
+    "answer": "people",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 16,
+    "full_relations": 30,
+    "compact_nodes": 6,
+    "compact_objects": 9,
+    "compact_relations": 10,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 082.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 082 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 082 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 082 - Queries.json"
+   }
+  },
+  {
+   "image_number": 83,
+   "gqa_image_id": "2316501",
+   "filepath": "data/data_2/2316501.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "leg",
+    "horse"
+   ],
+   "query": {
+    "question": "What is to the right of the horse?",
+    "answer": "trash",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 39,
+    "full_relations": 113,
+    "compact_nodes": 6,
+    "compact_objects": 10,
+    "compact_relations": 22,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 083.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 083 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 083 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 083 - Queries.json"
+   }
+  },
+  {
+   "image_number": 84,
+   "gqa_image_id": "3773",
+   "filepath": "data/data_2/3773.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "roof",
+    "building"
+   ],
+   "query": {
+    "question": "What is to the right of the box?",
+    "answer": "roof",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 33,
+    "full_relations": 66,
+    "compact_nodes": 6,
+    "compact_objects": 22,
+    "compact_relations": 28,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 084.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 084 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 084 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 084 - Queries.json"
+   }
+  },
+  {
+   "image_number": 85,
+   "gqa_image_id": "2357317",
+   "filepath": "data/data_2/2357317.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "bear",
+    "shirts"
+   ],
+   "query": {
+    "question": "What is on the platform?",
+    "answer": "bear",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 40,
+    "full_relations": 90,
+    "compact_nodes": 6,
+    "compact_objects": 20,
+    "compact_relations": 18,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 085.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 085 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 085 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 085 - Queries.json"
+   }
+  },
+  {
+   "image_number": 86,
+   "gqa_image_id": "2345728",
+   "filepath": "data/data_2/2345728.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "train car",
+    "car"
+   ],
+   "query": {
+    "question": "What is to the left of the star?",
+    "answer": "car",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 12,
+    "full_relations": 11,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 10,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 086.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 086 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 086 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 086 - Queries.json"
+   }
+  },
+  {
+   "image_number": 87,
+   "gqa_image_id": "2395922",
+   "filepath": "data/data_2/2395922.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "pizza",
+    "chairs"
+   ],
+   "query": {
+    "question": "What is on the table?",
+    "answer": "pizza",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 20,
+    "full_relations": 42,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 9,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 087.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 087 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 087 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 087 - Queries.json"
+   }
+  },
+  {
+   "image_number": 88,
+   "gqa_image_id": "1592034",
+   "filepath": "data/data_2/1592034.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "plate",
+    "cake"
+   ],
+   "query": {
+    "question": "What is to the left of the knife?",
+    "answer": "plate",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 12,
+    "full_relations": 18,
+    "compact_nodes": 4,
+    "compact_objects": 12,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 088.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 088 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 088 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 088 - Queries.json"
+   }
+  },
+  {
+   "image_number": 89,
+   "gqa_image_id": "2367014",
+   "filepath": "data/data_2/2367014.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "leg",
+    "eye"
+   ],
+   "query": {
+    "question": "What is to the left of the eyes?",
+    "answer": "eye",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 13,
+    "full_relations": 7,
+    "compact_nodes": 5,
+    "compact_objects": 7,
+    "compact_relations": 6,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 089.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 089 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 089 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 089 - Queries.json"
+   }
+  },
+  {
+   "image_number": 90,
+   "gqa_image_id": "2412764",
+   "filepath": "data/data_2/2412764.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "shelf",
+    "man"
+   ],
+   "query": {
+    "question": "What is on the shelf?",
+    "answer": "box",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 23,
+    "full_relations": 36,
+    "compact_nodes": 6,
+    "compact_objects": 10,
+    "compact_relations": 13,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 090.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 090 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 090 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 090 - Queries.json"
+   }
+  },
+  {
+   "image_number": 91,
+   "gqa_image_id": "2387708",
+   "filepath": "data/data_2/2387708.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "cabin",
+    "mountain"
+   ],
+   "query": {
+    "question": "What is to the left of the ship?",
+    "answer": "mountain",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 10,
+    "full_relations": 18,
+    "compact_nodes": 5,
+    "compact_objects": 5,
+    "compact_relations": 10,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 091.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 091 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 091 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 091 - Queries.json"
+   }
+  },
+  {
+   "image_number": 92,
+   "gqa_image_id": "2380664",
+   "filepath": "data/data_2/2380664.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "sheep",
+    "bushes"
+   ],
+   "query": {
+    "question": "What is on the grass?",
+    "answer": "sheep",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 11,
+    "full_relations": 24,
+    "compact_nodes": 6,
+    "compact_objects": 10,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 092.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 092 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 092 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 092 - Queries.json"
+   }
+  },
+  {
+   "image_number": 93,
+   "gqa_image_id": "2356845",
+   "filepath": "data/data_2/2356845.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "sandwich",
+    "hand"
+   ],
+   "query": {
+    "question": "What is between the sandwich and the hand?",
+    "answer": "meat",
+    "template": "between"
+   },
+   "counts": {
+    "full_objects": 16,
+    "full_relations": 63,
+    "compact_nodes": 6,
+    "compact_objects": 6,
+    "compact_relations": 15,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 093.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 093 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 093 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 093 - Queries.json"
+   }
+  },
+  {
+   "image_number": 94,
+   "gqa_image_id": "2355914",
+   "filepath": "data/data_2/2355914.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "window",
+    "windows"
+   ],
+   "query": {
+    "question": "What is to the left of the door?",
+    "answer": "windows",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 22,
+    "full_relations": 24,
+    "compact_nodes": 6,
+    "compact_objects": 12,
+    "compact_relations": 16,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 094.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 094 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 094 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 094 - Queries.json"
+   }
+  },
+  {
+   "image_number": 95,
+   "gqa_image_id": "2411384",
+   "filepath": "data/data_2/2411384.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "teddy bear",
+    "table"
+   ],
+   "query": {
+    "question": "What is to the left of the chair?",
+    "answer": "teddy bear",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 19,
+    "full_relations": 63,
+    "compact_nodes": 6,
+    "compact_objects": 7,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 095.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 095 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 095 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 095 - Queries.json"
+   }
+  },
+  {
+   "image_number": 96,
+   "gqa_image_id": "2358460",
+   "filepath": "data/data_2/2358460.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "bricks",
+    "building"
+   ],
+   "query": {
+    "question": "What is to the left of the tree?",
+    "answer": "building",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 13,
+    "full_relations": 34,
+    "compact_nodes": 6,
+    "compact_objects": 8,
+    "compact_relations": 14,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 096.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 096 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 096 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 096 - Queries.json"
+   }
+  },
+  {
+   "image_number": 97,
+   "gqa_image_id": "2417811",
+   "filepath": "data/data_2/2417811.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "person",
+    "pants"
+   ],
+   "query": {
+    "question": "What is on the snow?",
+    "answer": "person",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 10,
+    "full_relations": 26,
+    "compact_nodes": 6,
+    "compact_objects": 9,
+    "compact_relations": 12,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 097.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 097 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 097 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 097 - Queries.json"
+   }
+  },
+  {
+   "image_number": 98,
+   "gqa_image_id": "2323921",
+   "filepath": "data/data_2/2323921.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "stone",
+    "boy"
+   ],
+   "query": {
+    "question": "What is to the right of the tiles?",
+    "answer": "stone",
+    "template": "right_of"
+   },
+   "counts": {
+    "full_objects": 21,
+    "full_relations": 30,
+    "compact_nodes": 5,
+    "compact_objects": 16,
+    "compact_relations": 17,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 098.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 098 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 098 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 098 - Queries.json"
+   }
+  },
+  {
+   "image_number": 99,
+   "gqa_image_id": "2338965",
+   "filepath": "data/data_2/2338965.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "zebra",
+    "log"
+   ],
+   "query": {
+    "question": "What is to the left of the floor?",
+    "answer": "zebra",
+    "template": "left_of"
+   },
+   "counts": {
+    "full_objects": 14,
+    "full_relations": 26,
+    "compact_nodes": 6,
+    "compact_objects": 12,
+    "compact_relations": 18,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 099.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 099 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 099 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 099 - Queries.json"
+   }
+  },
+  {
+   "image_number": 100,
+   "gqa_image_id": "2373491",
+   "filepath": "data/data_2/2373491.jpg",
+   "source": "Voxel51/GQA-Scene-Graph",
+   "anchors": [
+    "tire",
+    "guy"
+   ],
+   "query": {
+    "question": "What is on the skateboard?",
+    "answer": "guy",
+    "template": "on"
+   },
+   "counts": {
+    "full_objects": 11,
+    "full_relations": 12,
+    "compact_nodes": 5,
+    "compact_objects": 8,
+    "compact_relations": 9,
+    "queries": 1
+   },
+   "files": {
+    "image": "Images/GQA Image 100.jpg",
+    "large_scene_graph": "Large Scene Graph/GQA Image 100 - Large Scene Graph.json",
+    "small_scene_graph": "Small Scene Graph/GQA Image 100 - Small Scene Graph.json",
+    "queries": "Queries/GQA Image 100 - Queries.json"
+   }
+  }
+ ]
+}

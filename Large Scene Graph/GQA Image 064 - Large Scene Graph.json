@@ -1,0 +1,326 @@
+{
+ "image_number": 64,
+ "gqa_image_id": "2367869",
+ "filepath": "data/data_1/2367869.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "jacket",
+   "attributes": [],
+   "bounding_box": [
+    0.154,
+    0.4744318181818182,
+    0.116,
+    0.1846590909090909
+   ]
+  },
+  {
+   "label": "hat",
+   "attributes": [],
+   "bounding_box": [
+    0.18,
+    0.3977272727272727,
+    0.07,
+    0.05397727272727273
+   ]
+  },
+  {
+   "label": "umbrella",
+   "attributes": [
+    "pink"
+   ],
+   "bounding_box": [
+    0.466,
+    0.32954545454545453,
+    0.234,
+    0.17045454545454544
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.456,
+    0.13920454545454544,
+    0.038,
+    0.11647727272727272
+   ]
+  },
+  {
+   "label": "walkway",
+   "attributes": [
+    "brick"
+   ],
+   "bounding_box": [
+    0.002,
+    0.2784090909090909,
+    0.994,
+    0.7215909090909091
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.656,
+    0.03409090909090909,
+    0.026,
+    0.03977272727272727
+   ]
+  },
+  {
+   "label": "bus stop",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.27,
+    0.0,
+    0.532,
+    0.5625
+   ]
+  },
+  {
+   "label": "girl",
+   "attributes": [
+    "small",
+    "little",
+    "walking",
+    "young"
+   ],
+   "bounding_box": [
+    0.154,
+    0.39488636363636365,
+    0.116,
+    0.4659090909090909
+   ]
+  },
+  {
+   "label": "boot",
+   "attributes": [
+    "pink"
+   ],
+   "bounding_box": [
+    0.208,
+    0.7784090909090909,
+    0.028,
+    0.08522727272727272
+   ]
+  },
+  {
+   "label": "bench",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.318,
+    0.39488636363636365,
+    0.114,
+    0.18181818181818182
+   ]
+  },
+  {
+   "label": "hat",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.57,
+    0.3721590909090909,
+    0.072,
+    0.056818181818181816
+   ]
+  },
+  {
+   "label": "bench",
+   "attributes": [
+    "concrete",
+    "stone",
+    "marble"
+   ],
+   "bounding_box": [
+    0.686,
+    0.53125,
+    0.23,
+    0.19318181818181818
+   ]
+  },
+  {
+   "label": "bench",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.762,
+    0.3068181818181818,
+    0.108,
+    0.13920454545454544
+   ]
+  },
+  {
+   "label": "coat",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.546,
+    0.4602272727272727,
+    0.13,
+    0.1846590909090909
+   ]
+  },
+  {
+   "label": "shoe",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.538,
+    0.7244318181818182,
+    0.03,
+    0.05397727272727273
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "jacket",
+   "relation": "to the left of",
+   "object": "bench"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the left of",
+   "object": "umbrella"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the left of",
+   "object": "bench"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the left of",
+   "object": "bus stop"
+  },
+  {
+   "subject": "umbrella",
+   "relation": "to the right of",
+   "object": "girl"
+  },
+  {
+   "subject": "umbrella",
+   "relation": "to the right of",
+   "object": "hat"
+  },
+  {
+   "subject": "umbrella",
+   "relation": "to the left of",
+   "object": "bench"
+  },
+  {
+   "subject": "umbrella",
+   "relation": "to the right of",
+   "object": "bench"
+  },
+  {
+   "subject": "bus stop",
+   "relation": "to the left of",
+   "object": "bench"
+  },
+  {
+   "subject": "bus stop",
+   "relation": "to the right of",
+   "object": "hat"
+  },
+  {
+   "subject": "girl",
+   "relation": "to the left of",
+   "object": "bench"
+  },
+  {
+   "subject": "girl",
+   "relation": "wearing",
+   "object": "hat"
+  },
+  {
+   "subject": "girl",
+   "relation": "to the left of",
+   "object": "umbrella"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "hat"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "jacket"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "girl"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the left of",
+   "object": "umbrella"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the left of",
+   "object": "hat"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the right of",
+   "object": "bench"
+  },
+  {
+   "subject": "bench",
+   "relation": "on top of",
+   "object": "walkway"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "umbrella"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "bus stop"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "bench"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "bench"
+  }
+ ],
+ "counts": {
+  "objects": 15,
+  "relations": 26
+ }
+}

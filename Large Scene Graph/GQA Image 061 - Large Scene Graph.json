@@ -1,0 +1,557 @@
+{
+ "image_number": 61,
+ "gqa_image_id": "2319535",
+ "filepath": "data/data_1/2319535.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "door",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.55,
+    0.296,
+    0.418,
+    0.638
+   ]
+  },
+  {
+   "label": "neck",
+   "attributes": [],
+   "bounding_box": [
+    0.29,
+    0.362,
+    0.15,
+    0.126
+   ]
+  },
+  {
+   "label": "arm",
+   "attributes": [],
+   "bounding_box": [
+    0.552,
+    0.7,
+    0.278,
+    0.3
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.898,
+    0.63,
+    0.098,
+    0.334
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.164,
+    0.2,
+    0.178,
+    0.122
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [],
+   "bounding_box": [
+    0.27,
+    0.11,
+    0.206,
+    0.176
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.032,
+    0.15,
+    0.214,
+    0.18
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.28,
+    0.226,
+    0.058,
+    0.06
+   ]
+  },
+  {
+   "label": "glasses",
+   "attributes": [
+    "hanging"
+   ],
+   "bounding_box": [
+    0.36,
+    0.482,
+    0.076,
+    0.152
+   ]
+  },
+  {
+   "label": "mouth",
+   "attributes": [],
+   "bounding_box": [
+    0.28,
+    0.298,
+    0.058,
+    0.026
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.428,
+    0.28,
+    0.042,
+    0.062
+   ]
+  },
+  {
+   "label": "wine",
+   "attributes": [],
+   "bounding_box": [
+    0.236,
+    0.284,
+    0.094,
+    0.034
+   ]
+  },
+  {
+   "label": "beard",
+   "attributes": [],
+   "bounding_box": [
+    0.278,
+    0.278,
+    0.086,
+    0.122
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.268,
+    0.11,
+    0.196,
+    0.288
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white",
+    "long sleeved"
+   ],
+   "bounding_box": [
+    0.002,
+    0.43,
+    0.73,
+    0.572
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.076,
+    0.81,
+    0.924
+   ]
+  },
+  {
+   "label": "wine",
+   "attributes": [],
+   "bounding_box": [
+    0.88,
+    0.87,
+    0.092,
+    0.07
+   ]
+  },
+  {
+   "label": "wine",
+   "attributes": [],
+   "bounding_box": [
+    0.8,
+    0.626,
+    0.09,
+    0.368
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.346,
+    0.222,
+    0.044,
+    0.026
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.286,
+    0.23,
+    0.026,
+    0.022
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "glasses"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "neck"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "beard"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "mouth"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "ear"
+  },
+  {
+   "subject": "neck",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "wine"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "glass"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "wine"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "mouth"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "beard"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "glass"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "mouth"
+  },
+  {
+   "subject": "wine",
+   "relation": "in",
+   "object": "glass"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "beard",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "beard",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "glass"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "wine"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "man",
+   "relation": "with",
+   "object": "glass"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "wine"
+  },
+  {
+   "subject": "man",
+   "relation": "with",
+   "object": "beard"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "wine"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "glass"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "eye"
+  }
+ ],
+ "counts": {
+  "objects": 20,
+  "relations": 67
+ }
+}

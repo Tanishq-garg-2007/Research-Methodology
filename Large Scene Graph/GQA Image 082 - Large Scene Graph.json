@@ -1,0 +1,351 @@
+{
+ "image_number": 82,
+ "gqa_image_id": "2398942",
+ "filepath": "data/data_2/2398942.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "roof",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.228,
+    0.44,
+    0.466,
+    0.08266666666666667
+   ]
+  },
+  {
+   "label": "city",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.08,
+    0.998,
+    0.2613333333333333
+   ]
+  },
+  {
+   "label": "cables",
+   "attributes": [],
+   "bounding_box": [
+    0.52,
+    0.192,
+    0.23,
+    0.12
+   ]
+  },
+  {
+   "label": "people",
+   "attributes": [],
+   "bounding_box": [
+    0.242,
+    0.5466666666666666,
+    0.032,
+    0.04533333333333334
+   ]
+  },
+  {
+   "label": "mirror",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.744,
+    0.4746666666666667,
+    0.02,
+    0.04533333333333334
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.416,
+    0.288,
+    0.052,
+    0.037333333333333336
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.612,
+    0.496,
+    0.022,
+    0.06133333333333333
+   ]
+  },
+  {
+   "label": "windows",
+   "attributes": [],
+   "bounding_box": [
+    0.382,
+    0.504,
+    0.072,
+    0.09333333333333334
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "gray",
+    "cylindrical",
+    "tall",
+    "round"
+   ],
+   "bounding_box": [
+    0.922,
+    0.13333333333333333,
+    0.052,
+    0.184
+   ]
+  },
+  {
+   "label": "buildings",
+   "attributes": [],
+   "bounding_box": [
+    0.414,
+    0.21333333333333335,
+    0.032,
+    0.08266666666666667
+   ]
+  },
+  {
+   "label": "people",
+   "attributes": [
+    "sitting"
+   ],
+   "bounding_box": [
+    0.276,
+    0.5546666666666666,
+    0.03,
+    0.056
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "tall",
+    "square",
+    "gray"
+   ],
+   "bounding_box": [
+    0.036,
+    0.21066666666666667,
+    0.094,
+    0.072
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "tall",
+    "gray"
+   ],
+   "bounding_box": [
+    0.302,
+    0.20266666666666666,
+    0.06,
+    0.08266666666666667
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.454,
+    0.5013333333333333,
+    0.05,
+    0.13333333333333333
+   ]
+  },
+  {
+   "label": "bus",
+   "attributes": [
+    "water",
+    "yellow",
+    "large",
+    "floating"
+   ],
+   "bounding_box": [
+    0.152,
+    0.42933333333333334,
+    0.606,
+    0.256
+   ]
+  },
+  {
+   "label": "ocean",
+   "attributes": [
+    "choppy",
+    "smooth"
+   ],
+   "bounding_box": [
+    0.0,
+    0.304,
+    0.998,
+    0.6906666666666667
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "roof",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "cables",
+   "relation": "to the right of",
+   "object": "buildings"
+  },
+  {
+   "subject": "cables",
+   "relation": "to the right of",
+   "object": "trees"
+  },
+  {
+   "subject": "cables",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "cables",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "people",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "people",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "people",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "mirror",
+   "relation": "on the front of",
+   "object": "bus"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "roof"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the left of",
+   "object": "cables"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "people"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "cables"
+  },
+  {
+   "subject": "buildings",
+   "relation": "to the left of",
+   "object": "cables"
+  },
+  {
+   "subject": "buildings",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "people",
+   "relation": "inside",
+   "object": "bus"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "people"
+  },
+  {
+   "subject": "people",
+   "relation": "on",
+   "object": "bus"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "cables"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "buildings"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "people"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "bus",
+   "relation": "in",
+   "object": "ocean"
+  }
+ ],
+ "counts": {
+  "objects": 16,
+  "relations": 30
+ }
+}

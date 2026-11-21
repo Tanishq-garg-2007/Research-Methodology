@@ -1,0 +1,221 @@
+{
+ "image_number": 23,
+ "gqa_image_id": "2409769",
+ "filepath": "data/data_0/2409769.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "car",
+  "wall"
+ ],
+ "core_nodes": [
+  "car",
+  "cart",
+  "wall"
+ ],
+ "nodes": [
+  "car",
+  "cart",
+  "horse",
+  "man",
+  "pole",
+  "wall"
+ ],
+ "objects": [
+  {
+   "label": "car",
+   "attributes": [
+    "blue",
+    "old"
+   ],
+   "bounding_box": [
+    0.05,
+    0.1921921921921922,
+    0.43,
+    0.45645645645645644
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.508,
+    0.15915915915915915,
+    0.05,
+    0.1831831831831832
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "white",
+    "striped"
+   ],
+   "bounding_box": [
+    0.452,
+    0.003003003003003003,
+    0.028,
+    0.3783783783783784
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.796,
+    0.1981981981981982,
+    0.096,
+    0.18618618618618618
+   ]
+  },
+  {
+   "label": "cart",
+   "attributes": [],
+   "bounding_box": [
+    0.566,
+    0.35435435435435436,
+    0.38,
+    0.3993993993993994
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.698,
+    0.23123123123123124,
+    0.14,
+    0.5855855855855856
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "white",
+    "old"
+   ],
+   "bounding_box": [
+    0.558,
+    0.21921921921921922,
+    0.176,
+    0.2042042042042042
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "car",
+   "relation": "next to",
+   "object": "cart"
+  },
+  {
+   "subject": "car",
+   "relation": "near",
+   "object": "cart"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "cart"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "cart",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "cart",
+   "relation": "near",
+   "object": "car"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "pole"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 21
+ }
+}

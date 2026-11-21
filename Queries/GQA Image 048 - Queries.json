@@ -1,0 +1,23 @@
+{
+ "image_number": 48,
+ "gqa_image_id": "2320522",
+ "filepath": "data/data_1/2320522.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "bottle",
+  "liquor"
+ ],
+ "query": {
+  "question": "What is on the table?",
+  "answer": "bottle",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "table"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

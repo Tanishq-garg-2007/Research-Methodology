@@ -1,0 +1,132 @@
+{
+ "image_number": 89,
+ "gqa_image_id": "2367014",
+ "filepath": "data/data_2/2367014.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "leg",
+  "eye"
+ ],
+ "core_nodes": [
+  "eye",
+  "eyes",
+  "leg"
+ ],
+ "nodes": [
+  "eye",
+  "eyes",
+  "leg",
+  "paw",
+  "remote control"
+ ],
+ "objects": [
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.326,
+    0.3546666666666667,
+    0.06,
+    0.056
+   ]
+  },
+  {
+   "label": "remote control",
+   "attributes": [],
+   "bounding_box": [
+    0.258,
+    0.6026666666666667,
+    0.544,
+    0.192
+   ]
+  },
+  {
+   "label": "eyes",
+   "attributes": [],
+   "bounding_box": [
+    0.442,
+    0.33066666666666666,
+    0.058,
+    0.06666666666666667
+   ]
+  },
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.772,
+    0.5893333333333334,
+    0.224,
+    0.3466666666666667
+   ]
+  },
+  {
+   "label": "paw",
+   "attributes": [],
+   "bounding_box": [
+    0.896,
+    0.768,
+    0.1,
+    0.16
+   ]
+  },
+  {
+   "label": "paw",
+   "attributes": [],
+   "bounding_box": [
+    0.454,
+    0.7306666666666667,
+    0.12,
+    0.14933333333333335
+   ]
+  },
+  {
+   "label": "paw",
+   "attributes": [],
+   "bounding_box": [
+    0.902,
+    0.7866666666666666,
+    0.094,
+    0.13333333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "eyes"
+  },
+  {
+   "subject": "remote control",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "eyes",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "remote control"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "paw"
+  },
+  {
+   "subject": "paw",
+   "relation": "to the left of",
+   "object": "leg"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 7,
+  "relations": 6
+ }
+}

@@ -1,0 +1,217 @@
+{
+ "image_number": 54,
+ "gqa_image_id": "2348334",
+ "filepath": "data/data_1/2348334.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "building",
+  "hair"
+ ],
+ "core_nodes": [
+  "building",
+  "hair",
+  "ladder"
+ ],
+ "nodes": [
+  "bandana",
+  "building",
+  "hair",
+  "ladder",
+  "man",
+  "mirror"
+ ],
+ "objects": [
+  {
+   "label": "building",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.224,
+    0.0,
+    0.772,
+    0.5253333333333333
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.688,
+    0.30933333333333335,
+    0.03,
+    0.04533333333333334
+   ]
+  },
+  {
+   "label": "bandana",
+   "attributes": [],
+   "bounding_box": [
+    0.668,
+    0.312,
+    0.026,
+    0.04
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [
+    "down"
+   ],
+   "bounding_box": [
+    0.656,
+    0.30933333333333335,
+    0.034,
+    0.30133333333333334
+   ]
+  },
+  {
+   "label": "mirror",
+   "attributes": [],
+   "bounding_box": [
+    0.168,
+    0.3466666666666667,
+    0.028,
+    0.037333333333333336
+   ]
+  },
+  {
+   "label": "ladder",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.492,
+    0.20266666666666666,
+    0.062,
+    0.22133333333333333
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [
+    "down"
+   ],
+   "bounding_box": [
+    0.682,
+    0.31466666666666665,
+    0.062,
+    0.31733333333333336
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.002,
+    0.024,
+    0.292,
+    0.4693333333333333
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "blond"
+   ],
+   "bounding_box": [
+    0.038,
+    0.3333333333333333,
+    0.056,
+    0.050666666666666665
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "building",
+   "relation": "behind",
+   "object": "man"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "ladder"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "bandana"
+  },
+  {
+   "subject": "bandana",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "man",
+   "relation": "in front of",
+   "object": "building"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "ladder",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "ladder",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "ladder"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "mirror"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 9,
+  "relations": 16
+ }
+}

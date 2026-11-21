@@ -1,0 +1,146 @@
+{
+ "image_number": 53,
+ "gqa_image_id": "2340866",
+ "filepath": "data/data_1/2340866.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "pole",
+  "bridge"
+ ],
+ "core_nodes": [
+  "bridge",
+  "pole",
+  "train"
+ ],
+ "nodes": [
+  "bridge",
+  "pole",
+  "power line",
+  "sign",
+  "train",
+  "tree"
+ ],
+ "objects": [
+  {
+   "label": "bridge",
+   "attributes": [
+    "white",
+    "support"
+   ],
+   "bounding_box": [
+    0.612,
+    0.5231316725978647,
+    0.216,
+    0.11743772241992882
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.728,
+    0.37722419928825623,
+    0.198,
+    0.0498220640569395
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.624,
+    0.47686832740213525,
+    0.036,
+    0.021352313167259787
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "electric"
+   ],
+   "bounding_box": [
+    0.558,
+    0.298932384341637,
+    0.01,
+    0.3238434163701068
+   ]
+  },
+  {
+   "label": "power line",
+   "attributes": [],
+   "bounding_box": [
+    0.6,
+    0.3202846975088968,
+    0.398,
+    0.028469750889679714
+   ]
+  },
+  {
+   "label": "train",
+   "attributes": [
+    "blue",
+    "metal"
+   ],
+   "bounding_box": [
+    0.448,
+    0.4092526690391459,
+    0.46,
+    0.12455516014234876
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "bridge",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "bridge"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "power line"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "power line",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "train",
+   "relation": "on",
+   "object": "bridge"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 9
+ }
+}

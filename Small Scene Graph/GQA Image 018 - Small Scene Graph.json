@@ -1,0 +1,164 @@
+{
+ "image_number": 18,
+ "gqa_image_id": "2398218",
+ "filepath": "data/data_0/2398218.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "stop sign",
+  "post"
+ ],
+ "core_nodes": [
+  "post",
+  "stop sign"
+ ],
+ "nodes": [
+  "dress",
+  "porch",
+  "post",
+  "sign",
+  "stop sign"
+ ],
+ "objects": [
+  {
+   "label": "porch",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.71,
+    0.19733333333333333,
+    0.29,
+    0.5946666666666667
+   ]
+  },
+  {
+   "label": "dress",
+   "attributes": [
+    "pink"
+   ],
+   "bounding_box": [
+    0.196,
+    0.488,
+    0.06,
+    0.176
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.552,
+    0.005333333333333333,
+    0.256,
+    0.20266666666666666
+   ]
+  },
+  {
+   "label": "stop sign",
+   "attributes": [
+    "large",
+    "red"
+   ],
+   "bounding_box": [
+    0.368,
+    0.18933333333333333,
+    0.238,
+    0.408
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "square"
+   ],
+   "bounding_box": [
+    0.852,
+    0.49066666666666664,
+    0.036,
+    0.09333333333333334
+   ]
+  },
+  {
+   "label": "post",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.662,
+    0.22133333333333333,
+    0.052,
+    0.5733333333333334
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "porch",
+   "relation": "to the right of",
+   "object": "stop sign"
+  },
+  {
+   "subject": "porch",
+   "relation": "to the right of",
+   "object": "post"
+  },
+  {
+   "subject": "dress",
+   "relation": "to the left of",
+   "object": "stop sign"
+  },
+  {
+   "subject": "stop sign",
+   "relation": "to the right of",
+   "object": "dress"
+  },
+  {
+   "subject": "stop sign",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "stop sign",
+   "relation": "to the left of",
+   "object": "post"
+  },
+  {
+   "subject": "stop sign",
+   "relation": "to the left of",
+   "object": "porch"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "post"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "stop sign"
+  },
+  {
+   "subject": "post",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "post",
+   "relation": "to the left of",
+   "object": "porch"
+  },
+  {
+   "subject": "post",
+   "relation": "to the right of",
+   "object": "stop sign"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 6,
+  "relations": 12
+ }
+}

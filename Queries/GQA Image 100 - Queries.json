@@ -1,0 +1,23 @@
+{
+ "image_number": 100,
+ "gqa_image_id": "2373491",
+ "filepath": "data/data_2/2373491.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "tire",
+  "guy"
+ ],
+ "query": {
+  "question": "What is on the skateboard?",
+  "answer": "guy",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "skateboard"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

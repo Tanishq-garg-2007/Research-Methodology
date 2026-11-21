@@ -1,0 +1,219 @@
+{
+ "image_number": 40,
+ "gqa_image_id": "2393953",
+ "filepath": "data/data_1/2393953.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "sheep",
+  "head"
+ ],
+ "core_nodes": [
+  "daisy",
+  "head",
+  "sheep"
+ ],
+ "nodes": [
+  "daisy",
+  "ear",
+  "eye",
+  "grass",
+  "head",
+  "sheep"
+ ],
+ "objects": [
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.772,
+    0.005333333333333333,
+    0.036,
+    0.06666666666666667
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.76,
+    0.0,
+    0.05,
+    0.072
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.716,
+    0.013333333333333334,
+    0.046,
+    0.072
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.574,
+    0.0,
+    0.2,
+    0.08266666666666667
+   ]
+  },
+  {
+   "label": "daisy",
+   "attributes": [
+    "yellow"
+   ],
+   "bounding_box": [
+    0.874,
+    0.648,
+    0.02,
+    0.029333333333333333
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.036,
+    0.352,
+    0.594,
+    0.52
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.696,
+    0.4266666666666667,
+    0.06,
+    0.037333333333333336
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.674,
+    0.4533333333333333,
+    0.014,
+    0.029333333333333333
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.0,
+    0.005333333333333333,
+    0.996,
+    0.9946666666666667
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.27,
+    0.20266666666666666,
+    0.24,
+    0.232
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.8,
+    0.16533333333333333,
+    0.198,
+    0.28
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.592,
+    0.392,
+    0.16,
+    0.17333333333333334
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "sheep"
+  },
+  {
+   "subject": "sheep",
+   "relation": "in",
+   "object": "grass"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "daisy",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "sheep",
+   "relation": "eating",
+   "object": "grass"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "daisy"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "sheep"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 12,
+  "relations": 12
+ }
+}

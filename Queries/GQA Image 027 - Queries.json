@@ -1,0 +1,23 @@
+{
+ "image_number": 27,
+ "gqa_image_id": "2371091",
+ "filepath": "data/data_0/2371091.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "grass",
+  "leg"
+ ],
+ "query": {
+  "question": "What is to the left of the ear?",
+  "answer": "grass",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

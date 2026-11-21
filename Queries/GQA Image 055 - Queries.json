@@ -1,0 +1,23 @@
+{
+ "image_number": 55,
+ "gqa_image_id": "2395306",
+ "filepath": "data/data_1/2395306.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "tower",
+  "palm tree"
+ ],
+ "query": {
+  "question": "What is on the tower?",
+  "answer": "clock",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "tower"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

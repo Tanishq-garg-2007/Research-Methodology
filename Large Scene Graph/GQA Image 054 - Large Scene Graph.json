@@ -1,0 +1,878 @@
+{
+ "image_number": 54,
+ "gqa_image_id": "2348334",
+ "filepath": "data/data_1/2348334.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "windows",
+   "attributes": [
+    "glass"
+   ],
+   "bounding_box": [
+    0.268,
+    0.0,
+    0.532,
+    0.224
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.224,
+    0.0,
+    0.772,
+    0.5253333333333333
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.168,
+    0.312,
+    0.066,
+    0.088
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [],
+   "bounding_box": [
+    0.118,
+    0.0,
+    0.076,
+    0.36533333333333334
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.0,
+    0.36533333333333334,
+    0.036,
+    0.10666666666666667
+   ]
+  },
+  {
+   "label": "box",
+   "attributes": [
+    "electric"
+   ],
+   "bounding_box": [
+    0.32,
+    0.4106666666666667,
+    0.112,
+    0.256
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.16,
+    0.432,
+    0.058,
+    0.072
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.688,
+    0.30933333333333335,
+    0.03,
+    0.04533333333333334
+   ]
+  },
+  {
+   "label": "bandana",
+   "attributes": [],
+   "bounding_box": [
+    0.668,
+    0.312,
+    0.026,
+    0.04
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [
+    "down"
+   ],
+   "bounding_box": [
+    0.656,
+    0.30933333333333335,
+    0.034,
+    0.30133333333333334
+   ]
+  },
+  {
+   "label": "mirror",
+   "attributes": [],
+   "bounding_box": [
+    0.168,
+    0.3466666666666667,
+    0.028,
+    0.037333333333333336
+   ]
+  },
+  {
+   "label": "ladder",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.492,
+    0.20266666666666666,
+    0.062,
+    0.22133333333333333
+   ]
+  },
+  {
+   "label": "coat",
+   "attributes": [
+    "gray",
+    "long sleeved"
+   ],
+   "bounding_box": [
+    0.152,
+    0.512,
+    0.224,
+    0.33866666666666667
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [
+    "down"
+   ],
+   "bounding_box": [
+    0.682,
+    0.31466666666666665,
+    0.062,
+    0.31733333333333336
+   ]
+  },
+  {
+   "label": "words",
+   "attributes": [],
+   "bounding_box": [
+    0.282,
+    0.3253333333333333,
+    0.106,
+    0.06933333333333333
+   ]
+  },
+  {
+   "label": "jeans",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.652,
+    0.464,
+    0.088,
+    0.16533333333333333
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.002,
+    0.024,
+    0.292,
+    0.4693333333333333
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.678,
+    0.34933333333333333,
+    0.072,
+    0.12533333333333332
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.1,
+    0.10133333333333333,
+    0.062,
+    0.058666666666666666
+   ]
+  },
+  {
+   "label": "camera",
+   "attributes": [],
+   "bounding_box": [
+    0.766,
+    0.344,
+    0.224,
+    0.22666666666666666
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [],
+   "bounding_box": [
+    0.178,
+    0.544,
+    0.216,
+    0.432
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.124,
+    0.49066666666666664,
+    0.118,
+    0.4053333333333333
+   ]
+  },
+  {
+   "label": "box",
+   "attributes": [
+    "electric"
+   ],
+   "bounding_box": [
+    0.5,
+    0.41333333333333333,
+    0.098,
+    0.192
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [
+    "walking"
+   ],
+   "bounding_box": [
+    0.014,
+    0.3333333333333333,
+    0.092,
+    0.13333333333333333
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "blond"
+   ],
+   "bounding_box": [
+    0.038,
+    0.3333333333333333,
+    0.056,
+    0.050666666666666665
+   ]
+  },
+  {
+   "label": "truck",
+   "attributes": [
+    "large",
+    "white"
+   ],
+   "bounding_box": [
+    0.16,
+    0.19466666666666665,
+    0.448,
+    0.312
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "number"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "building",
+   "relation": "behind",
+   "object": "truck"
+  },
+  {
+   "subject": "building",
+   "relation": "behind",
+   "object": "man"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "wheel"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "number"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "words"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "words"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "wheel"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "truck"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "box",
+   "relation": "to the left of",
+   "object": "box"
+  },
+  {
+   "subject": "box",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "box",
+   "relation": "to the left of",
+   "object": "jeans"
+  },
+  {
+   "subject": "box",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "box",
+   "relation": "to the right of",
+   "object": "wheel"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the left of",
+   "object": "box"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "truck"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "ladder"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "bandana"
+  },
+  {
+   "subject": "bandana",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "bandana",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "bandana",
+   "relation": "to the right of",
+   "object": "ladder"
+  },
+  {
+   "subject": "bandana",
+   "relation": "to the right of",
+   "object": "truck"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "box"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "camera"
+  },
+  {
+   "subject": "man",
+   "relation": "in front of",
+   "object": "building"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "bandana"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "truck"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "words"
+  },
+  {
+   "subject": "ladder",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "ladder",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "ladder",
+   "relation": "to the right of",
+   "object": "words"
+  },
+  {
+   "subject": "ladder",
+   "relation": "to the left of",
+   "object": "bandana"
+  },
+  {
+   "subject": "ladder",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "coat",
+   "relation": "on",
+   "object": "chair"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "bandana"
+  },
+  {
+   "subject": "words",
+   "relation": "to the left of",
+   "object": "ladder"
+  },
+  {
+   "subject": "words",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "words",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "words",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "words",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "words",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "words",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the right of",
+   "object": "box"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "camera"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "words"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "ladder"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "truck"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "truck"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "ladder"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "camera"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "number",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "number",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "camera",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "camera",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "camera",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "camera",
+   "relation": "to the right of",
+   "object": "box"
+  },
+  {
+   "subject": "camera",
+   "relation": "to the right of",
+   "object": "truck"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "box"
+  },
+  {
+   "subject": "box",
+   "relation": "to the left of",
+   "object": "camera"
+  },
+  {
+   "subject": "box",
+   "relation": "to the right of",
+   "object": "box"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "words"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "truck"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "truck"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "words"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the left of",
+   "object": "camera"
+  },
+  {
+   "subject": "truck",
+   "relation": "in front of",
+   "object": "building"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the left of",
+   "object": "bandana"
+  }
+ ],
+ "counts": {
+  "objects": 26,
+  "relations": 113
+ }
+}

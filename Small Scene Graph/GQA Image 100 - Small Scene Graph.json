@@ -1,0 +1,165 @@
+{
+ "image_number": 100,
+ "gqa_image_id": "2373491",
+ "filepath": "data/data_2/2373491.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "tire",
+  "guy"
+ ],
+ "core_nodes": [
+  "guy",
+  "skateboard",
+  "tire"
+ ],
+ "nodes": [
+  "guy",
+  "jeans",
+  "shirt",
+  "skateboard",
+  "tire"
+ ],
+ "objects": [
+  {
+   "label": "tire",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.248,
+    0.666,
+    0.04,
+    0.03
+   ]
+  },
+  {
+   "label": "tire",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.11733333333333333,
+    0.66,
+    0.034666666666666665,
+    0.028
+   ]
+  },
+  {
+   "label": "guy",
+   "attributes": [],
+   "bounding_box": [
+    0.16533333333333333,
+    0.266,
+    0.5653333333333334,
+    0.422
+   ]
+  },
+  {
+   "label": "tire",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.27466666666666667,
+    0.724,
+    0.037333333333333336,
+    0.03
+   ]
+  },
+  {
+   "label": "tire",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.08533333333333333,
+    0.61,
+    0.037333333333333336,
+    0.028
+   ]
+  },
+  {
+   "label": "skateboard",
+   "attributes": [],
+   "bounding_box": [
+    0.08266666666666667,
+    0.606,
+    0.3253333333333333,
+    0.146
+   ]
+  },
+  {
+   "label": "jeans",
+   "attributes": [],
+   "bounding_box": [
+    0.21866666666666668,
+    0.45,
+    0.256,
+    0.236
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [],
+   "bounding_box": [
+    0.20266666666666666,
+    0.33,
+    0.2853333333333333,
+    0.162
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "tire",
+   "relation": "to the left of",
+   "object": "jeans"
+  },
+  {
+   "subject": "tire",
+   "relation": "to the left of",
+   "object": "guy"
+  },
+  {
+   "subject": "guy",
+   "relation": "using",
+   "object": "skateboard"
+  },
+  {
+   "subject": "guy",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "guy",
+   "relation": "on",
+   "object": "skateboard"
+  },
+  {
+   "subject": "guy",
+   "relation": "to the right of",
+   "object": "tire"
+  },
+  {
+   "subject": "guy",
+   "relation": "grabbing",
+   "object": "skateboard"
+  },
+  {
+   "subject": "guy",
+   "relation": "wearing",
+   "object": "jeans"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the right of",
+   "object": "tire"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 8,
+  "relations": 9
+ }
+}

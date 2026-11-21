@@ -1,0 +1,388 @@
+{
+ "image_number": 77,
+ "gqa_image_id": "2330212",
+ "filepath": "data/data_2/2330212.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "flower",
+   "attributes": [],
+   "bounding_box": [
+    0.24266666666666667,
+    0.518,
+    0.072,
+    0.09
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [],
+   "bounding_box": [
+    0.12266666666666666,
+    0.59,
+    0.08266666666666667,
+    0.086
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [],
+   "bounding_box": [
+    0.021333333333333333,
+    0.508,
+    0.06933333333333333,
+    0.08
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [],
+   "bounding_box": [
+    0.16533333333333333,
+    0.512,
+    0.184,
+    0.47
+   ]
+  },
+  {
+   "label": "flowers",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.9306666666666666,
+    0.218,
+    0.032,
+    0.026
+   ]
+  },
+  {
+   "label": "bench",
+   "attributes": [
+    "light brown"
+   ],
+   "bounding_box": [
+    0.3466666666666667,
+    0.458,
+    0.4613333333333333,
+    0.164
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [],
+   "bounding_box": [
+    0.432,
+    0.58,
+    0.13066666666666665,
+    0.166
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [],
+   "bounding_box": [
+    0.33066666666666666,
+    0.562,
+    0.104,
+    0.118
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [],
+   "bounding_box": [
+    0.22666666666666666,
+    0.39,
+    0.176,
+    0.14
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.41333333333333333,
+    0.004,
+    0.13333333333333333,
+    0.318
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [],
+   "bounding_box": [
+    0.5813333333333334,
+    0.002,
+    0.32266666666666666,
+    0.754
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [
+    "purple"
+   ],
+   "bounding_box": [
+    0.23733333333333334,
+    0.502,
+    0.09333333333333334,
+    0.122
+   ]
+  },
+  {
+   "label": "garden",
+   "attributes": [],
+   "bounding_box": [
+    0.018666666666666668,
+    0.288,
+    0.808,
+    0.42
+   ]
+  },
+  {
+   "label": "bush",
+   "attributes": [],
+   "bounding_box": [
+    0.010666666666666666,
+    0.418,
+    0.13066666666666665,
+    0.116
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [],
+   "bounding_box": [
+    0.5866666666666667,
+    0.582,
+    0.024,
+    0.018
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.528,
+    0.774,
+    0.034666666666666665,
+    0.022
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.17066666666666666,
+    0.0,
+    0.20266666666666666,
+    0.428
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.021333333333333333,
+    0.312,
+    0.9733333333333334,
+    0.176
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [
+    "purple"
+   ],
+   "bounding_box": [
+    0.128,
+    0.614,
+    0.034666666666666665,
+    0.026
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [
+    "purple"
+   ],
+   "bounding_box": [
+    0.176,
+    0.644,
+    0.024,
+    0.012
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [
+    "purple"
+   ],
+   "bounding_box": [
+    0.15733333333333333,
+    0.662,
+    0.04,
+    0.018
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [
+    "purple"
+   ],
+   "bounding_box": [
+    0.18666666666666668,
+    0.598,
+    0.024,
+    0.018
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [
+    "purple"
+   ],
+   "bounding_box": [
+    0.168,
+    0.616,
+    0.02666666666666667,
+    0.022
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "flower",
+   "relation": "to the left of",
+   "object": "bench"
+  },
+  {
+   "subject": "flower",
+   "relation": "to the right of",
+   "object": "flower"
+  },
+  {
+   "subject": "flower",
+   "relation": "to the left of",
+   "object": "plant"
+  },
+  {
+   "subject": "flower",
+   "relation": "in",
+   "object": "garden"
+  },
+  {
+   "subject": "flower",
+   "relation": "to the left of",
+   "object": "flower"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "bench"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the right of",
+   "object": "flower"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "plant"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "flower"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "flower"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "bush"
+  },
+  {
+   "subject": "bench",
+   "relation": "sitting next to",
+   "object": "plant"
+  },
+  {
+   "subject": "bench",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the right of",
+   "object": "bush"
+  },
+  {
+   "subject": "trees",
+   "relation": "behind",
+   "object": "wall"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the left of",
+   "object": "plant"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "trees"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "flowers"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the right of",
+   "object": "trees"
+  },
+  {
+   "subject": "bush",
+   "relation": "to the left of",
+   "object": "bench"
+  },
+  {
+   "subject": "bush",
+   "relation": "to the left of",
+   "object": "plant"
+  },
+  {
+   "subject": "flower",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the left of",
+   "object": "trees"
+  }
+ ],
+ "counts": {
+  "objects": 23,
+  "relations": 25
+ }
+}

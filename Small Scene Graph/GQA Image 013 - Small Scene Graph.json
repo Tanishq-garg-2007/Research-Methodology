@@ -1,0 +1,229 @@
+{
+ "image_number": 13,
+ "gqa_image_id": "2415025",
+ "filepath": "data/data_0/2415025.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "window",
+  "cockpit"
+ ],
+ "core_nodes": [
+  "cockpit",
+  "window",
+  "wing"
+ ],
+ "nodes": [
+  "cockpit",
+  "fence",
+  "pole",
+  "tail",
+  "window",
+  "wing"
+ ],
+ "objects": [
+  {
+   "label": "wing",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.312,
+    0.19572953736654805,
+    0.66,
+    0.2775800711743772
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.196,
+    0.3914590747330961,
+    0.106,
+    0.10320284697508897
+   ]
+  },
+  {
+   "label": "wing",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.064,
+    0.40569395017793597,
+    0.164,
+    0.06761565836298933
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.55,
+    0.0,
+    0.022,
+    0.5693950177935944
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.296,
+    0.4306049822064057,
+    0.092,
+    0.1103202846975089
+   ]
+  },
+  {
+   "label": "cockpit",
+   "attributes": [],
+   "bounding_box": [
+    0.196,
+    0.3736654804270463,
+    0.2,
+    0.34519572953736655
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.402,
+    0.4697508896797153,
+    0.04,
+    0.07829181494661921
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [],
+   "bounding_box": [
+    0.624,
+    0.4483985765124555,
+    0.166,
+    0.2491103202846975
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [],
+   "bounding_box": [
+    0.49,
+    0.41637010676156583,
+    0.508,
+    0.37722419928825623
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "wing",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "fence"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "wing"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "wing"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the left of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "tail"
+  },
+  {
+   "subject": "cockpit",
+   "relation": "to the right of",
+   "object": "wing"
+  },
+  {
+   "subject": "cockpit",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "cockpit",
+   "relation": "to the left of",
+   "object": "fence"
+  },
+  {
+   "subject": "cockpit",
+   "relation": "to the left of",
+   "object": "tail"
+  },
+  {
+   "subject": "cockpit",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the right of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the right of",
+   "object": "cockpit"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 9,
+  "relations": 20
+ }
+}

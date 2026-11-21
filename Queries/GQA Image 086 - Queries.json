@@ -1,0 +1,23 @@
+{
+ "image_number": 86,
+ "gqa_image_id": "2345728",
+ "filepath": "data/data_2/2345728.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "train car",
+  "car"
+ ],
+ "query": {
+  "question": "What is to the left of the star?",
+  "answer": "car",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "star"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

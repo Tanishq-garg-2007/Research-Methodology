@@ -1,0 +1,464 @@
+{
+ "image_number": 2,
+ "gqa_image_id": "2417523",
+ "filepath": "data/data_0/2417523.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "cockpit",
+   "attributes": [],
+   "bounding_box": [
+    0.732,
+    0.5391566265060241,
+    0.19,
+    0.16566265060240964
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [],
+   "bounding_box": [
+    0.63,
+    0.6174698795180723,
+    0.014,
+    0.03614457831325301
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.838,
+    0.1566265060240964,
+    0.162,
+    0.3132530120481928
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.442,
+    0.6927710843373494,
+    0.04,
+    0.03614457831325301
+   ]
+  },
+  {
+   "label": "windows",
+   "attributes": [],
+   "bounding_box": [
+    0.782,
+    0.5873493975903614,
+    0.04,
+    0.024096385542168676
+   ]
+  },
+  {
+   "label": "propeller",
+   "attributes": [],
+   "bounding_box": [
+    0.55,
+    0.4819277108433735,
+    0.064,
+    0.18373493975903615
+   ]
+  },
+  {
+   "label": "airplane",
+   "attributes": [],
+   "bounding_box": [
+    0.056,
+    0.25,
+    0.864,
+    0.49698795180722893
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.426,
+    0.5632530120481928,
+    0.012,
+    0.024096385542168676
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [],
+   "bounding_box": [
+    0.64,
+    0.6295180722891566,
+    0.01,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "house",
+   "attributes": [],
+   "bounding_box": [
+    0.202,
+    0.2921686746987952,
+    0.138,
+    0.1144578313253012
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.434,
+    0.5632530120481928,
+    0.014,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.414,
+    0.5692771084337349,
+    0.01,
+    0.018072289156626505
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.492,
+    0.5783132530120482,
+    0.01,
+    0.015060240963855422
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.346,
+    0.0,
+    0.644,
+    0.39457831325301207
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.844,
+    0.7198795180722891,
+    0.026,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.596,
+    0.6867469879518072,
+    0.038,
+    0.03614457831325301
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [
+    "blue",
+    "painted"
+   ],
+   "bounding_box": [
+    0.052,
+    0.2710843373493976,
+    0.236,
+    0.25903614457831325
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [],
+   "bounding_box": [
+    0.056,
+    0.286144578313253,
+    0.222,
+    0.10843373493975904
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [],
+   "bounding_box": [
+    0.026,
+    0.25903614457831325,
+    0.162,
+    0.04819277108433735
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.868,
+    0.6295180722891566,
+    0.056,
+    0.0783132530120482
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.394,
+    0.5602409638554217,
+    0.008,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.478,
+    0.5692771084337349,
+    0.008,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.4,
+    0.5632530120481928,
+    0.016,
+    0.030120481927710843
+   ]
+  },
+  {
+   "label": "wing",
+   "attributes": [],
+   "bounding_box": [
+    0.26,
+    0.5,
+    0.25,
+    0.060240963855421686
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.702,
+    0.5903614457831325,
+    0.032,
+    0.08433734939759036
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "cockpit",
+   "relation": "to the right of",
+   "object": "letter"
+  },
+  {
+   "subject": "cockpit",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "cockpit",
+   "relation": "to the right of",
+   "object": "propeller"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the left of",
+   "object": "letter"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the right of",
+   "object": "propeller"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the left of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the left of",
+   "object": "wheel"
+  },
+  {
+   "subject": "windows",
+   "relation": "of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "propeller"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "letter"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "letter"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "wing"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the right of",
+   "object": "letter"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the left of",
+   "object": "propeller"
+  },
+  {
+   "subject": "house",
+   "relation": "to the left of",
+   "object": "leaves"
+  },
+  {
+   "subject": "leaves",
+   "relation": "on",
+   "object": "trees"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the right of",
+   "object": "house"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the right of",
+   "object": "roof"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the right of",
+   "object": "wheel"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the left of",
+   "object": "leaves"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "letter"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "wheel"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the left of",
+   "object": "propeller"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "letter"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "propeller"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "nose"
+  }
+ ],
+ "counts": {
+  "objects": 25,
+  "relations": 36
+ }
+}

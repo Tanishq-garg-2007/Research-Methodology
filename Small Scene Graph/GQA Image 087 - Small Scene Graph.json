@@ -1,0 +1,144 @@
+{
+ "image_number": 87,
+ "gqa_image_id": "2395922",
+ "filepath": "data/data_2/2395922.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "pizza",
+  "chairs"
+ ],
+ "core_nodes": [
+  "chairs",
+  "pizza",
+  "table"
+ ],
+ "nodes": [
+  "chairs",
+  "dress",
+  "food",
+  "girl",
+  "pizza",
+  "table"
+ ],
+ "objects": [
+  {
+   "label": "table",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.0,
+    0.576,
+    0.9970059880239521,
+    0.168
+   ]
+  },
+  {
+   "label": "pizza",
+   "attributes": [
+    "round"
+   ],
+   "bounding_box": [
+    0.12574850299401197,
+    0.606,
+    0.8682634730538922,
+    0.352
+   ]
+  },
+  {
+   "label": "girl",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.066,
+    0.9431137724550899,
+    0.608
+   ]
+  },
+  {
+   "label": "chairs",
+   "attributes": [],
+   "bounding_box": [
+    0.7335329341317365,
+    0.124,
+    0.25748502994011974,
+    0.484
+   ]
+  },
+  {
+   "label": "dress",
+   "attributes": [],
+   "bounding_box": [
+    0.09880239520958084,
+    0.412,
+    0.7095808383233533,
+    0.194
+   ]
+  },
+  {
+   "label": "food",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.46107784431137727,
+    0.39,
+    0.05389221556886228,
+    0.024
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "pizza",
+   "relation": "in front of",
+   "object": "girl"
+  },
+  {
+   "subject": "pizza",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "girl",
+   "relation": "behind",
+   "object": "pizza"
+  },
+  {
+   "subject": "girl",
+   "relation": "in front of",
+   "object": "chairs"
+  },
+  {
+   "subject": "chairs",
+   "relation": "behind",
+   "object": "girl"
+  },
+  {
+   "subject": "chairs",
+   "relation": "to the right of",
+   "object": "food"
+  },
+  {
+   "subject": "chairs",
+   "relation": "to the right of",
+   "object": "dress"
+  },
+  {
+   "subject": "dress",
+   "relation": "to the left of",
+   "object": "chairs"
+  },
+  {
+   "subject": "food",
+   "relation": "to the left of",
+   "object": "chairs"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 9
+ }
+}

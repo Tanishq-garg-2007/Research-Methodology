@@ -1,0 +1,301 @@
+{
+ "image_number": 98,
+ "gqa_image_id": "2323921",
+ "filepath": "data/data_2/2323921.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "stone",
+  "boy"
+ ],
+ "core_nodes": [
+  "boy",
+  "stone",
+  "tiles"
+ ],
+ "nodes": [
+  "boy",
+  "sandal",
+  "shirt",
+  "stone",
+  "tiles"
+ ],
+ "objects": [
+  {
+   "label": "stone",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.06,
+    0.8259668508287292,
+    0.078,
+    0.08839779005524862
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.652,
+    0.4558011049723757,
+    0.212,
+    0.425414364640884
+   ]
+  },
+  {
+   "label": "boy",
+   "attributes": [],
+   "bounding_box": [
+    0.188,
+    0.287292817679558,
+    0.328,
+    0.5662983425414365
+   ]
+  },
+  {
+   "label": "stone",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.158,
+    0.7762430939226519,
+    0.076,
+    0.0718232044198895
+   ]
+  },
+  {
+   "label": "tiles",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.012,
+    0.9088397790055248,
+    0.18,
+    0.08839779005524862
+   ]
+  },
+  {
+   "label": "boy",
+   "attributes": [],
+   "bounding_box": [
+    0.504,
+    0.2955801104972376,
+    0.35,
+    0.6767955801104972
+   ]
+  },
+  {
+   "label": "sandal",
+   "attributes": [
+    "purple"
+   ],
+   "bounding_box": [
+    0.622,
+    0.8646408839779005,
+    0.184,
+    0.1132596685082873
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.308,
+    0.47513812154696133,
+    0.184,
+    0.3729281767955801
+   ]
+  },
+  {
+   "label": "stone",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.212,
+    0.7790055248618785,
+    0.076,
+    0.052486187845303865
+   ]
+  },
+  {
+   "label": "boy",
+   "attributes": [],
+   "bounding_box": [
+    0.074,
+    0.2154696132596685,
+    0.198,
+    0.5386740331491713
+   ]
+  },
+  {
+   "label": "stone",
+   "attributes": [],
+   "bounding_box": [
+    0.736,
+    0.9585635359116023,
+    0.016,
+    0.03591160220994475
+   ]
+  },
+  {
+   "label": "stone",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.83,
+    0.914364640883978,
+    0.034,
+    0.03314917127071823
+   ]
+  },
+  {
+   "label": "stone",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.508,
+    0.9171270718232044,
+    0.044,
+    0.03591160220994475
+   ]
+  },
+  {
+   "label": "stone",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.004,
+    0.6906077348066298,
+    0.012,
+    0.052486187845303865
+   ]
+  },
+  {
+   "label": "stone",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.938,
+    0.930939226519337,
+    0.058,
+    0.06077348066298342
+   ]
+  },
+  {
+   "label": "stone",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.206,
+    0.9530386740331491,
+    0.034,
+    0.04696132596685083
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "boy"
+  },
+  {
+   "subject": "boy",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "boy",
+   "relation": "to the right of",
+   "object": "stone"
+  },
+  {
+   "subject": "stone",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the left of",
+   "object": "stone"
+  },
+  {
+   "subject": "boy",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "boy",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "boy",
+   "relation": "to the left of",
+   "object": "stone"
+  },
+  {
+   "subject": "sandal",
+   "relation": "to the left of",
+   "object": "stone"
+  },
+  {
+   "subject": "sandal",
+   "relation": "to the right of",
+   "object": "stone"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "stone"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "boy"
+  },
+  {
+   "subject": "stone",
+   "relation": "to the left of",
+   "object": "boy"
+  },
+  {
+   "subject": "stone",
+   "relation": "to the right of",
+   "object": "sandal"
+  },
+  {
+   "subject": "stone",
+   "relation": "to the left of",
+   "object": "sandal"
+  },
+  {
+   "subject": "stone",
+   "relation": "to the right of",
+   "object": "boy"
+  },
+  {
+   "subject": "stone",
+   "relation": "to the right of",
+   "object": "tiles"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 16,
+  "relations": 17
+ }
+}

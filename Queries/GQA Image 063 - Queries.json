@@ -1,0 +1,23 @@
+{
+ "image_number": 63,
+ "gqa_image_id": "2362462",
+ "filepath": "data/data_1/2362462.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "leg",
+  "water"
+ ],
+ "query": {
+  "question": "What is to the left of the box?",
+  "answer": "water",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "box"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

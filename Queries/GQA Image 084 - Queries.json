@@ -1,0 +1,23 @@
+{
+ "image_number": 84,
+ "gqa_image_id": "3773",
+ "filepath": "data/data_2/3773.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "roof",
+  "building"
+ ],
+ "query": {
+  "question": "What is to the right of the box?",
+  "answer": "roof",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "box"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "image_number": 77,
+ "gqa_image_id": "2330212",
+ "filepath": "data/data_2/2330212.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "plant",
+  "flower"
+ ],
+ "query": {
+  "question": "What is to the left of the flowers?",
+  "answer": "plant",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "flowers"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

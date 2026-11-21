@@ -1,0 +1,222 @@
+{
+ "image_number": 26,
+ "gqa_image_id": "2415495",
+ "filepath": "data/data_0/2415495.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "wall",
+  "door"
+ ],
+ "core_nodes": [
+  "door",
+  "drain",
+  "wall"
+ ],
+ "nodes": [
+  "door",
+  "drain",
+  "faucet",
+  "frame",
+  "glass",
+  "wall"
+ ],
+ "objects": [
+  {
+   "label": "drain",
+   "attributes": [
+    "silver"
+   ],
+   "bounding_box": [
+    0.66,
+    0.9556213017751479,
+    0.058,
+    0.020710059171597635
+   ]
+  },
+  {
+   "label": "faucet",
+   "attributes": [
+    "metal",
+    "silver"
+   ],
+   "bounding_box": [
+    0.646,
+    0.636094674556213,
+    0.172,
+    0.22189349112426035
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.62,
+    0.5384615384615384,
+    0.074,
+    0.1834319526627219
+   ]
+  },
+  {
+   "label": "frame",
+   "attributes": [
+    "dark"
+   ],
+   "bounding_box": [
+    0.638,
+    0.17751479289940827,
+    0.194,
+    0.10946745562130178
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.574,
+    0.0,
+    0.062,
+    0.7100591715976331
+   ]
+  },
+  {
+   "label": "faucet",
+   "attributes": [
+    "silver"
+   ],
+   "bounding_box": [
+    0.656,
+    0.6568047337278107,
+    0.154,
+    0.1804733727810651
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.558,
+    0.0,
+    0.422,
+    0.5384615384615384
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.64,
+    0.20118343195266272,
+    0.346,
+    0.5769230769230769
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.066,
+    0.1834319526627219,
+    0.394,
+    0.6597633136094675
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.005917159763313609,
+    0.562,
+    0.9792899408284024
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "drain",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "faucet",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "faucet",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "frame",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "frame",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "frame"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "faucet"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "frame"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "faucet"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "drain"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 10,
+  "relations": 16
+ }
+}

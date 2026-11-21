@@ -1,0 +1,23 @@
+{
+ "image_number": 88,
+ "gqa_image_id": "1592034",
+ "filepath": "data/data_2/1592034.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "plate",
+  "cake"
+ ],
+ "query": {
+  "question": "What is to the left of the knife?",
+  "answer": "plate",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "knife"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

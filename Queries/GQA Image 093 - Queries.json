@@ -1,0 +1,24 @@
+{
+ "image_number": 93,
+ "gqa_image_id": "2356845",
+ "filepath": "data/data_2/2356845.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "sandwich",
+  "hand"
+ ],
+ "query": {
+  "question": "What is between the sandwich and the hand?",
+  "answer": "meat",
+  "template": "between",
+  "derivation": {
+   "anchor_a": "sandwich",
+   "anchor_b": "hand",
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

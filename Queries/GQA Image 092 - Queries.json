@@ -1,0 +1,23 @@
+{
+ "image_number": 92,
+ "gqa_image_id": "2380664",
+ "filepath": "data/data_2/2380664.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "sheep",
+  "bushes"
+ ],
+ "query": {
+  "question": "What is on the grass?",
+  "answer": "sheep",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "grass"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

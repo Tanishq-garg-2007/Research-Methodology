@@ -1,0 +1,23 @@
+{
+ "image_number": 82,
+ "gqa_image_id": "2398942",
+ "filepath": "data/data_2/2398942.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "building",
+  "people"
+ ],
+ "query": {
+  "question": "What is on the bus?",
+  "answer": "people",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "bus"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

@@ -1,0 +1,270 @@
+{
+ "image_number": 43,
+ "gqa_image_id": "2367286",
+ "filepath": "data/data_1/2367286.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "bird",
+   "attributes": [],
+   "bounding_box": [
+    0.192,
+    0.768,
+    0.056,
+    0.096
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.27466666666666667,
+    0.99,
+    0.376
+   ]
+  },
+  {
+   "label": "path",
+   "attributes": [],
+   "bounding_box": [
+    0.274,
+    0.376,
+    0.72,
+    0.05333333333333334
+   ]
+  },
+  {
+   "label": "pipe",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.002,
+    0.8453333333333334,
+    0.996,
+    0.07466666666666667
+   ]
+  },
+  {
+   "label": "field",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.998,
+    0.656
+   ]
+  },
+  {
+   "label": "dirt",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.632,
+    0.272
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.436,
+    0.2613333333333333,
+    0.176,
+    0.17066666666666666
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.2693333333333333,
+    1.0,
+    0.16
+   ]
+  },
+  {
+   "label": "shore",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.5973333333333334,
+    1.0,
+    0.06133333333333333
+   ]
+  },
+  {
+   "label": "bird",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.776,
+    0.7813333333333333,
+    0.054,
+    0.096
+   ]
+  },
+  {
+   "label": "bird",
+   "attributes": [],
+   "bounding_box": [
+    0.568,
+    0.7733333333333333,
+    0.06,
+    0.096
+   ]
+  },
+  {
+   "label": "hill",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    1.0,
+    0.4186666666666667
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.62,
+    0.616,
+    0.094,
+    0.018666666666666668
+   ]
+  },
+  {
+   "label": "post",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.194,
+    0.30133333333333334,
+    0.016,
+    0.10933333333333334
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [
+    "sitting"
+   ],
+   "bounding_box": [
+    0.446,
+    0.2986666666666667,
+    0.042,
+    0.11733333333333333
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.52,
+    0.0,
+    0.48,
+    0.2826666666666667
+   ]
+  },
+  {
+   "label": "blanket",
+   "attributes": [],
+   "bounding_box": [
+    0.46,
+    0.26666666666666666,
+    0.152,
+    0.096
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "bird",
+   "relation": "on",
+   "object": "pipe"
+  },
+  {
+   "subject": "path",
+   "relation": "to the right of",
+   "object": "post"
+  },
+  {
+   "subject": "dirt",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "horse",
+   "relation": "behind",
+   "object": "man"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "post"
+  },
+  {
+   "subject": "bird",
+   "relation": "to the right of",
+   "object": "bird"
+  },
+  {
+   "subject": "bird",
+   "relation": "to the left of",
+   "object": "bird"
+  },
+  {
+   "subject": "post",
+   "relation": "to the left of",
+   "object": "path"
+  },
+  {
+   "subject": "post",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "post",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "man",
+   "relation": "in front of",
+   "object": "horse"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "post"
+  },
+  {
+   "subject": "tree",
+   "relation": "on",
+   "object": "field"
+  },
+  {
+   "subject": "tree",
+   "relation": "on",
+   "object": "hill"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "dirt"
+  }
+ ],
+ "counts": {
+  "objects": 17,
+  "relations": 15
+ }
+}

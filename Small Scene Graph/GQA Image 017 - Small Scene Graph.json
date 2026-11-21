@@ -1,0 +1,123 @@
+{
+ "image_number": 17,
+ "gqa_image_id": "2407506",
+ "filepath": "data/data_0/2407506.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "boy",
+  "phone"
+ ],
+ "core_nodes": [
+  "boy",
+  "phone",
+  "shirt"
+ ],
+ "nodes": [
+  "bag",
+  "boy",
+  "cap",
+  "phone",
+  "shirt"
+ ],
+ "objects": [
+  {
+   "label": "cap",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.18933333333333333,
+    0.03,
+    0.5546666666666666,
+    0.4
+   ]
+  },
+  {
+   "label": "boy",
+   "attributes": [],
+   "bounding_box": [
+    0.38666666666666666,
+    0.04,
+    0.6106666666666667,
+    0.26
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.16,
+    0.37,
+    0.832,
+    0.522
+   ]
+  },
+  {
+   "label": "bag",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.6266666666666667,
+    0.656,
+    0.37333333333333335,
+    0.344
+   ]
+  },
+  {
+   "label": "phone",
+   "attributes": [],
+   "bounding_box": [
+    0.3626666666666667,
+    0.764,
+    0.208,
+    0.084
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "boy",
+   "relation": "with",
+   "object": "phone"
+  },
+  {
+   "subject": "boy",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "boy",
+   "relation": "with",
+   "object": "cap"
+  },
+  {
+   "subject": "boy",
+   "relation": "wearing",
+   "object": "cap"
+  },
+  {
+   "subject": "boy",
+   "relation": "holding",
+   "object": "phone"
+  },
+  {
+   "subject": "bag",
+   "relation": "to the right of",
+   "object": "phone"
+  },
+  {
+   "subject": "phone",
+   "relation": "to the left of",
+   "object": "bag"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 5,
+  "relations": 7
+ }
+}

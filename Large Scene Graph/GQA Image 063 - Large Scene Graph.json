@@ -1,0 +1,311 @@
+{
+ "image_number": 63,
+ "gqa_image_id": "2362462",
+ "filepath": "data/data_1/2362462.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.49,
+    0.4940119760479042,
+    0.054,
+    0.08083832335329341
+   ]
+  },
+  {
+   "label": "water",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.078,
+    0.47305389221556887,
+    0.17,
+    0.20958083832335328
+   ]
+  },
+  {
+   "label": "feet",
+   "attributes": [],
+   "bounding_box": [
+    0.536,
+    0.5359281437125748,
+    0.028,
+    0.05089820359281437
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.892,
+    0.39520958083832336,
+    0.02,
+    0.04790419161676647
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.224,
+    0.2874251497005988,
+    0.064,
+    0.1497005988023952
+   ]
+  },
+  {
+   "label": "umbrella",
+   "attributes": [],
+   "bounding_box": [
+    0.442,
+    0.3712574850299401,
+    0.136,
+    0.08982035928143713
+   ]
+  },
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.45,
+    0.5179640718562875,
+    0.066,
+    0.0748502994011976
+   ]
+  },
+  {
+   "label": "jeans",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.452,
+    0.4940119760479042,
+    0.094,
+    0.10179640718562874
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.438,
+    0.4251497005988024,
+    0.128,
+    0.17964071856287425
+   ]
+  },
+  {
+   "label": "jacket",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.2,
+    0.16766467065868262,
+    0.084,
+    0.17065868263473055
+   ]
+  },
+  {
+   "label": "boat",
+   "attributes": [],
+   "bounding_box": [
+    0.04,
+    0.3023952095808383,
+    0.79,
+    0.5209580838323353
+   ]
+  },
+  {
+   "label": "coat",
+   "attributes": [
+    "blue",
+    "bright"
+   ],
+   "bounding_box": [
+    0.438,
+    0.4281437125748503,
+    0.068,
+    0.11077844311377245
+   ]
+  },
+  {
+   "label": "box",
+   "attributes": [],
+   "bounding_box": [
+    0.482,
+    0.5089820359281437,
+    0.106,
+    0.1497005988023952
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.2,
+    0.1467065868263473,
+    0.104,
+    0.31736526946107785
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "feet"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "box"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "jeans"
+  },
+  {
+   "subject": "feet",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "feet",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "ground",
+   "relation": "to the right of",
+   "object": "boat"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the left of",
+   "object": "umbrella"
+  },
+  {
+   "subject": "umbrella",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "umbrella",
+   "relation": "to the right of",
+   "object": "pants"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "feet"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "person",
+   "relation": "on",
+   "object": "boat"
+  },
+  {
+   "subject": "person",
+   "relation": "holding",
+   "object": "umbrella"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "boat",
+   "relation": "to the left of",
+   "object": "ground"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "box",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "man",
+   "relation": "on",
+   "object": "boat"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "umbrella"
+  },
+  {
+   "subject": "man",
+   "relation": "standing in",
+   "object": "boat"
+  },
+  {
+   "subject": "man",
+   "relation": "standing on",
+   "object": "boat"
+  }
+ ],
+ "counts": {
+  "objects": 14,
+  "relations": 29
+ }
+}

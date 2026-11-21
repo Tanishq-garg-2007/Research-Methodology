@@ -1,0 +1,23 @@
+{
+ "image_number": 35,
+ "gqa_image_id": "2336624",
+ "filepath": "data/data_0/2336624.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "nose",
+  "airplane"
+ ],
+ "query": {
+  "question": "What is to the left of the nose?",
+  "answer": "wing",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

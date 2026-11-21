@@ -1,0 +1,373 @@
+{
+ "image_number": 79,
+ "gqa_image_id": "2379618",
+ "filepath": "data/data_2/2379618.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "hat",
+   "attributes": [
+    "straw"
+   ],
+   "bounding_box": [
+    0.806,
+    0.88,
+    0.192,
+    0.11733333333333333
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [],
+   "bounding_box": [
+    0.636,
+    0.4106666666666667,
+    0.318,
+    0.18933333333333333
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "gray",
+    "wood"
+   ],
+   "bounding_box": [
+    0.4,
+    0.5306666666666666,
+    0.18,
+    0.3413333333333333
+   ]
+  },
+  {
+   "label": "blanket",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.514,
+    0.5093333333333333,
+    0.364,
+    0.24
+   ]
+  },
+  {
+   "label": "lamp",
+   "attributes": [],
+   "bounding_box": [
+    0.79,
+    0.31466666666666665,
+    0.038,
+    0.136
+   ]
+  },
+  {
+   "label": "fireplace",
+   "attributes": [
+    "antique",
+    "black"
+   ],
+   "bounding_box": [
+    0.024,
+    0.4,
+    0.188,
+    0.38133333333333336
+   ]
+  },
+  {
+   "label": "frame",
+   "attributes": [],
+   "bounding_box": [
+    0.576,
+    0.07733333333333334,
+    0.016,
+    0.27466666666666667
+   ]
+  },
+  {
+   "label": "book",
+   "attributes": [],
+   "bounding_box": [
+    0.716,
+    0.424,
+    0.168,
+    0.058666666666666666
+   ]
+  },
+  {
+   "label": "basket",
+   "attributes": [
+    "wicker"
+   ],
+   "bounding_box": [
+    0.344,
+    0.3546666666666667,
+    0.05,
+    0.048
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.018,
+    0.013333333333333334,
+    0.978,
+    0.4
+   ]
+  },
+  {
+   "label": "dresser",
+   "attributes": [
+    "wood",
+    "red"
+   ],
+   "bounding_box": [
+    0.07,
+    0.25866666666666666,
+    0.23,
+    0.30666666666666664
+   ]
+  },
+  {
+   "label": "legs",
+   "attributes": [],
+   "bounding_box": [
+    0.494,
+    0.696,
+    0.028,
+    0.14933333333333335
+   ]
+  },
+  {
+   "label": "floor",
+   "attributes": [
+    "wood"
+   ],
+   "bounding_box": [
+    0.014,
+    0.576,
+    0.65,
+    0.42133333333333334
+   ]
+  },
+  {
+   "label": "painting",
+   "attributes": [],
+   "bounding_box": [
+    0.724,
+    0.04533333333333334,
+    0.128,
+    0.21333333333333335
+   ]
+  },
+  {
+   "label": "picture",
+   "attributes": [],
+   "bounding_box": [
+    0.628,
+    0.12533333333333332,
+    0.066,
+    0.08533333333333333
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [
+    "large"
+   ],
+   "bounding_box": [
+    0.338,
+    0.09066666666666667,
+    0.24,
+    0.264
+   ]
+  },
+  {
+   "label": "rug",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.434,
+    0.7733333333333333,
+    0.152,
+    0.21333333333333335
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "hat",
+   "relation": "to the right of",
+   "object": "rug"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the right of",
+   "object": "floor"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "blanket"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "fireplace"
+  },
+  {
+   "subject": "chair",
+   "relation": "above",
+   "object": "rug"
+  },
+  {
+   "subject": "blanket",
+   "relation": "draped over",
+   "object": "chair"
+  },
+  {
+   "subject": "blanket",
+   "relation": "on",
+   "object": "chair"
+  },
+  {
+   "subject": "blanket",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "blanket",
+   "relation": "to the right of",
+   "object": "floor"
+  },
+  {
+   "subject": "lamp",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "fireplace",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "frame",
+   "relation": "to the left of",
+   "object": "picture"
+  },
+  {
+   "subject": "frame",
+   "relation": "to the left of",
+   "object": "painting"
+  },
+  {
+   "subject": "frame",
+   "relation": "around",
+   "object": "window"
+  },
+  {
+   "subject": "frame",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "book",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "basket",
+   "relation": "to the right of",
+   "object": "dresser"
+  },
+  {
+   "subject": "dresser",
+   "relation": "to the left of",
+   "object": "basket"
+  },
+  {
+   "subject": "floor",
+   "relation": "to the left of",
+   "object": "blanket"
+  },
+  {
+   "subject": "floor",
+   "relation": "to the left of",
+   "object": "hat"
+  },
+  {
+   "subject": "painting",
+   "relation": "to the right of",
+   "object": "picture"
+  },
+  {
+   "subject": "painting",
+   "relation": "to the right of",
+   "object": "frame"
+  },
+  {
+   "subject": "painting",
+   "relation": "on",
+   "object": "wall"
+  },
+  {
+   "subject": "painting",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "picture",
+   "relation": "on",
+   "object": "wall"
+  },
+  {
+   "subject": "picture",
+   "relation": "to the left of",
+   "object": "painting"
+  },
+  {
+   "subject": "picture",
+   "relation": "to the right of",
+   "object": "frame"
+  },
+  {
+   "subject": "picture",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "picture"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "painting"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "frame"
+  },
+  {
+   "subject": "rug",
+   "relation": "to the left of",
+   "object": "hat"
+  },
+  {
+   "subject": "rug",
+   "relation": "under",
+   "object": "chair"
+  }
+ ],
+ "counts": {
+  "objects": 17,
+  "relations": 33
+ }
+}

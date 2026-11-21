@@ -1,0 +1,449 @@
+{
+ "image_number": 84,
+ "gqa_image_id": "3773",
+ "filepath": "data/data_2/3773.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "roof",
+  "building"
+ ],
+ "core_nodes": [
+  "box",
+  "building",
+  "roof"
+ ],
+ "nodes": [
+  "box",
+  "building",
+  "pole",
+  "roof",
+  "tower",
+  "tree"
+ ],
+ "objects": [
+  {
+   "label": "roof",
+   "attributes": [
+    "gray",
+    "rounded",
+    "domed",
+    "round"
+   ],
+   "bounding_box": [
+    0.27375,
+    0.34074074074074073,
+    0.18875,
+    0.1425925925925926
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "tall",
+    "metal",
+    "silver"
+   ],
+   "bounding_box": [
+    0.6175,
+    0.12222222222222222,
+    0.02625,
+    0.8092592592592592
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "gray",
+    "rounded",
+    "small",
+    "domed",
+    "round"
+   ],
+   "bounding_box": [
+    0.2125,
+    0.43703703703703706,
+    0.0625,
+    0.05555555555555555
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "tall",
+    "metal",
+    "silver"
+   ],
+   "bounding_box": [
+    0.6775,
+    0.6814814814814815,
+    0.00875,
+    0.11296296296296296
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "large",
+    "leafy",
+    "green"
+   ],
+   "bounding_box": [
+    0.0,
+    0.3425925925925926,
+    0.22,
+    0.6555555555555556
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "tiled",
+    "red"
+   ],
+   "bounding_box": [
+    0.3525,
+    0.6962962962962963,
+    0.3625,
+    0.21481481481481482
+   ]
+  },
+  {
+   "label": "box",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.4875,
+    0.8481481481481481,
+    0.04875,
+    0.08333333333333333
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "stone"
+   ],
+   "bounding_box": [
+    0.2425,
+    0.825925925925926,
+    0.3325,
+    0.17407407407407408
+   ]
+  },
+  {
+   "label": "box",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.28875,
+    0.7555555555555555,
+    0.04,
+    0.09259259259259259
+   ]
+  },
+  {
+   "label": "box",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.43375,
+    0.7407407407407407,
+    0.02875,
+    0.024074074074074074
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.45375,
+    0.31666666666666665,
+    0.16625,
+    0.2759259259259259
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "tiled",
+    "red"
+   ],
+   "bounding_box": [
+    0.1,
+    0.5962962962962963,
+    0.11125,
+    0.07777777777777778
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "tiled",
+    "red"
+   ],
+   "bounding_box": [
+    0.2425,
+    0.5851851851851851,
+    0.06125,
+    0.10185185185185185
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "tiled",
+    "red"
+   ],
+   "bounding_box": [
+    0.4625,
+    0.5611111111111111,
+    0.13875,
+    0.07592592592592592
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "tiled",
+    "red"
+   ],
+   "bounding_box": [
+    0.62,
+    0.5722222222222222,
+    0.1225,
+    0.08703703703703704
+   ]
+  },
+  {
+   "label": "tower",
+   "attributes": [],
+   "bounding_box": [
+    0.35875,
+    0.2351851851851852,
+    0.0125,
+    0.10555555555555556
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.20625,
+    0.23148148148148148,
+    0.44125,
+    0.5462962962962963
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.0,
+    0.30185185185185187,
+    0.0975,
+    0.10555555555555556
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "large",
+    "leafy",
+    "green"
+   ],
+   "bounding_box": [
+    0.6425,
+    0.0,
+    0.355,
+    0.9981481481481481
+   ]
+  },
+  {
+   "label": "tower",
+   "attributes": [],
+   "bounding_box": [
+    0.49125,
+    0.35,
+    0.00625,
+    0.022222222222222223
+   ]
+  },
+  {
+   "label": "tower",
+   "attributes": [],
+   "bounding_box": [
+    0.23375,
+    0.3611111111111111,
+    0.01875,
+    0.07407407407407407
+   ]
+  },
+  {
+   "label": "tower",
+   "attributes": [],
+   "bounding_box": [
+    0.5675,
+    0.3111111111111111,
+    0.00625,
+    0.03333333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "roof",
+   "relation": "on top of",
+   "object": "building"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the right of",
+   "object": "tower"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the left of",
+   "object": "tower"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "roof"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "roof"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the right of",
+   "object": "box"
+  },
+  {
+   "subject": "box",
+   "relation": "on top of",
+   "object": "building"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "box",
+   "relation": "to the left of",
+   "object": "roof"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "roof"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "tower"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "roof"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "tower"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "roof"
+  },
+  {
+   "subject": "tower",
+   "relation": "to the right of",
+   "object": "roof"
+  },
+  {
+   "subject": "tower",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "tower",
+   "relation": "to the left of",
+   "object": "roof"
+  },
+  {
+   "subject": "tower",
+   "relation": "to the left of",
+   "object": "building"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 22,
+  "relations": 28
+ }
+}

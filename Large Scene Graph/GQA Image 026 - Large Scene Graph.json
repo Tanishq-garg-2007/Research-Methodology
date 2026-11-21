@@ -1,0 +1,403 @@
+{
+ "image_number": 26,
+ "gqa_image_id": "2415495",
+ "filepath": "data/data_0/2415495.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "drain",
+   "attributes": [
+    "silver"
+   ],
+   "bounding_box": [
+    0.66,
+    0.9556213017751479,
+    0.058,
+    0.020710059171597635
+   ]
+  },
+  {
+   "label": "faucet",
+   "attributes": [
+    "metal",
+    "silver"
+   ],
+   "bounding_box": [
+    0.646,
+    0.636094674556213,
+    0.172,
+    0.22189349112426035
+   ]
+  },
+  {
+   "label": "sink",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.432,
+    0.5532544378698225,
+    0.484,
+    0.4319526627218935
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.62,
+    0.5384615384615384,
+    0.074,
+    0.1834319526627219
+   ]
+  },
+  {
+   "label": "frame",
+   "attributes": [
+    "dark"
+   ],
+   "bounding_box": [
+    0.638,
+    0.17751479289940827,
+    0.194,
+    0.10946745562130178
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.574,
+    0.0,
+    0.062,
+    0.7100591715976331
+   ]
+  },
+  {
+   "label": "sink",
+   "attributes": [],
+   "bounding_box": [
+    0.516,
+    0.757396449704142,
+    0.28,
+    0.22781065088757396
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [],
+   "bounding_box": [
+    0.606,
+    0.4881656804733728,
+    0.044,
+    0.20414201183431951
+   ]
+  },
+  {
+   "label": "faucet",
+   "attributes": [
+    "silver"
+   ],
+   "bounding_box": [
+    0.656,
+    0.6568047337278107,
+    0.154,
+    0.1804733727810651
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.558,
+    0.0,
+    0.422,
+    0.5384615384615384
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.64,
+    0.20118343195266272,
+    0.346,
+    0.5769230769230769
+   ]
+  },
+  {
+   "label": "mirror",
+   "attributes": [],
+   "bounding_box": [
+    0.604,
+    0.0,
+    0.376,
+    0.31952662721893493
+   ]
+  },
+  {
+   "label": "tiles",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.556,
+    0.0,
+    0.09,
+    0.742603550295858
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.066,
+    0.1834319526627219,
+    0.394,
+    0.6597633136094675
+   ]
+  },
+  {
+   "label": "sink",
+   "attributes": [],
+   "bounding_box": [
+    0.394,
+    0.7011834319526628,
+    0.474,
+    0.29289940828402367
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.005917159763313609,
+    0.562,
+    0.9792899408284024
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "drain",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "faucet",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "faucet",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "tiles"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "frame",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "frame",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "frame",
+   "relation": "to the right of",
+   "object": "tiles"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "frame"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "toothbrush"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "tiles"
+  },
+  {
+   "subject": "mirror",
+   "relation": "hanging on",
+   "object": "wall"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "tiles"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the left of",
+   "object": "frame"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "sink"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "faucet"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "tiles"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "toothbrush"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "toothbrush"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "sink"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "frame"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "tiles"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "faucet"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "drain"
+  }
+ ],
+ "counts": {
+  "objects": 16,
+  "relations": 43
+ }
+}

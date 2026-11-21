@@ -1,0 +1,174 @@
+{
+ "image_number": 60,
+ "gqa_image_id": "2352486",
+ "filepath": "data/data_1/2352486.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "mountain",
+  "man"
+ ],
+ "core_nodes": [
+  "man",
+  "mountain"
+ ],
+ "nodes": [
+  "goggles",
+  "helmet",
+  "jacket",
+  "man",
+  "mountain"
+ ],
+ "objects": [
+  {
+   "label": "goggles",
+   "attributes": [],
+   "bounding_box": [
+    0.79,
+    0.4746666666666667,
+    0.03,
+    0.013333333333333334
+   ]
+  },
+  {
+   "label": "helmet",
+   "attributes": [],
+   "bounding_box": [
+    0.79,
+    0.448,
+    0.03,
+    0.032
+   ]
+  },
+  {
+   "label": "mountain",
+   "attributes": [
+    "snowy"
+   ],
+   "bounding_box": [
+    0.0,
+    0.36,
+    0.51,
+    0.25333333333333335
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.758,
+    0.448,
+    0.086,
+    0.3253333333333333
+   ]
+  },
+  {
+   "label": "jacket",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.762,
+    0.49066666666666664,
+    0.078,
+    0.13066666666666665
+   ]
+  },
+  {
+   "label": "mountain",
+   "attributes": [
+    "snowy"
+   ],
+   "bounding_box": [
+    0.538,
+    0.2853333333333333,
+    0.382,
+    0.20266666666666666
+   ]
+  },
+  {
+   "label": "mountain",
+   "attributes": [
+    "snowy"
+   ],
+   "bounding_box": [
+    0.808,
+    0.34933333333333333,
+    0.19,
+    0.21866666666666668
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "goggles",
+   "relation": "to the left of",
+   "object": "mountain"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the left of",
+   "object": "mountain"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "mountain",
+   "relation": "behind",
+   "object": "man"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "jacket"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "mountain"
+  },
+  {
+   "subject": "man",
+   "relation": "in front of",
+   "object": "mountain"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "helmet"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "goggles"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the left of",
+   "object": "mountain"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the right of",
+   "object": "goggles"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the right of",
+   "object": "jacket"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the right of",
+   "object": "helmet"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 7,
+  "relations": 13
+ }
+}

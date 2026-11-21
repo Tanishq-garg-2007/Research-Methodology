@@ -1,0 +1,403 @@
+{
+ "image_number": 51,
+ "gqa_image_id": "2340367",
+ "filepath": "data/data_1/2340367.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "ring",
+   "attributes": [],
+   "bounding_box": [
+    0.022,
+    0.6596244131455399,
+    0.006,
+    0.009389671361502348
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [],
+   "bounding_box": [
+    0.092,
+    0.6408450704225352,
+    0.778,
+    0.34976525821596244
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.715962441314554,
+    1.0,
+    0.284037558685446
+   ]
+  },
+  {
+   "label": "jacket",
+   "attributes": [],
+   "bounding_box": [
+    0.9,
+    0.7183098591549296,
+    0.1,
+    0.284037558685446
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "long sleeved"
+   ],
+   "bounding_box": [
+    0.034,
+    0.323943661971831,
+    0.324,
+    0.42018779342723006
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [],
+   "bounding_box": [
+    0.968,
+    0.5821596244131455,
+    0.024,
+    0.051643192488262914
+   ]
+  },
+  {
+   "label": "suit",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.478,
+    0.3380281690140845,
+    0.236,
+    0.6619718309859155
+   ]
+  },
+  {
+   "label": "tie",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.544,
+    0.3732394366197183,
+    0.06,
+    0.3215962441314554
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.636150234741784,
+    0.046,
+    0.04460093896713615
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.086,
+    0.7370892018779343,
+    0.098,
+    0.09624413145539906
+   ]
+  },
+  {
+   "label": "picture",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.966,
+    0.5633802816901409,
+    0.026,
+    0.06807511737089202
+   ]
+  },
+  {
+   "label": "pocket",
+   "attributes": [],
+   "bounding_box": [
+    0.038,
+    0.676056338028169,
+    0.81,
+    0.14084507042253522
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.25821596244131456,
+    0.092,
+    0.07042253521126761
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.032,
+    0.1807511737089202,
+    0.906,
+    0.8192488262910798
+   ]
+  },
+  {
+   "label": "wire",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.752,
+    0.07042253521126761,
+    0.034,
+    0.03990610328638498
+   ]
+  },
+  {
+   "label": "ring",
+   "attributes": [],
+   "bounding_box": [
+    0.856,
+    0.7863849765258216,
+    0.012,
+    0.011737089201877934
+   ]
+  },
+  {
+   "label": "shelf",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.215962441314554,
+    0.096,
+    0.2300469483568075
+   ]
+  },
+  {
+   "label": "glasses",
+   "attributes": [],
+   "bounding_box": [
+    0.55,
+    0.25821596244131456,
+    0.082,
+    0.03286384976525822
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "ring",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "ring",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "ring",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "ring"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "pocket"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "suit"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "ring"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "pants"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "tie"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "ring"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "suit"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "suit",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "suit",
+   "relation": "to the left of",
+   "object": "ring"
+  },
+  {
+   "subject": "suit",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "tie",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "pocket",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "pocket",
+   "relation": "to the left of",
+   "object": "ring"
+  },
+  {
+   "subject": "bottle",
+   "relation": "on",
+   "object": "shelf"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "ring"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "tie"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "ring"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "glasses"
+  },
+  {
+   "subject": "ring",
+   "relation": "to the right of",
+   "object": "pocket"
+  },
+  {
+   "subject": "ring",
+   "relation": "to the right of",
+   "object": "suit"
+  },
+  {
+   "subject": "ring",
+   "relation": "to the left of",
+   "object": "jacket"
+  }
+ ],
+ "counts": {
+  "objects": 19,
+  "relations": 38
+ }
+}

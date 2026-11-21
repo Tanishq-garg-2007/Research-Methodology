@@ -1,0 +1,184 @@
+{
+ "image_number": 75,
+ "gqa_image_id": "2330289",
+ "filepath": "data/data_2/2330289.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "train",
+  "trees"
+ ],
+ "core_nodes": [
+  "building",
+  "train",
+  "trees"
+ ],
+ "nodes": [
+  "building",
+  "number",
+  "steam",
+  "train",
+  "trees"
+ ],
+ "objects": [
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.888,
+    0.10179640718562874,
+    0.112,
+    0.2245508982035928
+   ]
+  },
+  {
+   "label": "train",
+   "attributes": [],
+   "bounding_box": [
+    0.04,
+    0.19760479041916168,
+    0.82,
+    0.7005988023952096
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.034,
+    0.19461077844311378
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [],
+   "bounding_box": [
+    0.66,
+    0.24251497005988024,
+    0.022,
+    0.05389221556886228
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "brick"
+   ],
+   "bounding_box": [
+    0.802,
+    0.3083832335329341,
+    0.194,
+    0.6197604790419161
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [],
+   "bounding_box": [
+    0.65,
+    0.23952095808383234,
+    0.018,
+    0.05688622754491018
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.696,
+    0.2275449101796407,
+    0.248,
+    0.10179640718562874
+   ]
+  },
+  {
+   "label": "steam",
+   "attributes": [],
+   "bounding_box": [
+    0.444,
+    0.0,
+    0.27,
+    0.2754491017964072
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "trees",
+   "relation": "behind",
+   "object": "train"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "number"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "steam"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "train"
+  },
+  {
+   "subject": "train",
+   "relation": "in front of",
+   "object": "trees"
+  },
+  {
+   "subject": "train",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "train",
+   "relation": "near",
+   "object": "building"
+  },
+  {
+   "subject": "train",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "number",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "train"
+  },
+  {
+   "subject": "number",
+   "relation": "on the front of",
+   "object": "train"
+  },
+  {
+   "subject": "building",
+   "relation": "next to",
+   "object": "train"
+  },
+  {
+   "subject": "building",
+   "relation": "near",
+   "object": "train"
+  },
+  {
+   "subject": "steam",
+   "relation": "to the left of",
+   "object": "trees"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 8,
+  "relations": 14
+ }
+}

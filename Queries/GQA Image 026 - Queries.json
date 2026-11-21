@@ -1,0 +1,23 @@
+{
+ "image_number": 26,
+ "gqa_image_id": "2415495",
+ "filepath": "data/data_0/2415495.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "wall",
+  "door"
+ ],
+ "query": {
+  "question": "What is to the left of the drain?",
+  "answer": "door",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "drain"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

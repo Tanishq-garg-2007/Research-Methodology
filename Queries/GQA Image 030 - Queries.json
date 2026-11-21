@@ -1,0 +1,23 @@
+{
+ "image_number": 30,
+ "gqa_image_id": "2361536",
+ "filepath": "data/data_0/2361536.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "cow",
+  "sand"
+ ],
+ "query": {
+  "question": "What is to the left of the head?",
+  "answer": "cow",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "head"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

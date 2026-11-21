@@ -1,0 +1,23 @@
+{
+ "image_number": 42,
+ "gqa_image_id": "2323139",
+ "filepath": "data/data_1/2323139.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "ear",
+  "pillow"
+ ],
+ "query": {
+  "question": "What is on the bed?",
+  "answer": "pillow",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "bed"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

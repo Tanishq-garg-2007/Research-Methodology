@@ -1,0 +1,23 @@
+{
+ "image_number": 12,
+ "gqa_image_id": "2344244",
+ "filepath": "data/data_0/2344244.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "arm",
+  "hand"
+ ],
+ "query": {
+  "question": "What is to the left of the food?",
+  "answer": "hand",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "food"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

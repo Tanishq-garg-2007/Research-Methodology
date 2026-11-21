@@ -1,0 +1,23 @@
+{
+ "image_number": 73,
+ "gqa_image_id": "2362073",
+ "filepath": "data/data_2/2362073.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "car",
+  "traffic sign"
+ ],
+ "query": {
+  "question": "What is on the road?",
+  "answer": "car",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "road"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

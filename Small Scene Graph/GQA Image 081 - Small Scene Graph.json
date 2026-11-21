@@ -1,0 +1,207 @@
+{
+ "image_number": 81,
+ "gqa_image_id": "2326836",
+ "filepath": "data/data_2/2326836.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "gown",
+  "hair"
+ ],
+ "core_nodes": [
+  "cake",
+  "gown",
+  "hair"
+ ],
+ "nodes": [
+  "cake",
+  "gown",
+  "hair",
+  "lady",
+  "man",
+  "men"
+ ],
+ "objects": [
+  {
+   "label": "hair",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.344,
+    0.09309309309309309,
+    0.094,
+    0.1111111111111111
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.12,
+    0.25825825825825827,
+    0.126,
+    0.4294294294294294
+   ]
+  },
+  {
+   "label": "cake",
+   "attributes": [],
+   "bounding_box": [
+    0.442,
+    0.6816816816816816,
+    0.176,
+    0.17117117117117117
+   ]
+  },
+  {
+   "label": "lady",
+   "attributes": [],
+   "bounding_box": [
+    0.836,
+    0.08408408408408409,
+    0.088,
+    0.24324324324324326
+   ]
+  },
+  {
+   "label": "men",
+   "attributes": [],
+   "bounding_box": [
+    0.492,
+    0.12612612612612611,
+    0.072,
+    0.15315315315315314
+   ]
+  },
+  {
+   "label": "gown",
+   "attributes": [],
+   "bounding_box": [
+    0.238,
+    0.1831831831831832,
+    0.238,
+    0.6366366366366366
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [],
+   "bounding_box": [
+    0.652,
+    0.12312312312312312,
+    0.16,
+    0.23423423423423423
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.004,
+    0.3033033033033033,
+    0.074,
+    0.09009009009009009
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "men"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "gown"
+  },
+  {
+   "subject": "cake",
+   "relation": "to the right of",
+   "object": "gown"
+  },
+  {
+   "subject": "lady",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "men",
+   "relation": "to the right of",
+   "object": "gown"
+  },
+  {
+   "subject": "men",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "men",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "gown",
+   "relation": "to the left of",
+   "object": "men"
+  },
+  {
+   "subject": "gown",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "gown",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "gown",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "gown",
+   "relation": "to the left of",
+   "object": "cake"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "gown"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "lady"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "men"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "gown"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "man"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 8,
+  "relations": 18
+ }
+}

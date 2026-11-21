@@ -1,0 +1,23 @@
+{
+ "image_number": 52,
+ "gqa_image_id": "2415669",
+ "filepath": "data/data_1/2415669.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "window",
+  "bus"
+ ],
+ "query": {
+  "question": "What is to the left of the pavement?",
+  "answer": "bus",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "pavement"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

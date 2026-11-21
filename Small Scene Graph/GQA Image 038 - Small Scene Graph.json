@@ -1,0 +1,260 @@
+{
+ "image_number": 38,
+ "gqa_image_id": "2407818",
+ "filepath": "data/data_1/2407818.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "player",
+  "umpire"
+ ],
+ "core_nodes": [
+  "bat",
+  "player",
+  "umpire"
+ ],
+ "nodes": [
+  "bat",
+  "catcher",
+  "home plate",
+  "player",
+  "shirt",
+  "umpire"
+ ],
+ "objects": [
+  {
+   "label": "player",
+   "attributes": [
+    "batting"
+   ],
+   "bounding_box": [
+    0.764,
+    0.6186666666666667,
+    0.09,
+    0.2
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.792,
+    0.64,
+    0.06,
+    0.07733333333333334
+   ]
+  },
+  {
+   "label": "umpire",
+   "attributes": [
+    "crouched"
+   ],
+   "bounding_box": [
+    0.852,
+    0.6746666666666666,
+    0.108,
+    0.192
+   ]
+  },
+  {
+   "label": "catcher",
+   "attributes": [],
+   "bounding_box": [
+    0.806,
+    0.704,
+    0.116,
+    0.144
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.13,
+    0.49333333333333335,
+    0.04,
+    0.058666666666666666
+   ]
+  },
+  {
+   "label": "bat",
+   "attributes": [],
+   "bounding_box": [
+    0.834,
+    0.6,
+    0.072,
+    0.048
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.872,
+    0.712,
+    0.076,
+    0.06933333333333333
+   ]
+  },
+  {
+   "label": "player",
+   "attributes": [],
+   "bounding_box": [
+    0.48,
+    0.25066666666666665,
+    0.034,
+    0.064
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.832,
+    0.728,
+    0.072,
+    0.06133333333333333
+   ]
+  },
+  {
+   "label": "player",
+   "attributes": [],
+   "bounding_box": [
+    0.81,
+    0.37866666666666665,
+    0.062,
+    0.09066666666666667
+   ]
+  },
+  {
+   "label": "home plate",
+   "attributes": [],
+   "bounding_box": [
+    0.714,
+    0.8,
+    0.05,
+    0.021333333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "player",
+   "relation": "above",
+   "object": "home plate"
+  },
+  {
+   "subject": "player",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "player",
+   "relation": "in front of",
+   "object": "catcher"
+  },
+  {
+   "subject": "player",
+   "relation": "in front of",
+   "object": "umpire"
+  },
+  {
+   "subject": "player",
+   "relation": "to the right of",
+   "object": "home plate"
+  },
+  {
+   "subject": "player",
+   "relation": "swinging",
+   "object": "bat"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "bat"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "umpire"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "umpire"
+  },
+  {
+   "subject": "umpire",
+   "relation": "behind",
+   "object": "player"
+  },
+  {
+   "subject": "umpire",
+   "relation": "behind",
+   "object": "catcher"
+  },
+  {
+   "subject": "umpire",
+   "relation": "to the right of",
+   "object": "home plate"
+  },
+  {
+   "subject": "umpire",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "umpire",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "catcher",
+   "relation": "behind",
+   "object": "player"
+  },
+  {
+   "subject": "catcher",
+   "relation": "in front of",
+   "object": "umpire"
+  },
+  {
+   "subject": "bat",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "home plate",
+   "relation": "to the left of",
+   "object": "umpire"
+  },
+  {
+   "subject": "home plate",
+   "relation": "to the left of",
+   "object": "player"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 11,
+  "relations": 21
+ }
+}

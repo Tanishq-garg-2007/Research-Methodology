@@ -1,0 +1,23 @@
+{
+ "image_number": 95,
+ "gqa_image_id": "2411384",
+ "filepath": "data/data_2/2411384.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "teddy bear",
+  "table"
+ ],
+ "query": {
+  "question": "What is to the left of the chair?",
+  "answer": "teddy bear",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

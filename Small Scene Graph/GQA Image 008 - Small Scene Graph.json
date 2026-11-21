@@ -1,0 +1,202 @@
+{
+ "image_number": 8,
+ "gqa_image_id": "264",
+ "filepath": "data/data_0/264.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "sign",
+  "window"
+ ],
+ "core_nodes": [
+  "apple",
+  "sign",
+  "window"
+ ],
+ "nodes": [
+  "apple",
+  "hand",
+  "man",
+  "poster",
+  "sign",
+  "window"
+ ],
+ "objects": [
+  {
+   "label": "sign",
+   "attributes": [
+    "large",
+    "yellow"
+   ],
+   "bounding_box": [
+    0.13875,
+    0.5783333333333334,
+    0.13375,
+    0.15666666666666668
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.3775,
+    0.2733333333333333,
+    0.2175,
+    0.4683333333333333
+   ]
+  },
+  {
+   "label": "apple",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.83125,
+    0.595,
+    0.0575,
+    0.09
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.5783333333333334,
+    0.1425,
+    0.15333333333333332
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.00625,
+    0.595,
+    0.0625,
+    0.135
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.50875,
+    0.5533333333333333,
+    0.0575,
+    0.115
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.7,
+    0.5366666666666666,
+    0.0425,
+    0.085
+   ]
+  },
+  {
+   "label": "poster",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.83125,
+    0.5516666666666666,
+    0.0925,
+    0.18
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "sign",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "sign"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "poster"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "apple"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "apple",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "sign"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the left of",
+   "object": "poster"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "poster",
+   "relation": "to the right of",
+   "object": "sign"
+  },
+  {
+   "subject": "poster",
+   "relation": "to the right of",
+   "object": "window"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 8,
+  "relations": 16
+ }
+}

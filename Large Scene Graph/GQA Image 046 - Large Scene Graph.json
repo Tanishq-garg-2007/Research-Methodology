@@ -1,0 +1,745 @@
+{
+ "image_number": 46,
+ "gqa_image_id": "4193",
+ "filepath": "data/data_1/4193.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.252,
+    0.5488721804511278,
+    0.07,
+    0.017543859649122806
+   ]
+  },
+  {
+   "label": "picture",
+   "attributes": [
+    "hanging",
+    "framed"
+   ],
+   "bounding_box": [
+    0.6,
+    0.2781954887218045,
+    0.09,
+    0.10275689223057644
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "leather",
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.116,
+    0.39598997493734334,
+    0.202,
+    0.24812030075187969
+   ]
+  },
+  {
+   "label": "wine glass",
+   "attributes": [],
+   "bounding_box": [
+    0.444,
+    0.48370927318295737,
+    0.032,
+    0.06015037593984962
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.406,
+    0.543859649122807,
+    0.108,
+    0.017543859649122806
+   ]
+  },
+  {
+   "label": "wine glass",
+   "attributes": [],
+   "bounding_box": [
+    0.27,
+    0.48120300751879697,
+    0.03,
+    0.06766917293233082
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "leather",
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.044,
+    0.40852130325814534,
+    0.286,
+    0.531328320802005
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.41,
+    0.40601503759398494,
+    0.262,
+    0.48370927318295737
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "leather",
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.634,
+    0.41353383458646614,
+    0.13,
+    0.40350877192982454
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "leather",
+    "brown",
+    "wood",
+    "fancy"
+   ],
+   "bounding_box": [
+    0.734,
+    0.40601503759398494,
+    0.108,
+    0.3558897243107769
+   ]
+  },
+  {
+   "label": "chandelier",
+   "attributes": [
+    "on"
+   ],
+   "bounding_box": [
+    0.352,
+    0.002506265664160401,
+    0.19,
+    0.2982456140350877
+   ]
+  },
+  {
+   "label": "ceiling",
+   "attributes": [],
+   "bounding_box": [
+    0.374,
+    0.0,
+    0.396,
+    0.03258145363408521
+   ]
+  },
+  {
+   "label": "flowers",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.35,
+    0.40100250626566414,
+    0.122,
+    0.09774436090225563
+   ]
+  },
+  {
+   "label": "doorway",
+   "attributes": [
+    "arched"
+   ],
+   "bounding_box": [
+    0.554,
+    0.13784461152882205,
+    0.146,
+    0.43358395989974935
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [
+    "large",
+    "wood"
+   ],
+   "bounding_box": [
+    0.154,
+    0.518796992481203,
+    0.536,
+    0.2807017543859649
+   ]
+  },
+  {
+   "label": "arms",
+   "attributes": [],
+   "bounding_box": [
+    0.158,
+    0.6215538847117794,
+    0.16,
+    0.13032581453634084
+   ]
+  },
+  {
+   "label": "floor",
+   "attributes": [
+    "wood"
+   ],
+   "bounding_box": [
+    0.0,
+    0.6090225563909775,
+    0.998,
+    0.38596491228070173
+   ]
+  },
+  {
+   "label": "rug",
+   "attributes": [
+    "patterned"
+   ],
+   "bounding_box": [
+    0.0,
+    0.6491228070175439,
+    0.936,
+    0.3508771929824561
+   ]
+  },
+  {
+   "label": "pot",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.6165413533834586,
+    0.04,
+    0.14285714285714285
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [
+    "large",
+    "tall",
+    "green"
+   ],
+   "bounding_box": [
+    0.0,
+    0.12030075187969924,
+    0.184,
+    0.5087719298245614
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.57,
+    0.14536340852130325,
+    0.118,
+    0.2907268170426065
+   ]
+  },
+  {
+   "label": "windows",
+   "attributes": [],
+   "bounding_box": [
+    0.18,
+    0.09273182957393483,
+    0.172,
+    0.42355889724310775
+   ]
+  },
+  {
+   "label": "drape",
+   "attributes": [
+    "yellow"
+   ],
+   "bounding_box": [
+    0.072,
+    0.040100250626566414,
+    0.11,
+    0.39348370927318294
+   ]
+  },
+  {
+   "label": "vase",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.834,
+    0.09022556390977443,
+    0.052,
+    0.06766917293233082
+   ]
+  },
+  {
+   "label": "lamp",
+   "attributes": [],
+   "bounding_box": [
+    0.566,
+    0.3132832080200501,
+    0.036,
+    0.09273182957393483
+   ]
+  },
+  {
+   "label": "box",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.738,
+    0.12280701754385964,
+    0.086,
+    0.03759398496240601
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "plate"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "doorway"
+  },
+  {
+   "subject": "picture",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "picture",
+   "relation": "on",
+   "object": "wall"
+  },
+  {
+   "subject": "picture",
+   "relation": "to the right of",
+   "object": "lamp"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "doorway"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "flowers"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "plate"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "on",
+   "object": "plate"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the right of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the left of",
+   "object": "doorway"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the left of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "pot"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "arms"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "flowers"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "table"
+  },
+  {
+   "subject": "chandelier",
+   "relation": "to the right of",
+   "object": "drape"
+  },
+  {
+   "subject": "chandelier",
+   "relation": "to the left of",
+   "object": "box"
+  },
+  {
+   "subject": "chandelier",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "chandelier",
+   "relation": "above",
+   "object": "table"
+  },
+  {
+   "subject": "chandelier",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "chandelier",
+   "relation": "on",
+   "object": "ceiling"
+  },
+  {
+   "subject": "flowers",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the left of",
+   "object": "doorway"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "doorway",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "doorway",
+   "relation": "to the right of",
+   "object": "flowers"
+  },
+  {
+   "subject": "doorway",
+   "relation": "to the right of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "doorway",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "doorway",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "doorway",
+   "relation": "to the left of",
+   "object": "box"
+  },
+  {
+   "subject": "table",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "pot"
+  },
+  {
+   "subject": "table",
+   "relation": "below",
+   "object": "chandelier"
+  },
+  {
+   "subject": "arms",
+   "relation": "of",
+   "object": "chair"
+  },
+  {
+   "subject": "arms",
+   "relation": "to the right of",
+   "object": "pot"
+  },
+  {
+   "subject": "arms",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "rug",
+   "relation": "on",
+   "object": "floor"
+  },
+  {
+   "subject": "pot",
+   "relation": "to the left of",
+   "object": "arms"
+  },
+  {
+   "subject": "pot",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "pot",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "plate"
+  },
+  {
+   "subject": "plant",
+   "relation": "next to",
+   "object": "windows"
+  },
+  {
+   "subject": "plant",
+   "relation": "near",
+   "object": "windows"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "chandelier"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "flowers"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "plant",
+   "relation": "in",
+   "object": "pot"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "drape"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "windows",
+   "relation": "near",
+   "object": "plant"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "picture"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "flowers"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "chandelier"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "doorway"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "lamp"
+  },
+  {
+   "subject": "drape",
+   "relation": "to the left of",
+   "object": "chandelier"
+  },
+  {
+   "subject": "drape",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "vase",
+   "relation": "to the right of",
+   "object": "box"
+  },
+  {
+   "subject": "lamp",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "lamp",
+   "relation": "by",
+   "object": "doorway"
+  },
+  {
+   "subject": "lamp",
+   "relation": "to the left of",
+   "object": "picture"
+  },
+  {
+   "subject": "box",
+   "relation": "to the right of",
+   "object": "chandelier"
+  },
+  {
+   "subject": "box",
+   "relation": "to the right of",
+   "object": "doorway"
+  },
+  {
+   "subject": "box",
+   "relation": "to the left of",
+   "object": "vase"
+  }
+ ],
+ "counts": {
+  "objects": 26,
+  "relations": 85
+ }
+}

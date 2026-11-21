@@ -1,0 +1,440 @@
+{
+ "image_number": 87,
+ "gqa_image_id": "2395922",
+ "filepath": "data/data_2/2395922.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "mouth",
+   "attributes": [],
+   "bounding_box": [
+    0.41317365269461076,
+    0.368,
+    0.12874251497005987,
+    0.064
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.0,
+    0.576,
+    0.9970059880239521,
+    0.168
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "dark"
+   ],
+   "bounding_box": [
+    0.15568862275449102,
+    0.076,
+    0.5449101796407185,
+    0.354
+   ]
+  },
+  {
+   "label": "mozzarella",
+   "attributes": [],
+   "bounding_box": [
+    0.2904191616766467,
+    0.646,
+    0.7035928143712575,
+    0.236
+   ]
+  },
+  {
+   "label": "pizza",
+   "attributes": [
+    "round"
+   ],
+   "bounding_box": [
+    0.12574850299401197,
+    0.606,
+    0.8682634730538922,
+    0.352
+   ]
+  },
+  {
+   "label": "tomato",
+   "attributes": [],
+   "bounding_box": [
+    0.30538922155688625,
+    0.664,
+    0.10179640718562874,
+    0.046
+   ]
+  },
+  {
+   "label": "girl",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.066,
+    0.9431137724550899,
+    0.608
+   ]
+  },
+  {
+   "label": "teeth",
+   "attributes": [],
+   "bounding_box": [
+    0.41317365269461076,
+    0.38,
+    0.11676646706586827,
+    0.036
+   ]
+  },
+  {
+   "label": "chairs",
+   "attributes": [],
+   "bounding_box": [
+    0.7335329341317365,
+    0.124,
+    0.25748502994011974,
+    0.484
+   ]
+  },
+  {
+   "label": "eyes",
+   "attributes": [],
+   "bounding_box": [
+    0.33532934131736525,
+    0.272,
+    0.09880239520958084,
+    0.036
+   ]
+  },
+  {
+   "label": "spinach",
+   "attributes": [],
+   "bounding_box": [
+    0.39520958083832336,
+    0.638,
+    0.6017964071856288,
+    0.218
+   ]
+  },
+  {
+   "label": "tomatoes",
+   "attributes": [],
+   "bounding_box": [
+    0.8652694610778443,
+    0.704,
+    0.12275449101796407,
+    0.056
+   ]
+  },
+  {
+   "label": "tray",
+   "attributes": [
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.0029940119760479044,
+    0.598,
+    0.9940119760479041,
+    0.398
+   ]
+  },
+  {
+   "label": "sauce",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.2155688622754491,
+    0.628,
+    0.7784431137724551,
+    0.266
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "floral"
+   ],
+   "bounding_box": [
+    0.0,
+    0.432,
+    0.8802395209580839,
+    0.248
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.15269461077844312,
+    0.424,
+    0.3772455089820359,
+    0.104
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.6976047904191617,
+    0.468,
+    0.24550898203592814,
+    0.128
+   ]
+  },
+  {
+   "label": "dress",
+   "attributes": [],
+   "bounding_box": [
+    0.09880239520958084,
+    0.412,
+    0.7095808383233533,
+    0.194
+   ]
+  },
+  {
+   "label": "flowers",
+   "attributes": [],
+   "bounding_box": [
+    0.029940119760479042,
+    0.568,
+    0.03592814371257485,
+    0.03
+   ]
+  },
+  {
+   "label": "food",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.46107784431137727,
+    0.39,
+    0.05389221556886228,
+    0.024
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "mouth",
+   "relation": "of",
+   "object": "girl"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the left of",
+   "object": "chairs"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "chairs"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "on",
+   "object": "pizza"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "on top of",
+   "object": "pizza"
+  },
+  {
+   "subject": "pizza",
+   "relation": "in front of",
+   "object": "girl"
+  },
+  {
+   "subject": "pizza",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "pizza",
+   "relation": "on top of",
+   "object": "tray"
+  },
+  {
+   "subject": "pizza",
+   "relation": "on",
+   "object": "tray"
+  },
+  {
+   "subject": "pizza",
+   "relation": "with",
+   "object": "tomatoes"
+  },
+  {
+   "subject": "pizza",
+   "relation": "with",
+   "object": "spinach"
+  },
+  {
+   "subject": "pizza",
+   "relation": "with",
+   "object": "tomato"
+  },
+  {
+   "subject": "pizza",
+   "relation": "with",
+   "object": "sauce"
+  },
+  {
+   "subject": "tomato",
+   "relation": "on top of",
+   "object": "pizza"
+  },
+  {
+   "subject": "tomato",
+   "relation": "to the left of",
+   "object": "spinach"
+  },
+  {
+   "subject": "girl",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "girl",
+   "relation": "eating",
+   "object": "food"
+  },
+  {
+   "subject": "girl",
+   "relation": "behind",
+   "object": "pizza"
+  },
+  {
+   "subject": "girl",
+   "relation": "in front of",
+   "object": "chairs"
+  },
+  {
+   "subject": "teeth",
+   "relation": "to the left of",
+   "object": "chairs"
+  },
+  {
+   "subject": "chairs",
+   "relation": "behind",
+   "object": "girl"
+  },
+  {
+   "subject": "chairs",
+   "relation": "to the right of",
+   "object": "food"
+  },
+  {
+   "subject": "chairs",
+   "relation": "to the right of",
+   "object": "mouth"
+  },
+  {
+   "subject": "chairs",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "chairs",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "chairs",
+   "relation": "to the right of",
+   "object": "dress"
+  },
+  {
+   "subject": "chairs",
+   "relation": "to the right of",
+   "object": "teeth"
+  },
+  {
+   "subject": "eyes",
+   "relation": "of",
+   "object": "girl"
+  },
+  {
+   "subject": "spinach",
+   "relation": "on",
+   "object": "pizza"
+  },
+  {
+   "subject": "spinach",
+   "relation": "to the right of",
+   "object": "tomato"
+  },
+  {
+   "subject": "tomatoes",
+   "relation": "on",
+   "object": "pizza"
+  },
+  {
+   "subject": "sauce",
+   "relation": "on",
+   "object": "pizza"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "chairs"
+  },
+  {
+   "subject": "hand",
+   "relation": "of",
+   "object": "girl"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "dress"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "dress",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "dress",
+   "relation": "to the right of",
+   "object": "flowers"
+  },
+  {
+   "subject": "dress",
+   "relation": "to the left of",
+   "object": "chairs"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the left of",
+   "object": "dress"
+  },
+  {
+   "subject": "food",
+   "relation": "to the left of",
+   "object": "chairs"
+  }
+ ],
+ "counts": {
+  "objects": 20,
+  "relations": 42
+ }
+}

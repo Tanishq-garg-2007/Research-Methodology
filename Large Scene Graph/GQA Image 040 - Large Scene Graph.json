@@ -1,0 +1,376 @@
+{
+ "image_number": 40,
+ "gqa_image_id": "2393953",
+ "filepath": "data/data_1/2393953.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.652,
+    0.5226666666666666,
+    0.018,
+    0.021333333333333333
+   ]
+  },
+  {
+   "label": "legs",
+   "attributes": [],
+   "bounding_box": [
+    0.808,
+    0.304,
+    0.048,
+    0.13333333333333333
+   ]
+  },
+  {
+   "label": "legs",
+   "attributes": [],
+   "bounding_box": [
+    0.348,
+    0.6186666666666667,
+    0.046,
+    0.184
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.772,
+    0.005333333333333333,
+    0.036,
+    0.06666666666666667
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.76,
+    0.0,
+    0.05,
+    0.072
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.716,
+    0.013333333333333334,
+    0.046,
+    0.072
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.574,
+    0.0,
+    0.2,
+    0.08266666666666667
+   ]
+  },
+  {
+   "label": "paint",
+   "attributes": [],
+   "bounding_box": [
+    0.276,
+    0.208,
+    0.074,
+    0.04533333333333334
+   ]
+  },
+  {
+   "label": "baby",
+   "attributes": [],
+   "bounding_box": [
+    0.402,
+    0.392,
+    0.36,
+    0.49333333333333335
+   ]
+  },
+  {
+   "label": "daisy",
+   "attributes": [
+    "yellow"
+   ],
+   "bounding_box": [
+    0.874,
+    0.648,
+    0.02,
+    0.029333333333333333
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.036,
+    0.352,
+    0.594,
+    0.52
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.696,
+    0.4266666666666667,
+    0.06,
+    0.037333333333333336
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.674,
+    0.4533333333333333,
+    0.014,
+    0.029333333333333333
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [],
+   "bounding_box": [
+    0.45,
+    0.5653333333333334,
+    0.044,
+    0.21866666666666668
+   ]
+  },
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.04,
+    0.29333333333333333,
+    0.058,
+    0.12533333333333332
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.0,
+    0.005333333333333333,
+    0.996,
+    0.9946666666666667
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [],
+   "bounding_box": [
+    0.804,
+    0.216,
+    0.026,
+    0.17333333333333334
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.27,
+    0.20266666666666666,
+    0.24,
+    0.232
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.8,
+    0.16533333333333333,
+    0.198,
+    0.28
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.592,
+    0.392,
+    0.16,
+    0.17333333333333334
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "legs",
+   "relation": "by",
+   "object": "baby"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "tail"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "baby"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "sheep"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "sheep",
+   "relation": "in",
+   "object": "grass"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "sheep"
+  },
+  {
+   "subject": "baby",
+   "relation": "to the left of",
+   "object": "daisy"
+  },
+  {
+   "subject": "baby",
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  {
+   "subject": "daisy",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "daisy",
+   "relation": "to the right of",
+   "object": "baby"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "sheep",
+   "relation": "eating",
+   "object": "grass"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "legs"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "daisy"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "eye",
+   "relation": "of",
+   "object": "baby"
+  },
+  {
+   "subject": "tail",
+   "relation": "of",
+   "object": "baby"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "sheep"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the right of",
+   "object": "leg"
+  }
+ ],
+ "counts": {
+  "objects": 20,
+  "relations": 31
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "image_number": 44,
+ "gqa_image_id": "2402864",
+ "filepath": "data/data_1/2402864.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "chair",
+  "door"
+ ],
+ "query": {
+  "question": "What is to the left of the sink?",
+  "answer": "chair",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "sink"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

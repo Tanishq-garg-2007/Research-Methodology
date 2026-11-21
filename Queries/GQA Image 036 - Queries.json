@@ -1,0 +1,23 @@
+{
+ "image_number": 36,
+ "gqa_image_id": "2404923",
+ "filepath": "data/data_0/2404923.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "animal",
+  "rope"
+ ],
+ "query": {
+  "question": "What is to the left of the boat?",
+  "answer": "animal",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "boat"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

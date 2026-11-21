@@ -1,0 +1,23 @@
+{
+ "image_number": 25,
+ "gqa_image_id": "2338754",
+ "filepath": "data/data_0/2338754.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "animal",
+  "shorts"
+ ],
+ "query": {
+  "question": "What is to the right of the camera?",
+  "answer": "animal",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "camera"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

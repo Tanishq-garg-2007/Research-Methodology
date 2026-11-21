@@ -1,0 +1,23 @@
+{
+ "image_number": 21,
+ "gqa_image_id": "2408882",
+ "filepath": "data/data_0/2408882.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "giraffe",
+  "tree"
+ ],
+ "query": {
+  "question": "What is on the tree?",
+  "answer": "food",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "tree"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

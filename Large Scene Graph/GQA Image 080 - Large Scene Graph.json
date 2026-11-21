@@ -1,0 +1,390 @@
+{
+ "image_number": 80,
+ "gqa_image_id": "2342608",
+ "filepath": "data/data_2/2342608.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "skier",
+   "attributes": [],
+   "bounding_box": [
+    0.522,
+    0.30538922155688625,
+    0.07,
+    0.19760479041916168
+   ]
+  },
+  {
+   "label": "jacket",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.182,
+    0.32335329341317365,
+    0.074,
+    0.20359281437125748
+   ]
+  },
+  {
+   "label": "boot",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.59,
+    0.9221556886227545,
+    0.094,
+    0.07784431137724551
+   ]
+  },
+  {
+   "label": "face",
+   "attributes": [],
+   "bounding_box": [
+    0.67,
+    0.281437125748503,
+    0.05,
+    0.08682634730538923
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "ski"
+   ],
+   "bounding_box": [
+    0.462,
+    0.688622754491018,
+    0.198,
+    0.2874251497005988
+   ]
+  },
+  {
+   "label": "snow",
+   "attributes": [],
+   "bounding_box": [
+    0.336,
+    0.3323353293413174,
+    0.06,
+    0.11976047904191617
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.854,
+    0.2874251497005988,
+    0.054,
+    0.08682634730538923
+   ]
+  },
+  {
+   "label": "ski lift",
+   "attributes": [],
+   "bounding_box": [
+    0.898,
+    0.19161676646706588,
+    0.06,
+    0.059880239520958084
+   ]
+  },
+  {
+   "label": "sweater",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.66,
+    0.2125748502994012,
+    0.094,
+    0.10479041916167664
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.584,
+    0.18562874251497005,
+    0.242,
+    0.8143712574850299
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.66,
+    0.2125748502994012,
+    0.094,
+    0.15568862275449102
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.67,
+    0.2934131736526946,
+    0.016,
+    0.02694610778443114
+   ]
+  },
+  {
+   "label": "teeth",
+   "attributes": [],
+   "bounding_box": [
+    0.682,
+    0.3263473053892216,
+    0.012,
+    0.011976047904191617
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.048,
+    0.26047904191616766,
+    0.05,
+    0.19461077844311378
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.674,
+    0.6826347305389222,
+    0.058,
+    0.12275449101796407
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "skier",
+   "relation": "to the left of",
+   "object": "teeth"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the right of",
+   "object": "snow"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the left of",
+   "object": "face"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the left of",
+   "object": "snow"
+  },
+  {
+   "subject": "face",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "face",
+   "relation": "to the right of",
+   "object": "skier"
+  },
+  {
+   "subject": "face",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "snow",
+   "relation": "to the left of",
+   "object": "skier"
+  },
+  {
+   "subject": "snow",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "snow",
+   "relation": "to the right of",
+   "object": "jacket"
+  },
+  {
+   "subject": "snow",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "teeth"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "face"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "ski lift",
+   "relation": "to the right of",
+   "object": "sweater"
+  },
+  {
+   "subject": "ski lift",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "ski lift",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "sweater",
+   "relation": "to the left of",
+   "object": "ski lift"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "skier"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "snow"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "ski lift"
+  },
+  {
+   "subject": "head",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "ski lift"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "nose",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "skier"
+  },
+  {
+   "subject": "teeth",
+   "relation": "to the right of",
+   "object": "skier"
+  },
+  {
+   "subject": "teeth",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "teeth",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "snow"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "hand",
+   "relation": "of",
+   "object": "person"
+  }
+ ],
+ "counts": {
+  "objects": 15,
+  "relations": 43
+ }
+}

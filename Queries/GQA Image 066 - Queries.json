@@ -1,0 +1,23 @@
+{
+ "image_number": 66,
+ "gqa_image_id": "2324922",
+ "filepath": "data/data_1/2324922.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "beach",
+  "vehicle"
+ ],
+ "query": {
+  "question": "What is to the right of the jacket?",
+  "answer": "vehicle",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "jacket"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

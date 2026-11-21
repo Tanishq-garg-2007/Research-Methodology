@@ -1,0 +1,256 @@
+{
+ "image_number": 6,
+ "gqa_image_id": "2376954",
+ "filepath": "data/data_0/2376954.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "door",
+  "shelf"
+ ],
+ "core_nodes": [
+  "container",
+  "door",
+  "shelf"
+ ],
+ "nodes": [
+  "chair",
+  "container",
+  "door",
+  "picture",
+  "refrigerator",
+  "shelf"
+ ],
+ "objects": [
+  {
+   "label": "shelf",
+   "attributes": [
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.792,
+    0.35,
+    0.112,
+    0.058
+   ]
+  },
+  {
+   "label": "shelf",
+   "attributes": [
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.8,
+    0.132,
+    0.10133333333333333,
+    0.046
+   ]
+  },
+  {
+   "label": "container",
+   "attributes": [
+    "white",
+    "plastic"
+   ],
+   "bounding_box": [
+    0.8133333333333334,
+    0.864,
+    0.08533333333333333,
+    0.13
+   ]
+  },
+  {
+   "label": "shelf",
+   "attributes": [],
+   "bounding_box": [
+    0.7973333333333333,
+    0.698,
+    0.12,
+    0.148
+   ]
+  },
+  {
+   "label": "shelf",
+   "attributes": [
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.8053333333333333,
+    0.566,
+    0.10133333333333333,
+    0.07
+   ]
+  },
+  {
+   "label": "shelf",
+   "attributes": [
+    "wood"
+   ],
+   "bounding_box": [
+    0.792,
+    0.018,
+    0.12,
+    0.974
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.3973333333333333,
+    0.29,
+    0.4053333333333333,
+    0.708
+   ]
+  },
+  {
+   "label": "container",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.8,
+    0.69,
+    0.08,
+    0.128
+   ]
+  },
+  {
+   "label": "refrigerator",
+   "attributes": [],
+   "bounding_box": [
+    0.16533333333333333,
+    0.0,
+    0.6826666666666666,
+    0.994
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [],
+   "bounding_box": [
+    0.5066666666666667,
+    0.906,
+    0.096,
+    0.092
+   ]
+  },
+  {
+   "label": "picture",
+   "attributes": [],
+   "bounding_box": [
+    0.26666666666666666,
+    0.8,
+    0.056,
+    0.066
+   ]
+  },
+  {
+   "label": "refrigerator",
+   "attributes": [],
+   "bounding_box": [
+    0.16533333333333333,
+    0.0,
+    0.6293333333333333,
+    0.32
+   ]
+  },
+  {
+   "label": "shelf",
+   "attributes": [],
+   "bounding_box": [
+    0.23733333333333334,
+    0.458,
+    0.24,
+    0.068
+   ]
+  },
+  {
+   "label": "shelf",
+   "attributes": [],
+   "bounding_box": [
+    0.7946666666666666,
+    0.948,
+    0.13066666666666665,
+    0.048
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "shelf",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "shelf",
+   "relation": "to the right of",
+   "object": "refrigerator"
+  },
+  {
+   "subject": "container",
+   "relation": "on",
+   "object": "shelf"
+  },
+  {
+   "subject": "container",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "shelf",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "shelf"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "container"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "shelf"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "picture"
+  },
+  {
+   "subject": "refrigerator",
+   "relation": "to the left of",
+   "object": "shelf"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "shelf"
+  },
+  {
+   "subject": "picture",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "shelf",
+   "relation": "to the left of",
+   "object": "door"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 14,
+  "relations": 13
+ }
+}

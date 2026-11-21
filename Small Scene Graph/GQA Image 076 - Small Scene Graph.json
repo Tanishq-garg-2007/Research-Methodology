@@ -1,0 +1,209 @@
+{
+ "image_number": 76,
+ "gqa_image_id": "2330220",
+ "filepath": "data/data_2/2330220.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "hair",
+  "man"
+ ],
+ "core_nodes": [
+  "ear",
+  "hair",
+  "man"
+ ],
+ "nodes": [
+  "coat",
+  "ear",
+  "eye",
+  "hair",
+  "man",
+  "mouth"
+ ],
+ "objects": [
+  {
+   "label": "coat",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.0,
+    0.6749435665914221,
+    0.5,
+    0.32054176072234764
+   ]
+  },
+  {
+   "label": "mouth",
+   "attributes": [],
+   "bounding_box": [
+    0.254,
+    0.5981941309255079,
+    0.142,
+    0.0835214446952596
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.36,
+    0.4672686230248307,
+    0.074,
+    0.02708803611738149
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.484,
+    0.5124153498871332,
+    0.028,
+    0.08126410835214447
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.66,
+    0.3927765237020316,
+    0.074,
+    0.029345372460496615
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.222,
+    0.45146726862302483,
+    0.068,
+    0.03160270880361174
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.538,
+    0.3747178329571106,
+    0.054,
+    0.03160270880361174
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.082,
+    0.09932279909706546,
+    0.492,
+    0.7133182844243793
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.814,
+    0.3747178329571106,
+    0.088,
+    0.16252821670428894
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.504,
+    0.024830699774266364,
+    0.41,
+    0.4040632054176072
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.482,
+    0.02708803611738149,
+    0.516,
+    0.9683972911963883
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "mouth"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 11,
+  "relations": 12
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "image_number": 81,
+ "gqa_image_id": "2326836",
+ "filepath": "data/data_2/2326836.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "gown",
+  "hair"
+ ],
+ "query": {
+  "question": "What is to the left of the cake?",
+  "answer": "gown",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "cake"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

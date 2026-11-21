@@ -1,0 +1,148 @@
+{
+ "image_number": 37,
+ "gqa_image_id": "2374245",
+ "filepath": "data/data_0/2374245.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "train",
+  "cloud"
+ ],
+ "core_nodes": [
+  "cars",
+  "cloud",
+  "train"
+ ],
+ "nodes": [
+  "cars",
+  "cloud",
+  "clouds",
+  "locomotive",
+  "steam",
+  "train"
+ ],
+ "objects": [
+  {
+   "label": "locomotive",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.148,
+    0.32459016393442625,
+    0.424,
+    0.4491803278688525
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [],
+   "bounding_box": [
+    0.626,
+    0.3180327868852459,
+    0.276,
+    0.13114754098360656
+   ]
+  },
+  {
+   "label": "train",
+   "attributes": [],
+   "bounding_box": [
+    0.148,
+    0.32459016393442625,
+    0.696,
+    0.4491803278688525
+   ]
+  },
+  {
+   "label": "steam",
+   "attributes": [],
+   "bounding_box": [
+    0.09,
+    0.09836065573770492,
+    0.376,
+    0.45901639344262296
+   ]
+  },
+  {
+   "label": "cars",
+   "attributes": [],
+   "bounding_box": [
+    0.096,
+    0.5901639344262295,
+    0.052,
+    0.03934426229508197
+   ]
+  },
+  {
+   "label": "clouds",
+   "attributes": [
+    "fluffy",
+    "white"
+   ],
+   "bounding_box": [
+    0.892,
+    0.33114754098360655,
+    0.108,
+    0.12131147540983607
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "locomotive",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "steam"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the left of",
+   "object": "clouds"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "locomotive"
+  },
+  {
+   "subject": "train",
+   "relation": "to the left of",
+   "object": "clouds"
+  },
+  {
+   "subject": "train",
+   "relation": "to the right of",
+   "object": "cars"
+  },
+  {
+   "subject": "steam",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "cars",
+   "relation": "to the left of",
+   "object": "train"
+  },
+  {
+   "subject": "clouds",
+   "relation": "to the right of",
+   "object": "cloud"
+  },
+  {
+   "subject": "clouds",
+   "relation": "to the right of",
+   "object": "train"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 10
+ }
+}

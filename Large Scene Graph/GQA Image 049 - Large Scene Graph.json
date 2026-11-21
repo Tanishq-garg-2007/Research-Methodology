@@ -1,0 +1,521 @@
+{
+ "image_number": 49,
+ "gqa_image_id": "272",
+ "filepath": "data/data_1/272.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.39375,
+    0.5520833333333334,
+    0.06875,
+    0.058333333333333334
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.259375,
+    0.5479166666666667,
+    0.071875,
+    0.06041666666666667
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.328125,
+    0.5479166666666667,
+    0.0671875,
+    0.06041666666666667
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [
+    "white",
+    "puffy"
+   ],
+   "bounding_box": [
+    0.459375,
+    0.22291666666666668,
+    0.2375,
+    0.075
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "tall",
+    "green"
+   ],
+   "bounding_box": [
+    0.403125,
+    0.5,
+    0.025,
+    0.05416666666666667
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [
+    "white",
+    "puffy"
+   ],
+   "bounding_box": [
+    0.715625,
+    0.26875,
+    0.28125,
+    0.12291666666666666
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [
+    "white",
+    "puffy"
+   ],
+   "bounding_box": [
+    0.19375,
+    0.25625,
+    0.2421875,
+    0.09375
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.1328125,
+    0.5520833333333334,
+    0.0671875,
+    0.05416666666666667
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.19375,
+    0.54375,
+    0.0671875,
+    0.0625
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.3390625,
+    0.5520833333333334,
+    0.0546875,
+    0.0375
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.4046875,
+    0.5520833333333334,
+    0.053125,
+    0.0375
+   ]
+  },
+  {
+   "label": "shore",
+   "attributes": [],
+   "bounding_box": [
+    0.6390625,
+    0.65,
+    0.3578125,
+    0.08541666666666667
+   ]
+  },
+  {
+   "label": "buoy",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.3484375,
+    0.66875,
+    0.0125,
+    0.014583333333333334
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.0609375,
+    0.54375,
+    0.0859375,
+    0.0625
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.078125,
+    0.5479166666666667,
+    0.0625,
+    0.035416666666666666
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.134375,
+    0.55,
+    0.0625,
+    0.020833333333333332
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.2734375,
+    0.5479166666666667,
+    0.046875,
+    0.022916666666666665
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "tall"
+   ],
+   "bounding_box": [
+    0.64375,
+    0.6479166666666667,
+    0.053125,
+    0.03125
+   ]
+  },
+  {
+   "label": "boat",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.4546875,
+    0.6354166666666666,
+    0.0265625,
+    0.014583333333333334
+   ]
+  },
+  {
+   "label": "boat",
+   "attributes": [],
+   "bounding_box": [
+    0.359375,
+    0.6229166666666667,
+    0.0515625,
+    0.03125
+   ]
+  },
+  {
+   "label": "boat",
+   "attributes": [
+    "blue",
+    "small",
+    "docked",
+    "parked"
+   ],
+   "bounding_box": [
+    0.684375,
+    0.675,
+    0.08125,
+    0.03125
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "tall",
+    "green"
+   ],
+   "bounding_box": [
+    0.2921875,
+    0.47291666666666665,
+    0.03125,
+    0.10208333333333333
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "tall",
+    "green"
+   ],
+   "bounding_box": [
+    0.24375,
+    0.47291666666666665,
+    0.0796875,
+    0.10208333333333333
+   ]
+  },
+  {
+   "label": "boat",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.190625,
+    0.625,
+    0.034375,
+    0.022916666666666665
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [
+    "blue",
+    "overcast"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0020833333333333333,
+    1.0015625,
+    0.5583333333333333
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "tall",
+    "green"
+   ],
+   "bounding_box": [
+    0.321875,
+    0.46875,
+    0.0765625,
+    0.11666666666666667
+   ]
+  },
+  {
+   "label": "dock",
+   "attributes": [],
+   "bounding_box": [
+    0.675,
+    0.6791666666666667,
+    0.14375,
+    0.03333333333333333
+   ]
+  },
+  {
+   "label": "house",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.675,
+    0.6083333333333333,
+    0.1453125,
+    0.1
+   ]
+  },
+  {
+   "label": "roof",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.734375,
+    0.6166666666666667,
+    0.0875,
+    0.03333333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "building",
+   "relation": "in front of",
+   "object": "tree"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "roof"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "roof"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "cloud"
+  },
+  {
+   "subject": "cloud",
+   "relation": "in",
+   "object": "sky"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "tree",
+   "relation": "behind",
+   "object": "building"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the right of",
+   "object": "roof"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the left of",
+   "object": "roof"
+  },
+  {
+   "subject": "shore",
+   "relation": "near",
+   "object": "boat"
+  },
+  {
+   "subject": "roof",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "grass",
+   "relation": "on",
+   "object": "shore"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the left of",
+   "object": "house"
+  },
+  {
+   "subject": "boat",
+   "relation": "to the right of",
+   "object": "boat"
+  },
+  {
+   "subject": "boat",
+   "relation": "to the left of",
+   "object": "house"
+  },
+  {
+   "subject": "boat",
+   "relation": "to the left of",
+   "object": "boat"
+  },
+  {
+   "subject": "boat",
+   "relation": "near",
+   "object": "shore"
+  },
+  {
+   "subject": "boat",
+   "relation": "at",
+   "object": "dock"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "roof"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "roof"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "house",
+   "relation": "to the right of",
+   "object": "boat"
+  },
+  {
+   "subject": "house",
+   "relation": "to the right of",
+   "object": "grass"
+  }
+ ],
+ "counts": {
+  "objects": 29,
+  "relations": 33
+ }
+}

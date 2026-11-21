@@ -1,0 +1,23 @@
+{
+ "image_number": 15,
+ "gqa_image_id": "2389368",
+ "filepath": "data/data_0/2389368.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "ball",
+  "fingers"
+ ],
+ "query": {
+  "question": "What is to the left of the wristband?",
+  "answer": "fingers",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "wristband"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

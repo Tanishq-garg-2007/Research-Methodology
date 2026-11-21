@@ -1,0 +1,146 @@
+{
+ "image_number": 5,
+ "gqa_image_id": "2364991",
+ "filepath": "data/data_0/2364991.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "tree",
+  "trunk"
+ ],
+ "core_nodes": [
+  "tree",
+  "trunk"
+ ],
+ "nodes": [
+  "branch",
+  "building",
+  "bush",
+  "tree",
+  "trunk"
+ ],
+ "objects": [
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.066,
+    0.0,
+    0.434,
+    0.875
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.594,
+    0.0,
+    0.158,
+    0.9959677419354839
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.18951612903225806,
+    0.09,
+    0.2782258064516129
+   ]
+  },
+  {
+   "label": "trunk",
+   "attributes": [],
+   "bounding_box": [
+    0.276,
+    0.0,
+    0.07,
+    0.8790322580645161
+   ]
+  },
+  {
+   "label": "branch",
+   "attributes": [],
+   "bounding_box": [
+    0.08,
+    0.0,
+    0.318,
+    0.25
+   ]
+  },
+  {
+   "label": "bush",
+   "attributes": [],
+   "bounding_box": [
+    0.916,
+    0.17338709677419356,
+    0.08,
+    0.1814516129032258
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "bush"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "trunk"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "branch"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "trunk"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "trunk",
+   "relation": "on",
+   "object": "tree"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "branch",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "bush",
+   "relation": "to the right of",
+   "object": "tree"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 6,
+  "relations": 11
+ }
+}

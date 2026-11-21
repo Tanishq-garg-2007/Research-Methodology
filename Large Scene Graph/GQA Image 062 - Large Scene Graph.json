@@ -1,0 +1,127 @@
+{
+ "image_number": 62,
+ "gqa_image_id": "2414901",
+ "filepath": "data/data_1/2414901.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "eye",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.21021021021021022,
+    0.036,
+    0.03003003003003003,
+    0.018
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.7327327327327328,
+    0.302,
+    0.07507507507507508,
+    0.076
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [
+    "walking"
+   ],
+   "bounding_box": [
+    0.7207207207207207,
+    0.274,
+    0.0960960960960961,
+    0.19
+   ]
+  },
+  {
+   "label": "bird",
+   "attributes": [
+    "orange"
+   ],
+   "bounding_box": [
+    0.2222222222222222,
+    0.73,
+    0.11411411411411411,
+    0.068
+   ]
+  },
+  {
+   "label": "bird",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.1921921921921922,
+    0.028,
+    0.26126126126126126,
+    0.144
+   ]
+  },
+  {
+   "label": "cage",
+   "attributes": [],
+   "bounding_box": [
+    0.006006006006006006,
+    0.0,
+    0.6366366366366366,
+    0.92
+   ]
+  },
+  {
+   "label": "bird",
+   "attributes": [
+    "orange"
+   ],
+   "bounding_box": [
+    0.3483483483483483,
+    0.694,
+    0.10510510510510511,
+    0.064
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "cage"
+  },
+  {
+   "subject": "person",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "cage"
+  },
+  {
+   "subject": "bird",
+   "relation": "in",
+   "object": "cage"
+  },
+  {
+   "subject": "cage",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "cage",
+   "relation": "to the left of",
+   "object": "shirt"
+  }
+ ],
+ "counts": {
+  "objects": 7,
+  "relations": 6
+ }
+}

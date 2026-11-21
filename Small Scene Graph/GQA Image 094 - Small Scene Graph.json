@@ -1,0 +1,233 @@
+{
+ "image_number": 94,
+ "gqa_image_id": "2355914",
+ "filepath": "data/data_2/2355914.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "window",
+  "windows"
+ ],
+ "core_nodes": [
+  "door",
+  "window",
+  "windows"
+ ],
+ "nodes": [
+  "door",
+  "label",
+  "nose",
+  "window",
+  "windows",
+  "wing"
+ ],
+ "objects": [
+  {
+   "label": "label",
+   "attributes": [],
+   "bounding_box": [
+    0.246,
+    0.37237237237237236,
+    0.194,
+    0.08408408408408409
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.222,
+    0.3783783783783784,
+    0.006,
+    0.012012012012012012
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.276,
+    0.4024024024024024,
+    0.006,
+    0.009009009009009009
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.19,
+    0.37237237237237236,
+    0.008,
+    0.009009009009009009
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.358,
+    0.43243243243243246,
+    0.004,
+    0.009009009009009009
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.252,
+    0.3933933933933934,
+    0.006,
+    0.009009009009009009
+   ]
+  },
+  {
+   "label": "wing",
+   "attributes": [],
+   "bounding_box": [
+    0.502,
+    0.30930930930930933,
+    0.416,
+    0.2042042042042042
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.748,
+    0.5615615615615616,
+    0.018,
+    0.04804804804804805
+   ]
+  },
+  {
+   "label": "windows",
+   "attributes": [],
+   "bounding_box": [
+    0.26,
+    0.3963963963963964,
+    0.006,
+    0.009009009009009009
+   ]
+  },
+  {
+   "label": "windows",
+   "attributes": [],
+   "bounding_box": [
+    0.064,
+    0.33633633633633636,
+    0.034,
+    0.018018018018018018
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.03,
+    0.33933933933933935,
+    0.04,
+    0.06006006006006006
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.134,
+    0.33633633633633636,
+    0.022,
+    0.05105105105105105
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "label",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "label"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "wing"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the right of",
+   "object": "windows"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "wing"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "windows"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 12,
+  "relations": 16
+ }
+}

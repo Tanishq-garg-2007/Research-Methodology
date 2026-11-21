@@ -1,0 +1,23 @@
+{
+ "image_number": 78,
+ "gqa_image_id": "2327238",
+ "filepath": "data/data_2/2327238.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "bush",
+  "tree"
+ ],
+ "query": {
+  "question": "What is to the left of the bush?",
+  "answer": "ground",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "bush"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "image_number": 58,
+ "gqa_image_id": "2383543",
+ "filepath": "data/data_1/2383543.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "shirt",
+  "bottle"
+ ],
+ "query": {
+  "question": "What is to the left of the counter?",
+  "answer": "shirt",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "counter"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

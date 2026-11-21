@@ -1,0 +1,745 @@
+"""Build the 100-image GQA spatial benchmark (Exp-07 dataset).
+
+Source: Hugging Face Voxel51/GQA-Scene-Graph (GQA 35k subset).
+  samples.json is 222 MB and the HF Dataset Viewer is broken for it, so this
+  script streams it with HTTP Range requests and parses samples incrementally
+  with json.JSONDecoder.raw_decode (no full download, no full parse in memory).
+
+Per-image pipeline (proven on image 2395226 in ../gqa_walkthrough.py):
+  1. LARGE scene graph = the FULL original graph: all objects + all relations.
+  2. TIGHT subgraph around an anchor pair = ONLY relations where the subject
+     or the object is one of the two anchors.
+  3. Candidate queries from the tight subgraph (unique-answer filter only).
+     Templates, tried in this order: between (geometry), on, to the left of,
+     to the right of, with. "Between" is NOT a GQA relation: derived from
+     bounding-box centre geometry, only when BOTH anchor labels and the answer
+     label have exactly one instance in the image.
+  4. COMPACT small scene graph (the Small Scene Graph file) for the ONE chosen
+     query, target 5-7 nodes, ~8-12 relations:
+       nodes = anchors (2) + objects named in the query + the answer object
+               + up to 3 DISTRACTOR objects. Distractors are neighbours of the
+               anchors from the tight subgraph, tried same-relation-type-first
+               (an object sharing the query's relation type but with a
+               DIFFERENT target), then alphabetically. A distractor is admitted
+               only if the query's answer stays exactly-one within the growing
+               compact set. Stop at 3 distractors or 7 total nodes.
+       edges = tight-subgraph relations whose subject AND object are both in
+               the node set AND which touch a CORE node (an anchor, a
+               query-named object, or the answer). Edges come from the TIGHT
+               subgraph only -- never the full graph (the full graph contains
+               duplicate-label self-edges like "plate to the left of plate"
+               which re-enter and break answer uniqueness). Self-relations
+               are also excluded from the compact edges themselves: an anchor
+               label can carry a self-edge in the tight subgraph too. Deduped.
+       The chosen query is re-validated against the compact subgraph: its key
+       edge (or geometry, for between) must be present and it must still have
+       exactly one answer. Otherwise the next candidate query is tried; if
+       none works, the image is skipped.
+     Query-quality filters on candidate generation (from hand-verification of
+     the first build, which found GQA noise passed through faithfully):
+       F1: self-relations (subject label == object label) never generate a query;
+       F2: an answer is never the same label as the queried object;
+       F3: contradictory left/right annotations excluded: the same subject+object
+           annotated BOTH "to the left of" and "to the right of" (a genuine
+           contradiction, e.g. "tail left of elephant" and "tail right of
+           elephant"). "A left of B" + "B right of A" is the same fact twice
+           and is NOT excluded.
+  Anchor selection is automatic: labels ranked by relation involvement, pairs
+  tried in order of combined involvement, first pair yielding a qualifying
+  compact query wins.
+
+  Verified on image 2395226 (anchors tomato + fork): tight 15 objects /
+  35 relations (counting duplicates, as in the walkthrough) -> compact
+  6 nodes / 11 relations, query "What is on the plate?" -> fork.
+  (This build dedupes relations, so its tight counts read lower; the compact
+  6 nodes / 11 relations reproduce exactly.)
+
+Layout (mirrors the Drive "RM" folder, files numbered 001-100 in selection
+order so Drive sorts correctly):
+  Images/GQA Image 001.jpg ...
+  Large Scene Graph/GQA Image 001 - Large Scene Graph.json ... (full graph)
+  Small Scene Graph/GQA Image 001 - Small Scene Graph.json ... (compact graph)
+  Queries/GQA Image 001 - Queries.json ... (exactly ONE query object)
+  benchmark.json   (one entry per image: number, ids, anchors, query, compact
+                    subgraph size, file paths)
+  build_log.json   (scan/skip/replace counts and reasons)
+  VALIDATION.md / validation_report.json  (written by validate_bench100.py)
+
+Selection: scan samples sequentially, keep every sample that yields a valid
+item (candidate). Image 2395226 (the proven walkthrough example) is forced in
+as item 001. The other 99 are picked evenly spaced across the candidate list
+so scenes vary instead of clustering at the start of the file. A failed image
+download is replaced by the next unused candidate.
+
+Run:  python3 build_gqa_bench100.py
+"""
+import json
+import os
+import time
+import urllib.request
+import codecs
+from concurrent.futures import ThreadPoolExecutor
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+BASE = "https://huggingface.co/datasets/Voxel51/GQA-Scene-Graph/resolve/main/"
+SAMPLES_URL = BASE + "samples.json"
+TARGET_ITEMS = 100
+MAX_CANDIDATES = 2500        # stop scanning once this many valid candidates exist
+CHUNK = 8 * 1024 * 1024
+FORCED_IMAGE_ID = "2395226"  # the proven one-image walkthrough example
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) Muse-bench-builder/1.0"}
+
+DIR_IMAGES = "Images"
+DIR_LARGE = "Large Scene Graph"
+DIR_SMALL = "Small Scene Graph"
+DIR_QUERIES = "Queries"
+MAX_DISTRACTORS = 3
+MAX_NODES = 7
+
+TEMPLATE_ORDER = {"between": 0, "on": 1, "left_of": 2, "right_of": 3, "with": 4}
+
+
+def num_name(n):
+    return f"GQA Image {n:03d}"
+
+
+# ---------------------------------------------------------------- streaming
+def fetch_range(start, end):
+    req = urllib.request.Request(
+        SAMPLES_URL, headers={**UA, "Range": f"bytes={start}-{end}"})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        data = r.read()
+        total = None
+        cr = r.headers.get("Content-Range")
+        if cr and "/" in cr:
+            total = int(cr.rsplit("/", 1)[1])
+        return data, total
+
+
+def iter_samples():
+    """Yield parsed sample dicts from samples.json, streaming by Range."""
+    dec = json.JSONDecoder()
+    utf8 = codecs.getincrementaldecoder("utf-8")()
+    buf = ""
+    pos = 0
+    fetched = 0
+    total = None
+    eof = False
+
+    def need_more():
+        nonlocal fetched, total, eof, buf
+        if eof:
+            return False
+        end = fetched + CHUNK - 1
+        data, total = fetch_range(fetched, end)
+        if not data:
+            eof = True
+            return False
+        fetched += len(data)
+        buf += utf8.decode(data)
+        if fetched >= (total or 10 ** 18):
+            eof = True
+        return True
+
+    need_more()
+    i = buf.find('"samples"')
+    if i < 0:
+        raise RuntimeError("could not find 'samples' key in samples.json")
+    j = buf.find("[", i)
+    if j < 0:
+        raise RuntimeError("could not find samples array")
+    pos = j + 1
+
+    while True:
+        while pos < len(buf) and buf[pos] in " \n\r\t,":
+            pos += 1
+        if pos >= len(buf):
+            if not need_more():
+                return
+            continue
+        if buf[pos] == "]":
+            return
+        if buf[pos] != "{":
+            raise RuntimeError(f"unexpected char {buf[pos]!r} at buffer pos {pos}")
+        try:
+            obj, end = dec.raw_decode(buf, pos)
+        except json.JSONDecodeError as e:
+            if e.pos is not None and e.pos > len(buf) - 200 and not eof:
+                if need_more():
+                    continue
+            raise
+        pos = end
+        yield obj
+        if pos > 4_000_000:
+            buf = buf[pos:]
+            pos = 0
+
+
+# ---------------------------------------------------------------- graph core
+def box_center(b):
+    x, y, w, h = b
+    return (x + w / 2.0, y + h / 2.0)
+
+
+def extract_graph(sample):
+    """Return (objects, relations, n_bad_box, n_dupes) from one FiftyOne sample.
+    objects: [{label, attributes, bounding_box}]; relations: [{subject, relation, object}]."""
+    dets = (sample.get("detections") or {}).get("detections") or []
+    objects, relations = [], []
+    n_bad_box = 0
+    for d in dets:
+        label = d.get("label")
+        box = d.get("bounding_box")
+        if not label or not isinstance(box, list) or len(box) != 4:
+            n_bad_box += 1
+            continue
+        try:
+            box = [float(v) for v in box]
+        except (TypeError, ValueError):
+            n_bad_box += 1
+            continue
+        objects.append({
+            "label": label,
+            "attributes": list(d.get("object_attributes") or []),
+            "bounding_box": box,
+        })
+        for r in d.get("relations") or []:
+            if r.get("name") and r.get("object"):
+                relations.append({"subject": label, "relation": r["name"],
+                                  "object": r["object"]})
+    seen, uniq = set(), []
+    for r in relations:
+        k = (r["subject"], r["relation"], r["object"])
+        if k not in seen:
+            seen.add(k)
+            uniq.append(r)
+    return objects, uniq, n_bad_box, len(relations) - len(uniq)
+
+
+def tight_subgraph(objects, relations, anchors):
+    sub_rels = [r for r in relations
+                if r["subject"] in anchors or r["object"] in anchors]
+    keep = set(anchors)
+    for r in sub_rels:
+        keep.add(r["subject"])
+        keep.add(r["object"])
+    sub_objs = [o for o in objects if o["label"] in keep]
+    return sub_objs, sub_rels
+
+
+# ---------------------------------------------------------------- candidates
+def generate_candidates(objects, sub_objs, sub_rels, anchors):
+    """All valid unique-answer queries from the tight subgraph, in the order
+    they must be tried: between, on, left_of, right_of, with; unambiguous
+    first within a template, then alphabetical. Filters F1/F2/F3 apply.
+    Returns (candidates, filter_stats)."""
+    labels = {o["label"] for o in sub_objs}
+    counts = {}
+    for o in objects:
+        counts[o["label"]] = counts.get(o["label"], 0) + 1
+    unique = {lab for lab, c in counts.items() if c == 1}
+
+    # F3: genuine contradiction = the SAME subject+object annotated BOTH
+    # "to the left of" and "to the right of" (e.g. "tail left of elephant"
+    # AND "tail right of elephant"). NOTE: "A left of B" + "B right of A" is
+    # the SAME fact twice, not a contradiction -- an earlier frozenset version
+    # of this filter wrongly dropped those and was fixed.
+    left_directed = {(r["subject"], r["object"]) for r in sub_rels
+                     if r["relation"] == "to the left of"}
+    right_directed = {(r["subject"], r["object"]) for r in sub_rels
+                      if r["relation"] == "to the right of"}
+
+    usable = [r for r in sub_rels if r["subject"] != r["object"]]  # F1
+    n_self_filtered = len(sub_rels) - len(usable)
+
+    out = []
+    n_contra_filtered = 0
+
+    def add(template, question, answer, derivation, involved):
+        out.append({
+            "question": question,
+            "answer": answer,
+            "template": template,
+            "derivation": derivation,
+            "unambiguous": all(l in unique for l in involved),
+        })
+
+    # left_of / right_of (F2: answer != queried object; F3: same subject+object
+    # annotated both directions)
+    for rel, template in (("to the left of", "left_of"), ("to the right of", "right_of")):
+        for obj in sorted(labels):
+            hits = sorted({r["subject"] for r in usable
+                           if r["relation"] == rel and r["object"] == obj})
+            if len(hits) == 1:
+                if hits[0] == obj:
+                    continue
+                if rel == "to the left of" and (hits[0], obj) in right_directed:
+                    n_contra_filtered += 1
+                    continue
+                if rel == "to the right of" and (hits[0], obj) in left_directed:
+                    n_contra_filtered += 1
+                    continue
+                add(template, f"What is {rel} the {obj}?", hits[0],
+                    {"relation": rel, "object": obj}, [obj, hits[0]])
+    for obj in sorted(labels):
+        hits = sorted({r["subject"] for r in usable
+                       if r["relation"] == "on" and r["object"] == obj})
+        if len(hits) == 1 and hits[0] != obj:
+            add("on", f"What is on the {obj}?", hits[0],
+                {"relation": "on", "object": obj}, [obj, hits[0]])
+    for obj in sorted(labels):
+        hits = sorted({r["object"] for r in usable
+                       if r["relation"] == "with" and r["subject"] == obj})
+        if len(hits) == 1 and hits[0] != obj:
+            add("with", f"What is the {obj} with?", hits[0],
+                {"relation": "with", "subject": obj}, [obj, hits[0]])
+
+    a, b = anchors
+    if a in unique and b in unique:
+        by_label = {o["label"]: o for o in objects if o["label"] in unique}
+        ax, _ = box_center(by_label[a]["bounding_box"])
+        bx, _ = box_center(by_label[b]["bounding_box"])
+        lo, hi = min(ax, bx), max(ax, bx)
+        if hi > lo:
+            between = sorted({o["label"] for o in sub_objs
+                              if o["label"] not in (a, b)
+                              and o["label"] in unique
+                              and lo < box_center(o["bounding_box"])[0] < hi})
+            if len(between) == 1:
+                add("between", f"What is between the {a} and the {b}?", between[0],
+                    {"anchor_a": a, "anchor_b": b,
+                     "rule": "bounding-box centre-x strictly between the anchors' centre-x"},
+                    [a, b, between[0]])
+
+    out.sort(key=lambda q: (TEMPLATE_ORDER[q["template"]], not q["unambiguous"], q["question"]))
+    seen_q, ranked = set(), []
+    for q in out:
+        if q["question"] not in seen_q:
+            seen_q.add(q["question"])
+            ranked.append(q)
+    fstats = {"n_self_relations_in_subgraph": n_self_filtered,
+              "n_contradictory_left_right_queries_dropped": n_contra_filtered}
+    return ranked, fstats
+
+
+# ---------------------------------------------------------------- compact
+def query_named_labels(query):
+    """Labels the question names (excluding the answer)."""
+    d = query["derivation"]
+    if query["template"] in ("left_of", "right_of", "on"):
+        return [d["object"]]
+    if query["template"] == "with":
+        return [d["subject"]]
+    return [d["anchor_a"], d["anchor_b"]]  # between
+
+
+def query_relation(query):
+    d = query["derivation"]
+    if query["template"] in ("left_of", "right_of", "on", "with"):
+        return d["relation"]
+    return None  # between has no relation type
+
+
+def key_edge(query):
+    """The (subject, relation, object) triple that directly supports the query,
+    or None for between (geometry)."""
+    d = query["derivation"]
+    if query["template"] in ("left_of", "right_of", "on"):
+        return (query["answer"], d["relation"], d["object"])
+    if query["template"] == "with":
+        return (d["subject"], d["relation"], query["answer"])
+    return None
+
+
+def derive_answers(query, objects, relations, anchors):
+    """Answer-label set for a query, derived from the given objects/relations.
+    relations are triples; objects carry boxes (needed for between)."""
+    d = query["derivation"]
+    t = query["template"]
+    if t in ("left_of", "right_of", "on"):
+        return {r["subject"] for r in relations
+                if r["relation"] == d["relation"] and r["object"] == d["object"]}
+    if t == "with":
+        return {r["object"] for r in relations
+                if r["relation"] == "with" and r["subject"] == d["subject"]}
+    # between: geometry over the given objects
+    a, b = d["anchor_a"], d["anchor_b"]
+    by_label = {}
+    for o in objects:
+        by_label.setdefault(o["label"], o)
+    if a not in by_label or b not in by_label:
+        return set()
+    ax, _ = box_center(by_label[a]["bounding_box"])
+    bx, _ = box_center(by_label[b]["bounding_box"])
+    lo, hi = min(ax, bx), max(ax, bx)
+    if hi <= lo:
+        return set()
+    return {o["label"] for o in objects
+            if o["label"] not in (a, b)
+            and lo < box_center(o["bounding_box"])[0] < hi}
+
+
+def compact_edges(nodes, core, tight_rels):
+    """Tight-subgraph relations with both endpoints in the node set that touch
+    a core node. Deduped. Edges NEVER come from the full graph. Self-relations
+    (subject label == object label, e.g. "plate to the left of plate" -- two
+    different plates sharing one label) are excluded: they are the
+    duplicate-label self-edges that re-enter and break answer uniqueness, and
+    the key edge of a query is never a self-relation (F1/F2), so excluding
+    them cannot remove a key edge."""
+    out, seen = [], set()
+    for r in tight_rels:
+        if r["subject"] == r["object"]:
+            continue
+        if r["subject"] in nodes and r["object"] in nodes and \
+                (r["subject"] in core or r["object"] in core):
+            k = (r["subject"], r["relation"], r["object"])
+            if k not in seen:
+                seen.add(k)
+                out.append({"subject": r["subject"], "relation": r["relation"],
+                            "object": r["object"]})
+    return out
+
+
+def build_compact(objects, sub_objs, tight_rels, anchors, query):
+    """Build the compact subgraph for one candidate query.
+    Returns (nodes, edges, core) or None if the query fails re-validation."""
+    named = query_named_labels(query)
+    core = set(anchors) | set(named) | {query["answer"]}
+    nodes = set(core)
+
+    # distractor candidates: tight-subgraph neighbours of the anchors
+    neighbours = set()
+    for r in tight_rels:
+        if r["subject"] in anchors:
+            neighbours.add(r["object"])
+        if r["object"] in anchors:
+            neighbours.add(r["subject"])
+    neighbours -= nodes
+
+    rel = query_relation(query)
+    same_type, other = [], []
+    for lab in neighbours:
+        is_same = False
+        if rel is not None:
+            for r in tight_rels:
+                if r["relation"] != rel:
+                    continue
+                if r["subject"] == lab and r["object"] not in set(named) | {query["answer"]}:
+                    is_same = True
+                    break
+                if r["object"] == lab and r["subject"] not in set(named) | {query["answer"]}:
+                    is_same = True
+                    break
+        (same_type if is_same else other).append(lab)
+    ordered = sorted(same_type) + sorted(other)
+
+    admitted = 0
+    for lab in ordered:
+        if admitted >= MAX_DISTRACTORS or len(nodes) >= MAX_NODES:
+            break
+        trial = nodes | {lab}
+        edges = compact_edges(trial, core, tight_rels)
+        trial_objs = [o for o in objects if o["label"] in trial]
+        if derive_answers(query, trial_objs, edges, anchors) == {query["answer"]}:
+            nodes = trial
+            admitted += 1
+
+    edges = compact_edges(nodes, core, tight_rels)
+    comp_objs = [o for o in objects if o["label"] in nodes]
+    # re-validate: key edge present (or geometry holds) + exactly one answer
+    if derive_answers(query, comp_objs, edges, anchors) != {query["answer"]}:
+        return None
+    ke = key_edge(query)
+    if ke is not None:
+        if not any((r["subject"], r["relation"], r["object"]) == ke for r in edges):
+            return None
+    return nodes, edges, core
+
+
+def build_item(sample):
+    """Try to build a benchmark item from one sample. Returns (item, skip_reason)."""
+    filepath = sample.get("filepath") or ""
+    image_id = os.path.splitext(os.path.basename(filepath))[0]
+    if not image_id or not filepath.endswith(".jpg"):
+        return None, "bad_filepath"
+    objects, relations, n_bad_box, n_dupes = extract_graph(sample)
+    if len(objects) < 2 or not relations:
+        return None, "too_few_objects_or_no_relations"
+
+    involvement = {}
+    for r in relations:
+        involvement[r["subject"]] = involvement.get(r["subject"], 0) + 1
+        involvement[r["object"]] = involvement.get(r["object"], 0) + 1
+    top = sorted(involvement, key=lambda l: (-involvement[l], l))[:8]
+    pairs = []
+    for i in range(len(top)):
+        for j in range(i + 1, len(top)):
+            pairs.append((top[i], top[j]))
+    pairs.sort(key=lambda p: (-(involvement[p[0]] + involvement[p[1]]), p))
+
+    # first pass: compact node count 5-7; second pass: allow 4-7
+    for min_nodes in (5, 4):
+        for anchors in pairs:
+            sub_objs, tight_rels = tight_subgraph(objects, relations, list(anchors))
+            if len(sub_objs) < 2 or not tight_rels:
+                continue
+            candidates, fstats = generate_candidates(objects, sub_objs, tight_rels, list(anchors))
+            for query in candidates:
+                built = build_compact(objects, sub_objs, tight_rels, list(anchors), query)
+                if built is None:
+                    continue
+                nodes, edges, core = built
+                if not (min_nodes <= len(nodes) <= MAX_NODES):
+                    continue
+                comp_objs = [o for o in objects if o["label"] in nodes]
+                item = {
+                    "image_id": image_id,
+                    "filepath": filepath,
+                    "source": "Voxel51/GQA-Scene-Graph",
+                    "anchors": list(anchors),
+                    "full_graph": {"objects": objects, "relations": relations},
+                    "compact": {"nodes": sorted(nodes), "core_nodes": sorted(core),
+                                "objects": comp_objs, "relations": edges},
+                    "query": query,
+                    "stats": {
+                        "n_full_objects": len(objects),
+                        "n_full_relations": len(relations),
+                        "n_tight_objects": len(sub_objs),
+                        "n_tight_relations": len(tight_rels),
+                        "n_compact_nodes": len(nodes),
+                        "n_compact_objects": len(comp_objs),
+                        "n_compact_relations": len(edges),
+                        "n_bad_boxes_skipped": n_bad_box,
+                        "n_duplicate_relations_removed": n_dupes,
+                        "anchor_pairs_tried": pairs.index(tuple(anchors)) + 1,
+                        "min_nodes_pass": min_nodes,
+                        **fstats,
+                    },
+                }
+                return item, None
+    return None, "no_valid_compact_item"
+
+
+# ---------------------------------------------------------------- images
+def download_image(item, dest, attempts=3):
+    url = BASE + item["filepath"]
+    last_err = None
+    for _ in range(attempts):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = r.read()
+            if len(data) < 5000 or data[:2] != b"\xff\xd8":
+                raise ValueError(f"bad jpeg: {len(data)} bytes, magic {data[:2]!r}")
+            with open(dest, "wb") as f:
+                f.write(data)
+            return True, len(data)
+        except Exception as e:
+            last_err = e
+            time.sleep(1)
+    return False, str(last_err)
+
+
+# ---------------------------------------------------------------- main
+def main():
+    for d in (DIR_IMAGES, DIR_LARGE, DIR_SMALL, DIR_QUERIES):
+        os.makedirs(os.path.join(HERE, d), exist_ok=True)
+    t0 = time.time()
+    log = {"scanned": 0, "candidates": 0, "skipped": {},
+           "skipped_ids": [], "selected": [], "replaced": [],
+           "download_failures": []}
+
+    candidates = []
+    forced = None
+    for sample in iter_samples():
+        log["scanned"] += 1
+        item, reason = build_item(sample)
+        if item is None:
+            log["skipped"][reason] = log["skipped"].get(reason, 0) + 1
+            if len(log["skipped_ids"]) < 50:
+                log["skipped_ids"].append({"filepath": sample.get("filepath"), "reason": reason})
+            continue
+        log["candidates"] += 1
+        if item["image_id"] == FORCED_IMAGE_ID:
+            forced = item
+        else:
+            candidates.append(item)
+        if log["scanned"] % 500 == 0:
+            print(f"scanned {log['scanned']} samples, {log['candidates']} candidates "
+                  f"({time.time() - t0:.0f}s)", flush=True)
+        if log["candidates"] >= MAX_CANDIDATES:
+            print(f"reached {MAX_CANDIDATES} candidates after {log['scanned']} samples", flush=True)
+            break
+    print(f"scan done: {log['scanned']} samples, {log['candidates']} candidates, "
+          f"skipped={log['skipped']} ({time.time() - t0:.0f}s)", flush=True)
+
+    if forced is None:
+        raise RuntimeError("forced walkthrough image 2395226 not found in scanned samples")
+    selected = [forced]
+    n = len(candidates)
+    need = TARGET_ITEMS - 1
+    idxs = sorted({round(i * (n - 1) / max(need - 1, 1)) for i in range(need)})
+    used = {forced["image_id"]}
+    for i in idxs:
+        if len(selected) >= TARGET_ITEMS:
+            break
+        if candidates[i]["image_id"] not in used:
+            selected.append(candidates[i])
+            used.add(candidates[i]["image_id"])
+    j = 0
+    while len(selected) < TARGET_ITEMS and j < n:
+        if candidates[j]["image_id"] not in used:
+            selected.append(candidates[j])
+            used.add(candidates[j]["image_id"])
+        j += 1
+    print(f"selected {len(selected)} items", flush=True)
+
+    pool_i = 0
+
+    def next_replacement():
+        nonlocal pool_i
+        while pool_i < len(candidates):
+            c = candidates[pool_i]
+            pool_i += 1
+            if c["image_id"] not in used:
+                return c
+        return None
+
+    def fetch_one(numbered):
+        num, item = numbered
+        dest = os.path.join(HERE, DIR_IMAGES, f"{num_name(num)}.jpg")
+        ok, info = download_image(item, dest)
+        return num, item, ok, info
+
+    numbered = list(enumerate(selected, start=1))
+    final = []
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        results = list(ex.map(fetch_one, numbered))
+    for num, item, ok, info in results:
+        if ok:
+            final.append((num, item))
+            log["selected"].append({"image_number": num, "image_id": item["image_id"], "bytes": info})
+        else:
+            log["download_failures"].append({"image_id": item["image_id"], "error": str(info)})
+            rep = next_replacement()
+            while rep is not None:
+                dest = os.path.join(HERE, DIR_IMAGES, f"{num_name(num)}.jpg")
+                ok2, info2 = download_image(rep, dest)
+                if ok2:
+                    final.append((num, rep))
+                    used.add(rep["image_id"])
+                    log["replaced"].append({"failed": item["image_id"],
+                                           "replacement": rep["image_id"],
+                                           "image_number": num})
+                    break
+                log["download_failures"].append({"image_id": rep["image_id"], "error": str(info2)})
+                rep = next_replacement()
+    print(f"downloaded {len(final)} images, failures={len(log['download_failures'])}, "
+          f"replacements={len(log['replaced'])} ({time.time() - t0:.0f}s)", flush=True)
+    if len(final) != TARGET_ITEMS:
+        raise RuntimeError(f"only {len(final)} items after replacements; need {TARGET_ITEMS}")
+
+    entries = []
+    for num, item in sorted(final):
+        name = num_name(num)
+        large = {
+            "image_number": num,
+            "gqa_image_id": item["image_id"],
+            "filepath": item["filepath"],
+            "source": item["source"],
+            "graph": "large / full original scene graph (all objects + all relations)",
+            "objects": item["full_graph"]["objects"],
+            "relations": item["full_graph"]["relations"],
+            "counts": {"objects": item["stats"]["n_full_objects"],
+                       "relations": item["stats"]["n_full_relations"]},
+        }
+        small = {
+            "image_number": num,
+            "gqa_image_id": item["image_id"],
+            "filepath": item["filepath"],
+            "source": item["source"],
+            "graph": "small / compact local scene graph (anchors + query + answer + "
+                     "up to 3 distractors; edges from the tight anchor subgraph only)",
+            "anchors": item["anchors"],
+            "core_nodes": item["compact"]["core_nodes"],
+            "nodes": item["compact"]["nodes"],
+            "objects": item["compact"]["objects"],
+            "relations": item["compact"]["relations"],
+            "counts": {"nodes": item["stats"]["n_compact_nodes"],
+                       "objects": item["stats"]["n_compact_objects"],
+                       "relations": item["stats"]["n_compact_relations"]},
+        }
+        queries_doc = {
+            "image_number": num,
+            "gqa_image_id": item["image_id"],
+            "filepath": item["filepath"],
+            "source": item["source"],
+            "anchors": item["anchors"],
+            "query": item["query"],
+            "counts": {"queries": 1},
+        }
+        with open(os.path.join(HERE, DIR_LARGE, f"{name} - Large Scene Graph.json"), "w") as f:
+            json.dump(large, f, indent=1)
+        with open(os.path.join(HERE, DIR_SMALL, f"{name} - Small Scene Graph.json"), "w") as f:
+            json.dump(small, f, indent=1)
+        with open(os.path.join(HERE, DIR_QUERIES, f"{name} - Queries.json"), "w") as f:
+            json.dump(queries_doc, f, indent=1)
+        entries.append({
+            "image_number": num,
+            "gqa_image_id": item["image_id"],
+            "filepath": item["filepath"],
+            "source": item["source"],
+            "anchors": item["anchors"],
+            "query": {"question": item["query"]["question"],
+                      "answer": item["query"]["answer"],
+                      "template": item["query"]["template"]},
+            "counts": {
+                "full_objects": item["stats"]["n_full_objects"],
+                "full_relations": item["stats"]["n_full_relations"],
+                "compact_nodes": item["stats"]["n_compact_nodes"],
+                "compact_objects": item["stats"]["n_compact_objects"],
+                "compact_relations": item["stats"]["n_compact_relations"],
+                "queries": 1,
+            },
+            "files": {
+                "image": f"{DIR_IMAGES}/{name}.jpg",
+                "large_scene_graph": f"{DIR_LARGE}/{name} - Large Scene Graph.json",
+                "small_scene_graph": f"{DIR_SMALL}/{name} - Small Scene Graph.json",
+                "queries": f"{DIR_QUERIES}/{name} - Queries.json",
+            },
+        })
+    benchmark = {
+        "meta": {
+            "name": "GQA-100 spatial benchmark (Exp-07 dataset)",
+            "source": "Voxel51/GQA-Scene-Graph (GQA 35k subset)",
+            "n_items": len(entries),
+            "queries_per_item": 1,
+            "built_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "method": "large graph (full original) -> tight anchor-pair subgraph -> "
+                      "compact small graph (anchors + query + answer + <=3 distractors; "
+                      "edges from tight subgraph only, core-touching, deduped) -> exactly "
+                      "one unique-answer query per image; between-queries from bbox centre "
+                      "geometry; self-relations and contradictory left/right pairs excluded "
+                      "from query generation",
+            "forced_item_001": FORCED_IMAGE_ID,
+        },
+        "items": entries,
+    }
+    with open(os.path.join(HERE, "benchmark.json"), "w") as f:
+        json.dump(benchmark, f, indent=1)
+    with open(os.path.join(HERE, "build_log.json"), "w") as f:
+        json.dump(log, f, indent=1)
+
+    from collections import Counter
+    print(f"DONE: {len(entries)} items, 1 query each = {len(entries)} questions "
+          f"({time.time() - t0:.0f}s)", flush=True)
+    print("templates:", dict(Counter(e["query"]["template"] for e in entries)), flush=True)
+    print("compact nodes dist:", dict(Counter(e["counts"]["compact_nodes"] for e in entries)), flush=True)
+    print("compact rels: min", min(e["counts"]["compact_relations"] for e in entries),
+          "max", max(e["counts"]["compact_relations"] for e in entries), flush=True)
+    print(f"layout: {DIR_IMAGES}/, {DIR_LARGE}/, {DIR_SMALL}/, {DIR_QUERIES}/, benchmark.json", flush=True)
+
+
+if __name__ == "__main__":
+    main()

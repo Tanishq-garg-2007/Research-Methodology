@@ -1,0 +1,414 @@
+{
+ "image_number": 65,
+ "gqa_image_id": "2338602",
+ "filepath": "data/data_1/2338602.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "airplane",
+   "attributes": [
+    "vintage"
+   ],
+   "bounding_box": [
+    0.064,
+    0.3475783475783476,
+    0.934,
+    0.5014245014245015
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.27,
+    0.06267806267806268,
+    0.07,
+    0.039886039886039885
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.048,
+    0.26495726495726496,
+    0.046,
+    0.02849002849002849
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.21,
+    0.47863247863247865,
+    0.16,
+    0.2022792022792023
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.21,
+    0.26495726495726496,
+    0.05,
+    0.037037037037037035
+   ]
+  },
+  {
+   "label": "field",
+   "attributes": [],
+   "bounding_box": [
+    0.594,
+    0.50997150997151,
+    0.402,
+    0.09401709401709402
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [
+    "blue",
+    "hazy"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.998,
+    0.5242165242165242
+   ]
+  },
+  {
+   "label": "wing",
+   "attributes": [],
+   "bounding_box": [
+    0.06,
+    0.5811965811965812,
+    0.162,
+    0.05698005698005698
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.548,
+    0.7293447293447294,
+    0.034,
+    0.07407407407407407
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.28,
+    0.7834757834757835,
+    0.036,
+    0.06552706552706553
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.016,
+    0.5156695156695157,
+    0.148,
+    0.045584045584045586
+   ]
+  },
+  {
+   "label": "wing",
+   "attributes": [],
+   "bounding_box": [
+    0.424,
+    0.5441595441595442,
+    0.57,
+    0.12535612535612536
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [],
+   "bounding_box": [
+    0.57,
+    0.4188034188034188,
+    0.15,
+    0.15384615384615385
+   ]
+  },
+  {
+   "label": "propeller",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.22,
+    0.3475783475783476,
+    0.032,
+    0.45584045584045585
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.114,
+    0.5185185185185185,
+    0.104,
+    0.039886039886039885
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.306,
+    0.7150997150997151,
+    0.04,
+    0.06267806267806268
+   ]
+  },
+  {
+   "label": "barrier",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.044,
+    0.6011396011396012,
+    0.054,
+    0.05982905982905983
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.932,
+    0.5213675213675214,
+    0.066,
+    0.05982905982905983
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "cloud",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "barrier"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "tail"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "field"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "wing"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "wing"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "cloud"
+  },
+  {
+   "subject": "field",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "field",
+   "relation": "near",
+   "object": "tail"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the left of",
+   "object": "propeller"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the left of",
+   "object": "wing"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the right of",
+   "object": "wheel"
+  },
+  {
+   "subject": "tree",
+   "relation": "behind",
+   "object": "building"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "propeller"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the right of",
+   "object": "propeller"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the right of",
+   "object": "wing"
+  },
+  {
+   "subject": "tail",
+   "relation": "near",
+   "object": "field"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the left of",
+   "object": "grass"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "wing"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "wing"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "wheel"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "barrier"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "propeller"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "building",
+   "relation": "in front of",
+   "object": "tree"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the left of",
+   "object": "wheel"
+  },
+  {
+   "subject": "wheel",
+   "relation": "to the right of",
+   "object": "propeller"
+  },
+  {
+   "subject": "barrier",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "barrier",
+   "relation": "to the left of",
+   "object": "propeller"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the right of",
+   "object": "tail"
+  }
+ ],
+ "counts": {
+  "objects": 18,
+  "relations": 40
+ }
+}

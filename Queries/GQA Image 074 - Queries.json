@@ -1,0 +1,23 @@
+{
+ "image_number": 74,
+ "gqa_image_id": "498151",
+ "filepath": "data/data_2/498151.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "couch",
+  "living room"
+ ],
+ "query": {
+  "question": "What is to the right of the end table?",
+  "answer": "couch",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "end table"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "image_number": 9,
+ "gqa_image_id": "2335834",
+ "filepath": "data/data_0/2335834.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "tree",
+  "hand"
+ ],
+ "query": {
+  "question": "What is to the left of the frisbee?",
+  "answer": "hand",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "frisbee"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "image_number": 19,
+ "gqa_image_id": "2389557",
+ "filepath": "data/data_0/2389557.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "girl",
+  "grass"
+ ],
+ "query": {
+  "question": "What is between the girl and the grass?",
+  "answer": "shoe",
+  "template": "between",
+  "derivation": {
+   "anchor_a": "girl",
+   "anchor_b": "grass",
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

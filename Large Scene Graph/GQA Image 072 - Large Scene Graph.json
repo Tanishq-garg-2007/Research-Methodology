@@ -1,0 +1,645 @@
+{
+ "image_number": 72,
+ "gqa_image_id": "2394711",
+ "filepath": "data/data_1/2394711.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "chair",
+   "attributes": [],
+   "bounding_box": [
+    0.17,
+    0.5493333333333333,
+    0.314,
+    0.128
+   ]
+  },
+  {
+   "label": "glasses",
+   "attributes": [],
+   "bounding_box": [
+    0.456,
+    0.168,
+    0.116,
+    0.056
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.424,
+    0.029333333333333333,
+    0.362,
+    0.68
+   ]
+  },
+  {
+   "label": "soup",
+   "attributes": [],
+   "bounding_box": [
+    0.512,
+    0.624,
+    0.096,
+    0.13066666666666665
+   ]
+  },
+  {
+   "label": "fork",
+   "attributes": [],
+   "bounding_box": [
+    0.344,
+    0.6613333333333333,
+    0.054,
+    0.104
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [],
+   "bounding_box": [
+    0.052,
+    0.19733333333333333,
+    0.378,
+    0.5413333333333333
+   ]
+  },
+  {
+   "label": "food",
+   "attributes": [],
+   "bounding_box": [
+    0.21,
+    0.6213333333333333,
+    0.154,
+    0.152
+   ]
+  },
+  {
+   "label": "camera",
+   "attributes": [],
+   "bounding_box": [
+    0.198,
+    0.7786666666666666,
+    0.132,
+    0.10933333333333334
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.19,
+    0.2773333333333333,
+    0.122,
+    0.16
+   ]
+  },
+  {
+   "label": "rice",
+   "attributes": [],
+   "bounding_box": [
+    0.316,
+    0.8586666666666667,
+    0.164,
+    0.13866666666666666
+   ]
+  },
+  {
+   "label": "apron",
+   "attributes": [],
+   "bounding_box": [
+    0.756,
+    0.21866666666666668,
+    0.172,
+    0.16
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.198,
+    0.656,
+    0.168,
+    0.112
+   ]
+  },
+  {
+   "label": "bowl",
+   "attributes": [],
+   "bounding_box": [
+    0.384,
+    0.37333333333333335,
+    0.21,
+    0.17866666666666667
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [],
+   "bounding_box": [
+    0.156,
+    0.19733333333333333,
+    0.156,
+    0.21866666666666668
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.88,
+    0.6586666666666666,
+    0.116,
+    0.25066666666666665
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.554,
+    0.43733333333333335,
+    0.102,
+    0.128
+   ]
+  },
+  {
+   "label": "watch",
+   "attributes": [],
+   "bounding_box": [
+    0.634,
+    0.44266666666666665,
+    0.044,
+    0.088
+   ]
+  },
+  {
+   "label": "doors",
+   "attributes": [],
+   "bounding_box": [
+    0.01,
+    0.0,
+    0.216,
+    0.2986666666666667
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.622,
+    0.042666666666666665,
+    0.156,
+    0.24
+   ]
+  },
+  {
+   "label": "people",
+   "attributes": [],
+   "bounding_box": [
+    0.772,
+    0.02666666666666667,
+    0.16,
+    0.20533333333333334
+   ]
+  },
+  {
+   "label": "water",
+   "attributes": [],
+   "bounding_box": [
+    0.874,
+    0.9413333333333334,
+    0.09,
+    0.04
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.12533333333333332,
+    0.204,
+    0.336
+   ]
+  },
+  {
+   "label": "utensil",
+   "attributes": [],
+   "bounding_box": [
+    0.524,
+    0.5653333333333334,
+    0.054,
+    0.13866666666666666
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.164,
+    0.6906666666666667,
+    0.076,
+    0.15466666666666667
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "utensil"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the right of",
+   "object": "doors"
+  },
+  {
+   "subject": "person",
+   "relation": "wearing",
+   "object": "glasses"
+  },
+  {
+   "subject": "person",
+   "relation": "holding",
+   "object": "bowl"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "doors"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "food"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "apron"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "table"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "soup",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "soup",
+   "relation": "to the right of",
+   "object": "food"
+  },
+  {
+   "subject": "soup",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "soup",
+   "relation": "to the right of",
+   "object": "fork"
+  },
+  {
+   "subject": "fork",
+   "relation": "to the left of",
+   "object": "soup"
+  },
+  {
+   "subject": "fork",
+   "relation": "by",
+   "object": "plate"
+  },
+  {
+   "subject": "fork",
+   "relation": "to the right of",
+   "object": "food"
+  },
+  {
+   "subject": "fork",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "fork",
+   "relation": "to the right of",
+   "object": "glass"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "soup"
+  },
+  {
+   "subject": "woman",
+   "relation": "eating",
+   "object": "soup"
+  },
+  {
+   "subject": "woman",
+   "relation": "at",
+   "object": "table"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "bowl"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "watch"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "utensil"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "woman",
+   "relation": "eating",
+   "object": "food"
+  },
+  {
+   "subject": "food",
+   "relation": "in",
+   "object": "bowl"
+  },
+  {
+   "subject": "food",
+   "relation": "to the left of",
+   "object": "soup"
+  },
+  {
+   "subject": "food",
+   "relation": "to the left of",
+   "object": "fork"
+  },
+  {
+   "subject": "food",
+   "relation": "to the left of",
+   "object": "utensil"
+  },
+  {
+   "subject": "food",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "camera",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "head",
+   "relation": "of",
+   "object": "woman"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "table"
+  },
+  {
+   "subject": "apron",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "soup"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "fork"
+  },
+  {
+   "subject": "bowl",
+   "relation": "on",
+   "object": "plate"
+  },
+  {
+   "subject": "bowl",
+   "relation": "of",
+   "object": "soup"
+  },
+  {
+   "subject": "bowl",
+   "relation": "of",
+   "object": "food"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the left of",
+   "object": "watch"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "bowl",
+   "relation": "of",
+   "object": "rice"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "table"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "bottle",
+   "relation": "of",
+   "object": "water"
+  },
+  {
+   "subject": "bottle",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "hand",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "bowl"
+  },
+  {
+   "subject": "watch",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "watch",
+   "relation": "to the right of",
+   "object": "bowl"
+  },
+  {
+   "subject": "doors",
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  {
+   "subject": "doors",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "glasses"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "glasses"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "table",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "table",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "table",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "utensil",
+   "relation": "in",
+   "object": "bowl"
+  },
+  {
+   "subject": "utensil",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "utensil",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "utensil",
+   "relation": "to the right of",
+   "object": "food"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the left of",
+   "object": "fork"
+  },
+  {
+   "subject": "glass",
+   "relation": "of",
+   "object": "water"
+  }
+ ],
+ "counts": {
+  "objects": 24,
+  "relations": 78
+ }
+}

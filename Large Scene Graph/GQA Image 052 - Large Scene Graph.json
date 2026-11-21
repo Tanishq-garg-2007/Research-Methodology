@@ -1,0 +1,485 @@
+{
+ "image_number": 52,
+ "gqa_image_id": "2415669",
+ "filepath": "data/data_1/2415669.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "cloud",
+   "attributes": [],
+   "bounding_box": [
+    0.682,
+    0.262,
+    0.26,
+    0.164
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.0,
+    0.684,
+    1.0,
+    0.31
+   ]
+  },
+  {
+   "label": "mirror",
+   "attributes": [],
+   "bounding_box": [
+    0.53,
+    0.524,
+    0.05,
+    0.052
+   ]
+  },
+  {
+   "label": "license plate",
+   "attributes": [],
+   "bounding_box": [
+    0.332,
+    0.744,
+    0.094,
+    0.058
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.254,
+    0.494,
+    0.284,
+    0.2
+   ]
+  },
+  {
+   "label": "pavement",
+   "attributes": [],
+   "bounding_box": [
+    0.824,
+    0.66,
+    0.17,
+    0.18
+   ]
+  },
+  {
+   "label": "tire",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.614,
+    0.71,
+    0.034,
+    0.094
+   ]
+  },
+  {
+   "label": "tire",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.746,
+    0.68,
+    0.024,
+    0.072
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.026,
+    0.196,
+    0.394,
+    0.476
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.288,
+    0.276,
+    0.27,
+    0.128
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.56,
+    0.528,
+    0.062,
+    0.256
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.994,
+    0.512
+   ]
+  },
+  {
+   "label": "bus",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.232,
+    0.238,
+    0.562,
+    0.556
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.626,
+    0.528,
+    0.044,
+    0.144
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [],
+   "bounding_box": [
+    0.016,
+    0.082,
+    0.68,
+    0.142
+   ]
+  },
+  {
+   "label": "bus",
+   "attributes": [
+    "double decker",
+    "red"
+   ],
+   "bounding_box": [
+    0.788,
+    0.462,
+    0.202,
+    0.214
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [],
+   "bounding_box": [
+    0.444,
+    0.44,
+    0.066,
+    0.05
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.564,
+    0.336,
+    0.062,
+    0.116
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.154,
+    0.614,
+    0.09,
+    0.142
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "bus"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "license plate",
+   "relation": "to the left of",
+   "object": "tire"
+  },
+  {
+   "subject": "license plate",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "pavement",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "pavement",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "pavement",
+   "relation": "to the right of",
+   "object": "tire"
+  },
+  {
+   "subject": "tire",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "tire",
+   "relation": "to the right of",
+   "object": "license plate"
+  },
+  {
+   "subject": "tire",
+   "relation": "to the left of",
+   "object": "pavement"
+  },
+  {
+   "subject": "tire",
+   "relation": "to the left of",
+   "object": "tire"
+  },
+  {
+   "subject": "tire",
+   "relation": "to the right of",
+   "object": "tire"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "number"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "bus"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "tire"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "license plate"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "pavement"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "bus"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "bus"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "pavement"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "bus"
+  },
+  {
+   "subject": "cloud",
+   "relation": "in",
+   "object": "sky"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "number",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "bus"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "window"
+  }
+ ],
+ "counts": {
+  "objects": 19,
+  "relations": 53
+ }
+}

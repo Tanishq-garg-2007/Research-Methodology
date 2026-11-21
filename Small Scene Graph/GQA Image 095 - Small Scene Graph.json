@@ -1,0 +1,173 @@
+{
+ "image_number": 95,
+ "gqa_image_id": "2411384",
+ "filepath": "data/data_2/2411384.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "teddy bear",
+  "table"
+ ],
+ "core_nodes": [
+  "chair",
+  "table",
+  "teddy bear"
+ ],
+ "nodes": [
+  "chair",
+  "cup",
+  "head",
+  "shirt",
+  "table",
+  "teddy bear"
+ ],
+ "objects": [
+  {
+   "label": "cup",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.872,
+    0.1,
+    0.032,
+    0.022
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.18666666666666668,
+    0.098,
+    0.3466666666666667,
+    0.236
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [],
+   "bounding_box": [
+    0.7146666666666667,
+    0.082,
+    0.2826666666666667,
+    0.084
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.64,
+    0.072,
+    0.2986666666666667,
+    0.238
+   ]
+  },
+  {
+   "label": "teddy bear",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.06933333333333333,
+    0.098,
+    0.696,
+    0.492
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.0,
+    0.296,
+    1.0,
+    0.704
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "dark colored"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.672,
+    0.378
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "cup",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "head",
+   "relation": "of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "cup"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "table"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 12
+ }
+}

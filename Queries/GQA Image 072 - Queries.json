@@ -1,0 +1,23 @@
+{
+ "image_number": 72,
+ "gqa_image_id": "2394711",
+ "filepath": "data/data_1/2394711.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "person",
+  "woman"
+ ],
+ "query": {
+  "question": "What is to the left of the apron?",
+  "answer": "person",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "apron"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

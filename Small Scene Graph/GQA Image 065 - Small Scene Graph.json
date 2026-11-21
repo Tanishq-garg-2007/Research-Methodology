@@ -1,0 +1,169 @@
+{
+ "image_number": 65,
+ "gqa_image_id": "2338602",
+ "filepath": "data/data_1/2338602.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "nose",
+  "propeller"
+ ],
+ "core_nodes": [
+  "field",
+  "nose",
+  "propeller"
+ ],
+ "nodes": [
+  "barrier",
+  "building",
+  "field",
+  "nose",
+  "propeller",
+  "tree"
+ ],
+ "objects": [
+  {
+   "label": "nose",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.21,
+    0.47863247863247865,
+    0.16,
+    0.2022792022792023
+   ]
+  },
+  {
+   "label": "field",
+   "attributes": [],
+   "bounding_box": [
+    0.594,
+    0.50997150997151,
+    0.402,
+    0.09401709401709402
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.016,
+    0.5156695156695157,
+    0.148,
+    0.045584045584045586
+   ]
+  },
+  {
+   "label": "propeller",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.22,
+    0.3475783475783476,
+    0.032,
+    0.45584045584045585
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.114,
+    0.5185185185185185,
+    0.104,
+    0.039886039886039885
+   ]
+  },
+  {
+   "label": "barrier",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.044,
+    0.6011396011396012,
+    0.054,
+    0.05982905982905983
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "barrier"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "field"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "field",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "propeller"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "barrier"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "propeller"
+  },
+  {
+   "subject": "barrier",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "barrier",
+   "relation": "to the left of",
+   "object": "propeller"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 14
+ }
+}

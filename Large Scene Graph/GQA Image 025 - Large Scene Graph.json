@@ -1,0 +1,189 @@
+{
+ "image_number": 25,
+ "gqa_image_id": "2338754",
+ "filepath": "data/data_0/2338754.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "light bulb",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.582,
+    0.1355421686746988,
+    0.044,
+    0.06626506024096386
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.52,
+    0.4397590361445783,
+    0.048,
+    0.04216867469879518
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.006,
+    0.3885542168674699,
+    0.076,
+    0.21385542168674698
+   ]
+  },
+  {
+   "label": "camera",
+   "attributes": [],
+   "bounding_box": [
+    0.052,
+    0.4126506024096386,
+    0.02,
+    0.024096385542168676
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.276,
+    0.46987951807228917,
+    0.054,
+    0.1144578313253012
+   ]
+  },
+  {
+   "label": "shorts",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.032,
+    0.5481927710843374,
+    0.064,
+    0.15963855421686746
+   ]
+  },
+  {
+   "label": "animal",
+   "attributes": [],
+   "bounding_box": [
+    0.228,
+    0.18373493975903615,
+    0.772,
+    0.6837349397590361
+   ]
+  },
+  {
+   "label": "bird",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.376,
+    0.6867469879518072,
+    0.024,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "shoes",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.05,
+    0.7951807228915663,
+    0.02,
+    0.060240963855421686
+   ]
+  },
+  {
+   "label": "shorts",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.27,
+    0.572289156626506,
+    0.05,
+    0.09337349397590361
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "animal"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "camera",
+   "relation": "to the left of",
+   "object": "animal"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "shorts",
+   "relation": "to the left of",
+   "object": "animal"
+  },
+  {
+   "subject": "shorts",
+   "relation": "to the left of",
+   "object": "shorts"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the right of",
+   "object": "shorts"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the right of",
+   "object": "camera"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the right of",
+   "object": "shoes"
+  },
+  {
+   "subject": "shoes",
+   "relation": "to the left of",
+   "object": "animal"
+  },
+  {
+   "subject": "shorts",
+   "relation": "to the right of",
+   "object": "shorts"
+  }
+ ],
+ "counts": {
+  "objects": 10,
+  "relations": 12
+ }
+}

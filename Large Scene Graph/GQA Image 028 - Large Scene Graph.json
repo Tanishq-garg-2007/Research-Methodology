@@ -1,0 +1,375 @@
+{
+ "image_number": 28,
+ "gqa_image_id": "2368938",
+ "filepath": "data/data_0/2368938.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "oven",
+   "attributes": [],
+   "bounding_box": [
+    0.016,
+    0.016,
+    0.48,
+    0.252
+   ]
+  },
+  {
+   "label": "onion",
+   "attributes": [],
+   "bounding_box": [
+    0.196,
+    0.776,
+    0.094,
+    0.04
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.802,
+    0.25,
+    0.058,
+    0.074
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [],
+   "bounding_box": [
+    0.014,
+    0.268,
+    0.984,
+    0.714
+   ]
+  },
+  {
+   "label": "mozzarella",
+   "attributes": [],
+   "bounding_box": [
+    0.358,
+    0.27,
+    0.564,
+    0.37
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.552,
+    0.008,
+    0.346,
+    0.216
+   ]
+  },
+  {
+   "label": "tomato sauce",
+   "attributes": [],
+   "bounding_box": [
+    0.292,
+    0.468,
+    0.09,
+    0.06
+   ]
+  },
+  {
+   "label": "tomato sauce",
+   "attributes": [],
+   "bounding_box": [
+    0.586,
+    0.51,
+    0.088,
+    0.094
+   ]
+  },
+  {
+   "label": "tomato sauce",
+   "attributes": [],
+   "bounding_box": [
+    0.276,
+    0.572,
+    0.1,
+    0.098
+   ]
+  },
+  {
+   "label": "mushroom",
+   "attributes": [],
+   "bounding_box": [
+    0.126,
+    0.72,
+    0.24,
+    0.132
+   ]
+  },
+  {
+   "label": "mozzarella",
+   "attributes": [],
+   "bounding_box": [
+    0.014,
+    0.534,
+    0.434,
+    0.454
+   ]
+  },
+  {
+   "label": "sauce",
+   "attributes": [],
+   "bounding_box": [
+    0.59,
+    0.516,
+    0.076,
+    0.07
+   ]
+  },
+  {
+   "label": "oven door",
+   "attributes": [],
+   "bounding_box": [
+    0.042,
+    0.098,
+    0.456,
+    0.172
+   ]
+  },
+  {
+   "label": "cabinet",
+   "attributes": [],
+   "bounding_box": [
+    0.492,
+    0.01,
+    0.508,
+    0.24
+   ]
+  },
+  {
+   "label": "pizza",
+   "attributes": [],
+   "bounding_box": [
+    0.226,
+    0.218,
+    0.77,
+    0.498
+   ]
+  },
+  {
+   "label": "mushroom",
+   "attributes": [],
+   "bounding_box": [
+    0.376,
+    0.266,
+    0.618,
+    0.318
+   ]
+  },
+  {
+   "label": "pizza crust",
+   "attributes": [],
+   "bounding_box": [
+    0.556,
+    0.61,
+    0.294,
+    0.106
+   ]
+  },
+  {
+   "label": "cheese",
+   "attributes": [],
+   "bounding_box": [
+    0.518,
+    0.424,
+    0.12,
+    0.046
+   ]
+  },
+  {
+   "label": "pizza",
+   "attributes": [],
+   "bounding_box": [
+    0.01,
+    0.464,
+    0.524,
+    0.52
+   ]
+  },
+  {
+   "label": "mushroom",
+   "attributes": [],
+   "bounding_box": [
+    0.014,
+    0.552,
+    0.236,
+    0.12
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "oven",
+   "relation": "to the left of",
+   "object": "cabinet"
+  },
+  {
+   "subject": "oven",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "to the right of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "to the right of",
+   "object": "mushroom"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "oven door"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "oven"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the left of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the left of",
+   "object": "mushroom"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the right of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the right of",
+   "object": "pizza"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the left of",
+   "object": "pizza crust"
+  },
+  {
+   "subject": "tomato sauce",
+   "relation": "to the right of",
+   "object": "mushroom"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "to the left of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "to the left of",
+   "object": "sauce"
+  },
+  {
+   "subject": "mozzarella",
+   "relation": "to the left of",
+   "object": "pizza crust"
+  },
+  {
+   "subject": "sauce",
+   "relation": "to the right of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "sauce",
+   "relation": "to the right of",
+   "object": "pizza"
+  },
+  {
+   "subject": "oven door",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "oven door",
+   "relation": "to the left of",
+   "object": "cabinet"
+  },
+  {
+   "subject": "cabinet",
+   "relation": "to the right of",
+   "object": "oven door"
+  },
+  {
+   "subject": "cabinet",
+   "relation": "to the right of",
+   "object": "oven"
+  },
+  {
+   "subject": "pizza",
+   "relation": "to the right of",
+   "object": "mushroom"
+  },
+  {
+   "subject": "mushroom",
+   "relation": "to the right of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "pizza crust",
+   "relation": "to the right of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "pizza crust",
+   "relation": "to the right of",
+   "object": "pizza"
+  },
+  {
+   "subject": "pizza crust",
+   "relation": "to the right of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "pizza",
+   "relation": "to the left of",
+   "object": "sauce"
+  },
+  {
+   "subject": "pizza",
+   "relation": "to the left of",
+   "object": "pizza crust"
+  },
+  {
+   "subject": "pizza",
+   "relation": "to the left of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "mushroom",
+   "relation": "to the left of",
+   "object": "mozzarella"
+  },
+  {
+   "subject": "mushroom",
+   "relation": "to the left of",
+   "object": "tomato sauce"
+  },
+  {
+   "subject": "mushroom",
+   "relation": "to the left of",
+   "object": "pizza"
+  }
+ ],
+ "counts": {
+  "objects": 20,
+  "relations": 32
+ }
+}

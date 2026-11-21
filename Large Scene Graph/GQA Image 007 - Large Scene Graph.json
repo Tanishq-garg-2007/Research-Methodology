@@ -1,0 +1,362 @@
+{
+ "image_number": 7,
+ "gqa_image_id": "2375631",
+ "filepath": "data/data_0/2375631.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "package",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.5813333333333334,
+    0.704,
+    0.14133333333333334,
+    0.074
+   ]
+  },
+  {
+   "label": "toothbrush",
+   "attributes": [
+    "purple"
+   ],
+   "bounding_box": [
+    0.608,
+    0.662,
+    0.056,
+    0.048
+   ]
+  },
+  {
+   "label": "phone",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.16,
+    0.432,
+    0.05333333333333334,
+    0.194
+   ]
+  },
+  {
+   "label": "dryer",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.5306666666666666,
+    0.22,
+    0.064,
+    0.116
+   ]
+  },
+  {
+   "label": "comb",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.5093333333333333,
+    0.78,
+    0.072,
+    0.052
+   ]
+  },
+  {
+   "label": "counter",
+   "attributes": [],
+   "bounding_box": [
+    0.464,
+    0.758,
+    0.536,
+    0.17
+   ]
+  },
+  {
+   "label": "towels",
+   "attributes": [
+    "white",
+    "clean",
+    "hanging"
+   ],
+   "bounding_box": [
+    0.7226666666666667,
+    0.452,
+    0.06666666666666667,
+    0.068
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [
+    "teal"
+   ],
+   "bounding_box": [
+    0.6533333333333333,
+    0.67,
+    0.050666666666666665,
+    0.136
+   ]
+  },
+  {
+   "label": "mirror",
+   "attributes": [],
+   "bounding_box": [
+    0.6373333333333333,
+    0.094,
+    0.3626666666666667,
+    0.434
+   ]
+  },
+  {
+   "label": "toilet paper",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.2613333333333333,
+    0.726,
+    0.06933333333333333,
+    0.038
+   ]
+  },
+  {
+   "label": "toilet",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.152,
+    0.83,
+    0.36533333333333334,
+    0.178
+   ]
+  },
+  {
+   "label": "lid",
+   "attributes": [],
+   "bounding_box": [
+    0.15733333333333333,
+    0.83,
+    0.31733333333333336,
+    0.122
+   ]
+  },
+  {
+   "label": "brush",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.5706666666666667,
+    0.778,
+    0.064,
+    0.072
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.7973333333333333,
+    0.64,
+    0.096,
+    0.064
+   ]
+  },
+  {
+   "label": "sink",
+   "attributes": [],
+   "bounding_box": [
+    0.696,
+    0.694,
+    0.304,
+    0.092
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.25066666666666665,
+    0.0,
+    0.7493333333333333,
+    1.002
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "package",
+   "relation": "to the left of",
+   "object": "sink"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "toothbrush",
+   "relation": "to the left of",
+   "object": "bottle"
+  },
+  {
+   "subject": "phone",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "phone",
+   "relation": "near",
+   "object": "toilet"
+  },
+  {
+   "subject": "phone",
+   "relation": "on",
+   "object": "wall"
+  },
+  {
+   "subject": "dryer",
+   "relation": "on",
+   "object": "wall"
+  },
+  {
+   "subject": "dryer",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "comb",
+   "relation": "to the left of",
+   "object": "brush"
+  },
+  {
+   "subject": "comb",
+   "relation": "on",
+   "object": "counter"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the right of",
+   "object": "toilet"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the right of",
+   "object": "lid"
+  },
+  {
+   "subject": "counter",
+   "relation": "near",
+   "object": "toilet"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the left of",
+   "object": "sink"
+  },
+  {
+   "subject": "bottle",
+   "relation": "on",
+   "object": "counter"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "toothbrush"
+  },
+  {
+   "subject": "mirror",
+   "relation": "on",
+   "object": "wall"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "dryer"
+  },
+  {
+   "subject": "toilet",
+   "relation": "next to",
+   "object": "counter"
+  },
+  {
+   "subject": "toilet",
+   "relation": "near",
+   "object": "counter"
+  },
+  {
+   "subject": "toilet",
+   "relation": "to the left of",
+   "object": "counter"
+  },
+  {
+   "subject": "toilet",
+   "relation": "near",
+   "object": "phone"
+  },
+  {
+   "subject": "lid",
+   "relation": "to the left of",
+   "object": "counter"
+  },
+  {
+   "subject": "lid",
+   "relation": "on",
+   "object": "bottle"
+  },
+  {
+   "subject": "brush",
+   "relation": "to the right of",
+   "object": "comb"
+  },
+  {
+   "subject": "brush",
+   "relation": "on",
+   "object": "counter"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "toothbrush"
+  },
+  {
+   "subject": "sign",
+   "relation": "by",
+   "object": "sink"
+  },
+  {
+   "subject": "sign",
+   "relation": "on",
+   "object": "wall"
+  },
+  {
+   "subject": "sink",
+   "relation": "on",
+   "object": "counter"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the right of",
+   "object": "package"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the right of",
+   "object": "bottle"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "phone"
+  }
+ ],
+ "counts": {
+  "objects": 16,
+  "relations": 33
+ }
+}

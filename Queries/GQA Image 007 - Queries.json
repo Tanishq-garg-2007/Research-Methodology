@@ -1,0 +1,23 @@
+{
+ "image_number": 7,
+ "gqa_image_id": "2375631",
+ "filepath": "data/data_0/2375631.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "counter",
+  "toilet"
+ ],
+ "query": {
+  "question": "What is to the right of the lid?",
+  "answer": "counter",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "lid"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

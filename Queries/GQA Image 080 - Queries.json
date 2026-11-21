@@ -1,0 +1,24 @@
+{
+ "image_number": 80,
+ "gqa_image_id": "2342608",
+ "filepath": "data/data_2/2342608.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "person",
+  "sign"
+ ],
+ "query": {
+  "question": "What is between the person and the sign?",
+  "answer": "head",
+  "template": "between",
+  "derivation": {
+   "anchor_a": "person",
+   "anchor_b": "sign",
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

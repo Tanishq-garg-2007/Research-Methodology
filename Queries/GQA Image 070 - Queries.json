@@ -1,0 +1,23 @@
+{
+ "image_number": 70,
+ "gqa_image_id": "2377395",
+ "filepath": "data/data_1/2377395.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "toothbrush",
+  "counter"
+ ],
+ "query": {
+  "question": "What is to the right of the coffee mug?",
+  "answer": "toothbrush",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "coffee mug"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

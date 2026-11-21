@@ -1,0 +1,262 @@
+{
+ "image_number": 37,
+ "gqa_image_id": "2374245",
+ "filepath": "data/data_0/2374245.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "locomotive",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.148,
+    0.32459016393442625,
+    0.424,
+    0.4491803278688525
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [],
+   "bounding_box": [
+    0.626,
+    0.3180327868852459,
+    0.276,
+    0.13114754098360656
+   ]
+  },
+  {
+   "label": "train",
+   "attributes": [],
+   "bounding_box": [
+    0.148,
+    0.32459016393442625,
+    0.696,
+    0.4491803278688525
+   ]
+  },
+  {
+   "label": "railroad",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.7508196721311475,
+    0.31,
+    0.16065573770491803
+   ]
+  },
+  {
+   "label": "gravel",
+   "attributes": [],
+   "bounding_box": [
+    0.006,
+    0.6229508196721312,
+    0.772,
+    0.3737704918032787
+   ]
+  },
+  {
+   "label": "bed",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.7508196721311475,
+    0.386,
+    0.24918032786885247
+   ]
+  },
+  {
+   "label": "steam",
+   "attributes": [],
+   "bounding_box": [
+    0.09,
+    0.09836065573770492,
+    0.376,
+    0.45901639344262296
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.5704918032786885,
+    0.996,
+    0.4262295081967213
+   ]
+  },
+  {
+   "label": "cars",
+   "attributes": [],
+   "bounding_box": [
+    0.096,
+    0.5901639344262295,
+    0.052,
+    0.03934426229508197
+   ]
+  },
+  {
+   "label": "road",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.6163934426229508,
+    0.138,
+    0.04590163934426229
+   ]
+  },
+  {
+   "label": "clouds",
+   "attributes": [
+    "fluffy",
+    "white"
+   ],
+   "bounding_box": [
+    0.892,
+    0.33114754098360655,
+    0.108,
+    0.12131147540983607
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.002,
+    0.003278688524590164,
+    0.996,
+    0.5770491803278689
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [],
+   "bounding_box": [
+    0.45,
+    0.5639344262295082,
+    0.548,
+    0.43278688524590164
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "locomotive",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "locomotive",
+   "relation": "to the right of",
+   "object": "road"
+  },
+  {
+   "subject": "locomotive",
+   "relation": "to the right of",
+   "object": "cars"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "steam"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the left of",
+   "object": "clouds"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "locomotive"
+  },
+  {
+   "subject": "train",
+   "relation": "to the left of",
+   "object": "clouds"
+  },
+  {
+   "subject": "train",
+   "relation": "to the right of",
+   "object": "road"
+  },
+  {
+   "subject": "train",
+   "relation": "to the right of",
+   "object": "cars"
+  },
+  {
+   "subject": "railroad",
+   "relation": "to the left of",
+   "object": "grass"
+  },
+  {
+   "subject": "bed",
+   "relation": "to the left of",
+   "object": "grass"
+  },
+  {
+   "subject": "steam",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "cars",
+   "relation": "to the left of",
+   "object": "locomotive"
+  },
+  {
+   "subject": "cars",
+   "relation": "to the left of",
+   "object": "train"
+  },
+  {
+   "subject": "cars",
+   "relation": "on",
+   "object": "road"
+  },
+  {
+   "subject": "road",
+   "relation": "to the left of",
+   "object": "locomotive"
+  },
+  {
+   "subject": "road",
+   "relation": "to the left of",
+   "object": "train"
+  },
+  {
+   "subject": "road",
+   "relation": "beside",
+   "object": "train"
+  },
+  {
+   "subject": "clouds",
+   "relation": "to the right of",
+   "object": "cloud"
+  },
+  {
+   "subject": "clouds",
+   "relation": "to the right of",
+   "object": "train"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the right of",
+   "object": "railroad"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the right of",
+   "object": "bed"
+  }
+ ],
+ "counts": {
+  "objects": 13,
+  "relations": 22
+ }
+}

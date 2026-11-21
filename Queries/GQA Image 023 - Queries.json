@@ -1,0 +1,23 @@
+{
+ "image_number": 23,
+ "gqa_image_id": "2409769",
+ "filepath": "data/data_0/2409769.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "car",
+  "wall"
+ ],
+ "query": {
+  "question": "What is to the left of the cart?",
+  "answer": "car",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "cart"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

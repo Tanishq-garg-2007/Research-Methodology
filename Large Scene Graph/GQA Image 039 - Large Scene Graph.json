@@ -1,0 +1,384 @@
+{
+ "image_number": 39,
+ "gqa_image_id": "2318099",
+ "filepath": "data/data_1/2318099.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "twigs",
+   "attributes": [],
+   "bounding_box": [
+    0.866,
+    0.0,
+    0.128,
+    0.2912912912912913
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.696,
+    0.5795795795795796,
+    0.094,
+    0.10510510510510511
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.602,
+    0.27927927927927926,
+    0.008,
+    0.024024024024024024
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.724,
+    0.7417417417417418,
+    0.048,
+    0.06606606606606606
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.028,
+    0.0,
+    0.064,
+    0.08408408408408409
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.75,
+    0.2552552552552553,
+    0.068,
+    0.0990990990990991
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.826,
+    0.7897897897897898,
+    0.074,
+    0.10510510510510511
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.47,
+    0.18618618618618618,
+    0.154,
+    0.22522522522522523
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.694,
+    0.8138138138138138,
+    0.09,
+    0.06906906906906907
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.816,
+    0.5765765765765766,
+    0.06,
+    0.06006006006006006
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [
+    "dried"
+   ],
+   "bounding_box": [
+    0.054,
+    0.15915915915915915,
+    0.076,
+    0.10810810810810811
+   ]
+  },
+  {
+   "label": "branch",
+   "attributes": [
+    "large"
+   ],
+   "bounding_box": [
+    0.128,
+    0.34534534534534533,
+    0.852,
+    0.6546546546546547
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.662,
+    0.2702702702702703,
+    0.06,
+    0.04804804804804805
+   ]
+  },
+  {
+   "label": "tongue",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.578,
+    0.37537537537537535,
+    0.014,
+    0.02702702702702703
+   ]
+  },
+  {
+   "label": "flowers",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.632,
+    0.7357357357357357,
+    0.064,
+    0.07807807807807808
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.526,
+    0.12912912912912913,
+    0.08,
+    0.08108108108108109
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.6,
+    0.35435435435435436,
+    0.018,
+    0.024024024024024024
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.003003003003003003,
+    0.996,
+    0.996996996996997
+   ]
+  },
+  {
+   "label": "leg",
+   "attributes": [
+    "outstretched"
+   ],
+   "bounding_box": [
+    0.614,
+    0.3483483483483483,
+    0.096,
+    0.09309309309309309
+   ]
+  },
+  {
+   "label": "animal",
+   "attributes": [],
+   "bounding_box": [
+    0.04,
+    0.13213213213213212,
+    0.692,
+    0.8288288288288288
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.296,
+    0.15915915915915915,
+    0.044,
+    0.07207207207207207
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.75,
+    0.26426426426426425,
+    0.06,
+    0.08708708708708708
+   ]
+  },
+  {
+   "label": "flower",
+   "attributes": [],
+   "bounding_box": [
+    0.616,
+    0.9039039039039038,
+    0.084,
+    0.09009009009009009
+   ]
+  },
+  {
+   "label": "leaves",
+   "attributes": [],
+   "bounding_box": [
+    0.718,
+    0.09009009009009009,
+    0.068,
+    0.12312312312312312
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "twigs",
+   "relation": "to the right of",
+   "object": "leaves"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the left of",
+   "object": "leaves"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "leaves"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the right of",
+   "object": "flowers"
+  },
+  {
+   "subject": "leaves",
+   "relation": "on",
+   "object": "tree"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the right of",
+   "object": "leaves"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "leaves"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "leaves"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "tongue",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "flowers",
+   "relation": "to the left of",
+   "object": "leaves"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "tongue"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "leaves"
+  },
+  {
+   "subject": "animal",
+   "relation": "sleeping in",
+   "object": "tree"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "flower",
+   "relation": "on",
+   "object": "tree"
+  },
+  {
+   "subject": "leaves",
+   "relation": "to the left of",
+   "object": "twigs"
+  }
+ ],
+ "counts": {
+  "objects": 24,
+  "relations": 23
+ }
+}

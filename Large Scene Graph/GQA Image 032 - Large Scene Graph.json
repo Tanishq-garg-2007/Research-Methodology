@@ -1,0 +1,362 @@
+{
+ "image_number": 32,
+ "gqa_image_id": "2343740",
+ "filepath": "data/data_0/2343740.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "park",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.376,
+    0.964,
+    0.5306666666666666
+   ]
+  },
+  {
+   "label": "yard",
+   "attributes": [
+    "grassy"
+   ],
+   "bounding_box": [
+    0.396,
+    0.5413333333333333,
+    0.6,
+    0.22666666666666666
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.786,
+    0.44266666666666665,
+    0.056,
+    0.06933333333333333
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.998,
+    0.52
+   ]
+  },
+  {
+   "label": "crane",
+   "attributes": [],
+   "bounding_box": [
+    0.824,
+    0.408,
+    0.176,
+    0.14666666666666667
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.758,
+    0.68,
+    0.104,
+    0.2906666666666667
+   ]
+  },
+  {
+   "label": "bridge",
+   "attributes": [],
+   "bounding_box": [
+    0.47,
+    0.42133333333333334,
+    0.53,
+    0.09866666666666667
+   ]
+  },
+  {
+   "label": "clothes",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.104,
+    0.30133333333333334,
+    0.036,
+    0.064
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.106,
+    0.3626666666666667,
+    0.034,
+    0.09333333333333334
+   ]
+  },
+  {
+   "label": "kite",
+   "attributes": [],
+   "bounding_box": [
+    0.322,
+    0.09066666666666667,
+    0.446,
+    0.31733333333333336
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.74,
+    0.5146666666666667,
+    0.142,
+    0.18133333333333335
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [],
+   "bounding_box": [
+    0.136,
+    0.44533333333333336,
+    0.63,
+    0.136
+   ]
+  },
+  {
+   "label": "clouds",
+   "attributes": [],
+   "bounding_box": [
+    0.006,
+    0.010666666666666666,
+    0.994,
+    0.44266666666666665
+   ]
+  },
+  {
+   "label": "rope",
+   "attributes": [],
+   "bounding_box": [
+    0.532,
+    0.25866666666666666,
+    0.136,
+    0.21066666666666667
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.664,
+    0.4693333333333333,
+    0.02,
+    0.032
+   ]
+  },
+  {
+   "label": "cap",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.782,
+    0.44266666666666665,
+    0.064,
+    0.07733333333333334
+   ]
+  },
+  {
+   "label": "shoe",
+   "attributes": [],
+   "bounding_box": [
+    0.83,
+    0.968,
+    0.034,
+    0.029333333333333333
+   ]
+  },
+  {
+   "label": "boy",
+   "attributes": [],
+   "bounding_box": [
+    0.664,
+    0.44266666666666665,
+    0.256,
+    0.5573333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "crane"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "fence"
+  },
+  {
+   "subject": "crane",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "crane",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "crane",
+   "relation": "to the right of",
+   "object": "fence"
+  },
+  {
+   "subject": "crane",
+   "relation": "to the right of",
+   "object": "cap"
+  },
+  {
+   "subject": "crane",
+   "relation": "behind",
+   "object": "boy"
+  },
+  {
+   "subject": "clothes",
+   "relation": "to the left of",
+   "object": "kite"
+  },
+  {
+   "subject": "kite",
+   "relation": "to the right of",
+   "object": "clothes"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the left of",
+   "object": "crane"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the left of",
+   "object": "boy"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the left of",
+   "object": "cap"
+  },
+  {
+   "subject": "clouds",
+   "relation": "in",
+   "object": "sky"
+  },
+  {
+   "subject": "rope",
+   "relation": "attached to",
+   "object": "kite"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "cap"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "crane"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the right of",
+   "object": "fence"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the left of",
+   "object": "crane"
+  },
+  {
+   "subject": "cap",
+   "relation": "on",
+   "object": "head"
+  },
+  {
+   "subject": "boy",
+   "relation": "holding",
+   "object": "rope"
+  },
+  {
+   "subject": "boy",
+   "relation": "wearing",
+   "object": "pants"
+  },
+  {
+   "subject": "boy",
+   "relation": "in front of",
+   "object": "crane"
+  },
+  {
+   "subject": "boy",
+   "relation": "standing in front of",
+   "object": "yard"
+  },
+  {
+   "subject": "boy",
+   "relation": "wearing",
+   "object": "cap"
+  },
+  {
+   "subject": "boy",
+   "relation": "to the right of",
+   "object": "fence"
+  },
+  {
+   "subject": "boy",
+   "relation": "wearing",
+   "object": "shoe"
+  },
+  {
+   "subject": "boy",
+   "relation": "holding",
+   "object": "kite"
+  }
+ ],
+ "counts": {
+  "objects": 18,
+  "relations": 31
+ }
+}

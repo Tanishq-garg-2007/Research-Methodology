@@ -1,0 +1,617 @@
+{
+ "image_number": 41,
+ "gqa_image_id": "2374080",
+ "filepath": "data/data_1/2374080.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "trash",
+   "attributes": [],
+   "bounding_box": [
+    0.222,
+    0.824,
+    0.03,
+    0.008
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.37,
+    0.668,
+    0.058,
+    0.066
+   ]
+  },
+  {
+   "label": "street light",
+   "attributes": [
+    "hanging"
+   ],
+   "bounding_box": [
+    0.446,
+    0.612,
+    0.016,
+    0.03
+   ]
+  },
+  {
+   "label": "skateboarder",
+   "attributes": [
+    "caucasian",
+    "young"
+   ],
+   "bounding_box": [
+    0.368,
+    0.644,
+    0.068,
+    0.15
+   ]
+  },
+  {
+   "label": "truck",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.776,
+    0.722,
+    0.122,
+    0.076
+   ]
+  },
+  {
+   "label": "cap",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.63,
+    0.408,
+    0.072,
+    0.082
+   ]
+  },
+  {
+   "label": "skateboarder",
+   "attributes": [
+    "young"
+   ],
+   "bounding_box": [
+    0.552,
+    0.404,
+    0.25,
+    0.504
+   ]
+  },
+  {
+   "label": "shoe",
+   "attributes": [],
+   "bounding_box": [
+    0.622,
+    0.848,
+    0.054,
+    0.066
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.552,
+    0.484,
+    0.25,
+    0.206
+   ]
+  },
+  {
+   "label": "truck",
+   "attributes": [],
+   "bounding_box": [
+    0.69,
+    0.714,
+    0.124,
+    0.08
+   ]
+  },
+  {
+   "label": "street",
+   "attributes": [
+    "busy"
+   ],
+   "bounding_box": [
+    0.158,
+    0.758,
+    0.842,
+    0.242
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "silver"
+   ],
+   "bounding_box": [
+    0.216,
+    0.606,
+    0.246,
+    0.008
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "blue",
+    "parked"
+   ],
+   "bounding_box": [
+    0.148,
+    0.666,
+    0.128,
+    0.138
+   ]
+  },
+  {
+   "label": "skateboarder",
+   "attributes": [],
+   "bounding_box": [
+    0.294,
+    0.704,
+    0.036,
+    0.08
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "silver"
+   ],
+   "bounding_box": [
+    0.92,
+    0.742,
+    0.078,
+    0.06
+   ]
+  },
+  {
+   "label": "street light",
+   "attributes": [
+    "hanging"
+   ],
+   "bounding_box": [
+    0.38,
+    0.614,
+    0.008,
+    0.024
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [
+    "brick"
+   ],
+   "bounding_box": [
+    0.802,
+    0.368,
+    0.196,
+    0.43
+   ]
+  },
+  {
+   "label": "vehicle",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.448,
+    0.732,
+    0.056,
+    0.042
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.818,
+    0.546,
+    0.014,
+    0.062
+   ]
+  },
+  {
+   "label": "hat",
+   "attributes": [],
+   "bounding_box": [
+    0.392,
+    0.646,
+    0.028,
+    0.016
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [],
+   "bounding_box": [
+    0.372,
+    0.73,
+    0.036,
+    0.068
+   ]
+  },
+  {
+   "label": "skateboard",
+   "attributes": [
+    "dark"
+   ],
+   "bounding_box": [
+    0.59,
+    0.874,
+    0.128,
+    0.078
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "trash",
+   "relation": "in",
+   "object": "street"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "street light",
+   "relation": "to the right of",
+   "object": "street light"
+  },
+  {
+   "subject": "street light",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "street light",
+   "relation": "to the left of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the left of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the left of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "wearing",
+   "object": "pants"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "wearing",
+   "object": "hat"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the right of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the right of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the right of",
+   "object": "truck"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "wearing",
+   "object": "cap"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the right of",
+   "object": "street light"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the right of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the right of",
+   "object": "hat"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the right of",
+   "object": "pants"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "wearing",
+   "object": "shoe"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the left of",
+   "object": "truck"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "riding on",
+   "object": "skateboard"
+  },
+  {
+   "subject": "shoe",
+   "relation": "above",
+   "object": "skateboard"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "street light"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "hat"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "truck",
+   "relation": "in front of",
+   "object": "building"
+  },
+  {
+   "subject": "truck",
+   "relation": "on",
+   "object": "street"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the right of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "truck",
+   "relation": "to the left of",
+   "object": "truck"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "skateboarder",
+   "relation": "on",
+   "object": "street"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "truck"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "street light",
+   "relation": "to the left of",
+   "object": "street light"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "truck"
+  },
+  {
+   "subject": "building",
+   "relation": "behind",
+   "object": "truck"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "cap"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the right of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the right of",
+   "object": "pants"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the left of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the left of",
+   "object": "truck"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the left of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the left of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the left of",
+   "object": "skateboarder"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "car"
+  }
+ ],
+ "counts": {
+  "objects": 22,
+  "relations": 70
+ }
+}

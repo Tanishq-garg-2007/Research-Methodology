@@ -1,0 +1,168 @@
+{
+ "image_number": 51,
+ "gqa_image_id": "2340367",
+ "filepath": "data/data_1/2340367.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "man",
+  "ring"
+ ],
+ "core_nodes": [
+  "glass",
+  "man",
+  "ring"
+ ],
+ "nodes": [
+  "glass",
+  "jacket",
+  "man",
+  "pants",
+  "pocket",
+  "ring"
+ ],
+ "objects": [
+  {
+   "label": "ring",
+   "attributes": [],
+   "bounding_box": [
+    0.022,
+    0.6596244131455399,
+    0.006,
+    0.009389671361502348
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [],
+   "bounding_box": [
+    0.092,
+    0.6408450704225352,
+    0.778,
+    0.34976525821596244
+   ]
+  },
+  {
+   "label": "jacket",
+   "attributes": [],
+   "bounding_box": [
+    0.9,
+    0.7183098591549296,
+    0.1,
+    0.284037558685446
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.966,
+    0.5633802816901409,
+    0.026,
+    0.06807511737089202
+   ]
+  },
+  {
+   "label": "pocket",
+   "attributes": [],
+   "bounding_box": [
+    0.038,
+    0.676056338028169,
+    0.81,
+    0.14084507042253522
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.032,
+    0.1807511737089202,
+    0.906,
+    0.8192488262910798
+   ]
+  },
+  {
+   "label": "ring",
+   "attributes": [],
+   "bounding_box": [
+    0.856,
+    0.7863849765258216,
+    0.012,
+    0.011737089201877934
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "ring",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "ring",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "ring"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "ring"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "pocket",
+   "relation": "to the left of",
+   "object": "ring"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "ring"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "ring"
+  },
+  {
+   "subject": "ring",
+   "relation": "to the right of",
+   "object": "pocket"
+  },
+  {
+   "subject": "ring",
+   "relation": "to the left of",
+   "object": "jacket"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 13
+ }
+}

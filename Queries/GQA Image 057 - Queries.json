@@ -1,0 +1,23 @@
+{
+ "image_number": 57,
+ "gqa_image_id": "2367740",
+ "filepath": "data/data_1/2367740.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "door",
+  "hair"
+ ],
+ "query": {
+  "question": "What is to the left of the glasses?",
+  "answer": "door",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

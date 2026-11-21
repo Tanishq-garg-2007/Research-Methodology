@@ -1,0 +1,24 @@
+{
+ "image_number": 79,
+ "gqa_image_id": "2379618",
+ "filepath": "data/data_2/2379618.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "chair",
+  "frame"
+ ],
+ "query": {
+  "question": "What is between the chair and the frame?",
+  "answer": "rug",
+  "template": "between",
+  "derivation": {
+   "anchor_a": "chair",
+   "anchor_b": "frame",
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

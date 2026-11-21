@@ -1,0 +1,230 @@
+{
+ "image_number": 52,
+ "gqa_image_id": "2415669",
+ "filepath": "data/data_1/2415669.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "window",
+  "bus"
+ ],
+ "core_nodes": [
+  "bus",
+  "pavement",
+  "window"
+ ],
+ "nodes": [
+  "building",
+  "bus",
+  "car",
+  "cloud",
+  "pavement",
+  "window"
+ ],
+ "objects": [
+  {
+   "label": "cloud",
+   "attributes": [],
+   "bounding_box": [
+    0.682,
+    0.262,
+    0.26,
+    0.164
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.254,
+    0.494,
+    0.284,
+    0.2
+   ]
+  },
+  {
+   "label": "pavement",
+   "attributes": [],
+   "bounding_box": [
+    0.824,
+    0.66,
+    0.17,
+    0.18
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.026,
+    0.196,
+    0.394,
+    0.476
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.288,
+    0.276,
+    0.27,
+    0.128
+   ]
+  },
+  {
+   "label": "bus",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.232,
+    0.238,
+    0.562,
+    0.556
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.626,
+    0.528,
+    0.044,
+    0.144
+   ]
+  },
+  {
+   "label": "cloud",
+   "attributes": [],
+   "bounding_box": [
+    0.016,
+    0.082,
+    0.68,
+    0.142
+   ]
+  },
+  {
+   "label": "bus",
+   "attributes": [
+    "double decker",
+    "red"
+   ],
+   "bounding_box": [
+    0.788,
+    0.462,
+    0.202,
+    0.214
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.564,
+    0.336,
+    0.062,
+    0.116
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.154,
+    0.614,
+    0.09,
+    0.142
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "cloud",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "pavement",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "bus"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "cloud"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "pavement"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "bus"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "bus"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "window"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 11,
+  "relations": 16
+ }
+}

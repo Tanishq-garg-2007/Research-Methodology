@@ -1,0 +1,652 @@
+{
+ "image_number": 16,
+ "gqa_image_id": "2360483",
+ "filepath": "data/data_0/2360483.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "road",
+   "attributes": [
+    "concrete"
+   ],
+   "bounding_box": [
+    0.44533333333333336,
+    0.466,
+    0.088,
+    0.534
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.27466666666666667,
+    0.28,
+    0.018666666666666668,
+    0.022
+   ]
+  },
+  {
+   "label": "people",
+   "attributes": [],
+   "bounding_box": [
+    0.792,
+    0.454,
+    0.02666666666666667,
+    0.078
+   ]
+  },
+  {
+   "label": "bus",
+   "attributes": [],
+   "bounding_box": [
+    0.0026666666666666666,
+    0.0,
+    0.792,
+    1.0
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [],
+   "bounding_box": [
+    0.42933333333333334,
+    0.302,
+    0.168,
+    0.008
+   ]
+  },
+  {
+   "label": "people",
+   "attributes": [],
+   "bounding_box": [
+    0.8266666666666667,
+    0.448,
+    0.04,
+    0.084
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.6106666666666667,
+    0.124,
+    0.3893333333333333,
+    0.358
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.712,
+    0.228,
+    0.018666666666666668,
+    0.032
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.7146666666666667,
+    0.274,
+    0.021333333333333333,
+    0.03
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.9146666666666666,
+    0.368,
+    0.02666666666666667,
+    0.04
+   ]
+  },
+  {
+   "label": "air conditioner",
+   "attributes": [],
+   "bounding_box": [
+    0.7146666666666667,
+    0.296,
+    0.024,
+    0.01
+   ]
+  },
+  {
+   "label": "air conditioner",
+   "attributes": [],
+   "bounding_box": [
+    0.27466666666666667,
+    0.302,
+    0.018666666666666668,
+    0.01
+   ]
+  },
+  {
+   "label": "mirror",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.528,
+    0.322,
+    0.26666666666666666,
+    0.428
+   ]
+  },
+  {
+   "label": "suv",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.816,
+    0.444,
+    0.10666666666666667,
+    0.062
+   ]
+  },
+  {
+   "label": "road",
+   "attributes": [],
+   "bounding_box": [
+    0.792,
+    0.492,
+    0.20266666666666666,
+    0.114
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.17333333333333334,
+    0.0,
+    0.26666666666666666,
+    0.994
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.8826666666666667,
+    0.336,
+    0.04,
+    0.45
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.8266666666666667,
+    0.184,
+    0.11466666666666667,
+    0.156
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.6666666666666666,
+    0.214,
+    0.30933333333333335,
+    0.06
+   ]
+  },
+  {
+   "label": "sidewalk",
+   "attributes": [],
+   "bounding_box": [
+    0.5333333333333333,
+    0.602,
+    0.4666666666666667,
+    0.396
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.27466666666666667,
+    0.328,
+    0.021333333333333333,
+    0.03
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [],
+   "bounding_box": [
+    0.648,
+    0.63,
+    0.10933333333333334,
+    0.096
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.44533333333333336,
+    0.31,
+    0.09333333333333334,
+    0.018
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "road",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "road",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "road",
+   "relation": "to the left of",
+   "object": "sidewalk"
+  },
+  {
+   "subject": "road",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "people",
+   "relation": "on",
+   "object": "road"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "people",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "people",
+   "relation": "to the left of",
+   "object": "suv"
+  },
+  {
+   "subject": "people",
+   "relation": "standing on",
+   "object": "road"
+  },
+  {
+   "subject": "people",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "suv"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "road"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "bus",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "air conditioner"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "people"
+  },
+  {
+   "subject": "people",
+   "relation": "in front of",
+   "object": "suv"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "sign"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "building",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "window",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "air conditioner",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "air conditioner",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "road"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "mirror",
+   "relation": "of",
+   "object": "bus"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the left of",
+   "object": "suv"
+  },
+  {
+   "subject": "mirror",
+   "relation": "hanging from",
+   "object": "bus"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "road"
+  },
+  {
+   "subject": "mirror",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "suv",
+   "relation": "on",
+   "object": "road"
+  },
+  {
+   "subject": "suv",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "suv",
+   "relation": "behind",
+   "object": "people"
+  },
+  {
+   "subject": "suv",
+   "relation": "to the right of",
+   "object": "people"
+  },
+  {
+   "subject": "suv",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "road",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "road",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "door",
+   "relation": "on the front of",
+   "object": "bus"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "sidewalk"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "building"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "road"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "people"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "window"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "mirror"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "air conditioner"
+  },
+  {
+   "subject": "sign",
+   "relation": "on",
+   "object": "pole"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "bus"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "sidewalk",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "sidewalk",
+   "relation": "to the right of",
+   "object": "road"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "mirror"
+  },
+  {
+   "subject": "woman",
+   "relation": "reflected in",
+   "object": "mirror"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "road"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "sign",
+   "relation": "hanging from",
+   "object": "pole"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the left of",
+   "object": "building"
+  }
+ ],
+ "counts": {
+  "objects": 23,
+  "relations": 79
+ }
+}

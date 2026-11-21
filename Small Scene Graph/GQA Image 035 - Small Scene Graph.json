@@ -1,0 +1,93 @@
+{
+ "image_number": 35,
+ "gqa_image_id": "2336624",
+ "filepath": "data/data_0/2336624.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "nose",
+  "airplane"
+ ],
+ "core_nodes": [
+  "airplane",
+  "nose",
+  "wing"
+ ],
+ "nodes": [
+  "airplane",
+  "nose",
+  "tail",
+  "wing"
+ ],
+ "objects": [
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.87,
+    0.4984984984984985,
+    0.046,
+    0.08408408408408409
+   ]
+  },
+  {
+   "label": "airplane",
+   "attributes": [],
+   "bounding_box": [
+    0.04,
+    0.2702702702702703,
+    0.874,
+    0.40540540540540543
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [],
+   "bounding_box": [
+    0.28,
+    0.2702702702702703,
+    0.128,
+    0.2012012012012012
+   ]
+  },
+  {
+   "label": "wing",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.034,
+    0.4984984984984985,
+    0.636,
+    0.15315315315315314
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "nose",
+   "relation": "of",
+   "object": "airplane"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "wing"
+  },
+  {
+   "subject": "tail",
+   "relation": "of",
+   "object": "airplane"
+  },
+  {
+   "subject": "wing",
+   "relation": "to the left of",
+   "object": "nose"
+  }
+ ],
+ "counts": {
+  "nodes": 4,
+  "objects": 4,
+  "relations": 4
+ }
+}

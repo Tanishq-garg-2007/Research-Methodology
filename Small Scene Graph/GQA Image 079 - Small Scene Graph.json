@@ -1,0 +1,153 @@
+{
+ "image_number": 79,
+ "gqa_image_id": "2379618",
+ "filepath": "data/data_2/2379618.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "chair",
+  "frame"
+ ],
+ "core_nodes": [
+  "chair",
+  "frame",
+  "rug"
+ ],
+ "nodes": [
+  "blanket",
+  "chair",
+  "fireplace",
+  "frame",
+  "painting",
+  "rug"
+ ],
+ "objects": [
+  {
+   "label": "chair",
+   "attributes": [
+    "gray",
+    "wood"
+   ],
+   "bounding_box": [
+    0.4,
+    0.5306666666666666,
+    0.18,
+    0.3413333333333333
+   ]
+  },
+  {
+   "label": "blanket",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.514,
+    0.5093333333333333,
+    0.364,
+    0.24
+   ]
+  },
+  {
+   "label": "fireplace",
+   "attributes": [
+    "antique",
+    "black"
+   ],
+   "bounding_box": [
+    0.024,
+    0.4,
+    0.188,
+    0.38133333333333336
+   ]
+  },
+  {
+   "label": "frame",
+   "attributes": [],
+   "bounding_box": [
+    0.576,
+    0.07733333333333334,
+    0.016,
+    0.27466666666666667
+   ]
+  },
+  {
+   "label": "painting",
+   "attributes": [],
+   "bounding_box": [
+    0.724,
+    0.04533333333333334,
+    0.128,
+    0.21333333333333335
+   ]
+  },
+  {
+   "label": "rug",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.434,
+    0.7733333333333333,
+    0.152,
+    0.21333333333333335
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "blanket"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "fireplace"
+  },
+  {
+   "subject": "chair",
+   "relation": "above",
+   "object": "rug"
+  },
+  {
+   "subject": "blanket",
+   "relation": "draped over",
+   "object": "chair"
+  },
+  {
+   "subject": "blanket",
+   "relation": "on",
+   "object": "chair"
+  },
+  {
+   "subject": "blanket",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "fireplace",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "frame",
+   "relation": "to the left of",
+   "object": "painting"
+  },
+  {
+   "subject": "painting",
+   "relation": "to the right of",
+   "object": "frame"
+  },
+  {
+   "subject": "rug",
+   "relation": "under",
+   "object": "chair"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 10
+ }
+}

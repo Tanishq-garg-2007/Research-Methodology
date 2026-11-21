@@ -1,0 +1,23 @@
+{
+ "image_number": 89,
+ "gqa_image_id": "2367014",
+ "filepath": "data/data_2/2367014.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "leg",
+  "eye"
+ ],
+ "query": {
+  "question": "What is to the left of the eyes?",
+  "answer": "eye",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "eyes"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

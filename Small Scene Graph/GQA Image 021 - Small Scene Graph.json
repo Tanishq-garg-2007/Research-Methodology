@@ -1,0 +1,186 @@
+{
+ "image_number": 21,
+ "gqa_image_id": "2408882",
+ "filepath": "data/data_0/2408882.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "giraffe",
+  "tree"
+ ],
+ "core_nodes": [
+  "food",
+  "giraffe",
+  "tree"
+ ],
+ "nodes": [
+  "fence",
+  "food",
+  "giraffe",
+  "grass",
+  "ground",
+  "tree"
+ ],
+ "objects": [
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.2912912912912913,
+    0.998,
+    0.7027027027027027
+   ]
+  },
+  {
+   "label": "giraffe",
+   "attributes": [],
+   "bounding_box": [
+    0.218,
+    0.2552552552552553,
+    0.076,
+    0.12312312312312312
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.166,
+    0.003003003003003003,
+    0.59,
+    0.6156156156156156
+   ]
+  },
+  {
+   "label": "food",
+   "attributes": [
+    "hanging"
+   ],
+   "bounding_box": [
+    0.404,
+    0.3633633633633634,
+    0.026,
+    0.03303303303303303
+   ]
+  },
+  {
+   "label": "giraffe",
+   "attributes": [
+    "bending"
+   ],
+   "bounding_box": [
+    0.334,
+    0.3663663663663664,
+    0.042,
+    0.19519519519519518
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [
+    "metal"
+   ],
+   "bounding_box": [
+    0.0,
+    0.24624624624624625,
+    0.588,
+    0.13513513513513514
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.562,
+    0.38738738738738737,
+    0.31,
+    0.0990990990990991
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "giraffe",
+   "relation": "by",
+   "object": "fence"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "near",
+   "object": "fence"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "next to",
+   "object": "fence"
+  },
+  {
+   "subject": "food",
+   "relation": "on",
+   "object": "tree"
+  },
+  {
+   "subject": "food",
+   "relation": "to the right of",
+   "object": "giraffe"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "by",
+   "object": "tree"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "to the left of",
+   "object": "grass"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "to the left of",
+   "object": "food"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "inside",
+   "object": "fence"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "walking on",
+   "object": "ground"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "beside",
+   "object": "tree"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "standing on",
+   "object": "ground"
+  },
+  {
+   "subject": "fence",
+   "relation": "beside",
+   "object": "giraffe"
+  },
+  {
+   "subject": "fence",
+   "relation": "near",
+   "object": "giraffe"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the right of",
+   "object": "giraffe"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 15
+ }
+}

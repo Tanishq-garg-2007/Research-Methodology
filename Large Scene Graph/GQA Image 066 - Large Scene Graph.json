@@ -1,0 +1,431 @@
+{
+ "image_number": 66,
+ "gqa_image_id": "2324922",
+ "filepath": "data/data_1/2324922.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "jacket",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.044,
+    0.5066666666666667,
+    0.034,
+    0.064
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.012,
+    0.504,
+    0.048,
+    0.12
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.03,
+    0.488,
+    0.048,
+    0.144
+   ]
+  },
+  {
+   "label": "beach",
+   "attributes": [],
+   "bounding_box": [
+    0.63,
+    0.632,
+    0.05,
+    0.050666666666666665
+   ]
+  },
+  {
+   "label": "beach",
+   "attributes": [],
+   "bounding_box": [
+    0.068,
+    0.84,
+    0.1,
+    0.06666666666666667
+   ]
+  },
+  {
+   "label": "people",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.49066666666666664,
+    0.074,
+    0.13333333333333333
+   ]
+  },
+  {
+   "label": "beach",
+   "attributes": [],
+   "bounding_box": [
+    0.118,
+    0.5733333333333334,
+    0.062,
+    0.048
+   ]
+  },
+  {
+   "label": "beach",
+   "attributes": [],
+   "bounding_box": [
+    0.9,
+    0.8346666666666667,
+    0.032,
+    0.050666666666666665
+   ]
+  },
+  {
+   "label": "beach",
+   "attributes": [],
+   "bounding_box": [
+    0.436,
+    0.6133333333333333,
+    0.202,
+    0.10666666666666667
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.284,
+    0.8,
+    0.038,
+    0.008
+   ]
+  },
+  {
+   "label": "beach",
+   "attributes": [],
+   "bounding_box": [
+    0.676,
+    0.784,
+    0.038,
+    0.04
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.64,
+    0.728,
+    0.082,
+    0.04
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.438,
+    0.704,
+    0.156,
+    0.05333333333333334
+   ]
+  },
+  {
+   "label": "jacket",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.02,
+    0.5013333333333333,
+    0.03,
+    0.06666666666666667
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.504,
+    0.024,
+    0.12266666666666666
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [],
+   "bounding_box": [
+    0.33,
+    0.26666666666666666,
+    0.076,
+    0.042666666666666665
+   ]
+  },
+  {
+   "label": "vehicle",
+   "attributes": [
+    "large"
+   ],
+   "bounding_box": [
+    0.272,
+    0.4,
+    0.438,
+    0.18933333333333333
+   ]
+  },
+  {
+   "label": "tractor",
+   "attributes": [],
+   "bounding_box": [
+    0.502,
+    0.416,
+    0.216,
+    0.184
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.752,
+    0.8586666666666667,
+    0.048,
+    0.029333333333333333
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.336,
+    0.6853333333333333,
+    0.126,
+    0.08
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.556,
+    0.5066666666666667,
+    0.06,
+    0.08533333333333333
+   ]
+  },
+  {
+   "label": "beach",
+   "attributes": [],
+   "bounding_box": [
+    0.94,
+    0.5493333333333333,
+    0.03,
+    0.050666666666666665
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "jacket"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the left of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "person",
+   "relation": "with",
+   "object": "jacket"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "beach"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "man",
+   "relation": "with",
+   "object": "jacket"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "beach"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "beach",
+   "relation": "to the right of",
+   "object": "beach"
+  },
+  {
+   "subject": "people",
+   "relation": "walking on",
+   "object": "beach"
+  },
+  {
+   "subject": "people",
+   "relation": "to the left of",
+   "object": "beach"
+  },
+  {
+   "subject": "people",
+   "relation": "to the left of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "people",
+   "relation": "walking on",
+   "object": "sand"
+  },
+  {
+   "subject": "people",
+   "relation": "walking along",
+   "object": "beach"
+  },
+  {
+   "subject": "beach",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "beach",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "beach",
+   "relation": "to the right of",
+   "object": "people"
+  },
+  {
+   "subject": "beach",
+   "relation": "to the right of",
+   "object": "sand"
+  },
+  {
+   "subject": "beach",
+   "relation": "to the left of",
+   "object": "beach"
+  },
+  {
+   "subject": "sand",
+   "relation": "in",
+   "object": "beach"
+  },
+  {
+   "subject": "sand",
+   "relation": "to the right of",
+   "object": "sand"
+  },
+  {
+   "subject": "sand",
+   "relation": "to the left of",
+   "object": "sand"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the left of",
+   "object": "beach"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the right of",
+   "object": "jacket"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "in",
+   "object": "sand"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the right of",
+   "object": "people"
+  },
+  {
+   "subject": "vehicle",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "tractor",
+   "relation": "to the left of",
+   "object": "beach"
+  },
+  {
+   "subject": "tractor",
+   "relation": "driving",
+   "object": "beach"
+  },
+  {
+   "subject": "sand",
+   "relation": "to the left of",
+   "object": "beach"
+  },
+  {
+   "subject": "beach",
+   "relation": "to the right of",
+   "object": "vehicle"
+  },
+  {
+   "subject": "beach",
+   "relation": "to the right of",
+   "object": "tractor"
+  }
+ ],
+ "counts": {
+  "objects": 22,
+  "relations": 38
+ }
+}

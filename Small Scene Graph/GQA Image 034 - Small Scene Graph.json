@@ -1,0 +1,273 @@
+{
+ "image_number": 34,
+ "gqa_image_id": "4489",
+ "filepath": "data/data_0/4489.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "woman",
+  "wall"
+ ],
+ "core_nodes": [
+  "table",
+  "wall",
+  "woman"
+ ],
+ "nodes": [
+  "camera",
+  "monitor",
+  "table",
+  "teddy bear",
+  "wall",
+  "woman"
+ ],
+ "objects": [
+  {
+   "label": "camera",
+   "attributes": [],
+   "bounding_box": [
+    0.77375,
+    0.22666666666666666,
+    0.12875,
+    0.2683333333333333
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [],
+   "bounding_box": [
+    0.63375,
+    0.32666666666666666,
+    0.0925,
+    0.28833333333333333
+   ]
+  },
+  {
+   "label": "teddy bear",
+   "attributes": [],
+   "bounding_box": [
+    0.585,
+    0.35,
+    0.0925,
+    0.09
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.46625,
+    0.43,
+    0.345,
+    0.21166666666666667
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.2575,
+    0.0,
+    0.66125,
+    0.5166666666666667
+   ]
+  },
+  {
+   "label": "camera",
+   "attributes": [
+    "black",
+    "empty"
+   ],
+   "bounding_box": [
+    0.58625,
+    0.22333333333333333,
+    0.40625,
+    0.7766666666666666
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.28833333333333333,
+    0.41125,
+    0.71
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.87875,
+    0.0016666666666666668,
+    0.1175,
+    0.6083333333333333
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [],
+   "bounding_box": [
+    0.53375,
+    0.325,
+    0.1,
+    0.29
+   ]
+  },
+  {
+   "label": "monitor",
+   "attributes": [],
+   "bounding_box": [
+    0.80125,
+    0.22833333333333333,
+    0.1,
+    0.08166666666666667
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [],
+   "bounding_box": [
+    0.52875,
+    0.3233333333333333,
+    0.19,
+    0.2916666666666667
+   ]
+  },
+  {
+   "label": "camera",
+   "attributes": [],
+   "bounding_box": [
+    0.20125,
+    0.16166666666666665,
+    0.30875,
+    0.8383333333333334
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "camera",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "camera",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "camera"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "camera"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "table",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "table",
+   "relation": "in front of",
+   "object": "woman"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "table"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "camera"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "monitor"
+  },
+  {
+   "subject": "woman",
+   "relation": "behind",
+   "object": "table"
+  },
+  {
+   "subject": "woman",
+   "relation": "sitting at",
+   "object": "table"
+  },
+  {
+   "subject": "monitor",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "camera",
+   "relation": "to the left of",
+   "object": "woman"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 12,
+  "relations": 23
+ }
+}

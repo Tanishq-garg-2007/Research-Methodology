@@ -1,0 +1,469 @@
+{
+ "image_number": 71,
+ "gqa_image_id": "2349640",
+ "filepath": "data/data_1/2349640.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "shirt",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.324,
+    0.5688622754491018,
+    0.064,
+    0.08383233532934131
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.2,
+    0.5329341317365269,
+    0.024,
+    0.0718562874251497
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [
+    "chain-link"
+   ],
+   "bounding_box": [
+    0.0,
+    0.39520958083832336,
+    0.998,
+    0.3203592814371258
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.252,
+    0.6137724550898204,
+    0.036,
+    0.2215568862275449
+   ]
+  },
+  {
+   "label": "shoes",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.306,
+    0.7754491017964071,
+    0.02,
+    0.020958083832335328
+   ]
+  },
+  {
+   "label": "cap",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.738,
+    0.5658682634730539,
+    0.016,
+    0.014970059880239521
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "light blue"
+   ],
+   "bounding_box": [
+    0.73,
+    0.5868263473053892,
+    0.03,
+    0.05389221556886228
+   ]
+  },
+  {
+   "label": "racket",
+   "attributes": [],
+   "bounding_box": [
+    0.16,
+    0.48502994011976047,
+    0.032,
+    0.029940119760479042
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.74,
+    0.562874251497006,
+    0.014,
+    0.02694610778443114
+   ]
+  },
+  {
+   "label": "bags",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.2,
+    0.7994011976047904,
+    0.052,
+    0.059880239520958084
+   ]
+  },
+  {
+   "label": "cap",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.18,
+    0.8083832335329342,
+    0.042,
+    0.038922155688622756
+   ]
+  },
+  {
+   "label": "player",
+   "attributes": [],
+   "bounding_box": [
+    0.192,
+    0.5029940119760479,
+    0.06,
+    0.19760479041916168
+   ]
+  },
+  {
+   "label": "racket",
+   "attributes": [],
+   "bounding_box": [
+    0.75,
+    0.5958083832335329,
+    0.036,
+    0.029940119760479042
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [
+    "playing"
+   ],
+   "bounding_box": [
+    0.306,
+    0.5269461077844312,
+    0.082,
+    0.2754491017964072
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.998,
+    0.5958083832335329
+   ]
+  },
+  {
+   "label": "net",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.284,
+    0.6197604790419161,
+    0.712,
+    0.23353293413173654
+   ]
+  },
+  {
+   "label": "tennis ball",
+   "attributes": [],
+   "bounding_box": [
+    0.242,
+    0.31137724550898205,
+    0.008,
+    0.011976047904191617
+   ]
+  },
+  {
+   "label": "player",
+   "attributes": [
+    "waiting"
+   ],
+   "bounding_box": [
+    0.722,
+    0.562874251497006,
+    0.038,
+    0.15269461077844312
+   ]
+  },
+  {
+   "label": "racket",
+   "attributes": [],
+   "bounding_box": [
+    0.372,
+    0.5958083832335329,
+    0.064,
+    0.06287425149700598
+   ]
+  },
+  {
+   "label": "hands",
+   "attributes": [],
+   "bounding_box": [
+    0.36,
+    0.6287425149700598,
+    0.034,
+    0.03592814371257485
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "racket"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "fence",
+   "relation": "in front of",
+   "object": "trees"
+  },
+  {
+   "subject": "pole",
+   "relation": "near",
+   "object": "bags"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "cap"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "shoes"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "bags"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "hands"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "net"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "racket"
+  },
+  {
+   "subject": "shoes",
+   "relation": "of",
+   "object": "woman"
+  },
+  {
+   "subject": "shoes",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "cap",
+   "relation": "on",
+   "object": "head"
+  },
+  {
+   "subject": "bags",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "bags",
+   "relation": "next to",
+   "object": "pole"
+  },
+  {
+   "subject": "bags",
+   "relation": "by",
+   "object": "net"
+  },
+  {
+   "subject": "bags",
+   "relation": "to the left of",
+   "object": "net"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the left of",
+   "object": "net"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "hands"
+  },
+  {
+   "subject": "player",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "racket"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "player",
+   "relation": "holding",
+   "object": "racket"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "player",
+   "relation": "serving",
+   "object": "tennis ball"
+  },
+  {
+   "subject": "racket",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "racket",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "woman",
+   "relation": "wearing",
+   "object": "shoes"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "woman",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "woman",
+   "relation": "holding",
+   "object": "racket"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "racket"
+  },
+  {
+   "subject": "trees",
+   "relation": "behind",
+   "object": "fence"
+  },
+  {
+   "subject": "net",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "net",
+   "relation": "to the right of",
+   "object": "cap"
+  },
+  {
+   "subject": "net",
+   "relation": "to the right of",
+   "object": "bags"
+  },
+  {
+   "subject": "player",
+   "relation": "wearing",
+   "object": "cap"
+  },
+  {
+   "subject": "racket",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "racket",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "hands",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "hands",
+   "relation": "to the right of",
+   "object": "player"
+  }
+ ],
+ "counts": {
+  "objects": 20,
+  "relations": 46
+ }
+}

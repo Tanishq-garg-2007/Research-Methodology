@@ -1,0 +1,23 @@
+{
+ "image_number": 33,
+ "gqa_image_id": "2363277",
+ "filepath": "data/data_0/2363277.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "zebra",
+  "head"
+ ],
+ "query": {
+  "question": "What is to the right of the legs?",
+  "answer": "zebra",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "image_number": 10,
+ "gqa_image_id": "2411163",
+ "filepath": "data/data_0/2411163.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "trees",
+  "skin"
+ ],
+ "query": {
+  "question": "What is to the right of the drawing?",
+  "answer": "trees",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "drawing"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

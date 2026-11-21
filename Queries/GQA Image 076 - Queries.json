@@ -1,0 +1,23 @@
+{
+ "image_number": 76,
+ "gqa_image_id": "2330220",
+ "filepath": "data/data_2/2330220.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "hair",
+  "man"
+ ],
+ "query": {
+  "question": "What is to the left of the ear?",
+  "answer": "hair",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

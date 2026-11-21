@@ -1,0 +1,534 @@
+{
+ "image_number": 95,
+ "gqa_image_id": "2411384",
+ "filepath": "data/data_2/2411384.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "butter",
+   "attributes": [],
+   "bounding_box": [
+    0.568,
+    0.6,
+    0.16266666666666665,
+    0.058
+   ]
+  },
+  {
+   "label": "dish",
+   "attributes": [],
+   "bounding_box": [
+    0.5386666666666666,
+    0.556,
+    0.22133333333333333,
+    0.126
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.184,
+    0.354,
+    0.13333333333333333,
+    0.098
+   ]
+  },
+  {
+   "label": "drink",
+   "attributes": [],
+   "bounding_box": [
+    0.8186666666666667,
+    0.464,
+    0.17866666666666667,
+    0.152
+   ]
+  },
+  {
+   "label": "mug",
+   "attributes": [],
+   "bounding_box": [
+    0.928,
+    0.106,
+    0.04,
+    0.034
+   ]
+  },
+  {
+   "label": "cup",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.872,
+    0.1,
+    0.032,
+    0.022
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.18666666666666668,
+    0.098,
+    0.3466666666666667,
+    0.236
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [],
+   "bounding_box": [
+    0.7146666666666667,
+    0.082,
+    0.2826666666666667,
+    0.084
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.64,
+    0.072,
+    0.2986666666666667,
+    0.238
+   ]
+  },
+  {
+   "label": "teddy bear",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.06933333333333333,
+    0.098,
+    0.696,
+    0.492
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.824,
+    0.042,
+    0.13066666666666665,
+    0.082
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.808,
+    0.29,
+    0.192,
+    0.336
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.0,
+    0.296,
+    1.0,
+    0.704
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "dark colored"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.672,
+    0.378
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.104,
+    0.502,
+    0.896,
+    0.498
+   ]
+  },
+  {
+   "label": "floor",
+   "attributes": [
+    "dark brown"
+   ],
+   "bounding_box": [
+    0.664,
+    0.188,
+    0.2,
+    0.174
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.39466666666666667,
+    0.242,
+    0.050666666666666665,
+    0.038
+   ]
+  },
+  {
+   "label": "pie",
+   "attributes": [],
+   "bounding_box": [
+    0.2826666666666667,
+    0.674,
+    0.5706666666666667,
+    0.256
+   ]
+  },
+  {
+   "label": "spoon",
+   "attributes": [],
+   "bounding_box": [
+    0.272,
+    0.348,
+    0.352,
+    0.242
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "butter",
+   "relation": "on",
+   "object": "plate"
+  },
+  {
+   "subject": "butter",
+   "relation": "near",
+   "object": "pie"
+  },
+  {
+   "subject": "dish",
+   "relation": "of",
+   "object": "butter"
+  },
+  {
+   "subject": "dish",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "spoon"
+  },
+  {
+   "subject": "hand",
+   "relation": "of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "drink",
+   "relation": "to the right of",
+   "object": "spoon"
+  },
+  {
+   "subject": "drink",
+   "relation": "in",
+   "object": "glass"
+  },
+  {
+   "subject": "drink",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "mug",
+   "relation": "to the right of",
+   "object": "cup"
+  },
+  {
+   "subject": "mug",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "mug",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "mug",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "cup",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "cup",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "cup",
+   "relation": "to the left of",
+   "object": "mug"
+  },
+  {
+   "subject": "head",
+   "relation": "of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "floor"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "table",
+   "relation": "in front of",
+   "object": "table"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "mug"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "on",
+   "object": "table"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "holding",
+   "object": "spoon"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "drink"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "mug"
+  },
+  {
+   "subject": "teddy bear",
+   "relation": "to the left of",
+   "object": "cup"
+  },
+  {
+   "subject": "person",
+   "relation": "sitting at",
+   "object": "table"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "dish"
+  },
+  {
+   "subject": "glass",
+   "relation": "of",
+   "object": "glass"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "spoon"
+  },
+  {
+   "subject": "table",
+   "relation": "behind",
+   "object": "table"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "cup"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "floor"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "floor",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "floor",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "floor",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "nose",
+   "relation": "of",
+   "object": "teddy bear"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "floor"
+  },
+  {
+   "subject": "pie",
+   "relation": "next to",
+   "object": "butter"
+  },
+  {
+   "subject": "pie",
+   "relation": "on",
+   "object": "plate"
+  },
+  {
+   "subject": "spoon",
+   "relation": "of",
+   "object": "spoon"
+  },
+  {
+   "subject": "spoon",
+   "relation": "on the side of",
+   "object": "plate"
+  },
+  {
+   "subject": "spoon",
+   "relation": "to the left of",
+   "object": "drink"
+  },
+  {
+   "subject": "spoon",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "spoon",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "spoon",
+   "relation": "on",
+   "object": "plate"
+  }
+ ],
+ "counts": {
+  "objects": 19,
+  "relations": 63
+ }
+}

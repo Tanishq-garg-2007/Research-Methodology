@@ -1,0 +1,23 @@
+{
+ "image_number": 71,
+ "gqa_image_id": "2349640",
+ "filepath": "data/data_1/2349640.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "pole",
+  "player"
+ ],
+ "query": {
+  "question": "What is to the left of the net?",
+  "answer": "pole",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "net"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

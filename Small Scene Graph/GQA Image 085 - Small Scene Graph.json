@@ -1,0 +1,341 @@
+{
+ "image_number": 85,
+ "gqa_image_id": "2357317",
+ "filepath": "data/data_2/2357317.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "bear",
+  "shirts"
+ ],
+ "core_nodes": [
+  "bear",
+  "platform",
+  "shirts"
+ ],
+ "nodes": [
+  "bear",
+  "coat",
+  "cross",
+  "face",
+  "platform",
+  "shirts"
+ ],
+ "objects": [
+  {
+   "label": "shirts",
+   "attributes": [],
+   "bounding_box": [
+    0.33,
+    0.48493975903614456,
+    0.11,
+    0.10843373493975904
+   ]
+  },
+  {
+   "label": "shirts",
+   "attributes": [],
+   "bounding_box": [
+    0.49,
+    0.4819277108433735,
+    0.128,
+    0.12951807228915663
+   ]
+  },
+  {
+   "label": "shirts",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.832,
+    0.6716867469879518,
+    0.158,
+    0.09337349397590361
+   ]
+  },
+  {
+   "label": "cross",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.818,
+    0.5060240963855421,
+    0.034,
+    0.05421686746987952
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.472,
+    0.3493975903614458,
+    0.16,
+    0.35240963855421686
+   ]
+  },
+  {
+   "label": "coat",
+   "attributes": [],
+   "bounding_box": [
+    0.246,
+    0.6355421686746988,
+    0.144,
+    0.2891566265060241
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.238,
+    0.5210843373493976,
+    0.184,
+    0.42771084337349397
+   ]
+  },
+  {
+   "label": "face",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.192,
+    0.4307228915662651,
+    0.088,
+    0.09939759036144578
+   ]
+  },
+  {
+   "label": "face",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.136,
+    0.5753012048192772,
+    0.108,
+    0.09939759036144578
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [],
+   "bounding_box": [
+    0.084,
+    0.4939759036144578,
+    0.202,
+    0.39759036144578314
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.568,
+    0.46987951807228917,
+    0.248,
+    0.39457831325301207
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [],
+   "bounding_box": [
+    0.824,
+    0.5662650602409639,
+    0.17,
+    0.29819277108433734
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [],
+   "bounding_box": [
+    0.324,
+    0.3493975903614458,
+    0.128,
+    0.35240963855421686
+   ]
+  },
+  {
+   "label": "platform",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.8072289156626506,
+    1.0,
+    0.1927710843373494
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [],
+   "bounding_box": [
+    0.782,
+    0.3644578313253012,
+    0.158,
+    0.29518072289156627
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [],
+   "bounding_box": [
+    0.152,
+    0.3674698795180723,
+    0.152,
+    0.1897590361445783
+   ]
+  },
+  {
+   "label": "face",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.344,
+    0.3855421686746988,
+    0.082,
+    0.09337349397590361
+   ]
+  },
+  {
+   "label": "face",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.514,
+    0.4066265060240964,
+    0.084,
+    0.08433734939759036
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [],
+   "bounding_box": [
+    0.396,
+    0.5813253012048193,
+    0.196,
+    0.3042168674698795
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [],
+   "bounding_box": [
+    0.656,
+    0.3493975903614458,
+    0.144,
+    0.3102409638554217
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "shirts",
+   "relation": "to the right of",
+   "object": "bear"
+  },
+  {
+   "subject": "shirts",
+   "relation": "to the left of",
+   "object": "bear"
+  },
+  {
+   "subject": "shirts",
+   "relation": "to the left of",
+   "object": "cross"
+  },
+  {
+   "subject": "cross",
+   "relation": "to the right of",
+   "object": "bear"
+  },
+  {
+   "subject": "cross",
+   "relation": "to the right of",
+   "object": "shirts"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the right of",
+   "object": "shirts"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the left of",
+   "object": "cross"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the right of",
+   "object": "face"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "bear"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "bear"
+  },
+  {
+   "subject": "coat",
+   "relation": "on",
+   "object": "bear"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the left of",
+   "object": "shirts"
+  },
+  {
+   "subject": "face",
+   "relation": "to the left of",
+   "object": "bear"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "bear",
+   "relation": "on",
+   "object": "platform"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the left of",
+   "object": "face"
+  },
+  {
+   "subject": "face",
+   "relation": "to the right of",
+   "object": "bear"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 20,
+  "relations": 18
+ }
+}

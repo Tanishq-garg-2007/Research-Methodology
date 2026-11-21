@@ -1,0 +1,170 @@
+{
+ "image_number": 61,
+ "gqa_image_id": "2319535",
+ "filepath": "data/data_1/2319535.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "wine",
+  "hand"
+ ],
+ "core_nodes": [
+  "glass",
+  "hand",
+  "wine"
+ ],
+ "nodes": [
+  "arm",
+  "bottle",
+  "door",
+  "glass",
+  "hand",
+  "wine"
+ ],
+ "objects": [
+  {
+   "label": "door",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.55,
+    0.296,
+    0.418,
+    0.638
+   ]
+  },
+  {
+   "label": "arm",
+   "attributes": [],
+   "bounding_box": [
+    0.552,
+    0.7,
+    0.278,
+    0.3
+   ]
+  },
+  {
+   "label": "bottle",
+   "attributes": [],
+   "bounding_box": [
+    0.898,
+    0.63,
+    0.098,
+    0.334
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.164,
+    0.2,
+    0.178,
+    0.122
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.032,
+    0.15,
+    0.214,
+    0.18
+   ]
+  },
+  {
+   "label": "wine",
+   "attributes": [],
+   "bounding_box": [
+    0.236,
+    0.284,
+    0.094,
+    0.034
+   ]
+  },
+  {
+   "label": "wine",
+   "attributes": [],
+   "bounding_box": [
+    0.88,
+    0.87,
+    0.092,
+    0.07
+   ]
+  },
+  {
+   "label": "wine",
+   "attributes": [],
+   "bounding_box": [
+    0.8,
+    0.626,
+    0.09,
+    0.368
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "wine"
+  },
+  {
+   "subject": "bottle",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "wine"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "wine",
+   "relation": "in",
+   "object": "glass"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "bottle"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 8,
+  "relations": 11
+ }
+}

@@ -1,0 +1,179 @@
+{
+ "image_number": 73,
+ "gqa_image_id": "2362073",
+ "filepath": "data/data_2/2362073.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.003003003003003003,
+    0.998,
+    0.5525525525525525
+   ]
+  },
+  {
+   "label": "traffic sign",
+   "attributes": [
+    "yellow"
+   ],
+   "bounding_box": [
+    0.318,
+    0.23423423423423423,
+    0.03,
+    0.03903903903903904
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [],
+   "bounding_box": [
+    0.026,
+    0.23723723723723725,
+    0.046,
+    0.057057057057057055
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.54,
+    0.1831831831831832,
+    0.134,
+    0.1111111111111111
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.054,
+    0.25825825825825827,
+    0.124,
+    0.14114114114114115
+   ]
+  },
+  {
+   "label": "road",
+   "attributes": [],
+   "bounding_box": [
+    0.008,
+    0.23723723723723725,
+    0.984,
+    0.7447447447447447
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [
+    "walking",
+    "black"
+   ],
+   "bounding_box": [
+    0.624,
+    0.3963963963963964,
+    0.216,
+    0.2552552552552553
+   ]
+  },
+  {
+   "label": "cars",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.22522522522522523,
+    0.326,
+    0.7747747747747747
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "trees",
+   "relation": "on the side of",
+   "object": "road"
+  },
+  {
+   "subject": "traffic sign",
+   "relation": "by",
+   "object": "road"
+  },
+  {
+   "subject": "traffic sign",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "traffic sign",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "traffic sign",
+   "relation": "to the right of",
+   "object": "cars"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "car",
+   "relation": "on",
+   "object": "road"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "traffic sign"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "traffic sign"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "cars"
+  },
+  {
+   "subject": "sign",
+   "relation": "on the side of",
+   "object": "road"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "bear",
+   "relation": "on",
+   "object": "road"
+  },
+  {
+   "subject": "cars",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "cars",
+   "relation": "to the left of",
+   "object": "traffic sign"
+  }
+ ],
+ "counts": {
+  "objects": 8,
+  "relations": 15
+ }
+}

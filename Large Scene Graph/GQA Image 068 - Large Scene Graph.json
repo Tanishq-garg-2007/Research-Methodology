@@ -1,0 +1,674 @@
+{
+ "image_number": 68,
+ "gqa_image_id": "2360586",
+ "filepath": "data/data_1/2360586.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "sign",
+   "attributes": [
+    "yellow"
+   ],
+   "bounding_box": [
+    0.184,
+    0.6328358208955224,
+    0.046,
+    0.08656716417910448
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.192,
+    0.16417910447761194,
+    0.026,
+    0.10746268656716418
+   ]
+  },
+  {
+   "label": "jockey",
+   "attributes": [],
+   "bounding_box": [
+    0.196,
+    0.44776119402985076,
+    0.11,
+    0.23582089552238805
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [],
+   "bounding_box": [
+    0.3,
+    0.191044776119403,
+    0.008,
+    0.07462686567164178
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.294,
+    0.1701492537313433,
+    0.024,
+    0.10746268656716418
+   ]
+  },
+  {
+   "label": "jockey",
+   "attributes": [],
+   "bounding_box": [
+    0.412,
+    0.42686567164179107,
+    0.084,
+    0.1253731343283582
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.75,
+    0.4417910447761194,
+    0.076,
+    0.10149253731343283
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [],
+   "bounding_box": [
+    0.2,
+    0.573134328358209,
+    0.084,
+    0.05970149253731343
+   ]
+  },
+  {
+   "label": "hat",
+   "attributes": [
+    "pink"
+   ],
+   "bounding_box": [
+    0.372,
+    0.46567164179104475,
+    0.04,
+    0.04477611940298507
+   ]
+  },
+  {
+   "label": "jockey",
+   "attributes": [],
+   "bounding_box": [
+    0.28,
+    0.46567164179104475,
+    0.132,
+    0.10746268656716418
+   ]
+  },
+  {
+   "label": "jockey",
+   "attributes": [],
+   "bounding_box": [
+    0.75,
+    0.417910447761194,
+    0.102,
+    0.14029850746268657
+   ]
+  },
+  {
+   "label": "gate",
+   "attributes": [],
+   "bounding_box": [
+    0.234,
+    0.32238805970149254,
+    0.038,
+    0.12835820895522387
+   ]
+  },
+  {
+   "label": "gate",
+   "attributes": [],
+   "bounding_box": [
+    0.082,
+    0.3044776119402985,
+    0.04,
+    0.33432835820895523
+   ]
+  },
+  {
+   "label": "helmet",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.454,
+    0.42686567164179107,
+    0.042,
+    0.04477611940298507
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [],
+   "bounding_box": [
+    0.574,
+    0.5343283582089552,
+    0.078,
+    0.23283582089552238
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.46567164179104475,
+    1.0,
+    0.5313432835820896
+   ]
+  },
+  {
+   "label": "hat",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.394,
+    0.44477611940298506,
+    0.04,
+    0.03880597014925373
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "pink"
+   ],
+   "bounding_box": [
+    0.306,
+    0.48955223880597015,
+    0.064,
+    0.05373134328358209
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [],
+   "bounding_box": [
+    0.25,
+    0.18208955223880596,
+    0.014,
+    0.08059701492537313
+   ]
+  },
+  {
+   "label": "helmet",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.814,
+    0.417910447761194,
+    0.038,
+    0.03582089552238806
+   ]
+  },
+  {
+   "label": "gate",
+   "attributes": [],
+   "bounding_box": [
+    0.504,
+    0.3373134328358209,
+    0.036,
+    0.1253731343283582
+   ]
+  },
+  {
+   "label": "helmet",
+   "attributes": [],
+   "bounding_box": [
+    0.234,
+    0.44776119402985076,
+    0.044,
+    0.03880597014925373
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.454,
+    0.42686567164179107,
+    0.042,
+    0.06865671641791045
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "wood",
+    "black"
+   ],
+   "bounding_box": [
+    0.196,
+    0.0,
+    0.17,
+    0.1701492537313433
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [],
+   "bounding_box": [
+    0.198,
+    0.1761194029850746,
+    0.012,
+    0.08059701492537313
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [],
+   "bounding_box": [
+    0.522,
+    0.2298507462686567,
+    0.006,
+    0.06865671641791045
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.064,
+    0.47761194029850745,
+    0.368,
+    0.41194029850746267
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.7611940298507462,
+    0.992,
+    0.23880597014925373
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [],
+   "bounding_box": [
+    0.48,
+    0.2208955223880597,
+    0.01,
+    0.06865671641791045
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.814,
+    0.417910447761194,
+    0.038,
+    0.0626865671641791
+   ]
+  },
+  {
+   "label": "boots",
+   "attributes": [],
+   "bounding_box": [
+    0.23,
+    0.5940298507462687,
+    0.028,
+    0.08358208955223881
+   ]
+  },
+  {
+   "label": "number",
+   "attributes": [],
+   "bounding_box": [
+    0.03,
+    0.15522388059701492,
+    0.02,
+    0.08358208955223881
+   ]
+  },
+  {
+   "label": "gate",
+   "attributes": [],
+   "bounding_box": [
+    0.03,
+    0.2955223880597015,
+    0.04,
+    0.34328358208955223
+   ]
+  },
+  {
+   "label": "gate",
+   "attributes": [],
+   "bounding_box": [
+    0.464,
+    0.3402985074626866,
+    0.018,
+    0.08059701492537313
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "sign",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "number"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the left of",
+   "object": "number"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the right of",
+   "object": "gate"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the left of",
+   "object": "hat"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "jockey",
+   "relation": "wearing",
+   "object": "pants"
+  },
+  {
+   "subject": "jockey",
+   "relation": "wearing",
+   "object": "boots"
+  },
+  {
+   "subject": "jockey",
+   "relation": "wearing",
+   "object": "helmet"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the left of",
+   "object": "jockey"
+  },
+  {
+   "subject": "number",
+   "relation": "to the right of",
+   "object": "number"
+  },
+  {
+   "subject": "number",
+   "relation": "to the right of",
+   "object": "sign"
+  },
+  {
+   "subject": "number",
+   "relation": "on",
+   "object": "sign"
+  },
+  {
+   "subject": "number",
+   "relation": "to the left of",
+   "object": "number"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "sign"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the right of",
+   "object": "jockey"
+  },
+  {
+   "subject": "jockey",
+   "relation": "wearing",
+   "object": "hat"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the right of",
+   "object": "horse"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the right of",
+   "object": "hat"
+  },
+  {
+   "subject": "jockey",
+   "relation": "to the right of",
+   "object": "helmet"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "gate"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the right of",
+   "object": "jockey"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the left of",
+   "object": "jockey"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "jockey",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "gate",
+   "relation": "to the right of",
+   "object": "gate"
+  },
+  {
+   "subject": "gate",
+   "relation": "below",
+   "object": "number"
+  },
+  {
+   "subject": "gate",
+   "relation": "to the left of",
+   "object": "gate"
+  },
+  {
+   "subject": "gate",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "gate",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "gate",
+   "relation": "to the left of",
+   "object": "jockey"
+  },
+  {
+   "subject": "gate",
+   "relation": "to the left of",
+   "object": "helmet"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the right of",
+   "object": "helmet"
+  },
+  {
+   "subject": "helmet",
+   "relation": "on",
+   "object": "head"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the left of",
+   "object": "gate"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the right of",
+   "object": "hat"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "horse"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the left of",
+   "object": "helmet"
+  },
+  {
+   "subject": "hat",
+   "relation": "to the right of",
+   "object": "helmet"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "gate"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "jockey"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "jockey"
+  },
+  {
+   "subject": "number",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "gate",
+   "relation": "to the right of",
+   "object": "helmet"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the left of",
+   "object": "helmet"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the right of",
+   "object": "gate"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the left of",
+   "object": "hat"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the left of",
+   "object": "jockey"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "hat"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "helmet"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "jockey"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the left of",
+   "object": "jockey"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "horse",
+   "relation": "in",
+   "object": "grass"
+  },
+  {
+   "subject": "number",
+   "relation": "above",
+   "object": "gate"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "shirt"
+  }
+ ],
+ "counts": {
+  "objects": 34,
+  "relations": 60
+ }
+}

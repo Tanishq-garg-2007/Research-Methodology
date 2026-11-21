@@ -1,0 +1,23 @@
+{
+ "image_number": 68,
+ "gqa_image_id": "2360586",
+ "filepath": "data/data_1/2360586.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "jockey",
+  "helmet"
+ ],
+ "query": {
+  "question": "What is on the head?",
+  "answer": "helmet",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "head"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

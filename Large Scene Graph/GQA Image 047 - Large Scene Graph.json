@@ -1,0 +1,499 @@
+{
+ "image_number": 47,
+ "gqa_image_id": "2364331",
+ "filepath": "data/data_1/2364331.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "wine",
+   "attributes": [],
+   "bounding_box": [
+    0.312,
+    0.284,
+    0.30133333333333334,
+    0.626
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.496,
+    0.0,
+    0.42133333333333334,
+    0.698
+   ]
+  },
+  {
+   "label": "tiles",
+   "attributes": [],
+   "bounding_box": [
+    0.9093333333333333,
+    0.594,
+    0.07733333333333334,
+    0.036
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [
+    "wood"
+   ],
+   "bounding_box": [
+    0.792,
+    0.34,
+    0.20266666666666666,
+    0.27
+   ]
+  },
+  {
+   "label": "bricks",
+   "attributes": [],
+   "bounding_box": [
+    0.008,
+    0.116,
+    0.04,
+    0.036
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [],
+   "bounding_box": [
+    0.7093333333333334,
+    0.654,
+    0.22666666666666666,
+    0.278
+   ]
+  },
+  {
+   "label": "bag",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.05333333333333334,
+    0.156,
+    0.18133333333333335,
+    0.2
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [
+    "empty"
+   ],
+   "bounding_box": [
+    0.056,
+    0.402,
+    0.248,
+    0.424
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.5653333333333334,
+    0.228,
+    0.26666666666666666,
+    0.468
+   ]
+  },
+  {
+   "label": "walls",
+   "attributes": [],
+   "bounding_box": [
+    0.0026666666666666666,
+    0.0,
+    0.058666666666666666,
+    0.276
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white",
+    "checkered"
+   ],
+   "bounding_box": [
+    0.488,
+    0.0,
+    0.44266666666666665,
+    0.23
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [
+    "empty"
+   ],
+   "bounding_box": [
+    0.0,
+    0.714,
+    0.08266666666666667,
+    0.278
+   ]
+  },
+  {
+   "label": "glass",
+   "attributes": [
+    "empty"
+   ],
+   "bounding_box": [
+    0.5813333333333334,
+    0.834,
+    0.32266666666666666,
+    0.158
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.304,
+    0.0,
+    0.22933333333333333,
+    0.286
+   ]
+  },
+  {
+   "label": "wine glass",
+   "attributes": [],
+   "bounding_box": [
+    0.2613333333333333,
+    0.054,
+    0.05333333333333334,
+    0.1
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.0,
+    0.604,
+    1.0,
+    0.382
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.050666666666666665,
+    0.002,
+    0.232,
+    0.574
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [],
+   "bounding_box": [
+    0.27466666666666667,
+    0.1,
+    0.021333333333333333,
+    0.01
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the right of",
+   "object": "glass"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "glass"
+  },
+  {
+   "subject": "wine",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "glass"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "person",
+   "relation": "wearing",
+   "object": "pants"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "bear"
+  },
+  {
+   "subject": "person",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "tiles"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the right of",
+   "object": "pants"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "pants"
+  },
+  {
+   "subject": "bricks",
+   "relation": "to the left of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "bricks",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "bag",
+   "relation": "to the right of",
+   "object": "walls"
+  },
+  {
+   "subject": "bag",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "glass",
+   "relation": "to the left of",
+   "object": "wine"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the left of",
+   "object": "tiles"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "wine"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "walls",
+   "relation": "to the left of",
+   "object": "bag"
+  },
+  {
+   "subject": "walls",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "walls",
+   "relation": "to the left of",
+   "object": "bear"
+  },
+  {
+   "subject": "walls",
+   "relation": "to the left of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "walls",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "bear"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "walls"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "bag"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the right of",
+   "object": "bricks"
+  },
+  {
+   "subject": "wine glass",
+   "relation": "to the right of",
+   "object": "walls"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "bricks"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "bear"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "wine glass"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "walls"
+  },
+  {
+   "subject": "man",
+   "relation": "holding",
+   "object": "wine glass"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the right of",
+   "object": "walls"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the left of",
+   "object": "person"
+  }
+ ],
+ "counts": {
+  "objects": 18,
+  "relations": 57
+ }
+}

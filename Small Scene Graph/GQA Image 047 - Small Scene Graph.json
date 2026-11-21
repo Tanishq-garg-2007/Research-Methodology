@@ -1,0 +1,185 @@
+{
+ "image_number": 47,
+ "gqa_image_id": "2364331",
+ "filepath": "data/data_1/2364331.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "shirt",
+  "person"
+ ],
+ "core_nodes": [
+  "person",
+  "shirt",
+  "tiles"
+ ],
+ "nodes": [
+  "bag",
+  "bear",
+  "man",
+  "person",
+  "shirt",
+  "tiles"
+ ],
+ "objects": [
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.496,
+    0.0,
+    0.42133333333333334,
+    0.698
+   ]
+  },
+  {
+   "label": "tiles",
+   "attributes": [],
+   "bounding_box": [
+    0.9093333333333333,
+    0.594,
+    0.07733333333333334,
+    0.036
+   ]
+  },
+  {
+   "label": "bag",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.05333333333333334,
+    0.156,
+    0.18133333333333335,
+    0.2
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white",
+    "checkered"
+   ],
+   "bounding_box": [
+    0.488,
+    0.0,
+    0.44266666666666665,
+    0.23
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.304,
+    0.0,
+    0.22933333333333333,
+    0.286
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.050666666666666665,
+    0.002,
+    0.232,
+    0.574
+   ]
+  },
+  {
+   "label": "bear",
+   "attributes": [],
+   "bounding_box": [
+    0.27466666666666667,
+    0.1,
+    0.021333333333333333,
+    0.01
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "bear"
+  },
+  {
+   "subject": "person",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "tiles"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "bag",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "bear"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "bag"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "bear",
+   "relation": "to the left of",
+   "object": "person"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 15
+ }
+}

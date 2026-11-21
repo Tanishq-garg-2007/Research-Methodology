@@ -1,0 +1,110 @@
+{
+ "image_number": 20,
+ "gqa_image_id": "4114",
+ "filepath": "data/data_0/4114.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "plant",
+  "chair"
+ ],
+ "core_nodes": [
+  "chair",
+  "plant",
+  "window"
+ ],
+ "nodes": [
+  "chair",
+  "lamp",
+  "plant",
+  "window"
+ ],
+ "objects": [
+  {
+   "label": "window",
+   "attributes": [
+    "white",
+    "vertical"
+   ],
+   "bounding_box": [
+    0.23,
+    0.22556390977443608,
+    0.595,
+    0.6390977443609023
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.53,
+    0.5827067669172933,
+    0.1675,
+    0.18045112781954886
+   ]
+  },
+  {
+   "label": "lamp",
+   "attributes": [
+    "on"
+   ],
+   "bounding_box": [
+    0.6975,
+    0.4849624060150376,
+    0.085,
+    0.13533834586466165
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [
+    "tall"
+   ],
+   "bounding_box": [
+    0.2775,
+    0.2593984962406015,
+    0.18,
+    0.518796992481203
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "chair",
+   "relation": "in",
+   "object": "window"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "lamp",
+   "relation": "to the right of",
+   "object": "plant"
+  },
+  {
+   "subject": "plant",
+   "relation": "in",
+   "object": "window"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "lamp"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the left of",
+   "object": "chair"
+  }
+ ],
+ "counts": {
+  "nodes": 4,
+  "objects": 4,
+  "relations": 6
+ }
+}

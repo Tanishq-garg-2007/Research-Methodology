@@ -1,0 +1,521 @@
+{
+ "image_number": 60,
+ "gqa_image_id": "2352486",
+ "filepath": "data/data_1/2352486.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "skier",
+   "attributes": [
+    "skiing"
+   ],
+   "bounding_box": [
+    0.952,
+    0.5173333333333333,
+    0.038,
+    0.07466666666666667
+   ]
+  },
+  {
+   "label": "skier",
+   "attributes": [],
+   "bounding_box": [
+    0.272,
+    0.7546666666666667,
+    0.018,
+    0.04
+   ]
+  },
+  {
+   "label": "skier",
+   "attributes": [],
+   "bounding_box": [
+    0.318,
+    0.7493333333333333,
+    0.016,
+    0.042666666666666665
+   ]
+  },
+  {
+   "label": "goggles",
+   "attributes": [],
+   "bounding_box": [
+    0.79,
+    0.4746666666666667,
+    0.03,
+    0.013333333333333334
+   ]
+  },
+  {
+   "label": "helmet",
+   "attributes": [],
+   "bounding_box": [
+    0.79,
+    0.448,
+    0.03,
+    0.032
+   ]
+  },
+  {
+   "label": "mountain",
+   "attributes": [
+    "snowy"
+   ],
+   "bounding_box": [
+    0.0,
+    0.36,
+    0.51,
+    0.25333333333333335
+   ]
+  },
+  {
+   "label": "skier",
+   "attributes": [],
+   "bounding_box": [
+    0.878,
+    0.52,
+    0.024,
+    0.042666666666666665
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.778,
+    0.5866666666666667,
+    0.052,
+    0.18933333333333333
+   ]
+  },
+  {
+   "label": "skier",
+   "attributes": [],
+   "bounding_box": [
+    0.096,
+    0.7813333333333333,
+    0.02,
+    0.04
+   ]
+  },
+  {
+   "label": "skier",
+   "attributes": [],
+   "bounding_box": [
+    0.194,
+    0.8266666666666667,
+    0.042,
+    0.050666666666666665
+   ]
+  },
+  {
+   "label": "skier",
+   "attributes": [],
+   "bounding_box": [
+    0.23,
+    0.7626666666666667,
+    0.02,
+    0.034666666666666665
+   ]
+  },
+  {
+   "label": "skier",
+   "attributes": [],
+   "bounding_box": [
+    0.138,
+    0.7653333333333333,
+    0.018,
+    0.042666666666666665
+   ]
+  },
+  {
+   "label": "skis",
+   "attributes": [],
+   "bounding_box": [
+    0.946,
+    0.5786666666666667,
+    0.034,
+    0.016
+   ]
+  },
+  {
+   "label": "skis",
+   "attributes": [],
+   "bounding_box": [
+    0.198,
+    0.856,
+    0.036,
+    0.021333333333333333
+   ]
+  },
+  {
+   "label": "skis",
+   "attributes": [],
+   "bounding_box": [
+    0.272,
+    0.7866666666666666,
+    0.026,
+    0.008
+   ]
+  },
+  {
+   "label": "skis",
+   "attributes": [],
+   "bounding_box": [
+    0.096,
+    0.8133333333333334,
+    0.024,
+    0.008
+   ]
+  },
+  {
+   "label": "snow",
+   "attributes": [
+    "bright",
+    "white"
+   ],
+   "bounding_box": [
+    0.002,
+    0.464,
+    0.998,
+    0.5333333333333333
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.758,
+    0.448,
+    0.086,
+    0.3253333333333333
+   ]
+  },
+  {
+   "label": "jacket",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.762,
+    0.49066666666666664,
+    0.078,
+    0.13066666666666665
+   ]
+  },
+  {
+   "label": "snowboard",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.772,
+    0.6933333333333334,
+    0.068,
+    0.12266666666666666
+   ]
+  },
+  {
+   "label": "mountain",
+   "attributes": [
+    "snowy"
+   ],
+   "bounding_box": [
+    0.538,
+    0.2853333333333333,
+    0.382,
+    0.20266666666666666
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [
+    "blue",
+    "clear",
+    "cloudy"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.996,
+    0.4106666666666667
+   ]
+  },
+  {
+   "label": "mountain",
+   "attributes": [
+    "snowy"
+   ],
+   "bounding_box": [
+    0.808,
+    0.34933333333333333,
+    0.19,
+    0.21866666666666668
+   ]
+  },
+  {
+   "label": "mask",
+   "attributes": [],
+   "bounding_box": [
+    0.79,
+    0.488,
+    0.018,
+    0.013333333333333334
+   ]
+  },
+  {
+   "label": "skis",
+   "attributes": [],
+   "bounding_box": [
+    0.314,
+    0.7813333333333333,
+    0.026,
+    0.013333333333333334
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "skier",
+   "relation": "next to",
+   "object": "mountain"
+  },
+  {
+   "subject": "skier",
+   "relation": "wearing",
+   "object": "skis"
+  },
+  {
+   "subject": "skier",
+   "relation": "near",
+   "object": "mountain"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the right of",
+   "object": "skier"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the right of",
+   "object": "jacket"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the left of",
+   "object": "skis"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the left of",
+   "object": "skier"
+  },
+  {
+   "subject": "skier",
+   "relation": "to the right of",
+   "object": "skis"
+  },
+  {
+   "subject": "goggles",
+   "relation": "to the left of",
+   "object": "mountain"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the left of",
+   "object": "mountain"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "mountain",
+   "relation": "covered in",
+   "object": "snow"
+  },
+  {
+   "subject": "mountain",
+   "relation": "behind",
+   "object": "man"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the left of",
+   "object": "mountain"
+  },
+  {
+   "subject": "skier",
+   "relation": "on top of",
+   "object": "skis"
+  },
+  {
+   "subject": "skis",
+   "relation": "to the right of",
+   "object": "jacket"
+  },
+  {
+   "subject": "skis",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "skis",
+   "relation": "to the right of",
+   "object": "skier"
+  },
+  {
+   "subject": "skis",
+   "relation": "to the left of",
+   "object": "skis"
+  },
+  {
+   "subject": "skis",
+   "relation": "to the left of",
+   "object": "skier"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "skier"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "pants"
+  },
+  {
+   "subject": "man",
+   "relation": "standing on",
+   "object": "snow"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "skis"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "jacket"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "mountain"
+  },
+  {
+   "subject": "man",
+   "relation": "standing on",
+   "object": "snowboard"
+  },
+  {
+   "subject": "man",
+   "relation": "riding on",
+   "object": "snowboard"
+  },
+  {
+   "subject": "man",
+   "relation": "above",
+   "object": "snowboard"
+  },
+  {
+   "subject": "man",
+   "relation": "in front of",
+   "object": "mountain"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "helmet"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "goggles"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "mask"
+  },
+  {
+   "subject": "man",
+   "relation": "on top of",
+   "object": "snowboard"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the left of",
+   "object": "skis"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the left of",
+   "object": "skier"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the left of",
+   "object": "mountain"
+  },
+  {
+   "subject": "snowboard",
+   "relation": "on top of",
+   "object": "snow"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the right of",
+   "object": "mountain"
+  },
+  {
+   "subject": "mountain",
+   "relation": "near",
+   "object": "skier"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the right of",
+   "object": "goggles"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the right of",
+   "object": "jacket"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the right of",
+   "object": "helmet"
+  },
+  {
+   "subject": "mountain",
+   "relation": "to the right of",
+   "object": "mask"
+  },
+  {
+   "subject": "mask",
+   "relation": "to the left of",
+   "object": "mountain"
+  },
+  {
+   "subject": "skis",
+   "relation": "to the right of",
+   "object": "skis"
+  }
+ ],
+ "counts": {
+  "objects": 25,
+  "relations": 47
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "image_number": 10,
+ "gqa_image_id": "2411163",
+ "filepath": "data/data_0/2411163.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "trees",
+  "skin"
+ ],
+ "core_nodes": [
+  "drawing",
+  "skin",
+  "trees"
+ ],
+ "nodes": [
+  "drawing",
+  "earphones",
+  "hair",
+  "shirt",
+  "skin",
+  "trees"
+ ],
+ "objects": [
+  {
+   "label": "shirt",
+   "attributes": [],
+   "bounding_box": [
+    0.2222222222222222,
+    0.116,
+    0.22822822822822822,
+    0.096
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [],
+   "bounding_box": [
+    0.5225225225225225,
+    0.038,
+    0.47147147147147145,
+    0.342
+   ]
+  },
+  {
+   "label": "drawing",
+   "attributes": [],
+   "bounding_box": [
+    0.3063063063063063,
+    0.168,
+    0.06006006006006006,
+    0.024
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "short"
+   ],
+   "bounding_box": [
+    0.2222222222222222,
+    0.11,
+    0.07207207207207207,
+    0.044
+   ]
+  },
+  {
+   "label": "skin",
+   "attributes": [
+    "light"
+   ],
+   "bounding_box": [
+    0.40540540540540543,
+    0.122,
+    0.14114114114114115,
+    0.044
+   ]
+  },
+  {
+   "label": "earphones",
+   "attributes": [],
+   "bounding_box": [
+    0.24624624624624625,
+    0.112,
+    0.08108108108108109,
+    0.06
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "skin"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "earphones"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "drawing"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "trees",
+   "relation": "to the right of",
+   "object": "skin"
+  },
+  {
+   "subject": "drawing",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "skin"
+  },
+  {
+   "subject": "skin",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "skin",
+   "relation": "to the left of",
+   "object": "trees"
+  },
+  {
+   "subject": "skin",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "skin",
+   "relation": "to the right of",
+   "object": "earphones"
+  },
+  {
+   "subject": "earphones",
+   "relation": "to the left of",
+   "object": "skin"
+  },
+  {
+   "subject": "earphones",
+   "relation": "to the left of",
+   "object": "trees"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 16
+ }
+}

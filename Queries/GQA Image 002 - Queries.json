@@ -1,0 +1,23 @@
+{
+ "image_number": 2,
+ "gqa_image_id": "2417523",
+ "filepath": "data/data_0/2417523.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "letter",
+  "propeller"
+ ],
+ "query": {
+  "question": "What is to the left of the windows?",
+  "answer": "propeller",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

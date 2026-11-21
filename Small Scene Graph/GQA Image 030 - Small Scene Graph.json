@@ -1,0 +1,297 @@
+{
+ "image_number": 30,
+ "gqa_image_id": "2361536",
+ "filepath": "data/data_0/2361536.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "cow",
+  "sand"
+ ],
+ "core_nodes": [
+  "cow",
+  "head",
+  "sand"
+ ],
+ "nodes": [
+  "boat",
+  "cow",
+  "head",
+  "horn",
+  "horns",
+  "sand"
+ ],
+ "objects": [
+  {
+   "label": "cow",
+   "attributes": [],
+   "bounding_box": [
+    0.024,
+    0.32266666666666666,
+    0.5,
+    0.29333333333333333
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.578,
+    0.25333333333333335,
+    0.084,
+    0.21066666666666667
+   ]
+  },
+  {
+   "label": "horns",
+   "attributes": [],
+   "bounding_box": [
+    0.578,
+    0.256,
+    0.082,
+    0.042666666666666665
+   ]
+  },
+  {
+   "label": "horn",
+   "attributes": [],
+   "bounding_box": [
+    0.578,
+    0.256,
+    0.032,
+    0.042666666666666665
+   ]
+  },
+  {
+   "label": "boat",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.762,
+    0.5306666666666666
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.998,
+    1.0
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.004,
+    0.328,
+    0.656,
+    0.6666666666666666
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.004,
+    0.0,
+    0.298,
+    0.12
+   ]
+  },
+  {
+   "label": "horn",
+   "attributes": [],
+   "bounding_box": [
+    0.642,
+    0.25866666666666666,
+    0.018,
+    0.034666666666666665
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.674,
+    0.010666666666666666,
+    0.322,
+    0.9813333333333333
+   ]
+  },
+  {
+   "label": "cow",
+   "attributes": [
+    "black",
+    "lying"
+   ],
+   "bounding_box": [
+    0.618,
+    0.20266666666666666,
+    0.14,
+    0.09333333333333334
+   ]
+  },
+  {
+   "label": "cow",
+   "attributes": [],
+   "bounding_box": [
+    0.524,
+    0.256,
+    0.298,
+    0.25066666666666665
+   ]
+  },
+  {
+   "label": "cow",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.738,
+    0.12266666666666666,
+    0.246,
+    0.232
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [
+    "light"
+   ],
+   "bounding_box": [
+    0.688,
+    0.5946666666666667,
+    0.26,
+    0.23733333333333334
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "cow",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "cow",
+   "relation": "to the left of",
+   "object": "sand"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "sand"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "cow"
+  },
+  {
+   "subject": "horns",
+   "relation": "to the left of",
+   "object": "sand"
+  },
+  {
+   "subject": "horns",
+   "relation": "to the left of",
+   "object": "cow"
+  },
+  {
+   "subject": "horn",
+   "relation": "to the left of",
+   "object": "sand"
+  },
+  {
+   "subject": "horn",
+   "relation": "to the left of",
+   "object": "cow"
+  },
+  {
+   "subject": "boat",
+   "relation": "to the left of",
+   "object": "cow"
+  },
+  {
+   "subject": "boat",
+   "relation": "to the left of",
+   "object": "sand"
+  },
+  {
+   "subject": "boat",
+   "relation": "near",
+   "object": "cow"
+  },
+  {
+   "subject": "sand",
+   "relation": "to the left of",
+   "object": "cow"
+  },
+  {
+   "subject": "sand",
+   "relation": "to the right of",
+   "object": "boat"
+  },
+  {
+   "subject": "sand",
+   "relation": "to the right of",
+   "object": "cow"
+  },
+  {
+   "subject": "sand",
+   "relation": "to the right of",
+   "object": "horn"
+  },
+  {
+   "subject": "sand",
+   "relation": "to the right of",
+   "object": "horns"
+  },
+  {
+   "subject": "sand",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "cow",
+   "relation": "to the right of",
+   "object": "horn"
+  },
+  {
+   "subject": "cow",
+   "relation": "next to",
+   "object": "boat"
+  },
+  {
+   "subject": "cow",
+   "relation": "to the right of",
+   "object": "sand"
+  },
+  {
+   "subject": "cow",
+   "relation": "lying in",
+   "object": "sand"
+  },
+  {
+   "subject": "cow",
+   "relation": "to the right of",
+   "object": "boat"
+  },
+  {
+   "subject": "cow",
+   "relation": "to the right of",
+   "object": "horns"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 14,
+  "relations": 23
+ }
+}

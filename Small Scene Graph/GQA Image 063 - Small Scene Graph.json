@@ -1,0 +1,170 @@
+{
+ "image_number": 63,
+ "gqa_image_id": "2362462",
+ "filepath": "data/data_1/2362462.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "leg",
+  "water"
+ ],
+ "core_nodes": [
+  "box",
+  "leg",
+  "water"
+ ],
+ "nodes": [
+  "box",
+  "coat",
+  "feet",
+  "jeans",
+  "leg",
+  "water"
+ ],
+ "objects": [
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.49,
+    0.4940119760479042,
+    0.054,
+    0.08083832335329341
+   ]
+  },
+  {
+   "label": "water",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.078,
+    0.47305389221556887,
+    0.17,
+    0.20958083832335328
+   ]
+  },
+  {
+   "label": "feet",
+   "attributes": [],
+   "bounding_box": [
+    0.536,
+    0.5359281437125748,
+    0.028,
+    0.05089820359281437
+   ]
+  },
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.45,
+    0.5179640718562875,
+    0.066,
+    0.0748502994011976
+   ]
+  },
+  {
+   "label": "jeans",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.452,
+    0.4940119760479042,
+    0.094,
+    0.10179640718562874
+   ]
+  },
+  {
+   "label": "coat",
+   "attributes": [
+    "blue",
+    "bright"
+   ],
+   "bounding_box": [
+    0.438,
+    0.4281437125748503,
+    0.068,
+    0.11077844311377245
+   ]
+  },
+  {
+   "label": "box",
+   "attributes": [],
+   "bounding_box": [
+    0.482,
+    0.5089820359281437,
+    0.106,
+    0.1497005988023952
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "feet"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "box"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "jeans"
+  },
+  {
+   "subject": "feet",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "box",
+   "relation": "to the right of",
+   "object": "water"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 12
+ }
+}

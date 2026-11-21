@@ -1,0 +1,23 @@
+{
+ "image_number": 91,
+ "gqa_image_id": "2387708",
+ "filepath": "data/data_2/2387708.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "cabin",
+  "mountain"
+ ],
+ "query": {
+  "question": "What is to the left of the ship?",
+  "answer": "mountain",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "ship"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

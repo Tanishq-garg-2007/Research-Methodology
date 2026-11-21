@@ -1,0 +1,158 @@
+{
+ "image_number": 72,
+ "gqa_image_id": "2394711",
+ "filepath": "data/data_1/2394711.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "person",
+  "woman"
+ ],
+ "core_nodes": [
+  "apron",
+  "person",
+  "woman"
+ ],
+ "nodes": [
+  "apron",
+  "bowl",
+  "hand",
+  "person",
+  "soup",
+  "woman"
+ ],
+ "objects": [
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.424,
+    0.029333333333333333,
+    0.362,
+    0.68
+   ]
+  },
+  {
+   "label": "soup",
+   "attributes": [],
+   "bounding_box": [
+    0.512,
+    0.624,
+    0.096,
+    0.13066666666666665
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [],
+   "bounding_box": [
+    0.052,
+    0.19733333333333333,
+    0.378,
+    0.5413333333333333
+   ]
+  },
+  {
+   "label": "apron",
+   "attributes": [],
+   "bounding_box": [
+    0.756,
+    0.21866666666666668,
+    0.172,
+    0.16
+   ]
+  },
+  {
+   "label": "bowl",
+   "attributes": [],
+   "bounding_box": [
+    0.384,
+    0.37333333333333335,
+    0.21,
+    0.17866666666666667
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.554,
+    0.43733333333333335,
+    0.102,
+    0.128
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "person",
+   "relation": "holding",
+   "object": "bowl"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "apron"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "soup",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "soup"
+  },
+  {
+   "subject": "woman",
+   "relation": "eating",
+   "object": "soup"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "bowl"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "apron",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "bowl",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "hand",
+   "relation": "of",
+   "object": "person"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "woman"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 13
+ }
+}

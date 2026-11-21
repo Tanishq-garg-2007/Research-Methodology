@@ -1,0 +1,23 @@
+{
+ "image_number": 38,
+ "gqa_image_id": "2407818",
+ "filepath": "data/data_1/2407818.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "player",
+  "umpire"
+ ],
+ "query": {
+  "question": "What is to the left of the bat?",
+  "answer": "player",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "bat"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

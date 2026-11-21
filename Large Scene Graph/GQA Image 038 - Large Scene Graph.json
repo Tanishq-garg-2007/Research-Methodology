@@ -1,0 +1,491 @@
+{
+ "image_number": 38,
+ "gqa_image_id": "2407818",
+ "filepath": "data/data_1/2407818.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "player",
+   "attributes": [
+    "batting"
+   ],
+   "bounding_box": [
+    0.764,
+    0.6186666666666667,
+    0.09,
+    0.2
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.792,
+    0.64,
+    0.06,
+    0.07733333333333334
+   ]
+  },
+  {
+   "label": "baseball",
+   "attributes": [
+    "white",
+    "flying"
+   ],
+   "bounding_box": [
+    0.602,
+    0.336,
+    0.014,
+    0.021333333333333333
+   ]
+  },
+  {
+   "label": "umpire",
+   "attributes": [
+    "crouched"
+   ],
+   "bounding_box": [
+    0.852,
+    0.6746666666666666,
+    0.108,
+    0.192
+   ]
+  },
+  {
+   "label": "catcher",
+   "attributes": [],
+   "bounding_box": [
+    0.806,
+    0.704,
+    0.116,
+    0.144
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.094,
+    0.47733333333333333,
+    0.088,
+    0.12266666666666666
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.13,
+    0.49333333333333335,
+    0.04,
+    0.058666666666666666
+   ]
+  },
+  {
+   "label": "helmet",
+   "attributes": [
+    "dark",
+    "plastic"
+   ],
+   "bounding_box": [
+    0.798,
+    0.6213333333333333,
+    0.024,
+    0.029333333333333333
+   ]
+  },
+  {
+   "label": "bat",
+   "attributes": [],
+   "bounding_box": [
+    0.834,
+    0.6,
+    0.072,
+    0.048
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.872,
+    0.712,
+    0.076,
+    0.06933333333333333
+   ]
+  },
+  {
+   "label": "net",
+   "attributes": [],
+   "bounding_box": [
+    0.624,
+    0.0,
+    0.372,
+    1.0
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.104,
+    0.504,
+    0.05,
+    0.088
+   ]
+  },
+  {
+   "label": "player",
+   "attributes": [],
+   "bounding_box": [
+    0.48,
+    0.25066666666666665,
+    0.034,
+    0.064
+   ]
+  },
+  {
+   "label": "field",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.256,
+    1.0,
+    0.2
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.08533333333333333,
+    0.254,
+    0.12266666666666666
+   ]
+  },
+  {
+   "label": "people",
+   "attributes": [],
+   "bounding_box": [
+    0.644,
+    0.02666666666666667,
+    0.022,
+    0.034666666666666665
+   ]
+  },
+  {
+   "label": "field",
+   "attributes": [
+    "green",
+    "grassy",
+    "manicured"
+   ],
+   "bounding_box": [
+    0.0,
+    0.272,
+    0.998,
+    0.7253333333333334
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.832,
+    0.728,
+    0.072,
+    0.06133333333333333
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.224,
+    0.3413333333333333,
+    0.052,
+    0.08
+   ]
+  },
+  {
+   "label": "player",
+   "attributes": [],
+   "bounding_box": [
+    0.81,
+    0.37866666666666665,
+    0.062,
+    0.09066666666666667
+   ]
+  },
+  {
+   "label": "helmet",
+   "attributes": [],
+   "bounding_box": [
+    0.88,
+    0.6746666666666666,
+    0.03,
+    0.04
+   ]
+  },
+  {
+   "label": "mound",
+   "attributes": [
+    "raised"
+   ],
+   "bounding_box": [
+    0.0,
+    0.5546666666666666,
+    0.284,
+    0.06933333333333333
+   ]
+  },
+  {
+   "label": "home plate",
+   "attributes": [],
+   "bounding_box": [
+    0.714,
+    0.8,
+    0.05,
+    0.021333333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "player",
+   "relation": "above",
+   "object": "home plate"
+  },
+  {
+   "subject": "player",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "player",
+   "relation": "in front of",
+   "object": "catcher"
+  },
+  {
+   "subject": "player",
+   "relation": "in front of",
+   "object": "umpire"
+  },
+  {
+   "subject": "player",
+   "relation": "to the right of",
+   "object": "home plate"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "helmet"
+  },
+  {
+   "subject": "player",
+   "relation": "swinging",
+   "object": "bat"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "bat"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "umpire"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "helmet"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "umpire"
+  },
+  {
+   "subject": "baseball",
+   "relation": "to the left of",
+   "object": "net"
+  },
+  {
+   "subject": "umpire",
+   "relation": "behind",
+   "object": "player"
+  },
+  {
+   "subject": "umpire",
+   "relation": "in front of",
+   "object": "net"
+  },
+  {
+   "subject": "umpire",
+   "relation": "behind",
+   "object": "catcher"
+  },
+  {
+   "subject": "umpire",
+   "relation": "to the right of",
+   "object": "home plate"
+  },
+  {
+   "subject": "umpire",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "umpire",
+   "relation": "wearing",
+   "object": "helmet"
+  },
+  {
+   "subject": "umpire",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "catcher",
+   "relation": "behind",
+   "object": "player"
+  },
+  {
+   "subject": "catcher",
+   "relation": "to the right of",
+   "object": "home plate"
+  },
+  {
+   "subject": "catcher",
+   "relation": "in front of",
+   "object": "umpire"
+  },
+  {
+   "subject": "man",
+   "relation": "throwing",
+   "object": "baseball"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the left of",
+   "object": "bat"
+  },
+  {
+   "subject": "bat",
+   "relation": "to the right of",
+   "object": "helmet"
+  },
+  {
+   "subject": "bat",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "net",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "net",
+   "relation": "to the right of",
+   "object": "baseball"
+  },
+  {
+   "subject": "net",
+   "relation": "behind",
+   "object": "umpire"
+  },
+  {
+   "subject": "player",
+   "relation": "to the left of",
+   "object": "net"
+  },
+  {
+   "subject": "player",
+   "relation": "in",
+   "object": "field"
+  },
+  {
+   "subject": "field",
+   "relation": "below",
+   "object": "person"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "person",
+   "relation": "on",
+   "object": "field"
+  },
+  {
+   "subject": "player",
+   "relation": "waiting for",
+   "object": "player"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the right of",
+   "object": "player"
+  },
+  {
+   "subject": "helmet",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "home plate",
+   "relation": "to the left of",
+   "object": "catcher"
+  },
+  {
+   "subject": "home plate",
+   "relation": "to the left of",
+   "object": "umpire"
+  },
+  {
+   "subject": "home plate",
+   "relation": "to the left of",
+   "object": "player"
+  }
+ ],
+ "counts": {
+  "objects": 23,
+  "relations": 44
+ }
+}

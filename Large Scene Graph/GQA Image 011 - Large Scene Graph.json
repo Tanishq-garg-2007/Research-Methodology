@@ -1,0 +1,239 @@
+{
+ "image_number": 11,
+ "gqa_image_id": "2371002",
+ "filepath": "data/data_0/2371002.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "floor",
+   "attributes": [
+    "gray",
+    "concrete",
+    "plain"
+   ],
+   "bounding_box": [
+    0.5706666666666667,
+    0.816,
+    0.328,
+    0.18
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "concrete"
+   ],
+   "bounding_box": [
+    0.0,
+    0.002,
+    0.22666666666666666,
+    0.656
+   ]
+  },
+  {
+   "label": "doorway",
+   "attributes": [],
+   "bounding_box": [
+    0.568,
+    0.0,
+    0.432,
+    0.996
+   ]
+  },
+  {
+   "label": "window frame",
+   "attributes": [
+    "gray",
+    "metal"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.058666666666666666,
+    0.292
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.10933333333333334,
+    0.308
+   ]
+  },
+  {
+   "label": "sink",
+   "attributes": [
+    "white",
+    "porcelain"
+   ],
+   "bounding_box": [
+    0.0,
+    0.62,
+    0.17866666666666667,
+    0.116
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.632,
+    0.0,
+    0.36533333333333334,
+    0.814
+   ]
+  },
+  {
+   "label": "room",
+   "attributes": [],
+   "bounding_box": [
+    0.5013333333333333,
+    0.0,
+    0.49866666666666665,
+    0.996
+   ]
+  },
+  {
+   "label": "toilet",
+   "attributes": [
+    "dirty"
+   ],
+   "bounding_box": [
+    0.5813333333333334,
+    0.624,
+    0.2,
+    0.32
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "concrete",
+    "tan",
+    "bathroom"
+   ],
+   "bounding_box": [
+    0.2,
+    0.0,
+    0.3253333333333333,
+    0.614
+   ]
+  },
+  {
+   "label": "faucet",
+   "attributes": [],
+   "bounding_box": [
+    0.09066666666666667,
+    0.604,
+    0.056,
+    0.054
+   ]
+  },
+  {
+   "label": "drain",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.764,
+    0.08,
+    0.128
+   ]
+  },
+  {
+   "label": "bathroom",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.9973333333333333,
+    0.996
+   ]
+  },
+  {
+   "label": "seat",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.5973333333333334,
+    0.62,
+    0.029333333333333333,
+    0.108
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "doorway",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "window frame",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "seat"
+  },
+  {
+   "subject": "room",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "window frame"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "doorway"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "room"
+  },
+  {
+   "subject": "seat",
+   "relation": "to the left of",
+   "object": "wall"
+  }
+ ],
+ "counts": {
+  "objects": 14,
+  "relations": 12
+ }
+}

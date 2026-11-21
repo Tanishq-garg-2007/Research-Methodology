@@ -1,0 +1,611 @@
+{
+ "image_number": 36,
+ "gqa_image_id": "2404923",
+ "filepath": "data/data_0/2404923.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.708,
+    0.35735735735735735,
+    0.026,
+    0.10510510510510511
+   ]
+  },
+  {
+   "label": "horns",
+   "attributes": [
+    "small"
+   ],
+   "bounding_box": [
+    0.356,
+    0.1831831831831832,
+    0.04,
+    0.06606606606606606
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.462,
+    0.5405405405405406,
+    0.03,
+    0.05105105105105105
+   ]
+  },
+  {
+   "label": "plant",
+   "attributes": [
+    "dark"
+   ],
+   "bounding_box": [
+    0.766,
+    0.8228228228228228,
+    0.194,
+    0.06006006006006006
+   ]
+  },
+  {
+   "label": "dirt",
+   "attributes": [
+    "tan"
+   ],
+   "bounding_box": [
+    0.562,
+    0.6126126126126126,
+    0.198,
+    0.15615615615615616
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.0,
+    0.003003003003003003,
+    1.0,
+    0.11711711711711711
+   ]
+  },
+  {
+   "label": "boat",
+   "attributes": [],
+   "bounding_box": [
+    0.634,
+    0.17117117117117117,
+    0.042,
+    0.012012012012012012
+   ]
+  },
+  {
+   "label": "eyes",
+   "attributes": [
+    "open"
+   ],
+   "bounding_box": [
+    0.356,
+    0.36036036036036034,
+    0.038,
+    0.03303303303303303
+   ]
+  },
+  {
+   "label": "shorts",
+   "attributes": [
+    "orange"
+   ],
+   "bounding_box": [
+    0.712,
+    0.4084084084084084,
+    0.02,
+    0.024024024024024024
+   ]
+  },
+  {
+   "label": "animal",
+   "attributes": [
+    "tan",
+    "lying"
+   ],
+   "bounding_box": [
+    0.104,
+    0.17417417417417416,
+    0.446,
+    0.7357357357357357
+   ]
+  },
+  {
+   "label": "sand",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.17717717717717718,
+    1.0,
+    0.8228228228228228
+   ]
+  },
+  {
+   "label": "trash",
+   "attributes": [],
+   "bounding_box": [
+    0.72,
+    0.5195195195195195,
+    0.086,
+    0.05105105105105105
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "pink"
+   ],
+   "bounding_box": [
+    0.54,
+    0.35435435435435436,
+    0.014,
+    0.021021021021021023
+   ]
+  },
+  {
+   "label": "dock",
+   "attributes": [],
+   "bounding_box": [
+    0.434,
+    0.3633633633633634,
+    0.492,
+    0.16516516516516516
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.768,
+    0.34534534534534533,
+    0.006,
+    0.006006006006006006
+   ]
+  },
+  {
+   "label": "pants",
+   "attributes": [
+    "dark"
+   ],
+   "bounding_box": [
+    0.542,
+    0.37537537537537535,
+    0.012,
+    0.021021021021021023
+   ]
+  },
+  {
+   "label": "neck",
+   "attributes": [],
+   "bounding_box": [
+    0.21,
+    0.3213213213213213,
+    0.088,
+    0.32432432432432434
+   ]
+  },
+  {
+   "label": "rope",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.104,
+    0.3123123123123123,
+    0.318,
+    0.5225225225225225
+   ]
+  },
+  {
+   "label": "people",
+   "attributes": [
+    "standing"
+   ],
+   "bounding_box": [
+    0.596,
+    0.3843843843843844,
+    0.016,
+    0.024024024024024024
+   ]
+  },
+  {
+   "label": "water",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.09309309309309309,
+    1.0,
+    0.5225225225225225
+   ]
+  },
+  {
+   "label": "steps",
+   "attributes": [
+    "stone"
+   ],
+   "bounding_box": [
+    0.696,
+    0.4894894894894895,
+    0.1,
+    0.03303303303303303
+   ]
+  },
+  {
+   "label": "ears",
+   "attributes": [
+    "large"
+   ],
+   "bounding_box": [
+    0.31,
+    0.17417417417417416,
+    0.032,
+    0.12012012012012012
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "pants"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "shirt"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "people"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "horns",
+   "relation": "to the right of",
+   "object": "ears"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "neck"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "rope"
+  },
+  {
+   "subject": "plant",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "dirt",
+   "relation": "to the right of",
+   "object": "rope"
+  },
+  {
+   "subject": "dirt",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "boat",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "boat",
+   "relation": "in",
+   "object": "water"
+  },
+  {
+   "subject": "eyes",
+   "relation": "to the right of",
+   "object": "neck"
+  },
+  {
+   "subject": "eyes",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "eyes",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "eyes",
+   "relation": "to the left of",
+   "object": "dock"
+  },
+  {
+   "subject": "shorts",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "animal",
+   "relation": "lying on",
+   "object": "sand"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "shorts"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "dock"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "plant"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "dirt"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "boat"
+  },
+  {
+   "subject": "animal",
+   "relation": "to the left of",
+   "object": "steps"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "trash",
+   "relation": "in",
+   "object": "water"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "eyes"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "neck"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "rope"
+  },
+  {
+   "subject": "dock",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "dock",
+   "relation": "to the right of",
+   "object": "neck"
+  },
+  {
+   "subject": "dock",
+   "relation": "to the right of",
+   "object": "eyes"
+  },
+  {
+   "subject": "dock",
+   "relation": "to the right of",
+   "object": "rope"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "rope"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "neck"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the right of",
+   "object": "eyes"
+  },
+  {
+   "subject": "pants",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "neck",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "neck",
+   "relation": "to the left of",
+   "object": "dock"
+  },
+  {
+   "subject": "neck",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "neck",
+   "relation": "to the left of",
+   "object": "eyes"
+  },
+  {
+   "subject": "neck",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "rope",
+   "relation": "around",
+   "object": "neck"
+  },
+  {
+   "subject": "rope",
+   "relation": "to the left of",
+   "object": "dirt"
+  },
+  {
+   "subject": "rope",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "rope",
+   "relation": "to the left of",
+   "object": "pants"
+  },
+  {
+   "subject": "rope",
+   "relation": "to the left of",
+   "object": "people"
+  },
+  {
+   "subject": "rope",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "rope",
+   "relation": "to the left of",
+   "object": "dock"
+  },
+  {
+   "subject": "people",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "pants"
+  },
+  {
+   "subject": "people",
+   "relation": "to the right of",
+   "object": "rope"
+  },
+  {
+   "subject": "people",
+   "relation": "on",
+   "object": "dock"
+  },
+  {
+   "subject": "people",
+   "relation": "by",
+   "object": "water"
+  },
+  {
+   "subject": "people",
+   "relation": "on",
+   "object": "steps"
+  },
+  {
+   "subject": "water",
+   "relation": "near",
+   "object": "steps"
+  },
+  {
+   "subject": "steps",
+   "relation": "to the right of",
+   "object": "animal"
+  },
+  {
+   "subject": "steps",
+   "relation": "near",
+   "object": "water"
+  },
+  {
+   "subject": "ears",
+   "relation": "to the left of",
+   "object": "horns"
+  }
+ ],
+ "counts": {
+  "objects": 22,
+  "relations": 69
+ }
+}

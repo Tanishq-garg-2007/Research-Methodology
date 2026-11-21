@@ -1,0 +1,23 @@
+{
+ "image_number": 37,
+ "gqa_image_id": "2374245",
+ "filepath": "data/data_0/2374245.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "train",
+  "cloud"
+ ],
+ "query": {
+  "question": "What is to the right of the cars?",
+  "answer": "train",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "cars"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

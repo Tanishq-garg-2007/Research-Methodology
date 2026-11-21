@@ -1,0 +1,23 @@
+{
+ "image_number": 8,
+ "gqa_image_id": "264",
+ "filepath": "data/data_0/264.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "sign",
+  "window"
+ ],
+ "query": {
+  "question": "What is to the left of the apple?",
+  "answer": "window",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "apple"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

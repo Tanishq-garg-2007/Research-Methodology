@@ -1,0 +1,23 @@
+{
+ "image_number": 3,
+ "gqa_image_id": "2414767",
+ "filepath": "data/data_0/2414767.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "pole",
+  "leg"
+ ],
+ "query": {
+  "question": "What is to the right of the bottle?",
+  "answer": "pole",
+  "template": "right_of",
+  "derivation": {
+   "relation": "to the right of",
+   "object": "bottle"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

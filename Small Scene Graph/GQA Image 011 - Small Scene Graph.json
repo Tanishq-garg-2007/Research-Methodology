@@ -1,0 +1,151 @@
+{
+ "image_number": 11,
+ "gqa_image_id": "2371002",
+ "filepath": "data/data_0/2371002.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "wall",
+  "doorway"
+ ],
+ "core_nodes": [
+  "doorway",
+  "wall"
+ ],
+ "nodes": [
+  "doorway",
+  "room",
+  "seat",
+  "wall",
+  "window"
+ ],
+ "objects": [
+  {
+   "label": "wall",
+   "attributes": [
+    "concrete"
+   ],
+   "bounding_box": [
+    0.0,
+    0.002,
+    0.22666666666666666,
+    0.656
+   ]
+  },
+  {
+   "label": "doorway",
+   "attributes": [],
+   "bounding_box": [
+    0.568,
+    0.0,
+    0.432,
+    0.996
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.10933333333333334,
+    0.308
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.632,
+    0.0,
+    0.36533333333333334,
+    0.814
+   ]
+  },
+  {
+   "label": "room",
+   "attributes": [],
+   "bounding_box": [
+    0.5013333333333333,
+    0.0,
+    0.49866666666666665,
+    0.996
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "concrete",
+    "tan",
+    "bathroom"
+   ],
+   "bounding_box": [
+    0.2,
+    0.0,
+    0.3253333333333333,
+    0.614
+   ]
+  },
+  {
+   "label": "seat",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.5973333333333334,
+    0.62,
+    0.029333333333333333,
+    0.108
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "doorway",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "seat"
+  },
+  {
+   "subject": "room",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "doorway"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "room"
+  },
+  {
+   "subject": "seat",
+   "relation": "to the left of",
+   "object": "wall"
+  }
+ ],
+ "counts": {
+  "nodes": 5,
+  "objects": 7,
+  "relations": 8
+ }
+}

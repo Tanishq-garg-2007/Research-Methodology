@@ -1,0 +1,23 @@
+{
+ "image_number": 6,
+ "gqa_image_id": "2376954",
+ "filepath": "data/data_0/2376954.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "door",
+  "shelf"
+ ],
+ "query": {
+  "question": "What is on the shelf?",
+  "answer": "container",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "shelf"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

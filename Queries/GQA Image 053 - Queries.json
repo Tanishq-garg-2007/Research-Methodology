@@ -1,0 +1,23 @@
+{
+ "image_number": 53,
+ "gqa_image_id": "2340866",
+ "filepath": "data/data_1/2340866.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "pole",
+  "bridge"
+ ],
+ "query": {
+  "question": "What is on the bridge?",
+  "answer": "train",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "bridge"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

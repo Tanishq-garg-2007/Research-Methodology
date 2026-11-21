@@ -1,0 +1,23 @@
+{
+ "image_number": 24,
+ "gqa_image_id": "2341486",
+ "filepath": "data/data_0/2341486.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "car",
+  "house"
+ ],
+ "query": {
+  "question": "What is to the left of the hair?",
+  "answer": "car",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

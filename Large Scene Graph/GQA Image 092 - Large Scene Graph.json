@@ -1,0 +1,260 @@
+{
+ "image_number": 92,
+ "gqa_image_id": "2380664",
+ "filepath": "data/data_2/2380664.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.42,
+    0.7292576419213974,
+    0.058,
+    0.16593886462882096
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [
+    "standing",
+    "brown",
+    "eating"
+   ],
+   "bounding_box": [
+    0.586,
+    0.7685589519650655,
+    0.08,
+    0.13537117903930132
+   ]
+  },
+  {
+   "label": "trees",
+   "attributes": [
+    "wide",
+    "green"
+   ],
+   "bounding_box": [
+    0.008,
+    0.021834061135371178,
+    0.716,
+    0.6157205240174672
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.386,
+    0.004366812227074236,
+    0.612,
+    0.5764192139737991
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.6419213973799127,
+    0.994,
+    0.35807860262008734
+   ]
+  },
+  {
+   "label": "face",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.428,
+    0.8384279475982532,
+    0.02,
+    0.048034934497816595
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.0,
+    0.62882096069869,
+    0.756,
+    0.14847161572052403
+   ]
+  },
+  {
+   "label": "bushes",
+   "attributes": [
+    "tall"
+   ],
+   "bounding_box": [
+    0.854,
+    0.5938864628820961,
+    0.14,
+    0.27510917030567683
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.506,
+    0.7467248908296943,
+    0.092,
+    0.17467248908296942
+   ]
+  },
+  {
+   "label": "sheep",
+   "attributes": [],
+   "bounding_box": [
+    0.322,
+    0.777292576419214,
+    0.032,
+    0.09606986899563319
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [
+    "wood"
+   ],
+   "bounding_box": [
+    0.592,
+    0.611353711790393,
+    0.166,
+    0.388646288209607
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "sheep",
+   "relation": "on",
+   "object": "grass"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "sheep"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "fence"
+  },
+  {
+   "subject": "sheep",
+   "relation": "below",
+   "object": "trees"
+  },
+  {
+   "subject": "sheep",
+   "relation": "below",
+   "object": "tree"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the right of",
+   "object": "face"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "bushes"
+  },
+  {
+   "subject": "sheep",
+   "relation": "under",
+   "object": "tree"
+  },
+  {
+   "subject": "trees",
+   "relation": "above",
+   "object": "sheep"
+  },
+  {
+   "subject": "trees",
+   "relation": "above",
+   "object": "bushes"
+  },
+  {
+   "subject": "face",
+   "relation": "to the left of",
+   "object": "fence"
+  },
+  {
+   "subject": "face",
+   "relation": "to the left of",
+   "object": "sheep"
+  },
+  {
+   "subject": "face",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the left of",
+   "object": "bushes"
+  },
+  {
+   "subject": "bushes",
+   "relation": "under",
+   "object": "trees"
+  },
+  {
+   "subject": "bushes",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "bushes",
+   "relation": "to the right of",
+   "object": "grass"
+  },
+  {
+   "subject": "bushes",
+   "relation": "to the right of",
+   "object": "fence"
+  },
+  {
+   "subject": "sheep",
+   "relation": "to the left of",
+   "object": "face"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the right of",
+   "object": "sheep"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the right of",
+   "object": "face"
+  },
+  {
+   "subject": "fence",
+   "relation": "beside",
+   "object": "sheep"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the left of",
+   "object": "bushes"
+  }
+ ],
+ "counts": {
+  "objects": 11,
+  "relations": 24
+ }
+}

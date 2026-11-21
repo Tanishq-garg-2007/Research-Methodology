@@ -1,0 +1,188 @@
+{
+ "image_number": 12,
+ "gqa_image_id": "2344244",
+ "filepath": "data/data_0/2344244.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "arm",
+  "hand"
+ ],
+ "core_nodes": [
+  "arm",
+  "food",
+  "hand"
+ ],
+ "nodes": [
+  "arm",
+  "ear buds",
+  "food",
+  "hand",
+  "jeans",
+  "lips"
+ ],
+ "objects": [
+  {
+   "label": "jeans",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.09009009009009009,
+    0.562,
+    0.4114114114114114,
+    0.226
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.5105105105105106,
+    0.648,
+    0.17117117117117117,
+    0.138
+   ]
+  },
+  {
+   "label": "lips",
+   "attributes": [],
+   "bounding_box": [
+    0.5075075075075075,
+    0.34,
+    0.057057057057057055,
+    0.016
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.6396396396396397,
+    0.706,
+    0.18018018018018017,
+    0.156
+   ]
+  },
+  {
+   "label": "ear buds",
+   "attributes": [
+    "white",
+    "hanging"
+   ],
+   "bounding_box": [
+    0.5525525525525525,
+    0.354,
+    0.03003003003003003,
+    0.186
+   ]
+  },
+  {
+   "label": "food",
+   "attributes": [],
+   "bounding_box": [
+    0.8078078078078078,
+    0.746,
+    0.057057057057057055,
+    0.05
+   ]
+  },
+  {
+   "label": "arm",
+   "attributes": [],
+   "bounding_box": [
+    0.1921921921921922,
+    0.288,
+    0.3033033033033033,
+    0.406
+   ]
+  },
+  {
+   "label": "arm",
+   "attributes": [],
+   "bounding_box": [
+    0.6396396396396397,
+    0.294,
+    0.13813813813813813,
+    0.416
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "hand"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the left of",
+   "object": "arm"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "food"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the right of",
+   "object": "jeans"
+  },
+  {
+   "subject": "lips",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "lips",
+   "relation": "to the left of",
+   "object": "arm"
+  },
+  {
+   "subject": "ear buds",
+   "relation": "to the right of",
+   "object": "arm"
+  },
+  {
+   "subject": "ear buds",
+   "relation": "to the left of",
+   "object": "arm"
+  },
+  {
+   "subject": "food",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "lips"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the left of",
+   "object": "ear buds"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the right of",
+   "object": "ear buds"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the right of",
+   "object": "lips"
+  },
+  {
+   "subject": "arm",
+   "relation": "to the right of",
+   "object": "jeans"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 8,
+  "relations": 14
+ }
+}

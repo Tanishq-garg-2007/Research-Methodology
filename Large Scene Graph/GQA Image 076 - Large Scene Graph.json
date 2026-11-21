@@ -1,0 +1,619 @@
+{
+ "image_number": 76,
+ "gqa_image_id": "2330220",
+ "filepath": "data/data_2/2330220.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "woman",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.1038374717832957,
+    0.61,
+    0.8939051918735892
+   ]
+  },
+  {
+   "label": "coat",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.0,
+    0.6749435665914221,
+    0.5,
+    0.32054176072234764
+   ]
+  },
+  {
+   "label": "mouth",
+   "attributes": [],
+   "bounding_box": [
+    0.254,
+    0.5981941309255079,
+    0.142,
+    0.0835214446952596
+   ]
+  },
+  {
+   "label": "necklace",
+   "attributes": [],
+   "bounding_box": [
+    0.186,
+    0.7246049661399548,
+    0.204,
+    0.2708803611738149
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.36,
+    0.4672686230248307,
+    0.074,
+    0.02708803611738149
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.484,
+    0.5124153498871332,
+    0.028,
+    0.08126410835214447
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.66,
+    0.3927765237020316,
+    0.074,
+    0.029345372460496615
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.222,
+    0.45146726862302483,
+    0.068,
+    0.03160270880361174
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.538,
+    0.3747178329571106,
+    0.054,
+    0.03160270880361174
+   ]
+  },
+  {
+   "label": "tie",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.542,
+    0.6591422121896162,
+    0.292,
+    0.20090293453724606
+   ]
+  },
+  {
+   "label": "glasses",
+   "attributes": [],
+   "bounding_box": [
+    0.48,
+    0.3295711060948081,
+    0.37,
+    0.13318284424379231
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.002,
+    0.0,
+    0.424,
+    0.7381489841986456
+   ]
+  },
+  {
+   "label": "couple",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.03160270880361174,
+    0.998,
+    0.963882618510158
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.082,
+    0.09932279909706546,
+    0.492,
+    0.7133182844243793
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.544,
+    0.5733634311512416,
+    0.308,
+    0.4221218961625282
+   ]
+  },
+  {
+   "label": "jacket",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.49,
+    0.5665914221218962,
+    0.508,
+    0.4288939051918736
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.814,
+    0.3747178329571106,
+    0.088,
+    0.16252821670428894
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.504,
+    0.024830699774266364,
+    0.41,
+    0.4040632054176072
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.482,
+    0.02708803611738149,
+    0.516,
+    0.9683972911963883
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "tie"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "woman",
+   "relation": "wearing",
+   "object": "necklace"
+  },
+  {
+   "subject": "woman",
+   "relation": "wearing",
+   "object": "coat"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "tie"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "mouth",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "necklace",
+   "relation": "to the left of",
+   "object": "tie"
+  },
+  {
+   "subject": "necklace",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "necklace",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "necklace",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "tie",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "tie",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "tie",
+   "relation": "to the right of",
+   "object": "necklace"
+  },
+  {
+   "subject": "tie",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "wall",
+   "relation": "behind",
+   "object": "couple"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "couple",
+   "relation": "in front of",
+   "object": "wall"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "jacket"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "tie"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "necklace"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "mouth"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "necklace"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "mouth"
+  },
+  {
+   "subject": "jacket",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "glasses"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "tie"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "glasses"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "jacket"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "necklace"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "mouth"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "woman"
+  }
+ ],
+ "counts": {
+  "objects": 19,
+  "relations": 80
+ }
+}

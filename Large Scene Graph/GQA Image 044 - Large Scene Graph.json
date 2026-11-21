@@ -1,0 +1,609 @@
+{
+ "image_number": 44,
+ "gqa_image_id": "2402864",
+ "filepath": "data/data_1/2402864.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "tablecloth",
+   "attributes": [],
+   "bounding_box": [
+    0.348,
+    0.4444444444444444,
+    0.136,
+    0.10840108401084012
+   ]
+  },
+  {
+   "label": "spoon",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.842,
+    0.5799457994579946,
+    0.106,
+    0.032520325203252036
+   ]
+  },
+  {
+   "label": "ceiling",
+   "attributes": [],
+   "bounding_box": [
+    0.134,
+    0.0027100271002710027,
+    0.62,
+    0.23848238482384823
+   ]
+  },
+  {
+   "label": "kitchen",
+   "attributes": [],
+   "bounding_box": [
+    0.008,
+    0.04336043360433604,
+    0.98,
+    0.8807588075880759
+   ]
+  },
+  {
+   "label": "chair",
+   "attributes": [
+    "wood"
+   ],
+   "bounding_box": [
+    0.394,
+    0.4281842818428184,
+    0.054,
+    0.18157181571815717
+   ]
+  },
+  {
+   "label": "cabinets",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.542,
+    0.051490514905149054,
+    0.3,
+    0.3143631436314363
+   ]
+  },
+  {
+   "label": "towel",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.69,
+    0.6287262872628726,
+    0.048,
+    0.12466124661246612
+   ]
+  },
+  {
+   "label": "trash",
+   "attributes": [
+    "steel",
+    "metal"
+   ],
+   "bounding_box": [
+    0.18,
+    0.48509485094850946,
+    0.056,
+    0.21680216802168023
+   ]
+  },
+  {
+   "label": "sink",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.578,
+    0.45799457994579945,
+    0.128,
+    0.037940379403794036
+   ]
+  },
+  {
+   "label": "dining room",
+   "attributes": [
+    "wood"
+   ],
+   "bounding_box": [
+    0.112,
+    0.10569105691056911,
+    0.644,
+    0.6585365853658537
+   ]
+  },
+  {
+   "label": "counter",
+   "attributes": [],
+   "bounding_box": [
+    0.054,
+    0.4796747967479675,
+    0.142,
+    0.04065040650406504
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.172,
+    0.2682926829268293,
+    0.088,
+    0.07588075880758807
+   ]
+  },
+  {
+   "label": "oven",
+   "attributes": [
+    "silver"
+   ],
+   "bounding_box": [
+    0.678,
+    0.5934959349593496,
+    0.108,
+    0.35501355013550134
+   ]
+  },
+  {
+   "label": "fruit",
+   "attributes": [],
+   "bounding_box": [
+    0.128,
+    0.45528455284552843,
+    0.02,
+    0.02710027100271003
+   ]
+  },
+  {
+   "label": "apples",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.06,
+    0.4363143631436314,
+    0.022,
+    0.02710027100271003
+   ]
+  },
+  {
+   "label": "table",
+   "attributes": [],
+   "bounding_box": [
+    0.35,
+    0.4444444444444444,
+    0.136,
+    0.14634146341463414
+   ]
+  },
+  {
+   "label": "stove",
+   "attributes": [
+    "steel",
+    "stainless steel"
+   ],
+   "bounding_box": [
+    0.686,
+    0.5284552845528455,
+    0.264,
+    0.14634146341463414
+   ]
+  },
+  {
+   "label": "knives",
+   "attributes": [],
+   "bounding_box": [
+    0.746,
+    0.44173441734417346,
+    0.016,
+    0.03523035230352303
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [
+    "brown",
+    "wood"
+   ],
+   "bounding_box": [
+    0.152,
+    0.25474254742547425,
+    0.126,
+    0.35501355013550134
+   ]
+  },
+  {
+   "label": "tiles",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.89,
+    0.42005420054200543,
+    0.086,
+    0.16531165311653118
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.832,
+    0.16802168021680217,
+    0.16,
+    0.38482384823848237
+   ]
+  },
+  {
+   "label": "walls",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.184,
+    0.12195121951219512,
+    0.112,
+    0.12737127371273713
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "tablecloth",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "tablecloth",
+   "relation": "to the left of",
+   "object": "sink"
+  },
+  {
+   "subject": "tablecloth",
+   "relation": "to the right of",
+   "object": "trash"
+  },
+  {
+   "subject": "tablecloth",
+   "relation": "to the right of",
+   "object": "fruit"
+  },
+  {
+   "subject": "tablecloth",
+   "relation": "to the right of",
+   "object": "counter"
+  },
+  {
+   "subject": "spoon",
+   "relation": "to the right of",
+   "object": "dining room"
+  },
+  {
+   "subject": "spoon",
+   "relation": "to the right of",
+   "object": "oven"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "sink"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "trash"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "fruit"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "counter"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "chair",
+   "relation": "to the left of",
+   "object": "stove"
+  },
+  {
+   "subject": "cabinets",
+   "relation": "to the right of",
+   "object": "walls"
+  },
+  {
+   "subject": "cabinets",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "towel",
+   "relation": "hanging on",
+   "object": "oven"
+  },
+  {
+   "subject": "towel",
+   "relation": "on",
+   "object": "oven"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the left of",
+   "object": "tablecloth"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "trash",
+   "relation": "to the right of",
+   "object": "counter"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the right of",
+   "object": "tablecloth"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the right of",
+   "object": "table"
+  },
+  {
+   "subject": "sink",
+   "relation": "to the left of",
+   "object": "tiles"
+  },
+  {
+   "subject": "dining room",
+   "relation": "to the left of",
+   "object": "spoon"
+  },
+  {
+   "subject": "dining room",
+   "relation": "to the left of",
+   "object": "stove"
+  },
+  {
+   "subject": "dining room",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "dining room",
+   "relation": "to the left of",
+   "object": "tiles"
+  },
+  {
+   "subject": "dining room",
+   "relation": "to the right of",
+   "object": "apples"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the left of",
+   "object": "tablecloth"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the left of",
+   "object": "trash"
+  },
+  {
+   "subject": "counter",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "oven",
+   "relation": "to the left of",
+   "object": "spoon"
+  },
+  {
+   "subject": "fruit",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "fruit",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "fruit",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "fruit",
+   "relation": "to the left of",
+   "object": "tablecloth"
+  },
+  {
+   "subject": "fruit",
+   "relation": "on",
+   "object": "counter"
+  },
+  {
+   "subject": "apples",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "apples",
+   "relation": "to the left of",
+   "object": "dining room"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "fruit"
+  },
+  {
+   "subject": "table",
+   "relation": "with",
+   "object": "tablecloth"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "trash"
+  },
+  {
+   "subject": "table",
+   "relation": "to the right of",
+   "object": "counter"
+  },
+  {
+   "subject": "table",
+   "relation": "to the left of",
+   "object": "sink"
+  },
+  {
+   "subject": "table",
+   "relation": "in",
+   "object": "kitchen"
+  },
+  {
+   "subject": "stove",
+   "relation": "to the right of",
+   "object": "chair"
+  },
+  {
+   "subject": "stove",
+   "relation": "to the right of",
+   "object": "dining room"
+  },
+  {
+   "subject": "knives",
+   "relation": "to the left of",
+   "object": "tiles"
+  },
+  {
+   "subject": "knives",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "table"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "apples"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "fruit"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "counter"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "chair"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "tablecloth"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the right of",
+   "object": "dining room"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the right of",
+   "object": "sink"
+  },
+  {
+   "subject": "tiles",
+   "relation": "to the right of",
+   "object": "knives"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "dining room"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "knives"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "cabinets"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "sink"
+  },
+  {
+   "subject": "walls",
+   "relation": "to the left of",
+   "object": "cabinets"
+  }
+ ],
+ "counts": {
+  "objects": 22,
+  "relations": 69
+ }
+}

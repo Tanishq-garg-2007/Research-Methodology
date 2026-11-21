@@ -1,0 +1,267 @@
+{
+ "image_number": 2,
+ "gqa_image_id": "2417523",
+ "filepath": "data/data_0/2417523.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "letter",
+  "propeller"
+ ],
+ "core_nodes": [
+  "letter",
+  "propeller",
+  "windows"
+ ],
+ "nodes": [
+  "cockpit",
+  "door",
+  "letter",
+  "nose",
+  "propeller",
+  "windows"
+ ],
+ "objects": [
+  {
+   "label": "cockpit",
+   "attributes": [],
+   "bounding_box": [
+    0.732,
+    0.5391566265060241,
+    0.19,
+    0.16566265060240964
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [],
+   "bounding_box": [
+    0.63,
+    0.6174698795180723,
+    0.014,
+    0.03614457831325301
+   ]
+  },
+  {
+   "label": "windows",
+   "attributes": [],
+   "bounding_box": [
+    0.782,
+    0.5873493975903614,
+    0.04,
+    0.024096385542168676
+   ]
+  },
+  {
+   "label": "propeller",
+   "attributes": [],
+   "bounding_box": [
+    0.55,
+    0.4819277108433735,
+    0.064,
+    0.18373493975903615
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.426,
+    0.5632530120481928,
+    0.012,
+    0.024096385542168676
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [],
+   "bounding_box": [
+    0.64,
+    0.6295180722891566,
+    0.01,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.434,
+    0.5632530120481928,
+    0.014,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.414,
+    0.5692771084337349,
+    0.01,
+    0.018072289156626505
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.492,
+    0.5783132530120482,
+    0.01,
+    0.015060240963855422
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [],
+   "bounding_box": [
+    0.868,
+    0.6295180722891566,
+    0.056,
+    0.0783132530120482
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.394,
+    0.5602409638554217,
+    0.008,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.478,
+    0.5692771084337349,
+    0.008,
+    0.02710843373493976
+   ]
+  },
+  {
+   "label": "letter",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.4,
+    0.5632530120481928,
+    0.016,
+    0.030120481927710843
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [],
+   "bounding_box": [
+    0.702,
+    0.5903614457831325,
+    0.032,
+    0.08433734939759036
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "cockpit",
+   "relation": "to the right of",
+   "object": "letter"
+  },
+  {
+   "subject": "cockpit",
+   "relation": "to the right of",
+   "object": "propeller"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the right of",
+   "object": "propeller"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the left of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "windows",
+   "relation": "to the right of",
+   "object": "propeller"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the right of",
+   "object": "letter"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "letter"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "cockpit"
+  },
+  {
+   "subject": "propeller",
+   "relation": "to the left of",
+   "object": "windows"
+  },
+  {
+   "subject": "letter",
+   "relation": "to the left of",
+   "object": "propeller"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "letter"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "letter"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "propeller"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 14,
+  "relations": 16
+ }
+}

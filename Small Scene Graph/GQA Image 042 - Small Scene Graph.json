@@ -1,0 +1,228 @@
+{
+ "image_number": 42,
+ "gqa_image_id": "2323139",
+ "filepath": "data/data_1/2323139.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "ear",
+  "pillow"
+ ],
+ "core_nodes": [
+  "bed",
+  "ear",
+  "pillow"
+ ],
+ "nodes": [
+  "bed",
+  "dog",
+  "ear",
+  "nose",
+  "pillow",
+  "sheet"
+ ],
+ "objects": [
+  {
+   "label": "ear",
+   "attributes": [
+    "large"
+   ],
+   "bounding_box": [
+    0.048,
+    0.264,
+    0.018,
+    0.10666666666666667
+   ]
+  },
+  {
+   "label": "sheet",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.008,
+    0.024,
+    0.746,
+    0.23733333333333334
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [
+    "large"
+   ],
+   "bounding_box": [
+    0.468,
+    0.43733333333333335,
+    0.044,
+    0.13333333333333333
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [
+    "large"
+   ],
+   "bounding_box": [
+    0.346,
+    0.4106666666666667,
+    0.04,
+    0.13066666666666665
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [
+    "large"
+   ],
+   "bounding_box": [
+    0.154,
+    0.2613333333333333,
+    0.04,
+    0.11733333333333333
+   ]
+  },
+  {
+   "label": "bed",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "label": "pillow",
+   "attributes": [],
+   "bounding_box": [
+    0.006,
+    0.0,
+    0.348,
+    0.19733333333333333
+   ]
+  },
+  {
+   "label": "dog",
+   "attributes": [],
+   "bounding_box": [
+    0.384,
+    0.4106666666666667,
+    0.51,
+    0.37333333333333335
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.074,
+    0.30666666666666664,
+    0.03,
+    0.042666666666666665
+   ]
+  },
+  {
+   "label": "dog",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.046,
+    0.24,
+    0.446,
+    0.36
+   ]
+  },
+  {
+   "label": "pillow",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.238,
+    0.0,
+    0.424,
+    0.128
+   ]
+  },
+  {
+   "label": "nose",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.39,
+    0.5066666666666667,
+    0.028,
+    0.048
+   ]
+  },
+  {
+   "label": "sheet",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.626,
+    0.008,
+    0.238,
+    0.22933333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "ear",
+   "relation": "to the left of",
+   "object": "nose"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "nose"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the left of",
+   "object": "dog"
+  },
+  {
+   "subject": "pillow",
+   "relation": "on",
+   "object": "bed"
+  },
+  {
+   "subject": "dog",
+   "relation": "to the right of",
+   "object": "ear"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the right of",
+   "object": "ear"
+  },
+  {
+   "subject": "nose",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "pillow",
+   "relation": "to the left of",
+   "object": "sheet"
+  },
+  {
+   "subject": "sheet",
+   "relation": "to the right of",
+   "object": "pillow"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 13,
+  "relations": 9
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "image_number": 29,
+ "gqa_image_id": "2379354",
+ "filepath": "data/data_0/2379354.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "woman",
+  "vest"
+ ],
+ "query": {
+  "question": "What is to the left of the sea?",
+  "answer": "woman",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "sea"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

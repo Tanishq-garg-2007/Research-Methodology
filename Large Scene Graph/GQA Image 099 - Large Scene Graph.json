@@ -1,0 +1,297 @@
+{
+ "image_number": 99,
+ "gqa_image_id": "2338965",
+ "filepath": "data/data_2/2338965.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "log",
+   "attributes": [],
+   "bounding_box": [
+    0.584,
+    0.72,
+    0.298,
+    0.168
+   ]
+  },
+  {
+   "label": "zebra",
+   "attributes": [
+    "striped"
+   ],
+   "bounding_box": [
+    0.186,
+    0.22666666666666666,
+    0.3,
+    0.408
+   ]
+  },
+  {
+   "label": "zebra",
+   "attributes": [
+    "striped"
+   ],
+   "bounding_box": [
+    0.546,
+    0.2906666666666667,
+    0.244,
+    0.31733333333333336
+   ]
+  },
+  {
+   "label": "log",
+   "attributes": [],
+   "bounding_box": [
+    0.016,
+    0.6453333333333333,
+    0.878,
+    0.12533333333333332
+   ]
+  },
+  {
+   "label": "log",
+   "attributes": [],
+   "bounding_box": [
+    0.228,
+    0.7626666666666667,
+    0.148,
+    0.12533333333333332
+   ]
+  },
+  {
+   "label": "zebras",
+   "attributes": [
+    "standing"
+   ],
+   "bounding_box": [
+    0.0,
+    0.328,
+    0.292,
+    0.656
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [],
+   "bounding_box": [
+    0.546,
+    0.384,
+    0.056,
+    0.16
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [],
+   "bounding_box": [
+    0.852,
+    0.7413333333333333,
+    0.088,
+    0.050666666666666665
+   ]
+  },
+  {
+   "label": "zebra",
+   "attributes": [
+    "eating"
+   ],
+   "bounding_box": [
+    0.778,
+    0.2853333333333333,
+    0.182,
+    0.4666666666666667
+   ]
+  },
+  {
+   "label": "log",
+   "attributes": [],
+   "bounding_box": [
+    0.584,
+    0.592,
+    0.266,
+    0.07733333333333334
+   ]
+  },
+  {
+   "label": "floor",
+   "attributes": [],
+   "bounding_box": [
+    0.454,
+    0.23466666666666666,
+    0.444,
+    0.050666666666666665
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [
+    "striped"
+   ],
+   "bounding_box": [
+    0.158,
+    0.37866666666666665,
+    0.072,
+    0.35733333333333334
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.846,
+    0.5173333333333333,
+    0.136,
+    0.232
+   ]
+  },
+  {
+   "label": "zebra",
+   "attributes": [
+    "striped"
+   ],
+   "bounding_box": [
+    0.34,
+    0.3253333333333333,
+    0.282,
+    0.6746666666666666
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "log",
+   "relation": "to the left of",
+   "object": "grass"
+  },
+  {
+   "subject": "log",
+   "relation": "to the right of",
+   "object": "log"
+  },
+  {
+   "subject": "log",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "floor"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the right of",
+   "object": "zebras"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "log"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "zebra"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "tail"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "log",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "log",
+   "relation": "to the left of",
+   "object": "log"
+  },
+  {
+   "subject": "log",
+   "relation": "to the right of",
+   "object": "zebras"
+  },
+  {
+   "subject": "log",
+   "relation": "to the left of",
+   "object": "zebra"
+  },
+  {
+   "subject": "zebras",
+   "relation": "to the left of",
+   "object": "zebra"
+  },
+  {
+   "subject": "zebras",
+   "relation": "to the left of",
+   "object": "log"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the left of",
+   "object": "zebra"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the right of",
+   "object": "log"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the right of",
+   "object": "tail"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the right of",
+   "object": "log"
+  },
+  {
+   "subject": "floor",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "log"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "grass"
+  }
+ ],
+ "counts": {
+  "objects": 14,
+  "relations": 26
+ }
+}

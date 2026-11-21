@@ -1,0 +1,594 @@
+{
+ "image_number": 57,
+ "gqa_image_id": "2367740",
+ "filepath": "data/data_1/2367740.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "wall",
+   "attributes": [],
+   "bounding_box": [
+    0.048,
+    0.17066666666666666,
+    0.402,
+    0.5306666666666666
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [
+    "down",
+    "black",
+    "long"
+   ],
+   "bounding_box": [
+    0.76,
+    0.6506666666666666,
+    0.024,
+    0.192
+   ]
+  },
+  {
+   "label": "legs",
+   "attributes": [
+    "long"
+   ],
+   "bounding_box": [
+    0.554,
+    0.6773333333333333,
+    0.04,
+    0.12533333333333332
+   ]
+  },
+  {
+   "label": "letters",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.052,
+    0.888,
+    0.01,
+    0.021333333333333333
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.7893333333333333,
+    0.176,
+    0.208
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [
+    "standing"
+   ],
+   "bounding_box": [
+    0.67,
+    0.488,
+    0.326,
+    0.512
+   ]
+  },
+  {
+   "label": "coat",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.666,
+    0.712,
+    0.336,
+    0.288
+   ]
+  },
+  {
+   "label": "giraffe",
+   "attributes": [
+    "tall"
+   ],
+   "bounding_box": [
+    0.348,
+    0.2613333333333333,
+    0.438,
+    0.5973333333333334
+   ]
+  },
+  {
+   "label": "neck",
+   "attributes": [
+    "long"
+   ],
+   "bounding_box": [
+    0.414,
+    0.31466666666666665,
+    0.1,
+    0.16
+   ]
+  },
+  {
+   "label": "ceiling",
+   "attributes": [],
+   "bounding_box": [
+    0.252,
+    0.005333333333333333,
+    0.676,
+    0.21333333333333335
+   ]
+  },
+  {
+   "label": "door",
+   "attributes": [
+    "arched",
+    "large",
+    "wood",
+    "tall",
+    "domed"
+   ],
+   "bounding_box": [
+    0.488,
+    0.24533333333333332,
+    0.2,
+    0.6346666666666667
+   ]
+  },
+  {
+   "label": "glasses",
+   "attributes": [],
+   "bounding_box": [
+    0.804,
+    0.6666666666666666,
+    0.028,
+    0.088
+   ]
+  },
+  {
+   "label": "wire",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.13333333333333333,
+    0.212,
+    0.06133333333333333
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.922,
+    0.9093333333333333
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.794,
+    0.488,
+    0.198,
+    0.22133333333333333
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [
+    "blond"
+   ],
+   "bounding_box": [
+    0.442,
+    0.7706666666666667,
+    0.12,
+    0.22133333333333333
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [
+    "standing",
+    "blond"
+   ],
+   "bounding_box": [
+    0.43,
+    0.7706666666666667,
+    0.216,
+    0.22933333333333333
+   ]
+  },
+  {
+   "label": "family",
+   "attributes": [],
+   "bounding_box": [
+    0.416,
+    0.496,
+    0.58,
+    0.504
+   ]
+  },
+  {
+   "label": "zoo",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.964,
+    1.0
+   ]
+  },
+  {
+   "label": "cap",
+   "attributes": [
+    "small",
+    "red"
+   ],
+   "bounding_box": [
+    0.656,
+    0.792,
+    0.106,
+    0.112
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [
+    "little"
+   ],
+   "bounding_box": [
+    0.632,
+    0.7813333333333333,
+    0.14,
+    0.21866666666666668
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.006,
+    0.0,
+    0.236,
+    0.08533333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "neck"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "giraffe"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "tail"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the left of",
+   "object": "family"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "glasses"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "coat"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "giraffe"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "in front of",
+   "object": "door"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "in",
+   "object": "zoo"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "giraffe",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "neck",
+   "relation": "to the left of",
+   "object": "door"
+  },
+  {
+   "subject": "neck",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "ceiling",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "ceiling",
+   "relation": "to the right of",
+   "object": "wire"
+  },
+  {
+   "subject": "door",
+   "relation": "behind",
+   "object": "giraffe"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "neck"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "tail"
+  },
+  {
+   "subject": "door",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "glasses"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "cap"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "door",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the right of",
+   "object": "giraffe"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the right of",
+   "object": "tail"
+  },
+  {
+   "subject": "glasses",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "wire",
+   "relation": "to the left of",
+   "object": "ceiling"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "giraffe"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "cap"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "cap"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "woman",
+   "relation": "holding",
+   "object": "person"
+  },
+  {
+   "subject": "family",
+   "relation": "to the right of",
+   "object": "sign"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the right of",
+   "object": "door"
+  },
+  {
+   "subject": "person",
+   "relation": "wearing",
+   "object": "cap"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "ceiling"
+  }
+ ],
+ "counts": {
+  "objects": 22,
+  "relations": 65
+ }
+}

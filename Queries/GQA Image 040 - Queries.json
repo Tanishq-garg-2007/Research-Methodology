@@ -1,0 +1,23 @@
+{
+ "image_number": 40,
+ "gqa_image_id": "2393953",
+ "filepath": "data/data_1/2393953.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "sheep",
+  "head"
+ ],
+ "query": {
+  "question": "What is to the left of the daisy?",
+  "answer": "sheep",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "daisy"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}

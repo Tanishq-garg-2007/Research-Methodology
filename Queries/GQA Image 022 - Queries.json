@@ -1,0 +1,23 @@
+{
+ "image_number": 22,
+ "gqa_image_id": "2326139",
+ "filepath": "data/data_0/2326139.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "curtains",
+  "lamp"
+ ],
+ "query": {
+  "question": "What is to the left of the candles?",
+  "answer": "curtains",
+  "template": "left_of",
+  "derivation": {
+   "relation": "to the left of",
+   "object": "candles"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

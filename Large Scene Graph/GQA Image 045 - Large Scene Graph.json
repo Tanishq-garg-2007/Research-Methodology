@@ -1,0 +1,570 @@
+{
+ "image_number": 45,
+ "gqa_image_id": "2375673",
+ "filepath": "data/data_1/2375673.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.81,
+    0.5830815709969789,
+    0.064,
+    0.15709969788519637
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.426,
+    0.5558912386706949,
+    0.044,
+    0.09667673716012085
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.778,
+    0.47129909365558914,
+    0.086,
+    0.13293051359516617
+   ]
+  },
+  {
+   "label": "elephant",
+   "attributes": [],
+   "bounding_box": [
+    0.626,
+    0.47129909365558914,
+    0.286,
+    0.27492447129909364
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.226,
+    0.5226586102719033,
+    0.052,
+    0.12386706948640483
+   ]
+  },
+  {
+   "label": "trunk",
+   "attributes": [],
+   "bounding_box": [
+    0.292,
+    0.552870090634441,
+    0.044,
+    0.19939577039274925
+   ]
+  },
+  {
+   "label": "water",
+   "attributes": [],
+   "bounding_box": [
+    0.692,
+    0.6888217522658611,
+    0.104,
+    0.08459214501510574
+   ]
+  },
+  {
+   "label": "trunk",
+   "attributes": [],
+   "bounding_box": [
+    0.864,
+    0.540785498489426,
+    0.044,
+    0.20241691842900303
+   ]
+  },
+  {
+   "label": "elephants",
+   "attributes": [],
+   "bounding_box": [
+    0.106,
+    0.5015105740181269,
+    0.224,
+    0.23564954682779457
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.564,
+    0.2809667673716012,
+    0.07,
+    0.08157099697885196
+   ]
+  },
+  {
+   "label": "trunk",
+   "attributes": [],
+   "bounding_box": [
+    0.48,
+    0.6072507552870091,
+    0.034,
+    0.10876132930513595
+   ]
+  },
+  {
+   "label": "trunk",
+   "attributes": [],
+   "bounding_box": [
+    0.302,
+    0.622356495468278,
+    0.034,
+    0.1027190332326284
+   ]
+  },
+  {
+   "label": "trunk",
+   "attributes": [],
+   "bounding_box": [
+    0.87,
+    0.5498489425981873,
+    0.042,
+    0.19939577039274925
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.906,
+    0.2598187311178248,
+    0.068,
+    0.08459214501510574
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.82,
+    0.2537764350453172,
+    0.072,
+    0.09063444108761329
+   ]
+  },
+  {
+   "label": "elephant",
+   "attributes": [],
+   "bounding_box": [
+    0.334,
+    0.5317220543806647,
+    0.208,
+    0.23867069486404835
+   ]
+  },
+  {
+   "label": "water",
+   "attributes": [],
+   "bounding_box": [
+    0.002,
+    0.6344410876132931,
+    0.996,
+    0.16314199395770393
+   ]
+  },
+  {
+   "label": "elephants",
+   "attributes": [],
+   "bounding_box": [
+    0.114,
+    0.4652567975830816,
+    0.8,
+    0.28700906344410876
+   ]
+  },
+  {
+   "label": "legs",
+   "attributes": [],
+   "bounding_box": [
+    0.616,
+    0.6435045317220544,
+    0.118,
+    0.09063444108761329
+   ]
+  },
+  {
+   "label": "legs",
+   "attributes": [],
+   "bounding_box": [
+    0.758,
+    0.5891238670694864,
+    0.118,
+    0.1510574018126888
+   ]
+  },
+  {
+   "label": "legs",
+   "attributes": [],
+   "bounding_box": [
+    0.618,
+    0.6374622356495468,
+    0.058,
+    0.09063444108761329
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.766,
+    0.26586102719033233,
+    0.066,
+    0.08157099697885196
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.466,
+    0.283987915407855,
+    0.078,
+    0.07854984894259819
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.396,
+    0.26586102719033233,
+    0.054,
+    0.09969788519637462
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.676,
+    0.23867069486404835,
+    0.084,
+    0.11178247734138973
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.57,
+    0.283987915407855,
+    0.058,
+    0.06948640483383686
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.966,
+    0.2688821752265861,
+    0.032,
+    0.07854984894259819
+   ]
+  },
+  {
+   "label": "elephant",
+   "attributes": [
+    "wild"
+   ],
+   "bounding_box": [
+    0.078,
+    0.4501510574018127,
+    0.886,
+    0.36253776435045315
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.156,
+    0.2537764350453172,
+    0.174,
+    0.14501510574018128
+   ]
+  },
+  {
+   "label": "sky",
+   "attributes": [
+    "bright",
+    "open"
+   ],
+   "bounding_box": [
+    0.0,
+    0.021148036253776436,
+    0.99,
+    0.3595166163141994
+   ]
+  },
+  {
+   "label": "elephant",
+   "attributes": [],
+   "bounding_box": [
+    0.124,
+    0.4984894259818731,
+    0.126,
+    0.11782477341389729
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the left of",
+   "object": "trunk"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "leg",
+   "relation": "of",
+   "object": "elephant"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "elephant"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "elephants"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the left of",
+   "object": "elephant"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "trunk"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "ear"
+  },
+  {
+   "subject": "elephant",
+   "relation": "walking in",
+   "object": "water"
+  },
+  {
+   "subject": "elephant",
+   "relation": "to the right of",
+   "object": "ear"
+  },
+  {
+   "subject": "elephant",
+   "relation": "to the right of",
+   "object": "elephant"
+  },
+  {
+   "subject": "elephant",
+   "relation": "in",
+   "object": "water"
+  },
+  {
+   "subject": "elephant",
+   "relation": "to the right of",
+   "object": "trunk"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the left of",
+   "object": "trunk"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the right of",
+   "object": "ear"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the left of",
+   "object": "trunk"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the left of",
+   "object": "elephant"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "legs"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "water",
+   "relation": "to the left of",
+   "object": "trunk"
+  },
+  {
+   "subject": "water",
+   "relation": "to the right of",
+   "object": "elephant"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the right of",
+   "object": "leg"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "trunk",
+   "relation": "of",
+   "object": "elephant"
+  },
+  {
+   "subject": "elephants",
+   "relation": "to the left of",
+   "object": "elephant"
+  },
+  {
+   "subject": "elephants",
+   "relation": "to the left of",
+   "object": "trunk"
+  },
+  {
+   "subject": "elephants",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the right of",
+   "object": "trunk"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the right of",
+   "object": "elephants"
+  },
+  {
+   "subject": "trunk",
+   "relation": "to the left of",
+   "object": "legs"
+  },
+  {
+   "subject": "elephant",
+   "relation": "to the left of",
+   "object": "legs"
+  },
+  {
+   "subject": "elephant",
+   "relation": "to the left of",
+   "object": "water"
+  },
+  {
+   "subject": "elephant",
+   "relation": "to the right of",
+   "object": "elephants"
+  },
+  {
+   "subject": "elephant",
+   "relation": "to the left of",
+   "object": "elephant"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "legs"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the right of",
+   "object": "elephant"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "trunk"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the right of",
+   "object": "trunk"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the right of",
+   "object": "legs"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the right of",
+   "object": "water"
+  },
+  {
+   "subject": "elephant",
+   "relation": "to the left of",
+   "object": "ear"
+  }
+ ],
+ "counts": {
+  "objects": 31,
+  "relations": 48
+ }
+}

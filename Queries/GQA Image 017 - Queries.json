@@ -1,0 +1,24 @@
+{
+ "image_number": 17,
+ "gqa_image_id": "2407506",
+ "filepath": "data/data_0/2407506.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "boy",
+  "phone"
+ ],
+ "query": {
+  "question": "What is between the boy and the phone?",
+  "answer": "shirt",
+  "template": "between",
+  "derivation": {
+   "anchor_a": "boy",
+   "anchor_b": "phone",
+   "rule": "bounding-box centre-x strictly between the anchors' centre-x"
+  },
+  "unambiguous": true
+ },
+ "counts": {
+  "queries": 1
+ }
+}

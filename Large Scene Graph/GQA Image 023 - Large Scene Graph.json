@@ -1,0 +1,466 @@
+{
+ "image_number": 23,
+ "gqa_image_id": "2409769",
+ "filepath": "data/data_0/2409769.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "car",
+   "attributes": [
+    "blue",
+    "old"
+   ],
+   "bounding_box": [
+    0.05,
+    0.1921921921921922,
+    0.43,
+    0.45645645645645644
+   ]
+  },
+  {
+   "label": "wheels",
+   "attributes": [
+    "thick",
+    "black"
+   ],
+   "bounding_box": [
+    0.576,
+    0.5285285285285285,
+    0.056,
+    0.2132132132132132
+   ]
+  },
+  {
+   "label": "wall",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.508,
+    0.15915915915915915,
+    0.05,
+    0.1831831831831832
+   ]
+  },
+  {
+   "label": "street",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.34234234234234234,
+    0.952,
+    0.6576576576576577
+   ]
+  },
+  {
+   "label": "grill",
+   "attributes": [],
+   "bounding_box": [
+    0.11,
+    0.42042042042042044,
+    0.168,
+    0.08408408408408409
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "white",
+    "striped"
+   ],
+   "bounding_box": [
+    0.452,
+    0.003003003003003003,
+    0.028,
+    0.3783783783783784
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "yellow"
+   ],
+   "bounding_box": [
+    0.616,
+    0.13813813813813813,
+    0.03,
+    0.08708708708708708
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.796,
+    0.1981981981981982,
+    0.096,
+    0.18618618618618618
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.81,
+    0.2702702702702703,
+    0.074,
+    0.1021021021021021
+   ]
+  },
+  {
+   "label": "windshield",
+   "attributes": [],
+   "bounding_box": [
+    0.25,
+    0.23423423423423423,
+    0.1,
+    0.07507507507507508
+   ]
+  },
+  {
+   "label": "cart",
+   "attributes": [],
+   "bounding_box": [
+    0.566,
+    0.35435435435435436,
+    0.38,
+    0.3993993993993994
+   ]
+  },
+  {
+   "label": "horse",
+   "attributes": [
+    "brown"
+   ],
+   "bounding_box": [
+    0.698,
+    0.23123123123123124,
+    0.14,
+    0.5855855855855856
+   ]
+  },
+  {
+   "label": "face",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.758,
+    0.29429429429429427,
+    0.036,
+    0.17117117117117117
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "white",
+    "old"
+   ],
+   "bounding_box": [
+    0.558,
+    0.21921921921921922,
+    0.176,
+    0.2042042042042042
+   ]
+  },
+  {
+   "label": "sign",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.94,
+    0.1831831831831832,
+    0.016,
+    0.018018018018018018
+   ]
+  },
+  {
+   "label": "license plate",
+   "attributes": [
+    "yellow"
+   ],
+   "bounding_box": [
+    0.16,
+    0.5195195195195195,
+    0.054,
+    0.042042042042042045
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "car",
+   "relation": "next to",
+   "object": "cart"
+  },
+  {
+   "subject": "car",
+   "relation": "in front of",
+   "object": "car"
+  },
+  {
+   "subject": "car",
+   "relation": "near",
+   "object": "cart"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "wheels"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "cart"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "wheels",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "wheels",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "windshield"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "horse"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "wall",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "windshield"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "horse"
+  },
+  {
+   "subject": "man",
+   "relation": "in",
+   "object": "cart"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "face"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "horse"
+  },
+  {
+   "subject": "windshield",
+   "relation": "to the left of",
+   "object": "wall"
+  },
+  {
+   "subject": "windshield",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "windshield",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "cart",
+   "relation": "pulled by",
+   "object": "horse"
+  },
+  {
+   "subject": "cart",
+   "relation": "on",
+   "object": "street"
+  },
+  {
+   "subject": "cart",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "cart",
+   "relation": "near",
+   "object": "car"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "wheels"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "horse",
+   "relation": "pulling",
+   "object": "cart"
+  },
+  {
+   "subject": "horse",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "face",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "face",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "car",
+   "relation": "behind",
+   "object": "car"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "windshield"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "face"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "wall"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "pole"
+  }
+ ],
+ "counts": {
+  "objects": 16,
+  "relations": 53
+ }
+}

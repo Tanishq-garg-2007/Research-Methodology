@@ -1,0 +1,273 @@
+{
+ "image_number": 33,
+ "gqa_image_id": "2363277",
+ "filepath": "data/data_0/2363277.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "zebra",
+  "head"
+ ],
+ "core_nodes": [
+  "head",
+  "legs",
+  "zebra"
+ ],
+ "nodes": [
+  "eye",
+  "fur",
+  "head",
+  "legs",
+  "tail",
+  "zebra"
+ ],
+ "objects": [
+  {
+   "label": "tail",
+   "attributes": [],
+   "bounding_box": [
+    0.38,
+    0.6024590163934426,
+    0.044,
+    0.13524590163934427
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [],
+   "bounding_box": [
+    0.238,
+    0.6024590163934426,
+    0.066,
+    0.19262295081967212
+   ]
+  },
+  {
+   "label": "tail",
+   "attributes": [],
+   "bounding_box": [
+    0.972,
+    0.6024590163934426,
+    0.028,
+    0.13114754098360656
+   ]
+  },
+  {
+   "label": "fur",
+   "attributes": [],
+   "bounding_box": [
+    0.658,
+    0.5286885245901639,
+    0.342,
+    0.38934426229508196
+   ]
+  },
+  {
+   "label": "legs",
+   "attributes": [],
+   "bounding_box": [
+    0.77,
+    0.7622950819672131,
+    0.038,
+    0.1598360655737705
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.654,
+    0.5286885245901639,
+    0.096,
+    0.21721311475409835
+   ]
+  },
+  {
+   "label": "zebra",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.4672131147540984,
+    0.304,
+    0.48360655737704916
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.674,
+    0.6270491803278688,
+    0.01,
+    0.020491803278688523
+   ]
+  },
+  {
+   "label": "zebra",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.5573770491803278,
+    0.426,
+    0.3237704918032787
+   ]
+  },
+  {
+   "label": "zebra",
+   "attributes": [],
+   "bounding_box": [
+    0.664,
+    0.5245901639344263,
+    0.19,
+    0.3483606557377049
+   ]
+  },
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.42,
+    0.5819672131147541,
+    0.044,
+    0.09836065573770492
+   ]
+  },
+  {
+   "label": "zebra",
+   "attributes": [],
+   "bounding_box": [
+    0.892,
+    0.5532786885245902,
+    0.108,
+    0.3401639344262295
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "tail",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the left of",
+   "object": "zebra"
+  },
+  {
+   "subject": "tail",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "fur",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "fur",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "legs",
+   "relation": "to the left of",
+   "object": "zebra"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "zebra"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "tail"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "tail"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "tail"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "zebra"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "zebra"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "fur"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the right of",
+   "object": "tail"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "fur"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "zebra",
+   "relation": "to the right of",
+   "object": "legs"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 12,
+  "relations": 24
+ }
+}

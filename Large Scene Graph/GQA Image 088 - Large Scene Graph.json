@@ -1,0 +1,235 @@
+{
+ "image_number": 88,
+ "gqa_image_id": "1592034",
+ "filepath": "data/data_2/1592034.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "cake",
+   "attributes": [
+    "sliced",
+    "chocolate"
+   ],
+   "bounding_box": [
+    0.2522875816993464,
+    0.77734375,
+    0.11241830065359477,
+    0.068359375
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.17254901960784313,
+    0.7587890625,
+    0.24836601307189543,
+    0.1240234375
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.08496732026143791,
+    0.45703125,
+    0.36470588235294116,
+    0.3232421875
+   ]
+  },
+  {
+   "label": "cake",
+   "attributes": [
+    "sliced",
+    "chocolate"
+   ],
+   "bounding_box": [
+    0.5973856209150327,
+    0.51953125,
+    0.09934640522875816,
+    0.0751953125
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.8091503267973856,
+    0.279296875,
+    0.19084967320261437,
+    0.23046875
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.5084967320261438,
+    0.466796875,
+    0.11372549019607843,
+    0.0361328125
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [
+    "orange"
+   ],
+   "bounding_box": [
+    0.46143790849673205,
+    0.69921875,
+    0.16862745098039217,
+    0.05078125
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.26143790849673204,
+    0.564453125,
+    0.10326797385620914,
+    0.041015625
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [],
+   "bounding_box": [
+    0.5647058823529412,
+    0.5517578125,
+    0.24444444444444444,
+    0.0771484375
+   ]
+  },
+  {
+   "label": "plate",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.4718954248366013,
+    0.66015625,
+    0.19607843137254902,
+    0.0771484375
+   ]
+  },
+  {
+   "label": "knife",
+   "attributes": [],
+   "bounding_box": [
+    0.611764705882353,
+    0.5498046875,
+    0.20784313725490197,
+    0.0439453125
+   ]
+  },
+  {
+   "label": "person",
+   "attributes": [],
+   "bounding_box": [
+    0.44313725490196076,
+    0.2958984375,
+    0.1542483660130719,
+    0.1982421875
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "cake",
+   "relation": "on",
+   "object": "plate"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "knife"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "plate"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "cake"
+  },
+  {
+   "subject": "cake",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "cake",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "person",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "person"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "knife"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "plate"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the left of",
+   "object": "cake"
+  },
+  {
+   "subject": "plate",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "knife",
+   "relation": "on",
+   "object": "plate"
+  },
+  {
+   "subject": "knife",
+   "relation": "to the right of",
+   "object": "person"
+  },
+  {
+   "subject": "knife",
+   "relation": "to the right of",
+   "object": "plate"
+  },
+  {
+   "subject": "person",
+   "relation": "to the left of",
+   "object": "person"
+  }
+ ],
+ "counts": {
+  "objects": 12,
+  "relations": 18
+ }
+}

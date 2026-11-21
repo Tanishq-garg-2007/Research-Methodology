@@ -1,0 +1,261 @@
+{
+ "image_number": 24,
+ "gqa_image_id": "2341486",
+ "filepath": "data/data_0/2341486.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "hair",
+   "attributes": [
+    "dark",
+    "blowing",
+    "long"
+   ],
+   "bounding_box": [
+    0.642,
+    0.268,
+    0.24,
+    0.166
+   ]
+  },
+  {
+   "label": "cigarette",
+   "attributes": [],
+   "bounding_box": [
+    0.554,
+    0.61,
+    0.018,
+    0.012
+   ]
+  },
+  {
+   "label": "feet",
+   "attributes": [],
+   "bounding_box": [
+    0.63,
+    0.85,
+    0.338,
+    0.092
+   ]
+  },
+  {
+   "label": "trash can",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.77,
+    0.23,
+    0.23
+   ]
+  },
+  {
+   "label": "lid",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.0,
+    0.774,
+    0.224,
+    0.16
+   ]
+  },
+  {
+   "label": "window",
+   "attributes": [],
+   "bounding_box": [
+    0.274,
+    0.172,
+    0.134,
+    0.194
+   ]
+  },
+  {
+   "label": "wheel",
+   "attributes": [],
+   "bounding_box": [
+    0.698,
+    0.912,
+    0.03,
+    0.028
+   ]
+  },
+  {
+   "label": "jeans",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.65,
+    0.554,
+    0.282,
+    0.302
+   ]
+  },
+  {
+   "label": "power lines",
+   "attributes": [],
+   "bounding_box": [
+    0.682,
+    0.032,
+    0.306,
+    0.15
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.004,
+    0.464,
+    0.994,
+    0.534
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.8,
+    0.158,
+    0.114,
+    0.028
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.552,
+    0.268,
+    0.442,
+    0.65
+   ]
+  },
+  {
+   "label": "house",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.798,
+    0.554
+   ]
+  },
+  {
+   "label": "logo",
+   "attributes": [
+    "silver"
+   ],
+   "bounding_box": [
+    0.136,
+    0.534,
+    0.022,
+    0.018
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.006,
+    0.29,
+    0.704,
+    0.408
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "window"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "cigarette",
+   "relation": "to the left of",
+   "object": "jeans"
+  },
+  {
+   "subject": "window",
+   "relation": "to the left of",
+   "object": "hair"
+  },
+  {
+   "subject": "jeans",
+   "relation": "to the right of",
+   "object": "cigarette"
+  },
+  {
+   "subject": "power lines",
+   "relation": "to the right of",
+   "object": "house"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "house"
+  },
+  {
+   "subject": "man",
+   "relation": "holding",
+   "object": "cigarette"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "house",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "house",
+   "relation": "to the left of",
+   "object": "power lines"
+  },
+  {
+   "subject": "house",
+   "relation": "near",
+   "object": "car"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "car",
+   "relation": "near",
+   "object": "house"
+  },
+  {
+   "subject": "car",
+   "relation": "next to",
+   "object": "house"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "hair"
+  }
+ ],
+ "counts": {
+  "objects": 15,
+  "relations": 16
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "image_number": 27,
+ "gqa_image_id": "2371091",
+ "filepath": "data/data_0/2371091.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "grass",
+  "leg"
+ ],
+ "core_nodes": [
+  "ear",
+  "grass",
+  "leg"
+ ],
+ "nodes": [
+  "ear",
+  "eye",
+  "face",
+  "grass",
+  "head",
+  "leg"
+ ],
+ "objects": [
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.214,
+    0.5413333333333333,
+    0.132,
+    0.24266666666666667
+   ]
+  },
+  {
+   "label": "eye",
+   "attributes": [],
+   "bounding_box": [
+    0.248,
+    0.632,
+    0.028,
+    0.029333333333333333
+   ]
+  },
+  {
+   "label": "ear",
+   "attributes": [],
+   "bounding_box": [
+    0.214,
+    0.5493333333333333,
+    0.064,
+    0.06933333333333333
+   ]
+  },
+  {
+   "label": "grass",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.02,
+    0.456,
+    0.176,
+    0.216
+   ]
+  },
+  {
+   "label": "leg",
+   "attributes": [],
+   "bounding_box": [
+    0.358,
+    0.48533333333333334,
+    0.084,
+    0.2986666666666667
+   ]
+  },
+  {
+   "label": "face",
+   "attributes": [],
+   "bounding_box": [
+    0.24,
+    0.6,
+    0.066,
+    0.17066666666666666
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "head",
+   "relation": "to the right of",
+   "object": "grass"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the right of",
+   "object": "grass"
+  },
+  {
+   "subject": "eye",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the right of",
+   "object": "grass"
+  },
+  {
+   "subject": "ear",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the left of",
+   "object": "ear"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the left of",
+   "object": "eye"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the left of",
+   "object": "head"
+  },
+  {
+   "subject": "grass",
+   "relation": "to the left of",
+   "object": "leg"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "ear"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "eye"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "grass"
+  },
+  {
+   "subject": "leg",
+   "relation": "to the right of",
+   "object": "face"
+  },
+  {
+   "subject": "face",
+   "relation": "to the left of",
+   "object": "leg"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 16
+ }
+}

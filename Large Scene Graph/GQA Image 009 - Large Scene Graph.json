@@ -1,0 +1,210 @@
+{
+ "image_number": 9,
+ "gqa_image_id": "2335834",
+ "filepath": "data/data_0/2335834.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "sign",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.4,
+    0.3019271948608137,
+    0.018,
+    0.08565310492505353
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.706,
+    0.3297644539614561,
+    0.054,
+    0.05353319057815846
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.114,
+    0.0,
+    0.148,
+    0.6809421841541756
+   ]
+  },
+  {
+   "label": "ground",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.5674518201284796,
+    0.998,
+    0.430406852248394
+   ]
+  },
+  {
+   "label": "frisbee",
+   "attributes": [],
+   "bounding_box": [
+    0.782,
+    0.3147751605995717,
+    0.092,
+    0.034261241970021415
+   ]
+  },
+  {
+   "label": "feet",
+   "attributes": [],
+   "bounding_box": [
+    0.896,
+    0.6209850107066381,
+    0.094,
+    0.05139186295503212
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.71,
+    0.16274089935760172,
+    0.28,
+    0.5717344753747323
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.33,
+    0.0,
+    0.116,
+    0.69593147751606
+   ]
+  },
+  {
+   "label": "cap",
+   "attributes": [
+    "orange"
+   ],
+   "bounding_box": [
+    0.866,
+    0.16488222698072805,
+    0.064,
+    0.042826552462526764
+   ]
+  },
+  {
+   "label": "sneakers",
+   "attributes": [],
+   "bounding_box": [
+    0.808,
+    0.6766595289079229,
+    0.076,
+    0.05139186295503212
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.796,
+    0.2291220556745182,
+    0.178,
+    0.21199143468950749
+   ]
+  },
+  {
+   "label": "shorts",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.818,
+    0.41113490364025695,
+    0.17,
+    0.1670235546038544
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "sign",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "hand",
+   "relation": "of",
+   "object": "man"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "frisbee"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "shirt"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "sign"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "frisbee",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "cap"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "sneakers"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "shorts"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "shirt",
+   "relation": "to the right of",
+   "object": "hand"
+  }
+ ],
+ "counts": {
+  "objects": 12,
+  "relations": 13
+ }
+}

@@ -1,0 +1,160 @@
+{
+ "image_number": 32,
+ "gqa_image_id": "2343740",
+ "filepath": "data/data_0/2343740.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "boy",
+  "crane"
+ ],
+ "core_nodes": [
+  "boy",
+  "crane",
+  "fence"
+ ],
+ "nodes": [
+  "boy",
+  "cap",
+  "crane",
+  "fence",
+  "hand",
+  "head"
+ ],
+ "objects": [
+  {
+   "label": "head",
+   "attributes": [],
+   "bounding_box": [
+    0.786,
+    0.44266666666666665,
+    0.056,
+    0.06933333333333333
+   ]
+  },
+  {
+   "label": "crane",
+   "attributes": [],
+   "bounding_box": [
+    0.824,
+    0.408,
+    0.176,
+    0.14666666666666667
+   ]
+  },
+  {
+   "label": "fence",
+   "attributes": [],
+   "bounding_box": [
+    0.136,
+    0.44533333333333336,
+    0.63,
+    0.136
+   ]
+  },
+  {
+   "label": "hand",
+   "attributes": [],
+   "bounding_box": [
+    0.664,
+    0.4693333333333333,
+    0.02,
+    0.032
+   ]
+  },
+  {
+   "label": "cap",
+   "attributes": [
+    "white"
+   ],
+   "bounding_box": [
+    0.782,
+    0.44266666666666665,
+    0.064,
+    0.07733333333333334
+   ]
+  },
+  {
+   "label": "boy",
+   "attributes": [],
+   "bounding_box": [
+    0.664,
+    0.44266666666666665,
+    0.256,
+    0.5573333333333333
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "head",
+   "relation": "to the left of",
+   "object": "crane"
+  },
+  {
+   "subject": "crane",
+   "relation": "to the right of",
+   "object": "hand"
+  },
+  {
+   "subject": "crane",
+   "relation": "to the right of",
+   "object": "head"
+  },
+  {
+   "subject": "crane",
+   "relation": "to the right of",
+   "object": "fence"
+  },
+  {
+   "subject": "crane",
+   "relation": "to the right of",
+   "object": "cap"
+  },
+  {
+   "subject": "crane",
+   "relation": "behind",
+   "object": "boy"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the left of",
+   "object": "crane"
+  },
+  {
+   "subject": "fence",
+   "relation": "to the left of",
+   "object": "boy"
+  },
+  {
+   "subject": "hand",
+   "relation": "to the left of",
+   "object": "crane"
+  },
+  {
+   "subject": "cap",
+   "relation": "to the left of",
+   "object": "crane"
+  },
+  {
+   "subject": "boy",
+   "relation": "in front of",
+   "object": "crane"
+  },
+  {
+   "subject": "boy",
+   "relation": "wearing",
+   "object": "cap"
+  },
+  {
+   "subject": "boy",
+   "relation": "to the right of",
+   "object": "fence"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 6,
+  "relations": 13
+ }
+}

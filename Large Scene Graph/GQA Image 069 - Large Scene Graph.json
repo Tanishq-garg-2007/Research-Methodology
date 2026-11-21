@@ -1,0 +1,590 @@
+{
+ "image_number": 69,
+ "gqa_image_id": "2336",
+ "filepath": "data/data_1/2336.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "large / full original scene graph (all objects + all relations)",
+ "objects": [
+  {
+   "label": "dispenser",
+   "attributes": [],
+   "bounding_box": [
+    0.33875,
+    0.5233333333333333,
+    0.08875,
+    0.085
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.4575,
+    0.4166666666666667,
+    0.0625,
+    0.125
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.035,
+    0.22166666666666668,
+    0.12,
+    0.32
+   ]
+  },
+  {
+   "label": "sidewalk",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.51,
+    0.15125,
+    0.04666666666666667
+   ]
+  },
+  {
+   "label": "car",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.13125,
+    0.48,
+    0.18875,
+    0.08
+   ]
+  },
+  {
+   "label": "street",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.5466666666666666,
+    0.6425,
+    0.22166666666666668
+   ]
+  },
+  {
+   "label": "church",
+   "attributes": [
+    "brown",
+    "stone"
+   ],
+   "bounding_box": [
+    0.6275,
+    0.0,
+    0.2075,
+    0.49166666666666664
+   ]
+  },
+  {
+   "label": "umbrella",
+   "attributes": [],
+   "bounding_box": [
+    0.60875,
+    0.445,
+    0.09375,
+    0.03833333333333333
+   ]
+  },
+  {
+   "label": "coat",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.76875,
+    0.49666666666666665,
+    0.0625,
+    0.08833333333333333
+   ]
+  },
+  {
+   "label": "woman",
+   "attributes": [],
+   "bounding_box": [
+    0.62,
+    0.4666666666666667,
+    0.0575,
+    0.22833333333333333
+   ]
+  },
+  {
+   "label": "flag",
+   "attributes": [],
+   "bounding_box": [
+    0.32875,
+    0.11833333333333333,
+    0.0825,
+    0.12833333333333333
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [],
+   "bounding_box": [
+    0.355,
+    0.125,
+    0.0525,
+    0.035
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [],
+   "bounding_box": [
+    0.59125,
+    0.26,
+    0.0225,
+    0.02666666666666667
+   ]
+  },
+  {
+   "label": "flag",
+   "attributes": [],
+   "bounding_box": [
+    0.605,
+    0.23166666666666666,
+    0.0375,
+    0.105
+   ]
+  },
+  {
+   "label": "planter",
+   "attributes": [],
+   "bounding_box": [
+    0.955,
+    0.52,
+    0.02875,
+    0.035
+   ]
+  },
+  {
+   "label": "planter",
+   "attributes": [
+    "gray"
+   ],
+   "bounding_box": [
+    0.92,
+    0.52,
+    0.0375,
+    0.045
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [],
+   "bounding_box": [
+    0.96125,
+    0.455,
+    0.02875,
+    0.065
+   ]
+  },
+  {
+   "label": "tree",
+   "attributes": [
+    "green"
+   ],
+   "bounding_box": [
+    0.9175,
+    0.43833333333333335,
+    0.0375,
+    0.08666666666666667
+   ]
+  },
+  {
+   "label": "planter",
+   "attributes": [
+    "red"
+   ],
+   "bounding_box": [
+    0.4225,
+    0.5566666666666666,
+    0.125,
+    0.13666666666666666
+   ]
+  },
+  {
+   "label": "pole",
+   "attributes": [
+    "black"
+   ],
+   "bounding_box": [
+    0.3725,
+    0.605,
+    0.025,
+    0.10166666666666667
+   ]
+  },
+  {
+   "label": "trash can",
+   "attributes": [
+    "metal",
+    "green"
+   ],
+   "bounding_box": [
+    0.1125,
+    0.56,
+    0.1025,
+    0.21
+   ]
+  },
+  {
+   "label": "building",
+   "attributes": [],
+   "bounding_box": [
+    0.0,
+    0.0,
+    0.2975,
+    0.5416666666666666
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "dispenser",
+   "relation": "on",
+   "object": "pole"
+  },
+  {
+   "subject": "dispenser",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "dispenser",
+   "relation": "to the right of",
+   "object": "sidewalk"
+  },
+  {
+   "subject": "dispenser",
+   "relation": "to the right of",
+   "object": "trash can"
+  },
+  {
+   "subject": "dispenser",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "church"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "car"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "umbrella"
+  },
+  {
+   "subject": "tree",
+   "relation": "in",
+   "object": "planter"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "tree",
+   "relation": "on",
+   "object": "sidewalk"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "sidewalk",
+   "relation": "to the left of",
+   "object": "car"
+  },
+  {
+   "subject": "sidewalk",
+   "relation": "to the left of",
+   "object": "dispenser"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "car",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "car",
+   "relation": "to the right of",
+   "object": "sidewalk"
+  },
+  {
+   "subject": "car",
+   "relation": "driving on",
+   "object": "street"
+  },
+  {
+   "subject": "street",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "church",
+   "relation": "to the right of",
+   "object": "flag"
+  },
+  {
+   "subject": "church",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "church",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "church",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "umbrella",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "umbrella",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "coat",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "woman",
+   "relation": "holding",
+   "object": "umbrella"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "dispenser"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the left of",
+   "object": "coat"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "street"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "woman",
+   "relation": "to the right of",
+   "object": "planter"
+  },
+  {
+   "subject": "flag",
+   "relation": "on",
+   "object": "pole"
+  },
+  {
+   "subject": "flag",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "flag",
+   "relation": "to the left of",
+   "object": "church"
+  },
+  {
+   "subject": "pole",
+   "relation": "on",
+   "object": "building"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "building"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "church"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "flag"
+  },
+  {
+   "subject": "flag",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "coat"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "planter"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "tree"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "church"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "woman"
+  },
+  {
+   "subject": "tree",
+   "relation": "to the right of",
+   "object": "umbrella"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "dispenser"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "pole"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "planter",
+   "relation": "to the right of",
+   "object": "trash can"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "woman"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "pole",
+   "relation": "to the right of",
+   "object": "trash can"
+  },
+  {
+   "subject": "trash can",
+   "relation": "to the left of",
+   "object": "pole"
+  },
+  {
+   "subject": "trash can",
+   "relation": "to the left of",
+   "object": "dispenser"
+  },
+  {
+   "subject": "trash can",
+   "relation": "to the left of",
+   "object": "planter"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "tree"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "flag"
+  },
+  {
+   "subject": "building",
+   "relation": "to the left of",
+   "object": "pole"
+  }
+ ],
+ "counts": {
+  "objects": 22,
+  "relations": 67
+ }
+}

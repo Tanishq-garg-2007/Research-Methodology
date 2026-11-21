@@ -1,0 +1,167 @@
+{
+ "image_number": 14,
+ "gqa_image_id": "2388854",
+ "filepath": "data/data_0/2388854.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "graph": "small / compact local scene graph (anchors + query + answer + up to 3 distractors; edges from the tight anchor subgraph only)",
+ "anchors": [
+  "cord",
+  "man"
+ ],
+ "core_nodes": [
+  "cord",
+  "face",
+  "man"
+ ],
+ "nodes": [
+  "cord",
+  "face",
+  "goggles",
+  "hair",
+  "man",
+  "shirt"
+ ],
+ "objects": [
+  {
+   "label": "face",
+   "attributes": [],
+   "bounding_box": [
+    0.196,
+    0.47761194029850745,
+    0.03,
+    0.07164179104477612
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.608,
+    0.39104477611940297,
+    0.172,
+    0.1373134328358209
+   ]
+  },
+  {
+   "label": "hair",
+   "attributes": [],
+   "bounding_box": [
+    0.15,
+    0.4716417910447761,
+    0.064,
+    0.15223880597014924
+   ]
+  },
+  {
+   "label": "man",
+   "attributes": [],
+   "bounding_box": [
+    0.152,
+    0.46567164179104475,
+    0.088,
+    0.21194029850746268
+   ]
+  },
+  {
+   "label": "cord",
+   "attributes": [
+    "hanging"
+   ],
+   "bounding_box": [
+    0.302,
+    0.4746268656716418,
+    0.072,
+    0.06567164179104477
+   ]
+  },
+  {
+   "label": "goggles",
+   "attributes": [],
+   "bounding_box": [
+    0.192,
+    0.5014925373134328,
+    0.032,
+    0.014925373134328358
+   ]
+  },
+  {
+   "label": "shirt",
+   "attributes": [
+    "blue"
+   ],
+   "bounding_box": [
+    0.158,
+    0.5462686567164179,
+    0.064,
+    0.08955223880597014
+   ]
+  }
+ ],
+ "relations": [
+  {
+   "subject": "face",
+   "relation": "to the left of",
+   "object": "cord"
+  },
+  {
+   "subject": "man",
+   "relation": "to the right of",
+   "object": "cord"
+  },
+  {
+   "subject": "hair",
+   "relation": "to the left of",
+   "object": "cord"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "goggles"
+  },
+  {
+   "subject": "man",
+   "relation": "wearing",
+   "object": "shirt"
+  },
+  {
+   "subject": "man",
+   "relation": "to the left of",
+   "object": "cord"
+  },
+  {
+   "subject": "cord",
+   "relation": "to the left of",
+   "object": "man"
+  },
+  {
+   "subject": "cord",
+   "relation": "to the right of",
+   "object": "hair"
+  },
+  {
+   "subject": "cord",
+   "relation": "to the right of",
+   "object": "man"
+  },
+  {
+   "subject": "cord",
+   "relation": "to the right of",
+   "object": "goggles"
+  },
+  {
+   "subject": "cord",
+   "relation": "to the right of",
+   "object": "face"
+  },
+  {
+   "subject": "goggles",
+   "relation": "to the left of",
+   "object": "cord"
+  }
+ ],
+ "counts": {
+  "nodes": 6,
+  "objects": 7,
+  "relations": 12
+ }
+}

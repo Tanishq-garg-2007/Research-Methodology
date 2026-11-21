@@ -1,0 +1,23 @@
+{
+ "image_number": 39,
+ "gqa_image_id": "2318099",
+ "filepath": "data/data_1/2318099.jpg",
+ "source": "Voxel51/GQA-Scene-Graph",
+ "anchors": [
+  "leaves",
+  "head"
+ ],
+ "query": {
+  "question": "What is on the tree?",
+  "answer": "leaves",
+  "template": "on",
+  "derivation": {
+   "relation": "on",
+   "object": "tree"
+  },
+  "unambiguous": false
+ },
+ "counts": {
+  "queries": 1
+ }
+}
