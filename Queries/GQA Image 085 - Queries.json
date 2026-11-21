@@ -8,20 +8,18 @@
   "shirts"
  ],
  "query": {
-  "question": "How many bears are above the coat?",
-  "answer": 10,
-  "template": "counting",
+  "question": "What is to the right of the green shirts?",
+  "answer": "cross",
+  "template": "attr_relation",
   "derivation": {
-   "counted_label": "bear",
-   "relation": "above",
-   "anchor": "coat",
-   "anchor_attributes": [],
-   "counted_total_instances": 10,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "relation": "to the right of",
+   "object": "shirts",
+   "anchor_attributes": [
+    "green"
+   ],
+   "rule": "anchor identified by label+attributes in the small scene graph; answer is the unique related label in the compact graph"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

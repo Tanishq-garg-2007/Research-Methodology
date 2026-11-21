@@ -8,20 +8,16 @@
   "ring"
  ],
  "query": {
-  "question": "How many hands are above the jacket?",
-  "answer": 2,
-  "template": "counting",
+  "question": "What is to the left of the jacket?",
+  "answer": "man",
+  "template": "attr_relation",
   "derivation": {
-   "counted_label": "hand",
-   "relation": "above",
-   "anchor": "jacket",
+   "relation": "to the left of",
+   "object": "jacket",
    "anchor_attributes": [],
-   "counted_total_instances": 2,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "rule": "anchor identified by label+attributes in the small scene graph; answer is the unique related label in the compact graph"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

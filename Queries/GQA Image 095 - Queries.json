@@ -8,20 +8,19 @@
   "table"
  ],
  "query": {
-  "question": "How many tables are above the chair?",
-  "answer": 1,
-  "template": "counting",
+  "question": "What is between the head and the brown table?",
+  "answer": "teddy bear",
+  "template": "between_attr",
   "derivation": {
-   "counted_label": "table",
-   "relation": "above",
-   "anchor": "chair",
-   "anchor_attributes": [],
-   "counted_total_instances": 2,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "anchor_a": "head",
+   "anchor_a_attributes": [],
+   "anchor_b": "table",
+   "anchor_b_attributes": [
+    "brown"
+   ],
+   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": true
  },
  "counts": {
   "queries": 1

@@ -8,20 +8,19 @@
   "log"
  ],
  "query": {
-  "question": "How many logs are above the grass?",
-  "answer": 2,
-  "template": "counting",
+  "question": "What is between the eating zebra and the head?",
+  "answer": "grass",
+  "template": "between_attr",
   "derivation": {
-   "counted_label": "log",
-   "relation": "above",
-   "anchor": "grass",
-   "anchor_attributes": [],
-   "counted_total_instances": 4,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "anchor_a": "zebra",
+   "anchor_a_attributes": [
+    "eating"
+   ],
+   "anchor_b": "head",
+   "anchor_b_attributes": [],
+   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": true
  },
  "counts": {
   "queries": 1

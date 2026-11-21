@@ -8,20 +8,18 @@
   "cake"
  ],
  "query": {
-  "question": "How many cakes are above the knife?",
-  "answer": 1,
-  "template": "counting",
+  "question": "What is to the right of the orange plate?",
+  "answer": "knife",
+  "template": "attr_relation",
   "derivation": {
-   "counted_label": "cake",
-   "relation": "above",
-   "anchor": "knife",
-   "anchor_attributes": [],
-   "counted_total_instances": 2,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "relation": "to the right of",
+   "object": "plate",
+   "anchor_attributes": [
+    "orange"
+   ],
+   "rule": "anchor identified by label+attributes in the small scene graph; answer is the unique related label in the compact graph"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

@@ -8,22 +8,20 @@
   "frame"
  ],
  "query": {
-  "question": "How many baskets are above the antique fireplace?",
-  "answer": 1,
-  "template": "counting",
+  "question": "What is between the gray wood chair and the frame?",
+  "answer": "rug",
+  "template": "between_attr",
   "derivation": {
-   "counted_label": "basket",
-   "relation": "above",
-   "anchor": "fireplace",
-   "anchor_attributes": [
-    "antique"
+   "anchor_a": "chair",
+   "anchor_a_attributes": [
+    "gray",
+    "wood"
    ],
-   "counted_total_instances": 1,
-   "singleton_count": true,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "anchor_b": "frame",
+   "anchor_b_attributes": [],
+   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
   },
-  "unambiguous": true,
-  "singleton": true
+  "unambiguous": true
  },
  "counts": {
   "queries": 1

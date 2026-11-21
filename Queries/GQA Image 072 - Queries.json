@@ -8,20 +8,16 @@
   "woman"
  ],
  "query": {
-  "question": "How many aprons are above the bowl?",
-  "answer": 1,
-  "template": "counting",
+  "question": "What is holding the person?",
+  "answer": "bowl",
+  "template": "attr_relation",
   "derivation": {
-   "counted_label": "apron",
-   "relation": "above",
-   "anchor": "bowl",
+   "relation": "holding",
+   "object": "person",
    "anchor_attributes": [],
-   "counted_total_instances": 1,
-   "singleton_count": true,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "rule": "anchor identified by label+attributes in the small scene graph; answer is the unique related label in the compact graph"
   },
-  "unambiguous": true,
-  "singleton": true
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

@@ -8,20 +8,18 @@
   "propeller"
  ],
  "query": {
-  "question": "How many clouds are above the barrier?",
-  "answer": 3,
-  "template": "counting",
+  "question": "What is to the right of the red nose?",
+  "answer": "field",
+  "template": "attr_relation",
   "derivation": {
-   "counted_label": "cloud",
-   "relation": "above",
-   "anchor": "barrier",
-   "anchor_attributes": [],
-   "counted_total_instances": 3,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "relation": "to the right of",
+   "object": "nose",
+   "anchor_attributes": [
+    "red"
+   ],
+   "rule": "anchor identified by label+attributes in the small scene graph; answer is the unique related label in the compact graph"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

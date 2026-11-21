@@ -8,22 +8,18 @@
   "bus"
  ],
  "query": {
-  "question": "How many buses are above the black car?",
-  "answer": 2,
-  "template": "counting",
+  "question": "What is to the right of the red bus?",
+  "answer": "pavement",
+  "template": "attr_relation",
   "derivation": {
-   "counted_label": "bus",
-   "relation": "above",
-   "anchor": "car",
+   "relation": "to the right of",
+   "object": "bus",
    "anchor_attributes": [
-    "black"
+    "red"
    ],
-   "counted_total_instances": 2,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "rule": "anchor identified by label+attributes in the small scene graph; answer is the unique related label in the compact graph"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

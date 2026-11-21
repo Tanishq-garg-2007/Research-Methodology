@@ -8,20 +8,17 @@
   "windows"
  ],
  "query": {
-  "question": "How many doors are above the label?",
-  "answer": 1,
-  "template": "counting",
+  "question": "What is to the left of the window that is to the right of the label?",
+  "answer": "nose",
+  "template": "two_hop",
   "derivation": {
-   "counted_label": "door",
-   "relation": "above",
-   "anchor": "label",
-   "anchor_attributes": [],
-   "counted_total_instances": 2,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "hop1_subject": "label",
+   "hop1_relation": "to the right of",
+   "intermediate": "window",
+   "hop2_relation": "to the left of",
+   "rule": "intermediate identified through the first relation; answer is the unique related label connected to that intermediate in the small scene graph"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

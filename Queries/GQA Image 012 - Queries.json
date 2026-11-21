@@ -8,22 +8,17 @@
   "hand"
  ],
  "query": {
-  "question": "How many arms are above the blue jeans?",
-  "answer": 2,
-  "template": "counting",
+  "question": "What is to the right of the hand that is to the left of the jeans?",
+  "answer": "food",
+  "template": "two_hop",
   "derivation": {
-   "counted_label": "arm",
-   "relation": "above",
-   "anchor": "jeans",
-   "anchor_attributes": [
-    "blue"
-   ],
-   "counted_total_instances": 2,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "hop1_subject": "jeans",
+   "hop1_relation": "to the left of",
+   "intermediate": "hand",
+   "hop2_relation": "to the right of",
+   "rule": "intermediate identified through the first relation; answer is the unique related label connected to that intermediate in the small scene graph"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": false
  },
  "counts": {
   "queries": 1

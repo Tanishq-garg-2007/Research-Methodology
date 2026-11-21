@@ -8,20 +8,17 @@
   "liquor"
  ],
  "query": {
-  "question": "How many bottles are above the container?",
-  "answer": 4,
-  "template": "counting",
+  "question": "What is to the right of the liquor that is to the left of the bottle?",
+  "answer": "glass",
+  "template": "two_hop",
   "derivation": {
-   "counted_label": "bottle",
-   "relation": "above",
-   "anchor": "container",
-   "anchor_attributes": [],
-   "counted_total_instances": 7,
-   "singleton_count": false,
-   "rule": "true count in the full image from the large graph: instances of the counted label with centre on the stated side of the anchor instance's centre"
+   "hop1_subject": "bottle",
+   "hop1_relation": "to the left of",
+   "intermediate": "liquor",
+   "hop2_relation": "to the right of",
+   "rule": "intermediate identified through the first relation; answer is the unique related label connected to that intermediate in the small scene graph"
   },
-  "unambiguous": false,
-  "singleton": false
+  "unambiguous": false
  },
  "counts": {
   "queries": 1
