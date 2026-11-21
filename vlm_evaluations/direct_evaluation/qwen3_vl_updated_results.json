@@ -1,0 +1,2602 @@
+{
+  "metadata": {
+    "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+    "total_items": 100,
+    "total_correct": 60,
+    "accuracy": 0.6,
+    "execution_time_seconds": 89.93,
+    "template_breakdown": {
+      "two_hop": {
+        "total": 33,
+        "correct": 23,
+        "accuracy": 0.697
+      },
+      "attr_relation": {
+        "total": 34,
+        "correct": 32,
+        "accuracy": 0.9412
+      },
+      "between_attr": {
+        "total": 33,
+        "correct": 5,
+        "accuracy": 0.1515
+      }
+    }
+  },
+  "results": [
+    {
+      "image_number": 1,
+      "gqa_image_id": "2395226",
+      "template": "two_hop",
+      "question": "What is on the plate that is to the right of the carrots?",
+      "ground_truth_answer": "fork",
+      "predicted_response": "plate",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 10,
+        "relations_count": 7,
+        "anchors": [
+          "plate",
+          "glass"
+        ],
+        "nodes": [
+          "bowl",
+          "carrots",
+          "container",
+          "fork",
+          "glass",
+          "plate"
+        ]
+      }
+    },
+    {
+      "image_number": 2,
+      "gqa_image_id": "2417523",
+      "template": "attr_relation",
+      "question": "What is to the left of the cockpit?",
+      "ground_truth_answer": "propeller",
+      "predicted_response": "propeller",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 14,
+        "relations_count": 16,
+        "anchors": [
+          "letter",
+          "propeller"
+        ],
+        "nodes": [
+          "cockpit",
+          "door",
+          "letter",
+          "nose",
+          "propeller",
+          "windows"
+        ]
+      }
+    },
+    {
+      "image_number": 3,
+      "gqa_image_id": "2414767",
+      "template": "attr_relation",
+      "question": "What is to the right of the cut grass?",
+      "ground_truth_answer": "pole",
+      "predicted_response": "pole",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 16,
+        "relations_count": 22,
+        "anchors": [
+          "pole",
+          "leg"
+        ],
+        "nodes": [
+          "bag",
+          "bottle",
+          "chair",
+          "grass",
+          "leg",
+          "pole"
+        ]
+      }
+    },
+    {
+      "image_number": 4,
+      "gqa_image_id": "2412093",
+      "template": "between_attr",
+      "question": "What is between the black clothes and the red sneakers?",
+      "ground_truth_answer": "cap",
+      "predicted_response": "skateboard",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 31,
+        "anchors": [
+          "man",
+          "skateboard"
+        ],
+        "nodes": [
+          "boy",
+          "cap",
+          "clothes",
+          "man",
+          "skateboard",
+          "sneakers"
+        ]
+      }
+    },
+    {
+      "image_number": 5,
+      "gqa_image_id": "2364991",
+      "template": "two_hop",
+      "question": "What is on the tree that is to the left of the bush?",
+      "ground_truth_answer": "trunk",
+      "predicted_response": "trunk",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 11,
+        "anchors": [
+          "tree",
+          "trunk"
+        ],
+        "nodes": [
+          "branch",
+          "building",
+          "bush",
+          "tree",
+          "trunk"
+        ]
+      }
+    },
+    {
+      "image_number": 6,
+      "gqa_image_id": "2376954",
+      "template": "two_hop",
+      "question": "What is on the shelf that is to the right of the chair?",
+      "ground_truth_answer": "container",
+      "predicted_response": "shelf",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 14,
+        "relations_count": 13,
+        "anchors": [
+          "door",
+          "shelf"
+        ],
+        "nodes": [
+          "chair",
+          "container",
+          "door",
+          "picture",
+          "refrigerator",
+          "shelf"
+        ]
+      }
+    },
+    {
+      "image_number": 7,
+      "gqa_image_id": "2375631",
+      "template": "between_attr",
+      "question": "What is between the blue comb and the lid?",
+      "ground_truth_answer": "toilet",
+      "predicted_response": "counter",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 10,
+        "anchors": [
+          "counter",
+          "toilet"
+        ],
+        "nodes": [
+          "bottle",
+          "brush",
+          "comb",
+          "counter",
+          "lid",
+          "toilet"
+        ]
+      }
+    },
+    {
+      "image_number": 8,
+      "gqa_image_id": "264",
+      "template": "between_attr",
+      "question": "What is between the hand and the large sign?",
+      "ground_truth_answer": "window",
+      "predicted_response": "window",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 8,
+        "relations_count": 16,
+        "anchors": [
+          "sign",
+          "window"
+        ],
+        "nodes": [
+          "apple",
+          "hand",
+          "man",
+          "poster",
+          "sign",
+          "window"
+        ]
+      }
+    },
+    {
+      "image_number": 9,
+      "gqa_image_id": "2335834",
+      "template": "between_attr",
+      "question": "What is between the frisbee and the white shirt?",
+      "ground_truth_answer": "man",
+      "predicted_response": "hand",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 7,
+        "anchors": [
+          "tree",
+          "hand"
+        ],
+        "nodes": [
+          "frisbee",
+          "hand",
+          "man",
+          "shirt",
+          "sign",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 10,
+      "gqa_image_id": "2411163",
+      "template": "two_hop",
+      "question": "What is to the right of the skin that is to the right of the earphones?",
+      "ground_truth_answer": "trees",
+      "predicted_response": "trees",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 16,
+        "anchors": [
+          "trees",
+          "skin"
+        ],
+        "nodes": [
+          "drawing",
+          "earphones",
+          "hair",
+          "shirt",
+          "skin",
+          "trees"
+        ]
+      }
+    },
+    {
+      "image_number": 11,
+      "gqa_image_id": "2371002",
+      "template": "between_attr",
+      "question": "What is between the doorway and the black seat?",
+      "ground_truth_answer": "room",
+      "predicted_response": "wall",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 8,
+        "anchors": [
+          "wall",
+          "doorway"
+        ],
+        "nodes": [
+          "doorway",
+          "room",
+          "seat",
+          "wall",
+          "window"
+        ]
+      }
+    },
+    {
+      "image_number": 12,
+      "gqa_image_id": "2344244",
+      "template": "two_hop",
+      "question": "What is to the right of the hand that is to the left of the jeans?",
+      "ground_truth_answer": "food",
+      "predicted_response": "food",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 8,
+        "relations_count": 14,
+        "anchors": [
+          "arm",
+          "hand"
+        ],
+        "nodes": [
+          "arm",
+          "ear buds",
+          "food",
+          "hand",
+          "jeans",
+          "lips"
+        ]
+      }
+    },
+    {
+      "image_number": 13,
+      "gqa_image_id": "2415025",
+      "template": "two_hop",
+      "question": "What is to the left of the cockpit that is to the left of the fence?",
+      "ground_truth_answer": "wing",
+      "predicted_response": "window",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 9,
+        "relations_count": 20,
+        "anchors": [
+          "window",
+          "cockpit"
+        ],
+        "nodes": [
+          "cockpit",
+          "fence",
+          "pole",
+          "tail",
+          "window",
+          "wing"
+        ]
+      }
+    },
+    {
+      "image_number": 14,
+      "gqa_image_id": "2388854",
+      "template": "between_attr",
+      "question": "What is between the hanging cord and the goggles?",
+      "ground_truth_answer": "face",
+      "predicted_response": "man",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 12,
+        "anchors": [
+          "cord",
+          "man"
+        ],
+        "nodes": [
+          "cord",
+          "face",
+          "goggles",
+          "hair",
+          "man",
+          "shirt"
+        ]
+      }
+    },
+    {
+      "image_number": 15,
+      "gqa_image_id": "2389368",
+      "template": "between_attr",
+      "question": "What is between the black shirt and the wrist?",
+      "ground_truth_answer": "man",
+      "predicted_response": "ball",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 16,
+        "anchors": [
+          "ball",
+          "fingers"
+        ],
+        "nodes": [
+          "ball",
+          "fingers",
+          "man",
+          "shirt",
+          "wrist",
+          "wristband"
+        ]
+      }
+    },
+    {
+      "image_number": 16,
+      "gqa_image_id": "2360483",
+      "template": "two_hop",
+      "question": "What is on the pole that is to the left of the building?",
+      "ground_truth_answer": "sign",
+      "predicted_response": "air conditioner",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 10,
+        "relations_count": 14,
+        "anchors": [
+          "pole",
+          "mirror"
+        ],
+        "nodes": [
+          "air conditioner",
+          "building",
+          "bus",
+          "mirror",
+          "pole",
+          "sign"
+        ]
+      }
+    },
+    {
+      "image_number": 17,
+      "gqa_image_id": "2407506",
+      "template": "two_hop",
+      "question": "What is to the right of the phone that is with the boy?",
+      "ground_truth_answer": "bag",
+      "predicted_response": "bag",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 5,
+        "relations_count": 7,
+        "anchors": [
+          "boy",
+          "phone"
+        ],
+        "nodes": [
+          "bag",
+          "boy",
+          "cap",
+          "phone",
+          "shirt"
+        ]
+      }
+    },
+    {
+      "image_number": 18,
+      "gqa_image_id": "2398218",
+      "template": "two_hop",
+      "question": "What is to the left of the post that is to the left of the porch?",
+      "ground_truth_answer": "stop sign",
+      "predicted_response": "stop sign",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 12,
+        "anchors": [
+          "stop sign",
+          "post"
+        ],
+        "nodes": [
+          "dress",
+          "porch",
+          "post",
+          "sign",
+          "stop sign"
+        ]
+      }
+    },
+    {
+      "image_number": 19,
+      "gqa_image_id": "2389557",
+      "template": "two_hop",
+      "question": "What is on the bench that is to the right of the grass?",
+      "ground_truth_answer": "girl",
+      "predicted_response": "girl",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 5,
+        "relations_count": 12,
+        "anchors": [
+          "girl",
+          "grass"
+        ],
+        "nodes": [
+          "bench",
+          "girl",
+          "grass",
+          "leaf",
+          "shoe"
+        ]
+      }
+    },
+    {
+      "image_number": 20,
+      "gqa_image_id": "4114",
+      "template": "between_attr",
+      "question": "What is between the chair and the tall plant?",
+      "ground_truth_answer": "window",
+      "predicted_response": "window",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 4,
+        "relations_count": 6,
+        "anchors": [
+          "plant",
+          "chair"
+        ],
+        "nodes": [
+          "chair",
+          "lamp",
+          "plant",
+          "window"
+        ]
+      }
+    },
+    {
+      "image_number": 21,
+      "gqa_image_id": "2408882",
+      "template": "between_attr",
+      "question": "What is between the green grass and the tree?",
+      "ground_truth_answer": "ground",
+      "predicted_response": "food",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 15,
+        "anchors": [
+          "giraffe",
+          "tree"
+        ],
+        "nodes": [
+          "fence",
+          "food",
+          "giraffe",
+          "grass",
+          "ground",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 22,
+      "gqa_image_id": "2326139",
+      "template": "two_hop",
+      "question": "What is to the left of the lamp that is to the left of the bedspread?",
+      "ground_truth_answer": "picture",
+      "predicted_response": "picture",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 8,
+        "anchors": [
+          "curtains",
+          "lamp"
+        ],
+        "nodes": [
+          "bedspread",
+          "candle",
+          "candles",
+          "curtains",
+          "lamp",
+          "picture"
+        ]
+      }
+    },
+    {
+      "image_number": 23,
+      "gqa_image_id": "2409769",
+      "template": "between_attr",
+      "question": "What is between the blue car and the green wall?",
+      "ground_truth_answer": "pole",
+      "predicted_response": "car",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 21,
+        "anchors": [
+          "car",
+          "wall"
+        ],
+        "nodes": [
+          "car",
+          "cart",
+          "horse",
+          "man",
+          "pole",
+          "wall"
+        ]
+      }
+    },
+    {
+      "image_number": 24,
+      "gqa_image_id": "2341486",
+      "template": "between_attr",
+      "question": "What is between the black car and the blowing hair?",
+      "ground_truth_answer": "house",
+      "predicted_response": "man",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 11,
+        "anchors": [
+          "car",
+          "house"
+        ],
+        "nodes": [
+          "car",
+          "hair",
+          "house",
+          "man",
+          "pole",
+          "power lines"
+        ]
+      }
+    },
+    {
+      "image_number": 25,
+      "gqa_image_id": "2338754",
+      "template": "attr_relation",
+      "question": "What is to the right of the black shoes?",
+      "ground_truth_answer": "animal",
+      "predicted_response": "animal",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 8,
+        "anchors": [
+          "animal",
+          "shorts"
+        ],
+        "nodes": [
+          "animal",
+          "camera",
+          "man",
+          "shoes",
+          "shorts"
+        ]
+      }
+    },
+    {
+      "image_number": 26,
+      "gqa_image_id": "2415495",
+      "template": "between_attr",
+      "question": "What is between the metal faucet and the glass?",
+      "ground_truth_answer": "drain",
+      "predicted_response": "wall",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 10,
+        "relations_count": 16,
+        "anchors": [
+          "wall",
+          "door"
+        ],
+        "nodes": [
+          "door",
+          "drain",
+          "faucet",
+          "frame",
+          "glass",
+          "wall"
+        ]
+      }
+    },
+    {
+      "image_number": 27,
+      "gqa_image_id": "2371091",
+      "template": "two_hop",
+      "question": "What is to the left of the ear that is to the left of the leg?",
+      "ground_truth_answer": "grass",
+      "predicted_response": "grass",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 16,
+        "anchors": [
+          "grass",
+          "leg"
+        ],
+        "nodes": [
+          "ear",
+          "eye",
+          "face",
+          "grass",
+          "head",
+          "leg"
+        ]
+      }
+    },
+    {
+      "image_number": 28,
+      "gqa_image_id": "2368938",
+      "template": "two_hop",
+      "question": "What is to the right of the tomato sauce that is to the right of the mozzarella?",
+      "ground_truth_answer": "pizza crust",
+      "predicted_response": "mushroom",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 18,
+        "anchors": [
+          "tomato sauce",
+          "mozzarella"
+        ],
+        "nodes": [
+          "mozzarella",
+          "mushroom",
+          "pizza",
+          "pizza crust",
+          "sauce",
+          "tomato sauce"
+        ]
+      }
+    },
+    {
+      "image_number": 29,
+      "gqa_image_id": "2379354",
+      "template": "two_hop",
+      "question": "What is to the left of the woman that is to the left of the sea?",
+      "ground_truth_answer": "vest",
+      "predicted_response": "vest",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 8,
+        "anchors": [
+          "woman",
+          "vest"
+        ],
+        "nodes": [
+          "gloves",
+          "sea",
+          "vest",
+          "water",
+          "woman"
+        ]
+      }
+    },
+    {
+      "image_number": 30,
+      "gqa_image_id": "2361536",
+      "template": "two_hop",
+      "question": "What is to the left of the head that is to the left of the sand?",
+      "ground_truth_answer": "cow",
+      "predicted_response": "cow",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 14,
+        "relations_count": 23,
+        "anchors": [
+          "cow",
+          "sand"
+        ],
+        "nodes": [
+          "boat",
+          "cow",
+          "head",
+          "horn",
+          "horns",
+          "sand"
+        ]
+      }
+    },
+    {
+      "image_number": 31,
+      "gqa_image_id": "150405",
+      "template": "two_hop",
+      "question": "What is to the left of the drawing that is to the left of the banana?",
+      "ground_truth_answer": "man",
+      "predicted_response": "man",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 15,
+        "anchors": [
+          "banana",
+          "man"
+        ],
+        "nodes": [
+          "banana",
+          "banana bunch",
+          "drawing",
+          "man",
+          "mirror",
+          "shirt"
+        ]
+      }
+    },
+    {
+      "image_number": 32,
+      "gqa_image_id": "2343740",
+      "template": "between_attr",
+      "question": "What is between the white cap and the hand?",
+      "ground_truth_answer": "boy",
+      "predicted_response": "fence",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 13,
+        "anchors": [
+          "boy",
+          "crane"
+        ],
+        "nodes": [
+          "boy",
+          "cap",
+          "crane",
+          "fence",
+          "hand",
+          "head"
+        ]
+      }
+    },
+    {
+      "image_number": 33,
+      "gqa_image_id": "2363277",
+      "template": "two_hop",
+      "question": "What is to the right of the head that is to the right of the fur?",
+      "ground_truth_answer": "eye",
+      "predicted_response": "zebra",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 24,
+        "anchors": [
+          "zebra",
+          "head"
+        ],
+        "nodes": [
+          "eye",
+          "fur",
+          "head",
+          "legs",
+          "tail",
+          "zebra"
+        ]
+      }
+    },
+    {
+      "image_number": 34,
+      "gqa_image_id": "4489",
+      "template": "two_hop",
+      "question": "What is to the left of the table that is to the left of the wall?",
+      "ground_truth_answer": "woman",
+      "predicted_response": "woman",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 23,
+        "anchors": [
+          "woman",
+          "wall"
+        ],
+        "nodes": [
+          "camera",
+          "monitor",
+          "table",
+          "teddy bear",
+          "wall",
+          "woman"
+        ]
+      }
+    },
+    {
+      "image_number": 35,
+      "gqa_image_id": "2336624",
+      "template": "between_attr",
+      "question": "What is between the nose and the white wing?",
+      "ground_truth_answer": "airplane",
+      "predicted_response": "tail",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 4,
+        "relations_count": 4,
+        "anchors": [
+          "nose",
+          "airplane"
+        ],
+        "nodes": [
+          "airplane",
+          "nose",
+          "tail",
+          "wing"
+        ]
+      }
+    },
+    {
+      "image_number": 36,
+      "gqa_image_id": "2404923",
+      "template": "between_attr",
+      "question": "What is between the black nose and the brown rope?",
+      "ground_truth_answer": "animal",
+      "predicted_response": "dirt",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 12,
+        "anchors": [
+          "animal",
+          "rope"
+        ],
+        "nodes": [
+          "animal",
+          "boat",
+          "dirt",
+          "dock",
+          "nose",
+          "rope"
+        ]
+      }
+    },
+    {
+      "image_number": 37,
+      "gqa_image_id": "2374245",
+      "template": "two_hop",
+      "question": "What is to the right of the cloud that is to the right of the locomotive?",
+      "ground_truth_answer": "clouds",
+      "predicted_response": "clouds",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 10,
+        "anchors": [
+          "train",
+          "cloud"
+        ],
+        "nodes": [
+          "cars",
+          "cloud",
+          "clouds",
+          "locomotive",
+          "steam",
+          "train"
+        ]
+      }
+    },
+    {
+      "image_number": 38,
+      "gqa_image_id": "2407818",
+      "template": "two_hop",
+      "question": "What is to the left of the player that is to the left of the bat?",
+      "ground_truth_answer": "home plate",
+      "predicted_response": "shirt",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 11,
+        "relations_count": 21,
+        "anchors": [
+          "player",
+          "umpire"
+        ],
+        "nodes": [
+          "bat",
+          "catcher",
+          "home plate",
+          "player",
+          "shirt",
+          "umpire"
+        ]
+      }
+    },
+    {
+      "image_number": 39,
+      "gqa_image_id": "2318099",
+      "template": "between_attr",
+      "question": "What is between the dried leaves and the tree?",
+      "ground_truth_answer": "animal",
+      "predicted_response": "leaves",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 18,
+        "relations_count": 11,
+        "anchors": [
+          "leaves",
+          "head"
+        ],
+        "nodes": [
+          "animal",
+          "eye",
+          "flowers",
+          "head",
+          "leaves",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 40,
+      "gqa_image_id": "2393953",
+      "template": "attr_relation",
+      "question": "What is to the left of the yellow daisy?",
+      "ground_truth_answer": "sheep",
+      "predicted_response": "sheep",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 12,
+        "anchors": [
+          "sheep",
+          "head"
+        ],
+        "nodes": [
+          "daisy",
+          "ear",
+          "eye",
+          "grass",
+          "head",
+          "sheep"
+        ]
+      }
+    },
+    {
+      "image_number": 41,
+      "gqa_image_id": "2374080",
+      "template": "attr_relation",
+      "question": "What is on the busy street?",
+      "ground_truth_answer": "skateboarder",
+      "predicted_response": "skateboarder",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 10,
+        "relations_count": 15,
+        "anchors": [
+          "skateboarder",
+          "shirt"
+        ],
+        "nodes": [
+          "building",
+          "cap",
+          "car",
+          "shirt",
+          "skateboarder",
+          "street"
+        ]
+      }
+    },
+    {
+      "image_number": 42,
+      "gqa_image_id": "2323139",
+      "template": "attr_relation",
+      "question": "What is to the left of the black dog?",
+      "ground_truth_answer": "ear",
+      "predicted_response": "ear",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 13,
+        "relations_count": 9,
+        "anchors": [
+          "ear",
+          "pillow"
+        ],
+        "nodes": [
+          "bed",
+          "dog",
+          "ear",
+          "nose",
+          "pillow",
+          "sheet"
+        ]
+      }
+    },
+    {
+      "image_number": 43,
+      "gqa_image_id": "2367286",
+      "template": "attr_relation",
+      "question": "What is to the left of the brown horse?",
+      "ground_truth_answer": "post",
+      "predicted_response": "post",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 8,
+        "relations_count": 7,
+        "anchors": [
+          "post",
+          "bird"
+        ],
+        "nodes": [
+          "bird",
+          "horse",
+          "man",
+          "path",
+          "pipe",
+          "post"
+        ]
+      }
+    },
+    {
+      "image_number": 44,
+      "gqa_image_id": "2402864",
+      "template": "attr_relation",
+      "question": "What is to the left of the white sink?",
+      "ground_truth_answer": "chair",
+      "predicted_response": "chair",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 14,
+        "anchors": [
+          "chair",
+          "door"
+        ],
+        "nodes": [
+          "apples",
+          "chair",
+          "counter",
+          "door",
+          "fruit",
+          "sink"
+        ]
+      }
+    },
+    {
+      "image_number": 45,
+      "gqa_image_id": "2375673",
+      "template": "two_hop",
+      "question": "What is to the left of the water that is to the left of the trunk?",
+      "ground_truth_answer": "elephant",
+      "predicted_response": "elephant",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 17,
+        "relations_count": 24,
+        "anchors": [
+          "trunk",
+          "elephant"
+        ],
+        "nodes": [
+          "ear",
+          "elephant",
+          "elephants",
+          "leg",
+          "trunk",
+          "water"
+        ]
+      }
+    },
+    {
+      "image_number": 46,
+      "gqa_image_id": "4193",
+      "template": "between_attr",
+      "question": "What is between the arms and the white flowers?",
+      "ground_truth_answer": "windows",
+      "predicted_response": "chair",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 10,
+        "relations_count": 15,
+        "anchors": [
+          "chair",
+          "windows"
+        ],
+        "nodes": [
+          "arms",
+          "chair",
+          "chandelier",
+          "doorway",
+          "flowers",
+          "windows"
+        ]
+      }
+    },
+    {
+      "image_number": 47,
+      "gqa_image_id": "2364331",
+      "template": "two_hop",
+      "question": "What is to the right of the person that is to the right of the bear?",
+      "ground_truth_answer": "tiles",
+      "predicted_response": "tiles",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 15,
+        "anchors": [
+          "shirt",
+          "person"
+        ],
+        "nodes": [
+          "bag",
+          "bear",
+          "man",
+          "person",
+          "shirt",
+          "tiles"
+        ]
+      }
+    },
+    {
+      "image_number": 48,
+      "gqa_image_id": "2320522",
+      "template": "two_hop",
+      "question": "What is to the right of the liquor that is to the left of the bottle?",
+      "ground_truth_answer": "glass",
+      "predicted_response": "glass",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 14,
+        "relations_count": 23,
+        "anchors": [
+          "bottle",
+          "liquor"
+        ],
+        "nodes": [
+          "bottle",
+          "chair",
+          "container",
+          "glass",
+          "liquor",
+          "table"
+        ]
+      }
+    },
+    {
+      "image_number": 49,
+      "gqa_image_id": "272",
+      "template": "attr_relation",
+      "question": "What is to the left of the green house?",
+      "ground_truth_answer": "boat",
+      "predicted_response": "boat",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 22,
+        "relations_count": 13,
+        "anchors": [
+          "building",
+          "boat"
+        ],
+        "nodes": [
+          "boat",
+          "building",
+          "dock",
+          "house",
+          "roof",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 50,
+      "gqa_image_id": "2349130",
+      "template": "between_attr",
+      "question": "What is between the black coat and the large window?",
+      "ground_truth_answer": "jeans",
+      "predicted_response": "menu",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 11,
+        "anchors": [
+          "restaurant",
+          "window"
+        ],
+        "nodes": [
+          "coat",
+          "door",
+          "jeans",
+          "menu",
+          "restaurant",
+          "window"
+        ]
+      }
+    },
+    {
+      "image_number": 51,
+      "gqa_image_id": "2340367",
+      "template": "attr_relation",
+      "question": "What is to the left of the jacket?",
+      "ground_truth_answer": "man",
+      "predicted_response": "man",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 13,
+        "anchors": [
+          "man",
+          "ring"
+        ],
+        "nodes": [
+          "glass",
+          "jacket",
+          "man",
+          "pants",
+          "pocket",
+          "ring"
+        ]
+      }
+    },
+    {
+      "image_number": 52,
+      "gqa_image_id": "2415669",
+      "template": "attr_relation",
+      "question": "What is to the right of the red bus?",
+      "ground_truth_answer": "pavement",
+      "predicted_response": "pavement",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 11,
+        "relations_count": 16,
+        "anchors": [
+          "window",
+          "bus"
+        ],
+        "nodes": [
+          "building",
+          "bus",
+          "car",
+          "cloud",
+          "pavement",
+          "window"
+        ]
+      }
+    },
+    {
+      "image_number": 53,
+      "gqa_image_id": "2340866",
+      "template": "attr_relation",
+      "question": "What is to the left of the support bridge?",
+      "ground_truth_answer": "pole",
+      "predicted_response": "pole",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 9,
+        "anchors": [
+          "pole",
+          "bridge"
+        ],
+        "nodes": [
+          "bridge",
+          "pole",
+          "power line",
+          "sign",
+          "train",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 54,
+      "gqa_image_id": "2348334",
+      "template": "two_hop",
+      "question": "What is to the left of the ladder that is to the left of the hair?",
+      "ground_truth_answer": "building",
+      "predicted_response": "building",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 9,
+        "relations_count": 16,
+        "anchors": [
+          "building",
+          "hair"
+        ],
+        "nodes": [
+          "bandana",
+          "building",
+          "hair",
+          "ladder",
+          "man",
+          "mirror"
+        ]
+      }
+    },
+    {
+      "image_number": 55,
+      "gqa_image_id": "2395306",
+      "template": "two_hop",
+      "question": "What is on the tower that is to the left of the palm tree?",
+      "ground_truth_answer": "clock",
+      "predicted_response": "clock",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 5,
+        "relations_count": 10,
+        "anchors": [
+          "tower",
+          "palm tree"
+        ],
+        "nodes": [
+          "clock",
+          "ground",
+          "palm tree",
+          "sky",
+          "tower"
+        ]
+      }
+    },
+    {
+      "image_number": 56,
+      "gqa_image_id": "2328931",
+      "template": "attr_relation",
+      "question": "What is to the left of the small napkin?",
+      "ground_truth_answer": "bread",
+      "predicted_response": "bread",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 11,
+        "anchors": [
+          "bread",
+          "plate"
+        ],
+        "nodes": [
+          "bread",
+          "egg",
+          "fork",
+          "napkin",
+          "plate",
+          "table"
+        ]
+      }
+    },
+    {
+      "image_number": 57,
+      "gqa_image_id": "2367740",
+      "template": "attr_relation",
+      "question": "What is to the right of the tall giraffe?",
+      "ground_truth_answer": "hair",
+      "predicted_response": "hair",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 16,
+        "anchors": [
+          "door",
+          "hair"
+        ],
+        "nodes": [
+          "cap",
+          "coat",
+          "door",
+          "giraffe",
+          "glasses",
+          "hair"
+        ]
+      }
+    },
+    {
+      "image_number": 58,
+      "gqa_image_id": "2383543",
+      "template": "between_attr",
+      "question": "What is between the ketchup bottle and the collared shirt?",
+      "ground_truth_answer": "ketchup",
+      "predicted_response": "shirt",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 14,
+        "anchors": [
+          "shirt",
+          "bottle"
+        ],
+        "nodes": [
+          "bottle",
+          "counter",
+          "ketchup",
+          "ketchup bottle",
+          "man",
+          "shirt"
+        ]
+      }
+    },
+    {
+      "image_number": 59,
+      "gqa_image_id": "2403720",
+      "template": "two_hop",
+      "question": "What is to the left of the eye that belongs to the smiling, happy person?",
+      "ground_truth_answer": "nose",
+      "predicted_response": "nose",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 8,
+        "relations_count": 7,
+        "anchors": [
+          "person",
+          "eye"
+        ],
+        "nodes": [
+          "eye",
+          "face",
+          "hair",
+          "hand",
+          "nose",
+          "person"
+        ]
+      }
+    },
+    {
+      "image_number": 60,
+      "gqa_image_id": "2352486",
+      "template": "attr_relation",
+      "question": "What is to the right of the blue jacket?",
+      "ground_truth_answer": "mountain",
+      "predicted_response": "mountain",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 13,
+        "anchors": [
+          "mountain",
+          "man"
+        ],
+        "nodes": [
+          "goggles",
+          "helmet",
+          "jacket",
+          "man",
+          "mountain"
+        ]
+      }
+    },
+    {
+      "image_number": 61,
+      "gqa_image_id": "2319535",
+      "template": "attr_relation",
+      "question": "What is to the left of the brown door?",
+      "ground_truth_answer": "wine",
+      "predicted_response": "wine",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 8,
+        "relations_count": 11,
+        "anchors": [
+          "wine",
+          "hand"
+        ],
+        "nodes": [
+          "arm",
+          "bottle",
+          "door",
+          "glass",
+          "hand",
+          "wine"
+        ]
+      }
+    },
+    {
+      "image_number": 62,
+      "gqa_image_id": "2414901",
+      "template": "between_attr",
+      "question": "What is between the white bird and the person?",
+      "ground_truth_answer": "cage",
+      "predicted_response": "cage",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 6,
+        "anchors": [
+          "cage",
+          "person"
+        ],
+        "nodes": [
+          "bird",
+          "cage",
+          "person",
+          "shirt"
+        ]
+      }
+    },
+    {
+      "image_number": 63,
+      "gqa_image_id": "2362462",
+      "template": "attr_relation",
+      "question": "What is to the left of the blue coat?",
+      "ground_truth_answer": "water",
+      "predicted_response": "water",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 12,
+        "anchors": [
+          "leg",
+          "water"
+        ],
+        "nodes": [
+          "box",
+          "coat",
+          "feet",
+          "jeans",
+          "leg",
+          "water"
+        ]
+      }
+    },
+    {
+      "image_number": 64,
+      "gqa_image_id": "2367869",
+      "template": "attr_relation",
+      "question": "What is to the left of the black bus stop?",
+      "ground_truth_answer": "hat",
+      "predicted_response": "hat",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 9,
+        "relations_count": 17,
+        "anchors": [
+          "bench",
+          "hat"
+        ],
+        "nodes": [
+          "bench",
+          "bus stop",
+          "coat",
+          "girl",
+          "hat",
+          "jacket"
+        ]
+      }
+    },
+    {
+      "image_number": 65,
+      "gqa_image_id": "2338602",
+      "template": "attr_relation",
+      "question": "What is to the right of the red nose?",
+      "ground_truth_answer": "field",
+      "predicted_response": "field",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 14,
+        "anchors": [
+          "nose",
+          "propeller"
+        ],
+        "nodes": [
+          "barrier",
+          "building",
+          "field",
+          "nose",
+          "propeller",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 66,
+      "gqa_image_id": "2324922",
+      "template": "between_attr",
+      "question": "What is between the tan jacket and the people?",
+      "ground_truth_answer": "man",
+      "predicted_response": "beach",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 14,
+        "relations_count": 18,
+        "anchors": [
+          "beach",
+          "vehicle"
+        ],
+        "nodes": [
+          "beach",
+          "jacket",
+          "man",
+          "people",
+          "person",
+          "vehicle"
+        ]
+      }
+    },
+    {
+      "image_number": 67,
+      "gqa_image_id": "2403647",
+      "template": "attr_relation",
+      "question": "What is on the dark brown pole?",
+      "ground_truth_answer": "sign",
+      "predicted_response": "sign",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 10,
+        "relations_count": 12,
+        "anchors": [
+          "pole",
+          "trash"
+        ],
+        "nodes": [
+          "grass",
+          "intersection",
+          "parking lot",
+          "pole",
+          "sign",
+          "trash"
+        ]
+      }
+    },
+    {
+      "image_number": 68,
+      "gqa_image_id": "2360586",
+      "template": "two_hop",
+      "question": "What does the jockey wear that is to the right of the hat?",
+      "ground_truth_answer": "boots",
+      "predicted_response": "helmet",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 17,
+        "relations_count": 24,
+        "anchors": [
+          "jockey",
+          "helmet"
+        ],
+        "nodes": [
+          "boots",
+          "gate",
+          "hat",
+          "head",
+          "helmet",
+          "jockey"
+        ]
+      }
+    },
+    {
+      "image_number": 69,
+      "gqa_image_id": "2336",
+      "template": "between_attr",
+      "question": "What is between the red planter and the building?",
+      "ground_truth_answer": "car",
+      "predicted_response": "tree",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 11,
+        "relations_count": 12,
+        "anchors": [
+          "tree",
+          "planter"
+        ],
+        "nodes": [
+          "building",
+          "car",
+          "church",
+          "planter",
+          "sidewalk",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 70,
+      "gqa_image_id": "2377395",
+      "template": "between_attr",
+      "question": "What is between the counter and the blue toothbrush?",
+      "ground_truth_answer": "coffee mug",
+      "predicted_response": "paper",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 7,
+        "anchors": [
+          "toothbrush",
+          "counter"
+        ],
+        "nodes": [
+          "coffee mug",
+          "counter",
+          "mirror",
+          "paper",
+          "toothbrush"
+        ]
+      }
+    },
+    {
+      "image_number": 71,
+      "gqa_image_id": "2349640",
+      "template": "attr_relation",
+      "question": "What is to the left of the white net?",
+      "ground_truth_answer": "pole",
+      "predicted_response": "pole",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 11,
+        "relations_count": 14,
+        "anchors": [
+          "pole",
+          "player"
+        ],
+        "nodes": [
+          "hands",
+          "net",
+          "player",
+          "pole",
+          "racket",
+          "shirt"
+        ]
+      }
+    },
+    {
+      "image_number": 72,
+      "gqa_image_id": "2394711",
+      "template": "attr_relation",
+      "question": "What is holding the person?",
+      "ground_truth_answer": "bowl",
+      "predicted_response": "bowl",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 13,
+        "anchors": [
+          "person",
+          "woman"
+        ],
+        "nodes": [
+          "apron",
+          "bowl",
+          "hand",
+          "person",
+          "soup",
+          "woman"
+        ]
+      }
+    },
+    {
+      "image_number": 73,
+      "gqa_image_id": "2362073",
+      "template": "two_hop",
+      "question": "What is to the right of the traffic sign that is to the right of the cars?",
+      "ground_truth_answer": "sign",
+      "predicted_response": "sign",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 8,
+        "anchors": [
+          "car",
+          "traffic sign"
+        ],
+        "nodes": [
+          "car",
+          "cars",
+          "road",
+          "sign",
+          "traffic sign"
+        ]
+      }
+    },
+    {
+      "image_number": 74,
+      "gqa_image_id": "498151",
+      "template": "attr_relation",
+      "question": "What is to the right of the black end table?",
+      "ground_truth_answer": "couch",
+      "predicted_response": "couch",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 10,
+        "anchors": [
+          "couch",
+          "living room"
+        ],
+        "nodes": [
+          "ceiling",
+          "couch",
+          "end table",
+          "living room",
+          "table"
+        ]
+      }
+    },
+    {
+      "image_number": 75,
+      "gqa_image_id": "2330289",
+      "template": "attr_relation",
+      "question": "What is to the left of the brick building?",
+      "ground_truth_answer": "train",
+      "predicted_response": "train",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 8,
+        "relations_count": 14,
+        "anchors": [
+          "train",
+          "trees"
+        ],
+        "nodes": [
+          "building",
+          "number",
+          "steam",
+          "train",
+          "trees"
+        ]
+      }
+    },
+    {
+      "image_number": 76,
+      "gqa_image_id": "2330220",
+      "template": "attr_relation",
+      "question": "What is to the right of the black coat?",
+      "ground_truth_answer": "man",
+      "predicted_response": "man",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 11,
+        "relations_count": 12,
+        "anchors": [
+          "hair",
+          "man"
+        ],
+        "nodes": [
+          "coat",
+          "ear",
+          "eye",
+          "hair",
+          "man",
+          "mouth"
+        ]
+      }
+    },
+    {
+      "image_number": 77,
+      "gqa_image_id": "2330212",
+      "template": "attr_relation",
+      "question": "What is to the left of the white flowers?",
+      "ground_truth_answer": "plant",
+      "predicted_response": "plant",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 20,
+        "relations_count": 14,
+        "anchors": [
+          "plant",
+          "flower"
+        ],
+        "nodes": [
+          "bench",
+          "bush",
+          "flower",
+          "flowers",
+          "garden",
+          "plant"
+        ]
+      }
+    },
+    {
+      "image_number": 78,
+      "gqa_image_id": "2327238",
+      "template": "attr_relation",
+      "question": "What is to the left of the bright leaves?",
+      "ground_truth_answer": "bush",
+      "predicted_response": "bush",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 13,
+        "relations_count": 8,
+        "anchors": [
+          "bush",
+          "tree"
+        ],
+        "nodes": [
+          "bush",
+          "ground",
+          "leaves",
+          "sky",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 79,
+      "gqa_image_id": "2379618",
+      "template": "between_attr",
+      "question": "What is between the gray wood chair and the frame?",
+      "ground_truth_answer": "rug",
+      "predicted_response": "blanket",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 10,
+        "anchors": [
+          "chair",
+          "frame"
+        ],
+        "nodes": [
+          "blanket",
+          "chair",
+          "fireplace",
+          "frame",
+          "painting",
+          "rug"
+        ]
+      }
+    },
+    {
+      "image_number": 80,
+      "gqa_image_id": "2342608",
+      "template": "between_attr",
+      "question": "What is between the face and the person?",
+      "ground_truth_answer": "hand",
+      "predicted_response": "sign",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 12,
+        "anchors": [
+          "person",
+          "sign"
+        ],
+        "nodes": [
+          "face",
+          "hand",
+          "head",
+          "nose",
+          "person",
+          "sign"
+        ]
+      }
+    },
+    {
+      "image_number": 81,
+      "gqa_image_id": "2326836",
+      "template": "two_hop",
+      "question": "What is to the left of the man that is to the left of the gown?",
+      "ground_truth_answer": "hair",
+      "predicted_response": "hair",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 8,
+        "relations_count": 18,
+        "anchors": [
+          "gown",
+          "hair"
+        ],
+        "nodes": [
+          "cake",
+          "gown",
+          "hair",
+          "lady",
+          "man",
+          "men"
+        ]
+      }
+    },
+    {
+      "image_number": 82,
+      "gqa_image_id": "2398942",
+      "template": "between_attr",
+      "question": "What is between the floating bus and the cables?",
+      "ground_truth_answer": "door",
+      "predicted_response": "building",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 9,
+        "relations_count": 10,
+        "anchors": [
+          "building",
+          "people"
+        ],
+        "nodes": [
+          "building",
+          "buildings",
+          "bus",
+          "cables",
+          "door",
+          "people"
+        ]
+      }
+    },
+    {
+      "image_number": 83,
+      "gqa_image_id": "2316501",
+      "template": "attr_relation",
+      "question": "What is to the right of the horse?",
+      "ground_truth_answer": "trash",
+      "predicted_response": "horse",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 10,
+        "relations_count": 22,
+        "anchors": [
+          "leg",
+          "horse"
+        ],
+        "nodes": [
+          "foot",
+          "fur",
+          "hair",
+          "horse",
+          "leg",
+          "trash"
+        ]
+      }
+    },
+    {
+      "image_number": 84,
+      "gqa_image_id": "3773",
+      "template": "attr_relation",
+      "question": "What is to the right of the white box?",
+      "ground_truth_answer": "roof",
+      "predicted_response": "roof",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 22,
+        "relations_count": 28,
+        "anchors": [
+          "roof",
+          "building"
+        ],
+        "nodes": [
+          "box",
+          "building",
+          "pole",
+          "roof",
+          "tower",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 85,
+      "gqa_image_id": "2357317",
+      "template": "attr_relation",
+      "question": "What is to the right of the green shirts?",
+      "ground_truth_answer": "cross",
+      "predicted_response": "cross",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 20,
+        "relations_count": 18,
+        "anchors": [
+          "bear",
+          "shirts"
+        ],
+        "nodes": [
+          "bear",
+          "coat",
+          "cross",
+          "face",
+          "platform",
+          "shirts"
+        ]
+      }
+    },
+    {
+      "image_number": 86,
+      "gqa_image_id": "2345728",
+      "template": "between_attr",
+      "question": "What is between the car and the black number?",
+      "ground_truth_answer": "window",
+      "predicted_response": "train car",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 10,
+        "anchors": [
+          "train car",
+          "car"
+        ],
+        "nodes": [
+          "car",
+          "ladder",
+          "number",
+          "star",
+          "train car",
+          "window"
+        ]
+      }
+    },
+    {
+      "image_number": 87,
+      "gqa_image_id": "2395922",
+      "template": "between_attr",
+      "question": "What is between the brown table and the girl?",
+      "ground_truth_answer": "food",
+      "predicted_response": "pizza",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 9,
+        "anchors": [
+          "pizza",
+          "chairs"
+        ],
+        "nodes": [
+          "chairs",
+          "dress",
+          "food",
+          "girl",
+          "pizza",
+          "table"
+        ]
+      }
+    },
+    {
+      "image_number": 88,
+      "gqa_image_id": "1592034",
+      "template": "attr_relation",
+      "question": "What is to the right of the orange plate?",
+      "ground_truth_answer": "knife",
+      "predicted_response": "cake",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 12,
+        "anchors": [
+          "plate",
+          "cake"
+        ],
+        "nodes": [
+          "cake",
+          "knife",
+          "person",
+          "plate"
+        ]
+      }
+    },
+    {
+      "image_number": 89,
+      "gqa_image_id": "2367014",
+      "template": "attr_relation",
+      "question": "What is to the right of the eye?",
+      "ground_truth_answer": "eyes",
+      "predicted_response": "eyes",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 6,
+        "anchors": [
+          "leg",
+          "eye"
+        ],
+        "nodes": [
+          "eye",
+          "eyes",
+          "leg",
+          "paw",
+          "remote control"
+        ]
+      }
+    },
+    {
+      "image_number": 90,
+      "gqa_image_id": "2412764",
+      "template": "between_attr",
+      "question": "What is between the arm and the cardboard boxes?",
+      "ground_truth_answer": "man",
+      "predicted_response": "shelf",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 10,
+        "relations_count": 13,
+        "anchors": [
+          "shelf",
+          "man"
+        ],
+        "nodes": [
+          "arm",
+          "bottles",
+          "box",
+          "boxes",
+          "man",
+          "shelf"
+        ]
+      }
+    },
+    {
+      "image_number": 91,
+      "gqa_image_id": "2387708",
+      "template": "between_attr",
+      "question": "What is between the mountain and the wood old ship?",
+      "ground_truth_answer": "cabin",
+      "predicted_response": "cabin",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 5,
+        "relations_count": 10,
+        "anchors": [
+          "cabin",
+          "mountain"
+        ],
+        "nodes": [
+          "cabin",
+          "mountain",
+          "paint",
+          "ship",
+          "snow"
+        ]
+      }
+    },
+    {
+      "image_number": 92,
+      "gqa_image_id": "2380664",
+      "template": "attr_relation",
+      "question": "What is to the right of the wood fence?",
+      "ground_truth_answer": "bushes",
+      "predicted_response": "bushes",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 10,
+        "relations_count": 16,
+        "anchors": [
+          "sheep",
+          "bushes"
+        ],
+        "nodes": [
+          "bushes",
+          "face",
+          "fence",
+          "grass",
+          "sheep",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 93,
+      "gqa_image_id": "2356845",
+      "template": "two_hop",
+      "question": "What is to the left of the meat that is with the sandwich?",
+      "ground_truth_answer": "hand",
+      "predicted_response": "hand",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 6,
+        "relations_count": 15,
+        "anchors": [
+          "sandwich",
+          "hand"
+        ],
+        "nodes": [
+          "arm",
+          "fingers",
+          "floor",
+          "hand",
+          "meat",
+          "sandwich"
+        ]
+      }
+    },
+    {
+      "image_number": 94,
+      "gqa_image_id": "2355914",
+      "template": "two_hop",
+      "question": "What is to the left of the window that is to the right of the label?",
+      "ground_truth_answer": "nose",
+      "predicted_response": "windows",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 16,
+        "anchors": [
+          "window",
+          "windows"
+        ],
+        "nodes": [
+          "door",
+          "label",
+          "nose",
+          "window",
+          "windows",
+          "wing"
+        ]
+      }
+    },
+    {
+      "image_number": 95,
+      "gqa_image_id": "2411384",
+      "template": "between_attr",
+      "question": "What is between the head and the brown table?",
+      "ground_truth_answer": "teddy bear",
+      "predicted_response": "head",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 7,
+        "relations_count": 12,
+        "anchors": [
+          "teddy bear",
+          "table"
+        ],
+        "nodes": [
+          "chair",
+          "cup",
+          "head",
+          "shirt",
+          "table",
+          "teddy bear"
+        ]
+      }
+    },
+    {
+      "image_number": 96,
+      "gqa_image_id": "2358460",
+      "template": "attr_relation",
+      "question": "What is to the right of the green branches?",
+      "ground_truth_answer": "bricks",
+      "predicted_response": "bricks",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 8,
+        "relations_count": 14,
+        "anchors": [
+          "bricks",
+          "building"
+        ],
+        "nodes": [
+          "branches",
+          "bricks",
+          "building",
+          "car",
+          "leaves",
+          "tree"
+        ]
+      }
+    },
+    {
+      "image_number": 97,
+      "gqa_image_id": "2417811",
+      "template": "two_hop",
+      "question": "What is to the left of the man that is to the left of the pants?",
+      "ground_truth_answer": "person",
+      "predicted_response": "person",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 9,
+        "relations_count": 12,
+        "anchors": [
+          "person",
+          "pants"
+        ],
+        "nodes": [
+          "gloves",
+          "jacket",
+          "man",
+          "pants",
+          "person",
+          "snow"
+        ]
+      }
+    },
+    {
+      "image_number": 98,
+      "gqa_image_id": "2323921",
+      "template": "two_hop",
+      "question": "What is to the right of the stone that is to the right of the boy?",
+      "ground_truth_answer": "sandal",
+      "predicted_response": "stone",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 16,
+        "relations_count": 17,
+        "anchors": [
+          "stone",
+          "boy"
+        ],
+        "nodes": [
+          "boy",
+          "sandal",
+          "shirt",
+          "stone",
+          "tiles"
+        ]
+      }
+    },
+    {
+      "image_number": 99,
+      "gqa_image_id": "2338965",
+      "template": "between_attr",
+      "question": "What is between the eating zebra and the head?",
+      "ground_truth_answer": "grass",
+      "predicted_response": "log",
+      "is_correct": false,
+      "is_exact_match": false,
+      "small_scene_graph_summary": {
+        "objects_count": 12,
+        "relations_count": 18,
+        "anchors": [
+          "zebra",
+          "log"
+        ],
+        "nodes": [
+          "floor",
+          "grass",
+          "head",
+          "log",
+          "zebra",
+          "zebras"
+        ]
+      }
+    },
+    {
+      "image_number": 100,
+      "gqa_image_id": "2373491",
+      "template": "between_attr",
+      "question": "What is between the guy and the shirt?",
+      "ground_truth_answer": "jeans",
+      "predicted_response": "jeans",
+      "is_correct": true,
+      "is_exact_match": true,
+      "small_scene_graph_summary": {
+        "objects_count": 8,
+        "relations_count": 9,
+        "anchors": [
+          "tire",
+          "guy"
+        ],
+        "nodes": [
+          "guy",
+          "jeans",
+          "shirt",
+          "skateboard",
+          "tire"
+        ]
+      }
+    }
+  ]
+}

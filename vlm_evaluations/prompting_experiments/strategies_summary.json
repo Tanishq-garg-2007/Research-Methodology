@@ -1,0 +1,77 @@
+{
+  "zero_shot_direct": {
+    "strategy": "zero_shot_direct",
+    "total": 100,
+    "correct": 60,
+    "exact": 60,
+    "accuracy": 0.6,
+    "time_seconds": 83.2,
+    "template_breakdown": {
+      "two_hop": {
+        "total": 33,
+        "correct": 23,
+        "accuracy": 0.697
+      },
+      "attr_relation": {
+        "total": 34,
+        "correct": 32,
+        "accuracy": 0.9412
+      },
+      "between_attr": {
+        "total": 33,
+        "correct": 5,
+        "accuracy": 0.1515
+      }
+    }
+  },
+  "one_shot": {
+    "strategy": "one_shot",
+    "total": 100,
+    "correct": 56,
+    "exact": 55,
+    "accuracy": 0.56,
+    "time_seconds": 128.29,
+    "template_breakdown": {
+      "two_hop": {
+        "total": 33,
+        "correct": 23,
+        "accuracy": 0.697
+      },
+      "attr_relation": {
+        "total": 34,
+        "correct": 30,
+        "accuracy": 0.8824
+      },
+      "between_attr": {
+        "total": 33,
+        "correct": 3,
+        "accuracy": 0.0909
+      }
+    }
+  },
+  "zero_shot_cot": {
+    "strategy": "zero_shot_cot",
+    "total": 100,
+    "correct": 17,
+    "exact": 0,
+    "accuracy": 0.17,
+    "time_seconds": 798.11,
+    "template_breakdown": {
+      "two_hop": {
+        "total": 33,
+        "correct": 2,
+        "accuracy": 0.0606
+      },
+      "attr_relation": {
+        "total": 34,
+        "correct": 11,
+        "accuracy": 0.3235
+      },
+      "between_attr": {
+        "total": 33,
+        "correct": 4,
+        "accuracy": 0.1212
+      }
+    }
+  }
+}

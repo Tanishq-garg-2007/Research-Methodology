@@ -1,0 +1,17 @@
+You are given a scene graph representation of an image containing objects and their relationships, followed by a question.
+
+Scene Graph:
+Objects ({num_objects}):
+{objects_lines}
+
+Relationships ({num_relations}):
+{relations_lines}
+
+Question: {question}
+
+Instructions:
+1. Reason step-by-step:
+   - Identify the objects and attributes mentioned in the question.
+   - Trace the specified relationship(s) or spatial arrangement. If the question asks what is between two objects, check which candidate object's horizontal coordinate center lies between them.
+2. Provide your final concise answer on the last line in the exact format:
+   Final Answer: <answer>

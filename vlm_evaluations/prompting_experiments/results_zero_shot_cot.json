@@ -1,0 +1,1029 @@
+{
+  "metadata": {
+    "strategy": "zero_shot_cot",
+    "total": 100,
+    "correct": 17,
+    "exact": 0,
+    "accuracy": 0.17,
+    "time_seconds": 798.11,
+    "template_breakdown": {
+      "two_hop": {
+        "total": 33,
+        "correct": 2,
+        "accuracy": 0.0606
+      },
+      "attr_relation": {
+        "total": 34,
+        "correct": 11,
+        "accuracy": 0.3235
+      },
+      "between_attr": {
+        "total": 33,
+        "correct": 4,
+        "accuracy": 0.1212
+      }
+    }
+  },
+  "results": [
+    {
+      "image_number": 1,
+      "gqa_image_id": "2395226",
+      "template": "two_hop",
+      "question": "What is on the plate that is to the right of the carrots?",
+      "ground_truth": "fork",
+      "raw_output": "Step 1: Identify the objects and attributes relevant to the question.\n- The question asks: \"What is on the plate that is to the right of the carrots?\"\n- We are looking for an object that is on a plate and located to the right of the carrots.\n\nStep 2: Find the location of the carrots.\n- The carrots are located at [0.22, 0.24, 0.32, 0.46].\n- The plate that is to the right of the carrots is the one that is spatially to the right of the carrots' bounding box.\n\nStep 3:",
+      "parsed_answer": "Step 3:",
+      "is_correct": false
+    },
+    {
+      "image_number": 2,
+      "gqa_image_id": "2417523",
+      "template": "attr_relation",
+      "question": "What is to the left of the cockpit?",
+      "ground_truth": "propeller",
+      "raw_output": "Step 1: Identify the object of interest \u2013 the cockpit.\nFrom the scene graph, the cockpit is located at [0.73, 0.54, 0.19, 0.17].\n\nStep 2: Find all relationships involving the cockpit.\nThe relationships involving the cockpit are:\n- \"cockpit\" to the right of \"letter\"\n- \"cockpit\" to the right of \"propeller\"\n- \"cockpit\" to the right of \"letter\" (repeated)\n\nSo, the cockpit is to the right of both \"letter\" and \"propeller\".\n\nStep 3:",
+      "parsed_answer": "Step 3:",
+      "is_correct": false
+    },
+    {
+      "image_number": 3,
+      "gqa_image_id": "2414767",
+      "template": "attr_relation",
+      "question": "What is to the right of the cut grass?",
+      "ground_truth": "pole",
+      "raw_output": "Step 1: Identify the relevant objects in the scene graph.\n- The question asks about the object to the right of \"cut grass\".\n- \"cut grass\" is identified as an object with attributes [cut] and bbox [0.20, 0.54, 0.13, 0.11].\n\nStep 2: Determine the spatial relationship.\n- The relationship \"grass\" to the left of \"pole\" is listed in the relationships.\n- The \"grass\" object is at [0.20, 0.54, 0.13, 0.11",
+      "parsed_answer": "- The \"grass\" object is at [0.20, 0.54, 0.13, 0.11",
+      "is_correct": false
+    },
+    {
+      "image_number": 4,
+      "gqa_image_id": "2412093",
+      "template": "between_attr",
+      "question": "What is between the black clothes and the red sneakers?",
+      "ground_truth": "cap",
+      "raw_output": "Step 1: Identify the objects and their attributes.\n- \"clothes\" has attributes: [black]\n- \"sneakers\" has attributes: [red]\n\nStep 2: Determine the spatial relationship between \"clothes\" and \"sneakers\".\n- From the relationships:\n  - \"clothes\" to the left of \"skateboard\" (from \"clothes\" to the left of \"skateboard\")\n  - \"sneakers\" to the right of \"skateboard\" (from \"sneakers\" to the right of \"skateboard\")\n  - \"skateboard\" is",
+      "parsed_answer": "- \"skateboard\" is",
+      "is_correct": false
+    },
+    {
+      "image_number": 5,
+      "gqa_image_id": "2364991",
+      "template": "two_hop",
+      "question": "What is on the tree that is to the left of the bush?",
+      "ground_truth": "trunk",
+      "raw_output": "Step 1: Identify the objects and relationships relevant to the question.\nThe question asks: \"What is on the tree that is to the left of the bush?\"\n\nWe are looking for the object that is on the tree and is located to the left of the bush.\n\nStep 2: Find the positions of the tree and bush.\nFrom the scene graph:\n- The first tree is at [0.07, 0.00, 0.43, 0.88]\n- The second tree is at [0.59, 0.00, 0.16, 1",
+      "parsed_answer": "- The second tree is at [0.59, 0.00, 0.16, 1",
+      "is_correct": false
+    },
+    {
+      "image_number": 6,
+      "gqa_image_id": "2376954",
+      "template": "two_hop",
+      "question": "What is on the shelf that is to the right of the chair?",
+      "ground_truth": "container",
+      "raw_output": "Step 1: Identify the objects and relationships relevant to the question.\n- The question asks: \"What is on the shelf that is to the right of the chair?\"\n- We need to find the object on the shelf that is to the right of the chair.\n\nStep 2: Find the location of the chair.\n- From the scene graph, the chair is at bbox [0.51, 0.91, 0.10, 0.09].\n- The shelf to the right of the chair is the shelf that is spatially to the right of the chair.\n\nStep 3: Find the",
+      "parsed_answer": "Step 3: Find the",
+      "is_correct": false
+    },
+    {
+      "image_number": 7,
+      "gqa_image_id": "2375631",
+      "template": "between_attr",
+      "question": "What is between the blue comb and the lid?",
+      "ground_truth": "toilet",
+      "raw_output": "Step 1: Identify the objects and attributes mentioned in the question.\n- The question asks about the object between the \"blue comb\" and the \"lid\".\n- The \"blue comb\" is located at [0.51, 0.78, 0.07, 0.05], and the \"lid\" is at [0.16, 0.83, 0.32, 0.12].\n\nStep 2: Determine the spatial relationship between the comb and the lid.\n- The \"comb\" is on the \"counter\" (from the relationship \"comb",
+      "parsed_answer": "- The \"comb\" is on the \"counter\" (from the relationship \"comb",
+      "is_correct": false
+    },
+    {
+      "image_number": 8,
+      "gqa_image_id": "264",
+      "template": "between_attr",
+      "question": "What is between the hand and the large sign?",
+      "ground_truth": "window",
+      "raw_output": "Step 1: Identify the objects involved in the question.\n- The question asks about the object between the \"hand\" and the \"large sign\".\n- The \"large sign\" is the first sign in the scene graph with attributes [large, yellow] and bbox [0.14, 0.58, 0.13, 0.16].\n- The \"hand\" is the object with bbox [0.51, 0.55, 0.06, 0.12].\n\nStep 2: Determine the spatial relationship between the hand and the large sign.\n-",
+      "parsed_answer": "-",
+      "is_correct": false
+    },
+    {
+      "image_number": 9,
+      "gqa_image_id": "2335834",
+      "template": "between_attr",
+      "question": "What is between the frisbee and the white shirt?",
+      "ground_truth": "man",
+      "raw_output": "Step 1: Identify the objects mentioned in the question.\n- frisbee\n- white shirt\n\nStep 2: Determine the spatial relationship between the frisbee and the white shirt.\n- From the relationships:\n  - \"frisbee\" to the right of \"hand\" (frisbee is to the right of hand)\n  - \"shirt\" to the right of \"hand\" (shirt is to the right of hand)\n  - \"hand\" to the left of \"frisbee\" (hand is to the left of frisbee)\n  - \"hand\" to the left of \"shirt\" (",
+      "parsed_answer": "- \"hand\" to the left of \"shirt\" (",
+      "is_correct": false
+    },
+    {
+      "image_number": 10,
+      "gqa_image_id": "2411163",
+      "template": "two_hop",
+      "question": "What is to the right of the skin that is to the right of the earphones?",
+      "ground_truth": "trees",
+      "raw_output": "We are given a scene graph with objects and their spatial relationships. The question is:\n\n**\"What is to the right of the skin that is to the right of the earphones?\"**\n\nLet\u2019s break this down step by step.\n\n---\n\n### Step 1: Identify the objects involved\n- **earphones** (bbox: [0.25, 0.11, 0.08, 0.06])\n- **skin** (bbox: [0.41, 0.12, 0.14, 0.04])\n- **shirt** (bbox:",
+      "parsed_answer": "- **shirt** (bbox:",
+      "is_correct": false
+    },
+    {
+      "image_number": 11,
+      "gqa_image_id": "2371002",
+      "template": "between_attr",
+      "question": "What is between the doorway and the black seat?",
+      "ground_truth": "room",
+      "raw_output": "Step 1: Identify the objects in question.\n- The doorway and the black seat are mentioned in the question.\n- The black seat is located at [0.60, 0.62, 0.03, 0.11], which means it is a small object with a black color and is positioned at the right side of the scene.\n- The doorway is at [0.57, 0.00, 0.43, 1.00], which means it is a rectangular shape located on the right side of the scene.\n\nStep 2: Determine the spatial",
+      "parsed_answer": "Step 2: Determine the spatial",
+      "is_correct": false
+    },
+    {
+      "image_number": 12,
+      "gqa_image_id": "2344244",
+      "template": "two_hop",
+      "question": "What is to the right of the hand that is to the left of the jeans?",
+      "ground_truth": "food",
+      "raw_output": "Step 1: Identify the objects and relationships in the scene graph.\n\nWe are asked to find what is to the right of the hand that is to the left of the jeans.\n\nStep 2: Find the object that is to the left of the jeans.\n\nFrom the scene graph:\n- \"jeans\" has a bbox [0.09, 0.56, 0.41, 0.23]\n- \"hand\" is mentioned in two places, but the first hand is at [0.51, 0.65, 0.17, 0.14",
+      "parsed_answer": "- \"hand\" is mentioned in two places, but the first hand is at [0.51, 0.65, 0.17, 0.14",
+      "is_correct": false
+    },
+    {
+      "image_number": 13,
+      "gqa_image_id": "2415025",
+      "template": "two_hop",
+      "question": "What is to the left of the cockpit that is to the left of the fence?",
+      "ground_truth": "wing",
+      "raw_output": "Let's break down the question step by step:\n\nQuestion: What is to the left of the cockpit that is to the left of the fence?\n\nWe need to find the object that is:\n1. To the left of the fence,\n2. And that is to the left of the cockpit.\n\nSo, we are looking for the object that lies between the cockpit and the fence, in the left-to-right direction.\n\nLet\u2019s first identify the positions of the objects based on the scene graph.\n\nFrom the scene graph:\n- \"cockpit\" is at [0.20, 0.37, 0.20,",
+      "parsed_answer": "- \"cockpit\" is at [0.20, 0.37, 0.20,",
+      "is_correct": false
+    },
+    {
+      "image_number": 14,
+      "gqa_image_id": "2388854",
+      "template": "between_attr",
+      "question": "What is between the hanging cord and the goggles?",
+      "ground_truth": "face",
+      "raw_output": "Step 1: Identify the objects in question.\n- The hanging cord is located at [0.30, 0.47, 0.07, 0.07].\n- The goggles are located at [0.19, 0.50, 0.03, 0.01].\n\nStep 2: Determine the spatial relationship between the cord and the goggles.\n- The relationship \"goggles\" to the left of \"cord\" is given.\n- This means the goggles are on the left side of the cord.\n\nStep 3: Determine what is between the cord and",
+      "parsed_answer": "Step 3: Determine what is between the cord and",
+      "is_correct": false
+    },
+    {
+      "image_number": 15,
+      "gqa_image_id": "2389368",
+      "template": "between_attr",
+      "question": "What is between the black shirt and the wrist?",
+      "ground_truth": "man",
+      "raw_output": "Step 1: Identify the objects and their positions.\n- The black shirt is at [0.46, 0.46, 0.16, 0.38].\n- The wrist is at [0.42, 0.70, 0.08, 0.13].\n\nStep 2: Determine the spatial relationship between the black shirt and the wrist.\n- The shirt is to the right of the ball, and the wrist is to the right of the ball.\n- The shirt is at x = 0.46, and the wrist is at x =",
+      "parsed_answer": "- The shirt is at x = 0.46, and the wrist is at x =",
+      "is_correct": false
+    },
+    {
+      "image_number": 16,
+      "gqa_image_id": "2360483",
+      "template": "two_hop",
+      "question": "What is on the pole that is to the left of the building?",
+      "ground_truth": "sign",
+      "raw_output": "Step 1: Identify the objects and relationships relevant to the question.\nThe question asks: \"What is on the pole that is to the left of the building?\"\n\nWe are looking for an object that is:\n- On the pole\n- Located to the left of the building\n\nStep 2: Find the location of the building and the pole.\nFrom the scene graph:\n- The building is at [0.61, 0.12, 0.39, 0.36]\n- The pole is at [0.88, 0.34, 0.04,",
+      "parsed_answer": "- The pole is at [0.88, 0.34, 0.04,",
+      "is_correct": false
+    },
+    {
+      "image_number": 17,
+      "gqa_image_id": "2407506",
+      "template": "two_hop",
+      "question": "What is to the right of the phone that is with the boy?",
+      "ground_truth": "bag",
+      "raw_output": "Step 1: Identify the objects and attributes mentioned in the question.\n- The question refers to the \"phone\" and the \"boy\" who is \"with\" the phone.\n- The phone is associated with the boy, and the boy is wearing a shirt and cap.\n\nStep 2: Trace the relationship \"phone\" to the left of \"bag\".\n- The scene graph states: \"phone\" to the left of \"bag\".\n- This means the bag is to the right of the phone.\n\nStep 3: Determine what is to the right of the phone that is with the boy.\n- The phone is with the boy,",
+      "parsed_answer": "- The phone is with the boy,",
+      "is_correct": false
+    },
+    {
+      "image_number": 18,
+      "gqa_image_id": "2398218",
+      "template": "two_hop",
+      "question": "What is to the left of the post that is to the left of the porch?",
+      "ground_truth": "stop sign",
+      "raw_output": "Step 1: Identify the objects and relationships in the question.\nThe question asks: \"What is to the left of the post that is to the left of the porch?\"\n\nWe need to find the object that is to the left of the post, and then the object that is to the left of that post, which is the object to the left of the post that is to the left of the porch.\n\nStep 2: Find the position of the post.\nFrom the scene graph:\n- The post is at [0.66, 0.22, 0.05, 0.57] \u2192",
+      "parsed_answer": "- The post is at [0.66, 0.22, 0.05, 0.57] \u2192",
+      "is_correct": false
+    },
+    {
+      "image_number": 19,
+      "gqa_image_id": "2389557",
+      "template": "two_hop",
+      "question": "What is on the bench that is to the right of the grass?",
+      "ground_truth": "girl",
+      "raw_output": "Step 1: Identify the objects and attributes.\n- The question asks about the object on the bench that is to the right of the grass.\n- The bench is a key object with attributes [brown, wood] and a bbox [0.17, 0.66, 0.71, 0.20].\n- The grass is a green object with bbox [0.00, 0.83, 0.23, 0.05].\n\nStep 2: Trace the spatial relationship.\n- The scene graph states: \"bench\" to the right of \"grass\".",
+      "parsed_answer": "- The scene graph states: \"bench\" to the right of \"grass\".",
+      "is_correct": false
+    },
+    {
+      "image_number": 20,
+      "gqa_image_id": "4114",
+      "template": "between_attr",
+      "question": "What is between the chair and the tall plant?",
+      "ground_truth": "window",
+      "raw_output": "Step 1: Identify the objects and their attributes.\n- Chair: white, located at [0.53, 0.58, 0.17, 0.18]\n- Plant: tall, located at [0.28, 0.26, 0.18, 0.52]\n- Window: white, vertical, located at [0.23, 0.23, 0.59, 0.64]\n- Lamp: on, located at [0.70, 0.48, 0.",
+      "parsed_answer": "- Lamp: on, located at [0.70, 0.48, 0.",
+      "is_correct": false
+    },
+    {
+      "image_number": 21,
+      "gqa_image_id": "2408882",
+      "template": "between_attr",
+      "question": "What is between the green grass and the tree?",
+      "ground_truth": "ground",
+      "raw_output": "Step 1: Identify the objects and their positions.\n- The green grass is located at [0.56, 0.39, 0.31, 0.10].\n- The tree is located at [0.17, 0.00, 0.59, 0.62].\n\nStep 2: Determine the spatial relationship between the grass and the tree.\n- The grass is to the right of the tree (since the grass's x-coordinate is 0.56 and the tree's x-coordinate is 0.17).\n- The grass is to",
+      "parsed_answer": "- The grass is to",
+      "is_correct": false
+    },
+    {
+      "image_number": 22,
+      "gqa_image_id": "2326139",
+      "template": "two_hop",
+      "question": "What is to the left of the lamp that is to the left of the bedspread?",
+      "ground_truth": "picture",
+      "raw_output": "Let's break down the question step by step.\n\nWe are asked: **What is to the left of the lamp that is to the left of the bedspread?**\n\nThis means we need to:\n1. Find the **lamp** that is to the left of the **bedspread**.\n2. Then, find what is to the **left** of that lamp.\n\nSo, we need to determine the object that is to the left of the lamp, and that lamp is in turn to the left of the bedspread.\n\nLet\u2019s first identify the positions of the relevant objects from the scene graph.\n\nFrom the scene graph:\n- **",
+      "parsed_answer": "- **",
+      "is_correct": false
+    },
+    {
+      "image_number": 23,
+      "gqa_image_id": "2409769",
+      "template": "between_attr",
+      "question": "What is between the blue car and the green wall?",
+      "ground_truth": "pole",
+      "raw_output": "Step 1: Identify the objects and their attributes.\n- The \"blue car\" is the first car with attributes [blue, old] and bbox [0.05, 0.19, 0.43, 0.46].\n- The \"green wall\" is the wall with attributes [green] and bbox [0.51, 0.16, 0.05, 0.18].\n\nStep 2: Determine the spatial relationship between the blue car and the green wall.\n- The blue car is at [0.05, 0.19",
+      "parsed_answer": "- The blue car is at [0.05, 0.19",
+      "is_correct": false
+    },
+    {
+      "image_number": 24,
+      "gqa_image_id": "2341486",
+      "template": "between_attr",
+      "question": "What is between the black car and the blowing hair?",
+      "ground_truth": "house",
+      "raw_output": "Step 1: Identify the objects in the question.\n- The black car is identified as the car with the attribute \"black\".\n- The blowing hair is identified as the hair with the attribute \"blowing\".\n\nStep 2: Trace the spatial relationship between the car and the hair.\n- The scene graph states: \"car\" to the left of \"hair\".\n- This means the car is on the left side of the hair.\n- The hair is located at [0.64, 0.27, 0.24, 0.17], so its x-coordinate is 0.64.",
+      "parsed_answer": "- The hair is located at [0.64, 0.27, 0.24, 0.17], so its x-coordinate is 0.64.",
+      "is_correct": false
+    },
+    {
+      "image_number": 25,
+      "gqa_image_id": "2338754",
+      "template": "attr_relation",
+      "question": "What is to the right of the black shoes?",
+      "ground_truth": "animal",
+      "raw_output": "Step 1: Identify the relevant objects and attributes.\n- The question asks about the object to the right of the \"black shoes\".\n- The \"black shoes\" object is identified with attributes: [black], bbox: [0.05, 0.80, 0.02, 0.06].\n\nStep 2: Trace the spatial relationships.\n- The relationship \"shoes\" to the left of \"animal\" is given: \"shoes\" is to the left of \"animal\".\n- The relationship \"animal\" to the right of \"shoes\" is also given: \"animal\" is",
+      "parsed_answer": "- The relationship \"animal\" to the right of \"shoes\" is also given: \"animal\" is",
+      "is_correct": true
+    },
+    {
+      "image_number": 26,
+      "gqa_image_id": "2415495",
+      "template": "between_attr",
+      "question": "What is between the metal faucet and the glass?",
+      "ground_truth": "drain",
+      "raw_output": "Step 1: Identify the objects mentioned in the question.\n- The metal faucet is identified as one of the faucets, with attributes [metal, silver].\n- The glass is a glass object with no attributes.\n\nStep 2: Find the spatial relationship between the metal faucet and the glass.\n- From the scene graph, the relationship \"glass\" to the right of \"wall\" and \"glass\" to the right of \"door\" is given.\n- The relationship \"faucet\" to the right of \"door\" is also given.\n- The relationship \"faucet\" to the right of \"wall\" is also given",
+      "parsed_answer": "- The relationship \"faucet\" to the right of \"wall\" is also given",
+      "is_correct": false
+    },
+    {
+      "image_number": 27,
+      "gqa_image_id": "2371091",
+      "template": "two_hop",
+      "question": "What is to the left of the ear that is to the left of the leg?",
+      "ground_truth": "grass",
+      "raw_output": "We are given a scene graph with objects and their spatial relationships. The question is:\n\n**\"What is to the left of the ear that is to the left of the leg?\"**\n\nLet\u2019s break this down step by step.\n\n### Step 1: Identify the relevant objects\nWe are looking for:\n- The **ear**\n- The **ear that is to the left of the leg**\n- The **thing to the left of that ear**\n\nSo, we need to find:\n1. The **ear** (object)\n2. The **ear** that is to the **left of the leg**\n3. The **thing to",
+      "parsed_answer": "3. The **thing to",
+      "is_correct": false
+    },
+    {
+      "image_number": 28,
+      "gqa_image_id": "2368938",
+      "template": "two_hop",
+      "question": "What is to the right of the tomato sauce that is to the right of the mozzarella?",
+      "ground_truth": "pizza crust",
+      "raw_output": "Let's break down the question step by step.\n\n**Question:** What is to the right of the tomato sauce that is to the right of the mozzarella?\n\nThis is a nested spatial query:\n- First, find the object that is to the right of the mozzarella.\n- Then, find the object that is to the right of that object (i.e., the tomato sauce that is to the right of the mozzarella).\n- Finally, determine what is to the right of that tomato sauce.\n\nSo we need to:\n1. Find the **mozzarella** object.\n2. Find the **tomato sauce** that is to the",
+      "parsed_answer": "2. Find the **tomato sauce** that is to the",
+      "is_correct": false
+    },
+    {
+      "image_number": 29,
+      "gqa_image_id": "2379354",
+      "template": "two_hop",
+      "question": "What is to the left of the woman that is to the left of the sea?",
+      "ground_truth": "vest",
+      "raw_output": "Step 1: Identify the objects and relationships in the scene graph.\n- The woman is a central object with attributes [standing].\n- The sea is another object with no attributes.\n- The water is located to the right of the woman.\n- The vest is to the left of the woman.\n- The gloves are to the right of the vest.\n- The woman is to the left of the sea.\n\nStep 2: Trace the relationships in the question.\n- The question asks: \"What is to the left of the woman that is to the left of the sea?\"\n- This means we need to find the object that is to the",
+      "parsed_answer": "- This means we need to find the object that is to the",
+      "is_correct": false
+    },
+    {
+      "image_number": 30,
+      "gqa_image_id": "2361536",
+      "template": "two_hop",
+      "question": "What is to the left of the head that is to the left of the sand?",
+      "ground_truth": "cow",
+      "raw_output": "Let's break down the question step by step:\n\nQuestion: What is to the left of the head that is to the left of the sand?\n\nWe need to find the object that is:\n1. To the left of the head\n2. And that is to the left of the sand\n\nSo, we are looking for the object that lies to the left of the head, and that object lies to the left of the sand.\n\nFrom the scene graph, we have:\n- \"head\" has a bbox: [0.58, 0.25, 0.08, 0.21]\n-",
+      "parsed_answer": "-",
+      "is_correct": false
+    },
+    {
+      "image_number": 31,
+      "gqa_image_id": "150405",
+      "template": "two_hop",
+      "question": "What is to the left of the drawing that is to the left of the banana?",
+      "ground_truth": "man",
+      "raw_output": "Let's break down the question step by step:\n\nQuestion: What is to the left of the drawing that is to the left of the banana?\n\nWe need to find the object that is to the left of the drawing, and that drawing is to the left of the banana.\n\nStep 1: Identify the relevant objects.\n- The banana is one of the objects in the scene graph.\n- The drawing is also present.\n- We are looking for the object that is to the left of the drawing, and that drawing is to the left of the banana.\n\nStep 2: Trace the relationships.\n- The relationship \"drawing\" to the left",
+      "parsed_answer": "- The relationship \"drawing\" to the left",
+      "is_correct": false
+    },
+    {
+      "image_number": 32,
+      "gqa_image_id": "2343740",
+      "template": "between_attr",
+      "question": "What is between the white cap and the hand?",
+      "ground_truth": "boy",
+      "raw_output": "Step 1: Identify the objects and attributes mentioned in the question.\n- The question asks about the object between the \"white cap\" and the \"hand\".\n- The \"white cap\" is associated with the object \"cap\" (bbox: [0.78, 0.44, 0.06, 0.08]).\n- The \"hand\" is associated with the object \"hand\" (bbox: [0.66, 0.47, 0.02, 0.03]).\n\nStep 2: Trace the spatial relationships to determine the relative positions.",
+      "parsed_answer": "Step 2: Trace the spatial relationships to determine the relative positions.",
+      "is_correct": false
+    },
+    {
+      "image_number": 33,
+      "gqa_image_id": "2363277",
+      "template": "two_hop",
+      "question": "What is to the right of the head that is to the right of the fur?",
+      "ground_truth": "eye",
+      "raw_output": "Let's break down the question step by step.\n\nQuestion: What is to the right of the head that is to the right of the fur?\n\nWe need to find the object that is to the right of the head, and then the object that is to the right of that, i.e., the object that is to the right of the head that is to the right of the fur.\n\nSo, we need to:\n1. Find the object that is to the right of the fur.\n2. Then, find the object that is to the right of that object (i.e., the object to the right of the object to the right",
+      "parsed_answer": "2. Then, find the object that is to the right of that object (i.e., the object to the right of the object to the right",
+      "is_correct": false
+    },
+    {
+      "image_number": 34,
+      "gqa_image_id": "4489",
+      "template": "two_hop",
+      "question": "What is to the left of the table that is to the left of the wall?",
+      "ground_truth": "woman",
+      "raw_output": "Let's break down the question step by step:\n\nWe are asked: **What is to the left of the table that is to the left of the wall?**\n\nThis is a nested spatial query:\n1. First, identify the object **\"table\"**.\n2. Then, find the object **\"table\" that is to the left of the wall**.\n3. Then, find the object **\"table\" that is to the left of the wall** \u2014 but we are looking for the object **to the left of that table**.\n\nSo, we need to find:\n- The object **to the left of the table",
+      "parsed_answer": "- The object **to the left of the table",
+      "is_correct": false
+    },
+    {
+      "image_number": 35,
+      "gqa_image_id": "2336624",
+      "template": "between_attr",
+      "question": "What is between the nose and the white wing?",
+      "ground_truth": "airplane",
+      "raw_output": "Step 1: Identify the objects and attributes.\n- The \"nose\" is part of the \"airplane\".\n- The \"wing\" is also part of the \"airplane\" and is described as white.\n- The \"tail\" is also part of the \"airplane\".\n\nStep 2: Analyze the relationships.\n- \"nose\" of \"airplane\" \u2192 the nose is a part of the airplane.\n- \"nose\" to the right of \"wing\" \u2192 this means the nose is positioned to the right of the wing.\n- \"tail\" of \"airplane\" \u2192 the tail is a part",
+      "parsed_answer": "- \"tail\" of \"airplane\" \u2192 the tail is a part",
+      "is_correct": true
+    },
+    {
+      "image_number": 36,
+      "gqa_image_id": "2404923",
+      "template": "between_attr",
+      "question": "What is between the black nose and the brown rope?",
+      "ground_truth": "animal",
+      "raw_output": "Step 1: Identify the objects and their attributes.\n- The \"black nose\" is associated with the object \"nose\" (black color, bbox: [0.46, 0.54, 0.03, 0.05]).\n- The \"brown rope\" is associated with the object \"rope\" (brown color, bbox: [0.10, 0.31, 0.32, 0.52]).\n\nStep 2: Determine the spatial relationship between the nose and the rope.\n- The relationship \"nose\" to the right of",
+      "parsed_answer": "- The relationship \"nose\" to the right of",
+      "is_correct": false
+    },
+    {
+      "image_number": 37,
+      "gqa_image_id": "2374245",
+      "template": "two_hop",
+      "question": "What is to the right of the cloud that is to the right of the locomotive?",
+      "ground_truth": "clouds",
+      "raw_output": "Step 1: Identify the objects and relationships in the scene graph.\n- The locomotive is at [0.15, 0.32, 0.42, 0.45].\n- The cloud that is to the right of the locomotive is the one at [0.63, 0.32, 0.28, 0.13].\n- The clouds (plural) are at [0.89, 0.33, 0.11, 0.12].\n\nStep 2: Trace the relationships.\n- \"locom",
+      "parsed_answer": "- \"locom",
+      "is_correct": false
+    },
+    {
+      "image_number": 38,
+      "gqa_image_id": "2407818",
+      "template": "two_hop",
+      "question": "What is to the left of the player that is to the left of the bat?",
+      "ground_truth": "home plate",
+      "raw_output": "Let's break down the question step by step.\n\nWe are asked: **What is to the left of the player that is to the left of the bat?**\n\nThis is a nested spatial query. Let's identify the relevant objects in order:\n\n1. **First**, identify the **player that is to the left of the bat**.\n   - From the scene graph, we see:\n     - \"player\" to the left of \"bat\" (relationship: \"player\" to the left of \"bat\")\n     - The player is also described as being in front of the catcher, umpire, and other players.\n     - The",
+      "parsed_answer": "- The",
+      "is_correct": false
+    },
+    {
+      "image_number": 39,
+      "gqa_image_id": "2318099",
+      "template": "between_attr",
+      "question": "What is between the dried leaves and the tree?",
+      "ground_truth": "animal",
+      "raw_output": "Step 1: Identify the objects in question.\n- \"dried leaves\" is a leaf with the attribute [dried], and its bbox is [0.05, 0.16, 0.08, 0.11].\n- \"tree\" is the object with bbox [0.00, 0.00, 1.00, 1.00].\n\nStep 2: Determine the spatial relationship between the two.\n- The question asks: \"What is between the dried leaves and the tree?\"\n- We need to find an object that lies between them in the",
+      "parsed_answer": "- We need to find an object that lies between them in the",
+      "is_correct": false
+    },
+    {
+      "image_number": 40,
+      "gqa_image_id": "2393953",
+      "template": "attr_relation",
+      "question": "What is to the left of the yellow daisy?",
+      "ground_truth": "sheep",
+      "raw_output": "Step 1: Identify the relevant object in the question.\n- The question asks: \"What is to the left of the yellow daisy?\"\n- The yellow daisy is located at [0.87, 0.65, 0.02, 0.03], so its bounding box is from x=0.87 to x=0.89 (since width is 0.02).\n\nStep 2: Find the relationship involving the yellow daisy.\n- The relationship \"daisy\" to the right of \"sheep\" is given.\n- This means the sheep is to",
+      "parsed_answer": "- This means the sheep is to",
+      "is_correct": true
+    },
+    {
+      "image_number": 41,
+      "gqa_image_id": "2374080",
+      "template": "attr_relation",
+      "question": "What is on the busy street?",
+      "ground_truth": "skateboarder",
+      "raw_output": "Step 1: Identify the relevant objects and attributes.\nThe question asks: \"What is on the busy street?\" The key object here is the \"street\", which is described as \"busy\" and has a bbox. The question is asking for what is on the street.\n\nStep 2: Look at the relationships involving the street.\nThe relationship \"skateboarder\" to the left of \"building\" and \"skateboarder\" to the right of \"shirt\" are relevant, but more importantly, the relationship \"skateboarder\" on \"street\" is explicitly stated.\n\nStep 3: Trace the spatial relationship.",
+      "parsed_answer": "Step 3: Trace the spatial relationship.",
+      "is_correct": false
+    },
+    {
+      "image_number": 42,
+      "gqa_image_id": "2323139",
+      "template": "attr_relation",
+      "question": "What is to the left of the black dog?",
+      "ground_truth": "ear",
+      "raw_output": "Step 1: Identify the black dog.\n- The black dog is mentioned in the scene graph with the attribute \"black\" and bbox [0.05, 0.24, 0.45, 0.36].\n\nStep 2: Find the relationship to the left of the black dog.\n- The question asks: \"What is to the left of the black dog?\"\n- The only relationship involving the black dog is: \"dog\" to the right of \"ear\" (relationship: \"dog\" to the right of \"ear\").\n- This means the \"ear\" is to the left of the",
+      "parsed_answer": "- This means the \"ear\" is to the left of the",
+      "is_correct": true
+    },
+    {
+      "image_number": 43,
+      "gqa_image_id": "2367286",
+      "template": "attr_relation",
+      "question": "What is to the left of the brown horse?",
+      "ground_truth": "post",
+      "raw_output": "Step 1: Identify the relevant object in the question.\n- The question asks: \"What is to the left of the brown horse?\"\n- The object \"horse\" has the attribute \"brown\" and is located at [0.44, 0.26, 0.18, 0.17].\n\nStep 2: Determine the spatial relationship between the horse and other objects.\n- From the scene graph, the \"post\" is to the left of the \"horse\" (relationship: \"post\" to the left of \"horse\").\n- The \"man\" is also to the right of the \"",
+      "parsed_answer": "- The \"man\" is also to the right of the \"",
+      "is_correct": false
+    },
+    {
+      "image_number": 44,
+      "gqa_image_id": "2402864",
+      "template": "attr_relation",
+      "question": "What is to the left of the white sink?",
+      "ground_truth": "chair",
+      "raw_output": "Step 1: Identify the object in question.\n- The question asks: \"What is to the left of the white sink?\"\n- The white sink is identified as the object with attributes [white] and bbox [0.58, 0.46, 0.13, 0.04].\n\nStep 2: Find the relationship involving the white sink.\n- The relationship \"sink\" to the right of \"chair\" is given: \"sink\" to the right of \"chair\".\n- This means the chair is to the left of the sink.\n\nStep 3: Check the spatial arrangement.\n- The",
+      "parsed_answer": "- The",
+      "is_correct": false
+    },
+    {
+      "image_number": 45,
+      "gqa_image_id": "2375673",
+      "template": "two_hop",
+      "question": "What is to the left of the water that is to the left of the trunk?",
+      "ground_truth": "elephant",
+      "raw_output": "Let's break down the question step by step:\n\nQuestion: What is to the left of the water that is to the left of the trunk?\n\nWe need to find the object that is to the left of the water, and that water is to the left of the trunk.\n\nStep 1: Identify the relevant objects.\n- We are looking for the object that is to the left of the water.\n- The water is to the left of the trunk.\n- So, we need to find the object that is to the left of the water, which is in turn to the left of the trunk.\n\nStep 2: Find the position of",
+      "parsed_answer": "Step 2: Find the position of",
+      "is_correct": false
+    },
+    {
+      "image_number": 46,
+      "gqa_image_id": "4193",
+      "template": "between_attr",
+      "question": "What is between the arms and the white flowers?",
+      "ground_truth": "windows",
+      "raw_output": "Step 1: Identify the objects mentioned in the question.\n- \"arms\" and \"white flowers\" are both present in the scene graph.\n\nStep 2: Determine the spatial relationship between \"arms\" and \"white flowers\".\n- The relationship \"arms\" to the left of \"chair\" is given.\n- The relationship \"flowers\" to the right of \"chair\" is given.\n- The relationship \"flowers\" to the left of \"chair\" is also given.\n- The relationship \"flowers\" to the right of \"windows\" is given.\n- The relationship \"windows\" to the left of \"flowers\" is given.\n-",
+      "parsed_answer": "-",
+      "is_correct": false
+    },
+    {
+      "image_number": 47,
+      "gqa_image_id": "2364331",
+      "template": "two_hop",
+      "question": "What is to the right of the person that is to the right of the bear?",
+      "ground_truth": "tiles",
+      "raw_output": "Let's break down the question step by step:\n\n1. **Identify the key objects and relationships:**\n   - The question asks: \"What is to the right of the person that is to the right of the bear?\"\n   - This means we need to find the object that is to the right of the person who is to the right of the bear.\n\n2. **Trace the spatial relationships:**\n   - From the scene graph, we know:\n     - \"bear\" is at [0.27, 0.10, 0.02, 0.01] \u2192 x = 0",
+      "parsed_answer": "- \"bear\" is at [0.27, 0.10, 0.02, 0.01] \u2192 x = 0",
+      "is_correct": false
+    },
+    {
+      "image_number": 48,
+      "gqa_image_id": "2320522",
+      "template": "two_hop",
+      "question": "What is to the right of the liquor that is to the left of the bottle?",
+      "ground_truth": "glass",
+      "raw_output": "Let's break down the question step by step:\n\n**Question:** What is to the right of the liquor that is to the left of the bottle?\n\nWe need to:\n1. Find the object that is **to the left of the bottle**.\n2. Then, find the object that is **to the right of that liquor**.\n\nSo, we are looking for the object that lies to the right of the liquor, which is to the left of the bottle.\n\nLet\u2019s first identify the relevant objects:\n\n- The **bottle** appears multiple times in the scene graph.\n- The **liquor** appears twice: one at [",
+      "parsed_answer": "- The **liquor** appears twice: one at [",
+      "is_correct": false
+    },
+    {
+      "image_number": 49,
+      "gqa_image_id": "272",
+      "template": "attr_relation",
+      "question": "What is to the left of the green house?",
+      "ground_truth": "boat",
+      "raw_output": "Step 1: Identify the green house.\n- The green house is a \"house\" with the attribute \"green\", and it is located at [0.68, 0.61, 0.15, 0.10].\n\nStep 2: Determine what is to the left of the green house.\n- The question asks for the object to the left of the green house.\n- From the scene graph, the green house is at [0.68, 0.61, 0.15, 0.10].\n- The \"boat\" is at [0.",
+      "parsed_answer": "- The \"boat\" is at [0.",
+      "is_correct": true
+    },
+    {
+      "image_number": 50,
+      "gqa_image_id": "2349130",
+      "template": "between_attr",
+      "question": "What is between the black coat and the large window?",
+      "ground_truth": "jeans",
+      "raw_output": "Step 1: Identify the objects and their attributes.\n- The black coat is located at [0.88, 0.55, 0.09, 0.15].\n- The large window is located at [0.38, 0.39, 0.46, 0.26].\n\nStep 2: Determine the spatial relationship between the coat and the window.\n- The coat is to the right of the window (from the scene graph: \"coat\" to the right of \"window\").\n- The coat is at x = 0.88, and",
+      "parsed_answer": "- The coat is at x = 0.88, and",
+      "is_correct": false
+    },
+    {
+      "image_number": 51,
+      "gqa_image_id": "2340367",
+      "template": "attr_relation",
+      "question": "What is to the left of the jacket?",
+      "ground_truth": "man",
+      "raw_output": "Step 1: Identify the relevant objects in the scene graph.\n- The question asks: \"What is to the left of the jacket?\"\n- The jacket is an object with bbox [0.90, 0.72, 0.10, 0.28].\n\nStep 2: Find all relationships involving the jacket.\n- The relationships involving the jacket are:\n  - \"jacket\" to the right of \"ring\"\n  - \"jacket\" to the right of \"man\"\n  - \"man\" to the left of \"jacket\"\n  - \"man\" wearing \"ring\"\n\nStep",
+      "parsed_answer": "Step",
+      "is_correct": false
+    },
+    {
+      "image_number": 52,
+      "gqa_image_id": "2415669",
+      "template": "attr_relation",
+      "question": "What is to the right of the red bus?",
+      "ground_truth": "pavement",
+      "raw_output": "Step 1: Identify the red bus.\n- The red bus is the double-decker bus with attributes [red, double decker].\n- Its bounding box is [0.79, 0.46, 0.20, 0.21].\n\nStep 2: Determine what is to the right of the red bus.\n- The question asks for the object(s) that are to the right of the red bus.\n- From the relationships, we look for any relationship stating that something is to the right of the red bus.\n- The relationship \"bus\" to the right of \"car\" is mentioned",
+      "parsed_answer": "- The relationship \"bus\" to the right of \"car\" is mentioned",
+      "is_correct": false
+    },
+    {
+      "image_number": 53,
+      "gqa_image_id": "2340866",
+      "template": "attr_relation",
+      "question": "What is to the left of the support bridge?",
+      "ground_truth": "pole",
+      "raw_output": "Step 1: Identify the relevant object in the question.\nThe question asks: \"What is to the left of the support bridge?\"\n\nFrom the scene graph, the object \"bridge\" has the attribute \"support\", so it is the \"support bridge\". The object \"bridge\" is described as having the attribute \"support\", and its bbox is [0.61, 0.52, 0.22, 0.12].\n\nStep 2: Determine the spatial relationship.\nThe relationship \"bridge\" to the right of \"pole\" is given. This means the pole is to the left of the bridge",
+      "parsed_answer": "The relationship \"bridge\" to the right of \"pole\" is given. This means the pole is to the left of the bridge",
+      "is_correct": true
+    },
+    {
+      "image_number": 54,
+      "gqa_image_id": "2348334",
+      "template": "two_hop",
+      "question": "What is to the left of the ladder that is to the left of the hair?",
+      "ground_truth": "building",
+      "raw_output": "Let's break down the question step by step.\n\nWe are asked: **What is to the left of the ladder that is to the left of the hair?**\n\nThis is a nested spatial query. We need to:\n1. Find the object that is **to the left of the hair**.\n2. Then, find the object that is **to the left of the ladder**, which is **to the left of the hair**.\n3. So, the object in question is the one that is **to the left of the ladder**, and **the ladder is to the left of the hair**.\n\nLet\u2019s first identify the positions",
+      "parsed_answer": "Let\u2019s first identify the positions",
+      "is_correct": false
+    },
+    {
+      "image_number": 55,
+      "gqa_image_id": "2395306",
+      "template": "two_hop",
+      "question": "What is on the tower that is to the left of the palm tree?",
+      "ground_truth": "clock",
+      "raw_output": "Step 1: Identify the objects and attributes.\n- The question asks about the object on the tower that is to the left of the palm tree.\n- The tower is a distinct object with attributes: tall, brick, red.\n- The palm tree is also present, with attributes: green.\n\nStep 2: Trace the spatial relationship.\n- The scene graph states: \"palm tree\" to the right of \"tower\".\n- This means the tower is to the left of the palm tree.\n- The relationship \"tower\" to the left of \"palm tree\" is explicitly stated.\n\nStep 3: Check the relationship \"clock",
+      "parsed_answer": "Step 3: Check the relationship \"clock",
+      "is_correct": true
+    },
+    {
+      "image_number": 56,
+      "gqa_image_id": "2328931",
+      "template": "attr_relation",
+      "question": "What is to the left of the small napkin?",
+      "ground_truth": "bread",
+      "raw_output": "Step 1: Identify the relevant objects in the scene graph.\n- The small napkin is located at (0.89, 0.24, 0.11, 0.16), which means it is a small, white napkin.\n\nStep 2: Analyze the relationships provided.\n- The relationship \"napkin\" to the right of \"bread\" is given.\n- This means the napkin is to the right of the bread.\n\nStep 3: Determine what is to the left of the napkin.\n- Since the napkin is to the right of the bread, the bread must",
+      "parsed_answer": "- Since the napkin is to the right of the bread, the bread must",
+      "is_correct": true
+    },
+    {
+      "image_number": 57,
+      "gqa_image_id": "2367740",
+      "template": "attr_relation",
+      "question": "What is to the right of the tall giraffe?",
+      "ground_truth": "hair",
+      "raw_output": "Step 1: Identify the object of interest in the question.\n- The question asks: \"What is to the right of the tall giraffe?\"\n- The object \"giraffe\" is mentioned with the attribute \"tall\".\n\nStep 2: Find the spatial relationships involving the giraffe.\n- From the scene graph, the giraffe is at position [0.35, 0.26, 0.44, 0.60].\n- The relationship \"giraffe\" to the left of \"hair\" indicates that the giraffe is to the left of the hair.\n- The relationship \"",
+      "parsed_answer": "- The relationship \"",
+      "is_correct": false
+    },
+    {
+      "image_number": 58,
+      "gqa_image_id": "2383543",
+      "template": "between_attr",
+      "question": "What is between the ketchup bottle and the collared shirt?",
+      "ground_truth": "ketchup",
+      "raw_output": "Step 1: Identify the objects in question.\n- The question asks about the object between the \"ketchup bottle\" and the \"collared shirt\".\n- The \"collared shirt\" is a specific object with the attribute \"collared, red\".\n- The \"ketchup bottle\" is also a specific object.\n\nStep 2: Trace the spatial relationships.\n- From the scene graph:\n  - \"shirt\" to the left of \"ketchup bottle\" (relationship: \"shirt\" to the left of \"ketchup bottle\")\n  - \"ketchup bottle\" to the right of \"shirt\" (same as above)",
+      "parsed_answer": "- \"ketchup bottle\" to the right of \"shirt\" (same as above)",
+      "is_correct": true
+    },
+    {
+      "image_number": 59,
+      "gqa_image_id": "2403720",
+      "template": "two_hop",
+      "question": "What is to the left of the eye that belongs to the smiling, happy person?",
+      "ground_truth": "nose",
+      "raw_output": "Step 1: Identify the relevant objects.\n- The question refers to the \"eye that belongs to the smiling, happy person.\"\n- From the scene graph, the \"person\" has the attributes [smiling, happy], and the \"eye\" is listed as a child of the \"person.\"\n\nStep 2: Determine the spatial relationship.\n- The relationship \"eye\" to the right of \"nose\" is given.\n- The relationship \"nose\" to the left of \"eye\" is also given.\n- This confirms that the nose is to the left of the eye, and the eye is to the right of the nose",
+      "parsed_answer": "- This confirms that the nose is to the left of the eye, and the eye is to the right of the nose",
+      "is_correct": true
+    },
+    {
+      "image_number": 60,
+      "gqa_image_id": "2352486",
+      "template": "attr_relation",
+      "question": "What is to the right of the blue jacket?",
+      "ground_truth": "mountain",
+      "raw_output": "Step 1: Identify the relevant object in the question.\n- The question asks: \"What is to the right of the blue jacket?\"\n- The blue jacket is mentioned with the attribute \"blue\" and is located at [0.76, 0.49, 0.08, 0.13].\n\nStep 2: Find the spatial relationship involving the blue jacket.\n- The scene graph states: \"jacket\" to the left of \"mountain\".\n- Also, \"man\" wearing \"jacket\" and \"man\" to the right of \"mountain\".\n- \"man\" is located",
+      "parsed_answer": "- \"man\" is located",
+      "is_correct": false
+    },
+    {
+      "image_number": 61,
+      "gqa_image_id": "2319535",
+      "template": "attr_relation",
+      "question": "What is to the left of the brown door?",
+      "ground_truth": "wine",
+      "raw_output": "Step 1: Identify the object of interest.\n- The question asks: \"What is to the left of the brown door?\"\n- The object \"door\" has the attribute \"brown\" and is located at coordinates [0.55, 0.30, 0.42, 0.64].\n\nStep 2: Find the relationship involving the door.\n- The relationship \"door\" to the right of \"wine\" is given.\n- This means the \"wine\" is to the left of the \"door\".\n\nStep 3: Check the spatial arrangement.\n- The \"wine\" is to the left",
+      "parsed_answer": "- The \"wine\" is to the left",
+      "is_correct": true
+    },
+    {
+      "image_number": 62,
+      "gqa_image_id": "2414901",
+      "template": "between_attr",
+      "question": "What is between the white bird and the person?",
+      "ground_truth": "cage",
+      "raw_output": "Step 1: Identify the objects and their attributes.\n- The white bird is located at [0.19, 0.03, 0.26, 0.14].\n- The person is located at [0.72, 0.27, 0.10, 0.19].\n\nStep 2: Determine the spatial relationship between the white bird and the person.\n- The person is at [0.72, 0.27, 0.10, 0.19], which means the person is to the right of the cage",
+      "parsed_answer": "- The person is at [0.72, 0.27, 0.10, 0.19], which means the person is to the right of the cage",
+      "is_correct": true
+    },
+    {
+      "image_number": 63,
+      "gqa_image_id": "2362462",
+      "template": "attr_relation",
+      "question": "What is to the left of the blue coat?",
+      "ground_truth": "water",
+      "raw_output": "Step 1: Identify the object of interest and its attributes.\n- The question asks: \"What is to the left of the blue coat?\"\n- The blue coat is an object with attributes: [blue, bright], and its bbox is [0.44, 0.43, 0.07, 0.11].\n\nStep 2: Find all relationships involving the blue coat.\n- The only relationship involving the blue coat is: \"coat\" to the left of \"leg\" (relationship 10).\n- Also, \"coat\" to the right of \"water\" (relationship 11",
+      "parsed_answer": "- Also, \"coat\" to the right of \"water\" (relationship 11",
+      "is_correct": true
+    },
+    {
+      "image_number": 64,
+      "gqa_image_id": "2367869",
+      "template": "attr_relation",
+      "question": "What is to the left of the black bus stop?",
+      "ground_truth": "hat",
+      "raw_output": "Step 1: Identify the relevant object in the question.\nThe question asks: \"What is to the left of the black bus stop?\"\n\nFrom the scene graph, the black bus stop is located at:\n- bbox: [0.27, 0.00, 0.53, 0.56]\n- attributes: [black]\n\nStep 2: Find the relationships involving the black bus stop.\nThe relationships involving the bus stop are:\n- \"bus stop\" to the left of \"bench\"\n- \"bus stop\" to the right of \"hat\"\n- \"bus stop\" to the right of",
+      "parsed_answer": "- \"bus stop\" to the right of",
+      "is_correct": false
+    },
+    {
+      "image_number": 65,
+      "gqa_image_id": "2338602",
+      "template": "attr_relation",
+      "question": "What is to the right of the red nose?",
+      "ground_truth": "field",
+      "raw_output": "Step 1: Identify the object in question.\n- The question asks about the object to the right of the \"red nose\".\n- From the scene graph, the \"nose\" has the attribute \"red\" and is located at [0.21, 0.48, 0.16, 0.20].\n\nStep 2: Determine the spatial relationships.\n- The relationship \"nose\" to the right of \"barrier\" is given.\n- The \"barrier\" is at [0.04, 0.60, 0.05, 0.0",
+      "parsed_answer": "- The \"barrier\" is at [0.04, 0.60, 0.05, 0.0",
+      "is_correct": false
+    },
+    {
+      "image_number": 66,
+      "gqa_image_id": "2324922",
+      "template": "between_attr",
+      "question": "What is between the tan jacket and the people?",
+      "ground_truth": "man",
+      "raw_output": "Step 1: Identify the objects in question.\n- The tan jacket is located at [0.04, 0.51, 0.03, 0.06] with attributes [tan].\n- The people are a group of individuals, and one person is at [0.00, 0.50, 0.02, 0.12], and another is at [0.00, 0.49, 0.07, 0.13], and others are on the beach.\n\nStep 2: Determine the spatial relationship between",
+      "parsed_answer": "Step 2: Determine the spatial relationship between",
+      "is_correct": false
+    },
+    {
+      "image_number": 67,
+      "gqa_image_id": "2403647",
+      "template": "attr_relation",
+      "question": "What is on the dark brown pole?",
+      "ground_truth": "sign",
+      "raw_output": "Step 1: Identify the object in question and its attributes.\n- The question asks: \"What is on the dark brown pole?\"\n- The object \"pole\" has the attribute \"dark brown\" and is located at [0.23, 0.01, 0.17, 0.96].\n\nStep 2: Determine the relationship between the dark brown pole and other objects.\n- The relationship \"sign\" on \"pole\" is explicitly stated.\n- The scene graph says: \"sign\" on \"pole\" \u2192 meaning the sign is attached to the pole.\n\nStep 3: Check if any",
+      "parsed_answer": "Step 3: Check if any",
+      "is_correct": false
+    },
+    {
+      "image_number": 68,
+      "gqa_image_id": "2360586",
+      "template": "two_hop",
+      "question": "What does the jockey wear that is to the right of the hat?",
+      "ground_truth": "boots",
+      "raw_output": "Step 1: Identify the relevant objects.\n- The question asks about what the jockey wears that is to the right of the hat.\n- The jockey is wearing a hat, and we are looking for what the jockey wears that is to the right of the hat.\n\nStep 2: Find the position of the hat.\n- The hat is at [0.37, 0.47, 0.04, 0.04] (first hat).\n- The hat is also at [0.39, 0.44, 0.04, 0.0",
+      "parsed_answer": "- The hat is also at [0.39, 0.44, 0.04, 0.0",
+      "is_correct": false
+    },
+    {
+      "image_number": 69,
+      "gqa_image_id": "2336",
+      "template": "between_attr",
+      "question": "What is between the red planter and the building?",
+      "ground_truth": "car",
+      "raw_output": "Step 1: Identify the objects in question.\n- The red planter is located at [0.42, 0.56, 0.12, 0.14].\n- The building is located at [0.00, 0.00, 0.30, 0.54].\n\nStep 2: Determine the spatial relationship between the red planter and the building.\n- The red planter is at x = 0.42, and the building is at x = 0.00.\n- The red planter is to the right of the",
+      "parsed_answer": "- The red planter is to the right of the",
+      "is_correct": false
+    },
+    {
+      "image_number": 70,
+      "gqa_image_id": "2377395",
+      "template": "between_attr",
+      "question": "What is between the counter and the blue toothbrush?",
+      "ground_truth": "coffee mug",
+      "raw_output": "Step 1: Identify the objects and attributes.\n- The \"counter\" is a gray, granite surface located at the bottom of the scene.\n- The \"blue toothbrush\" is one of the toothbrushes, and it has the attribute \"blue\".\n- The \"toothbrush\" objects are all located on the counter or in the coffee mug.\n\nStep 2: Trace the relationships.\n- The \"toothbrush\" is inside the \"coffee mug\" (relationship: \"toothbrush\" inside \"coffee mug\").\n- The \"coffee mug\" is to the left of the \"toothbrush\" (relationship: \"",
+      "parsed_answer": "- The \"coffee mug\" is to the left of the \"toothbrush\" (relationship: \"",
+      "is_correct": true
+    },
+    {
+      "image_number": 71,
+      "gqa_image_id": "2349640",
+      "template": "attr_relation",
+      "question": "What is to the left of the white net?",
+      "ground_truth": "pole",
+      "raw_output": "Step 1: Identify the relevant object in the question.\n- The question asks: \"What is to the left of the white net?\"\n- The white net is identified in the scene graph as an object with attributes: [white], bbox: [0.28, 0.62, 0.71, 0.23].\n\nStep 2: Find the relationship involving the white net.\n- The relationship \"net\" to the right of \"pole\" is explicitly stated in the relationships.\n- This means the pole is to the left of the net.\n\nStep 3: Check if any other objects are",
+      "parsed_answer": "Step 3: Check if any other objects are",
+      "is_correct": false
+    },
+    {
+      "image_number": 72,
+      "gqa_image_id": "2394711",
+      "template": "attr_relation",
+      "question": "What is holding the person?",
+      "ground_truth": "bowl",
+      "raw_output": "Step 1: Identify the objects and relationships relevant to the question.\nThe question asks: \"What is holding the person?\"\n\nFrom the scene graph, we know:\n- The \"person\" is holding the \"bowl\" (relationship: \"person\" holding \"bowl\").\n\nStep 2: Verify the relationship.\nThe relationship \"person\" holding \"bowl\" is explicitly stated in the scene graph.\n\nStep 3: Determine the answer.\nThe object that is holding the person is not directly mentioned, but the question asks what is holding the person. The relationship \"person\" holding \"bowl\" indicates that the bowl is being",
+      "parsed_answer": "The object that is holding the person is not directly mentioned, but the question asks what is holding the person. The relationship \"person\" holding \"bowl\" indicates that the bowl is being",
+      "is_correct": true
+    },
+    {
+      "image_number": 73,
+      "gqa_image_id": "2362073",
+      "template": "two_hop",
+      "question": "What is to the right of the traffic sign that is to the right of the cars?",
+      "ground_truth": "sign",
+      "raw_output": "Step 1: Identify the objects and relationships in the scene graph.\n- There are two \"traffic sign\" objects: one yellow (at [0.32, 0.23, 0.03, 0.04]) and one green (at [0.54, 0.18, 0.13, 0.11]).\n- There is a \"car\" object (gray) at [0.05, 0.26, 0.12, 0.14].\n- There is a \"road\" object at [0",
+      "parsed_answer": "- There is a \"road\" object at [0",
+      "is_correct": false
+    },
+    {
+      "image_number": 74,
+      "gqa_image_id": "498151",
+      "template": "attr_relation",
+      "question": "What is to the right of the black end table?",
+      "ground_truth": "couch",
+      "raw_output": "Step 1: Identify the relevant objects in the scene graph.\n- The black end table is mentioned in the scene graph with attributes: [black], bbox: [0.63, 0.63, 0.07, 0.15].\n\nStep 2: Analyze the relationships provided.\n- The relationship \"end table\" to the left of \"couch\" is stated: \"end table\" to the left of \"couch\".\n- The relationship \"couch\" to the right of \"end table\" is also stated: \"couch\" to the right of \"end table\".\n\nStep",
+      "parsed_answer": "Step",
+      "is_correct": false
+    },
+    {
+      "image_number": 75,
+      "gqa_image_id": "2330289",
+      "template": "attr_relation",
+      "question": "What is to the left of the brick building?",
+      "ground_truth": "train",
+      "raw_output": "Step 1: Identify the relevant objects and attributes.\n- The brick building is mentioned with the attribute \"brick\" and has a bbox at [0.80, 0.31, 0.19, 0.62].\n- The question asks: \"What is to the left of the brick building?\"\n\nStep 2: Find the relationships involving the brick building.\n- The relationship \"building\" to the right of \"train\" is mentioned.\n- The relationship \"building\" near \"train\" is also mentioned.\n- The relationship \"train\" to the left of \"building\" is mentioned.\n- The",
+      "parsed_answer": "- The",
+      "is_correct": false
+    },
+    {
+      "image_number": 76,
+      "gqa_image_id": "2330220",
+      "template": "attr_relation",
+      "question": "What is to the right of the black coat?",
+      "ground_truth": "man",
+      "raw_output": "Step 1: Identify the object in question.\n- The question asks: \"What is to the right of the black coat?\"\n- The object \"coat\" has attributes: [black], and its bbox is [0.00, 0.67, 0.50, 0.32].\n\nStep 2: Find the relationship(s) involving the coat.\n- The scene graph states: \"coat\" to the left of \"man\".\n- This means the coat is positioned to the left of the man.\n\nStep 3: Determine what is to the right of the coat.\n- The relationship \"coat",
+      "parsed_answer": "- The relationship \"coat",
+      "is_correct": false
+    },
+    {
+      "image_number": 77,
+      "gqa_image_id": "2330212",
+      "template": "attr_relation",
+      "question": "What is to the left of the white flowers?",
+      "ground_truth": "plant",
+      "raw_output": "Step 1: Identify the white flowers.\n- There are two white flowers in the scene graph: one at [0.53, 0.77, 0.03, 0.02] and another at [0.93, 0.22, 0.03, 0.03]. The first one is in the lower right, and the second is in the upper left.\n\nStep 2: Find the object to the left of the white flowers.\n- The question asks for what is to the left of the white flowers.\n- The first white flower is at",
+      "parsed_answer": "- The first white flower is at",
+      "is_correct": false
+    },
+    {
+      "image_number": 78,
+      "gqa_image_id": "2327238",
+      "template": "attr_relation",
+      "question": "What is to the left of the bright leaves?",
+      "ground_truth": "bush",
+      "raw_output": "Step 1: Identify the relevant object in the question.\n- The question asks: \"What is to the left of the bright leaves?\"\n- The object \"bright leaves\" is identified as the \"leaves\" object with the attribute [bright, green], and its bbox is [0.67, 0.73, 0.10, 0.11].\n\nStep 2: Determine the spatial relationship between the \"bright leaves\" and the object to their left.\n- The relationship \"leaves\" to the right of \"bush\" is given.\n- The relationship \"bush\" to the",
+      "parsed_answer": "- The relationship \"bush\" to the",
+      "is_correct": true
+    },
+    {
+      "image_number": 79,
+      "gqa_image_id": "2379618",
+      "template": "between_attr",
+      "question": "What is between the gray wood chair and the frame?",
+      "ground_truth": "rug",
+      "raw_output": "Step 1: Identify the objects in question.\n- The gray wood chair is identified as an object with attributes [gray, wood].\n- The frame is another object with no attributes.\n\nStep 2: Analyze the relationships.\n- The question asks: \"What is between the gray wood chair and the frame?\"\n- We are looking for an object that lies between the chair and the frame in space.\n\nStep 3: Check the relationships.\n- \"frame\" to the left of \"painting\" \u2192 frame is left of painting.\n- \"painting\" to the right of \"frame\" \u2192 this confirms the frame is left of",
+      "parsed_answer": "- \"painting\" to the right of \"frame\" \u2192 this confirms the frame is left of",
+      "is_correct": false
+    },
+    {
+      "image_number": 80,
+      "gqa_image_id": "2342608",
+      "template": "between_attr",
+      "question": "What is between the face and the person?",
+      "ground_truth": "hand",
+      "raw_output": "Step 1: Identify the objects involved in the question.\n- The question asks about what is between the \"face\" and the \"person\".\n\nStep 2: Analyze the relationships provided.\n- The relationship \"face\" to the left of \"sign\" indicates that the face is positioned to the left of the sign.\n- The relationship \"person\" to the left of \"sign\" indicates that the person is positioned to the left of the sign.\n- The relationship \"sign\" to the right of \"face\" and \"sign\" to the right of \"person\" confirms that the sign is to the right of both the face and",
+      "parsed_answer": "- The relationship \"sign\" to the right of \"face\" and \"sign\" to the right of \"person\" confirms that the sign is to the right of both the face and",
+      "is_correct": false
+    },
+    {
+      "image_number": 81,
+      "gqa_image_id": "2326836",
+      "template": "two_hop",
+      "question": "What is to the left of the man that is to the left of the gown?",
+      "ground_truth": "hair",
+      "raw_output": "Step 1: Identify the objects and relationships in the question.\nThe question asks: \"What is to the left of the man that is to the left of the gown?\"\n\nWe need to find the object that is to the left of the man, and then the object that is to the left of that man.\n\nStep 2: Find the man's position.\nFrom the scene graph:\n- The man is at [0.12, 0.26, 0.13, 0.43].\n\nStep 3: Find the man that is to the left of the gown.\nFrom the relationships:\n-",
+      "parsed_answer": "-",
+      "is_correct": false
+    },
+    {
+      "image_number": 82,
+      "gqa_image_id": "2398942",
+      "template": "between_attr",
+      "question": "What is between the floating bus and the cables?",
+      "ground_truth": "door",
+      "raw_output": "Step 1: Identify the objects in question.\n- The floating bus is identified as the \"bus\" object with attributes: [water, yellow, large, floating].\n- The cables are identified as the \"cables\" object.\n\nStep 2: Determine the spatial relationship between the bus and the cables.\n- The relationship \"cables\" to the left of \"building\" and \"building\" to the right of \"cables\" indicates that the cables are to the left of the building.\n- The relationship \"bus\" to the left of \"cables\" is not directly stated, but we can infer from the scene graph that",
+      "parsed_answer": "- The relationship \"bus\" to the left of \"cables\" is not directly stated, but we can infer from the scene graph that",
+      "is_correct": false
+    },
+    {
+      "image_number": 83,
+      "gqa_image_id": "2316501",
+      "template": "attr_relation",
+      "question": "What is to the right of the horse?",
+      "ground_truth": "trash",
+      "raw_output": "Step 1: Identify the object in question.\nThe question asks: \"What is to the right of the horse?\"\n\nFrom the scene graph, the horse is listed with its bounding box and attributes. The horse is also described as being to the right of several other objects, including fur, leg, foot, and hair.\n\nStep 2: Find the relationship(s) involving the horse.\nLooking at the relationships:\n- \"horse\" to the right of \"fur\"\n- \"horse\" to the right of \"leg\"\n- \"horse\" to the right of \"foot\"\n- \"horse\" to the right of \"hair\"\n-",
+      "parsed_answer": "-",
+      "is_correct": false
+    },
+    {
+      "image_number": 84,
+      "gqa_image_id": "3773",
+      "template": "attr_relation",
+      "question": "What is to the right of the white box?",
+      "ground_truth": "roof",
+      "raw_output": "Step 1: Identify the white box.\n- The white box is located at [0.43, 0.74, 0.03, 0.02] in the scene graph.\n- Its attributes are [white], and it is a box.\n\nStep 2: Find what is to the right of the white box.\n- The question asks for the object to the right of the white box.\n- The white box is at x = 0.43.\n- We need to find the object(s) that are spatially to the right of this box.\n- Looking at the relationships,",
+      "parsed_answer": "- Looking at the relationships,",
+      "is_correct": false
+    },
+    {
+      "image_number": 85,
+      "gqa_image_id": "2357317",
+      "template": "attr_relation",
+      "question": "What is to the right of the green shirts?",
+      "ground_truth": "cross",
+      "raw_output": "Step 1: Identify the green shirts.\n- There are two shirts with the attribute \"green\": one at [0.83, 0.67, 0.16, 0.09] and another at [0.49, 0.48, 0.13, 0.13]. The first one is the green shirt.\n\nStep 2: Find the object to the right of the green shirts.\n- The green shirt is at [0.83, 0.67, 0.16, 0.09].\n- The",
+      "parsed_answer": "- The",
+      "is_correct": false
+    },
+    {
+      "image_number": 86,
+      "gqa_image_id": "2345728",
+      "template": "between_attr",
+      "question": "What is between the car and the black number?",
+      "ground_truth": "window",
+      "raw_output": "Step 1: Identify the objects and attributes mentioned in the question.\n- The question asks about the object between the \"car\" and the \"black number\".\n- The \"car\" is present in the scene graph with no attributes and a bbox [0.05, 0.10, 0.83, 0.75].\n- The \"black number\" is present with attributes [black] and a bbox [0.81, 0.45, 0.03, 0.03].\n\nStep 2: Trace the spatial relationships to determine the relative positions.\n-",
+      "parsed_answer": "-",
+      "is_correct": false
+    },
+    {
+      "image_number": 87,
+      "gqa_image_id": "2395922",
+      "template": "between_attr",
+      "question": "What is between the brown table and the girl?",
+      "ground_truth": "food",
+      "raw_output": "Step 1: Identify the objects and their positions.\n- The brown table is at [0.00, 0.58, 1.00, 0.17], so its center is at (0.5, 0.58).\n- The girl is at [0.00, 0.07, 0.94, 0.61], so her center is at (0.47, 0.34).\n\nStep 2: Determine the spatial relationship between the table and the girl.\n- The girl is located at x = 0",
+      "parsed_answer": "- The girl is located at x = 0",
+      "is_correct": false
+    },
+    {
+      "image_number": 88,
+      "gqa_image_id": "1592034",
+      "template": "attr_relation",
+      "question": "What is to the right of the orange plate?",
+      "ground_truth": "knife",
+      "raw_output": "Step 1: Identify the orange plate.\n- The orange plate is the plate with the attribute \"orange\", and its bbox is [0.46, 0.70, 0.17, 0.05].\n\nStep 2: Determine what is to the right of the orange plate.\n- The question asks for the object to the right of the orange plate.\n- Looking at the relationships, we need to find any object that is spatially to the right of the orange plate.\n- The relationships involving the orange plate:\n  - \"plate\" to the left of \"knife\" (but this is",
+      "parsed_answer": "- \"plate\" to the left of \"knife\" (but this is",
+      "is_correct": true
+    },
+    {
+      "image_number": 89,
+      "gqa_image_id": "2367014",
+      "template": "attr_relation",
+      "question": "What is to the right of the eye?",
+      "ground_truth": "eyes",
+      "raw_output": "Step 1: Identify the object in question.\nThe question asks: \"What is to the right of the eye?\"\n\nFrom the scene graph, the object \"eye\" has a bbox: [0.33, 0.35, 0.06, 0.06].\n\nStep 2: Trace the relationship.\nThe relationship \"eye\" to the left of \"eyes\" means that the eye is positioned to the left of the eyes.\n\nSo, the eye is left of the eyes, and the eyes are to the right of the eye.\n\nStep 3: Determine what is to the right of the",
+      "parsed_answer": "Step 3: Determine what is to the right of the",
+      "is_correct": false
+    },
+    {
+      "image_number": 90,
+      "gqa_image_id": "2412764",
+      "template": "between_attr",
+      "question": "What is between the arm and the cardboard boxes?",
+      "ground_truth": "man",
+      "raw_output": "Step 1: Identify the objects in question.\n- The question asks about the object between the \"arm\" and the \"cardboard boxes\".\n- The \"arm\" is an object with bbox [0.75, 0.34, 0.10, 0.39].\n- The \"cardboard boxes\" are the \"boxes\" with attributes [cardboard], bbox [0.34, 0.43, 0.10, 0.10].\n\nStep 2: Determine the spatial relationship between the arm and the cardboard boxes.\n- The \"arm\" is",
+      "parsed_answer": "- The \"arm\" is",
+      "is_correct": false
+    },
+    {
+      "image_number": 91,
+      "gqa_image_id": "2387708",
+      "template": "between_attr",
+      "question": "What is between the mountain and the wood old ship?",
+      "ground_truth": "cabin",
+      "raw_output": "Step 1: Identify the objects and attributes in the question.\n- The question asks about the object between the \"mountain\" and the \"wood old ship\".\n- The \"wood old ship\" is the ship with the attribute \"wood, old\", which is located at [0.08, 0.04, 0.81, 0.91].\n\nStep 2: Determine the spatial relationship between the mountain and the ship.\n- From the scene graph, the relationship \"ship\" to the right of \"mountain\" is given: \"ship\" is to the right of \"mountain\".",
+      "parsed_answer": "- From the scene graph, the relationship \"ship\" to the right of \"mountain\" is given: \"ship\" is to the right of \"mountain\".",
+      "is_correct": false
+    },
+    {
+      "image_number": 92,
+      "gqa_image_id": "2380664",
+      "template": "attr_relation",
+      "question": "What is to the right of the wood fence?",
+      "ground_truth": "bushes",
+      "raw_output": "Step 1: Identify the relevant object in the question.\n- The question asks: \"What is to the right of the wood fence?\"\n- The object \"fence\" has the attribute \"wood\" and is located at [0.59, 0.61, 0.17, 0.39].\n\nStep 2: Determine the spatial relationship.\n- The relationship \"fence\" to the right of \"sheep\" is mentioned in the scene graph.\n- The relationship \"fence\" beside \"sheep\" is also mentioned.\n- The relationship \"fence\" to the left of \"",
+      "parsed_answer": "- The relationship \"fence\" to the left of \"",
+      "is_correct": false
+    },
+    {
+      "image_number": 93,
+      "gqa_image_id": "2356845",
+      "template": "two_hop",
+      "question": "What is to the left of the meat that is with the sandwich?",
+      "ground_truth": "hand",
+      "raw_output": "Step 1: Identify the relevant objects in the question.\n- The question asks about the object to the left of the meat that is with the sandwich.\n- The meat is on the sandwich, and the sandwich is with the meat.\n- So, we are looking for the object to the left of the meat, given that the meat is part of the sandwich.\n\nStep 2: Trace the spatial relationships.\n- \"meat\" is on \"sandwich\" \u2192 the meat is inside the sandwich.\n- \"meat\" is with \"sandwich\" \u2192 the meat is part of the sandwich.\n- The question is asking for what",
+      "parsed_answer": "- The question is asking for what",
+      "is_correct": false
+    },
+    {
+      "image_number": 94,
+      "gqa_image_id": "2355914",
+      "template": "two_hop",
+      "question": "What is to the left of the window that is to the right of the label?",
+      "ground_truth": "nose",
+      "raw_output": "Let's break down the question step by step.\n\n### Step 1: Identify the relevant objects\nThe question asks:  \n**\"What is to the left of the window that is to the right of the label?\"**\n\nWe need to:\n1. Find the **label** object.\n2. Find the **window that is to the right of the label**.\n3. Then, find what is to the **left** of that window.\n\n### Step 2: Locate the label\nFrom the scene graph:\n- The object labeled \"label\" has bbox: [0.25, 0.37, 0",
+      "parsed_answer": "- The object labeled \"label\" has bbox: [0.25, 0.37, 0",
+      "is_correct": false
+    },
+    {
+      "image_number": 95,
+      "gqa_image_id": "2411384",
+      "template": "between_attr",
+      "question": "What is between the head and the brown table?",
+      "ground_truth": "teddy bear",
+      "raw_output": "Step 1: Identify the objects and their attributes.\n- \"head\" is associated with the teddy bear.\n- \"brown table\" is a table with the attribute \"brown\".\n- The \"teddy bear\" has a \"head\" and is located on the \"table\".\n\nStep 2: Trace the spatial relationships.\n- \"head\" of \"teddy bear\" \u2192 the head is part of the teddy bear.\n- \"teddy bear\" to the left of \"table\" \u2192 the teddy bear is on the left side of the table.\n- \"table\" to the right of \"shirt\" \u2192 the shirt",
+      "parsed_answer": "- \"table\" to the right of \"shirt\" \u2192 the shirt",
+      "is_correct": false
+    },
+    {
+      "image_number": 96,
+      "gqa_image_id": "2358460",
+      "template": "attr_relation",
+      "question": "What is to the right of the green branches?",
+      "ground_truth": "bricks",
+      "raw_output": "Step 1: Identify the relevant objects in the scene graph.\n- The question asks about the object to the right of \"green branches\".\n- From the scene graph, we have:\n  - \"branches\" with attributes [green, leafy] and bbox [0.00, 0.00, 0.43, 0.27]\n  - \"bricks\" with attributes [light, brown] and bbox [0.44, 0.00, 0.22, 0.43]\n  - \"car\" with attributes [small, gray] and",
+      "parsed_answer": "- \"car\" with attributes [small, gray] and",
+      "is_correct": false
+    },
+    {
+      "image_number": 97,
+      "gqa_image_id": "2417811",
+      "template": "two_hop",
+      "question": "What is to the left of the man that is to the left of the pants?",
+      "ground_truth": "person",
+      "raw_output": "Let's break down the question step by step:\n\nWe are asked: **What is to the left of the man that is to the left of the pants?**\n\nThis is a nested spatial relationship:\n1. First, identify the man.\n2. Then, find the person who is to the left of the man.\n3. Then, find the object that is to the left of that person.\n\nLet\u2019s look at the scene graph:\n\n- The **man** is at [0.19, 0.71, 0.08, 0.16]\n- The **pants** are at [0",
+      "parsed_answer": "- The **pants** are at [0",
+      "is_correct": false
+    },
+    {
+      "image_number": 98,
+      "gqa_image_id": "2323921",
+      "template": "two_hop",
+      "question": "What is to the right of the stone that is to the right of the boy?",
+      "ground_truth": "sandal",
+      "raw_output": "Let's break down the question step by step:\n\n**Question:** What is to the right of the stone that is to the right of the boy?\n\nWe need to:\n1. Find the **boy**.\n2. Find the **stone that is to the right of the boy**.\n3. Then, find what is to the **right of that stone**.\n\n---\n\n**Step 1: Identify the boy**\n\nFrom the scene graph:\n- There are multiple \"boy\" objects, but we need to find the one that is relevant.\n- The first \"boy\" is at [0.19, 0.29",
+      "parsed_answer": "- The first \"boy\" is at [0.19, 0.29",
+      "is_correct": false
+    },
+    {
+      "image_number": 99,
+      "gqa_image_id": "2338965",
+      "template": "between_attr",
+      "question": "What is between the eating zebra and the head?",
+      "ground_truth": "grass",
+      "raw_output": "Step 1: Identify the relevant objects in the question.\n- The \"eating zebra\" is a zebra with the attribute [eating] and is located at [0.78, 0.29, 0.18, 0.47].\n- The \"head\" is a head object with bbox [0.85, 0.52, 0.14, 0.23].\n\nStep 2: Determine the spatial relationship between the eating zebra and the head.\n- The eating zebra is at x = 0.78.\n- The head is",
+      "parsed_answer": "- The head is",
+      "is_correct": false
+    },
+    {
+      "image_number": 100,
+      "gqa_image_id": "2373491",
+      "template": "between_attr",
+      "question": "What is between the guy and the shirt?",
+      "ground_truth": "jeans",
+      "raw_output": "Step 1: Identify the objects involved in the question.\n- The question asks: \"What is between the guy and the shirt?\"\n- The relevant objects are: \"guy\" and \"shirt\".\n\nStep 2: Analyze the relationships to determine the spatial arrangement.\n- From the scene graph:\n  - \"guy\" wearing \"shirt\" \u2192 the guy is wearing the shirt.\n  - \"guy\" on \"skateboard\" \u2192 the guy is on the skateboard.\n  - \"guy\" wearing \"jeans\" \u2192 the guy is wearing jeans.\n  - \"guy\" to the right of \"",
+      "parsed_answer": "- \"guy\" to the right of \"",
+      "is_correct": false
+    }
+  ]
+}

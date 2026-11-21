@@ -1,0 +1,1029 @@
+{
+  "metadata": {
+    "strategy": "zero_shot_direct",
+    "total": 100,
+    "correct": 60,
+    "exact": 60,
+    "accuracy": 0.6,
+    "time_seconds": 83.2,
+    "template_breakdown": {
+      "two_hop": {
+        "total": 33,
+        "correct": 23,
+        "accuracy": 0.697
+      },
+      "attr_relation": {
+        "total": 34,
+        "correct": 32,
+        "accuracy": 0.9412
+      },
+      "between_attr": {
+        "total": 33,
+        "correct": 5,
+        "accuracy": 0.1515
+      }
+    }
+  },
+  "results": [
+    {
+      "image_number": 1,
+      "gqa_image_id": "2395226",
+      "template": "two_hop",
+      "question": "What is on the plate that is to the right of the carrots?",
+      "ground_truth": "fork",
+      "raw_output": "plate",
+      "parsed_answer": "plate",
+      "is_correct": false
+    },
+    {
+      "image_number": 2,
+      "gqa_image_id": "2417523",
+      "template": "attr_relation",
+      "question": "What is to the left of the cockpit?",
+      "ground_truth": "propeller",
+      "raw_output": "propeller",
+      "parsed_answer": "propeller",
+      "is_correct": true
+    },
+    {
+      "image_number": 3,
+      "gqa_image_id": "2414767",
+      "template": "attr_relation",
+      "question": "What is to the right of the cut grass?",
+      "ground_truth": "pole",
+      "raw_output": "pole",
+      "parsed_answer": "pole",
+      "is_correct": true
+    },
+    {
+      "image_number": 4,
+      "gqa_image_id": "2412093",
+      "template": "between_attr",
+      "question": "What is between the black clothes and the red sneakers?",
+      "ground_truth": "cap",
+      "raw_output": "skateboard",
+      "parsed_answer": "skateboard",
+      "is_correct": false
+    },
+    {
+      "image_number": 5,
+      "gqa_image_id": "2364991",
+      "template": "two_hop",
+      "question": "What is on the tree that is to the left of the bush?",
+      "ground_truth": "trunk",
+      "raw_output": "trunk",
+      "parsed_answer": "trunk",
+      "is_correct": true
+    },
+    {
+      "image_number": 6,
+      "gqa_image_id": "2376954",
+      "template": "two_hop",
+      "question": "What is on the shelf that is to the right of the chair?",
+      "ground_truth": "container",
+      "raw_output": "shelf",
+      "parsed_answer": "shelf",
+      "is_correct": false
+    },
+    {
+      "image_number": 7,
+      "gqa_image_id": "2375631",
+      "template": "between_attr",
+      "question": "What is between the blue comb and the lid?",
+      "ground_truth": "toilet",
+      "raw_output": "counter",
+      "parsed_answer": "counter",
+      "is_correct": false
+    },
+    {
+      "image_number": 8,
+      "gqa_image_id": "264",
+      "template": "between_attr",
+      "question": "What is between the hand and the large sign?",
+      "ground_truth": "window",
+      "raw_output": "window",
+      "parsed_answer": "window",
+      "is_correct": true
+    },
+    {
+      "image_number": 9,
+      "gqa_image_id": "2335834",
+      "template": "between_attr",
+      "question": "What is between the frisbee and the white shirt?",
+      "ground_truth": "man",
+      "raw_output": "hand",
+      "parsed_answer": "hand",
+      "is_correct": false
+    },
+    {
+      "image_number": 10,
+      "gqa_image_id": "2411163",
+      "template": "two_hop",
+      "question": "What is to the right of the skin that is to the right of the earphones?",
+      "ground_truth": "trees",
+      "raw_output": "trees",
+      "parsed_answer": "trees",
+      "is_correct": true
+    },
+    {
+      "image_number": 11,
+      "gqa_image_id": "2371002",
+      "template": "between_attr",
+      "question": "What is between the doorway and the black seat?",
+      "ground_truth": "room",
+      "raw_output": "wall",
+      "parsed_answer": "wall",
+      "is_correct": false
+    },
+    {
+      "image_number": 12,
+      "gqa_image_id": "2344244",
+      "template": "two_hop",
+      "question": "What is to the right of the hand that is to the left of the jeans?",
+      "ground_truth": "food",
+      "raw_output": "food",
+      "parsed_answer": "food",
+      "is_correct": true
+    },
+    {
+      "image_number": 13,
+      "gqa_image_id": "2415025",
+      "template": "two_hop",
+      "question": "What is to the left of the cockpit that is to the left of the fence?",
+      "ground_truth": "wing",
+      "raw_output": "window",
+      "parsed_answer": "window",
+      "is_correct": false
+    },
+    {
+      "image_number": 14,
+      "gqa_image_id": "2388854",
+      "template": "between_attr",
+      "question": "What is between the hanging cord and the goggles?",
+      "ground_truth": "face",
+      "raw_output": "man",
+      "parsed_answer": "man",
+      "is_correct": false
+    },
+    {
+      "image_number": 15,
+      "gqa_image_id": "2389368",
+      "template": "between_attr",
+      "question": "What is between the black shirt and the wrist?",
+      "ground_truth": "man",
+      "raw_output": "ball",
+      "parsed_answer": "ball",
+      "is_correct": false
+    },
+    {
+      "image_number": 16,
+      "gqa_image_id": "2360483",
+      "template": "two_hop",
+      "question": "What is on the pole that is to the left of the building?",
+      "ground_truth": "sign",
+      "raw_output": "air conditioner",
+      "parsed_answer": "air conditioner",
+      "is_correct": false
+    },
+    {
+      "image_number": 17,
+      "gqa_image_id": "2407506",
+      "template": "two_hop",
+      "question": "What is to the right of the phone that is with the boy?",
+      "ground_truth": "bag",
+      "raw_output": "bag",
+      "parsed_answer": "bag",
+      "is_correct": true
+    },
+    {
+      "image_number": 18,
+      "gqa_image_id": "2398218",
+      "template": "two_hop",
+      "question": "What is to the left of the post that is to the left of the porch?",
+      "ground_truth": "stop sign",
+      "raw_output": "stop sign",
+      "parsed_answer": "stop sign",
+      "is_correct": true
+    },
+    {
+      "image_number": 19,
+      "gqa_image_id": "2389557",
+      "template": "two_hop",
+      "question": "What is on the bench that is to the right of the grass?",
+      "ground_truth": "girl",
+      "raw_output": "girl",
+      "parsed_answer": "girl",
+      "is_correct": true
+    },
+    {
+      "image_number": 20,
+      "gqa_image_id": "4114",
+      "template": "between_attr",
+      "question": "What is between the chair and the tall plant?",
+      "ground_truth": "window",
+      "raw_output": "window",
+      "parsed_answer": "window",
+      "is_correct": true
+    },
+    {
+      "image_number": 21,
+      "gqa_image_id": "2408882",
+      "template": "between_attr",
+      "question": "What is between the green grass and the tree?",
+      "ground_truth": "ground",
+      "raw_output": "food",
+      "parsed_answer": "food",
+      "is_correct": false
+    },
+    {
+      "image_number": 22,
+      "gqa_image_id": "2326139",
+      "template": "two_hop",
+      "question": "What is to the left of the lamp that is to the left of the bedspread?",
+      "ground_truth": "picture",
+      "raw_output": "picture",
+      "parsed_answer": "picture",
+      "is_correct": true
+    },
+    {
+      "image_number": 23,
+      "gqa_image_id": "2409769",
+      "template": "between_attr",
+      "question": "What is between the blue car and the green wall?",
+      "ground_truth": "pole",
+      "raw_output": "car",
+      "parsed_answer": "car",
+      "is_correct": false
+    },
+    {
+      "image_number": 24,
+      "gqa_image_id": "2341486",
+      "template": "between_attr",
+      "question": "What is between the black car and the blowing hair?",
+      "ground_truth": "house",
+      "raw_output": "man",
+      "parsed_answer": "man",
+      "is_correct": false
+    },
+    {
+      "image_number": 25,
+      "gqa_image_id": "2338754",
+      "template": "attr_relation",
+      "question": "What is to the right of the black shoes?",
+      "ground_truth": "animal",
+      "raw_output": "animal",
+      "parsed_answer": "animal",
+      "is_correct": true
+    },
+    {
+      "image_number": 26,
+      "gqa_image_id": "2415495",
+      "template": "between_attr",
+      "question": "What is between the metal faucet and the glass?",
+      "ground_truth": "drain",
+      "raw_output": "wall",
+      "parsed_answer": "wall",
+      "is_correct": false
+    },
+    {
+      "image_number": 27,
+      "gqa_image_id": "2371091",
+      "template": "two_hop",
+      "question": "What is to the left of the ear that is to the left of the leg?",
+      "ground_truth": "grass",
+      "raw_output": "grass",
+      "parsed_answer": "grass",
+      "is_correct": true
+    },
+    {
+      "image_number": 28,
+      "gqa_image_id": "2368938",
+      "template": "two_hop",
+      "question": "What is to the right of the tomato sauce that is to the right of the mozzarella?",
+      "ground_truth": "pizza crust",
+      "raw_output": "mushroom",
+      "parsed_answer": "mushroom",
+      "is_correct": false
+    },
+    {
+      "image_number": 29,
+      "gqa_image_id": "2379354",
+      "template": "two_hop",
+      "question": "What is to the left of the woman that is to the left of the sea?",
+      "ground_truth": "vest",
+      "raw_output": "vest",
+      "parsed_answer": "vest",
+      "is_correct": true
+    },
+    {
+      "image_number": 30,
+      "gqa_image_id": "2361536",
+      "template": "two_hop",
+      "question": "What is to the left of the head that is to the left of the sand?",
+      "ground_truth": "cow",
+      "raw_output": "cow",
+      "parsed_answer": "cow",
+      "is_correct": true
+    },
+    {
+      "image_number": 31,
+      "gqa_image_id": "150405",
+      "template": "two_hop",
+      "question": "What is to the left of the drawing that is to the left of the banana?",
+      "ground_truth": "man",
+      "raw_output": "man",
+      "parsed_answer": "man",
+      "is_correct": true
+    },
+    {
+      "image_number": 32,
+      "gqa_image_id": "2343740",
+      "template": "between_attr",
+      "question": "What is between the white cap and the hand?",
+      "ground_truth": "boy",
+      "raw_output": "fence",
+      "parsed_answer": "fence",
+      "is_correct": false
+    },
+    {
+      "image_number": 33,
+      "gqa_image_id": "2363277",
+      "template": "two_hop",
+      "question": "What is to the right of the head that is to the right of the fur?",
+      "ground_truth": "eye",
+      "raw_output": "zebra",
+      "parsed_answer": "zebra",
+      "is_correct": false
+    },
+    {
+      "image_number": 34,
+      "gqa_image_id": "4489",
+      "template": "two_hop",
+      "question": "What is to the left of the table that is to the left of the wall?",
+      "ground_truth": "woman",
+      "raw_output": "woman",
+      "parsed_answer": "woman",
+      "is_correct": true
+    },
+    {
+      "image_number": 35,
+      "gqa_image_id": "2336624",
+      "template": "between_attr",
+      "question": "What is between the nose and the white wing?",
+      "ground_truth": "airplane",
+      "raw_output": "tail",
+      "parsed_answer": "tail",
+      "is_correct": false
+    },
+    {
+      "image_number": 36,
+      "gqa_image_id": "2404923",
+      "template": "between_attr",
+      "question": "What is between the black nose and the brown rope?",
+      "ground_truth": "animal",
+      "raw_output": "dirt",
+      "parsed_answer": "dirt",
+      "is_correct": false
+    },
+    {
+      "image_number": 37,
+      "gqa_image_id": "2374245",
+      "template": "two_hop",
+      "question": "What is to the right of the cloud that is to the right of the locomotive?",
+      "ground_truth": "clouds",
+      "raw_output": "clouds",
+      "parsed_answer": "clouds",
+      "is_correct": true
+    },
+    {
+      "image_number": 38,
+      "gqa_image_id": "2407818",
+      "template": "two_hop",
+      "question": "What is to the left of the player that is to the left of the bat?",
+      "ground_truth": "home plate",
+      "raw_output": "shirt",
+      "parsed_answer": "shirt",
+      "is_correct": false
+    },
+    {
+      "image_number": 39,
+      "gqa_image_id": "2318099",
+      "template": "between_attr",
+      "question": "What is between the dried leaves and the tree?",
+      "ground_truth": "animal",
+      "raw_output": "leaves",
+      "parsed_answer": "leaves",
+      "is_correct": false
+    },
+    {
+      "image_number": 40,
+      "gqa_image_id": "2393953",
+      "template": "attr_relation",
+      "question": "What is to the left of the yellow daisy?",
+      "ground_truth": "sheep",
+      "raw_output": "sheep",
+      "parsed_answer": "sheep",
+      "is_correct": true
+    },
+    {
+      "image_number": 41,
+      "gqa_image_id": "2374080",
+      "template": "attr_relation",
+      "question": "What is on the busy street?",
+      "ground_truth": "skateboarder",
+      "raw_output": "skateboarder",
+      "parsed_answer": "skateboarder",
+      "is_correct": true
+    },
+    {
+      "image_number": 42,
+      "gqa_image_id": "2323139",
+      "template": "attr_relation",
+      "question": "What is to the left of the black dog?",
+      "ground_truth": "ear",
+      "raw_output": "ear",
+      "parsed_answer": "ear",
+      "is_correct": true
+    },
+    {
+      "image_number": 43,
+      "gqa_image_id": "2367286",
+      "template": "attr_relation",
+      "question": "What is to the left of the brown horse?",
+      "ground_truth": "post",
+      "raw_output": "post",
+      "parsed_answer": "post",
+      "is_correct": true
+    },
+    {
+      "image_number": 44,
+      "gqa_image_id": "2402864",
+      "template": "attr_relation",
+      "question": "What is to the left of the white sink?",
+      "ground_truth": "chair",
+      "raw_output": "chair",
+      "parsed_answer": "chair",
+      "is_correct": true
+    },
+    {
+      "image_number": 45,
+      "gqa_image_id": "2375673",
+      "template": "two_hop",
+      "question": "What is to the left of the water that is to the left of the trunk?",
+      "ground_truth": "elephant",
+      "raw_output": "elephant",
+      "parsed_answer": "elephant",
+      "is_correct": true
+    },
+    {
+      "image_number": 46,
+      "gqa_image_id": "4193",
+      "template": "between_attr",
+      "question": "What is between the arms and the white flowers?",
+      "ground_truth": "windows",
+      "raw_output": "chair",
+      "parsed_answer": "chair",
+      "is_correct": false
+    },
+    {
+      "image_number": 47,
+      "gqa_image_id": "2364331",
+      "template": "two_hop",
+      "question": "What is to the right of the person that is to the right of the bear?",
+      "ground_truth": "tiles",
+      "raw_output": "tiles",
+      "parsed_answer": "tiles",
+      "is_correct": true
+    },
+    {
+      "image_number": 48,
+      "gqa_image_id": "2320522",
+      "template": "two_hop",
+      "question": "What is to the right of the liquor that is to the left of the bottle?",
+      "ground_truth": "glass",
+      "raw_output": "glass",
+      "parsed_answer": "glass",
+      "is_correct": true
+    },
+    {
+      "image_number": 49,
+      "gqa_image_id": "272",
+      "template": "attr_relation",
+      "question": "What is to the left of the green house?",
+      "ground_truth": "boat",
+      "raw_output": "boat",
+      "parsed_answer": "boat",
+      "is_correct": true
+    },
+    {
+      "image_number": 50,
+      "gqa_image_id": "2349130",
+      "template": "between_attr",
+      "question": "What is between the black coat and the large window?",
+      "ground_truth": "jeans",
+      "raw_output": "menu",
+      "parsed_answer": "menu",
+      "is_correct": false
+    },
+    {
+      "image_number": 51,
+      "gqa_image_id": "2340367",
+      "template": "attr_relation",
+      "question": "What is to the left of the jacket?",
+      "ground_truth": "man",
+      "raw_output": "man",
+      "parsed_answer": "man",
+      "is_correct": true
+    },
+    {
+      "image_number": 52,
+      "gqa_image_id": "2415669",
+      "template": "attr_relation",
+      "question": "What is to the right of the red bus?",
+      "ground_truth": "pavement",
+      "raw_output": "pavement",
+      "parsed_answer": "pavement",
+      "is_correct": true
+    },
+    {
+      "image_number": 53,
+      "gqa_image_id": "2340866",
+      "template": "attr_relation",
+      "question": "What is to the left of the support bridge?",
+      "ground_truth": "pole",
+      "raw_output": "pole",
+      "parsed_answer": "pole",
+      "is_correct": true
+    },
+    {
+      "image_number": 54,
+      "gqa_image_id": "2348334",
+      "template": "two_hop",
+      "question": "What is to the left of the ladder that is to the left of the hair?",
+      "ground_truth": "building",
+      "raw_output": "building",
+      "parsed_answer": "building",
+      "is_correct": true
+    },
+    {
+      "image_number": 55,
+      "gqa_image_id": "2395306",
+      "template": "two_hop",
+      "question": "What is on the tower that is to the left of the palm tree?",
+      "ground_truth": "clock",
+      "raw_output": "clock",
+      "parsed_answer": "clock",
+      "is_correct": true
+    },
+    {
+      "image_number": 56,
+      "gqa_image_id": "2328931",
+      "template": "attr_relation",
+      "question": "What is to the left of the small napkin?",
+      "ground_truth": "bread",
+      "raw_output": "bread",
+      "parsed_answer": "bread",
+      "is_correct": true
+    },
+    {
+      "image_number": 57,
+      "gqa_image_id": "2367740",
+      "template": "attr_relation",
+      "question": "What is to the right of the tall giraffe?",
+      "ground_truth": "hair",
+      "raw_output": "hair",
+      "parsed_answer": "hair",
+      "is_correct": true
+    },
+    {
+      "image_number": 58,
+      "gqa_image_id": "2383543",
+      "template": "between_attr",
+      "question": "What is between the ketchup bottle and the collared shirt?",
+      "ground_truth": "ketchup",
+      "raw_output": "shirt",
+      "parsed_answer": "shirt",
+      "is_correct": false
+    },
+    {
+      "image_number": 59,
+      "gqa_image_id": "2403720",
+      "template": "two_hop",
+      "question": "What is to the left of the eye that belongs to the smiling, happy person?",
+      "ground_truth": "nose",
+      "raw_output": "nose",
+      "parsed_answer": "nose",
+      "is_correct": true
+    },
+    {
+      "image_number": 60,
+      "gqa_image_id": "2352486",
+      "template": "attr_relation",
+      "question": "What is to the right of the blue jacket?",
+      "ground_truth": "mountain",
+      "raw_output": "mountain",
+      "parsed_answer": "mountain",
+      "is_correct": true
+    },
+    {
+      "image_number": 61,
+      "gqa_image_id": "2319535",
+      "template": "attr_relation",
+      "question": "What is to the left of the brown door?",
+      "ground_truth": "wine",
+      "raw_output": "wine",
+      "parsed_answer": "wine",
+      "is_correct": true
+    },
+    {
+      "image_number": 62,
+      "gqa_image_id": "2414901",
+      "template": "between_attr",
+      "question": "What is between the white bird and the person?",
+      "ground_truth": "cage",
+      "raw_output": "cage",
+      "parsed_answer": "cage",
+      "is_correct": true
+    },
+    {
+      "image_number": 63,
+      "gqa_image_id": "2362462",
+      "template": "attr_relation",
+      "question": "What is to the left of the blue coat?",
+      "ground_truth": "water",
+      "raw_output": "water",
+      "parsed_answer": "water",
+      "is_correct": true
+    },
+    {
+      "image_number": 64,
+      "gqa_image_id": "2367869",
+      "template": "attr_relation",
+      "question": "What is to the left of the black bus stop?",
+      "ground_truth": "hat",
+      "raw_output": "hat",
+      "parsed_answer": "hat",
+      "is_correct": true
+    },
+    {
+      "image_number": 65,
+      "gqa_image_id": "2338602",
+      "template": "attr_relation",
+      "question": "What is to the right of the red nose?",
+      "ground_truth": "field",
+      "raw_output": "field",
+      "parsed_answer": "field",
+      "is_correct": true
+    },
+    {
+      "image_number": 66,
+      "gqa_image_id": "2324922",
+      "template": "between_attr",
+      "question": "What is between the tan jacket and the people?",
+      "ground_truth": "man",
+      "raw_output": "beach",
+      "parsed_answer": "beach",
+      "is_correct": false
+    },
+    {
+      "image_number": 67,
+      "gqa_image_id": "2403647",
+      "template": "attr_relation",
+      "question": "What is on the dark brown pole?",
+      "ground_truth": "sign",
+      "raw_output": "sign",
+      "parsed_answer": "sign",
+      "is_correct": true
+    },
+    {
+      "image_number": 68,
+      "gqa_image_id": "2360586",
+      "template": "two_hop",
+      "question": "What does the jockey wear that is to the right of the hat?",
+      "ground_truth": "boots",
+      "raw_output": "helmet",
+      "parsed_answer": "helmet",
+      "is_correct": false
+    },
+    {
+      "image_number": 69,
+      "gqa_image_id": "2336",
+      "template": "between_attr",
+      "question": "What is between the red planter and the building?",
+      "ground_truth": "car",
+      "raw_output": "tree",
+      "parsed_answer": "tree",
+      "is_correct": false
+    },
+    {
+      "image_number": 70,
+      "gqa_image_id": "2377395",
+      "template": "between_attr",
+      "question": "What is between the counter and the blue toothbrush?",
+      "ground_truth": "coffee mug",
+      "raw_output": "paper",
+      "parsed_answer": "paper",
+      "is_correct": false
+    },
+    {
+      "image_number": 71,
+      "gqa_image_id": "2349640",
+      "template": "attr_relation",
+      "question": "What is to the left of the white net?",
+      "ground_truth": "pole",
+      "raw_output": "pole",
+      "parsed_answer": "pole",
+      "is_correct": true
+    },
+    {
+      "image_number": 72,
+      "gqa_image_id": "2394711",
+      "template": "attr_relation",
+      "question": "What is holding the person?",
+      "ground_truth": "bowl",
+      "raw_output": "bowl",
+      "parsed_answer": "bowl",
+      "is_correct": true
+    },
+    {
+      "image_number": 73,
+      "gqa_image_id": "2362073",
+      "template": "two_hop",
+      "question": "What is to the right of the traffic sign that is to the right of the cars?",
+      "ground_truth": "sign",
+      "raw_output": "sign",
+      "parsed_answer": "sign",
+      "is_correct": true
+    },
+    {
+      "image_number": 74,
+      "gqa_image_id": "498151",
+      "template": "attr_relation",
+      "question": "What is to the right of the black end table?",
+      "ground_truth": "couch",
+      "raw_output": "couch",
+      "parsed_answer": "couch",
+      "is_correct": true
+    },
+    {
+      "image_number": 75,
+      "gqa_image_id": "2330289",
+      "template": "attr_relation",
+      "question": "What is to the left of the brick building?",
+      "ground_truth": "train",
+      "raw_output": "train",
+      "parsed_answer": "train",
+      "is_correct": true
+    },
+    {
+      "image_number": 76,
+      "gqa_image_id": "2330220",
+      "template": "attr_relation",
+      "question": "What is to the right of the black coat?",
+      "ground_truth": "man",
+      "raw_output": "man",
+      "parsed_answer": "man",
+      "is_correct": true
+    },
+    {
+      "image_number": 77,
+      "gqa_image_id": "2330212",
+      "template": "attr_relation",
+      "question": "What is to the left of the white flowers?",
+      "ground_truth": "plant",
+      "raw_output": "plant",
+      "parsed_answer": "plant",
+      "is_correct": true
+    },
+    {
+      "image_number": 78,
+      "gqa_image_id": "2327238",
+      "template": "attr_relation",
+      "question": "What is to the left of the bright leaves?",
+      "ground_truth": "bush",
+      "raw_output": "bush",
+      "parsed_answer": "bush",
+      "is_correct": true
+    },
+    {
+      "image_number": 79,
+      "gqa_image_id": "2379618",
+      "template": "between_attr",
+      "question": "What is between the gray wood chair and the frame?",
+      "ground_truth": "rug",
+      "raw_output": "blanket",
+      "parsed_answer": "blanket",
+      "is_correct": false
+    },
+    {
+      "image_number": 80,
+      "gqa_image_id": "2342608",
+      "template": "between_attr",
+      "question": "What is between the face and the person?",
+      "ground_truth": "hand",
+      "raw_output": "sign",
+      "parsed_answer": "sign",
+      "is_correct": false
+    },
+    {
+      "image_number": 81,
+      "gqa_image_id": "2326836",
+      "template": "two_hop",
+      "question": "What is to the left of the man that is to the left of the gown?",
+      "ground_truth": "hair",
+      "raw_output": "hair",
+      "parsed_answer": "hair",
+      "is_correct": true
+    },
+    {
+      "image_number": 82,
+      "gqa_image_id": "2398942",
+      "template": "between_attr",
+      "question": "What is between the floating bus and the cables?",
+      "ground_truth": "door",
+      "raw_output": "building",
+      "parsed_answer": "building",
+      "is_correct": false
+    },
+    {
+      "image_number": 83,
+      "gqa_image_id": "2316501",
+      "template": "attr_relation",
+      "question": "What is to the right of the horse?",
+      "ground_truth": "trash",
+      "raw_output": "horse",
+      "parsed_answer": "horse",
+      "is_correct": false
+    },
+    {
+      "image_number": 84,
+      "gqa_image_id": "3773",
+      "template": "attr_relation",
+      "question": "What is to the right of the white box?",
+      "ground_truth": "roof",
+      "raw_output": "roof",
+      "parsed_answer": "roof",
+      "is_correct": true
+    },
+    {
+      "image_number": 85,
+      "gqa_image_id": "2357317",
+      "template": "attr_relation",
+      "question": "What is to the right of the green shirts?",
+      "ground_truth": "cross",
+      "raw_output": "cross",
+      "parsed_answer": "cross",
+      "is_correct": true
+    },
+    {
+      "image_number": 86,
+      "gqa_image_id": "2345728",
+      "template": "between_attr",
+      "question": "What is between the car and the black number?",
+      "ground_truth": "window",
+      "raw_output": "train car",
+      "parsed_answer": "train car",
+      "is_correct": false
+    },
+    {
+      "image_number": 87,
+      "gqa_image_id": "2395922",
+      "template": "between_attr",
+      "question": "What is between the brown table and the girl?",
+      "ground_truth": "food",
+      "raw_output": "pizza",
+      "parsed_answer": "pizza",
+      "is_correct": false
+    },
+    {
+      "image_number": 88,
+      "gqa_image_id": "1592034",
+      "template": "attr_relation",
+      "question": "What is to the right of the orange plate?",
+      "ground_truth": "knife",
+      "raw_output": "cake",
+      "parsed_answer": "cake",
+      "is_correct": false
+    },
+    {
+      "image_number": 89,
+      "gqa_image_id": "2367014",
+      "template": "attr_relation",
+      "question": "What is to the right of the eye?",
+      "ground_truth": "eyes",
+      "raw_output": "eyes",
+      "parsed_answer": "eyes",
+      "is_correct": true
+    },
+    {
+      "image_number": 90,
+      "gqa_image_id": "2412764",
+      "template": "between_attr",
+      "question": "What is between the arm and the cardboard boxes?",
+      "ground_truth": "man",
+      "raw_output": "shelf",
+      "parsed_answer": "shelf",
+      "is_correct": false
+    },
+    {
+      "image_number": 91,
+      "gqa_image_id": "2387708",
+      "template": "between_attr",
+      "question": "What is between the mountain and the wood old ship?",
+      "ground_truth": "cabin",
+      "raw_output": "cabin",
+      "parsed_answer": "cabin",
+      "is_correct": true
+    },
+    {
+      "image_number": 92,
+      "gqa_image_id": "2380664",
+      "template": "attr_relation",
+      "question": "What is to the right of the wood fence?",
+      "ground_truth": "bushes",
+      "raw_output": "bushes",
+      "parsed_answer": "bushes",
+      "is_correct": true
+    },
+    {
+      "image_number": 93,
+      "gqa_image_id": "2356845",
+      "template": "two_hop",
+      "question": "What is to the left of the meat that is with the sandwich?",
+      "ground_truth": "hand",
+      "raw_output": "hand",
+      "parsed_answer": "hand",
+      "is_correct": true
+    },
+    {
+      "image_number": 94,
+      "gqa_image_id": "2355914",
+      "template": "two_hop",
+      "question": "What is to the left of the window that is to the right of the label?",
+      "ground_truth": "nose",
+      "raw_output": "windows",
+      "parsed_answer": "windows",
+      "is_correct": false
+    },
+    {
+      "image_number": 95,
+      "gqa_image_id": "2411384",
+      "template": "between_attr",
+      "question": "What is between the head and the brown table?",
+      "ground_truth": "teddy bear",
+      "raw_output": "head",
+      "parsed_answer": "head",
+      "is_correct": false
+    },
+    {
+      "image_number": 96,
+      "gqa_image_id": "2358460",
+      "template": "attr_relation",
+      "question": "What is to the right of the green branches?",
+      "ground_truth": "bricks",
+      "raw_output": "bricks",
+      "parsed_answer": "bricks",
+      "is_correct": true
+    },
+    {
+      "image_number": 97,
+      "gqa_image_id": "2417811",
+      "template": "two_hop",
+      "question": "What is to the left of the man that is to the left of the pants?",
+      "ground_truth": "person",
+      "raw_output": "person",
+      "parsed_answer": "person",
+      "is_correct": true
+    },
+    {
+      "image_number": 98,
+      "gqa_image_id": "2323921",
+      "template": "two_hop",
+      "question": "What is to the right of the stone that is to the right of the boy?",
+      "ground_truth": "sandal",
+      "raw_output": "stone",
+      "parsed_answer": "stone",
+      "is_correct": false
+    },
+    {
+      "image_number": 99,
+      "gqa_image_id": "2338965",
+      "template": "between_attr",
+      "question": "What is between the eating zebra and the head?",
+      "ground_truth": "grass",
+      "raw_output": "log",
+      "parsed_answer": "log",
+      "is_correct": false
+    },
+    {
+      "image_number": 100,
+      "gqa_image_id": "2373491",
+      "template": "between_attr",
+      "question": "What is between the guy and the shirt?",
+      "ground_truth": "jeans",
+      "raw_output": "jeans",
+      "parsed_answer": "jeans",
+      "is_correct": true
+    }
+  ]
+}

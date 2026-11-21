@@ -1,0 +1,12 @@
+You are given a scene graph representation of an image containing objects and their relationships, followed by a question.
+
+Scene Graph:
+Objects ({num_objects}):
+{objects_lines}
+
+Relationships ({num_relations}):
+{relations_lines}
+
+Question: {question}
+
+Instructions: Based strictly on the scene graph provided above, answer the question accurately. Provide only the direct concise answer (a few words or a single term).
