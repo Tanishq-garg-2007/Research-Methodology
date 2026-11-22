@@ -1,0 +1,178 @@
+{
+  "image_number": 2,
+  "question": "What is to the left of the cockpit?",
+  "ground_truth": "propeller",
+  "previous_old_sgg_prediction": "fuselage",
+  "new_spatial_sgg_prediction": "left propeller",
+  "is_correct": true,
+  "is_exact": false,
+  "latency_sgg": 63.25,
+  "latency_qa": 0.31,
+  "generated_scene_graph": {
+    "reasoning_steps": [
+      "1. The image displays a white commercial airplane with a blue tail fin, positioned on a paved runway surrounded by grass and trees.",
+      "2. Key components identified: main body (fuselage), wings, two engines (props), cockpit, tail fin, landing gear, and markings including 'InterSky' branding.",
+      "3. Spatial layout: the airplane is on the ground, its fuselage extending from the cockpit to the tail, with both props mounted under the wings; the runway lies directly beneath it, while greenery surrounds the area."
+    ],
+    "objects": [
+      {
+        "name": "airplane",
+        "attributes": [
+          "white",
+          "twin-engine",
+          "commercial"
+        ]
+      },
+      {
+        "name": "fuselage",
+        "attributes": [
+          "cylindrical",
+          "white body",
+          "long"
+        ]
+      },
+      {
+        "name": "cockpit",
+        "attributes": [
+          "front cabin",
+          "tinted glass",
+          "upper"
+        ]
+      },
+      {
+        "name": "wings",
+        "attributes": [
+          "horizontal",
+          "extended",
+          "covered"
+        ]
+      },
+      {
+        "name": "left propeller",
+        "attributes": [
+          "spinning blades",
+          "mounted on wing",
+          "dark"
+        ]
+      },
+      {
+        "name": "right propeller",
+        "attributes": [
+          "spinning blades",
+          "mounted on wing",
+          "dark"
+        ]
+      },
+      {
+        "name": "tail fin",
+        "attributes": [
+          "vertical",
+          "blue logo",
+          "rear"
+        ]
+      },
+      {
+        "name": "landing gear",
+        "attributes": [
+          "deployed",
+          "four wheels",
+          "lower"
+        ]
+      },
+      {
+        "name": "runway",
+        "attributes": [
+          "paved",
+          "gray asphalt",
+          "surface"
+        ]
+      },
+      {
+        "name": "trees",
+        "attributes": [
+          "dense",
+          "green foliage",
+          "background"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "subject": "airplane",
+        "relation": "on top of",
+        "object": "runway"
+      },
+      {
+        "subject": "fuselage",
+        "relation": "part of",
+        "object": "airplane"
+      },
+      {
+        "subject": "cockpit",
+        "relation": "in front of",
+        "object": "fuselage"
+      },
+      {
+        "subject": "left propeller",
+        "relation": "to the left of",
+        "object": "cockpit"
+      },
+      {
+        "subject": "right propeller",
+        "relation": "to the right of",
+        "object": "cockpit"
+      },
+      {
+        "subject": "tail fin",
+        "relation": "behind",
+        "object": "cockpit"
+      },
+      {
+        "subject": "wings",
+        "relation": "attached to",
+        "object": "fuselage"
+      },
+      {
+        "subject": "left propeller",
+        "relation": "on",
+        "object": "wings"
+      },
+      {
+        "subject": "right propeller",
+        "relation": "on",
+        "object": "wings"
+      },
+      {
+        "subject": "landing gear",
+        "relation": "below",
+        "object": "fuselage"
+      },
+      {
+        "subject": "runway",
+        "relation": "below",
+        "object": "airplane"
+      },
+      {
+        "subject": "tree",
+        "relation": "above",
+        "object": "runway"
+      },
+      {
+        "subject": "tree",
+        "relation": "above",
+        "object": "airplane"
+      },
+      {
+        "subject": "tree",
+        "relation": "to the right of",
+        "object": "airplane"
+      },
+      {
+        "subject": "tree",
+        "relation": "to the left of",
+        "object": "airplane"
+      }
+    ]
+  },
+  "qa_raw_output": "left propeller"
+}

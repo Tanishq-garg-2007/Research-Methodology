@@ -1,26 +1,26 @@
 {
- "image_number": 80,
- "gqa_image_id": "2342608",
- "filepath": "data/data_2/2342608.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "person",
-  "sign"
- ],
- "query": {
-  "question": "What is between the face and the person?",
-  "answer": "hand",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "face",
-   "anchor_a_attributes": [],
-   "anchor_b": "person",
-   "anchor_b_attributes": [],
-   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+  "image_number": 80,
+  "gqa_image_id": "2342608",
+  "filepath": "data/data_2/2342608.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "person",
+    "sign"
+  ],
+  "query": {
+    "question": "What object is to the right of the face and to the right of the nose?",
+    "answer": "sign",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "face",
+      "anchor_a_attributes": [],
+      "anchor_b": "person",
+      "anchor_b_attributes": [],
+      "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

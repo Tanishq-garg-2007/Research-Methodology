@@ -1,26 +1,26 @@
 {
- "image_number": 100,
- "gqa_image_id": "2373491",
- "filepath": "data/data_2/2373491.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "tire",
-  "guy"
- ],
- "query": {
-  "question": "What is between the guy and the shirt?",
-  "answer": "jeans",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "guy",
-   "anchor_a_attributes": [],
-   "anchor_b": "shirt",
-   "anchor_b_attributes": [],
-   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+  "image_number": 100,
+  "gqa_image_id": "2373491",
+  "filepath": "data/data_2/2373491.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "tire",
+    "guy"
+  ],
+  "query": {
+    "question": "Who is on the skateboard and to the right of the green tire?",
+    "answer": "guy",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "guy",
+      "anchor_a_attributes": [],
+      "anchor_b": "shirt",
+      "anchor_b_attributes": [],
+      "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

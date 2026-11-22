@@ -1,28 +1,28 @@
 {
- "image_number": 35,
- "gqa_image_id": "2336624",
- "filepath": "data/data_0/2336624.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "nose",
-  "airplane"
- ],
- "query": {
-  "question": "What is between the nose and the white wing?",
-  "answer": "airplane",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "nose",
-   "anchor_a_attributes": [],
-   "anchor_b": "wing",
-   "anchor_b_attributes": [
-    "white"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 35,
+  "gqa_image_id": "2336624",
+  "filepath": "data/data_0/2336624.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "nose",
+    "airplane"
+  ],
+  "query": {
+    "question": "What object is part of the airplane and to the right of the white wing?",
+    "answer": "nose",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "nose",
+      "anchor_a_attributes": [],
+      "anchor_b": "wing",
+      "anchor_b_attributes": [
+        "white"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

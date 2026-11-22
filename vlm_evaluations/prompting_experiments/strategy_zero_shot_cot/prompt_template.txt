@@ -11,7 +11,7 @@ Question: {question}
 
 Instructions:
 1. Reason step-by-step:
-   - Identify the objects and attributes mentioned in the question.
-   - Trace the specified relationship(s) or spatial arrangement. If the question asks what is between two objects, check which candidate object's horizontal coordinate center lies between them.
+   - Identify the key objects, attributes, or spatial landmarks mentioned in the question.
+   - Trace the specified relationship(s) or spatial arrangement across the graph. If multiple spatial constraints are given, identify the entity that satisfies all of them.
 2. Provide your final concise answer on the last line in the exact format:
    Final Answer: <answer>

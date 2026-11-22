@@ -1,30 +1,30 @@
 {
- "image_number": 4,
- "gqa_image_id": "2412093",
- "filepath": "data/data_0/2412093.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "man",
-  "skateboard"
- ],
- "query": {
-  "question": "What is between the black clothes and the red sneakers?",
-  "answer": "cap",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "clothes",
-   "anchor_a_attributes": [
-    "black"
-   ],
-   "anchor_b": "sneakers",
-   "anchor_b_attributes": [
-    "red"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 4,
+  "gqa_image_id": "2412093",
+  "filepath": "data/data_0/2412093.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "man",
+    "skateboard"
+  ],
+  "query": {
+    "question": "What object is to the right of the black clothes and to the left of the red sneakers?",
+    "answer": "skateboard",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "clothes",
+      "anchor_a_attributes": [
+        "black"
+      ],
+      "anchor_b": "sneakers",
+      "anchor_b_attributes": [
+        "red"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

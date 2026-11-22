@@ -1,0 +1,13 @@
+{
+  "id": "tanishqgarg2007/qwen3-spatial-sg-eval",
+  "title": "qwen3 spatial sg eval",
+  "code_file": "eval_spatial_sg.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

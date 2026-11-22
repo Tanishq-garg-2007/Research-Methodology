@@ -1,28 +1,28 @@
 {
- "image_number": 82,
- "gqa_image_id": "2398942",
- "filepath": "data/data_2/2398942.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "building",
-  "people"
- ],
- "query": {
-  "question": "What is between the floating bus and the cables?",
-  "answer": "door",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "bus",
-   "anchor_a_attributes": [
-    "floating"
-   ],
-   "anchor_b": "cables",
-   "anchor_b_attributes": [],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 82,
+  "gqa_image_id": "2398942",
+  "filepath": "data/data_2/2398942.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "building",
+    "people"
+  ],
+  "query": {
+    "question": "What is inside the yellow bus and to the left of the door?",
+    "answer": "people",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "bus",
+      "anchor_a_attributes": [
+        "floating"
+      ],
+      "anchor_b": "cables",
+      "anchor_b_attributes": [],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

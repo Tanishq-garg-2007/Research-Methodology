@@ -1,28 +1,28 @@
 {
- "image_number": 9,
- "gqa_image_id": "2335834",
- "filepath": "data/data_0/2335834.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "tree",
-  "hand"
- ],
- "query": {
-  "question": "What is between the frisbee and the white shirt?",
-  "answer": "man",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "frisbee",
-   "anchor_a_attributes": [],
-   "anchor_b": "shirt",
-   "anchor_b_attributes": [
-    "white"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 9,
+  "gqa_image_id": "2335834",
+  "filepath": "data/data_0/2335834.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "tree",
+    "hand"
+  ],
+  "query": {
+    "question": "What object is to the left of the frisbee and to the left of the white shirt?",
+    "answer": "hand",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "frisbee",
+      "anchor_a_attributes": [],
+      "anchor_b": "shirt",
+      "anchor_b_attributes": [
+        "white"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

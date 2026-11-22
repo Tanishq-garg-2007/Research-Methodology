@@ -1,28 +1,28 @@
 {
- "image_number": 7,
- "gqa_image_id": "2375631",
- "filepath": "data/data_0/2375631.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "counter",
-  "toilet"
- ],
- "query": {
-  "question": "What is between the blue comb and the lid?",
-  "answer": "toilet",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "comb",
-   "anchor_a_attributes": [
-    "blue"
-   ],
-   "anchor_b": "lid",
-   "anchor_b_attributes": [],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 7,
+  "gqa_image_id": "2375631",
+  "filepath": "data/data_0/2375631.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "counter",
+    "toilet"
+  ],
+  "query": {
+    "question": "What object is to the right of the white toilet and to the right of the lid?",
+    "answer": "counter",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "comb",
+      "anchor_a_attributes": [
+        "blue"
+      ],
+      "anchor_b": "lid",
+      "anchor_b_attributes": [],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

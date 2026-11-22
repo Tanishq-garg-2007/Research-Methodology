@@ -1,28 +1,28 @@
 {
- "image_number": 15,
- "gqa_image_id": "2389368",
- "filepath": "data/data_0/2389368.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "ball",
-  "fingers"
- ],
- "query": {
-  "question": "What is between the black shirt and the wrist?",
-  "answer": "man",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "shirt",
-   "anchor_a_attributes": [
-    "black"
-   ],
-   "anchor_b": "wrist",
-   "anchor_b_attributes": [],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 15,
+  "gqa_image_id": "2389368",
+  "filepath": "data/data_0/2389368.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "ball",
+    "fingers"
+  ],
+  "query": {
+    "question": "What object is to the left of the wrist and above the yellow ball?",
+    "answer": "fingers",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "shirt",
+      "anchor_a_attributes": [
+        "black"
+      ],
+      "anchor_b": "wrist",
+      "anchor_b_attributes": [],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

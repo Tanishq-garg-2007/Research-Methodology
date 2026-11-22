@@ -1,28 +1,28 @@
 {
- "image_number": 21,
- "gqa_image_id": "2408882",
- "filepath": "data/data_0/2408882.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "giraffe",
-  "tree"
- ],
- "query": {
-  "question": "What is between the green grass and the tree?",
-  "answer": "ground",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "grass",
-   "anchor_a_attributes": [
-    "green"
-   ],
-   "anchor_b": "tree",
-   "anchor_b_attributes": [],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 21,
+  "gqa_image_id": "2408882",
+  "filepath": "data/data_0/2408882.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "giraffe",
+    "tree"
+  ],
+  "query": {
+    "question": "What object is standing on the ground and to the left of the green grass?",
+    "answer": "giraffe",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "grass",
+      "anchor_a_attributes": [
+        "green"
+      ],
+      "anchor_b": "tree",
+      "anchor_b_attributes": [],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

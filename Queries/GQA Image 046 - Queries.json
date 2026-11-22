@@ -1,28 +1,28 @@
 {
- "image_number": 46,
- "gqa_image_id": "4193",
- "filepath": "data/data_1/4193.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "chair",
-  "windows"
- ],
- "query": {
-  "question": "What is between the arms and the white flowers?",
-  "answer": "windows",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "arms",
-   "anchor_a_attributes": [],
-   "anchor_b": "flowers",
-   "anchor_b_attributes": [
-    "white"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 46,
+  "gqa_image_id": "4193",
+  "filepath": "data/data_1/4193.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "chair",
+    "windows"
+  ],
+  "query": {
+    "question": "What object is to the left of the white flowers and to the left of the chandelier?",
+    "answer": "windows",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "arms",
+      "anchor_a_attributes": [],
+      "anchor_b": "flowers",
+      "anchor_b_attributes": [
+        "white"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

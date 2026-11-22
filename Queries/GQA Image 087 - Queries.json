@@ -1,28 +1,28 @@
 {
- "image_number": 87,
- "gqa_image_id": "2395922",
- "filepath": "data/data_2/2395922.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "pizza",
-  "chairs"
- ],
- "query": {
-  "question": "What is between the brown table and the girl?",
-  "answer": "food",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "table",
-   "anchor_a_attributes": [
-    "brown"
-   ],
-   "anchor_b": "girl",
-   "anchor_b_attributes": [],
-   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+  "image_number": 87,
+  "gqa_image_id": "2395922",
+  "filepath": "data/data_2/2395922.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "pizza",
+    "chairs"
+  ],
+  "query": {
+    "question": "What object is behind the pizza and in front of the chairs?",
+    "answer": "girl",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "table",
+      "anchor_a_attributes": [
+        "brown"
+      ],
+      "anchor_b": "girl",
+      "anchor_b_attributes": [],
+      "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

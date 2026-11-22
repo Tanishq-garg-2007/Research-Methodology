@@ -1,28 +1,28 @@
 {
- "image_number": 95,
- "gqa_image_id": "2411384",
- "filepath": "data/data_2/2411384.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "teddy bear",
-  "table"
- ],
- "query": {
-  "question": "What is between the head and the brown table?",
-  "answer": "teddy bear",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "head",
-   "anchor_a_attributes": [],
-   "anchor_b": "table",
-   "anchor_b_attributes": [
-    "brown"
-   ],
-   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+  "image_number": 95,
+  "gqa_image_id": "2411384",
+  "filepath": "data/data_2/2411384.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "teddy bear",
+    "table"
+  ],
+  "query": {
+    "question": "What object is on the table and to the left of the white cup?",
+    "answer": "teddy bear",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "head",
+      "anchor_a_attributes": [],
+      "anchor_b": "table",
+      "anchor_b_attributes": [
+        "brown"
+      ],
+      "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

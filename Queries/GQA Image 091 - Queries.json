@@ -1,29 +1,29 @@
 {
- "image_number": 91,
- "gqa_image_id": "2387708",
- "filepath": "data/data_2/2387708.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "cabin",
-  "mountain"
- ],
- "query": {
-  "question": "What is between the mountain and the wood old ship?",
-  "answer": "cabin",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "mountain",
-   "anchor_a_attributes": [],
-   "anchor_b": "ship",
-   "anchor_b_attributes": [
-    "wood",
-    "old"
-   ],
-   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+  "image_number": 91,
+  "gqa_image_id": "2387708",
+  "filepath": "data/data_2/2387708.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "cabin",
+    "mountain"
+  ],
+  "query": {
+    "question": "What object is to the right of the mountain and to the left of the paint?",
+    "answer": "cabin",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "mountain",
+      "anchor_a_attributes": [],
+      "anchor_b": "ship",
+      "anchor_b_attributes": [
+        "wood",
+        "old"
+      ],
+      "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

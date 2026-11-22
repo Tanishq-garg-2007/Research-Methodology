@@ -1,28 +1,28 @@
 {
- "image_number": 70,
- "gqa_image_id": "2377395",
- "filepath": "data/data_1/2377395.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "toothbrush",
-  "counter"
- ],
- "query": {
-  "question": "What is between the counter and the blue toothbrush?",
-  "answer": "coffee mug",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "counter",
-   "anchor_a_attributes": [],
-   "anchor_b": "toothbrush",
-   "anchor_b_attributes": [
-    "blue"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 70,
+  "gqa_image_id": "2377395",
+  "filepath": "data/data_1/2377395.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "toothbrush",
+    "counter"
+  ],
+  "query": {
+    "question": "What object is inside the coffee mug and to the right of the mirror?",
+    "answer": "toothbrush",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "counter",
+      "anchor_a_attributes": [],
+      "anchor_b": "toothbrush",
+      "anchor_b_attributes": [
+        "blue"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": false
   },
-  "unambiguous": false
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

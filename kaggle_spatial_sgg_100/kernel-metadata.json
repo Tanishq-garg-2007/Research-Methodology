@@ -1,0 +1,15 @@
+{
+  "id": "tanishqgarg2007/qwen3-spatial-sgg-100",
+  "title": "qwen3 spatial sgg 100",
+  "code_file": "generate_spatial_sgg_100.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "tanishqgarg2007/gqa-100-benchmark-images"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

@@ -1,28 +1,28 @@
 {
- "image_number": 58,
- "gqa_image_id": "2383543",
- "filepath": "data/data_1/2383543.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "shirt",
-  "bottle"
- ],
- "query": {
-  "question": "What is between the ketchup bottle and the collared shirt?",
-  "answer": "ketchup",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "ketchup bottle",
-   "anchor_a_attributes": [],
-   "anchor_b": "shirt",
-   "anchor_b_attributes": [
-    "collared"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 58,
+  "gqa_image_id": "2383543",
+  "filepath": "data/data_1/2383543.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "shirt",
+    "bottle"
+  ],
+  "query": {
+    "question": "What object is to the right of the shirt and to the left of the bottle?",
+    "answer": "ketchup",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "ketchup bottle",
+      "anchor_a_attributes": [],
+      "anchor_b": "shirt",
+      "anchor_b_attributes": [
+        "collared"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

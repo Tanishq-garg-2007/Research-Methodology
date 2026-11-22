@@ -1,28 +1,28 @@
 {
- "image_number": 14,
- "gqa_image_id": "2388854",
- "filepath": "data/data_0/2388854.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "cord",
-  "man"
- ],
- "query": {
-  "question": "What is between the hanging cord and the goggles?",
-  "answer": "face",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "cord",
-   "anchor_a_attributes": [
-    "hanging"
-   ],
-   "anchor_b": "goggles",
-   "anchor_b_attributes": [],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 14,
+  "gqa_image_id": "2388854",
+  "filepath": "data/data_0/2388854.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "cord",
+    "man"
+  ],
+  "query": {
+    "question": "What object is to the right of the face and to the left of the man?",
+    "answer": "cord",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "cord",
+      "anchor_a_attributes": [
+        "hanging"
+      ],
+      "anchor_b": "goggles",
+      "anchor_b_attributes": [],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

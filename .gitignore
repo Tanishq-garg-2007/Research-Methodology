@@ -1,0 +1,25 @@
+# Environment variables & secrets
+.ENV
+*.env
+.env.*
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints
+
+# Large temporary archives
+*.zip
+*.tar.gz
+temp_check_out/
+kaggle_test_pull/
+kaggle_dataset_upload/
+
+# OS generated files
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Temporary logs
+*.log

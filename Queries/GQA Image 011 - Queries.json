@@ -1,28 +1,28 @@
 {
- "image_number": 11,
- "gqa_image_id": "2371002",
- "filepath": "data/data_0/2371002.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "wall",
-  "doorway"
- ],
- "query": {
-  "question": "What is between the doorway and the black seat?",
-  "answer": "room",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "doorway",
-   "anchor_a_attributes": [],
-   "anchor_b": "seat",
-   "anchor_b_attributes": [
-    "black"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 11,
+  "gqa_image_id": "2371002",
+  "filepath": "data/data_0/2371002.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "wall",
+    "doorway"
+  ],
+  "query": {
+    "question": "What object is to the right of the black seat and to the left of the doorway?",
+    "answer": "wall",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "doorway",
+      "anchor_a_attributes": [],
+      "anchor_b": "seat",
+      "anchor_b_attributes": [
+        "black"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

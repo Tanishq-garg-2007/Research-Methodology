@@ -1,28 +1,28 @@
 {
- "image_number": 32,
- "gqa_image_id": "2343740",
- "filepath": "data/data_0/2343740.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "boy",
-  "crane"
- ],
- "query": {
-  "question": "What is between the white cap and the hand?",
-  "answer": "boy",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "cap",
-   "anchor_a_attributes": [
-    "white"
-   ],
-   "anchor_b": "hand",
-   "anchor_b_attributes": [],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 32,
+  "gqa_image_id": "2343740",
+  "filepath": "data/data_0/2343740.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "boy",
+    "crane"
+  ],
+  "query": {
+    "question": "What object is in front of the crane and to the right of the fence?",
+    "answer": "boy",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "cap",
+      "anchor_a_attributes": [
+        "white"
+      ],
+      "anchor_b": "hand",
+      "anchor_b_attributes": [],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

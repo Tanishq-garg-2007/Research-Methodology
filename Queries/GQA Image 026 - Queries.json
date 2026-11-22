@@ -1,28 +1,28 @@
 {
- "image_number": 26,
- "gqa_image_id": "2415495",
- "filepath": "data/data_0/2415495.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "wall",
-  "door"
- ],
- "query": {
-  "question": "What is between the metal faucet and the glass?",
-  "answer": "drain",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "faucet",
-   "anchor_a_attributes": [
-    "metal"
-   ],
-   "anchor_b": "glass",
-   "anchor_b_attributes": [],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 26,
+  "gqa_image_id": "2415495",
+  "filepath": "data/data_0/2415495.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "wall",
+    "door"
+  ],
+  "query": {
+    "question": "What object is to the right of the door and to the left of the glass?",
+    "answer": "wall",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "faucet",
+      "anchor_a_attributes": [
+        "metal"
+      ],
+      "anchor_b": "glass",
+      "anchor_b_attributes": [],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": false
   },
-  "unambiguous": false
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

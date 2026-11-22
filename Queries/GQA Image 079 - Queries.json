@@ -1,29 +1,29 @@
 {
- "image_number": 79,
- "gqa_image_id": "2379618",
- "filepath": "data/data_2/2379618.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "chair",
-  "frame"
- ],
- "query": {
-  "question": "What is between the gray wood chair and the frame?",
-  "answer": "rug",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "chair",
-   "anchor_a_attributes": [
-    "gray",
-    "wood"
-   ],
-   "anchor_b": "frame",
-   "anchor_b_attributes": [],
-   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+  "image_number": 79,
+  "gqa_image_id": "2379618",
+  "filepath": "data/data_2/2379618.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "chair",
+    "frame"
+  ],
+  "query": {
+    "question": "What object is to the right of the fireplace and to the left of the white blanket?",
+    "answer": "chair",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "chair",
+      "anchor_a_attributes": [
+        "gray",
+        "wood"
+      ],
+      "anchor_b": "frame",
+      "anchor_b_attributes": [],
+      "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

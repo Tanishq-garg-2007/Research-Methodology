@@ -1,28 +1,28 @@
 {
- "image_number": 86,
- "gqa_image_id": "2345728",
- "filepath": "data/data_2/2345728.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "train car",
-  "car"
- ],
- "query": {
-  "question": "What is between the car and the black number?",
-  "answer": "window",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "car",
-   "anchor_a_attributes": [],
-   "anchor_b": "number",
-   "anchor_b_attributes": [
-    "black"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 86,
+  "gqa_image_id": "2345728",
+  "filepath": "data/data_2/2345728.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "train car",
+    "car"
+  ],
+  "query": {
+    "question": "What object is to the right of the window and to the left of the ladder?",
+    "answer": "train car",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "car",
+      "anchor_a_attributes": [],
+      "anchor_b": "number",
+      "anchor_b_attributes": [
+        "black"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

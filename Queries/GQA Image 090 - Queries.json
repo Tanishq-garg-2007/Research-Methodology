@@ -1,28 +1,28 @@
 {
- "image_number": 90,
- "gqa_image_id": "2412764",
- "filepath": "data/data_2/2412764.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "shelf",
-  "man"
- ],
- "query": {
-  "question": "What is between the arm and the cardboard boxes?",
-  "answer": "man",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "arm",
-   "anchor_a_attributes": [],
-   "anchor_b": "boxes",
-   "anchor_b_attributes": [
-    "cardboard"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 90,
+  "gqa_image_id": "2412764",
+  "filepath": "data/data_2/2412764.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "shelf",
+    "man"
+  ],
+  "query": {
+    "question": "What person is to the right of the red box and to the left of the white bottles?",
+    "answer": "man",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "arm",
+      "anchor_a_attributes": [],
+      "anchor_b": "boxes",
+      "anchor_b_attributes": [
+        "cardboard"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

@@ -1,28 +1,28 @@
 {
- "image_number": 69,
- "gqa_image_id": "2336",
- "filepath": "data/data_1/2336.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "tree",
-  "planter"
- ],
- "query": {
-  "question": "What is between the red planter and the building?",
-  "answer": "car",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "planter",
-   "anchor_a_attributes": [
-    "red"
-   ],
-   "anchor_b": "building",
-   "anchor_b_attributes": [],
-   "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+  "image_number": 69,
+  "gqa_image_id": "2336",
+  "filepath": "data/data_1/2336.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "tree",
+    "planter"
+  ],
+  "query": {
+    "question": "What object is to the right of the green tree and to the left of the other tree?",
+    "answer": "car",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "planter",
+      "anchor_a_attributes": [
+        "red"
+      ],
+      "anchor_b": "building",
+      "anchor_b_attributes": [],
+      "rule": "answer label is the only compact-object label whose bounding-box centre-x lies strictly between the two identified anchors"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }

@@ -1,28 +1,28 @@
 {
- "image_number": 20,
- "gqa_image_id": "4114",
- "filepath": "data/data_0/4114.jpg",
- "source": "Voxel51/GQA-Scene-Graph",
- "anchors": [
-  "plant",
-  "chair"
- ],
- "query": {
-  "question": "What is between the chair and the tall plant?",
-  "answer": "window",
-  "template": "between_attr",
-  "derivation": {
-   "anchor_a": "chair",
-   "anchor_a_attributes": [],
-   "anchor_b": "plant",
-   "anchor_b_attributes": [
-    "tall"
-   ],
-   "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+  "image_number": 20,
+  "gqa_image_id": "4114",
+  "filepath": "data/data_0/4114.jpg",
+  "source": "Voxel51/GQA-Scene-Graph",
+  "anchors": [
+    "plant",
+    "chair"
+  ],
+  "query": {
+    "question": "What object is to the left of the chair and to the left of the lamp?",
+    "answer": "plant",
+    "template": "spatial_conjunction",
+    "derivation": {
+      "anchor_a": "chair",
+      "anchor_a_attributes": [],
+      "anchor_b": "plant",
+      "anchor_b_attributes": [
+        "tall"
+      ],
+      "rule": "bounding-box centre-x strictly between the anchors' centre-x; answer label is the only label strictly between them among the compact objects, and single-instance in the large graph"
+    },
+    "unambiguous": true
   },
-  "unambiguous": true
- },
- "counts": {
-  "queries": 1
- }
+  "counts": {
+    "queries": 1
+  }
 }
