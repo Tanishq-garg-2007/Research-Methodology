@@ -1,0 +1,14 @@
+{
+  "evaluation_paradigm": "Direct VLM on Image (Simple Image + Query)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 7,
+  "image_filename": "GQA Image 007.jpg",
+  "gqa_image_id": "2375631",
+  "query_category": "spatial_conjunction",
+  "evaluation_verdict": "WRONG",
+  "is_correct": false,
+  "question": "What object is to the right of the white toilet and to the right of the lid?",
+  "reference_ground_truth_answer": "counter",
+  "vlm_predicted_answer": "A blue and black hairbrush.",
+  "analysis": "Direct Image VLM hallucinated a 'blue and black hairbrush'. In contrast, BOTH Direct QA and CoT QA on the Small Scene Graph correctly solved the spatial conjunction and identified 'counter'."
+}

@@ -1,0 +1,36 @@
+{
+  "case_id": "two_hop_correct",
+  "category": "two_hop",
+  "image_number": 16,
+  "image_filename": "GQA Image 016.jpg",
+  "question": "What is on the pole that is to the left of the building?",
+  "ground_truth_reference": "sign",
+  "results_across_paradigms": {
+    "1_simple_image_vlm": {
+      "method": "Direct Image + Query on VLM",
+      "prediction": "Based on the image provided, there is a pole located to the left of the building, which is part of the bus's side. This pole is the one that is attached to the side of the bus.\n\nThe object on this pole is a **black sign**. It is a rectangular sign with a dark, possibly black, surface. It is mounted on the pole and is positioned in front of the building, likely serving as a marker or a sign for the bus route or a destination.",
+      "verdict": "CORRECT",
+      "is_correct": true
+    },
+    "2_small_sg_direct_qa": {
+      "method": "Direct QA on Tight Small Scene Graph",
+      "prediction": "air conditioner",
+      "is_correct": false,
+      "latency_sec": 0.17304372787475586
+    },
+    "3_small_sg_cot_qa": {
+      "method": "CoT QA on Tight Small Scene Graph",
+      "prediction": "and: \u201c",
+      "is_correct": false,
+      "latency_sec": 48.381932497024536,
+      "tokens_used": 1024
+    },
+    "4_generated_sg_direct_qa": {
+      "method": "Direct QA on Model-Generated Scene Graph",
+      "prediction": "pole",
+      "is_correct": false,
+      "latency_sec": 0.12530732154846191
+    }
+  },
+  "analysis": "Direct Image VLM identified 'black sign'. On Small SG, Direct QA suffered from spatial confusion ('air conditioner'), while CoT hit token exhaustion (1024 tokens) analyzing bus mirror relations."
+}

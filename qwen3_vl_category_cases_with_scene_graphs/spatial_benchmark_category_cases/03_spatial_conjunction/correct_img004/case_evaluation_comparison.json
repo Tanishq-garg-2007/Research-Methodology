@@ -1,0 +1,36 @@
+{
+  "case_id": "spatial_conjunction_correct",
+  "category": "spatial_conjunction",
+  "image_number": 4,
+  "image_filename": "GQA Image 004.jpg",
+  "question": "What object is to the right of the black clothes and to the left of the red sneakers?",
+  "ground_truth_reference": "skateboard",
+  "results_across_paradigms": {
+    "1_simple_image_vlm": {
+      "method": "Direct Image + Query on VLM",
+      "prediction": "The object to the right of the black clothes and to the left of the red sneakers is a skateboard.",
+      "verdict": "CORRECT",
+      "is_correct": true
+    },
+    "2_small_sg_direct_qa": {
+      "method": "Direct QA on Tight Small Scene Graph",
+      "prediction": "man",
+      "is_correct": false,
+      "latency_sec": 0.2007005214691162
+    },
+    "3_small_sg_cot_qa": {
+      "method": "CoT QA on Tight Small Scene Graph",
+      "prediction": "\u2705 `\"man waring sneakers\"` \u2192 meaning the man is **wearing** sneakers",
+      "is_correct": false,
+      "latency_sec": 48.62173414230347,
+      "tokens_used": 1024
+    },
+    "4_generated_sg_direct_qa": {
+      "method": "Direct QA on Model-Generated Scene Graph",
+      "prediction": "skateboard",
+      "is_correct": true,
+      "latency_sec": 0.2109236717224121
+    }
+  },
+  "analysis": "Direct Image VLM correctly identified 'skateboard'. Direct QA on our Generated Scene Graph also correctly predicted 'skateboard'."
+}

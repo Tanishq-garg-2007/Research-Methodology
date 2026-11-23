@@ -1,0 +1,141 @@
+{
+  "image_number": 7,
+  "gqa_image_id": "2375631",
+  "description": "Ground-Truth Tight Small Scene Graph associated with this query",
+  "anchors": [
+    "counter",
+    "toilet"
+  ],
+  "nodes": [
+    "bottle",
+    "brush",
+    "comb",
+    "counter",
+    "lid",
+    "toilet"
+  ],
+  "objects_count": 6,
+  "relations_count": 10,
+  "objects": [
+    {
+      "label": "comb",
+      "attributes": [
+        "blue"
+      ],
+      "bounding_box": [
+        0.5093333333333333,
+        0.78,
+        0.072,
+        0.052
+      ]
+    },
+    {
+      "label": "counter",
+      "attributes": [],
+      "bounding_box": [
+        0.464,
+        0.758,
+        0.536,
+        0.17
+      ]
+    },
+    {
+      "label": "bottle",
+      "attributes": [
+        "teal"
+      ],
+      "bounding_box": [
+        0.6533333333333333,
+        0.67,
+        0.050666666666666665,
+        0.136
+      ]
+    },
+    {
+      "label": "toilet",
+      "attributes": [
+        "white"
+      ],
+      "bounding_box": [
+        0.152,
+        0.83,
+        0.36533333333333334,
+        0.178
+      ]
+    },
+    {
+      "label": "lid",
+      "attributes": [],
+      "bounding_box": [
+        0.15733333333333333,
+        0.83,
+        0.31733333333333336,
+        0.122
+      ]
+    },
+    {
+      "label": "brush",
+      "attributes": [
+        "brown"
+      ],
+      "bounding_box": [
+        0.5706666666666667,
+        0.778,
+        0.064,
+        0.072
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "subject": "comb",
+      "relation": "on",
+      "object": "counter"
+    },
+    {
+      "subject": "counter",
+      "relation": "to the right of",
+      "object": "toilet"
+    },
+    {
+      "subject": "counter",
+      "relation": "to the right of",
+      "object": "lid"
+    },
+    {
+      "subject": "counter",
+      "relation": "near",
+      "object": "toilet"
+    },
+    {
+      "subject": "bottle",
+      "relation": "on",
+      "object": "counter"
+    },
+    {
+      "subject": "toilet",
+      "relation": "next to",
+      "object": "counter"
+    },
+    {
+      "subject": "toilet",
+      "relation": "near",
+      "object": "counter"
+    },
+    {
+      "subject": "toilet",
+      "relation": "to the left of",
+      "object": "counter"
+    },
+    {
+      "subject": "lid",
+      "relation": "to the left of",
+      "object": "counter"
+    },
+    {
+      "subject": "brush",
+      "relation": "on",
+      "object": "counter"
+    }
+  ]
+}

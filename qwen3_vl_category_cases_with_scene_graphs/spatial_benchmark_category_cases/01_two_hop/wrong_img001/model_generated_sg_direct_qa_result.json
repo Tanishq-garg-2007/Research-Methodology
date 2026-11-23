@@ -1,0 +1,11 @@
+{
+  "evaluation_paradigm": "Direct QA on Model-Generated Scene Graph",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 1,
+  "question": "What is on the plate that is to the right of the carrots?",
+  "ground_truth_answer": "fork",
+  "predicted_answer": "grilled sandwich",
+  "is_correct": false,
+  "latency_sec": 2.45696759223938,
+  "tokens_generated": 4
+}

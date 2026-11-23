@@ -1,0 +1,11 @@
+{
+  "evaluation_paradigm": "Direct QA on Model-Generated Scene Graph",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 3,
+  "question": "What is to the right of the cut grass?",
+  "ground_truth_answer": "pole",
+  "predicted_answer": "horse",
+  "is_correct": false,
+  "latency_sec": 0.13706588745117188,
+  "tokens_generated": 2
+}

@@ -1,0 +1,184 @@
+{
+  "image_number": 16,
+  "filename": "GQA Image 016.jpg",
+  "generator_model": "Qwen/Qwen3-VL-2B-Instruct (Few-Shot + Embedded Spatial CoT)",
+  "objects_count": 7,
+  "relations_count": 22,
+  "directional_relations_count": 10,
+  "scene_graph": {
+    "reasoning_steps": [
+      "1. The scene captures a view from inside a vehicle looking out through a window at a street-level urban environment including buildings, traffic signs, pedestrians, and a bus side mirror.",
+      "2. Key objects identified: a large vehicle (likely a bus), its side mirror, a pedestrian crossing signal, a green traffic sign, a sidewalk, a trash can, and background buildings.",
+      "3. Spatial analysis: the bus's side mirror is positioned on the right-hand side of the frame, reflecting the interior and surroundings. It is located directly adjacent to the passenger-side door. A person is seen walking on the sidewalk next to the bus. In the distance, there is a crosswalk signal and a building with fire escapes. The ground surface appears to be paved brick tiles, indicating it\u2019s likely a city street."
+    ],
+    "objects": [
+      {
+        "name": "bus",
+        "attributes": [
+          "larger than car",
+          "silver color",
+          "side mirror"
+        ]
+      },
+      {
+        "name": "side mirror",
+        "attributes": [
+          "black",
+          "reflective",
+          "curved"
+        ]
+      },
+      {
+        "name": "pedestrian",
+        "attributes": [
+          "wearing red jacket",
+          "walking"
+        ]
+      },
+      {
+        "name": "traffic sign",
+        "attributes": [
+          "green",
+          "rectangle",
+          "with white markings"
+        ]
+      },
+      {
+        "name": "sidewalk",
+        "attributes": [
+          "paved",
+          "red bricks",
+          "covered by pavement"
+        ]
+      },
+      {
+        "name": "trash can",
+        "attributes": [
+          "black",
+          "round",
+          "metallic"
+        ]
+      },
+      {
+        "name": "building",
+        "attributes": [
+          "brick",
+          "multi-story",
+          "residential"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "subject": "side mirror",
+        "relation": "attached to",
+        "object": "bus"
+      },
+      {
+        "subject": "side mirror",
+        "relation": "to the right of",
+        "object": "bus"
+      },
+      {
+        "subject": "side mirror",
+        "relation": "on",
+        "object": "window"
+      },
+      {
+        "subject": "pedestrian",
+        "relation": "on",
+        "object": "sidewalk"
+      },
+      {
+        "subject": "traffic sign",
+        "relation": "above",
+        "object": "sidewalk"
+      },
+      {
+        "subject": "sidewalk",
+        "relation": "to the right of",
+        "object": "bus"
+      },
+      {
+        "subject": "sidewalk",
+        "relation": "to the left of",
+        "object": "building"
+      },
+      {
+        "subject": "building",
+        "relation": "on the right side of",
+        "object": "sidewalk"
+      },
+      {
+        "subject": "trash can",
+        "relation": "on",
+        "object": "sidewalk"
+      },
+      {
+        "subject": "bus",
+        "relation": "on",
+        "object": "sidewalk"
+      },
+      {
+        "subject": "traffic sign",
+        "relation": "on",
+        "object": "pole"
+      },
+      {
+        "subject": "traffic sign",
+        "relation": "to the left of",
+        "object": "sidewalk"
+      },
+      {
+        "subject": "sidewalk",
+        "relation": "to the left of",
+        "object": "traffic sign"
+      },
+      {
+        "subject": "sidewalk",
+        "relation": "to the right of",
+        "object": "traffic sign"
+      },
+      {
+        "subject": "sidewalk",
+        "relation": "to the left of",
+        "object": "building"
+      },
+      {
+        "subject": "building",
+        "relation": "on the right side of",
+        "object": "sidewalk"
+      },
+      {
+        "subject": "bus",
+        "relation": "to the left of",
+        "object": "building"
+      },
+      {
+        "subject": "bus",
+        "relation": "on",
+        "object": "sidewalk"
+      },
+      {
+        "subject": "bus",
+        "relation": "in front of",
+        "object": "traffic sign"
+      },
+      {
+        "subject": "bus",
+        "relation": "on",
+        "object": "sidewalk"
+      },
+      {
+        "subject": "bus",
+        "relation": "on",
+        "object": "road"
+      },
+      {
+        "subject": "bus",
+        "relation": "on",
+        "object": "street"
+      }
+    ]
+  }
+}

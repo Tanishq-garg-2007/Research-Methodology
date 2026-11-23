@@ -1,0 +1,36 @@
+{
+  "case_id": "two_hop_wrong",
+  "category": "two_hop",
+  "image_number": 1,
+  "image_filename": "GQA Image 001.jpg",
+  "question": "What is on the plate that is to the right of the carrots?",
+  "ground_truth_reference": "fork",
+  "results_across_paradigms": {
+    "1_simple_image_vlm": {
+      "method": "Direct Image + Query on VLM",
+      "prediction": "Based on the image provided, the plate to the right of the carrots is a white plate that holds a sandwich cut in half. The sandwich appears to be a grilled sandwich, possibly a grilled cheese or a grilled ham and cheese sandwich, with a golden-brown, toasted crust. The sandwich is cut diagonally, and the filling is visible. The plate also has a pickle spear and a small portion of a salad on it.",
+      "verdict": "WRONG",
+      "is_correct": false
+    },
+    "2_small_sg_direct_qa": {
+      "method": "Direct QA on Tight Small Scene Graph",
+      "prediction": "fork",
+      "is_correct": true,
+      "latency_sec": 1.9112122058868408
+    },
+    "3_small_sg_cot_qa": {
+      "method": "CoT QA on Tight Small Scene Graph",
+      "prediction": "fork",
+      "is_correct": true,
+      "latency_sec": 16.50055193901062,
+      "tokens_used": 274
+    },
+    "4_generated_sg_direct_qa": {
+      "method": "Direct QA on Model-Generated Scene Graph",
+      "prediction": "grilled sandwich",
+      "is_correct": false,
+      "latency_sec": 2.45696759223938
+    }
+  },
+  "analysis": "Direct Image VLM recognized plate, sandwich, pickle, and salad, but missed the fork. In contrast, BOTH Direct QA and CoT QA on the Small Scene Graph correctly retrieved 'fork'."
+}

@@ -1,0 +1,185 @@
+{
+  "image_number": 3,
+  "filename": "GQA Image 003.jpg",
+  "generator_model": "Qwen/Qwen3-VL-2B-Instruct (Few-Shot + Embedded Spatial CoT)",
+  "objects_count": 9,
+  "relations_count": 19,
+  "directional_relations_count": 17,
+  "scene_graph": {
+    "reasoning_steps": [
+      "1. The scene depicts a grassy field with several people, a horse, a tent, and some camping gear. A person is standing next to a horse, while others are seated under a green canopy. There's also a small dog walking nearby.",
+      "2. Key objects identified: a horse with a rider, a green pop-up tent, two folding chairs, a backpack, a table, a person sitting at the table, another person holding a tennis racket, and a small white dog.",
+      "3. Spatial arrangements: the horse and rider are positioned to the left of the tent, which is set up in the center-right area. The table and chair are placed beneath the tent. The person with the tennis racket stands beside the tent. The dog walks toward the far-left edge of the frame. All these objects are arranged within the open space of the field."
+    ],
+    "objects": [
+      {
+        "name": "horse",
+        "attributes": [
+          "brown",
+          "with harness",
+          "standing"
+        ]
+      },
+      {
+        "name": "rider",
+        "attributes": [
+          "wearing helmet",
+          "holding reins",
+          "red jacket"
+        ]
+      },
+      {
+        "name": "tent",
+        "attributes": [
+          "green",
+          "pop-up",
+          "canopy"
+        ]
+      },
+      {
+        "name": "table",
+        "attributes": [
+          "white",
+          "rectangular",
+          "covered with items"
+        ]
+      },
+      {
+        "name": "chair",
+        "attributes": [
+          "foldable",
+          "green",
+          "seating"
+        ]
+      },
+      {
+        "name": "backpack",
+        "attributes": [
+          "red",
+          "attached to the chair"
+        ]
+      },
+      {
+        "name": "person_1",
+        "attributes": [
+          "sitting",
+          "wearing red shirt",
+          "holding tennis racket"
+        ]
+      },
+      {
+        "name": "person_2",
+        "attributes": [
+          "sitting",
+          "wearing blue shirt",
+          "at table"
+        ]
+      },
+      {
+        "name": "dog",
+        "attributes": [
+          "small",
+          "white",
+          "walking"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "subject": "horse",
+        "relation": "to the left of",
+        "object": "rider"
+      },
+      {
+        "subject": "rider",
+        "relation": "to the left of",
+        "object": "tent"
+      },
+      {
+        "subject": "tent",
+        "relation": "to the right of",
+        "object": "rider"
+      },
+      {
+        "subject": "table",
+        "relation": "on",
+        "object": "tent"
+      },
+      {
+        "subject": "chair",
+        "relation": "next to",
+        "object": "backpack"
+      },
+      {
+        "subject": "person_1",
+        "relation": "in front of",
+        "object": "person_2"
+      },
+      {
+        "subject": "person_2",
+        "relation": "behind",
+        "object": "person_1"
+      },
+      {
+        "subject": "dog",
+        "relation": "to the left of",
+        "object": "horse"
+      },
+      {
+        "subject": "dog",
+        "relation": "to the left of",
+        "object": "rider"
+      },
+      {
+        "subject": "dog",
+        "relation": "to the left of",
+        "object": "tent"
+      },
+      {
+        "subject": "person_2",
+        "relation": "to the right of",
+        "object": "person_1"
+      },
+      {
+        "subject": "person_1",
+        "relation": "to the left of",
+        "object": "person_2"
+      },
+      {
+        "subject": "person_2",
+        "relation": "to the right of",
+        "object": "table"
+      },
+      {
+        "subject": "table",
+        "relation": "on",
+        "object": "tent"
+      },
+      {
+        "subject": "person_2",
+        "relation": "in front of",
+        "object": "table"
+      },
+      {
+        "subject": "person_1",
+        "relation": "in front of",
+        "object": "person_2"
+      },
+      {
+        "subject": "person_2",
+        "relation": "behind",
+        "object": "person_1"
+      },
+      {
+        "subject": "dog",
+        "relation": "in front of",
+        "object": "person_1"
+      },
+      {
+        "subject": "dog",
+        "relation": "in front of",
+        "object": "person_2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "case_id": "attr_relation_correct",
+  "category": "attr_relation",
+  "image_number": 2,
+  "image_filename": "GQA Image 002.jpg",
+  "question": "What is to the left of the cockpit?",
+  "ground_truth_reference": "propeller",
+  "results_across_paradigms": {
+    "1_simple_image_vlm": {
+      "method": "Direct Image + Query on VLM",
+      "prediction": "Based on the image provided, the object to the left of the cockpit is the **propeller**.\n\nHere is a breakdown of the scene:\n\n- The aircraft is a turboprop plane, which is identifiable by the two large propellers on the wings.\n- The cockpit is the area at the front of the plane where the pilot sits.\n- The propeller is located on the left side of the aircraft, directly behind the cockpit. It is the large, black, multi-bladed propeller on the left wing, which is the one that is visible in the image.\n\nTherefore, the object to the left of the cockpit is the",
+      "verdict": "CORRECT",
+      "is_correct": true
+    },
+    "2_small_sg_direct_qa": {
+      "method": "Direct QA on Tight Small Scene Graph",
+      "prediction": "letter",
+      "is_correct": false,
+      "latency_sec": 0.2078075408935547
+    },
+    "3_small_sg_cot_qa": {
+      "method": "CoT QA on Tight Small Scene Graph",
+      "prediction": "- letter left_of",
+      "is_correct": false,
+      "latency_sec": 48.70941734313965,
+      "tokens_used": 1024
+    },
+    "4_generated_sg_direct_qa": {
+      "method": "Direct QA on Model-Generated Scene Graph",
+      "prediction": "fuselage",
+      "is_correct": false,
+      "latency_sec": 0.24370622634887695
+    }
+  },
+  "analysis": "Direct Image VLM correctly answered 'propeller'. Direct QA and CoT on the unoriented graph struggled with letter/propeller ambiguity, highlighting the necessity of our directional spatial prompt."
+}

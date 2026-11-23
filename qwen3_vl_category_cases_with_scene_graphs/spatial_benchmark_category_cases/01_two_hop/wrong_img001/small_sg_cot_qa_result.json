@@ -1,0 +1,12 @@
+{
+  "evaluation_paradigm": "Chain-of-Thought (CoT) QA on Scene Graph (Step-by-Step Graph Traversal)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 1,
+  "question": "What is on the plate that is to the right of the carrots?",
+  "ground_truth_answer": "fork",
+  "predicted_answer": "fork",
+  "cot_step_by_step_reasoning": "Step 1: Identify the relevant objects and relationships.\n- The question asks about the object on the **plate** that is **to the right** of the **carrots**.\n- From the scene graph, we know:\n  - There are three plates with no attributes.\n  - One plate has white, round attributes.\n- We also have:\n  \u2013 \u201cfork\u201d on \u201cplate\u201d\n  \u2013 \"plate to the Right of 'carrots'\"\n  \u2013 So the plate is located to the **right** of carrots.\n\nStep 2: Apply the spatial constraint.\n- Relationship: \"plate is tothe right of carrots\".\n- This means the plate must be positioned immediately to the east (right side) of the carrot object.\n- Also, from the list of relationships:\n  > \"carrot\" to left of plate \u2192 confirms this ordering.\n\nSo, the plate directly to the immediate right of carbs exists.\n\nStep3: Determine what\u2019s on the said plate.\n- \"fork is on plate\", so there's a fork placed on one of these plates.\n- Since only one plate has the fork, it implies the fork is on that specific plate.\n\nFinal Step: Conclude based on above reasoning.\nThe plate to the *right* of the *carrots* contains the **fork**, as per the direct statement.\n\nFinal Answer: fork",
+  "is_correct": true,
+  "latency_sec": 16.50055193901062,
+  "tokens_generated": 274
+}

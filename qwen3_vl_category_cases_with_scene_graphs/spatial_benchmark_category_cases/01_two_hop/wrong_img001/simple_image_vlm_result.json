@@ -1,0 +1,14 @@
+{
+  "evaluation_paradigm": "Direct VLM on Image (Simple Image + Query)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 1,
+  "image_filename": "GQA Image 001.jpg",
+  "gqa_image_id": "2395226",
+  "query_category": "two_hop",
+  "evaluation_verdict": "WRONG",
+  "is_correct": false,
+  "question": "What is on the plate that is to the right of the carrots?",
+  "reference_ground_truth_answer": "fork",
+  "vlm_predicted_answer": "Based on the image provided, the plate to the right of the carrots is a white plate that holds a sandwich cut in half. The sandwich appears to be a grilled sandwich, possibly a grilled cheese or a grilled ham and cheese sandwich, with a golden-brown, toasted crust. The sandwich is cut diagonally, and the filling is visible. The plate also has a pickle spear and a small portion of a salad on it.",
+  "analysis": "Direct Image VLM recognized plate, sandwich, pickle, and salad, but missed the fork. In contrast, BOTH Direct QA and CoT QA on the Small Scene Graph correctly retrieved 'fork'."
+}

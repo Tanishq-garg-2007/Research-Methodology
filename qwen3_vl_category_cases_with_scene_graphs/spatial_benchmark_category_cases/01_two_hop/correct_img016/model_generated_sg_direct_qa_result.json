@@ -1,0 +1,11 @@
+{
+  "evaluation_paradigm": "Direct QA on Model-Generated Scene Graph",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 16,
+  "question": "What is on the pole that is to the left of the building?",
+  "ground_truth_answer": "sign",
+  "predicted_answer": "pole",
+  "is_correct": false,
+  "latency_sec": 0.12530732154846191,
+  "tokens_generated": 2
+}

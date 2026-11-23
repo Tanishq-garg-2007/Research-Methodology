@@ -1,0 +1,11 @@
+{
+  "evaluation_paradigm": "Direct QA on Model-Generated Scene Graph",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 4,
+  "question": "What object is to the right of the black clothes and to the left of the red sneakers?",
+  "ground_truth_answer": "skateboard",
+  "predicted_answer": "skateboard",
+  "is_correct": true,
+  "latency_sec": 0.2109236717224121,
+  "tokens_generated": 4
+}

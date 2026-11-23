@@ -1,0 +1,12 @@
+{
+  "evaluation_paradigm": "Direct QA on Scene Graph (No Bounding Boxes)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 2,
+  "question": "What is to the left of the cockpit?",
+  "ground_truth_answer": "propeller",
+  "predicted_answer": "letter",
+  "raw_output": "letter",
+  "is_correct": false,
+  "latency_sec": 0.2078075408935547,
+  "tokens_generated": 2
+}

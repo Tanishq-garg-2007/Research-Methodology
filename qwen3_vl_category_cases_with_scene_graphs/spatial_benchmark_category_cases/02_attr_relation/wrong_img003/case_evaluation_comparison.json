@@ -1,0 +1,36 @@
+{
+  "case_id": "attr_relation_wrong",
+  "category": "attr_relation",
+  "image_number": 3,
+  "image_filename": "GQA Image 003.jpg",
+  "question": "What is to the right of the cut grass?",
+  "ground_truth_reference": "pole",
+  "results_across_paradigms": {
+    "1_simple_image_vlm": {
+      "method": "Direct Image + Query on VLM",
+      "prediction": "Based on the image provided, the area to the right of the cut grass is a large, open field of green grass. This field is located in the foreground of the image, extending towards the right side.\n\nThe specific features to the right of the cut grass are:\n- A green canopy tent.\n- A table with a white tablecloth.\n- A person sitting in a folding chair.\n- A person standing under the tent.\n- A person in a red shirt and black pants, who appears to be holding a horse's reins.\n- A horse with a dark brown coat and a white mane.\n- A small white dog on the left",
+      "verdict": "WRONG",
+      "is_correct": false
+    },
+    "2_small_sg_direct_qa": {
+      "method": "Direct QA on Tight Small Scene Graph",
+      "prediction": "pole",
+      "is_correct": true,
+      "latency_sec": 0.16938138008117676
+    },
+    "3_small_sg_cot_qa": {
+      "method": "CoT QA on Tight Small Scene Graph",
+      "prediction": "pole",
+      "is_correct": true,
+      "latency_sec": 27.149306535720825,
+      "tokens_used": 569
+    },
+    "4_generated_sg_direct_qa": {
+      "method": "Direct QA on Model-Generated Scene Graph",
+      "prediction": "horse",
+      "is_correct": false,
+      "latency_sec": 0.13706588745117188
+    }
+  },
+  "analysis": "Direct Image VLM hallucinated a generic 'open field of green grass'. In contrast, BOTH Direct QA and CoT QA on the Small Scene Graph precisely identified 'pole'."
+}

@@ -1,0 +1,165 @@
+{
+  "image_number": 1,
+  "gqa_image_id": "2395226",
+  "description": "Ground-Truth Tight Small Scene Graph associated with this query",
+  "anchors": [
+    "plate",
+    "glass"
+  ],
+  "nodes": [
+    "bowl",
+    "carrots",
+    "container",
+    "fork",
+    "glass",
+    "plate"
+  ],
+  "objects_count": 10,
+  "relations_count": 7,
+  "objects": [
+    {
+      "label": "plate",
+      "attributes": [
+        "white",
+        "round"
+      ],
+      "bounding_box": [
+        0.056,
+        0.232,
+        0.94,
+        0.768
+      ]
+    },
+    {
+      "label": "plate",
+      "attributes": [],
+      "bounding_box": [
+        0.066,
+        0.28,
+        0.54,
+        0.49066666666666664
+      ]
+    },
+    {
+      "label": "plate",
+      "attributes": [],
+      "bounding_box": [
+        0.798,
+        0.104,
+        0.2,
+        0.36
+      ]
+    },
+    {
+      "label": "glass",
+      "attributes": [],
+      "bounding_box": [
+        0.126,
+        0.0,
+        0.284,
+        0.24266666666666667
+      ]
+    },
+    {
+      "label": "fork",
+      "attributes": [],
+      "bounding_box": [
+        0.686,
+        0.20533333333333334,
+        0.306,
+        0.09333333333333334
+      ]
+    },
+    {
+      "label": "plate",
+      "attributes": [],
+      "bounding_box": [
+        0.71,
+        0.30666666666666664,
+        0.282,
+        0.49066666666666664
+      ]
+    },
+    {
+      "label": "bowl",
+      "attributes": [],
+      "bounding_box": [
+        0.156,
+        0.208,
+        0.214,
+        0.20533333333333334
+      ]
+    },
+    {
+      "label": "carrots",
+      "attributes": [
+        "orange",
+        "shredded",
+        "shaved"
+      ],
+      "bounding_box": [
+        0.224,
+        0.24266666666666667,
+        0.322,
+        0.4613333333333333
+      ]
+    },
+    {
+      "label": "container",
+      "attributes": [],
+      "bounding_box": [
+        0.17,
+        0.25066666666666665,
+        0.17,
+        0.25066666666666665
+      ]
+    },
+    {
+      "label": "glass",
+      "attributes": [],
+      "bounding_box": [
+        0.0,
+        0.0,
+        0.13,
+        0.432
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "subject": "fork",
+      "relation": "on",
+      "object": "plate"
+    },
+    {
+      "subject": "plate",
+      "relation": "to the right of",
+      "object": "carrots"
+    },
+    {
+      "subject": "bowl",
+      "relation": "to the right of",
+      "object": "glass"
+    },
+    {
+      "subject": "carrots",
+      "relation": "to the left of",
+      "object": "plate"
+    },
+    {
+      "subject": "container",
+      "relation": "to the right of",
+      "object": "glass"
+    },
+    {
+      "subject": "glass",
+      "relation": "to the left of",
+      "object": "bowl"
+    },
+    {
+      "subject": "glass",
+      "relation": "to the left of",
+      "object": "container"
+    }
+  ]
+}

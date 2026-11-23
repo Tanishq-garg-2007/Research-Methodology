@@ -1,0 +1,14 @@
+{
+  "evaluation_paradigm": "Direct VLM on Image (Simple Image + Query)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 4,
+  "image_filename": "GQA Image 004.jpg",
+  "gqa_image_id": "2412093",
+  "query_category": "spatial_conjunction",
+  "evaluation_verdict": "CORRECT",
+  "is_correct": true,
+  "question": "What object is to the right of the black clothes and to the left of the red sneakers?",
+  "reference_ground_truth_answer": "skateboard",
+  "vlm_predicted_answer": "The object to the right of the black clothes and to the left of the red sneakers is a skateboard.",
+  "analysis": "Direct Image VLM correctly identified 'skateboard'. Direct QA on our Generated Scene Graph also correctly predicted 'skateboard'."
+}

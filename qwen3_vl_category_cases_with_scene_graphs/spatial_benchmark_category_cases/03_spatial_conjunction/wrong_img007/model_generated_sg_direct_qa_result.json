@@ -1,0 +1,11 @@
+{
+  "evaluation_paradigm": "Direct QA on Model-Generated Scene Graph",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 7,
+  "question": "What object is to the right of the white toilet and to the right of the lid?",
+  "ground_truth_answer": "counter",
+  "predicted_answer": "sink",
+  "is_correct": false,
+  "latency_sec": 0.13072586059570312,
+  "tokens_generated": 2
+}

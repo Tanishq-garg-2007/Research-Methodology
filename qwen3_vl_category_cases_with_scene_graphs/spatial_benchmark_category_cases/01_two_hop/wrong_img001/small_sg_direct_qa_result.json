@@ -1,0 +1,12 @@
+{
+  "evaluation_paradigm": "Direct QA on Scene Graph (No Bounding Boxes)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 1,
+  "question": "What is on the plate that is to the right of the carrots?",
+  "ground_truth_answer": "fork",
+  "predicted_answer": "fork",
+  "raw_output": "fork",
+  "is_correct": true,
+  "latency_sec": 1.9112122058868408,
+  "tokens_generated": 2
+}

@@ -1,0 +1,14 @@
+{
+  "evaluation_paradigm": "Direct VLM on Image (Simple Image + Query)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 16,
+  "image_filename": "GQA Image 016.jpg",
+  "gqa_image_id": "2360483",
+  "query_category": "two_hop",
+  "evaluation_verdict": "CORRECT",
+  "is_correct": true,
+  "question": "What is on the pole that is to the left of the building?",
+  "reference_ground_truth_answer": "sign",
+  "vlm_predicted_answer": "Based on the image provided, there is a pole located to the left of the building, which is part of the bus's side. This pole is the one that is attached to the side of the bus.\n\nThe object on this pole is a **black sign**. It is a rectangular sign with a dark, possibly black, surface. It is mounted on the pole and is positioned in front of the building, likely serving as a marker or a sign for the bus route or a destination.",
+  "analysis": "Direct Image VLM identified 'black sign'. On Small SG, Direct QA suffered from spatial confusion ('air conditioner'), while CoT hit token exhaustion (1024 tokens) analyzing bus mirror relations."
+}

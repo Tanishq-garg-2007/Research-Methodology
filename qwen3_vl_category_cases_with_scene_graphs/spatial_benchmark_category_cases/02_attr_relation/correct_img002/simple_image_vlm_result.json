@@ -1,0 +1,14 @@
+{
+  "evaluation_paradigm": "Direct VLM on Image (Simple Image + Query)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 2,
+  "image_filename": "GQA Image 002.jpg",
+  "gqa_image_id": "2417523",
+  "query_category": "attr_relation",
+  "evaluation_verdict": "CORRECT",
+  "is_correct": true,
+  "question": "What is to the left of the cockpit?",
+  "reference_ground_truth_answer": "propeller",
+  "vlm_predicted_answer": "Based on the image provided, the object to the left of the cockpit is the **propeller**.\n\nHere is a breakdown of the scene:\n\n- The aircraft is a turboprop plane, which is identifiable by the two large propellers on the wings.\n- The cockpit is the area at the front of the plane where the pilot sits.\n- The propeller is located on the left side of the aircraft, directly behind the cockpit. It is the large, black, multi-bladed propeller on the left wing, which is the one that is visible in the image.\n\nTherefore, the object to the left of the cockpit is the",
+  "analysis": "Direct Image VLM correctly answered 'propeller'. Direct QA and CoT on the unoriented graph struggled with letter/propeller ambiguity, highlighting the necessity of our directional spatial prompt."
+}

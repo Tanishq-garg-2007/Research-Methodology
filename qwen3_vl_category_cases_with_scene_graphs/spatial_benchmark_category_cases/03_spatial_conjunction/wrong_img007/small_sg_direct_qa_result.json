@@ -1,0 +1,12 @@
+{
+  "evaluation_paradigm": "Direct QA on Scene Graph (No Bounding Boxes)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 7,
+  "question": "What object is to the right of the white toilet and to the right of the lid?",
+  "ground_truth_answer": "counter",
+  "predicted_answer": "counter",
+  "raw_output": "counter",
+  "is_correct": true,
+  "latency_sec": 0.11142420768737793,
+  "tokens_generated": 2
+}

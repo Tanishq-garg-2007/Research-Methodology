@@ -1,0 +1,14 @@
+{
+  "evaluation_paradigm": "Direct VLM on Image (Simple Image + Query)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 3,
+  "image_filename": "GQA Image 003.jpg",
+  "gqa_image_id": "2414767",
+  "query_category": "attr_relation",
+  "evaluation_verdict": "WRONG",
+  "is_correct": false,
+  "question": "What is to the right of the cut grass?",
+  "reference_ground_truth_answer": "pole",
+  "vlm_predicted_answer": "Based on the image provided, the area to the right of the cut grass is a large, open field of green grass. This field is located in the foreground of the image, extending towards the right side.\n\nThe specific features to the right of the cut grass are:\n- A green canopy tent.\n- A table with a white tablecloth.\n- A person sitting in a folding chair.\n- A person standing under the tent.\n- A person in a red shirt and black pants, who appears to be holding a horse's reins.\n- A horse with a dark brown coat and a white mane.\n- A small white dog on the left",
+  "analysis": "Direct Image VLM hallucinated a generic 'open field of green grass'. In contrast, BOTH Direct QA and CoT QA on the Small Scene Graph precisely identified 'pole'."
+}

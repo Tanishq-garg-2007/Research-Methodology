@@ -1,0 +1,108 @@
+{
+  "image_number": 4,
+  "filename": "GQA Image 004.jpg",
+  "generator_model": "Qwen/Qwen3-VL-2B-Instruct (Few-Shot + Embedded Spatial CoT)",
+  "objects_count": 6,
+  "relations_count": 8,
+  "directional_relations_count": 6,
+  "scene_graph": {
+    "reasoning_steps": [
+      "1. The scene depicts two skateboarders performing tricks at a skate ramp under a clear sky.",
+      "2. Key objects identified: skateboarder, spectators, skateboard, ramp, background structures including a red banner and white wall, and a small green plant.",
+      "3. Visual attributes extracted: skateboarder has a shirtless torso, shorts, and helmet; skateboard is colorful with graphics; ramp is concrete; spectator wears casual clothing; background includes a red and white striped banner and some foliage.",
+      "4. Spatial arrangements: the skateboarder is mid-air during a jump, positioned over the ramp's edge. Another person stands behind him watching. A third individual is standing beside them. The ramp is located beneath the skateboarder\u2019s feet. The red banner is on the far side of the frame, while the green plant is on the lower-left corner. All individuals appear to be aligned along the central axis of the scene."
+    ],
+    "objects": [
+      {
+        "name": "skateboarder",
+        "attributes": [
+          "shirtless",
+          "shorts",
+          "helmet"
+        ]
+      },
+      {
+        "name": "skateboard",
+        "attributes": [
+          "green and black",
+          "with graphics",
+          "being ridden"
+        ]
+      },
+      {
+        "name": "ramp",
+        "attributes": [
+          "concrete",
+          "curved",
+          "lower level"
+        ]
+      },
+      {
+        "name": "spectator",
+        "attributes": [
+          "wearing white t-shirt",
+          "jeans",
+          "standing"
+        ]
+      },
+      {
+        "name": "background structure",
+        "attributes": [
+          "red and white banner",
+          "white wall",
+          "top of building"
+        ]
+      },
+      {
+        "name": "plant",
+        "attributes": [
+          "small",
+          "green leaves",
+          "low-growing"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "subject": "skateboarder",
+        "relation": "in front of",
+        "object": "ramp"
+      },
+      {
+        "subject": "skateboarder",
+        "relation": "on",
+        "object": "ramp"
+      },
+      {
+        "subject": "skateboarder",
+        "relation": "to the left of",
+        "object": "spectator"
+      },
+      {
+        "subject": "spectator",
+        "relation": "to the right of",
+        "object": "skateboarder"
+      },
+      {
+        "subject": "skateboard",
+        "relation": "on",
+        "object": "ramp"
+      },
+      {
+        "subject": "background structure",
+        "relation": "above",
+        "object": "ramp"
+      },
+      {
+        "subject": "plant",
+        "relation": "below",
+        "object": "background structure"
+      },
+      {
+        "subject": "ramp",
+        "relation": "below",
+        "object": "background structure"
+      }
+    ]
+  }
+}

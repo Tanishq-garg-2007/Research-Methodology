@@ -1,0 +1,12 @@
+{
+  "evaluation_paradigm": "Direct QA on Scene Graph (No Bounding Boxes)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 4,
+  "question": "What object is to the right of the black clothes and to the left of the red sneakers?",
+  "ground_truth_answer": "skateboard",
+  "predicted_answer": "man",
+  "raw_output": "man",
+  "is_correct": false,
+  "latency_sec": 0.2007005214691162,
+  "tokens_generated": 2
+}

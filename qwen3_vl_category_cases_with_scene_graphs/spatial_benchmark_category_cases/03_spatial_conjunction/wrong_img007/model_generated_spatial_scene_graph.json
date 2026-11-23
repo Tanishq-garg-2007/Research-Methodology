@@ -1,0 +1,220 @@
+{
+  "image_number": 7,
+  "filename": "GQA Image 007.jpg",
+  "generator_model": "Qwen/Qwen3-VL-2B-Instruct (Few-Shot + Embedded Spatial CoT)",
+  "objects_count": 9,
+  "relations_count": 26,
+  "directional_relations_count": 19,
+  "scene_graph": {
+    "reasoning_steps": [
+      "1. The scene depicts a bathroom interior with various functional items including a toilet, sink, mirror, hairdryer, towel rack, and wall-mounted fixture.",
+      "2. Key objects identified: toilet, sink, mirror, hairdryer, towels, faucet, soap dispenser, toothbrush holder, and toiletries.",
+      "3. Spatial arrangements: the toilet is located on the left side of the room, the sink is on the countertop next to it, the mirror is mounted on the wall above the sink, and the hairdryer is attached to the wall beside the mirror. Towels hang from a rack above the sink area, and there's a small shelf holding personal care products nearby."
+    ],
+    "objects": [
+      {
+        "name": "toilet",
+        "attributes": [
+          "white",
+          "closed lid",
+          "ceramic"
+        ]
+      },
+      {
+        "name": "sink",
+        "attributes": [
+          "white",
+          "square-shaped",
+          "plastic basin"
+        ]
+      },
+      {
+        "name": "mirror",
+        "attributes": [
+          "rectangular",
+          "reflective",
+          "silver frame"
+        ]
+      },
+      {
+        "name": "hairdryer",
+        "attributes": [
+          "white",
+          "wall-mounted",
+          "with coiled cord"
+        ]
+      },
+      {
+        "name": "towel",
+        "attributes": [
+          "white",
+          "folded",
+          "soft fabric"
+        ]
+      },
+      {
+        "name": "faucet",
+        "attributes": [
+          "chrome",
+          "round handle",
+          "attached to sink"
+        ]
+      },
+      {
+        "name": "soap dispenser",
+        "attributes": [
+          "blue",
+          "small bottle",
+          "with pump"
+        ]
+      },
+      {
+        "name": "toothbrush holder",
+        "attributes": [
+          "wooden",
+          "brown",
+          "holds toothbrushes"
+        ]
+      },
+      {
+        "name": "toiletry box",
+        "attributes": [
+          "transparent",
+          "contains toothpaste tube and other items"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "subject": "toilet",
+        "relation": "to the left of",
+        "object": "sink"
+      },
+      {
+        "subject": "sink",
+        "relation": "to the right of",
+        "object": "toilet"
+      },
+      {
+        "subject": "mirror",
+        "relation": "above",
+        "object": "sink"
+      },
+      {
+        "subject": "hairdryer",
+        "relation": "to the left of",
+        "object": "mirror"
+      },
+      {
+        "subject": "towel",
+        "relation": "on",
+        "object": "towel rack"
+      },
+      {
+        "subject": "toilet",
+        "relation": "below",
+        "object": "sink"
+      },
+      {
+        "subject": "toilet",
+        "relation": "on",
+        "object": "floor"
+      },
+      {
+        "subject": "sink",
+        "relation": "on",
+        "object": "counter"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "sink"
+      },
+      {
+        "subject": "toilet",
+        "relation": "behind",
+        "object": "toothbrush holder"
+      },
+      {
+        "subject": "toilet",
+        "relation": "next to",
+        "object": "toothbrush holder"
+      },
+      {
+        "subject": "toilet",
+        "relation": "beside",
+        "object": "soap dispenser"
+      },
+      {
+        "subject": "toilet",
+        "relation": "on",
+        "object": "wall"
+      },
+      {
+        "subject": "toilet",
+        "relation": "part of",
+        "object": "bathroom"
+      },
+      {
+        "subject": "toilet",
+        "relation": "connected to",
+        "object": "wall"
+      },
+      {
+        "subject": "toilet",
+        "relation": "adjacent to",
+        "object": "sink"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "toothbrush holder"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "soap dispenser"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "towel rack"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "mirror"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "hairdryer"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "countertop"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "window"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "door"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "shower"
+      },
+      {
+        "subject": "toilet",
+        "relation": "in front of",
+        "object": "bathtub"
+      }
+    ]
+  }
+}

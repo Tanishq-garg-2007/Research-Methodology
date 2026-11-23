@@ -1,0 +1,12 @@
+{
+  "evaluation_paradigm": "Direct QA on Scene Graph (No Bounding Boxes)",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 3,
+  "question": "What is to the right of the cut grass?",
+  "ground_truth_answer": "pole",
+  "predicted_answer": "pole",
+  "raw_output": "pole",
+  "is_correct": true,
+  "latency_sec": 0.16938138008117676,
+  "tokens_generated": 2
+}

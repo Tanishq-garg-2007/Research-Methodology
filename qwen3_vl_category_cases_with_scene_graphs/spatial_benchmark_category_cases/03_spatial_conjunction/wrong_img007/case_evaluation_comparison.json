@@ -1,0 +1,36 @@
+{
+  "case_id": "spatial_conjunction_wrong",
+  "category": "spatial_conjunction",
+  "image_number": 7,
+  "image_filename": "GQA Image 007.jpg",
+  "question": "What object is to the right of the white toilet and to the right of the lid?",
+  "ground_truth_reference": "counter",
+  "results_across_paradigms": {
+    "1_simple_image_vlm": {
+      "method": "Direct Image + Query on VLM",
+      "prediction": "A blue and black hairbrush.",
+      "verdict": "WRONG",
+      "is_correct": false
+    },
+    "2_small_sg_direct_qa": {
+      "method": "Direct QA on Tight Small Scene Graph",
+      "prediction": "counter",
+      "is_correct": true,
+      "latency_sec": 0.11142420768737793
+    },
+    "3_small_sg_cot_qa": {
+      "method": "CoT QA on Tight Small Scene Graph",
+      "prediction": "counter",
+      "is_correct": true,
+      "latency_sec": 34.008405685424805,
+      "tokens_used": 726
+    },
+    "4_generated_sg_direct_qa": {
+      "method": "Direct QA on Model-Generated Scene Graph",
+      "prediction": "sink",
+      "is_correct": false,
+      "latency_sec": 0.13072586059570312
+    }
+  },
+  "analysis": "Direct Image VLM hallucinated a 'blue and black hairbrush'. In contrast, BOTH Direct QA and CoT QA on the Small Scene Graph correctly solved the spatial conjunction and identified 'counter'."
+}

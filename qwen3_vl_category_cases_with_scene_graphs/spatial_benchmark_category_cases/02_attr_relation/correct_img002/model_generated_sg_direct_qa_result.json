@@ -1,0 +1,11 @@
+{
+  "evaluation_paradigm": "Direct QA on Model-Generated Scene Graph",
+  "model": "Qwen/Qwen3-VL-2B-Instruct",
+  "image_number": 2,
+  "question": "What is to the left of the cockpit?",
+  "ground_truth_answer": "propeller",
+  "predicted_answer": "fuselage",
+  "is_correct": false,
+  "latency_sec": 0.24370622634887695,
+  "tokens_generated": 4
+}

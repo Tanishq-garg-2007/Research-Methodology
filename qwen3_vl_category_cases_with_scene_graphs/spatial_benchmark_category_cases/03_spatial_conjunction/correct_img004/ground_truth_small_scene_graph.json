@@ -1,0 +1,304 @@
+{
+  "image_number": 4,
+  "gqa_image_id": "2412093",
+  "description": "Ground-Truth Tight Small Scene Graph associated with this query",
+  "anchors": [
+    "man",
+    "skateboard"
+  ],
+  "nodes": [
+    "boy",
+    "cap",
+    "clothes",
+    "man",
+    "skateboard",
+    "sneakers"
+  ],
+  "objects_count": 12,
+  "relations_count": 31,
+  "objects": [
+    {
+      "label": "man",
+      "attributes": [],
+      "bounding_box": [
+        0.714,
+        0.26706231454005935,
+        0.17,
+        0.5311572700296736
+      ]
+    },
+    {
+      "label": "man",
+      "attributes": [],
+      "bounding_box": [
+        0.588,
+        0.20474777448071216,
+        0.14,
+        0.56973293768546
+      ]
+    },
+    {
+      "label": "cap",
+      "attributes": [
+        "black"
+      ],
+      "bounding_box": [
+        0.15,
+        0.20178041543026706,
+        0.052,
+        0.03560830860534125
+      ]
+    },
+    {
+      "label": "man",
+      "attributes": [],
+      "bounding_box": [
+        0.232,
+        0.2522255192878338,
+        0.16,
+        0.5459940652818991
+      ]
+    },
+    {
+      "label": "clothes",
+      "attributes": [
+        "black"
+      ],
+      "bounding_box": [
+        0.134,
+        0.29080118694362017,
+        0.104,
+        0.5222551928783383
+      ]
+    },
+    {
+      "label": "boy",
+      "attributes": [],
+      "bounding_box": [
+        0.132,
+        0.20178041543026706,
+        0.112,
+        0.5816023738872403
+      ]
+    },
+    {
+      "label": "skateboard",
+      "attributes": [],
+      "bounding_box": [
+        0.314,
+        0.4836795252225519,
+        0.166,
+        0.08011869436201781
+      ]
+    },
+    {
+      "label": "man",
+      "attributes": [],
+      "bounding_box": [
+        0.034,
+        0.032640949554896145,
+        0.412,
+        0.39762611275964393
+      ]
+    },
+    {
+      "label": "man",
+      "attributes": [],
+      "bounding_box": [
+        0.518,
+        0.03857566765578635,
+        0.428,
+        0.45103857566765576
+      ]
+    },
+    {
+      "label": "sneakers",
+      "attributes": [
+        "red"
+      ],
+      "bounding_box": [
+        0.138,
+        0.744807121661721,
+        0.068,
+        0.03857566765578635
+      ]
+    },
+    {
+      "label": "skateboard",
+      "attributes": [],
+      "bounding_box": [
+        0.018,
+        0.6943620178041543,
+        0.08,
+        0.10385756676557864
+      ]
+    },
+    {
+      "label": "man",
+      "attributes": [],
+      "bounding_box": [
+        0.008,
+        0.18397626112759644,
+        0.146,
+        0.6172106824925816
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "subject": "man",
+      "relation": "to the right of",
+      "object": "skateboard"
+    },
+    {
+      "subject": "cap",
+      "relation": "to the right of",
+      "object": "man"
+    },
+    {
+      "subject": "man",
+      "relation": "to the right of",
+      "object": "sneakers"
+    },
+    {
+      "subject": "man",
+      "relation": "to the right of",
+      "object": "clothes"
+    },
+    {
+      "subject": "man",
+      "relation": "to the left of",
+      "object": "skateboard"
+    },
+    {
+      "subject": "man",
+      "relation": "to the right of",
+      "object": "boy"
+    },
+    {
+      "subject": "clothes",
+      "relation": "to the left of",
+      "object": "skateboard"
+    },
+    {
+      "subject": "clothes",
+      "relation": "to the left of",
+      "object": "man"
+    },
+    {
+      "subject": "clothes",
+      "relation": "to the right of",
+      "object": "man"
+    },
+    {
+      "subject": "clothes",
+      "relation": "to the right of",
+      "object": "skateboard"
+    },
+    {
+      "subject": "boy",
+      "relation": "to the left of",
+      "object": "skateboard"
+    },
+    {
+      "subject": "boy",
+      "relation": "to the left of",
+      "object": "man"
+    },
+    {
+      "subject": "boy",
+      "relation": "to the right of",
+      "object": "man"
+    },
+    {
+      "subject": "boy",
+      "relation": "to the right of",
+      "object": "skateboard"
+    },
+    {
+      "subject": "skateboard",
+      "relation": "to the right of",
+      "object": "man"
+    },
+    {
+      "subject": "skateboard",
+      "relation": "to the right of",
+      "object": "clothes"
+    },
+    {
+      "subject": "skateboard",
+      "relation": "to the right of",
+      "object": "boy"
+    },
+    {
+      "subject": "skateboard",
+      "relation": "to the left of",
+      "object": "man"
+    },
+    {
+      "subject": "man",
+      "relation": "wearing",
+      "object": "sneakers"
+    },
+    {
+      "subject": "sneakers",
+      "relation": "to the left of",
+      "object": "man"
+    },
+    {
+      "subject": "sneakers",
+      "relation": "to the right of",
+      "object": "man"
+    },
+    {
+      "subject": "sneakers",
+      "relation": "to the right of",
+      "object": "skateboard"
+    },
+    {
+      "subject": "skateboard",
+      "relation": "to the left of",
+      "object": "sneakers"
+    },
+    {
+      "subject": "skateboard",
+      "relation": "to the left of",
+      "object": "boy"
+    },
+    {
+      "subject": "skateboard",
+      "relation": "to the left of",
+      "object": "clothes"
+    },
+    {
+      "subject": "man",
+      "relation": "standing on",
+      "object": "skateboard"
+    },
+    {
+      "subject": "man",
+      "relation": "to the left of",
+      "object": "sneakers"
+    },
+    {
+      "subject": "man",
+      "relation": "to the left of",
+      "object": "boy"
+    },
+    {
+      "subject": "man",
+      "relation": "to the left of",
+      "object": "cap"
+    },
+    {
+      "subject": "man",
+      "relation": "jumping over",
+      "object": "skateboard"
+    },
+    {
+      "subject": "man",
+      "relation": "to the left of",
+      "object": "clothes"
+    }
+  ]
+}

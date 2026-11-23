@@ -1,0 +1,138 @@
+{
+  "image_number": 2,
+  "filename": "GQA Image 002.jpg",
+  "generator_model": "Qwen/Qwen3-VL-2B-Instruct (Few-Shot + Embedded Spatial CoT)",
+  "objects_count": 8,
+  "relations_count": 11,
+  "directional_relations_count": 7,
+  "scene_graph": {
+    "reasoning_steps": [
+      "1. The scene features a white airplane with a blue tail and livery, positioned on a paved runway surrounded by grass and trees.",
+      "2. Decomposing components: fuselage, wings, tail fin, engines, landing gear, cockpit, nose cone, and wheels.",
+      "3. Spatial arrangements: the airplane is on the ground, its main body is aligned along the runway, the wings extend from the fuselage, the tail fin is at the rear, the engines are mounted under the wings, and the landing gear is extended downward. The runway lies directly beneath the plane's position."
+    ],
+    "objects": [
+      {
+        "name": "airplane",
+        "attributes": [
+          "white",
+          "twin-engine",
+          "with blue tail"
+        ]
+      },
+      {
+        "name": "fuselage",
+        "attributes": [
+          "long",
+          "white",
+          "main body"
+        ]
+      },
+      {
+        "name": "wings",
+        "attributes": [
+          "extended",
+          "curved",
+          "from fuselage"
+        ]
+      },
+      {
+        "name": "tail fin",
+        "attributes": [
+          "vertical",
+          "blue",
+          "at rear"
+        ]
+      },
+      {
+        "name": "engines",
+        "attributes": [
+          "two",
+          "located under wings",
+          "rotating"
+        ]
+      },
+      {
+        "name": "landing gear",
+        "attributes": [
+          "deployed",
+          "four wheels",
+          "downward"
+        ]
+      },
+      {
+        "name": "cockpit",
+        "attributes": [
+          "forward section",
+          "windowed",
+          "top"
+        ]
+      },
+      {
+        "name": "nose cone",
+        "attributes": [
+          "sharp",
+          "pointed",
+          "at front"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "subject": "airplane",
+        "relation": "on top of",
+        "object": "tarmac"
+      },
+      {
+        "subject": "wing",
+        "relation": "extends from",
+        "object": "fuselage"
+      },
+      {
+        "subject": "engine",
+        "relation": "attached to",
+        "object": "fuselage"
+      },
+      {
+        "subject": "tail fin",
+        "relation": "behind",
+        "object": "fuselage"
+      },
+      {
+        "subject": "cockpit",
+        "relation": "in front of",
+        "object": "fuselage"
+      },
+      {
+        "subject": "landing gear",
+        "relation": "below",
+        "object": "airplane"
+      },
+      {
+        "subject": "nose cone",
+        "relation": "at the front of",
+        "object": "airplane"
+      },
+      {
+        "subject": "airplane",
+        "relation": "to the left of",
+        "object": "wings"
+      },
+      {
+        "subject": "wings",
+        "relation": "to the right of",
+        "object": "airplane"
+      },
+      {
+        "subject": "airplane",
+        "relation": "to the right of",
+        "object": "tail fin"
+      },
+      {
+        "subject": "tarmac",
+        "relation": "below",
+        "object": "airplane"
+      }
+    ]
+  }
+}

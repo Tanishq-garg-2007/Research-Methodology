@@ -1,0 +1,96 @@
+{
+  "image_number": 1,
+  "filename": "GQA Image 001.jpg",
+  "generator_model": "Qwen/Qwen3-VL-2B-Instruct (Few-Shot + Embedded Spatial CoT)",
+  "objects_count": 5,
+  "relations_count": 7,
+  "directional_relations_count": 3,
+  "scene_graph": {
+    "reasoning_steps": [
+      "1. The scene contains a meal served on a plate, including a sandwich, salad, pickles, and a drink. A beer bottle is also present.",
+      "2. Decomposing components: the sandwich has two halves, a side dish includes lettuce, tomatoes, cucumbers, carrots, and dressing, while the pickle is separate from the main food items.",
+      "3. Spatial relations: the sandwich is placed next to the salad, which is positioned on the same plate as the sandwich. The pickle lies beside the sandwich. The beverage is located at the back-left corner of the table, and the entire setup rests on a wooden surface."
+    ],
+    "objects": [
+      {
+        "name": "sandwich",
+        "attributes": [
+          "grilled",
+          "two pieces",
+          "with fillings"
+        ]
+      },
+      {
+        "name": "salad",
+        "attributes": [
+          "mixed greens",
+          "carrots",
+          "tomatoes",
+          "cucumbers",
+          "dressing"
+        ]
+      },
+      {
+        "name": "pickle",
+        "attributes": [
+          "green",
+          "sliced",
+          "lengthwise"
+        ]
+      },
+      {
+        "name": "beer bottle",
+        "attributes": [
+          "brown liquid",
+          "label showing 'Beaches Brewery'",
+          "bottle cap open"
+        ]
+      },
+      {
+        "name": "plate",
+        "attributes": [
+          "white",
+          "round",
+          "holding all food items"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "subject": "sandwich",
+        "relation": "next to",
+        "object": "salad"
+      },
+      {
+        "subject": "salad",
+        "relation": "next to",
+        "object": "pickle"
+      },
+      {
+        "subject": "pickles",
+        "relation": "to the right of",
+        "object": "sandwich"
+      },
+      {
+        "subject": "beer bottle",
+        "relation": "at the back left of",
+        "object": "plate"
+      },
+      {
+        "subject": "plate",
+        "relation": "on",
+        "object": "table"
+      },
+      {
+        "subject": "beverage",
+        "relation": "on",
+        "object": "plate"
+      },
+      {
+        "subject": "plate",
+        "relation": "on",
+        "object": "table"
+      }
+    ]
+  }
+}

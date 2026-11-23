@@ -1,0 +1,313 @@
+{
+  "image_number": 3,
+  "gqa_image_id": "2414767",
+  "description": "Ground-Truth Tight Small Scene Graph associated with this query",
+  "anchors": [
+    "pole",
+    "leg"
+  ],
+  "nodes": [
+    "bag",
+    "bottle",
+    "chair",
+    "grass",
+    "leg",
+    "pole"
+  ],
+  "objects_count": 16,
+  "relations_count": 22,
+  "objects": [
+    {
+      "label": "pole",
+      "attributes": [
+        "white"
+      ],
+      "bounding_box": [
+        0.732,
+        0.352,
+        0.042,
+        0.2853333333333333
+      ]
+    },
+    {
+      "label": "pole",
+      "attributes": [
+        "white"
+      ],
+      "bounding_box": [
+        0.826,
+        0.3546666666666667,
+        0.08,
+        0.24266666666666667
+      ]
+    },
+    {
+      "label": "pole",
+      "attributes": [
+        "white"
+      ],
+      "bounding_box": [
+        0.4,
+        0.368,
+        0.058,
+        0.2693333333333333
+      ]
+    },
+    {
+      "label": "pole",
+      "attributes": [
+        "white"
+      ],
+      "bounding_box": [
+        0.538,
+        0.36533333333333334,
+        0.028,
+        0.13066666666666665
+      ]
+    },
+    {
+      "label": "leg",
+      "attributes": [],
+      "bounding_box": [
+        0.402,
+        0.4693333333333333,
+        0.008,
+        0.12
+      ]
+    },
+    {
+      "label": "leg",
+      "attributes": [],
+      "bounding_box": [
+        0.386,
+        0.48533333333333334,
+        0.01,
+        0.08266666666666667
+      ]
+    },
+    {
+      "label": "leg",
+      "attributes": [],
+      "bounding_box": [
+        0.86,
+        0.528,
+        0.008,
+        0.07466666666666667
+      ]
+    },
+    {
+      "label": "leg",
+      "attributes": [],
+      "bounding_box": [
+        0.874,
+        0.5226666666666666,
+        0.012,
+        0.08266666666666667
+      ]
+    },
+    {
+      "label": "bottle",
+      "attributes": [
+        "clear"
+      ],
+      "bounding_box": [
+        0.734,
+        0.49333333333333335,
+        0.008,
+        0.02666666666666667
+      ]
+    },
+    {
+      "label": "leg",
+      "attributes": [],
+      "bounding_box": [
+        0.732,
+        0.5333333333333333,
+        0.006,
+        0.08
+      ]
+    },
+    {
+      "label": "leg",
+      "attributes": [],
+      "bounding_box": [
+        0.744,
+        0.5466666666666666,
+        0.008,
+        0.07466666666666667
+      ]
+    },
+    {
+      "label": "bag",
+      "attributes": [
+        "clear"
+      ],
+      "bounding_box": [
+        0.588,
+        0.5546666666666666,
+        0.016,
+        0.034666666666666665
+      ]
+    },
+    {
+      "label": "grass",
+      "attributes": [
+        "cut"
+      ],
+      "bounding_box": [
+        0.198,
+        0.5386666666666666,
+        0.128,
+        0.10933333333333334
+      ]
+    },
+    {
+      "label": "chair",
+      "attributes": [
+        "dark"
+      ],
+      "bounding_box": [
+        0.702,
+        0.536,
+        0.02,
+        0.021333333333333333
+      ]
+    },
+    {
+      "label": "bag",
+      "attributes": [
+        "white"
+      ],
+      "bounding_box": [
+        0.78,
+        0.5066666666666667,
+        0.01,
+        0.013333333333333334
+      ]
+    },
+    {
+      "label": "bottle",
+      "attributes": [
+        "clear"
+      ],
+      "bounding_box": [
+        0.754,
+        0.49066666666666664,
+        0.008,
+        0.024
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "subject": "pole",
+      "relation": "to the left of",
+      "object": "leg"
+    },
+    {
+      "subject": "pole",
+      "relation": "to the right of",
+      "object": "chair"
+    },
+    {
+      "subject": "pole",
+      "relation": "to the right of",
+      "object": "bag"
+    },
+    {
+      "subject": "pole",
+      "relation": "to the left of",
+      "object": "bag"
+    },
+    {
+      "subject": "pole",
+      "relation": "to the right of",
+      "object": "leg"
+    },
+    {
+      "subject": "pole",
+      "relation": "to the right of",
+      "object": "bottle"
+    },
+    {
+      "subject": "pole",
+      "relation": "to the right of",
+      "object": "grass"
+    },
+    {
+      "subject": "pole",
+      "relation": "to the left of",
+      "object": "chair"
+    },
+    {
+      "subject": "leg",
+      "relation": "to the left of",
+      "object": "bag"
+    },
+    {
+      "subject": "leg",
+      "relation": "to the left of",
+      "object": "pole"
+    },
+    {
+      "subject": "leg",
+      "relation": "to the right of",
+      "object": "chair"
+    },
+    {
+      "subject": "leg",
+      "relation": "to the right of",
+      "object": "pole"
+    },
+    {
+      "subject": "bottle",
+      "relation": "to the left of",
+      "object": "pole"
+    },
+    {
+      "subject": "leg",
+      "relation": "to the right of",
+      "object": "bag"
+    },
+    {
+      "subject": "bag",
+      "relation": "to the left of",
+      "object": "pole"
+    },
+    {
+      "subject": "bag",
+      "relation": "to the right of",
+      "object": "leg"
+    },
+    {
+      "subject": "bag",
+      "relation": "to the right of",
+      "object": "pole"
+    },
+    {
+      "subject": "bag",
+      "relation": "to the left of",
+      "object": "leg"
+    },
+    {
+      "subject": "grass",
+      "relation": "to the left of",
+      "object": "pole"
+    },
+    {
+      "subject": "chair",
+      "relation": "to the right of",
+      "object": "pole"
+    },
+    {
+      "subject": "chair",
+      "relation": "to the left of",
+      "object": "pole"
+    },
+    {
+      "subject": "chair",
+      "relation": "to the left of",
+      "object": "leg"
+    }
+  ]
+}
